@@ -1,20 +1,15 @@
-- caption: Friday Theme on GitHub
-  href: https://github.com/sfreytag/friday-theme
+- caption: Github
+  href: https://github.com/yqwoe
   icon: entypo/github.svg
 
-- caption: Stack Overflow
-  href: https://stackoverflow.com
-  icon: icons/stackoverflow.svg
-
-- caption: Facebook
-  href: https://www.facebook.com
-  icon: entypo/facebook.svg
-
 - caption: Twitter
-  href: https://www.twitter.com
+  href: https://www.twitter.com/yqwoe
   icon: entypo/twitter.svg
 
-- caption: London
-  href: https://www.google.co.uk/maps/place/London/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5073509!4d-0.1277583
+- caption: 河南,郑州
+  href:  http://map.baidu.com/?q=%E6%B2%B3%E5%8D%97%E9%83%91%E5%B7%9E%E7%AE%A1%E5%9F%8E%E5%9B%9E%E6%97%8F%E5%8C%BA
   icon: entypo/location-pin.svg
 
+- caption:  yqwoe@live.cn
+  href: mailto:yqwoe@live.cn
+  icon: entypo/mail.svg

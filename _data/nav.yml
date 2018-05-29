@@ -1,15 +1,15 @@
-- title: Home
+- title: 主页
   href: index.html
 
-- title: About
+- title: 关于
   href: about.html
 
-- title: Posts
+- title: 文章
   href: list/posts.html
 
-- title: Projects
-  href: list/projects.html
+#- title: Projects
+#  href: list/projects.html
 
-- title: Portfolio
-  href: list/portfolio.html
+#- title: Portfolio
+#  href: list/portfolio.html
 

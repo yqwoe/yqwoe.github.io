@@ -7,9 +7,9 @@ highlighter:      rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title:            yqwoe.github.io  # Site title
+title:            yqwoe  # Site title
 name:             Yq Woe              # Your name
-avatar:           /theme/img/avatar.jpg   # Path to an avatar image
+avatar:           /theme/img/2I3A3839.JPG   # Path to an avatar image
 
 # The theme uses the baseurl throughout, which is useful for running the entire
 # site under a subdir, like for this GitHub Pages deployment as a project site.
