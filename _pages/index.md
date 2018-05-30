@@ -6,7 +6,7 @@ narrow: true
 
 {% include components/intro.md %}
 
-[More about John.]({{ site.baseurl}}{% link _pages/about.md %})
+[More about Yq Woe.]({{ site.baseurl}}{% link _pages/about.md %})
 
 ### What else?
 
