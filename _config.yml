@@ -7,8 +7,8 @@ highlighter:      rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title:            yqwoe  # Site title
-name:             Yq Woe              # Your name
+title:            双城记  # Site title
+name:             Yq Woe            # Your name
 avatar:           /theme/img/photo.png   # Path to an avatar image
 
 # The theme uses the baseurl throughout, which is useful for running the entire

@@ -4,7 +4,7 @@
             <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
         </h4>
         <h6 class="card-subtitle mb-3 text-secondary">
-            {{ post.date | date_to_string }}
+            {{ post.date | date: '%Y年%m月%d日' }}
         </h6>
         <div class="card-text d-flex align-items-center mb-2">
             <span class="icon grey mr-2 mb-1">
@@ -21,6 +21,6 @@
         <div class="card-text mb-0">
             {{ post.excerpt }}
         </div>
-        <a href="{{ post.url | absolute_url }}">More...</a>
+        <a href="{{ post.url | absolute_url }}">更多...</a>
     </div>
 </div>

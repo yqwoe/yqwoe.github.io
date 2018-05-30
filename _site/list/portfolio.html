@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/yqwoe.github.io/theme/img/favicon.ico" >
     <title>
         
-            Work Portfolio &middot; yqwoe
+            代表作品 &middot; 双城记
         
     </title>
 
@@ -28,7 +28,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-between">
-    <a class="navbar-brand font-weight-bold" href="/yqwoe.github.io/index.html">Yq Woe</a>
+    <a class="navbar-brand font-weight-bold" href="/yqwoe.github.io/index.html">双城记</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" >
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,13 +53,6 @@
                 <a href='/yqwoe.github.io/list/posts.html'
                    class="nav-link">
                     文章
-                </a>
-            </li>
-        
-            <li class="nav-item">
-                <a href='/yqwoe.github.io/list/portfolio.html'
-                   class="nav-link">
-                    代表作品
                 </a>
             </li>
         
@@ -104,7 +97,7 @@
     <div class="card bg-light">
         <div class="card-body p-2">
             <div class="card-title">
-                <h5>Filter by Skill</h5>
+                <h5>技能</h5>
             </div>
             
                 <a class="d-inline-block bg-white border rounded p-1 mr-1 mb-1 skill skill-angular-1-5"
@@ -207,7 +200,7 @@
         </div>
         <div class="col-md-12 col-lg-8 col-xl-8 pb-4 content">
             <h5 class="list-title border border-left-0 border-right-0 py-2">
-    Work Portfolio
+    代表作品
 </h5>
 
 <div class="d-md-block d-lg-none mb-3">
@@ -236,7 +229,7 @@
     <div class="card bg-light">
         <div class="card-body p-2">
             <div class="card-title">
-                <h5>Filter by Skill</h5>
+                <h5>技能</h5>
             </div>
             
                 <a class="d-inline-block bg-white border rounded p-1 mr-1 mb-1 skill skill-angular-1-5"
@@ -331,9 +324,9 @@
 
 <div id="currently-showing">
     <h2 class="d-flex align-items-center mb-3">
-        <span class="text-secondary mr-2">Showing everything matching:</span>
+        <span class="text-secondary mr-2">技能:</span>
         <span class="border rounded p-2 mr-2 bg-light text-secondary" id="active-skill"></span>
-        <a class="btn btn-primary btn-small" href="javascript:void(0)" onclick="clearSkills()">clear</a>
+        <a class="btn btn-primary btn-small" href="javascript:void(0)" onclick="clearSkills()">清除</a>
     </h4>
 </div>
 
@@ -541,8 +534,8 @@
     var parseHash = function() {
         if (document.location.hash.length > 0) {
             var skill = document.location.hash.slice(1)
-            var name = $(".skill-" + skill).first().text()
-            showPortfolioBySkill(skill, name)
+            var name = $(".skill-" + decodeURI(skill)).first().text()
+            showPortfolioBySkill(decodeURI(skill), name)
         }
         else {
             clearSkills()
@@ -560,10 +553,10 @@
             .addClass("bg-white")
             .removeClass("text-dark")
         $(".card-portfolio").each(function(idx, card) {
-            var matches = $(card).find(".skill-" + skill)
+            var matches = $(card).find(".skill-" + decodeURI(skill))
             if (matches.length > 0) $(card).show()
         })
-        $(".skill-" + skill).removeClass("bg-white")
+        $(".skill-" + decodeURI(skill)).removeClass("bg-white")
             .addClass("bg-warning")
             .addClass("text-dark")
             .blur()
