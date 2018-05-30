@@ -15,7 +15,7 @@ Yq Woe 是一名新手自由职业者，这样说起来感觉很高大上，实�
 
 
 <div class="card mb-3">
-    <video autoplay="autoplay"  loop="loop" src="{{ site.baseurl }}/static/vedio/1521082070.mp4" width="580" height="272"></video>
+    <video autoplay="autoplay"  loop="loop" src="{{ site.baseurl }}/static/vedio/1521082070.mp4" width="825" height="430"></video>
     <div class="card-body bg-light">
         <div class="card-text">吴冬冬在游泳</div>
     </div>
