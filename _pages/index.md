@@ -6,24 +6,24 @@ narrow: true
 
 {% include components/intro.md %}
 
-[更多Yq Woe.]({{ site.baseurl}}{% link _pages/about.md %})
+[更多]({{ site.baseurl}}{% link _pages/about.md %})
 
-### What else?
+### 这里什么都没有
 
-John keeps himself busy on open-source and hobby projects. This is great for learning new skills. [The full list is here]({{ site.baseurl }}{% link list/projects.md %}). There's also a project page about how to [install and use this theme]({{ site.baseurl }}{% link _projects/install.md %}).
+Yq Woe 是一名新手自由职业者，这样说起来感觉很高大上，实际上就是没有固定工作，在家里待业。
+这样做的优势在于可以兼顾家庭，陪伴老婆孩子一起长大。
 
-John has worked in engineering for many years and has an impressive portfolio. [Browse it here.]({{ site.baseurl }}{% link list/portfolio.html %})
-
-John has posted a bunch of tips about how to use Friday Theme. There's the three most-recent posts below, or here's [all posts by year.]({{ site.baseurl }}{% link list/posts.html %})
 
 <div class="card mb-3">
-    <img class="card-img-top" src="{{ site.baseurl }}/static/image/IMG_0359.JPG"/>
+    <video src="{{ site.baseurl }}/static/vedio/1521082070.mp4" controls="controls" width="500" height="300"></video>
     <div class="card-body bg-light">
-        <div class="card-text">A picture from when John was on holiday in the Peak District.</div>
+        <div class="card-text">吴冬冬在游泳</div>
     </div>
 </div>
 
-### Recent Posts
+
+
+### 历史文章
 
 {% for post in site.posts limit:3 %}
 {% include components/post-card.html %}
