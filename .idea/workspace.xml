@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c503587f-4c43-4c21-b6de-939757ddcd3e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2017/10/13/friday-theme-single-image.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2017/10/13/friday-theme-single-image.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2017/10/18/friday-theme-icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2017/10/18/friday-theme-icons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2017/10/19/friday-theme-multiple-images.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2017/10/19/friday-theme-multiple-images.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/03/10/friday-theme-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/03/10/friday-theme-code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/010-acme.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/010-acme.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/020-globex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/020-globex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/030-umbrella.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/030-umbrella.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/040-cyberdyne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/040-cyberdyne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/050-wayne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/050-wayne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/components/intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/list/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/list/posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/list/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/010-acme.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/010-acme.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/020-globex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/020-globex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/030-umbrella.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/030-umbrella.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/040-cyberdyne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/040-cyberdyne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/050-wayne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/050-wayne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/install.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/install.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/madeup.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/madeup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/yetanother.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/yetanother.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,32 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="side.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/bars/side.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <element signature="e#58#94#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile-avatar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/profile-avatar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="53" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile-body.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/profile-body.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="nav.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/nav.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CNAME" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CNAME" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CNAME">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -80,23 +35,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/profile.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+      <file leaf-file-name="2018-05-30-生活-我的第一篇博客.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-05-30-生活-我的第一篇博客.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qq.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/entypo/qq.svg">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="about.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_pages/about.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="qq-with-circle.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/entypo/qq-with-circle.svg">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="intro.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/components/intro.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="12" selection-start-column="12" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-03-10-friday-theme-code.md.bak" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-03-10-friday-theme-code.md.bak">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret selection-end-line="5" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-10-19-friday-theme-multiple-images.md.bak" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-10-19-friday-theme-multiple-images.md.bak">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-10-18-friday-theme-icons.md.bak" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-10-18-friday-theme-icons.md.bak">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
@@ -144,6 +148,9 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_data/nav.yml" />
         <option value="$PROJECT_DIR$/CNAME" />
+        <option value="$PROJECT_DIR$/_posts/2018-05-30-生活-我的第一篇博客.md" />
+        <option value="$PROJECT_DIR$/_includes/components/intro.md" />
+        <option value="$PROJECT_DIR$/_pages/about.md" />
       </list>
     </option>
   </component>
@@ -174,6 +181,28 @@
             <path>
               <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="bars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,15 +245,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527604344697</updated>
-      <workItem from="1527604346031" duration="2710000" />
+      <workItem from="1527604346031" duration="3442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2710000" />
+    <option name="totallyTimeSpent" value="3442000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="453" y="403" width="1440" height="877" extended-state="0" />
+    <frame x="-21" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -325,6 +354,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-10-19-friday-theme-multiple-images.md.bak">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-10-18-friday-theme-icons.md.bak">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-03-10-friday-theme-code.md.bak">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="5" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-05-30-生活-我的第一篇博客.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/intro.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="12" selection-start-column="12" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
