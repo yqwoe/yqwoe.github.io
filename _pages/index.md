@@ -6,7 +6,7 @@ narrow: true
 
 {% include components/intro.md %}
 
-[More about Yq Woe.]({{ site.baseurl}}{% link _pages/about.md %})
+[更多Yq Woe.]({{ site.baseurl}}{% link _pages/about.md %})
 
 ### What else?
 
@@ -17,7 +17,7 @@ John has worked in engineering for many years and has an impressive portfolio. [
 John has posted a bunch of tips about how to use Friday Theme. There's the three most-recent posts below, or here's [all posts by year.]({{ site.baseurl }}{% link list/posts.html %})
 
 <div class="card mb-3">
-    <img class="card-img-top" src="https://images.unsplash.com/photo-1516358045903-b686e6bd3814?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=beab09d3410d08c33d34a47af0a7b99d&auto=format&fit=crop&w=1652&q=80"/>
+    <img class="card-img-top" src="{{ site.baseurl }}/static/image/IMG_0359.JPG"/>
     <div class="card-body bg-light">
         <div class="card-text">A picture from when John was on holiday in the Peak District.</div>
     </div>
