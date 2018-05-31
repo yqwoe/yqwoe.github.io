@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+<link rel="stylesheet" href="{{site.baseurl}}/static/css/gitment.css">
+<script src="{{site.baseurl}}/static/js/gitment.js"></script>
 <h1 class="border border-top-0 border-right-0 border-left-0 mb-3 pb-2">{{ page.title }}</h1>
 
 <div class="d-md-block d-lg-none">
@@ -10,11 +11,7 @@ layout: default
 
 {{ content }}
 
-
 <div id="container"></div>
-
-<link rel="stylesheet" href="{{site.baseurl}}/static/css/gitment.css">
-<script src="{{site.baseurl}}/static/js/gitment.js"></script>
 <script>
 var myTheme = {
   render(state, instance) {
@@ -28,8 +25,13 @@ var myTheme = {
     return container
   },
 }
+console.log(location)
 
+var paths = location.pathname.split('/')
+console.log(paths)
+console.log(decodeURI(paths[paths.length - 1 ]))
 var gitment = new Gitment({
+    id: decodeURI(paths[paths.length - 1 ]),
   owner: 'yqwoe',
   repo: 'yqwoe.github.io',
   oauth: {
@@ -40,5 +42,7 @@ var gitment = new Gitment({
 })
 gitment.render('container')
 </script>
+
+
 
 

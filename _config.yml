@@ -65,4 +65,11 @@ defaults:
       show_profile: false
       layout: defaults/list
 
+# jekyll_admin:
+#  hidden_links:
+#     - pages
+#     - staticfiles
+#     - datafiles
+#     - configuration
+
 
