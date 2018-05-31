@@ -72,4 +72,7 @@ defaults:
 #     - datafiles
 #     - configuration
 
+#paginate: 5
+#paginate_path: "page:num"
+
 
