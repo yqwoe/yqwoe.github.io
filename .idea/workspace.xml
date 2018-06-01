@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c503587f-4c43-4c21-b6de-939757ddcd3e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/defaults/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/defaults/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/05/30/生活-我的第一篇博客.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/05/30/生活-我的第一篇博客.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/05/31/技巧-给博客增加评论功能.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/05/31/技巧-给博客增加评论功能.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/_site/CNAME" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/list/posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-06-01-生活-过六一的”儿童“们.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-06-01-生活-过六一的”儿童“们.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,12 +36,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-06-01-生活-给还过六一的”儿童“们。.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-06-01-生活-给还过六一的”儿童“们。.md">
+      <file leaf-file-name="2018-06-01-生活-过六一的”儿童“们.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-06-01-生活-过六一的”儿童“们.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="510">
-                <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <first_editor relative-caret-position="150">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -127,6 +119,7 @@
         <option value="$PROJECT_DIR$/CNAME" />
         <option value="$PROJECT_DIR$/_layouts/defaults/post.html" />
         <option value="$PROJECT_DIR$/_posts/2018-06-01-生活-给还过六一的”儿童“们。.md" />
+        <option value="$PROJECT_DIR$/_posts/2018-06-01-生活-过六一的”儿童“们.md" />
       </list>
     </option>
   </component>
@@ -160,18 +153,12 @@
             <path>
               <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yqwoe.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yqwoe.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -227,18 +214,18 @@
       <option name="presentableId" value="Default" />
       <updated>1527604344697</updated>
       <workItem from="1527604346031" duration="26408000" />
-      <workItem from="1527771790223" duration="5670000" />
+      <workItem from="1527771790223" duration="5798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32078000" />
+    <option name="totallyTimeSpent" value="32206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -600,11 +587,11 @@
     <entry file="file://$PROJECT_DIR$/static/image/WechatIMG80.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-06-01-生活-给还过六一的”儿童“们。.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-06-01-生活-过六一的”儿童“们.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <first_editor relative-caret-position="150">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
         </state>
