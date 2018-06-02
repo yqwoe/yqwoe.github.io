@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-06-01T11:06:13+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">双城记</title><entry><title type="html">过六一的”儿童”们</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html" rel="alternate" type="text/html" title="过六一的&quot;儿童&quot;们" /><published>2018-06-01T00:00:00+08:00</published><updated>2018-06-01T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-06-02T23:02:48+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">双城记</title><entry><title type="html">一次ios网页样式问题排查心路历程</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B.html" rel="alternate" type="text/html" title="一次ios网页样式问题排查心路历程" /><published>2018-06-02T00:00:00+08:00</published><updated>2018-06-02T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/02/%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B.html">&lt;h4 id=&quot;我的开发环境macbook-pro-iphone手机端页面使用vuescss本次出现的问题是一个css样式在iphone手机端无法正常显示&quot;&gt;我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。&lt;/h4&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;大概是这样：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/yqwoe.github.io/static/image/WechatIMG86.jpeg&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选中的区域无法正常显示。&lt;/p&gt;
+
+&lt;h4 id=&quot;准备调试环境&quot;&gt;准备调试环境：&lt;/h4&gt;
+
+&lt;h5 id=&quot;1打开sifari的开发模式&quot;&gt;1.打开sifari的开发模式。&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&quot;/yqwoe.github.io/static/image/1527947682461.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;2手机sifari打开调试模式&quot;&gt;2.手机sifari打开调试模式&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&quot;/yqwoe.github.io/static/image/WechatIMG87.jpeg&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;3手机连接电脑&quot;&gt;3.手机连接电脑&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&quot;/yqwoe.github.io/static/image/1527947709241.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;勾选上图的ip地址自动会弹出开发者窗口接下来你就可以尽情的撒野了&quot;&gt;勾选上图的ip地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。&lt;/h5&gt;
+
+&lt;h4 id=&quot;正经话题我是如何找到问题并解决的&quot;&gt;正经话题，我是如何找到问题并解决的。&lt;/h4&gt;
+
+&lt;p&gt;#####调试窗口大概长这样，找到你要排错的div选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/yqwoe.github.io/static/image/1527950086573.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;最后锁定&quot;&gt;最后锁定&lt;/h5&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;-webkit-overflow-scrolling&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;touch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;-webkit-overflow-scrolling-属性控制元素在移动设备上是否使用滚动回弹效果&quot;&gt;-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.&lt;/h5&gt;
+&lt;h5 id=&quot;auto-使用普通滚动-当手指从触摸屏上移开滚动会立即停止&quot;&gt;auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。&lt;/h5&gt;
+&lt;h5 id=&quot;touch-使用具有回弹效果的滚动-当手指从触摸屏上移开内容会继续保持一段时间的滚动效果继续滚动的速度和持续的时间和滚动手势的强烈程度成正比同时也会创建一个新的堆栈上下文&quot;&gt;touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。&lt;/h5&gt;
+&lt;h5 id=&quot;最常见的例子就是&quot;&gt;最常见的例子就是，&lt;/h5&gt;
+&lt;h5 id=&quot;在safari上使用了-webkit-overflow-scrollingtouch之后页面偶尔会卡住不动&quot;&gt;在safari上，使用了-webkit-overflow-scrolling:touch之后，页面偶尔会卡住不动。&lt;/h5&gt;
+&lt;h5 id=&quot;在safari上点击其他区域再在滚动区域滑动滚动条无法滚动的bug&quot;&gt;在safari上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的bug。&lt;/h5&gt;
+&lt;h5 id=&quot;通过动态添加内容撑开容器结果根本不能滑动的bug&quot;&gt;通过动态添加内容撑开容器，结果根本不能滑动的bug。&lt;/h5&gt;
+
+&lt;h5 id=&quot;最终无得解决方法是改成-auto我还没有找到更完美解决的办法&quot;&gt;最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。&lt;/h5&gt;
+
+&lt;h5 id=&quot;网上有很多关于--webkit-overflow-scrolling--ios的问题有兴趣的可以研究一下不过我不建议研究一研究估计小半年就过去了也没有答案&quot;&gt;网上有很多关于 -webkit-overflow-scrolling + ios的问题，有兴趣的可以研究一下。&lt;del&gt;不过我不建议研究，一研究估计小半年就过去了，也没有答案&lt;/del&gt;&lt;/h5&gt;</content><author><name></name></author><category term="六一" /><category term="巨婴" /><category term="孩子" /><summary type="html">我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。</summary></entry><entry><title type="html">过六一的”儿童”们</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html" rel="alternate" type="text/html" title="过六一的&quot;儿童&quot;们" /><published>2018-06-01T00:00:00+08:00</published><updated>2018-06-01T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html">&lt;blockquote&gt;
   &lt;h5 id=&quot;今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情&quot;&gt;&lt;em&gt;今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！&lt;/em&gt;&lt;/h5&gt;
 &lt;/blockquote&gt;
 
@@ -27,6 +74,7 @@
   &lt;p&gt;如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，&lt;del&gt;你们是对的！！！！&lt;/del&gt; 你们还只是孩子。&lt;/p&gt;
 
   &lt;p&gt;写完我也准备开始一天的&lt;em&gt;工作&lt;/em&gt; 了，六一节快乐！&lt;/p&gt;
+
 &lt;/blockquote&gt;</content><author><name></name></author><category term="六一" /><category term="巨婴" /><category term="孩子" /><summary type="html">今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</summary></entry><entry><title type="html">给博客增加评论功能</title><link href="http://localhost:4000/yqwoe.github.io/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD.html" rel="alternate" type="text/html" title="给博客增加评论功能" /><published>2018-05-31T00:00:00+08:00</published><updated>2018-05-31T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD.html">&lt;h3 id=&quot;首先感谢imsun大神的插件gitment&quot;&gt;首先感谢&lt;a href=&quot;https://github.com/imsun&quot;&gt;@imsun&lt;/a&gt;大神的插件&lt;a href=&quot;https://imsun.github.io/gitment/&quot;&gt;Gitment&lt;/a&gt;&lt;/h3&gt;
 
 &lt;!--more--&gt;
