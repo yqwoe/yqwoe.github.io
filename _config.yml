@@ -74,8 +74,10 @@ defaults:
 
 #paginate: 5
 #paginate_path: "page:num"
-
+description:  双城记
+url:          http://yqwoe.space
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 
