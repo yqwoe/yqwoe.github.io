@@ -9,4 +9,5 @@ gem 'therubyracer', group: :jekyll_plugins
 gem 'execjs', group: :jekyll_plugins
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-seo-tag', group: :jekyll_plugins
+gem 'pandoc-ruby'
 
