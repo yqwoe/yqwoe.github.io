@@ -2,10 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c503587f-4c43-4c21-b6de-939757ddcd3e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/image/1950746143-596a46107163e_articlex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/static/image/1950746143-596a46107163e_articlex.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/bars/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/bars/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-05-mysql-阿里云mysql外网访问.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-06-05-mysql-阿里云mysql外网访问.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2018/05/30/生活-我的第一篇博客.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/05/30/生活-我的第一篇博客.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2018/05/31/技巧-给博客增加评论功能.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/05/31/技巧-给博客增加评论功能.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2018/06/01/生活-过六一的-儿童-们.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/01/生活-过六一的-儿童-们.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2018/06/02/前端-一次ios网页样式问题排查心路历程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/02/前端-一次ios网页样式问题排查心路历程.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2018/06/03/git-一次gogs踩坑之旅.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/03/git-一次gogs踩坑之旅.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2018/06/04/nginx-acme.sh-nginx-ssl.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/04/nginx-acme.sh-nginx-ssl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2018/06/05/mysql-阿里云mysql外网访问.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/05/mysql-阿里云mysql外网访问.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_portfolio/010-acme.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/010-acme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_portfolio/020-globex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/020-globex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_portfolio/030-umbrella.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/030-umbrella.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_portfolio/040-cyberdyne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/040-cyberdyne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_portfolio/050-wayne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/050-wayne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/list/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/list/posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/list/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/portfolio/010-acme.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/010-acme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/portfolio/020-globex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/020-globex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/portfolio/030-umbrella.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/030-umbrella.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/portfolio/040-cyberdyne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/040-cyberdyne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/portfolio/050-wayne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/050-wayne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/install.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/install.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/madeup.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/madeup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/yetanother.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/yetanother.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,12 +77,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/bars/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+            <state relative-caret-position="105">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-463" />
           </provider>
         </entry>
       </file>
@@ -83,16 +126,6 @@
       </file>
       <file leaf-file-name="psb.jpeg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/image/psb.jpeg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="WechatIMG86.jpeg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/image/WechatIMG86.jpeg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="WechatIMG87.jpeg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/image/WechatIMG87.jpeg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -159,9 +192,9 @@
         <option value="$PROJECT_DIR$/_includes/structure/head.html" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_posts/2018-06-05-mysql-阿里云mysql外网访问.md" />
         <option value="$PROJECT_DIR$/_includes/bars/nav.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -284,12 +317,12 @@
       <workItem from="1527771790223" duration="6718000" />
       <workItem from="1527906821029" duration="61000" />
       <workItem from="1527949416600" duration="2163000" />
-      <workItem from="1528207968923" duration="1510000" />
+      <workItem from="1528207968923" duration="1648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36860000" />
+    <option name="totallyTimeSpent" value="36998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -430,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/image/1527947682461.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -499,8 +525,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/bars/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-463" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
