@@ -14,7 +14,7 @@ tags:
 
 
 <div class="card mb-3">
-    <img src="{{site.baseurl}}/static/image/1528173055341.jpg" width="100%" height="100%" />
+    <img src="{{site.baseurl}}/static/image/1950746143-596a46107163e_articlex.png" width="100%" height="100%" />
 </div>
 
 2.如果是用root登录MySQL,在登陆后use mysql, user表root对应的localhost改为%
