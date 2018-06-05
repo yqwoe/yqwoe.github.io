@@ -16,19 +16,3 @@
 .byebug_history
 
 .idea/*
-_data/*
-_includes/*
-_layouts/*
-_pages/*
-_portfolio/*
-_posts/*
-_projects/*
-list/*
-static/*
-theme/*
-
-_config.yml
-Gemfile
-Gemfile.lock
-LICENSE.md
-README.md
