@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-06-02T23:02:48+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">双城记</title><entry><title type="html">一次ios网页样式问题排查心路历程</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B.html" rel="alternate" type="text/html" title="一次ios网页样式问题排查心路历程" /><published>2018-06-02T00:00:00+08:00</published><updated>2018-06-02T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/02/%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B.html">&lt;h4 id=&quot;我的开发环境macbook-pro-iphone手机端页面使用vuescss本次出现的问题是一个css样式在iphone手机端无法正常显示&quot;&gt;我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-06-05T22:18:21+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">双城记</title><entry><title type="html">阿里云mysql外网访问</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/05/mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE.html" rel="alternate" type="text/html" title="阿里云mysql外网访问" /><published>2018-06-05T00:00:00+08:00</published><updated>2018-06-05T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/05/mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/05/mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE.html">&lt;p&gt;转载原文评论: &lt;a href=&quot;https://segmentfault.com/q/1010000009603559?sort=created&quot;&gt;阿里云ecs上安装了mysql但是外网访问不了&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;1.阿里云ECS有安全组防火墙.默认只开了ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则&lt;/p&gt;
+
+&lt;div class=&quot;card mb-3&quot;&gt;
+    &lt;img src=&quot;/yqwoe.github.io/static/image/1528173055341.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2.如果是用root登录MySQL,在登陆后use mysql, user表root对应的localhost改为%&lt;/p&gt;
+
+&lt;p&gt;3.mysql默认只能自本机访问&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/mysql/mysql.conf.d/mysqld.cnf
+#bind-address = 127.0.0.1
+
+service mysql restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;4.检查是不是在监听状态&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;netstat -ntpl |grep 3306 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;5.防火墙是否对 mysql 端口限制,设置防火墙&lt;/p&gt;</content><author><name></name></author><category term="aliyun" /><category term="阿里云" /><category term="mysql" /><category term="ubuntu 14.04" /><summary type="html">转载原文评论: 阿里云ecs上安装了mysql但是外网访问不了</summary></entry><entry><title type="html">nginx支持ssl+acme.sh定时更新证书</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/04/nginx-acme.sh-nginx-ssl.html" rel="alternate" type="text/html" title="nginx支持ssl+acme.sh定时更新证书" /><published>2018-06-04T00:00:00+08:00</published><updated>2018-06-04T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/04/nginx-acme.sh%20nginx%20ssl</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/04/nginx-acme.sh-nginx-ssl.html">&lt;p&gt;不废话，直接进入实战。
+&lt;!--more--&gt;
+1.安装nginx&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
+apt install nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;2.配置nginx&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vi /etc/nginx/sites-enabled/default
+
+server {
+  listen 80;
+  server_name example.com ;
+  return 301 https://example.com$request_uri;
+}
+
+server {
+  listen 443 ssl;
+
+  server_name example.com;
+
+  ssl on;
+  ssl_certificate         /var/www/ssl/example.com.cer;
+  ssl_certificate_key     /var/www/ssl/example.com.key;
+  ssl_dhparam             /var/www/ssl/dhparam.pem;
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  ssl_prefer_server_ciphers on;
+  ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5; #加密算法(CloudFlare 推荐的加密套件组)
+  ssl_session_timeout 5m; #客户端会话缓存时间
+  ssl_session_cache builtin:1000 shared:SSL:10m; #SSL 会话缓存类型和大小
+
+  root /var/www/example/current/public;
+  access_log /var/www/example/current/log/nginx.access.log;
+  error_log /var/www/example/current/log/nginx.error.log info;
+  
+  error_page 500 502 503 504 /500.html;
+  client_max_body_size 10M;
+  keepalive_timeout 10;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;3.安装acme.sh&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl https://get.acme.sh | sh
+source ~/.bashrc
+备注:如果本地创建了.bash_profie建议把此命令加入
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;4.申请证书&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;acme.sh --issue -d example.com -w /var/www/example/current/public
+备注: 命令中的目录一定是通过nginx 80端口能够访问到的位置。命令执行成功后证书会存放在 ~/.acme.sh/example.com/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;5.设置证书，并重启nginx&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;acme.sh --installcert -d example.com \
+               --keypath       /var/www/ssl/example.com.key  \
+               --fullchainpath /var/www/ssl/example.com.cer \
+               --reloadcmd     &quot;nginx -s reload&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;6.生成 dhparam.pem 文件&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl dhparam -out /var/www/ssl/dhparam.pem 2048
+备注：注意观察的话，证书和dhparam.pem的目录和nginx中是保持一致的。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;7.查看定时更换任务&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ crontab -l
+0 0 * * * &quot;/home/ubuntu/.acme.sh&quot;/acme.sh --cron --home &quot;/home/ubuntu/.acme.sh&quot; &amp;gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;8.验证acme.sh定时更换任务&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;acme.sh --cron -f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;9.你可能遇到的问题&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ruby-china.org/topics/31983&quot;&gt;使用 acme.sh 给 Nginx 安装 Let’ s Encrypt 提供的免费 SSL 证书&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="aliyun" /><category term="阿里云" /><category term="nginx" /><category term="ssl" /><category term="acme.sh" /><category term="ubuntu 14.04" /><summary type="html">不废话，直接进入实战。</summary></entry><entry><title type="html">一次gogs采坑之旅</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/03/git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85.html" rel="alternate" type="text/html" title="一次gogs采坑之旅" /><published>2018-06-03T00:00:00+08:00</published><updated>2018-06-03T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/03/git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/03/git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85.html">&lt;p&gt;一定要按照操作步骤走&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;1.创建用户，一定要记住密码&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo adduser git
+su git
+cd ~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2.下载并解压安装包&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip
+unzip gogs_0.11.43_linux_amd64.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;3.拷贝启动项到系统下&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/ 
+chmod +x /etc/init.d/gogs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;4.安装mysql&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update 
+apt install mysql-server
+mysql -u root -p &amp;lt; /home/xx/gogs/scripts/mysql.sql
+
+
+mysql -u root -p
+&amp;gt; # （输入密码）
+&amp;gt; create user 'gogs'@'localhost' identified by '密码';
+&amp;gt; grant all privileges on gogs.* to 'gogs'@'localhost';
+&amp;gt; flush privileges;
+&amp;gt; exit;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;5.启动gogs&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;service gogs start
+curl -I http://localhost:3000  =&amp;gt; HTTP OK 200
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;6.nginx配置&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  server {
+        listen       80;
+        server_name  www.example.com;
+        location / {
+            proxy_pass http://localhost:3000/;
+        }
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;7.访问www.example.com/install 进行初始化&lt;/p&gt;
+
+&lt;p&gt;8.你可能遇到的问题&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/u013710784/article/details/78778044&quot;&gt;Gogs与Linux主机共享SSH22端口&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/bigsea622/article/details/53956786&quot;&gt;装Gogs后ssh无法和远程登录同时使用的解决方案&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="aliyun" /><category term="阿里云" /><category term="gogs" /><category term="git" /><category term="ubuntu 14.04" /><summary type="html">一定要按照操作步骤走</summary></entry><entry><title type="html">一次ios网页样式问题排查心路历程</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B.html" rel="alternate" type="text/html" title="一次ios网页样式问题排查心路历程" /><published>2018-06-02T00:00:00+08:00</published><updated>2018-06-02T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/02/%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B.html">&lt;h4 id=&quot;我的开发环境macbook-pro-iphone手机端页面使用vuescss本次出现的问题是一个css样式在iphone手机端无法正常显示&quot;&gt;我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。&lt;/h4&gt;
 
 &lt;!--more--&gt;
 
@@ -45,7 +188,7 @@
 
 &lt;h5 id=&quot;最终无得解决方法是改成-auto我还没有找到更完美解决的办法&quot;&gt;最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。&lt;/h5&gt;
 
-&lt;h5 id=&quot;网上有很多关于--webkit-overflow-scrolling--ios的问题有兴趣的可以研究一下不过我不建议研究一研究估计小半年就过去了也没有答案&quot;&gt;网上有很多关于 -webkit-overflow-scrolling + ios的问题，有兴趣的可以研究一下。&lt;del&gt;不过我不建议研究，一研究估计小半年就过去了，也没有答案&lt;/del&gt;&lt;/h5&gt;</content><author><name></name></author><category term="六一" /><category term="巨婴" /><category term="孩子" /><summary type="html">我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。</summary></entry><entry><title type="html">过六一的”儿童”们</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html" rel="alternate" type="text/html" title="过六一的&quot;儿童&quot;们" /><published>2018-06-01T00:00:00+08:00</published><updated>2018-06-01T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html">&lt;blockquote&gt;
+&lt;h5 id=&quot;网上有很多关于--webkit-overflow-scrolling--ios的问题有兴趣的可以研究一下不过我不建议研究一研究估计小半年就过去了也没有答案&quot;&gt;网上有很多关于 -webkit-overflow-scrolling + ios的问题，有兴趣的可以研究一下。&lt;del&gt;不过我不建议研究，一研究估计小半年就过去了，也没有答案&lt;/del&gt;&lt;/h5&gt;</content><author><name></name></author><category term="mac" /><category term="ios" /><category term="macbook pro" /><category term="vue" /><summary type="html">我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。</summary></entry><entry><title type="html">过六一的”儿童”们</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html" rel="alternate" type="text/html" title="过六一的&quot;儿童&quot;们" /><published>2018-06-01T00:00:00+08:00</published><updated>2018-06-01T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html">&lt;blockquote&gt;
   &lt;h5 id=&quot;今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情&quot;&gt;&lt;em&gt;今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！&lt;/em&gt;&lt;/h5&gt;
 &lt;/blockquote&gt;
 
