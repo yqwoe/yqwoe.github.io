@@ -269,5 +269,47 @@
 </script>
 
 </body>
+<style>
+    blockquote{
+        display:block;
+        background: #fff;
+        padding: 15px 20px 15px 45px;
+        margin: 0 0 20px;
+        position: relative;
+
+        /*字体*/
+        font-family: Georgia, serif;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #666;
+        text-align: justify;
+
+        /*边框 - (选项)*/
+        /*border-left: 15px solid #c76c0c;*/
+        /*border-right: 2px solid #c76c0c;*/
+
+        /*盒子阴影 - (选项)*/
+        -moz-box-shadow: 2px 2px 15px #ccc;
+        -webkit-box-shadow: 2px 2px 15px #ccc;
+        box-shadow: 2px 2px 15px #ccc;
+    }
+    blockquote::before{
+        content: "\201C"; /*左双引号的Unicode编码*/
+
+        /*字体*/
+        font-family: Georgia, serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #999;
+
+        /*位置*/
+        position: absolute;
+        left: 10px;
+        top:5px;
+    }
+    blockquote::after{
+        content: ""; /*如果要显示右双引号，则写 content: "\201D"; */
+    }
+</style>
 
 </html>
