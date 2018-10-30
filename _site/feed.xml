@@ -1,4 +1,158 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-10T16:36:33+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">双城记</title><subtitle>双城记</subtitle><entry><title type="html">英语学习</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0.html" rel="alternate" type="text/html" title="英语学习" /><published>2018-10-09T00:00:00+08:00</published><updated>2018-10-09T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0.html">&lt;p&gt;App: duolinguo（多邻国）&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-30T15:52:10+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">双城记</title><subtitle>双城记</subtitle><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Product&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;分析&quot;&gt;分析:&lt;/h2&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'100.00'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...;&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Where 条件中包含 字段名称、运算符、值。&lt;/p&gt;
+
+  &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+* 查询类型
+* lt 小于
+* lte 小于等于
+* gt 大于
+* gte 大于等于
+* slike 'value%' start_with
+* elike '%value' end_with
+* like '%value%'
+* in 1,2,3,4,5
+*/&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//字段名称&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//值&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//查询类型&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;and&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 逻辑运算 and or&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//如果是in查询转换为字符串数组&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;以上是对查询条件的简单封装,如果我们需要满足多个条件的话。&lt;/p&gt;
+
+  &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;QueryParam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;mybatis 公共xml文件配置&lt;/p&gt;
+
+  &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;mapper&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;namespace=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseMapper&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;sql&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseQuery&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;items != null &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            where 1 = 1
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;foreach&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;collection=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;items&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;item=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;index=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index&quot;&lt;/span&gt;
+                     &lt;span class=&quot;na&quot;&gt;separator=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'eq' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    ${item.type} ${item.fieldName} = #{item.value}
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'lt' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[  ${item.type}  ${item.name} &amp;lt; #{item.value} ]]&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'lte' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[ ${item.type}  ${item.name} &amp;lt;= #{item.value} ]]&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'gt' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[  ${item.type}  ${item.name} &amp;gt; #{item.value} ]]&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'gte' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[  ${item.type}  ${item.name} &amp;gt;= #{item.value} ]]&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'slike' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[  ${item.type}  ${item.name} like '${item.value}%' ]]&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.typeitemType == 'elike' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[  ${item.type}  ${item.name} like '%${item.value}' ]]&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'like' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[  AND ${item.name} like '%${item.value}%' ]]&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;test=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.itemType == 'in' &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    ${item.type} 
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;foreach&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;collection=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item.values&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;item=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;value&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;index=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;open=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;(&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;close=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;)&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;separator=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;OR&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        ${item.name} =  #{value}
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/foreach&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/foreach&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/sql&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mapper&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;Product mapper.xml&lt;/p&gt;
+
+  &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;mapper&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;namespace=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;resultMap&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseResultMap&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.yqwoe.codegenerator.model.Product&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;id&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;column=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;u_id&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;uId&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;jdbcType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;VARCHAR&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;&amp;lt;!--省略 --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/resultMap&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;sql&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Base_Column_List&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    id, name, category, price ,.....
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/sql&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;select&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;selectAll&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;resultMap=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseResultMap&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;parameterType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.yqwoe.model.param.QueryParam&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    select
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;refid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Base_Column_List&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    from s_user
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;refid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseMapper.BaseQuery&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;refid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseMapper.BaseOrder&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/select&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mapper&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;ProductController&lt;/p&gt;
+
+  &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ProductController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ProductService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;productService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;nd&quot;&gt;@GetMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/products&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pageinfo&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QueryParam&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;productService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;selectAll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;h3 id=&quot;演示&quot;&gt;演示&lt;/h3&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;api: http://localhost:8000/products?items[0].name=name&amp;amp;items[0].value=nil?,超级管理员&amp;amp;items[0].itemType=in
+
+sql: select * from product where 1 = 1 and (name = 'nil?' OR name = '超级管理员')
+
+//type 默认为 and
+response:
+{
+    data:[
+        ....
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。&lt;/p&gt;</content><author><name></name></author><category term="mybatis" /><category term="mysql" /><category term="api" /><summary type="html">model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。 class Product { long id; String name; String category; String price; String ...; } 分析: select * from product where id &amp;gt; 1 or price &amp;gt; '100.00' ...; Where 条件中包含 字段名称、运算符、值。 /** * 查询类型 * lt 小于 * lte 小于等于 * gt 大于 * gte 大于等于 * slike 'value%' start_with * elike '%value' end_with * like '%value%' * in 1,2,3,4,5 */ class Item { String name; //字段名称 String value; //值 String itemType; //查询类型 String type = &quot;and&quot;; // 逻辑运算 and or String[] values; //如果是in查询转换为字符串数组 } 以上是对查询条件的简单封装,如果我们需要满足多个条件的话。 class QueryParam{ List&amp;lt;Item&amp;gt; items = null; } mybatis 公共xml文件配置 &amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt; &amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt; &amp;lt;mapper namespace=&quot;BaseMapper&quot;&amp;gt; &amp;lt;sql id=&quot;BaseQuery&quot;&amp;gt; &amp;lt;if test=&quot;items != null &quot;&amp;gt; where 1 = 1 &amp;lt;foreach collection=&quot;items&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot; &quot;&amp;gt; &amp;lt;if test=&quot;item.itemType == 'eq' &quot;&amp;gt; ${item.type} ${item.fieldName} = #{item.value} &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'lt' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;lt; #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'lte' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;lt;= #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'gt' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;gt; #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'gte' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;gt;= #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'slike' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} like '${item.value}%' ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.typeitemType == 'elike' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} like '%${item.value}' ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'like' &quot;&amp;gt; &amp;lt;![CDATA[ AND ${item.name} like '%${item.value}%' ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'in' &quot;&amp;gt; ${item.type} &amp;lt;foreach collection=&quot;item.values&quot; item=&quot;value&quot; index=&quot;index&quot; open=&quot;(&quot; close=&quot;)&quot; separator=&quot;OR&quot;&amp;gt; ${item.name} = #{value} &amp;lt;/foreach&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;/foreach&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;/sql&amp;gt; &amp;lt;/mapper&amp;gt; Product mapper.xml &amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt; &amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt; &amp;lt;mapper namespace=&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot; &amp;gt; &amp;lt;resultMap id=&quot;BaseResultMap&quot; type=&quot;com.yqwoe.codegenerator.model.Product&quot; &amp;gt; &amp;lt;id column=&quot;u_id&quot; property=&quot;uId&quot; jdbcType=&quot;VARCHAR&quot; /&amp;gt; &amp;lt;!--省略 --&amp;gt; &amp;lt;/resultMap&amp;gt; &amp;lt;sql id=&quot;Base_Column_List&quot; &amp;gt; id, name, category, price ,..... &amp;lt;/sql&amp;gt; &amp;lt;select id=&quot;selectAll&quot; resultMap=&quot;BaseResultMap&quot; parameterType=&quot;com.yqwoe.model.param.QueryParam&quot;&amp;gt; select &amp;lt;include refid=&quot;Base_Column_List&quot; /&amp;gt; from s_user &amp;lt;include refid=&quot;BaseMapper.BaseQuery&quot;/&amp;gt; &amp;lt;include refid=&quot;BaseMapper.BaseOrder&quot; /&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;/mapper&amp;gt; ProductController class ProductController{ ProductService productService; @GetMapping(&quot;/products&quot;) public Pageinfo index(QueryParam param){ return productService.selectAll(param); } } 演示 api: http://localhost:8000/products?items[0].name=name&amp;amp;items[0].value=nil?,超级管理员&amp;amp;items[0].itemType=in sql: select * from product where 1 = 1 and (name = 'nil?' OR name = '超级管理员') //type 默认为 and response: { data:[ .... ] } 以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。</summary></entry><entry><title type="html">ruby 爬虫 一</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80.html" rel="alternate" type="text/html" title="ruby 爬虫 一" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/12/ruby%20%E7%88%AC%E8%99%AB%20%E4%B8%80</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80.html">&lt;p&gt;找到一个神器: kimurai&lt;/p&gt;
+
+&lt;p&gt;https://github.com/vifreefly/kimuraframework#installation&lt;/p&gt;
+
+&lt;p&gt;为什么选择用ruby，而不用python呢？&lt;/p&gt;
+
+&lt;p&gt;不为别的，就是顺手而已。&lt;/p&gt;
+
+&lt;p&gt;接下来开始研究kimurai并尝试抓取一些数据。&lt;/p&gt;
+
+&lt;p&gt;未完…&lt;/p&gt;</content><author><name></name></author><category term="ruby" /><category term="爬虫" /><summary type="html">找到一个神器: kimurai https://github.com/vifreefly/kimuraframework#installation 为什么选择用ruby，而不用python呢？ 不为别的，就是顺手而已。 接下来开始研究kimurai并尝试抓取一些数据。 未完…</summary></entry><entry><title type="html">英语学习</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0.html" rel="alternate" type="text/html" title="英语学习" /><published>2018-10-09T00:00:00+08:00</published><updated>2018-10-09T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0.html">&lt;p&gt;App: duolinguo（多邻国）&lt;/p&gt;
 
 &lt;p&gt;你使用Duolingo的时候你不单单是在学外语，你还是个译者。Duolingo里面还有一个Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的strength就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo提供了一个非常科学有效的复习管理系统。&lt;/p&gt;
 
@@ -64,6 +218,10 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;​	2503 中 0 如果省略，那就变成253.数值放生了变化，所以0不能省略。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;##&lt;/p&gt;
 &lt;/blockquote&gt;</content><author><name></name></author><category term="数学" /><category term="程序员" /><summary type="html">学习列表: 2进制:</summary></entry><entry><title type="html">生活计划</title><link href="http://localhost:4000/yqwoe.github.io/2018/07/28/%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92.html" rel="alternate" type="text/html" title="生活计划" /><published>2018-07-28T00:00:00+08:00</published><updated>2018-07-28T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/07/28/%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/07/28/%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92.html">&lt;p&gt;有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。
 所以，我深刻的意识到有一个健康的身体太重要了。&lt;/p&gt;
 
@@ -347,319 +505,4 @@ curl -I http://localhost:3000  =&amp;gt; HTTP OK 200
 
   &lt;p&gt;写完我也准备开始一天的&lt;em&gt;工作&lt;/em&gt; 了，六一节快乐！&lt;/p&gt;
 
-&lt;/blockquote&gt;</content><author><name></name></author><category term="六一" /><category term="巨婴" /><category term="孩子" /><summary type="html">今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</summary></entry><entry><title type="html">给博客增加评论功能</title><link href="http://localhost:4000/yqwoe.github.io/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD.html" rel="alternate" type="text/html" title="给博客增加评论功能" /><published>2018-05-31T00:00:00+08:00</published><updated>2018-05-31T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD.html">&lt;h3 id=&quot;首先感谢imsun大神的插件gitment&quot;&gt;首先感谢&lt;a href=&quot;https://github.com/imsun&quot;&gt;@imsun&lt;/a&gt;大神的插件&lt;a href=&quot;https://imsun.github.io/gitment/&quot;&gt;Gitment&lt;/a&gt;&lt;/h3&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：&lt;a href=&quot;yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;giment.js&lt;/a&gt; 、 &lt;a href=&quot;yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;giement.css&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;下边是操作步骤，不是技术同学先参考一下&lt;a href=&quot;https://imsun.github.io/gitment/&quot;&gt;Gitment Demo Page&lt;/a&gt; 再进行操作。&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jekyll.com.cn/docs/home/&quot;&gt;Jekyll教程&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/imsun/gitment&quot;&gt;Gitment Readme&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;基本使用&quot;&gt;基本使用&lt;/h3&gt;
-&lt;h4 id=&quot;1-注册-oauth-application&quot;&gt;1. 注册 OAuth Application&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/settings/applications/new&quot;&gt;New OAuth&lt;/a&gt; ，填写内容时候确保 callback URL 与你的博客地址域名一致。&lt;/p&gt;
-&lt;h4 id=&quot;2引入jscss-到文章页面&quot;&gt;2.引入js、css 到文章页面&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div id=&quot;container&quot;&amp;gt;&amp;lt;/div&amp;gt;
-&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&amp;gt;
-&amp;lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;
-/**
-*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。
-*/
-var paths = location.pathname.split('/')
-var id = decodeURI(paths[paths.length - 1 ]))
-var gitment = new Gitment({
-  id: id, // 必填，不然评论信息不会加载成功！
-  owner: '你的 GitHub ID',
-  repo: '存储评论的 repo',
-  oauth: {
-    client_id: '你注册 OAuth 的 client ID',
-    client_secret: '你注册 OAuth 的 client secret',
-  },
-})
-gitment.render('container')
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;3-初始化评论&quot;&gt;3. 初始化评论&lt;/h4&gt;
-&lt;p&gt;页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。&lt;/p&gt;
-
-&lt;h4 id=&quot;敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧&quot;&gt;敲黑板，下一篇博客会介绍 《&lt;strong&gt;Jekyll-Admin 插件的使用方法&lt;/strong&gt;》和一些填坑技巧。&lt;/h4&gt;
-
-&lt;p&gt;我的博客评论功能目前只支持全球最大&lt;del&gt;同性&lt;/del&gt;交友网站&lt;a href=&quot;github.com/yqwoe&quot;&gt;Github&lt;/a&gt;的账号，以后会慢慢扩展。
-以上是我的分享，谢谢！！&lt;/p&gt;</content><author><name></name></author><category term="技巧" /><category term="gitment" /><category term="git" /><category term="Jekyll" /><summary type="html">首先感谢@imsun大神的插件Gitment</summary></entry><entry><title type="html">第一篇博客</title><link href="http://localhost:4000/yqwoe.github.io/2018/05/30/%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="第一篇博客" /><published>2018-05-30T00:00:00+08:00</published><updated>2018-05-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/05/30/%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/05/30/%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;&lt;strong&gt;今天是2018年05月30日，2015年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是2017年12月22日 早上05:15分 出生&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;一生中有很多重要时刻，而能让你清晰的记得的，只有几个 — &lt;strong&gt;成人礼、成家、生子&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;div class=&quot;card mb-3&quot;&gt;
-    &lt;img src=&quot;/yqwoe.github.io/static/image/2I3A3839.JPG&quot; width=&quot;100%&quot; height=&quot;100%&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;距离辞职已经一个月了，那是做了很长的时间斗争，在五月的一个早晨做的决定。每天早出晚归，早上孩子没有睡醒我就爬起来上班，晚上孩子睡着了，我才到家。那段时间我只要抱他就会哭，所以就决定在家里多&lt;del&gt;陪陪&lt;/del&gt;他们母子俩。&lt;/p&gt;
-
-&lt;p&gt;作为&lt;strong&gt;新手&lt;/strong&gt;&lt;del&gt;自由职业者&lt;/del&gt;，也有一个月时间了，这段时间我的&lt;strong&gt;作息&lt;/strong&gt;及其不&lt;del&gt;规律&lt;/del&gt;，很多次夜里12点之后睡觉，早上10点起床。&lt;strong&gt;不建议自律性比较差的同学从事自由职业。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这是我的第一篇博客，上一次写不记得是什么时候了,还没有组织好语言要说些什么，下边我就引用一下Bob Dylan 的 《&lt;strong&gt;犹如滚石&lt;/strong&gt;》，像一颗滚石一样&lt;strong&gt;顽强&lt;/strong&gt;的活着吧！！！！&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-  &lt;h5 id=&quot;likearollingstone&quot;&gt;《Like a Rolling Stone》&lt;/h5&gt;
-
-  &lt;p&gt;作词 : Dylan&lt;/p&gt;
-
-  &lt;p&gt;Once upon a time you dressed so fine&lt;/p&gt;
-
-  &lt;p&gt;曾几何时你优裕富足衣着光鲜&lt;/p&gt;
-
-  &lt;p&gt;Threw bums a dime in your prime,&lt;/p&gt;
-
-  &lt;p&gt;随手抛给路边潦倒不堪的乞丐几个小钱，&lt;/p&gt;
-
-  &lt;p&gt;didn’t you?&lt;/p&gt;
-
-  &lt;p&gt;对不？&lt;/p&gt;
-
-  &lt;p&gt;People’d call say, Beware doll,&lt;/p&gt;
-
-  &lt;p&gt;人们屡屡良言相劝:”成熟点小丫头，你早晚得明白什么叫风水轮流转”&lt;/p&gt;
-
-  &lt;p&gt;You thought they were all&lt;/p&gt;
-
-  &lt;p&gt;而你只当他们&lt;/p&gt;
-
-  &lt;p&gt;kidding you&lt;/p&gt;
-
-  &lt;p&gt;存心嘲弄视若不见&lt;/p&gt;
-
-  &lt;p&gt;You used to laugh about&lt;/p&gt;
-
-  &lt;p&gt;你总是肆意嗤笑着毫不掩饰自己的优越感&lt;/p&gt;
-
-  &lt;p&gt;Everybody that was hangin’ out&lt;/p&gt;
-
-  &lt;p&gt;那些落魄人儿游荡飘零在外&lt;/p&gt;
-
-  &lt;p&gt;Now you don’t talk so loud&lt;/p&gt;
-
-  &lt;p&gt;你那些高谈阔论怎么收起来了？&lt;/p&gt;
-
-  &lt;p&gt;Now you don’t seem so proud&lt;/p&gt;
-
-  &lt;p&gt;你那高贵的头颅怎么低下去了？&lt;/p&gt;
-
-  &lt;p&gt;About having to be scrounging your next meal&lt;/p&gt;
-
-  &lt;p&gt;只因今天的你已三餐不继，衣食无着，为寻生计迫不得已四处奔波。&lt;/p&gt;
-
-  &lt;p&gt;How does it feel, how does it feel?&lt;/p&gt;
-
-  &lt;p&gt;这滋味如何？ 这滋味如何？&lt;/p&gt;
-
-  &lt;p&gt;To be without a home&lt;/p&gt;
-
-  &lt;p&gt;你孑身独行 找不到回家的方向&lt;/p&gt;
-
-  &lt;p&gt;Like a complete unknown, like a rolling stone&lt;/p&gt;
-
-  &lt;p&gt;完全没有人知道你颠沛流离一如滚石&lt;/p&gt;
-
-  &lt;p&gt;You’ve gone to the finest schools,&lt;/p&gt;
-
-  &lt;p&gt;你考上了一所名牌校&lt;/p&gt;
-
-  &lt;p&gt;but you know you only used to&lt;/p&gt;
-
-  &lt;p&gt;可你也清楚&lt;/p&gt;
-
-  &lt;p&gt;alright miss lonely&lt;/p&gt;
-
-  &lt;p&gt;你除了被榨干的灵魂外&lt;/p&gt;
-
-  &lt;p&gt;get juiced in it&lt;/p&gt;
-
-  &lt;p&gt;一无所获&lt;/p&gt;
-
-  &lt;p&gt;Nobody’s ever taught you&lt;/p&gt;
-
-  &lt;p&gt;你从不曾想过&lt;/p&gt;
-
-  &lt;p&gt;how to live out on the street&lt;/p&gt;
-
-  &lt;p&gt;真实的底层社会该是怎般图景&lt;/p&gt;
-
-  &lt;p&gt;And now you’re gonna have to get used to it&lt;/p&gt;
-
-  &lt;p&gt;如今你为了讨生活已不得不学着去直面污浊与残缺&lt;/p&gt;
-
-  &lt;p&gt;You say you never compromise&lt;/p&gt;
-
-  &lt;p&gt;你曾经说，你永不妥协&lt;/p&gt;
-
-  &lt;p&gt;With the mystery tramp, but now you realize&lt;/p&gt;
-
-  &lt;p&gt;但面对那位神秘的流浪者，现在你已明白&lt;/p&gt;
-
-  &lt;p&gt;He’s not selling any alibies&lt;/p&gt;
-
-  &lt;p&gt;他可不会跟你卖关子故作姿态&lt;/p&gt;
-
-  &lt;p&gt;As you stare into the vacuum of his eyes&lt;/p&gt;
-
-  &lt;p&gt;你只得强忍厌恶望向他空洞无物的瞳眸，问道&lt;/p&gt;
-
-  &lt;p&gt;And say do you want to make a deal&lt;/p&gt;
-
-  &lt;p&gt;用最卑下的口吻问他要不要做笔买卖&lt;/p&gt;
-
-  &lt;p&gt;How does it feel, how does it feel&lt;/p&gt;
-
-  &lt;p&gt;这滋味如何？这滋味如何？&lt;/p&gt;
-
-  &lt;p&gt;To be on your own,With no direction home&lt;/p&gt;
-
-  &lt;p&gt;你孑身独行找不到回家的方向&lt;/p&gt;
-
-  &lt;p&gt;a complete unknown, like a rolling stone&lt;/p&gt;
-
-  &lt;p&gt;完全没有人知道你颠沛流离一如滚石&lt;/p&gt;
-
-  &lt;p&gt;Oh, you never turned around to see the frowns&lt;/p&gt;
-
-  &lt;p&gt;你从未注意过那些魔术师和小丑们&lt;/p&gt;
-
-  &lt;p&gt;On the jumpers and the clowns&lt;/p&gt;
-
-  &lt;p&gt;笑容中藏着双眉紧蹙&lt;/p&gt;
-
-  &lt;p&gt;when they did their tricks for you&lt;/p&gt;
-
-  &lt;p&gt;他们极尽卑下变着花样不过为了取悦于你&lt;/p&gt;
-
-  &lt;p&gt;You never understood that it ain’t no good&lt;/p&gt;
-
-  &lt;p&gt;你从来不明白那样不对&lt;/p&gt;
-
-  &lt;p&gt;You shouldn’t let other people&lt;/p&gt;
-
-  &lt;p&gt;你让别人&lt;/p&gt;
-
-  &lt;p&gt;get your kicks for you&lt;/p&gt;
-
-  &lt;p&gt;替你受苦受难你还颇以为乐&lt;/p&gt;
-
-  &lt;p&gt;You used to ride on your chrome horse&lt;/p&gt;
-
-  &lt;p&gt;你那位跨着哈雷机车带你兜风的花花公子&lt;/p&gt;
-
-  &lt;p&gt;Who carried on his shoulder a siamese cat&lt;/p&gt;
-
-  &lt;p&gt;肩头还安伏着一只华贵的暹罗猫&lt;/p&gt;
-
-  &lt;p&gt;Ain’t it hard when you discovered that&lt;/p&gt;
-
-  &lt;p&gt;而当你一朝醒悟&lt;/p&gt;
-
-  &lt;p&gt;He really wasn’t where it’s at&lt;/p&gt;
-
-  &lt;p&gt;他并非你心所渴求&lt;/p&gt;
-
-  &lt;p&gt;After he took from you&lt;/p&gt;
-
-  &lt;p&gt;却发现他已携着&lt;/p&gt;
-
-  &lt;p&gt;everything he could steal&lt;/p&gt;
-
-  &lt;p&gt;你所有的一切飘然远遁&lt;/p&gt;
-
-  &lt;p&gt;How does it feel, how does it feel?&lt;/p&gt;
-
-  &lt;p&gt;这滋味如何？这滋味如何？&lt;/p&gt;
-
-  &lt;p&gt;To be on your own, With no direction home&lt;/p&gt;
-
-  &lt;p&gt;你孑身独行 找不到回家的方向&lt;/p&gt;
-
-  &lt;p&gt;Like a complete unknown, like a rolling stone&lt;/p&gt;
-
-  &lt;p&gt;完全没有人知道你颠沛流离一如滚石&lt;/p&gt;
-
-  &lt;p&gt;Princess on a steeple&lt;/p&gt;
-
-  &lt;p&gt;幽居高塔的公主&lt;/p&gt;
-
-  &lt;p&gt;and all the pretty people&lt;/p&gt;
-
-  &lt;p&gt;和所有那些优雅体面的上层人士&lt;/p&gt;
-
-  &lt;p&gt;They’re all drinking,&lt;/p&gt;
-
-  &lt;p&gt;整日里狂饮，&lt;/p&gt;
-
-  &lt;p&gt;thinking that they’ve got it made&lt;/p&gt;
-
-  &lt;p&gt;以为他们已经成功&lt;/p&gt;
-
-  &lt;p&gt;Exchanging all precious gifts&lt;/p&gt;
-
-  &lt;p&gt;他们交换著各种珍贵的玩意和礼物&lt;/p&gt;
-
-  &lt;p&gt;You better take your diamond ring,&lt;/p&gt;
-
-  &lt;p&gt;可是你最好脱下那只钻石戒指&lt;/p&gt;
-
-  &lt;p&gt;you better pawn it babe&lt;/p&gt;
-
-  &lt;p&gt;当掉它吧，宝贝&lt;/p&gt;
-
-  &lt;p&gt;You used to be so amused&lt;/p&gt;
-
-  &lt;p&gt;你过去不是觉得很有趣吗？&lt;/p&gt;
-
-  &lt;p&gt;At Napoleon in rags&lt;/p&gt;
-
-  &lt;p&gt;对于那满面风尘&lt;/p&gt;
-
-  &lt;p&gt;and the language that he used&lt;/p&gt;
-
-  &lt;p&gt;用语鄙俗的流浪汉&lt;/p&gt;
-
-  &lt;p&gt;Go to him he calls you, you can’t refuse&lt;/p&gt;
-
-  &lt;p&gt;现在，到他那儿去吧。而今召唤声中你向他走去这一切不由你自主&lt;/p&gt;
-
-  &lt;p&gt;When you ain’t got nothing,&lt;/p&gt;
-
-  &lt;p&gt;当你一无所有，&lt;/p&gt;
-
-  &lt;p&gt;you got nothing to loose&lt;/p&gt;
-
-  &lt;p&gt;你也就再没什么可失去&lt;/p&gt;
-
-  &lt;p&gt;You’re invisible now,&lt;/p&gt;
-
-  &lt;p&gt;现在你周身透明&lt;/p&gt;
-
-  &lt;p&gt;you’ve got not secret to conceal&lt;/p&gt;
-
-  &lt;p&gt;再藏不住一丝秘密。&lt;/p&gt;
-
-  &lt;p&gt;How does it feel, how does it feel?&lt;/p&gt;
-
-  &lt;p&gt;这滋味如何？这滋味如何？&lt;/p&gt;
-
-  &lt;p&gt;To be on your own, With no direction home&lt;/p&gt;
-
-  &lt;p&gt;你孑身独行 找不到回家的方向&lt;/p&gt;
-
-  &lt;p&gt;Like a complete unknown, like a rolling stone&lt;/p&gt;
-
-  &lt;p&gt;完全没有人知道你颠沛流离一如滚石&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;embed src=&quot;http://dl.stream.qqmusic.qq.com/C400003dcpAx3m6OM1.m4a?vkey=D142AEB05AAA6506B86F32ABAFCDCC88DFE1E924CA52C3E5098E9C989B3056240302A2B466C7A1A9ADEEF1A234834ADB0E43660F7E22B22E&amp;amp;guid=6280129848&amp;amp;uin=470510471&amp;amp;fromtag=66&quot; height=&quot;0&quot; width=&quot;0&quot; loop=&quot;true&quot; autostart=&quot;true&quot; /&gt;</content><author><name></name></author><category term="生活" /><category term="重要时刻" /><category term="心情" /><category term="Like a Rolling Stone" /><category term="Bob Dylan" /><summary type="html">今天是2018年05月30日，2015年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是2017年12月22日 早上05:15分 出生。 一生中有很多重要时刻，而能让你清晰的记得的，只有几个 — 成人礼、成家、生子。</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name></name></author><category term="六一" /><category term="巨婴" /><category term="孩子" /><summary type="html">今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</summary></entry></feed>
