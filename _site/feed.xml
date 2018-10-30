@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-30T15:52:10+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">双城记</title><subtitle>双城记</subtitle><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-30T15:59:02+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Product&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -15,10 +17,9 @@
 &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'100.00'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...;&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Where 条件中包含 字段名称、运算符、值。&lt;/p&gt;
+&lt;p&gt;Where 条件中包含 字段名称、运算符、值。&lt;/p&gt;
 
-  &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
 * 查询类型
 * lt 小于
 * lte 小于等于
@@ -36,18 +37,18 @@
     &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;and&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 逻辑运算 and or&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//如果是in查询转换为字符串数组&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-  &lt;p&gt;以上是对查询条件的简单封装,如果我们需要满足多个条件的话。&lt;/p&gt;
+&lt;p&gt;以上是对查询条件的简单封装,如果我们需要满足多个条件的话。&lt;/p&gt;
 
-  &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;QueryParam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;QueryParam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-  &lt;p&gt;mybatis 公共xml文件配置&lt;/p&gt;
+&lt;p&gt;mybatis 公共xml文件配置&lt;/p&gt;
 
-  &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;mapper&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;namespace=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseMapper&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;sql&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseQuery&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -89,11 +90,11 @@
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/if&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/sql&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/mapper&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-  &lt;p&gt;Product mapper.xml&lt;/p&gt;
+&lt;p&gt;Product mapper.xml&lt;/p&gt;
 
-  &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;mapper&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;namespace=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;resultMap&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseResultMap&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.yqwoe.codegenerator.model.Product&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -111,11 +112,11 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;refid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;BaseMapper.BaseOrder&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/select&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/mapper&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-  &lt;p&gt;ProductController&lt;/p&gt;
+&lt;p&gt;ProductController&lt;/p&gt;
 
-  &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ProductController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ProductController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;ProductService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;productService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
     
     &lt;span class=&quot;nd&quot;&gt;@GetMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/products&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
@@ -123,11 +124,11 @@
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;productService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;selectAll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-  &lt;h3 id=&quot;演示&quot;&gt;演示&lt;/h3&gt;
+&lt;h3 id=&quot;演示&quot;&gt;演示&lt;/h3&gt;
 
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;api: http://localhost:8000/products?items[0].name=name&amp;amp;items[0].value=nil?,超级管理员&amp;amp;items[0].itemType=in
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;api: http://localhost:8000/products?items[0].name=name&amp;amp;items[0].value=nil?,超级管理员&amp;amp;items[0].itemType=in
 
 sql: select * from product where 1 = 1 and (name = 'nil?' OR name = '超级管理员')
 
@@ -138,11 +139,9 @@ response:
         ....
     ]
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;/blockquote&gt;
-
-&lt;p&gt;以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。&lt;/p&gt;</content><author><name></name></author><category term="mybatis" /><category term="mysql" /><category term="api" /><summary type="html">model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。 class Product { long id; String name; String category; String price; String ...; } 分析: select * from product where id &amp;gt; 1 or price &amp;gt; '100.00' ...; Where 条件中包含 字段名称、运算符、值。 /** * 查询类型 * lt 小于 * lte 小于等于 * gt 大于 * gte 大于等于 * slike 'value%' start_with * elike '%value' end_with * like '%value%' * in 1,2,3,4,5 */ class Item { String name; //字段名称 String value; //值 String itemType; //查询类型 String type = &quot;and&quot;; // 逻辑运算 and or String[] values; //如果是in查询转换为字符串数组 } 以上是对查询条件的简单封装,如果我们需要满足多个条件的话。 class QueryParam{ List&amp;lt;Item&amp;gt; items = null; } mybatis 公共xml文件配置 &amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt; &amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt; &amp;lt;mapper namespace=&quot;BaseMapper&quot;&amp;gt; &amp;lt;sql id=&quot;BaseQuery&quot;&amp;gt; &amp;lt;if test=&quot;items != null &quot;&amp;gt; where 1 = 1 &amp;lt;foreach collection=&quot;items&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot; &quot;&amp;gt; &amp;lt;if test=&quot;item.itemType == 'eq' &quot;&amp;gt; ${item.type} ${item.fieldName} = #{item.value} &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'lt' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;lt; #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'lte' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;lt;= #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'gt' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;gt; #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'gte' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} &amp;gt;= #{item.value} ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'slike' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} like '${item.value}%' ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.typeitemType == 'elike' &quot;&amp;gt; &amp;lt;![CDATA[ ${item.type} ${item.name} like '%${item.value}' ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'like' &quot;&amp;gt; &amp;lt;![CDATA[ AND ${item.name} like '%${item.value}%' ]]&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;if test=&quot;item.itemType == 'in' &quot;&amp;gt; ${item.type} &amp;lt;foreach collection=&quot;item.values&quot; item=&quot;value&quot; index=&quot;index&quot; open=&quot;(&quot; close=&quot;)&quot; separator=&quot;OR&quot;&amp;gt; ${item.name} = #{value} &amp;lt;/foreach&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;/foreach&amp;gt; &amp;lt;/if&amp;gt; &amp;lt;/sql&amp;gt; &amp;lt;/mapper&amp;gt; Product mapper.xml &amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt; &amp;lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &amp;gt; &amp;lt;mapper namespace=&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot; &amp;gt; &amp;lt;resultMap id=&quot;BaseResultMap&quot; type=&quot;com.yqwoe.codegenerator.model.Product&quot; &amp;gt; &amp;lt;id column=&quot;u_id&quot; property=&quot;uId&quot; jdbcType=&quot;VARCHAR&quot; /&amp;gt; &amp;lt;!--省略 --&amp;gt; &amp;lt;/resultMap&amp;gt; &amp;lt;sql id=&quot;Base_Column_List&quot; &amp;gt; id, name, category, price ,..... &amp;lt;/sql&amp;gt; &amp;lt;select id=&quot;selectAll&quot; resultMap=&quot;BaseResultMap&quot; parameterType=&quot;com.yqwoe.model.param.QueryParam&quot;&amp;gt; select &amp;lt;include refid=&quot;Base_Column_List&quot; /&amp;gt; from s_user &amp;lt;include refid=&quot;BaseMapper.BaseQuery&quot;/&amp;gt; &amp;lt;include refid=&quot;BaseMapper.BaseOrder&quot; /&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;/mapper&amp;gt; ProductController class ProductController{ ProductService productService; @GetMapping(&quot;/products&quot;) public Pageinfo index(QueryParam param){ return productService.selectAll(param); } } 演示 api: http://localhost:8000/products?items[0].name=name&amp;amp;items[0].value=nil?,超级管理员&amp;amp;items[0].itemType=in sql: select * from product where 1 = 1 and (name = 'nil?' OR name = '超级管理员') //type 默认为 and response: { data:[ .... ] } 以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。</summary></entry><entry><title type="html">ruby 爬虫 一</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80.html" rel="alternate" type="text/html" title="ruby 爬虫 一" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/12/ruby%20%E7%88%AC%E8%99%AB%20%E4%B8%80</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80.html">&lt;p&gt;找到一个神器: kimurai&lt;/p&gt;
+&lt;p&gt;以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。&lt;/p&gt;</content><author><name></name></author><category term="mybatis" /><category term="mysql" /><category term="api" /><summary type="html">model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。</summary></entry><entry><title type="html">ruby 爬虫 一</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80.html" rel="alternate" type="text/html" title="ruby 爬虫 一" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/12/ruby%20%E7%88%AC%E8%99%AB%20%E4%B8%80</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80.html">&lt;p&gt;找到一个神器: kimurai&lt;/p&gt;
 
 &lt;p&gt;https://github.com/vifreefly/kimuraframework#installation&lt;/p&gt;
 

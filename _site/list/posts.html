@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/yqwoe.github.io/theme/img/favicon.ico" >
     <title>
         
-            全部文章 &middot; 双城记
+            全部文章 &middot; Yq Woe
         
     </title>
 
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/yqwoe.github.io/theme/css/site.css">
     <link rel="stylesheet" href="/yqwoe.github.io/theme/css/syntax.css">
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>全部文章 | 双城记</title>
+<title>全部文章 | Yq Woe</title>
 <meta name="generator" content="Jekyll v3.8.2" />
 <meta property="og:title" content="全部文章" />
 <meta property="og:locale" content="en_US" />
@@ -30,7 +30,7 @@
 <meta property="og:description" content="双城记" />
 <link rel="canonical" href="http://localhost:4000/yqwoe.github.io/list/posts.html" />
 <meta property="og:url" content="http://localhost:4000/yqwoe.github.io/list/posts.html" />
-<meta property="og:site_name" content="双城记" />
+<meta property="og:site_name" content="Yq Woe" />
 <script type="application/ld+json">
 {"url":"http://localhost:4000/yqwoe.github.io/list/posts.html","description":"双城记","@type":"WebPage","headline":"全部文章","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
@@ -65,7 +65,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-between">
-    <a class="navbar-brand font-weight-bold" href="/yqwoe.github.io/index.html">双城记</a>
+    <a class="navbar-brand font-weight-bold" href="/yqwoe.github.io/index.html">Yq Woe</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" >
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -622,149 +622,6 @@
         <div class="card-text mb-0">
             <p>model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Product</span> <span class="o">{</span>
-    <span class="kt">long</span> <span class="n">id</span><span class="o">;</span>
-    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="n">String</span> <span class="n">category</span><span class="o">;</span>
-    <span class="n">String</span> <span class="n">price</span><span class="o">;</span>
-    <span class="n">String</span> <span class="o">...;</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h2 id="分析">分析:</h2>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">product</span>
-<span class="k">where</span> <span class="n">id</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">or</span> <span class="n">price</span> <span class="o">&gt;</span> <span class="s1">'100.00'</span> <span class="p">...;</span> 
-</code></pre></div></div>
-
-<blockquote>
-  <p>Where 条件中包含 字段名称、运算符、值。</p>
-
-  <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
-* 查询类型
-* lt 小于
-* lte 小于等于
-* gt 大于
-* gte 大于等于
-* slike 'value%' start_with
-* elike '%value' end_with
-* like '%value%'
-* in 1,2,3,4,5
-*/</span>
-<span class="kd">class</span> <span class="nc">Item</span> <span class="o">{</span>
-    <span class="n">String</span> <span class="n">name</span><span class="o">;</span> <span class="c1">//字段名称</span>
-    <span class="n">String</span> <span class="n">value</span><span class="o">;</span> <span class="c1">//值</span>
-    <span class="n">String</span> <span class="n">itemType</span><span class="o">;</span> <span class="c1">//查询类型</span>
-    <span class="n">String</span> <span class="n">type</span> <span class="o">=</span> <span class="s">"and"</span><span class="o">;</span> <span class="c1">// 逻辑运算 and or</span>
-    <span class="n">String</span><span class="o">[]</span> <span class="n">values</span><span class="o">;</span> <span class="c1">//如果是in查询转换为字符串数组</span>
-<span class="o">}</span>
-</code></pre></div>  </div>
-
-  <p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
-
-  <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">QueryParam</span><span class="o">{</span>
-    <span class="n">List</span><span class="o">&lt;</span><span class="n">Item</span><span class="o">&gt;</span> <span class="n">items</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre></div>  </div>
-
-  <p>mybatis 公共xml文件配置</p>
-
-  <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
-<span class="cp">&lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" &gt;</span>
-<span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">"BaseMapper"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;sql</span> <span class="na">id=</span><span class="s">"BaseQuery"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"items != null "</span><span class="nt">&gt;</span>
-            where 1 = 1
-            <span class="nt">&lt;foreach</span> <span class="na">collection=</span><span class="s">"items"</span> <span class="na">item=</span><span class="s">"item"</span> <span class="na">index=</span><span class="s">"index"</span>
-                     <span class="na">separator=</span><span class="s">" "</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'eq' "</span><span class="nt">&gt;</span>
-                    ${item.type} ${item.fieldName} = #{item.value}
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'lt' "</span><span class="nt">&gt;</span>
-                    <span class="cp">&lt;![CDATA[  ${item.type}  ${item.name} &lt; #{item.value} ]]&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'lte' "</span><span class="nt">&gt;</span>
-                    <span class="cp">&lt;![CDATA[ ${item.type}  ${item.name} &lt;= #{item.value} ]]&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'gt' "</span><span class="nt">&gt;</span>
-                    <span class="cp">&lt;![CDATA[  ${item.type}  ${item.name} &gt; #{item.value} ]]&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'gte' "</span><span class="nt">&gt;</span>
-                    <span class="cp">&lt;![CDATA[  ${item.type}  ${item.name} &gt;= #{item.value} ]]&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'slike' "</span><span class="nt">&gt;</span>
-                    <span class="cp">&lt;![CDATA[  ${item.type}  ${item.name} like '${item.value}%' ]]&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.typeitemType == 'elike' "</span><span class="nt">&gt;</span>
-                    <span class="cp">&lt;![CDATA[  ${item.type}  ${item.name} like '%${item.value}' ]]&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'like' "</span><span class="nt">&gt;</span>
-                    <span class="cp">&lt;![CDATA[  AND ${item.name} like '%${item.value}%' ]]&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-                <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"item.itemType == 'in' "</span><span class="nt">&gt;</span>
-                    ${item.type} 
-                    <span class="nt">&lt;foreach</span> <span class="na">collection=</span><span class="s">"item.values"</span> <span class="na">item=</span><span class="s">"value"</span> <span class="na">index=</span><span class="s">"index"</span> <span class="na">open=</span><span class="s">"("</span> <span class="na">close=</span><span class="s">")"</span> <span class="na">separator=</span><span class="s">"OR"</span><span class="nt">&gt;</span>
-                        ${item.name} =  #{value}
-                    <span class="nt">&lt;/foreach&gt;</span>
-                <span class="nt">&lt;/if&gt;</span>
-            <span class="nt">&lt;/foreach&gt;</span>
-        <span class="nt">&lt;/if&gt;</span>
-    <span class="nt">&lt;/sql&gt;</span>
-<span class="nt">&lt;/mapper&gt;</span>
-</code></pre></div>  </div>
-
-  <p>Product mapper.xml</p>
-
-  <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
-<span class="cp">&lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" &gt;</span>
-<span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">"com.yqwoe.codegenerator.dao.ProductMapper"</span> <span class="nt">&gt;</span>
-  <span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">"BaseResultMap"</span> <span class="na">type=</span><span class="s">"com.yqwoe.codegenerator.model.Product"</span> <span class="nt">&gt;</span>
-    <span class="nt">&lt;id</span> <span class="na">column=</span><span class="s">"u_id"</span> <span class="na">property=</span><span class="s">"uId"</span> <span class="na">jdbcType=</span><span class="s">"VARCHAR"</span> <span class="nt">/&gt;</span>
-      <span class="c">&lt;!--省略 --&gt;</span>
-  <span class="nt">&lt;/resultMap&gt;</span>
-  <span class="nt">&lt;sql</span> <span class="na">id=</span><span class="s">"Base_Column_List"</span> <span class="nt">&gt;</span>
-    id, name, category, price ,.....
-  <span class="nt">&lt;/sql&gt;</span>
-  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"selectAll"</span> <span class="na">resultMap=</span><span class="s">"BaseResultMap"</span> <span class="na">parameterType=</span><span class="s">"com.yqwoe.model.param.QueryParam"</span><span class="nt">&gt;</span>
-    select
-    <span class="nt">&lt;include</span> <span class="na">refid=</span><span class="s">"Base_Column_List"</span> <span class="nt">/&gt;</span>
-    from s_user
-    <span class="nt">&lt;include</span> <span class="na">refid=</span><span class="s">"BaseMapper.BaseQuery"</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;include</span> <span class="na">refid=</span><span class="s">"BaseMapper.BaseOrder"</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;/mapper&gt;</span>
-</code></pre></div>  </div>
-
-  <p>ProductController</p>
-
-  <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ProductController</span><span class="o">{</span>
-    <span class="n">ProductService</span> <span class="n">productService</span><span class="o">;</span>
-    
-    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/products"</span><span class="o">)</span>
-    <span class="kd">public</span> <span class="n">Pageinfo</span> <span class="nf">index</span><span class="o">(</span><span class="n">QueryParam</span> <span class="n">param</span><span class="o">){</span>
-        <span class="k">return</span> <span class="n">productService</span><span class="o">.</span><span class="na">selectAll</span><span class="o">(</span><span class="n">param</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>  </div>
-
-  <h3 id="演示">演示</h3>
-
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in
-
-sql: select * from product where 1 = 1 and (name = 'nil?' OR name = '超级管理员')
-
-//type 默认为 and
-response:
-{
-    data:[
-        ....
-    ]
-}
-</code></pre></div>  </div>
-
-</blockquote>
-
-<p>以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。</p>
 
         </div>
         <a href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">更多...</a>
