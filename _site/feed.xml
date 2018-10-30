@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-30T21:24:23+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-30T21:32:21+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -253,8 +253,9 @@ response:
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;results.json&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;h5 id=&quot;resultsjson&quot;&gt;results.json&lt;/h5&gt;
 
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;links&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
