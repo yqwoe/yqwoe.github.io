@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/yqwoe.github.io/theme/img/favicon.ico" >
     <title>
         
-            mybatis动态查询实现 &middot; 双城记
+            mybatis动态查询实现 &middot; Yq Woe
         
     </title>
 
@@ -22,19 +22,19 @@
     <link rel="stylesheet" href="/yqwoe.github.io/theme/css/site.css">
     <link rel="stylesheet" href="/yqwoe.github.io/theme/css/syntax.css">
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>mybatis动态查询实现 | 双城记</title>
+<title>mybatis动态查询实现 | Yq Woe</title>
 <meta name="generator" content="Jekyll v3.8.2" />
 <meta property="og:title" content="mybatis动态查询实现" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。 class Product { long id; String name; String category; String price; String ...; } 分析: select * from product where id &gt; 1 or price &gt; &#39;100.00&#39; ...; Where 条件中包含 字段名称、运算符、值。 /** * 查询类型 * lt 小于 * lte 小于等于 * gt 大于 * gte 大于等于 * slike &#39;value%&#39; start_with * elike &#39;%value&#39; end_with * like &#39;%value%&#39; * in 1,2,3,4,5 */ class Item { String name; //字段名称 String value; //值 String itemType; //查询类型 String type = &quot;and&quot;; // 逻辑运算 and or String[] values; //如果是in查询转换为字符串数组 } 以上是对查询条件的简单封装,如果我们需要满足多个条件的话。 class QueryParam{ List&lt;Item&gt; items = null; } mybatis 公共xml文件配置 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt; &lt;mapper namespace=&quot;BaseMapper&quot;&gt; &lt;sql id=&quot;BaseQuery&quot;&gt; &lt;if test=&quot;items != null &quot;&gt; where 1 = 1 &lt;foreach collection=&quot;items&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot; &quot;&gt; &lt;if test=&quot;item.itemType == &#39;eq&#39; &quot;&gt; ${item.type} ${item.fieldName} = #{item.value} &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;lt&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &lt; #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;lte&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &lt;= #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;gt&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &gt; #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;gte&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &gt;= #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;slike&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} like &#39;${item.value}%&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.typeitemType == &#39;elike&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} like &#39;%${item.value}&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;like&#39; &quot;&gt; &lt;![CDATA[ AND ${item.name} like &#39;%${item.value}%&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;in&#39; &quot;&gt; ${item.type} &lt;foreach collection=&quot;item.values&quot; item=&quot;value&quot; index=&quot;index&quot; open=&quot;(&quot; close=&quot;)&quot; separator=&quot;OR&quot;&gt; ${item.name} = #{value} &lt;/foreach&gt; &lt;/if&gt; &lt;/foreach&gt; &lt;/if&gt; &lt;/sql&gt; &lt;/mapper&gt; Product mapper.xml &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt; &lt;mapper namespace=&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot; &gt; &lt;resultMap id=&quot;BaseResultMap&quot; type=&quot;com.yqwoe.codegenerator.model.Product&quot; &gt; &lt;id column=&quot;u_id&quot; property=&quot;uId&quot; jdbcType=&quot;VARCHAR&quot; /&gt; &lt;!--省略 --&gt; &lt;/resultMap&gt; &lt;sql id=&quot;Base_Column_List&quot; &gt; id, name, category, price ,..... &lt;/sql&gt; &lt;select id=&quot;selectAll&quot; resultMap=&quot;BaseResultMap&quot; parameterType=&quot;com.yqwoe.model.param.QueryParam&quot;&gt; select &lt;include refid=&quot;Base_Column_List&quot; /&gt; from s_user &lt;include refid=&quot;BaseMapper.BaseQuery&quot;/&gt; &lt;include refid=&quot;BaseMapper.BaseOrder&quot; /&gt; &lt;/select&gt; &lt;/mapper&gt; ProductController class ProductController{ ProductService productService; @GetMapping(&quot;/products&quot;) public Pageinfo index(QueryParam param){ return productService.selectAll(param); } } 演示 api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in sql: select * from product where 1 = 1 and (name = &#39;nil?&#39; OR name = &#39;超级管理员&#39;) //type 默认为 and response: { data:[ .... ] } 以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。" />
-<meta property="og:description" content="model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。 class Product { long id; String name; String category; String price; String ...; } 分析: select * from product where id &gt; 1 or price &gt; &#39;100.00&#39; ...; Where 条件中包含 字段名称、运算符、值。 /** * 查询类型 * lt 小于 * lte 小于等于 * gt 大于 * gte 大于等于 * slike &#39;value%&#39; start_with * elike &#39;%value&#39; end_with * like &#39;%value%&#39; * in 1,2,3,4,5 */ class Item { String name; //字段名称 String value; //值 String itemType; //查询类型 String type = &quot;and&quot;; // 逻辑运算 and or String[] values; //如果是in查询转换为字符串数组 } 以上是对查询条件的简单封装,如果我们需要满足多个条件的话。 class QueryParam{ List&lt;Item&gt; items = null; } mybatis 公共xml文件配置 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt; &lt;mapper namespace=&quot;BaseMapper&quot;&gt; &lt;sql id=&quot;BaseQuery&quot;&gt; &lt;if test=&quot;items != null &quot;&gt; where 1 = 1 &lt;foreach collection=&quot;items&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot; &quot;&gt; &lt;if test=&quot;item.itemType == &#39;eq&#39; &quot;&gt; ${item.type} ${item.fieldName} = #{item.value} &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;lt&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &lt; #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;lte&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &lt;= #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;gt&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &gt; #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;gte&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &gt;= #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;slike&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} like &#39;${item.value}%&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.typeitemType == &#39;elike&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} like &#39;%${item.value}&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;like&#39; &quot;&gt; &lt;![CDATA[ AND ${item.name} like &#39;%${item.value}%&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;in&#39; &quot;&gt; ${item.type} &lt;foreach collection=&quot;item.values&quot; item=&quot;value&quot; index=&quot;index&quot; open=&quot;(&quot; close=&quot;)&quot; separator=&quot;OR&quot;&gt; ${item.name} = #{value} &lt;/foreach&gt; &lt;/if&gt; &lt;/foreach&gt; &lt;/if&gt; &lt;/sql&gt; &lt;/mapper&gt; Product mapper.xml &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt; &lt;mapper namespace=&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot; &gt; &lt;resultMap id=&quot;BaseResultMap&quot; type=&quot;com.yqwoe.codegenerator.model.Product&quot; &gt; &lt;id column=&quot;u_id&quot; property=&quot;uId&quot; jdbcType=&quot;VARCHAR&quot; /&gt; &lt;!--省略 --&gt; &lt;/resultMap&gt; &lt;sql id=&quot;Base_Column_List&quot; &gt; id, name, category, price ,..... &lt;/sql&gt; &lt;select id=&quot;selectAll&quot; resultMap=&quot;BaseResultMap&quot; parameterType=&quot;com.yqwoe.model.param.QueryParam&quot;&gt; select &lt;include refid=&quot;Base_Column_List&quot; /&gt; from s_user &lt;include refid=&quot;BaseMapper.BaseQuery&quot;/&gt; &lt;include refid=&quot;BaseMapper.BaseOrder&quot; /&gt; &lt;/select&gt; &lt;/mapper&gt; ProductController class ProductController{ ProductService productService; @GetMapping(&quot;/products&quot;) public Pageinfo index(QueryParam param){ return productService.selectAll(param); } } 演示 api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in sql: select * from product where 1 = 1 and (name = &#39;nil?&#39; OR name = &#39;超级管理员&#39;) //type 默认为 and response: { data:[ .... ] } 以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。" />
+<meta name="description" content="model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。" />
+<meta property="og:description" content="model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。" />
 <link rel="canonical" href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" />
 <meta property="og:url" content="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" />
-<meta property="og:site_name" content="双城记" />
+<meta property="og:site_name" content="Yq Woe" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-10-30T00:00:00+08:00" />
 <script type="application/ld+json">
-{"datePublished":"2018-10-30T00:00:00+08:00","url":"http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html","dateModified":"2018-10-30T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html"},"description":"model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。 class Product { long id; String name; String category; String price; String ...; } 分析: select * from product where id &gt; 1 or price &gt; &#39;100.00&#39; ...; Where 条件中包含 字段名称、运算符、值。 /** * 查询类型 * lt 小于 * lte 小于等于 * gt 大于 * gte 大于等于 * slike &#39;value%&#39; start_with * elike &#39;%value&#39; end_with * like &#39;%value%&#39; * in 1,2,3,4,5 */ class Item { String name; //字段名称 String value; //值 String itemType; //查询类型 String type = &quot;and&quot;; // 逻辑运算 and or String[] values; //如果是in查询转换为字符串数组 } 以上是对查询条件的简单封装,如果我们需要满足多个条件的话。 class QueryParam{ List&lt;Item&gt; items = null; } mybatis 公共xml文件配置 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt; &lt;mapper namespace=&quot;BaseMapper&quot;&gt; &lt;sql id=&quot;BaseQuery&quot;&gt; &lt;if test=&quot;items != null &quot;&gt; where 1 = 1 &lt;foreach collection=&quot;items&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot; &quot;&gt; &lt;if test=&quot;item.itemType == &#39;eq&#39; &quot;&gt; ${item.type} ${item.fieldName} = #{item.value} &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;lt&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &lt; #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;lte&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &lt;= #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;gt&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &gt; #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;gte&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} &gt;= #{item.value} ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;slike&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} like &#39;${item.value}%&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.typeitemType == &#39;elike&#39; &quot;&gt; &lt;![CDATA[ ${item.type} ${item.name} like &#39;%${item.value}&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;like&#39; &quot;&gt; &lt;![CDATA[ AND ${item.name} like &#39;%${item.value}%&#39; ]]&gt; &lt;/if&gt; &lt;if test=&quot;item.itemType == &#39;in&#39; &quot;&gt; ${item.type} &lt;foreach collection=&quot;item.values&quot; item=&quot;value&quot; index=&quot;index&quot; open=&quot;(&quot; close=&quot;)&quot; separator=&quot;OR&quot;&gt; ${item.name} = #{value} &lt;/foreach&gt; &lt;/if&gt; &lt;/foreach&gt; &lt;/if&gt; &lt;/sql&gt; &lt;/mapper&gt; Product mapper.xml &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt; &lt;mapper namespace=&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot; &gt; &lt;resultMap id=&quot;BaseResultMap&quot; type=&quot;com.yqwoe.codegenerator.model.Product&quot; &gt; &lt;id column=&quot;u_id&quot; property=&quot;uId&quot; jdbcType=&quot;VARCHAR&quot; /&gt; &lt;!--省略 --&gt; &lt;/resultMap&gt; &lt;sql id=&quot;Base_Column_List&quot; &gt; id, name, category, price ,..... &lt;/sql&gt; &lt;select id=&quot;selectAll&quot; resultMap=&quot;BaseResultMap&quot; parameterType=&quot;com.yqwoe.model.param.QueryParam&quot;&gt; select &lt;include refid=&quot;Base_Column_List&quot; /&gt; from s_user &lt;include refid=&quot;BaseMapper.BaseQuery&quot;/&gt; &lt;include refid=&quot;BaseMapper.BaseOrder&quot; /&gt; &lt;/select&gt; &lt;/mapper&gt; ProductController class ProductController{ ProductService productService; @GetMapping(&quot;/products&quot;) public Pageinfo index(QueryParam param){ return productService.selectAll(param); } } 演示 api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in sql: select * from product where 1 = 1 and (name = &#39;nil?&#39; OR name = &#39;超级管理员&#39;) //type 默认为 and response: { data:[ .... ] } 以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。","@type":"BlogPosting","headline":"mybatis动态查询实现","@context":"http://schema.org"}</script>
+{"datePublished":"2018-10-30T00:00:00+08:00","url":"http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html","dateModified":"2018-10-30T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html"},"description":"model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。","@type":"BlogPosting","headline":"mybatis动态查询实现","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -67,7 +67,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-between">
-    <a class="navbar-brand font-weight-bold" href="/yqwoe.github.io/index.html">双城记</a>
+    <a class="navbar-brand font-weight-bold" href="/yqwoe.github.io/index.html">Yq Woe</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" >
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -257,6 +257,8 @@
 
 <p>model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
 
+<!--more-->
+
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Product</span> <span class="o">{</span>
     <span class="kt">long</span> <span class="n">id</span><span class="o">;</span>
     <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
@@ -272,10 +274,9 @@
 <span class="k">where</span> <span class="n">id</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">or</span> <span class="n">price</span> <span class="o">&gt;</span> <span class="s1">'100.00'</span> <span class="p">...;</span> 
 </code></pre></div></div>
 
-<blockquote>
-  <p>Where 条件中包含 字段名称、运算符、值。</p>
+<p>Where 条件中包含 字段名称、运算符、值。</p>
 
-  <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
 * 查询类型
 * lt 小于
 * lte 小于等于
@@ -293,18 +294,18 @@
     <span class="n">String</span> <span class="n">type</span> <span class="o">=</span> <span class="s">"and"</span><span class="o">;</span> <span class="c1">// 逻辑运算 and or</span>
     <span class="n">String</span><span class="o">[]</span> <span class="n">values</span><span class="o">;</span> <span class="c1">//如果是in查询转换为字符串数组</span>
 <span class="o">}</span>
-</code></pre></div>  </div>
+</code></pre></div></div>
 
-  <p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
+<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
 
-  <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">QueryParam</span><span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">QueryParam</span><span class="o">{</span>
     <span class="n">List</span><span class="o">&lt;</span><span class="n">Item</span><span class="o">&gt;</span> <span class="n">items</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
 <span class="o">}</span>
-</code></pre></div>  </div>
+</code></pre></div></div>
 
-  <p>mybatis 公共xml文件配置</p>
+<p>mybatis 公共xml文件配置</p>
 
-  <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
 <span class="cp">&lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" &gt;</span>
 <span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">"BaseMapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;sql</span> <span class="na">id=</span><span class="s">"BaseQuery"</span><span class="nt">&gt;</span>
@@ -346,11 +347,11 @@
         <span class="nt">&lt;/if&gt;</span>
     <span class="nt">&lt;/sql&gt;</span>
 <span class="nt">&lt;/mapper&gt;</span>
-</code></pre></div>  </div>
+</code></pre></div></div>
 
-  <p>Product mapper.xml</p>
+<p>Product mapper.xml</p>
 
-  <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
 <span class="cp">&lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" &gt;</span>
 <span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">"com.yqwoe.codegenerator.dao.ProductMapper"</span> <span class="nt">&gt;</span>
   <span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">"BaseResultMap"</span> <span class="na">type=</span><span class="s">"com.yqwoe.codegenerator.model.Product"</span> <span class="nt">&gt;</span>
@@ -368,11 +369,11 @@
     <span class="nt">&lt;include</span> <span class="na">refid=</span><span class="s">"BaseMapper.BaseOrder"</span> <span class="nt">/&gt;</span>
   <span class="nt">&lt;/select&gt;</span>
 <span class="nt">&lt;/mapper&gt;</span>
-</code></pre></div>  </div>
+</code></pre></div></div>
 
-  <p>ProductController</p>
+<p>ProductController</p>
 
-  <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ProductController</span><span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ProductController</span><span class="o">{</span>
     <span class="n">ProductService</span> <span class="n">productService</span><span class="o">;</span>
     
     <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/products"</span><span class="o">)</span>
@@ -380,11 +381,11 @@
         <span class="k">return</span> <span class="n">productService</span><span class="o">.</span><span class="na">selectAll</span><span class="o">(</span><span class="n">param</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div>  </div>
+</code></pre></div></div>
 
-  <h3 id="演示">演示</h3>
+<h3 id="演示">演示</h3>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in
 
 sql: select * from product where 1 = 1 and (name = 'nil?' OR name = '超级管理员')
 
@@ -395,9 +396,7 @@ response:
         ....
     ]
 }
-</code></pre></div>  </div>
-
-</blockquote>
+</code></pre></div></div>
 
 <p>以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。</p>
 
