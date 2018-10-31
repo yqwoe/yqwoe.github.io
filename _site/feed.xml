@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-31T20:57:35+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">Cas Server 本地部署</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html" rel="alternate" type="text/html" title="Cas Server 本地部署" /><published>2018-10-31T00:00:00+08:00</published><updated>2018-10-31T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html">&lt;h1 id=&quot;cas&quot;&gt;Cas&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-31T21:01:58+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">Cas Server 本地部署</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html" rel="alternate" type="text/html" title="Cas Server 本地部署" /><published>2018-10-31T00:00:00+08:00</published><updated>2018-10-31T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html">&lt;h1 id=&quot;cas&quot;&gt;Cas&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/apereo/cas&quot;&gt;Cas&lt;/a&gt;&lt;/strong&gt; 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它能满足身份验证和授权管理的综合平台&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;!--more--&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Cas是一种开放优秀的身份验证协议。&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;!--more--&gt;
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png&quot; /&gt;
@@ -66,7 +66,7 @@ cas.authn.accept.users&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;admin::admin
 
 &lt;p&gt;Cas Server已经setup起来了。&lt;/p&gt;
 
-&lt;p&gt;明天继续更新 Cas Client与Spring boot集成，并实现Cas Server的用户存储数据库。&lt;/p&gt;</content><author><name></name></author><category term="spring boot" /><category term="cas client" /><category term="cas server" /><category term="sso" /><summary type="html">Cas Cas 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它能满足身份验证和授权管理的综合平台 Cas是一种开放优秀的身份验证协议。</summary></entry><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
+&lt;p&gt;明天继续更新 Cas Client与Spring boot集成，并实现Cas Server的用户存储数据库。&lt;/p&gt;</content><author><name></name></author><category term="spring boot" /><category term="cas client" /><category term="cas server" /><category term="sso" /><summary type="html">Cas Cas 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它能满足身份验证和授权管理的综合平台</summary></entry><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
 
 &lt;!--more--&gt;
 
