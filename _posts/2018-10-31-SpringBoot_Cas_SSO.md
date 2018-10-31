@@ -11,7 +11,7 @@ tags:
 
 # Cas
 
-> **[Cas](https://github.com/apereo/cas)** 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它能满足身份验证和授权管理的综合平台
+> **[Cas](https://github.com/apereo/cas)** 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台
 
 <!--more-->
 
