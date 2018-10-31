@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-31T21:02:52+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">Cas Server 本地部署</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html" rel="alternate" type="text/html" title="Cas Server 本地部署" /><published>2018-10-31T00:00:00+08:00</published><updated>2018-10-31T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html">&lt;h1 id=&quot;cas&quot;&gt;Cas&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-31T21:07:08+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">Cas Server 本地部署</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html" rel="alternate" type="text/html" title="Cas Server 本地部署" /><published>2018-10-31T00:00:00+08:00</published><updated>2018-10-31T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html">&lt;h1 id=&quot;cas&quot;&gt;Cas&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/apereo/cas&quot;&gt;Cas&lt;/a&gt;&lt;/strong&gt; 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台&lt;/p&gt;
@@ -62,7 +62,7 @@ cas.authn.accept.users&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;admin::admin
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./build.sh run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;打开浏览器访问&lt;strong&gt;&lt;a href=&quot;http://cas.simple.org:8443/cas&quot;&gt;http://cas.simple.org:8443/cas&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;打开浏览器访问 &lt;a href=&quot;http://cas.simple.org:8443/cas&quot; target=&quot;_blank&quot;&gt;http://cas.simple.org:8443/cas&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Cas Server已经setup起来了。&lt;/p&gt;
 

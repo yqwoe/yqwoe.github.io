@@ -77,7 +77,7 @@ cas.authn.accept.users=admin::admin #静态访问用户名密码 admin/admin
 ./build.sh run
 ```
 
-打开浏览器访问**[http://cas.simple.org:8443/cas](http://cas.simple.org:8443/cas)** 
+打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a>
 
 Cas Server已经setup起来了。
 
