@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-30T21:32:21+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/yqwoe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/yqwoe.github.io/" rel="alternate" type="text/html" /><updated>2018-10-31T20:57:35+08:00</updated><id>http://localhost:4000/yqwoe.github.io/</id><title type="html">Yq Woe</title><subtitle>双城记</subtitle><entry><title type="html">Cas Server 本地部署</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html" rel="alternate" type="text/html" title="Cas Server 本地部署" /><published>2018-10-31T00:00:00+08:00</published><updated>2018-10-31T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/31/SpringBoot_Cas_SSO.html">&lt;h1 id=&quot;cas&quot;&gt;Cas&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/apereo/cas&quot;&gt;Cas&lt;/a&gt;&lt;/strong&gt; 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它能满足身份验证和授权管理的综合平台&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cas是一种开放优秀的身份验证协议。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--more--&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;我在本地部署的是&lt;strong&gt;&lt;a href=&quot;https://github.com/apereo/cas-overlay-template&quot;&gt;cas-overlay-template&lt;/a&gt;&lt;/strong&gt; 分支5.2&lt;/p&gt;
+
+&lt;h2 id=&quot;部署cas-server&quot;&gt;部署Cas Server&lt;/h2&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/apereo/cas-overlay-template.git
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;cas-overlay-template
+git checkout 5.2
+mvn package //因为本地jdk1.8 5.2版本支持
+
+&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; -p src/main/resources 
+&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; -p src/main/resources/services
+&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; /target/cas/WEB-INF/classes/application.prpperties src/main/resources/application.prpperties
+&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; /target/cas/WEB-INF/classes/services/HTTPSandIMAPS-10000001.json src/main/resources/services/HTTPSandIMAPS-10000001.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;applicationproperties&quot;&gt;application.properties&lt;/h4&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;##&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# CAS Server Context Configuration&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
+server.context-path&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/cas
+server.port&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;8443
+
+cas.tgc.secure&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;false  
+&lt;/span&gt;cas.serviceRegistry.initFromJson&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;true
+&lt;/span&gt;server.ssl.enabled&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#禁用https访问&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#...省略&lt;/span&gt;
+cas.authn.accept.users&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;admin::admin &lt;span class=&quot;c1&quot;&gt;#静态访问用户名密码 admin/admin&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;serviceshttpsandimaps-10000001json&quot;&gt;services/HTTPSandIMAPS-10000001.json&lt;/h4&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;@class&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;org.apereo.cas.services.RegexRegisteredService&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;serviceId&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^(https|imaps|http)://.*&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//增加http访问规则&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;HTTPS and IMAPS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10000001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;evaluationOrder&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;以上操作按照顺序执行&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./build.sh run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;打开浏览器访问&lt;strong&gt;&lt;a href=&quot;http://cas.simple.org:8443/cas&quot;&gt;http://cas.simple.org:8443/cas&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cas Server已经setup起来了。&lt;/p&gt;
+
+&lt;p&gt;明天继续更新 Cas Client与Spring boot集成，并实现Cas Server的用户存储数据库。&lt;/p&gt;</content><author><name></name></author><category term="spring boot" /><category term="cas client" /><category term="cas server" /><category term="sso" /><summary type="html">Cas Cas 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它能满足身份验证和授权管理的综合平台 Cas是一种开放优秀的身份验证协议。</summary></entry><entry><title type="html">mybatis动态查询实现</title><link href="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html" rel="alternate" type="text/html" title="mybatis动态查询实现" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic%20condition</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/10/30/mybatis-dynamic-condition.html">&lt;p&gt;model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;=、like 、order by 等常用的查询、排序。&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -670,34 +738,4 @@ curl -I http://localhost:3000  =&amp;gt; HTTP OK 200
 
 &lt;h5 id=&quot;最终无得解决方法是改成-auto我还没有找到更完美解决的办法&quot;&gt;最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。&lt;/h5&gt;
 
-&lt;h5 id=&quot;网上有很多关于--webkit-overflow-scrolling--ios的问题有兴趣的可以研究一下不过我不建议研究一研究估计小半年就过去了也没有答案&quot;&gt;网上有很多关于 -webkit-overflow-scrolling + ios的问题，有兴趣的可以研究一下。&lt;del&gt;不过我不建议研究，一研究估计小半年就过去了，也没有答案&lt;/del&gt;&lt;/h5&gt;</content><author><name></name></author><category term="mac" /><category term="ios" /><category term="macbook pro" /><category term="vue" /><summary type="html">我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。</summary></entry><entry><title type="html">过六一的”儿童”们</title><link href="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html" rel="alternate" type="text/html" title="过六一的&quot;儿童&quot;们" /><published>2018-06-01T00:00:00+08:00</published><updated>2018-06-01T00:00:00+08:00</updated><id>http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC</id><content type="html" xml:base="http://localhost:4000/yqwoe.github.io/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC.html">&lt;blockquote&gt;
-  &lt;h5 id=&quot;今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情&quot;&gt;&lt;em&gt;今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！&lt;/em&gt;&lt;/h5&gt;
-&lt;/blockquote&gt;
-
-&lt;!--more--&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src=&quot;/yqwoe.github.io/static/image/WechatIMG80.jpeg&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
-
-  &lt;p&gt;我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？
-每次当我有”我不是幸运的大多数”这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src=&quot;/yqwoe.github.io/static/image/WechatIMG81.jpeg&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
-
-  &lt;p&gt;我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过”&lt;del&gt;是冬冬毁掉了我的生活&lt;/del&gt;“这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。
-每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。
-说话要小声，走路要小声，就连呼吸都要思考着呼吸，”这样呼吸对吗？我是不是不该这样呼吸？”&lt;/p&gt;
-  &lt;h1 id=&quot;w-t-f-&quot;&gt;&lt;del&gt;&lt;em&gt;“W T F !!!!!!!”&lt;/em&gt;&lt;/del&gt;&lt;/h1&gt;
-
-  &lt;h1 id=&quot;完了完了完了&quot;&gt;&lt;del&gt;&lt;em&gt;“完了完了完了！！！”&lt;/em&gt;&lt;/del&gt;&lt;/h1&gt;
-  &lt;h1 id=&quot;我的生活是不是就这样了&quot;&gt;&lt;del&gt;&lt;em&gt;“我的生活是不是就这样了？”&lt;/em&gt;&lt;/del&gt;&lt;/h1&gt;
-
-  &lt;p&gt;不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,&lt;/p&gt;
-
-  &lt;p&gt;如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，&lt;del&gt;你们是对的！！！！&lt;/del&gt; 你们还只是孩子。&lt;/p&gt;
-
-  &lt;p&gt;写完我也准备开始一天的&lt;em&gt;工作&lt;/em&gt; 了，六一节快乐！&lt;/p&gt;
-
-&lt;/blockquote&gt;</content><author><name></name></author><category term="六一" /><category term="巨婴" /><category term="孩子" /><summary type="html">今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</summary></entry></feed>
+&lt;h5 id=&quot;网上有很多关于--webkit-overflow-scrolling--ios的问题有兴趣的可以研究一下不过我不建议研究一研究估计小半年就过去了也没有答案&quot;&gt;网上有很多关于 -webkit-overflow-scrolling + ios的问题，有兴趣的可以研究一下。&lt;del&gt;不过我不建议研究，一研究估计小半年就过去了，也没有答案&lt;/del&gt;&lt;/h5&gt;</content><author><name></name></author><category term="mac" /><category term="ios" /><category term="macbook pro" /><category term="vue" /><summary type="html">我的开发环境：Macbook pro 、iphone,手机端页面使用vue、scss。本次出现的问题是一个css样式在iphone手机端无法正常显示。</summary></entry></feed>
