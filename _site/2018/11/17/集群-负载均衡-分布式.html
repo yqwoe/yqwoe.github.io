@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/yqwoe.github.io/theme/img/favicon.ico" >
+    <title>
+        
+            集群、负载均衡、分布式 &middot; Yq Woe
+        
+    </title>
+
+    <script src="/yqwoe.github.io/theme/js/jquery-3.2.1.min.js"></script>
+    <script src="/yqwoe.github.io/theme/js/popper.min.js"></script>
+    <script src="/yqwoe.github.io/theme/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/yqwoe.github.io/theme/css/bootstrap.css">
+    <link rel="stylesheet" href="/yqwoe.github.io/theme/css/site.css">
+    <link rel="stylesheet" href="/yqwoe.github.io/theme/css/syntax.css">
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>集群、负载均衡、分布式 | Yq Woe</title>
+<meta name="generator" content="Jekyll v3.8.2" />
+<meta property="og:title" content="集群、负载均衡、分布式" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="下面就我的理解简单通俗的介绍下三者的区别： 1.集群 集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。 就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。 2.负载均衡 至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。 3.分布式 分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。 今天看到个通俗的例子，大家可以借鉴下： 小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。 补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。 1）负载均衡集群（LB:load balancing） 负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化 2）高可用性集群（HA:High Availability） 高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。 在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。 3）高性能集群（HP:High Performance） 通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。 作者：普if加的帕 来源：CSDN 原文：https://blog.csdn.net/qq_34896887/article/details/78616209 版权声明：本文为博主原创文章，转载请附上博文链接！ http://server.51cto.com/News-557053.htm https://www.cnblogs.com/xzwblog/p/7255364.html" />
+<meta property="og:description" content="下面就我的理解简单通俗的介绍下三者的区别： 1.集群 集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。 就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。 2.负载均衡 至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。 3.分布式 分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。 今天看到个通俗的例子，大家可以借鉴下： 小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。 补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。 1）负载均衡集群（LB:load balancing） 负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化 2）高可用性集群（HA:High Availability） 高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。 在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。 3）高性能集群（HP:High Performance） 通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。 作者：普if加的帕 来源：CSDN 原文：https://blog.csdn.net/qq_34896887/article/details/78616209 版权声明：本文为博主原创文章，转载请附上博文链接！ http://server.51cto.com/News-557053.htm https://www.cnblogs.com/xzwblog/p/7255364.html" />
+<link rel="canonical" href="http://localhost:4000/yqwoe.github.io/2018/11/17/%E9%9B%86%E7%BE%A4-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E5%88%86%E5%B8%83%E5%BC%8F.html" />
+<meta property="og:url" content="http://localhost:4000/yqwoe.github.io/2018/11/17/%E9%9B%86%E7%BE%A4-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E5%88%86%E5%B8%83%E5%BC%8F.html" />
+<meta property="og:site_name" content="Yq Woe" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-17T00:00:00+08:00" />
+<script type="application/ld+json">
+{"datePublished":"2018-11-17T00:00:00+08:00","url":"http://localhost:4000/yqwoe.github.io/2018/11/17/%E9%9B%86%E7%BE%A4-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E5%88%86%E5%B8%83%E5%BC%8F.html","dateModified":"2018-11-17T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/yqwoe.github.io/2018/11/17/%E9%9B%86%E7%BE%A4-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E5%88%86%E5%B8%83%E5%BC%8F.html"},"description":"下面就我的理解简单通俗的介绍下三者的区别： 1.集群 集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。 就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。 2.负载均衡 至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。 3.分布式 分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。 今天看到个通俗的例子，大家可以借鉴下： 小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。 补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。 1）负载均衡集群（LB:load balancing） 负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化 2）高可用性集群（HA:High Availability） 高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。 在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。 3）高性能集群（HP:High Performance） 通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。 作者：普if加的帕 来源：CSDN 原文：https://blog.csdn.net/qq_34896887/article/details/78616209 版权声明：本文为博主原创文章，转载请附上博文链接！ http://server.51cto.com/News-557053.htm https://www.cnblogs.com/xzwblog/p/7255364.html","@type":"BlogPosting","headline":"集群、负载均衡、分布式","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<style>
+    table{
+    /* border-left:1px solid #000000;border-top:1px solid #000000; */
+    /* width: 100%; */
+    /* word-wrap:break-word; word-break:break-all; */
+    border: 1px solid #dee2e6;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-collapse: collapse;
+    display: table;
+    border-spacing: 2px;
+    text-align:center;
+  }
+  table thead tbody{
+  display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+  table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,0.05);
+}
+</style>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-between">
+    <a class="navbar-brand font-weight-bold" href="/yqwoe.github.io/index.html">Yq Woe</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="http://localhost:4000/feed.xml" class="nav-link">RSS订阅</a>
+                    </li>
+        
+            <li class="nav-item">
+                <a href='/yqwoe.github.io/index.html'
+                   class="nav-link">
+                    主页
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href='/yqwoe.github.io/about.html'
+                   class="nav-link">
+                    关于
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href='/yqwoe.github.io/list/posts.html'
+                   class="nav-link">
+                    文章
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="container site-container" id="top">
+    <div class="row">
+        <div class="d-none d-lg-block col-lg-4 col-xl-4 side">
+            
+
+
+
+
+
+
+
+
+    <div class="sticky-top space-before">
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <div class="card-title">
+                <h5>2018年11月17日</h5>
+            </div>
+            <div class="d-flex flex-wrap align-items-center">
+                <span class="icon grey mr-2 mb-2">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Price_tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<path d="M19.388,0.405c-0.111-0.314-0.454-0.48-0.769-0.371c-0.315,0.109-0.481,0.455-0.372,0.77
+		c0.929,2.67-0.915,4.664-2.321,5.732l-0.568-0.814c-0.191-0.273-0.618-0.5-0.95-0.504L11.22,5.232
+		c-0.332-0.006-0.825,0.146-1.097,0.338l-9.394,6.587c-0.455,0.32-0.565,0.947-0.247,1.404l4.269,6.108
+		c0.32,0.455,0.831,0.4,1.287,0.082l9.394-6.588c0.27-0.191,0.582-0.603,0.692-0.918l0.998-3.145
+		c0.11-0.314,0.043-0.793-0.148-1.066l-0.346-0.496C18.516,6.091,20.476,3.534,19.388,0.405z M15.017,9.763
+		c-0.727,0.51-1.731,0.332-2.24-0.396c-0.511-0.73-0.333-1.734,0.395-2.246C13.75,6.716,14.5,6.745,15.04,7.138
+		c-0.272,0.164-0.459,0.26-0.494,0.275c-0.301,0.143-0.43,0.504-0.288,0.805c0.104,0.219,0.321,0.348,0.547,0.348
+		c0.086,0,0.174-0.02,0.257-0.059c0.194-0.092,0.402-0.201,0.619-0.33C15.778,8.771,15.542,9.394,15.017,9.763z"/>
+</g>
+</svg>
+
+                </span>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#集群"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        集群
+                    </a>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#负载均衡"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        负载均衡
+                    </a>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#分布式"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        分布式
+                    </a>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#nginx"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        nginx
+                    </a>
+                
+            </div>
+            <div class="d-flex align-items-center mt-2">
+                <span class="icon grey mr-1">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Arrow_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M2.5,10L9,3.5V7h8v6H9v3.5L2.5,10z"/>
+</svg>
+
+                </span>
+                <a href="/yqwoe.github.io/list/posts.html"> 回到文章 </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+        </div>
+        <div class="col-md-12 col-lg-8 col-xl-8 pb-4 content">
+            <link rel="stylesheet" href="/yqwoe.github.io/static/css/gitment.css">
+<script src="/yqwoe.github.io/static/js/gitment.js"></script>
+<h1 class="border border-top-0 border-right-0 border-left-0 mb-3 pb-2">集群、负载均衡、分布式</h1>
+
+<div class="d-md-block d-lg-none">
+    <div class="sticky-top space-before">
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <div class="card-title">
+                <h5>2018年11月17日</h5>
+            </div>
+            <div class="d-flex flex-wrap align-items-center">
+                <span class="icon grey mr-2 mb-2">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Price_tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<path d="M19.388,0.405c-0.111-0.314-0.454-0.48-0.769-0.371c-0.315,0.109-0.481,0.455-0.372,0.77
+		c0.929,2.67-0.915,4.664-2.321,5.732l-0.568-0.814c-0.191-0.273-0.618-0.5-0.95-0.504L11.22,5.232
+		c-0.332-0.006-0.825,0.146-1.097,0.338l-9.394,6.587c-0.455,0.32-0.565,0.947-0.247,1.404l4.269,6.108
+		c0.32,0.455,0.831,0.4,1.287,0.082l9.394-6.588c0.27-0.191,0.582-0.603,0.692-0.918l0.998-3.145
+		c0.11-0.314,0.043-0.793-0.148-1.066l-0.346-0.496C18.516,6.091,20.476,3.534,19.388,0.405z M15.017,9.763
+		c-0.727,0.51-1.731,0.332-2.24-0.396c-0.511-0.73-0.333-1.734,0.395-2.246C13.75,6.716,14.5,6.745,15.04,7.138
+		c-0.272,0.164-0.459,0.26-0.494,0.275c-0.301,0.143-0.43,0.504-0.288,0.805c0.104,0.219,0.321,0.348,0.547,0.348
+		c0.086,0,0.174-0.02,0.257-0.059c0.194-0.092,0.402-0.201,0.619-0.33C15.778,8.771,15.542,9.394,15.017,9.763z"/>
+</g>
+</svg>
+
+                </span>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#集群"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        集群
+                    </a>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#负载均衡"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        负载均衡
+                    </a>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#分布式"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        分布式
+                    </a>
+                
+                    <a href="/yqwoe.github.io/list/posts.html#nginx"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        nginx
+                    </a>
+                
+            </div>
+            <div class="d-flex align-items-center mt-2">
+                <span class="icon grey mr-1">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Arrow_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M2.5,10L9,3.5V7h8v6H9v3.5L2.5,10z"/>
+</svg>
+
+                </span>
+                <a href="/yqwoe.github.io/list/posts.html"> 回到文章 </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<p>下面就我的理解简单通俗的介绍下三者的区别：</p>
+
+<p>1.集群
+  集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
+
+<p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
+
+<p>2.负载均衡
+  至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
+
+<p>3.分布式
+  分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
+
+<p>今天看到个通俗的例子，大家可以借鉴下：</p>
+
+<p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
+
+<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。
+1）负载均衡集群（LB:load balancing）</p>
+
+<p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
+
+<p>2）高可用性集群（HA:High Availability）</p>
+
+<p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
+
+<p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
+
+<p>3）高性能集群（HP:High Performance）</p>
+
+<p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
+
+<p>作者：普if加的帕 
+来源：CSDN 
+原文：https://blog.csdn.net/qq_34896887/article/details/78616209 
+版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+
+<p>http://server.51cto.com/News-557053.htm</p>
+
+<p>https://www.cnblogs.com/xzwblog/p/7255364.html</p>
+
+
+<div id="container"></div>
+<script>
+var myTheme = {
+  render(state, instance) {
+    const container = document.createElement('div')
+    container.lang = "zh-CN"
+    container.className = 'gitment-container gitment-root-container'
+    container.appendChild(instance.renderHeader(state, instance))
+    container.appendChild(instance.renderEditor(state, instance))
+    container.appendChild(instance.renderComments(state, instance))
+    container.appendChild(instance.renderFooter(state, instance))
+    return container
+  },
+}
+console.log(location)
+
+var paths = location.pathname.split('/')
+console.log(paths)
+console.log(decodeURI(paths[paths.length - 1 ]))
+var gitment = new Gitment({
+    id: decodeURI(paths[paths.length - 1 ]),
+  owner: 'yqwoe',
+  repo: 'yqwoe.github.io',
+  oauth: {
+    client_id: '38908a117aeb2426fddb',
+    client_secret: 'fab30686c5598f5ba19e726492b27e33e40eceda',
+  },
+  theme: myTheme
+})
+gitment.render('container')
+</script>
+<style>
+blockquote{
+          font: 14px/22px normal helvetica, sans-serif;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 50px;
+          padding-left: 15px;
+          padding-top: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          border-left: 3px solid #ccc;
+          background-color:none;
+     }
+</style>
+
+
+
+
+
+        </div>
+        <div class="col-md-12 d-lg-none bottom">
+            
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+    'use strict'
+
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+            document.createTextNode(
+                '@-ms-viewport{width:auto!important}'
+            )
+        )
+        document.head.appendChild(msViewportStyle)
+    }
+}())
+</script>
+
+</body>
+<style>
+    blockquote{
+        display:block;
+        background: #fff;
+        padding: 15px 20px 15px 45px;
+        margin: 0 0 20px;
+        position: relative;
+
+        /*字体*/
+        font-family: Georgia, serif;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #666;
+        text-align: justify;
+
+        /*边框 - (选项)*/
+        /*border-left: 15px solid #c76c0c;*/
+        /*border-right: 2px solid #c76c0c;*/
+
+        /*盒子阴影 - (选项)*/
+        -moz-box-shadow: 2px 2px 15px #ccc;
+        -webkit-box-shadow: 2px 2px 15px #ccc;
+        box-shadow: 2px 2px 15px #ccc;
+    }
+    blockquote::before{
+        content: "\201C"; /*左双引号的Unicode编码*/
+
+        /*字体*/
+        font-family: Georgia, serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #999;
+
+        /*位置*/
+        position: absolute;
+        left: 10px;
+        top:5px;
+    }
+    blockquote::after{
+        content: ""; /*如果要显示右双引号，则写 content: "\201D"; */
+    }
+    img{
+        width: 100%;
+    }
+</style>
+
+</html>
