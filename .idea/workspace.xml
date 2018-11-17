@@ -3,40 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c503587f-4c43-4c21-b6de-939757ddcd3e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-10-31-SpringBoot_Cas_SSO.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-10-31-SpringBoot_Cas_SSO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/05/30/生活-我的第一篇博客.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/05/30/生活-我的第一篇博客.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/05/31/技巧-给博客增加评论功能.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/05/31/技巧-给博客增加评论功能.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/06/01/生活-过六一的-儿童-们.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/01/生活-过六一的-儿童-们.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/06/02/前端-一次ios网页样式问题排查心路历程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/02/前端-一次ios网页样式问题排查心路历程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/06/03/git-一次gogs踩坑之旅.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/03/git-一次gogs踩坑之旅.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/06/04/nginx-acme.sh-nginx-ssl.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/04/nginx-acme.sh-nginx-ssl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/06/05/mysql-阿里云mysql外网访问.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/06/05/mysql-阿里云mysql外网访问.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/07/28/生活-生活计划.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/07/28/生活-生活计划.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/10/06/程序员数学1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/10/06/程序员数学1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/10/09/英语学习.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/10/09/英语学习.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/10/12/ruby-爬虫-一.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/10/12/ruby-爬虫-一.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/10/30/mybatis-dynamic-condition.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/10/30/mybatis-dynamic-condition.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2018/10/31/SpringBoot_Cas_SSO.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/10/31/SpringBoot_Cas_SSO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/010-acme.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/010-acme.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/020-globex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/020-globex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/030-umbrella.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/030-umbrella.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/040-cyberdyne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/040-cyberdyne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/_portfolio/050-wayne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_portfolio/050-wayne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/list/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/list/posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/list/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/list/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/010-acme.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/010-acme.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/020-globex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/020-globex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/030-umbrella.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/030-umbrella.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/040-cyberdyne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/040-cyberdyne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/portfolio/050-wayne.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/portfolio/050-wayne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/install.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/install.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/madeup.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/madeup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/yetanother.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/yetanother.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -123,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="591">
-              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
             </state>
           </provider>
         </entry>
@@ -359,22 +326,22 @@
       <workItem from="1539320638340" duration="837000" />
       <workItem from="1539321710138" duration="1083000" />
       <workItem from="1540886107742" duration="1833000" />
-      <workItem from="1540990856066" duration="63000" />
+      <workItem from="1540990856066" duration="661000" />
+      <workItem from="1541057743356" duration="476000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44512000" />
+    <option name="totallyTimeSpent" value="45586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -687,7 +654,7 @@
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
         </state>
       </provider>
     </entry>
