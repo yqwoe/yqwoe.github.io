@@ -2,14 +2,14 @@
 permalink: /:categories/:year/:month/:day/:title.html
 
 # Conversion
-markdown:         kramdown
-highlighter:      rouge
+markdown: kramdown
+highlighter: rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title:            Yq Woe  # Site title
-name:             Yq Woe            # Your name
-avatar:           /theme/img/photo.png   # Path to an avatar image
+title: rm-rf.one # Site title
+name: Yq Woe # Your name
+avatar: /theme/img/photo.png # Path to an avatar image
 
 # The theme uses the baseurl throughout, which is useful for running the entire
 # site under a subdir, like for this GitHub Pages deployment as a project site.
@@ -30,36 +30,31 @@ collections:
     permalink: /:collection/:name.html
 
 defaults:
-# Turn the profile sidebar on for all pages by default, except for the
-# collections, where it is off and replaced by useful things on the sidebar.
-# To override this one a page, use
-#    show_profile: false
-# to hide the profile.
-  -
-    scope:
+  # Turn the profile sidebar on for all pages by default, except for the
+  # collections, where it is off and replaced by useful things on the sidebar.
+  # To override this one a page, use
+  #    show_profile: false
+  # to hide the profile.
+  - scope:
       path: ""
     values:
       show_profile: true
-  -
-    scope:
+  - scope:
       path: "_posts"
     values:
       show_profile: false
       layout: defaults/post
-  -
-    scope:
+  - scope:
       path: "_portfolio"
     values:
       show_profile: false
       layout: defaults/portfolio
-  -
-    scope:
+  - scope:
       path: "_projects"
     values:
       show_profile: false
       layout: defaults/project
-  -
-    scope:
+  - scope:
       path: "list"
     values:
       show_profile: false
@@ -74,10 +69,8 @@ defaults:
 
 #paginate: 5
 #paginate_path: "page:num"
-description:  双城记
-url:          http://yqwoe.space
+description: 双城记
+url: http://rm-rf.one
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
-
-
