@@ -15,8 +15,8 @@ site:
   description: To destroy is to create!
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: http://rm-rf.one
-baseurl:
+url: https://rm-rf.one/
+baseurl: /*
 permalink: pretty
 
 # Pagination
