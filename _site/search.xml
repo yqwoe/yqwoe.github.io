@@ -2,10 +2,12 @@
 <search>
   
     <entry>
-      <title><![CDATA[《小王子》]]></title>
-      <url>/2020/03/16/%E5%B0%8F%E7%8E%8B%E5%AD%90-%E9%98%85%E8%AF%BB/</url>
+      <title><![CDATA[《小王子》阅读]]></title>
+      <url>/%E8%AF%BB%E4%B9%A6/2020/03/16/%E5%B0%8F%E7%8E%8B%E5%AD%90-%E9%98%85%E8%AF%BB/</url>
       <content type="text"><![CDATA[  ​		《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。  ​		旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。  ​		小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。  ​		小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。]]></content>
       <categories>
+        
+          <category> 读书 </category>
         
       </categories>
       <tags>
@@ -30,9 +32,11 @@
   
     <entry>
       <title><![CDATA[集群、负载均衡、分布式]]></title>
-      <url>/2018/11/17/%E9%9B%86%E7%BE%A4-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E5%88%86%E5%B8%83%E5%BC%8F/</url>
+      <url>/%E6%9C%8D%E5%8A%A1%E5%99%A8/2018/11/17/%E9%9B%86%E7%BE%A4-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E5%88%86%E5%B8%83%E5%BC%8F/</url>
       <content type="text"><![CDATA[下面就我的理解简单通俗的介绍下三者的区别：1.集群  集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。2.负载均衡  至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。3.分布式  分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。今天看到个通俗的例子，大家可以借鉴下：小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。1）负载均衡集群（LB:load balancing）负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化2）高可用性集群（HA:High Availability）高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。3）高性能集群（HP:High Performance）通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。作者：普if加的帕 来源：CSDN 原文：https://blog.csdn.net/qq_34896887/article/details/78616209 版权声明：本文为博主原创文章，转载请附上博文链接！http://server.51cto.com/News-557053.htmhttps://www.cnblogs.com/xzwblog/p/7255364.html]]></content>
       <categories>
+        
+          <category> 服务器 </category>
         
       </categories>
       <tags>
@@ -51,9 +55,11 @@
   
     <entry>
       <title><![CDATA[nginx 负载均衡]]></title>
-      <url>/2018/11/17/nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
+      <url>/nginx/2018/11/17/nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
       <content type="text"><![CDATA[nginx是什么？  Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个IMAP/POP3/SMTP代理服务器；也就是说，Nginx本身就可以托管网站，进行HTTP服务处理，也可以作为反向代理服务器使用。nginx 特点      跨平台：Nginx 可以在大多数 Unix like OS编译运行，而且也有Windows的移植版本。    配置异常简单：非常容易上手。配置风格跟程序开发一样，神一般的配置    非阻塞、高并发连接：数据复制时，磁盘I/O的第一阶段是非阻塞的。官方测试能够支撑5万并发连接，在实际生产环境中跑到2～3万并发连接数.(这得益于Nginx使用了最新的epoll模型)    事件驱动：通信机制采用epoll模型，支持更大的并发连接。  nginx 特性master/worker结构：一个master进程，生成一个或多个worker进程内存消耗小：处理大并发的请求内存消耗非常小。在3万并发连接下，开启的10个Nginx 进程才消耗150M内存（15M*10=150M） 成本低廉：Nginx为开源软件，可以免费使用。而购买F5 BIG-IP、NetScaler等硬件负载均衡交换机则需要十多万至几十万人民币内置的健康检查功能：如果 Nginx Proxy 后端的某台 Web 服务器宕机了，不会影响前端访问。节省带宽：支持 GZIP 压缩，可以添加浏览器本地缓存的 Header 头。稳定性高：用于反向代理，宕机的概率微乎其微1、nginx代理和后端web服务器间无需长连接；2、接收用户请求是异步的，即先将用户请求全部接收下来，再一次性发送后后端web服务器，极大的减轻后端web服务器的压力3、发送响应报文时，是边接收来自后端web服务器的数据，边发送给客户端的4、网络依赖型低。NGINX对网络的依赖程度非常低，理论上讲，只要能够ping通就可以实施负载均衡，而且可以有效区分内网和外网流量5、支持服务器检测。NGINX能够根据应用服务器处理页面返回的状态码、超时信息等检测服务器是否出现故障，并及时返回错误的请求重新提交到其它节点上nginx 配置upstream www.blog.com {            #upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。            server 192.168.80.121:80 weight=3;            server 192.168.80.122:80 weight=2;            server 192.168.80.123:80 weight=3;            }      ]]></content>
       <categories>
+        
+          <category> nginx </category>
         
       </categories>
       <tags>
@@ -74,9 +80,11 @@
   
     <entry>
       <title><![CDATA[Cas Server 本地部署]]></title>
-      <url>/2018/10/31/SpringBoot_Cas_SSO/</url>
+      <url>/cas/2018/10/31/SpringBoot_Cas_SSO/</url>
       <content type="text"><![CDATA[Cas  Cas 中心认证服务。Cas是一种面向Web的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台  Cas是一种开放优秀的身份验证协议。我在本地部署的是cas-overlay-template 分支5.2部署Cas Servergit clone https://github.com/apereo/cas-overlay-template.gitcd cas-overlay-templategit checkout 5.2mvn package //因为本地jdk1.8 5.2版本支持mkdir -p src/main/resources mkdir -p src/main/resources/servicescp /target/cas/WEB-INF/classes/application.prpperties src/main/resources/application.prppertiescp /target/cas/WEB-INF/classes/services/HTTPSandIMAPS-10000001.json src/main/resources/services/HTTPSandIMAPS-10000001.jsonapplication.properties### CAS Server Context Configuration#server.context-path=/casserver.port=8443cas.tgc.secure=false  cas.serviceRegistry.initFromJson=trueserver.ssl.enabled=false #禁用https访问#...省略cas.authn.accept.users=admin::admin #静态访问用户名密码 admin/adminservices/HTTPSandIMAPS-10000001.json{  "@class" : "org.apereo.cas.services.RegexRegisteredService",  "serviceId" : "^(https|imaps|http)://.*", //增加http访问规则  "name" : "HTTPS and IMAPS",  "id" : 10000001,  "description" : "This service definition authorizes all application urls that support HTTPS and IMAPS protocols.",  "evaluationOrder" : 10000}以上操作按照顺序执行./build.sh run打开浏览器访问 http://cas.simple.org:8443/casCas Server已经setup起来了。明天继续更新 Cas Client与Spring boot集成，并实现Cas Server的用户存储数据库。]]></content>
       <categories>
+        
+          <category> Cas </category>
         
       </categories>
       <tags>
@@ -95,9 +103,11 @@
   
     <entry>
       <title><![CDATA[mybatis动态查询实现]]></title>
-      <url>/2018/10/30/mybatis-dynamic-condition/</url>
+      <url>/mybatis/2018/10/30/mybatis-dynamic-condition/</url>
       <content type="text"><![CDATA[model Product，我们希望通过实现service的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。class Product {    long id;    String name;    String category;    String price;    String ...;}分析:select * from productwhere id &gt; 1 or price &gt; '100.00' ...; Where 条件中包含 字段名称、运算符、值。/*** 查询类型* lt 小于* lte 小于等于* gt 大于* gte 大于等于* slike 'value%' start_with* elike '%value' end_with* like '%value%'* in 1,2,3,4,5*/class Item {    String name; //字段名称    String value; //值    String itemType; //查询类型    String type = "and"; // 逻辑运算 and or    String[] values; //如果是in查询转换为字符串数组}以上是对查询条件的简单封装,如果我们需要满足多个条件的话。class QueryParam{    List&lt;Item&gt; items = null;}mybatis 公共xml文件配置&lt;?xml version="1.0" encoding="UTF-8" ?&gt;&lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" &gt;&lt;mapper namespace="BaseMapper"&gt;    &lt;sql id="BaseQuery"&gt;        &lt;if test="items != null "&gt;            where 1 = 1            &lt;foreach collection="items" item="item" index="index"                     separator=" "&gt;                &lt;if test="item.itemType == 'eq' "&gt;                    ${item.type} ${item.fieldName} = #{item.value}                &lt;/if&gt;                &lt;if test="item.itemType == 'lt' "&gt;                    &lt;![CDATA[  ${item.type}  ${item.name} &lt; #{item.value} ]]&gt;                &lt;/if&gt;                &lt;if test="item.itemType == 'lte' "&gt;                    &lt;![CDATA[ ${item.type}  ${item.name} &lt;= #{item.value} ]]&gt;                &lt;/if&gt;                &lt;if test="item.itemType == 'gt' "&gt;                    &lt;![CDATA[  ${item.type}  ${item.name} &gt; #{item.value} ]]&gt;                &lt;/if&gt;                &lt;if test="item.itemType == 'gte' "&gt;                    &lt;![CDATA[  ${item.type}  ${item.name} &gt;= #{item.value} ]]&gt;                &lt;/if&gt;                &lt;if test="item.itemType == 'slike' "&gt;                    &lt;![CDATA[  ${item.type}  ${item.name} like '${item.value}%' ]]&gt;                &lt;/if&gt;                &lt;if test="item.typeitemType == 'elike' "&gt;                    &lt;![CDATA[  ${item.type}  ${item.name} like '%${item.value}' ]]&gt;                &lt;/if&gt;                &lt;if test="item.itemType == 'like' "&gt;                    &lt;![CDATA[  AND ${item.name} like '%${item.value}%' ]]&gt;                &lt;/if&gt;                &lt;if test="item.itemType == 'in' "&gt;                    ${item.type}                     &lt;foreach collection="item.values" item="value" index="index" open="(" close=")" separator="OR"&gt;                        ${item.name} =  #{value}                    &lt;/foreach&gt;                &lt;/if&gt;            &lt;/foreach&gt;        &lt;/if&gt;    &lt;/sql&gt;&lt;/mapper&gt;Product mapper.xml&lt;?xml version="1.0" encoding="UTF-8" ?&gt;&lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" &gt;&lt;mapper namespace="com.yqwoe.codegenerator.dao.ProductMapper" &gt;  &lt;resultMap id="BaseResultMap" type="com.yqwoe.codegenerator.model.Product" &gt;    &lt;id column="u_id" property="uId" jdbcType="VARCHAR" /&gt;      &lt;!--省略 --&gt;  &lt;/resultMap&gt;  &lt;sql id="Base_Column_List" &gt;    id, name, category, price ,.....  &lt;/sql&gt;  &lt;select id="selectAll" resultMap="BaseResultMap" parameterType="com.yqwoe.model.param.QueryParam"&gt;    select    &lt;include refid="Base_Column_List" /&gt;    from s_user    &lt;include refid="BaseMapper.BaseQuery"/&gt;    &lt;include refid="BaseMapper.BaseOrder" /&gt;  &lt;/select&gt;&lt;/mapper&gt;ProductControllerclass ProductController{    ProductService productService;        @GetMapping("/products")    public Pageinfo index(QueryParam param){        return productService.selectAll(param);    }}演示api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=insql: select * from product where 1 = 1 and (name = 'nil?' OR name = '超级管理员')//type 默认为 andresponse:{    data:[        ....    ]}以上为动态查询，照这样的思路，可以继续围绕mapper扩展排序或者更复杂的查询。]]></content>
       <categories>
+        
+          <category> mybatis </category>
         
       </categories>
       <tags>
@@ -114,9 +124,11 @@
   
     <entry>
       <title><![CDATA[ruby 爬虫 一]]></title>
-      <url>/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80/</url>
+      <url>/%E7%88%AC%E8%99%AB/2018/10/12/ruby-%E7%88%AC%E8%99%AB-%E4%B8%80/</url>
       <content type="text"><![CDATA[​	拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。Time.now.to_s =&gt; "2018-10-30 20:29:36 +0800"​	印象中，大多数人做爬虫第一个想到的肯定是python，”python解决方案多，代码简洁，容易上手…“,blah..blah​	事实上我也写python，但是强制缩进这点让我很伤脑筋，没用ruby之前，我觉得python可能是我做java以来最优雅的语言。直到我用ruby。10.times do |i|	puts "I Love Ruby!!"end=&gt;"I Love Ruby!!""I Love Ruby!!""I Love Ruby!!""I Love Ruby!!""I Love Ruby!!""I Love Ruby!!""I Love Ruby!!""I Love Ruby!!""I Love Ruby!!""I Love Ruby!!"​	废话不多说。​	为什么选择用ruby，而不用python呢？​	不为别的，就是顺手而已。kimurai  Kimurai 是一个用Ruby 实现的现代网络爬虫框架，和 Headless Chromium / Firefox 、PhantomJS 一样开箱即用，并且能够模拟“用户”访问抓取javascript交互的网站。  Kimurai基于 Capybara 和 Nokogir gems，所以你不必学习新的东西。实操1.安装gem install kimurai 使用chromiumdriver 或phantomJS需另外安装。2.创建项目demokimurai提供了像rails new project这样的命令式创建项目。kimurai generate project demo等待命令执行完成会生成如下结构|demo	|config  #用于存放全局配置		|application.rb #全局配置		|automaiton.yml #用于配置浏览器和部署		|schedule.rb #支持定时任务	|db #数据库文件？	|helpers #辅助方法	|lib #插件	|log #日志	|pipelines 	|spiders #爬虫存放目录	|tmp #缓存文件3.创建spiderkimurai generate spider test_spider#demo/spiders/test_spider.rbclass TestSpider &lt; ApplicationSpider  @name = "test_spider"  @start_urls = []  @config = {}  def parse(response, url:, data: {})  endend4.修改spiderclass TestSpider &lt; ApplicationSpider  @name = "test_spider"  @start_urls = ["https://baike.pcbaby.com.cn"]  def parse(response, url:, data: {})    items = {}    items[:links] = []    response.xpath("//div[@class='baike-th main']").each do |row|      logger.info row.to_s      items[:links] &lt;&lt; {          title: row.css("/a").text.squish,          url: "https:#{row.css("/a").first["href"]}"      }    end    save_to "results.json", items, format: :pretty_json  endendresults.json[  {    "links": [      {        "title": "备孕百科",        "url": "https://baike.pcbaby.com.cn/yunqian.html"      },      {        "title": "孕期百科",        "url": "https://baike.pcbaby.com.cn/yunqi.html"      },      {        "title": "分娩百科",        "url": "https://baike.pcbaby.com.cn/fenmian.html"      },      {        "title": "月子百科",        "url": "https://baike.pcbaby.com.cn/yuezi.html"      },      {        "title": "新生儿百科",        "url": "https://baike.pcbaby.com.cn/xinshenger.html"      },      {        "title": "0-1岁百科",        "url": "https://baike.pcbaby.com.cn/yinger.html"      },      {        "title": "1-3岁百科",        "url": "https://baike.pcbaby.com.cn/youer.html"      },      {        "title": "3-6岁百科",        "url": "https://baike.pcbaby.com.cn/xuelingqian.html"      },      {        "title": "用品百科",        "url": "https://baike.pcbaby.com.cn/yongpin.html"      },      {        "title": "美食百科",        "url": "https://baike.pcbaby.com.cn/meishi.html"      },      {        "title": "生活百科",        "url": "https://baike.pcbaby.com.cn/shenghuo.html"      }    ],    "position": 1  }]5.application_spider.rb# ApplicationSpider is a default base spider class. You can set here# default settings for all spiders inherited from ApplicationSpider.# To generate a new spider, run: `$ kimurai generate spider spider_name`require 'net/http'require 'kimurai'class ApplicationSpider &lt; Kimurai::Base  include ApplicationHelper      @engine = :selenium_chrome  USER_AGENTS = []  # PROXIES = ["127.0.0.1:1086:socks5"]  @config = {    user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",    skip_request_errors: [{ error: RuntimeError, message: "404 =&gt; Net::HTTPNotFound" }],	retry_request_errors: [Net::ReadTimeout],    restart_if: {    },    before_request: {        delay: 4..7    }  }end6.运行bundle exec kimurai runner -j 3 可以依次运行多个爬虫。按照以上步骤可以运行示例中的代码。更多细节配置可以查看 kimurai]]></content>
       <categories>
+        
+          <category> 爬虫 </category>
         
       </categories>
       <tags>
@@ -137,9 +149,11 @@
   
     <entry>
       <title><![CDATA[英语学习]]></title>
-      <url>/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
+      <url>/%E5%AD%A6%E4%B9%A0/2018/10/09/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
       <content type="text"><![CDATA[App: duolinguo（多邻国）你使用Duolingo的时候你不单单是在学外语，你还是个译者。Duolingo里面还有一个Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的strength就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo提供了一个非常科学有效的复习管理系统。语法手册《无敌英语语法终身学习版(最新修订)》待补充..]]></content>
       <categories>
+        
+          <category> 学习 </category>
         
       </categories>
       <tags>
@@ -154,9 +168,11 @@
   
     <entry>
       <title><![CDATA[程序员数学1]]></title>
-      <url>/2018/10/06/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A61/</url>
+      <url>/%E5%AD%A6%E4%B9%A0/2018/10/06/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A61/</url>
       <content type="text"><![CDATA[学习列表:2进制:	2503 	1251  余  1  ==&gt; 1	625   余  1  ==&gt; 1	312   余  1  ==&gt; 1		156   余  0  ==&gt; 0	78    余  0  ==&gt; 0	39    余  0  ==&gt; 0		19    余  1  ==&gt; 1	9     余  1  ==&gt; 1	4     余  1  ==&gt; 1		2     余  0  ==&gt; 0	1     余  0  ==&gt; 0  	0     余  1  ==&gt; 1		111 000 111 001指数:	10 ** 3 = 1000	10 ** 2 = 100 	 (1000 * 1/10)	10 ** 1 = 10  	 (100 * 1/10)	10 ** 0 = ？ 	 (10 * 1/10)	10 ** -1 = (1/10)  指数每减1，数字就变为原来的十分之一。  指数法则:  N ** a + N ** b = N ** (a + b)      N &gt; 0  0 所起的作用:  0的作用: 占位  ​	2503 中 0 如果省略，那就变成253.数值放生了变化，所以0不能省略。  ##]]></content>
       <categories>
+        
+          <category> 学习 </category>
         
       </categories>
       <tags>
@@ -171,9 +187,11 @@
   
     <entry>
       <title><![CDATA[生活计划]]></title>
-      <url>/2018/07/28/%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92/</url>
+      <url>/%E7%94%9F%E6%B4%BB/2018/07/28/%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92/</url>
       <content type="text"><![CDATA[有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。所以，我深刻的意识到有一个健康的身体太重要了。以下是我近期的生活计划            时间      项目      时长                  06:00      山地车      2h              08:00      早饭 、洗漱      1h              09:00      工作时间      3h              12:00      午饭、午休      2h              14:00      工作时间      4h              18:00      遛娃、买菜、做饭      2h              20:00      孩子洗澡      1h              21:00      二人世界      2h              –      结束      14h      饮食（待补充..）]]></content>
       <categories>
+        
+          <category> 生活 </category>
         
       </categories>
       <tags>
@@ -192,9 +210,11 @@
   
     <entry>
       <title><![CDATA[阿里云mysql外网访问]]></title>
-      <url>/2018/06/05/mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
+      <url>/%E6%9C%8D%E5%8A%A1%E5%99%A8/2018/06/05/mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
       <content type="text"><![CDATA[转载原文评论: 阿里云 ecs 上安装了 mysql 但是外网访问不了1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则    2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%3.mysql 默认只能自本机访问/etc/mysql/mysql.conf.d/mysqld.cnf#bind-address = 127.0.0.1service mysql restart4.检查是不是在监听状态netstat -ntpl |grep 33065.防火墙是否对 mysql 端口限制,设置防火墙]]></content>
       <categories>
+        
+          <category> 服务器 </category>
         
       </categories>
       <tags>
@@ -213,9 +233,11 @@
   
     <entry>
       <title><![CDATA[nginx支持ssl+acme.sh定时更新证书]]></title>
-      <url>/2018/06/04/nginx-acme.sh-nginx-ssl/</url>
+      <url>/nginx/2018/06/04/nginx-acme.sh-nginx-ssl/</url>
       <content type="text"><![CDATA[不废话，直接进入实战。1.安装nginxapt updateapt install nginx2.配置nginxvi /etc/nginx/sites-enabled/defaultserver {  listen 80;  server_name example.com ;  return 301 https://example.com$request_uri;}server {  listen 443 ssl;  server_name example.com;  ssl on;  ssl_certificate         /var/www/ssl/example.com.cer;  ssl_certificate_key     /var/www/ssl/example.com.key;  ssl_dhparam             /var/www/ssl/dhparam.pem;  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;  ssl_prefer_server_ciphers on;  ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5; #加密算法(CloudFlare 推荐的加密套件组)  ssl_session_timeout 5m; #客户端会话缓存时间  ssl_session_cache builtin:1000 shared:SSL:10m; #SSL 会话缓存类型和大小  root /var/www/example/current/public;  access_log /var/www/example/current/log/nginx.access.log;  error_log /var/www/example/current/log/nginx.error.log info;    error_page 500 502 503 504 /500.html;  client_max_body_size 10M;  keepalive_timeout 10;}3.安装acme.shcurl https://get.acme.sh | shsource ~/.bashrc备注:如果本地创建了.bash_profie建议把此命令加入4.申请证书acme.sh --issue -d example.com -w /var/www/example/current/public备注: 命令中的目录一定是通过nginx 80端口能够访问到的位置。命令执行成功后证书会存放在 ~/.acme.sh/example.com/5.设置证书，并重启nginxacme.sh --installcert -d example.com \               --keypath       /var/www/ssl/example.com.key  \               --fullchainpath /var/www/ssl/example.com.cer \               --reloadcmd     "nginx -s reload"6.生成 dhparam.pem 文件openssl dhparam -out /var/www/ssl/dhparam.pem 2048备注：注意观察的话，证书和dhparam.pem的目录和nginx中是保持一致的。7.查看定时更换任务$ crontab -l0 0 * * * "/home/ubuntu/.acme.sh"/acme.sh --cron --home "/home/ubuntu/.acme.sh" &gt; /dev/null8.验证acme.sh定时更换任务acme.sh --cron -f9.你可能遇到的问题使用 acme.sh 给 Nginx 安装 Let’ s Encrypt 提供的免费 SSL 证书]]></content>
       <categories>
+        
+          <category> nginx </category>
         
       </categories>
       <tags>
@@ -238,9 +260,11 @@
   
     <entry>
       <title><![CDATA[一次gogs采坑之旅]]></title>
-      <url>/2018/06/03/git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
+      <url>/%E6%9C%8D%E5%8A%A1%E5%99%A8/2018/06/03/git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
       <content type="text"><![CDATA[一定要按照操作步骤走1.创建用户，一定要记住密码sudo adduser gitsu gitcd ~2.下载并解压安装包wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zipunzip gogs_0.11.43_linux_amd64.zip3.拷贝启动项到系统下cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/ chmod +x /etc/init.d/gogs4.安装mysqlapt update apt install mysql-servermysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sqlmysql -u root -p&gt; # （输入密码）&gt; create user 'gogs'@'localhost' identified by '密码';&gt; grant all privileges on gogs.* to 'gogs'@'localhost';&gt; flush privileges;&gt; exit;5.启动gogsservice gogs startcurl -I http://localhost:3000  =&gt; HTTP OK 2006.nginx配置  server {        listen       80;        server_name  www.example.com;        location / {            proxy_pass http://localhost:3000/;        }  }7.访问www.example.com/install 进行初始化8.你可能遇到的问题Gogs与Linux主机共享SSH22端口装Gogs后ssh无法和远程登录同时使用的解决方案]]></content>
       <categories>
+        
+          <category> 服务器 </category>
         
       </categories>
       <tags>
@@ -261,9 +285,11 @@
   
     <entry>
       <title><![CDATA[一次ios网页样式问题排查心路历程]]></title>
-      <url>/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</url>
+      <url>/css/2018/06/02/%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</url>
       <content type="text"><![CDATA[我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。大概是这样：选中的区域无法正常显示。准备调试环境：1.打开 sifari 的开发模式。2.手机 sifari 打开调试模式3.手机连接电脑勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。正经话题，我是如何找到问题并解决的。#####调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。最后锁定body {  -webkit-overflow-scrolling: touch;}-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。最常见的例子就是，在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。通过动态添加内容撑开容器，结果根本不能滑动的 bug。最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。不过我不建议研究，一研究估计小半年就过去了，也没有答案]]></content>
       <categories>
+        
+          <category> css </category>
         
       </categories>
       <tags>
@@ -282,9 +308,11 @@
   
     <entry>
       <title><![CDATA[过六一的"儿童"们]]></title>
-      <url>/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC/</url>
+      <url>/%E7%94%9F%E6%B4%BB/2018/06/01/%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84-%E5%84%BF%E7%AB%A5-%E4%BB%AC/</url>
       <content type="text"><![CDATA[  今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！  刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。    我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？每次当我有”我不是幸运的大多数”这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。    我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过”是冬冬毁掉了我的生活“这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。说话要小声，走路要小声，就连呼吸都要思考着呼吸，”这样呼吸对吗？我是不是不该这样呼吸？”  “W T F !!!!!!!”  “完了完了完了！！！”  “我的生活是不是就这样了？”  不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,  如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，你们是对的！！！！ 你们还只是孩子。  写完我也准备开始一天的工作 了，六一节快乐！]]></content>
       <categories>
+        
+          <category> 生活 </category>
         
       </categories>
       <tags>
@@ -301,9 +329,11 @@
   
     <entry>
       <title><![CDATA[给博客增加评论功能]]></title>
-      <url>/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+      <url>/jekyll/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
       <content type="text"><![CDATA[首先感谢@imsun大神的插件Gitment插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：giment.js 、 giement.css下边是操作步骤，不是技术同学先参考一下Gitment Demo Page 再进行操作。  Jekyll教程  Gitment Readme基本使用1. 注册 OAuth ApplicationNew OAuth ，填写内容时候确保 callback URL 与你的博客地址域名一致。2.引入js、css 到文章页面&lt;div id="container"&gt;&lt;/div&gt;&lt;link rel="stylesheet" href="https://yqwoe.space/yqwoe.github.io/static/css/gitment.css"&gt;&lt;script src="https://yqwoe.space/yqwoe.github.io/static/js/gitment.js"&gt;&lt;/script&gt;&lt;script&gt;/***第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。*/var paths = location.pathname.split('/')var id = decodeURI(paths[paths.length - 1 ]))var gitment = new Gitment({  id: id, // 必填，不然评论信息不会加载成功！  owner: '你的 GitHub ID',  repo: '存储评论的 repo',  oauth: {    client_id: '你注册 OAuth 的 client ID',    client_secret: '你注册 OAuth 的 client secret',  },})gitment.render('container')&lt;/script&gt;3. 初始化评论页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。敲黑板，下一篇博客会介绍 《Jekyll-Admin 插件的使用方法》和一些填坑技巧。我的博客评论功能目前只支持全球最大同性交友网站Github的账号，以后会慢慢扩展。以上是我的分享，谢谢！！]]></content>
       <categories>
+        
+          <category> Jekyll </category>
         
       </categories>
       <tags>
@@ -322,9 +352,11 @@
   
     <entry>
       <title><![CDATA[第一篇博客]]></title>
-      <url>/2018/05/30/%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      <url>/%E7%94%9F%E6%B4%BB/2018/05/30/%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       <content type="text"><![CDATA[今天是2018年05月30日，2015年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是2017年12月22日 早上05:15分 出生。一生中有很多重要时刻，而能让你清晰的记得的，只有几个 — 成人礼、成家、生子。    距离辞职已经一个月了，那是做了很长的时间斗争，在五月的一个早晨做的决定。每天早出晚归，早上孩子没有睡醒我就爬起来上班，晚上孩子睡着了，我才到家。那段时间我只要抱他就会哭，所以就决定在家里多陪陪他们母子俩。作为新手自由职业者，也有一个月时间了，这段时间我的作息及其不规律，很多次夜里12点之后睡觉，早上10点起床。不建议自律性比较差的同学从事自由职业。这是我的第一篇博客，上一次写不记得是什么时候了,还没有组织好语言要说些什么，下边我就引用一下Bob Dylan 的 《犹如滚石》，像一颗滚石一样顽强的活着吧！！！！  《Like a Rolling Stone》  作词 : Dylan  Once upon a time you dressed so fine  &lt;div align=center&gt; &lt;/div&gt;  Threw bums a dime in your prime,  随手抛给路边潦倒不堪的乞丐几个小钱，  didn’t you?  对不？  People’d call say, Beware doll,  人们屡屡良言相劝:”成熟点小丫头，你早晚得明白什么叫风水轮流转”  You thought they were all  而你只当他们  kidding you  存心嘲弄视若不见  You used to laugh about  你总是肆意嗤笑着毫不掩饰自己的优越感  Everybody that was hangin’ out  那些落魄人儿游荡飘零在外  Now you don’t talk so loud  你那些高谈阔论怎么收起来了？  Now you don’t seem so proud  你那高贵的头颅怎么低下去了？  About having to be scrounging your next meal  只因今天的你已三餐不继，衣食无着，为寻生计迫不得已四处奔波。  How does it feel, how does it feel?  这滋味如何？ 这滋味如何？  To be without a home  你孑身独行 找不到回家的方向  Like a complete unknown, like a rolling stone  完全没有人知道你颠沛流离一如滚石  You’ve gone to the finest schools,  你考上了一所名牌校  but you know you only used to  可你也清楚  alright miss lonely  你除了被榨干的灵魂外  get juiced in it  一无所获  Nobody’s ever taught you  你从不曾想过  how to live out on the street  真实的底层社会该是怎般图景  And now you’re gonna have to get used to it  如今你为了讨生活已不得不学着去直面污浊与残缺  You say you never compromise  你曾经说，你永不妥协  With the mystery tramp, but now you realize  但面对那位神秘的流浪者，现在你已明白  He’s not selling any alibies  他可不会跟你卖关子故作姿态  As you stare into the vacuum of his eyes  你只得强忍厌恶望向他空洞无物的瞳眸，问道  And say do you want to make a deal  用最卑下的口吻问他要不要做笔买卖  How does it feel, how does it feel  这滋味如何？这滋味如何？  To be on your own,With no direction home  你孑身独行找不到回家的方向  a complete unknown, like a rolling stone  完全没有人知道你颠沛流离一如滚石  Oh, you never turned around to see the frowns  你从未注意过那些魔术师和小丑们  On the jumpers and the clowns  笑容中藏着双眉紧蹙  when they did their tricks for you  他们极尽卑下变着花样不过为了取悦于你  You never understood that it ain’t no good  你从来不明白那样不对  You shouldn’t let other people  你让别人  get your kicks for you  替你受苦受难你还颇以为乐  You used to ride on your chrome horse  你那位跨着哈雷机车带你兜风的花花公子  Who carried on his shoulder a siamese cat  肩头还安伏着一只华贵的暹罗猫  Ain’t it hard when you discovered that  而当你一朝醒悟  He really wasn’t where it’s at  他并非你心所渴求  After he took from you  却发现他已携着  everything he could steal  你所有的一切飘然远遁  How does it feel, how does it feel?  这滋味如何？这滋味如何？  To be on your own, With no direction home  你孑身独行 找不到回家的方向  Like a complete unknown, like a rolling stone  完全没有人知道你颠沛流离一如滚石  Princess on a steeple  幽居高塔的公主  and all the pretty people  和所有那些优雅体面的上层人士  They’re all drinking,  整日里狂饮，  thinking that they’ve got it made  以为他们已经成功  Exchanging all precious gifts  他们交换著各种珍贵的玩意和礼物  You better take your diamond ring,  可是你最好脱下那只钻石戒指  you better pawn it babe  当掉它吧，宝贝  You used to be so amused  你过去不是觉得很有趣吗？  At Napoleon in rags  对于那满面风尘  and the language that he used  用语鄙俗的流浪汉  Go to him he calls you, you can’t refuse  现在，到他那儿去吧。而今召唤声中你向他走去这一切不由你自主  When you ain’t got nothing,  当你一无所有，  you got nothing to loose  你也就再没什么可失去  You’re invisible now,  现在你周身透明  you’ve got not secret to conceal  再藏不住一丝秘密。  How does it feel, how does it feel?  这滋味如何？这滋味如何？  To be on your own, With no direction home  你孑身独行 找不到回家的方向  Like a complete unknown, like a rolling stone  完全没有人知道你颠沛流离一如滚石]]></content>
       <categories>
+        
+          <category> 生活 </category>
         
       </categories>
       <tags>

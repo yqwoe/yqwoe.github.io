@@ -1,5 +1,7 @@
 ---
 title: mybatis动态查询实现
+description: "mybatis动态查询实现"
+category: mybatis
 tags:
   - mybatis
   - mysql
