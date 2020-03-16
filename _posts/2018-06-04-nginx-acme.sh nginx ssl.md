@@ -1,5 +1,7 @@
 ---
 title: nginx支持ssl+acme.sh定时更新证书
+description: "acme.sh 、nginx、https"
+category: nginx
 tags:
   - aliyun
   - 阿里云

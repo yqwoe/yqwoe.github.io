@@ -1,5 +1,7 @@
 ---
 title: Cas Server 本地部署
+description: "Cas Server 本地部署"
+category: Cas
 tags:
   - spring boot
   - cas client

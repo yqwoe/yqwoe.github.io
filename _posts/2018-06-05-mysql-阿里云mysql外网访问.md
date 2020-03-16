@@ -1,5 +1,7 @@
 ---
 title: 阿里云mysql外网访问
+description: "阿里云 ecs 上安装了 mysql 但是外网访问不了"
+category: 服务器
 tags:
   - aliyun
   - 阿里云
