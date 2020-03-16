@@ -14,7 +14,7 @@
 
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -118,7 +118,7 @@
 <meta property="og:url" content="http://localhost:4000/category/">
 <meta property="og:site_name" content="rm-rf /*">
 <meta property="og:description" content="一位丈夫、父亲、程序员。">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rm-rf /*">
 <meta name="twitter:description" content="一位丈夫、父亲、程序员。">
@@ -134,7 +134,7 @@
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -154,7 +154,7 @@
 
 
 
-  <title>分类 | rm-rf /*</title>
+  <title>Category | rm-rf /*</title>
   
 
 
@@ -174,7 +174,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -222,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -234,7 +234,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -246,7 +246,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -258,7 +258,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -270,7 +270,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -283,7 +283,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -303,7 +303,7 @@
     </span>
     <div class="local-search-input-wrapper">
       <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
+             placeholder="Searching..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -330,7 +330,7 @@
   <div class="collection-title">
     <h1>
     
-    <small>分类</small>
+    <small>Category</small>
     </h1>
   </div>
 
@@ -882,7 +882,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">16</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -893,7 +893,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
                 <span class="site-state-item-count">10</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -904,7 +904,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
                 <span class="site-state-item-count">57</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -1133,7 +1133,7 @@
         }
 
         $('.collection-title')[0].childNodes[1].childNodes[0].nodeValue = collection;
-        document.title = "分类: " + collection + " | rm-rf /*";
+        document.title = "Category: " + collection + " | rm-rf /*";
 
         var sizes = maps[encodeURIComponent(collection)];
         var base = "#" + "/" + collection;
