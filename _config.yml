@@ -20,7 +20,7 @@ baseurl:
 permalink: pretty
 
 # Pagination
-paginate: 3
+paginate: 5
 #paginate_path: "/page:num/"
 #archive:
 #paginate: 10
