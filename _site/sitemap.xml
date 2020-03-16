@@ -61,6 +61,10 @@
 <lastmod>2018-11-17T00:00:00+08:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/03/16/%E5%B0%8F%E7%8E%8B%E5%AD%90-%E9%98%85%E8%AF%BB/</loc>
+<lastmod>2020-03-16T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
@@ -95,8 +99,5 @@
 </url>
 <url>
 <loc>http://localhost:4000/page4/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/page5/</loc>
 </url>
 </urlset>
