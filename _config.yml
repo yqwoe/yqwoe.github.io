@@ -9,8 +9,8 @@ subtitle: To destroy is to create!
 description: 一位丈夫、父亲、程序员。
 author: Yq Woe
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: zh-Hans
-date_format: "%Y-%m-%d"
+language: en
+date_format: "%Y/%m/%d"
 site:
   description: To destroy is to create!
 # URL
