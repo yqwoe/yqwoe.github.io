@@ -15,9 +15,10 @@ site:
   description: To destroy is to create!
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: https://rm-rf.one
-baseurl:
+url: "https://rm-rf.one"
+baseurl: "/*_"
 permalink: pretty
+sitemap: true
 
 # Pagination
 paginate: 5
@@ -116,7 +117,6 @@ copyright: false
 # See: https://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remember set up your URL in _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
-
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
 seo: false
 
