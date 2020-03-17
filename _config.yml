@@ -18,7 +18,6 @@ site:
 url: "https://rm-rf.one"
 baseurl:
 permalink: pretty
-sitemap: true
 
 # Pagination
 paginate: 5
