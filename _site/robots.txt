@@ -1,1 +1,1 @@
-Sitemap: https://rm-rf.one/*_/sitemap.xml
+Sitemap: https://rm-rf.one/sitemap.xml
