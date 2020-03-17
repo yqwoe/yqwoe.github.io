@@ -454,7 +454,9 @@
   <p>一定要按照操作步骤走</p>
 
 <!--more-->
+
 <p>1.创建用户，一定要记住密码</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3</pre></td><td class="code"><pre class="highlight"><code>sudo adduser git
 su git
 cd ~
@@ -465,12 +467,16 @@ cd ~
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2</pre></td><td class="code"><pre class="highlight"><code>wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip
 unzip gogs_0.11.43_linux_amd64.zip
 </code></pre></td></tr></tbody></table></div></div>
+
 <p>3.拷贝启动项到系统下</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2</pre></td><td class="code"><pre class="highlight"><code>cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/ 
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2</pre></td><td class="code"><pre class="highlight"><code>cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/
 chmod +x /etc/init.d/gogs
 </code></pre></td></tr></tbody></table></div></div>
-<p>4.安装mysql</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11</pre></td><td class="code"><pre class="highlight"><code>apt update 
+
+<p>4.安装 mysql</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11</pre></td><td class="code"><pre class="highlight"><code>apt update
 apt install mysql-server
 mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql
 
@@ -482,11 +488,15 @@ mysql -u root -p
 &gt; flush privileges;
 &gt; exit;
 </code></pre></td></tr></tbody></table></div></div>
-<p>5.启动gogs</p>
+
+<p>5.启动 gogs</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2</pre></td><td class="code"><pre class="highlight"><code>service gogs start
 curl -I http://localhost:3000  =&gt; HTTP OK 200
 </code></pre></td></tr></tbody></table></div></div>
-<p>6.nginx配置</p>
+
+<p>6.nginx 配置</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7</pre></td><td class="code"><pre class="highlight"><code>  server {
         listen       80;
         server_name  www.example.com;
@@ -495,14 +505,14 @@ curl -I http://localhost:3000  =&gt; HTTP OK 200
         }
   }
 </code></pre></td></tr></tbody></table></div></div>
-<p>7.访问www.example.com/install 进行初始化</p>
+
+<p>7.访问 www.example.com/install 进行初始化</p>
 
 <p>8.你可能遇到的问题</p>
 
-<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs与Linux主机共享SSH22端口</a></p>
+<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
 
-<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装Gogs后ssh无法和远程登录同时使用的解决方案</a></p>
-
+<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
 
 
       

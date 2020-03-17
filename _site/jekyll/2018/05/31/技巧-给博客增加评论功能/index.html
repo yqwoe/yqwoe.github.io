@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="使用Gitment 给博客增加评论功能">
+<meta name="description" content="插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：[giment.js](yqwoe.space/yqwoe.github.io/static/js/gitment.js)">
 <meta name="keywords" content="技巧, gitment, git, Jekyll">
 <meta property="og:type" content="article">
 <meta property="og:title" content="给博客增加评论功能">
 <meta property="og:url" content="https://rm-rf.one/jekyll/2018/05/31/%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">
 <meta property="og:site_name" content="rm-rf /*">
-<meta property="og:description" content="使用Gitment 给博客增加评论功能">
+<meta property="og:description" content="插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：[giment.js](yqwoe.space/yqwoe.github.io/static/js/gitment.js)">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="给博客增加评论功能">
-<meta name="twitter:description" content="使用Gitment 给博客增加评论功能">
+<meta name="twitter:description" content="插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：[giment.js](yqwoe.space/yqwoe.github.io/static/js/gitment.js)">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -421,7 +421,7 @@
           
             
                 <div class="post-description">
-                    使用Gitment 给博客增加评论功能
+                    插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：[giment.js](yqwoe.space/yqwoe.github.io/static/js/gitment.js)
                 </div>
             
           
@@ -458,15 +458,19 @@
 <p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
 
 <p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+
 <ul>
-  <li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll教程</a></li>
+  <li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></li>
   <li><a href="https://github.com/imsun/gitment">Gitment Readme</a></li>
 </ul>
 
 <h3 id="基本使用">基本使用</h3>
+
 <h4 id="1-注册-oauth-application">1. 注册 OAuth Application</h4>
+
 <p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4 id="2引入jscss-到文章页面">2.引入js、css 到文章页面</h4>
+
+<h4 id="2引入-jscss-到文章页面">2.引入 js、css 到文章页面</h4>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20</pre></td><td class="code"><pre class="highlight"><code>&lt;div id="container"&gt;&lt;/div&gt;
 &lt;link rel="stylesheet" href="https://yqwoe.space/yqwoe.github.io/static/css/gitment.css"&gt;
@@ -489,7 +493,9 @@ var gitment = new Gitment({
 gitment.render('container')
 &lt;/script&gt;
 </code></pre></td></tr></tbody></table></div></div>
+
 <h4 id="3-初始化评论">3. 初始化评论</h4>
+
 <p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
 
 <h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧">敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
@@ -747,7 +753,7 @@ gitment.render('container')
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-3"> <a class="nav-link" href="#首先感谢imsun大神的插件gitment"> <span class="nav-number">1</span> <span class="nav-text">首先感谢@imsun大神的插件Gitment</a</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#基本使用"> <span class="nav-number">2</span> <span class="nav-text">基本使用</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#1-注册-oauth-application"> <span class="nav-number">2.1</span> <span class="nav-text">1. 注册 OAuth Application</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#2引入jscss-到文章页面"> <span class="nav-number">2.2</span> <span class="nav-text">2.引入js、css 到文章页面</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#3-初始化评论"> <span class="nav-number">2.3</span> <span class="nav-text">3. 初始化评论</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"> <span class="nav-number">2.4</span> <span class="nav-text">敲黑板，下一篇博客会介绍 《Jekyll-Admin 插件的使用方法》和一些填坑技巧。</span> </a> </li> </ol> </li>
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#首先感谢imsun大神的插件gitment"> <span class="nav-number">1</span> <span class="nav-text">首先感谢@imsun大神的插件Gitment</a</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#基本使用"> <span class="nav-number">2</span> <span class="nav-text">基本使用</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#1-注册-oauth-application"> <span class="nav-number">2.1</span> <span class="nav-text">1. 注册 OAuth Application</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#2引入-jscss-到文章页面"> <span class="nav-number">2.2</span> <span class="nav-text">2.引入 js、css 到文章页面</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#3-初始化评论"> <span class="nav-number">2.3</span> <span class="nav-text">3. 初始化评论</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"> <span class="nav-number">2.4</span> <span class="nav-text">敲黑板，下一篇博客会介绍 《Jekyll-Admin 插件的使用方法》和一些填坑技巧。</span> </a> </li> </ol> </li>
     </ol>
   </div>
             
