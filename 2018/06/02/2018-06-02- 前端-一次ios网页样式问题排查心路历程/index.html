@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/*_/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/*_/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/*_/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/*_/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/*_/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/*_/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/*_/images/favicon.ico">
+  <link rel="mask-icon" href="/*_/images/favicon.ico" color="#222">
 
 <link rel="stylesheet" href="/*_/css/main.css">
 
@@ -23,7 +23,7 @@
   <meta name="description" content="我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一次ios网页样式问题排查心路历程">
-<meta property="og:url" content="https://rm-rf.one/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/">
+<meta property="og:url" content="https://rm-rf.one/*_/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/">
 <meta property="og:site_name" content="rm-rf.one">
 <meta property="og:description" content="我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。">
 <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://rm-rf.one/images/WechatIMG86.jpeg">
 
-<link rel="canonical" href="https://rm-rf.one/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/">
+<link rel="canonical" href="https://rm-rf.one/*_/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/">
 
 
 <script id="page-configurations">
@@ -86,6 +86,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/*_/atom.xml" title="rm-rf.one" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -111,7 +112,8 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">To destroy be to create!</p>
+        <h1 class="site-subtitle" itemprop="description">To destroy be to create!</h1>
+      
   </div>
 
   <div class="site-nav-right">
@@ -206,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="https://rm-rf.one/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="https://rm-rf.one/*_/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/*_/images/avatar.png">
@@ -218,9 +220,9 @@
       <meta itemprop="name" content="rm-rf.one">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           一次ios网页样式问题排查心路历程
-        </h1>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -430,11 +432,6 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Yq Woe</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.2
-  </div>
 
         
 
@@ -468,6 +465,15 @@
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
