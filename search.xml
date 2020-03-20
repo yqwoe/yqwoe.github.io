@@ -416,10 +416,10 @@
       <tags>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
         <tag>nginx</tag>
         <tag>ssl</tag>
         <tag>acme.sh</tag>
-        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
@@ -458,8 +458,8 @@
         <tag>git</tag>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
         <tag>gogs</tag>
+        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
