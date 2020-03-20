@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>《小王子》阅读</title>
-    <url>/*_/2020/03/16/2020-03-16-%E3%80%8A%E5%B0%8F%E7%8E%8B%E5%AD%90%E3%80%8B%E9%98%85%E8%AF%BB/</url>
+    <url>/2020/03/16/2020-03-16-%E3%80%8A%E5%B0%8F%E7%8E%8B%E5%AD%90%E3%80%8B%E9%98%85%E8%AF%BB/</url>
     <content><![CDATA[<p><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
 <a id="more"></a>
 
@@ -28,7 +28,7 @@
   </entry>
   <entry>
     <title>集群、负载均衡、分布式</title>
-    <url>/*_/2018/11/17/2018-11-17-%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F/</url>
+    <url>/2018/11/17/2018-11-17-%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F/</url>
     <content><![CDATA[<p>下面就我的理解简单通俗的介绍下三者的区别：</p>
 <a id="more"></a>
 
@@ -61,7 +61,7 @@
   </entry>
   <entry>
     <title>nginx 负载均衡</title>
-    <url>/*_/2018/11/17/2018-11-17-nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
+    <url>/2018/11/17/2018-11-17-nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
     <content><![CDATA[<h1 id="nginx-是什么？"><a href="#nginx-是什么？" class="headerlink" title="nginx 是什么？"></a>nginx 是什么？</h1><blockquote>
 <p>Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人 Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个 IMAP/POP3/SMTP 代理服务器；也就是说，Nginx 本身就可以托管网站，进行 HTTP 服务处理，也可以作为反向代理服务器使用。</p>
 </blockquote>
@@ -100,7 +100,7 @@
   </entry>
   <entry>
     <title>Cas Server 本地部署</title>
-    <url>/*_/2018/10/31/2018-10-31-SpringBoot_Cas_SSO/</url>
+    <url>/2018/10/31/2018-10-31-SpringBoot_Cas_SSO/</url>
     <content><![CDATA[<h1 id="Cas"><a href="#Cas" class="headerlink" title="Cas"></a>Cas</h1><blockquote>
 <p><strong><a href="https://github.com/apereo/cas" target="_blank" rel="noopener">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
 </blockquote>
@@ -136,7 +136,7 @@
   </entry>
   <entry>
     <title>mybatis动态查询实现</title>
-    <url>/*_/2018/10/30/2018-10-30-mybatis-dynamic%20condition%20/</url>
+    <url>/2018/10/30/2018-10-30-mybatis-dynamic%20condition%20/</url>
     <content><![CDATA[<p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
 <a id="more"></a>
 
@@ -174,7 +174,7 @@
   </entry>
   <entry>
     <title>ruby 爬虫 一</title>
-    <url>/*_/2018/10/12/2018-10-12-ruby%20%E7%88%AC%E8%99%AB%20%E4%B8%80/</url>
+    <url>/2018/10/12/2018-10-12-ruby%20%E7%88%AC%E8%99%AB%20%E4%B8%80/</url>
     <content><![CDATA[<p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
 <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">Time.now.to_s =&gt; <span class="string">"2018-10-30 20:29:36 +0800"</span></span><br></pre></td></tr></table></figure>
 
@@ -227,7 +227,7 @@
   </entry>
   <entry>
     <title>英语学习</title>
-    <url>/*_/2018/10/09/2018-10-09-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
+    <url>/2018/10/09/2018-10-09-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>App: duolinguo（多邻国）</p>
 <p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
 <p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
@@ -245,7 +245,7 @@
   </entry>
   <entry>
     <title>程序员数学1</title>
-    <url>/*_/2018/10/06/2018-10-06-%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A61/</url>
+    <url>/2018/10/06/2018-10-06-%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A61/</url>
     <content><![CDATA[<h2 id="学习列表"><a href="#学习列表" class="headerlink" title="学习列表:"></a>学习列表:</h2><h3 id="2-进制"><a href="#2-进制" class="headerlink" title="2 进制:"></a>2 进制:</h3><a id="more"></a>
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2503</span><br><span class="line">1251  余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">625   余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">312   余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">156   余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">78    余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">39    余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line"></span><br><span class="line">19    余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">9     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">4     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">2     余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">1     余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">0     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">111 000 111 001</span><br></pre></td></tr></table></figure>
@@ -279,7 +279,7 @@
   </entry>
   <entry>
     <title>生活计划</title>
-    <url>/*_/2018/07/28/2018-07-28-%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92/</url>
+    <url>/2018/07/28/2018-07-28-%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>所以，我深刻的意识到有一个健康的身体太重要了。</p>
 <a id="more"></a>
 
@@ -352,7 +352,7 @@
   </entry>
   <entry>
     <title>阿里云mysql外网访问</title>
-    <url>/*_/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
+    <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
     <content><![CDATA[<p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
 <a id="more"></a>
 
@@ -379,7 +379,7 @@
   </entry>
   <entry>
     <title>nginx支持ssl+acme.sh定时更新证书</title>
-    <url>/*_/2018/06/04/2018-06-04-nginx-acme.sh%20nginx%20ssl/</url>
+    <url>/2018/06/04/2018-06-04-nginx-acme.sh%20nginx%20ssl/</url>
     <content><![CDATA[<p>不废话，直接进入实战。</p>
 <a id="more"></a>
 
@@ -424,7 +424,7 @@
   </entry>
   <entry>
     <title>一次gogs采坑之旅</title>
-    <url>/*_/2018/06/03/2018-06-03-git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
+    <url>/2018/06/03/2018-06-03-git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
     <content><![CDATA[<p>一定要按照操作步骤走</p>
 <a id="more"></a>
 
@@ -464,7 +464,7 @@
   </entry>
   <entry>
     <title>一次ios网页样式问题排查心路历程</title>
-    <url>/*_/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</url>
+    <url>/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</url>
     <content><![CDATA[<h4 id="我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。"><a href="#我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。" class="headerlink" title="我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。"></a>我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4><a id="more"></a>
 
 <p>大概是这样：</p>
@@ -490,7 +490,7 @@
   </entry>
   <entry>
     <title>过六一的&quot;儿童&quot;们</title>
-    <url>/*_/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/</url>
+    <url>/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/</url>
     <content><![CDATA[<blockquote>
 <h5 id="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"><a href="#今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！" class="headerlink" title="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"></a><em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5></blockquote>
 <a id="more"></a>
@@ -521,7 +521,7 @@
   </entry>
   <entry>
     <title>给博客增加评论功能</title>
-    <url>/*_/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <url>/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<h3 id="首先感谢-imsun大神的插件Gitment"><a href="#首先感谢-imsun大神的插件Gitment" class="headerlink" title="首先感谢@imsun大神的插件Gitment"></a>首先感谢<a href="https://github.com/imsun" target="_blank" rel="noopener">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a></h3><a id="more"></a>
 
 <p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
@@ -548,7 +548,7 @@
   </entry>
   <entry>
     <title>第一篇博客</title>
-    <url>/*_/2018/05/30/2018-05-30-%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2018/05/30/2018-05-30-%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p><strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
 <p>一生中有很多重要时刻，而能让你清晰的记得的，只有几个 — <strong>成人礼、成家、生子</strong>。</p>
 <a id="more"></a>
