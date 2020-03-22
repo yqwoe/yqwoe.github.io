@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.one/"/>
-  <updated>2020-03-20T12:49:01.159Z</updated>
+  <updated>2020-03-22T06:24:59.743Z</updated>
   <id>https://rm-rf.one/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>路</title>
+    <link href="https://rm-rf.one/2020/03/21/%E8%B7%AF/"/>
+    <id>https://rm-rf.one/2020/03/21/%E8%B7%AF/</id>
+    <published>2020-03-21T14:57:20.000Z</published>
+    <updated>2020-03-22T06:24:59.743Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-zmNtdImn" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-zmNtdImn"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "The Lion Sleeps Tonight",              author: "The Tokens",              url: "/music/The Lion Sleeps Tonight.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://rm-rf.one/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="https://rm-rf.one/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="书" scheme="https://rm-rf.one/tags/%E4%B9%A6/"/>
+    
+      <category term="路" scheme="https://rm-rf.one/tags/%E8%B7%AF/"/>
+    
+      <category term="有趣" scheme="https://rm-rf.one/tags/%E6%9C%89%E8%B6%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>《小王子》阅读</title>

@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>路</title>
+    <url>/2020/03/21/%E8%B7%AF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
+        <div id="aplayer-zmNtdImn" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-zmNtdImn"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "The Lion Sleeps Tonight",
+              author: "The Tokens",
+              url: "/music/The Lion Sleeps Tonight.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>书</tag>
+        <tag>路</tag>
+        <tag>有趣</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《小王子》阅读</title>
     <url>/2020/03/16/2020-03-16-%E3%80%8A%E5%B0%8F%E7%8E%8B%E5%AD%90%E3%80%8B%E9%98%85%E8%AF%BB/</url>
     <content><![CDATA[<p><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
