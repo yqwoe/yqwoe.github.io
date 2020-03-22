@@ -92,6 +92,12 @@ archive_generator:
 include:
 exclude:
 ignore:
+aplayer:
+  meting: true
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

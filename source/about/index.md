@@ -1,6 +1,7 @@
 ---
-layout: page
-type: about
+title: "About"
+type: "about"
+layout: "about"
 ---
 
 > ![第一场电影 2015/05/30 星期六 20:00](/images/pics_cloud_z_f_1454180483.jpg)
