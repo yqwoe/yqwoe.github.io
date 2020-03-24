@@ -561,38 +561,37 @@ pre .javascript .function {
   color: #8959a8;
 }
 .blockquote-center {
-  border-left: none;
-  margin: 40px 0;
-  padding: 0;
   position: relative;
-  text-align: center;
+  padding: 10px 15px 10px 60px;
+  box-sizing: border-box;
+  font-style: italic;
+  background: #f5f5f5;
+  color: var(--text-color);
+  border-left: 4px solid;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.14);
 }
-.blockquote-center::before,
-.blockquote-center::after {
-  background-repeat: no-repeat;
-  background-size: 22px 22px;
-  content: ' ';
-  display: block;
-  height: 24px;
-  opacity: 0.2;
+.blockquote-center:before {
+  display: inline-block;
   position: absolute;
-  width: 100%;
+  top: 15px;
+  left: 15px;
+  content: "\f10d";
+  font-family: FontAwesome;
+  color: var(--text-color);
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 900;
 }
-.blockquote-center::before {
-  background-image: url("/images/quote-l.svg");
-  background-position: 0 -6px;
-  border-top: 1px solid #ccc;
-  top: -20px;
+.blockquote-center p {
+  padding: 0;
+  margin: 7px 0;
+  line-height: 1.7;
 }
-.blockquote-center::after {
-  background-image: url("/images/quote-r.svg");
-  background-position: 100% 8px;
-  border-bottom: 1px solid #ccc;
-  bottom: -20px;
-}
-.blockquote-center p,
-.blockquote-center div {
-  text-align: center;
+.blockquote-center cite {
+  display: block;
+  text-align: right;
+  color: #888;
+  font-size: 0.9em;
 }
 .post-body .group-picture img {
   margin: 0 auto;
@@ -1190,7 +1189,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #916794;
+  background: #d6791f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
