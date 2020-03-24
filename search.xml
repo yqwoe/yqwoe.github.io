@@ -4,12 +4,12 @@
     <title>路</title>
     <url>/2020/03/21/%E8%B7%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-EmpfnIsq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-aPSxrVoY" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-EmpfnIsq"),
+            element: document.getElementById("aplayer-aPSxrVoY"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -52,7 +52,7 @@
   <entry>
     <title>《小王子》阅读</title>
     <url>/2020/03/16/2020-03-16-%E3%80%8A%E5%B0%8F%E7%8E%8B%E5%AD%90%E3%80%8B%E9%98%85%E8%AF%BB/</url>
-    <content><![CDATA[<p><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
 <a id="more"></a>
 
 <blockquote>
@@ -76,42 +76,9 @@
       </tags>
   </entry>
   <entry>
-    <title>集群、负载均衡、分布式</title>
-    <url>/2018/11/17/2018-11-17-%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F/</url>
-    <content><![CDATA[<p>下面就我的理解简单通俗的介绍下三者的区别：</p>
-<a id="more"></a>
-
-<p>1.集群<br>集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
-<p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
-<p>2.负载均衡<br>至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
-<p>3.分布式<br>分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
-<p>今天看到个通俗的例子，大家可以借鉴下：</p>
-<p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
-<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。<br>1）负载均衡集群（LB:load balancing）</p>
-<p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
-<p>2）高可用性集群（HA:High Availability）</p>
-<p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
-<p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
-<p>3）高性能集群（HP:High Performance）</p>
-<p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
-<p>作者：普 if 加的帕<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/qq_34896887/article/details/78616209" target="_blank" rel="noopener">https://blog.csdn.net/qq_34896887/article/details/78616209</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
-<p><a href="http://server.51cto.com/News-557053.htm" target="_blank" rel="noopener">http://server.51cto.com/News-557053.htm</a></p>
-<p><a href="https://www.cnblogs.com/xzwblog/p/7255364.html" target="_blank" rel="noopener">https://www.cnblogs.com/xzwblog/p/7255364.html</a></p>
-]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>nginx</tag>
-        <tag>集群</tag>
-        <tag>负载均衡</tag>
-        <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nginx 负载均衡</title>
     <url>/2018/11/17/2018-11-17-nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
-    <content><![CDATA[<h1 id="nginx-是什么？"><a href="#nginx-是什么？" class="headerlink" title="nginx 是什么？"></a>nginx 是什么？</h1><blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么？"><a href="#nginx-是什么？" class="headerlink" title="nginx 是什么？"></a>nginx 是什么？</h1><blockquote>
 <p>Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人 Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个 IMAP/POP3/SMTP 代理服务器；也就是说，Nginx 本身就可以托管网站，进行 HTTP 服务处理，也可以作为反向代理服务器使用。</p>
 </blockquote>
 <a id="more"></a>
@@ -148,9 +115,42 @@
       </tags>
   </entry>
   <entry>
+    <title>集群、负载均衡、分布式</title>
+    <url>/2018/11/17/2018-11-17-%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
+<a id="more"></a>
+
+<p>1.集群<br>集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
+<p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
+<p>2.负载均衡<br>至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
+<p>3.分布式<br>分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
+<p>今天看到个通俗的例子，大家可以借鉴下：</p>
+<p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
+<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。<br>1）负载均衡集群（LB:load balancing）</p>
+<p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
+<p>2）高可用性集群（HA:High Availability）</p>
+<p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
+<p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
+<p>3）高性能集群（HP:High Performance）</p>
+<p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
+<p>作者：普 if 加的帕<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/qq_34896887/article/details/78616209" target="_blank" rel="noopener">https://blog.csdn.net/qq_34896887/article/details/78616209</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+<p><a href="http://server.51cto.com/News-557053.htm" target="_blank" rel="noopener">http://server.51cto.com/News-557053.htm</a></p>
+<p><a href="https://www.cnblogs.com/xzwblog/p/7255364.html" target="_blank" rel="noopener">https://www.cnblogs.com/xzwblog/p/7255364.html</a></p>
+]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+        <tag>集群</tag>
+        <tag>负载均衡</tag>
+        <tag>分布式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cas Server 本地部署</title>
     <url>/2018/10/31/2018-10-31-SpringBoot_Cas_SSO/</url>
-    <content><![CDATA[<h1 id="Cas"><a href="#Cas" class="headerlink" title="Cas"></a>Cas</h1><blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="Cas"><a href="#Cas" class="headerlink" title="Cas"></a>Cas</h1><blockquote>
 <p><strong><a href="https://github.com/apereo/cas" target="_blank" rel="noopener">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
 </blockquote>
 <a id="more"></a>
@@ -186,7 +186,7 @@
   <entry>
     <title>mybatis动态查询实现</title>
     <url>/2018/10/30/2018-10-30-mybatis-dynamic%20condition%20/</url>
-    <content><![CDATA[<p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
 <a id="more"></a>
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -224,7 +224,7 @@
   <entry>
     <title>ruby 爬虫 一</title>
     <url>/2018/10/12/2018-10-12-ruby%20%E7%88%AC%E8%99%AB%20%E4%B8%80/</url>
-    <content><![CDATA[<p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
 <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">Time.now.to_s =&gt; <span class="string">"2018-10-30 20:29:36 +0800"</span></span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
@@ -277,7 +277,7 @@
   <entry>
     <title>英语学习</title>
     <url>/2018/10/09/2018-10-09-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>App: duolinguo（多邻国）</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: duolinguo（多邻国）</p>
 <p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
 <p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
 <a id="more"></a>
@@ -295,7 +295,7 @@
   <entry>
     <title>程序员数学1</title>
     <url>/2018/10/06/2018-10-06-%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A61/</url>
-    <content><![CDATA[<h2 id="学习列表"><a href="#学习列表" class="headerlink" title="学习列表:"></a>学习列表:</h2><h3 id="2-进制"><a href="#2-进制" class="headerlink" title="2 进制:"></a>2 进制:</h3><a id="more"></a>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="学习列表"><a href="#学习列表" class="headerlink" title="学习列表:"></a>学习列表:</h2><h3 id="2-进制"><a href="#2-进制" class="headerlink" title="2 进制:"></a>2 进制:</h3><a id="more"></a>
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2503</span><br><span class="line">1251  余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">625   余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">312   余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">156   余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">78    余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">39    余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line"></span><br><span class="line">19    余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">9     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">4     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">2     余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">1     余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">0     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">111 000 111 001</span><br></pre></td></tr></table></figure>
 
@@ -329,7 +329,7 @@
   <entry>
     <title>生活计划</title>
     <url>/2018/07/28/2018-07-28-%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>所以，我深刻的意识到有一个健康的身体太重要了。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>所以，我深刻的意识到有一个健康的身体太重要了。</p>
 <a id="more"></a>
 
 <p>以下是我近期的生活计划</p>
@@ -402,7 +402,7 @@
   <entry>
     <title>阿里云mysql外网访问</title>
     <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
-    <content><![CDATA[<p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
 <a id="more"></a>
 
 <p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
@@ -429,7 +429,7 @@
   <entry>
     <title>nginx支持ssl+acme.sh定时更新证书</title>
     <url>/2018/06/04/2018-06-04-nginx-acme.sh%20nginx%20ssl/</url>
-    <content><![CDATA[<p>不废话，直接进入实战。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>不废话，直接进入实战。</p>
 <a id="more"></a>
 
 <p>1.安装 nginx</p>
@@ -474,7 +474,7 @@
   <entry>
     <title>一次gogs采坑之旅</title>
     <url>/2018/06/03/2018-06-03-git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<p>一定要按照操作步骤走</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
 <a id="more"></a>
 
 <p>1.创建用户，一定要记住密码</p>
@@ -504,17 +504,17 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>git</tag>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
         <tag>gogs</tag>
+        <tag>git</tag>
         <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
     <title>一次ios网页样式问题排查心路历程</title>
     <url>/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<h4 id="我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。"><a href="#我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。" class="headerlink" title="我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。"></a>我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4><a id="more"></a>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。"><a href="#我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。" class="headerlink" title="我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。"></a>我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4><a id="more"></a>
 
 <p>大概是这样：</p>
 <p><img src="/images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
@@ -540,7 +540,7 @@
   <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
 <h5 id="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"><a href="#今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！" class="headerlink" title="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"></a><em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5></blockquote>
 <a id="more"></a>
 
@@ -571,7 +571,7 @@
   <entry>
     <title>给博客增加评论功能</title>
     <url>/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h3 id="首先感谢-imsun大神的插件Gitment"><a href="#首先感谢-imsun大神的插件Gitment" class="headerlink" title="首先感谢@imsun大神的插件Gitment"></a>首先感谢<a href="https://github.com/imsun" target="_blank" rel="noopener">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a></h3><a id="more"></a>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢-imsun大神的插件Gitment"><a href="#首先感谢-imsun大神的插件Gitment" class="headerlink" title="首先感谢@imsun大神的插件Gitment"></a>首先感谢<a href="https://github.com/imsun" target="_blank" rel="noopener">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a></h3><a id="more"></a>
 
 <p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
 <p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment Demo Page</a> 再进行操作。</p>
@@ -589,9 +589,9 @@
         <category>Jekyll</category>
       </categories>
       <tags>
+        <tag>git</tag>
         <tag>技巧</tag>
         <tag>gitment</tag>
-        <tag>git</tag>
         <tag>Jekyll</tag>
       </tags>
   </entry>
