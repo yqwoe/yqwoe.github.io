@@ -277,6 +277,89 @@
 </tbody></table>
 </li>
 </ul>
+<h2 id="德摩根定律"><a href="#德摩根定律" class="headerlink" title="德摩根定律"></a>德摩根定律</h2><ul>
+<li><p>德摩根定律是什么？</p>
+<ul>
+<li><p>(﹁A) v (﹁B) = ﹁(A ∧ B) =&gt; ”非 A“ 或者 ”非 B“，和非”A 与 B“ 等价</p>
+</li>
+<li><p>(﹁A) ∧ (﹁B) = ﹁(A v B) =&gt; ”非 A“ 并且 ”非 B“，和非”A 或 B“ 等价</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>(﹁A) v (﹁B)</th>
+<th>﹁(A ∧ B)</th>
+<th>(﹁A) ∧ (﹁B)</th>
+<th>﹁(A v B)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>﹁A</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>∧</td>
+<td>v</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="卡诺图"><a href="#卡诺图" class="headerlink" title="卡诺图"></a>卡诺图</h2><ul>
+<li><p>二灯游戏</p>
+<ul>
+<li><p>二灯游戏规则</p>
+<ul>
+<li>红灯灭，黄灯亮</li>
+<li>绿灯、黄灯都灭</li>
+<li>绿灯、黄灯都亮</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>数学</category>
