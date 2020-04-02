@@ -22,8 +22,10 @@
 <h2 id="乘方思考题"><a href="#乘方思考题" class="headerlink" title="乘方思考题"></a>乘方思考题</h2><ul>
 <li><p>1234567 的 987654321 次方的个位数是多少？</p>
 <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> <span class="params">|i|</span></span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">""</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># ["1", "7", "9", "3"]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
+<p>—未完—</p>
 ]]></content>
       <categories>
         <category>数学</category>
