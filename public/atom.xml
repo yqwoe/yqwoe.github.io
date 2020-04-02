@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.one/"/>
-  <updated>2020-03-24T13:35:17.760Z</updated>
+  <updated>2020-04-02T06:22:37.792Z</updated>
   <id>https://rm-rf.one/</id>
   
   <author>
@@ -15,6 +15,113 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《程序员数学-1》-笔记3</title>
+    <link href="https://rm-rf.one/2020/04/01/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B03/"/>
+    <id>https://rm-rf.one/2020/04/01/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B03/</id>
+    <published>2020-04-01T07:48:54.000Z</published>
+    <updated>2020-04-02T06:22:37.792Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a href="#第三章-余数" class="headerlink" title="第三章 余数"></a>第三章 余数</h1><ul><li><p>什么是余数？</p><ul><li><strong>余数</strong> 就是除法运算时剩下的数</li></ul></li></ul><h2 id="星期数的思考题-1"><a href="#星期数的思考题-1" class="headerlink" title="星期数的思考题 1"></a>星期数的思考题 1</h2><ul><li>今天是星期日,那么 100 天以后是星期几？</li></ul><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; 100 % 7</span><br><span class="line">x &#x3D; 2 &#x2F;&#x2F;答案:星期二</span><br></pre></td></tr></table></figure></code></pre><h2 id="星期数的思考题-2"><a href="#星期数的思考题-2" class="headerlink" title="星期数的思考题 2"></a>星期数的思考题 2</h2><ul><li><p>今天是星期日,那么 10¹ºº 天以后是星期几？</p><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> <span class="params">|i|</span></span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure></li></ul><h2 id="乘方思考题"><a href="#乘方思考题" class="headerlink" title="乘方思考题"></a>乘方思考题</h2><ul><li><p>1234567 的 987654321 次方的个位数是多少？</p><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> <span class="params">|i|</span></span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">""</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># ["1", "7", "9", "3"]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure></li></ul><p>—未完—</p>]]></content>
+    
+    <summary type="html">
+    
+      程序员数学1 - 余数
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="https://rm-rf.one/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="余数" scheme="https://rm-rf.one/tags/%E4%BD%99%E6%95%B0/"/>
+    
+      <category term="分组" scheme="https://rm-rf.one/tags/%E5%88%86%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《程序员数学-1》-笔记2</title>
+    <link href="https://rm-rf.one/2020/03/31/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B02/"/>
+    <id>https://rm-rf.one/2020/03/31/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B02/</id>
+    <published>2020-03-31T02:31:58.000Z</published>
+    <updated>2020-04-01T07:50:03.185Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第二章-逻辑"><a href="#第二章-逻辑" class="headerlink" title="第二章 逻辑"></a>第二章 逻辑</h1><h2 id="为何逻辑如此重要"><a href="#为何逻辑如此重要" class="headerlink" title="为何逻辑如此重要"></a>为何逻辑如此重要</h2><ul><li>逻辑是消除歧义的工具</li></ul><h2 id="乘车费用问题–兼顾完整性和排他性"><a href="#乘车费用问题–兼顾完整性和排他性" class="headerlink" title="乘车费用问题–兼顾完整性和排他性"></a>乘车费用问题–兼顾完整性和排他性</h2><ul><li><p>车费规则</p><table><thead><tr><th>费用规则 A</th></tr></thead><tbody><tr><td>6 岁以下的乘客 0 元</td></tr><tr><td>不到 6 岁的乘客 100 元</td></tr></tbody></table><ul><li>13 岁的 Alice 的车费为 100 元，4 岁的 Bob 的车费为 0 元。那么 6 岁的 Charlie 的车费是多少？ 6 岁以上的说法包含了 6 岁，所以 Charlie 的车费是 100 元</li></ul></li><li><p>命题及其真假</p><ul><li><p><strong>能够判断对错的陈述句</strong>叫做<strong>命题</strong></p><ul><li>Alice(13 岁)的年龄在 6 岁以上。 （True）真命题</li><li>Bob(4 岁) 的年龄在 6 岁以上。 (False) 假命题</li><li>Charlie(6 岁) 的年龄在 6 岁以上。 (True) 真命题</li></ul></li></ul></li></ul><h2 id="建立复杂命题"><a href="#建立复杂命题" class="headerlink" title="建立复杂命题"></a>建立复杂命题</h2><table><thead><tr><th>A</th><th>﹁ A</th></tr></thead><tbody><tr><td>True</td><td>False</td></tr><tr><td>False</td><td>True</td></tr></tbody></table><ul><li><p>双重否定等于肯定</p><table><thead><tr><th>A</th><th>﹁ A</th><th>﹁ ﹁ A</th></tr></thead><tbody><tr><td>True</td><td>False</td><td>True</td></tr><tr><td>False</td><td>True</td><td>False</td></tr></tbody></table></li><li><p>逻辑<strong>与</strong></p><table><thead><tr><th>A</th><th>B</th><th>A ∧ B</th></tr></thead><tbody><tr><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>False</td><td>False</td></tr><tr><td>False</td><td>True</td><td>False</td></tr><tr><td>False</td><td>False</td><td>False</td></tr></tbody></table><ul><li>仅当 A 和 B 都为 True 时才为 True</li></ul></li><li><p>逻辑<strong>或</strong></p><table><thead><tr><th>A</th><th>B</th><th>A ∨ B</th></tr></thead><tbody><tr><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>False</td><td>True</td></tr><tr><td>False</td><td>True</td><td>True</td></tr><tr><td>False</td><td>False</td><td>False</td></tr></tbody></table><ul><li>仅当 A 和 B 都为 False 时才为 False</li></ul></li><li><p><strong>异或</strong></p><table><thead><tr><th>A</th><th>B</th><th>A⊕B</th></tr></thead><tbody><tr><td>True</td><td>True</td><td>False</td></tr><tr><td>True</td><td>False</td><td>True</td></tr><tr><td>False</td><td>True</td><td>True</td></tr><tr><td>False</td><td>False</td><td>False</td></tr></tbody></table><ul><li>仅当 A 和 B 不同时才为 True</li></ul></li><li><p><strong>相等</strong></p><table><thead><tr><th>A</th><th>B</th><th>A = B</th></tr></thead><tbody><tr><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>False</td><td>False</td></tr><tr><td>False</td><td>True</td><td>False</td></tr><tr><td>False</td><td>False</td><td>True</td></tr></tbody></table><ul><li>仅当 A 和 B 相同时才为 True</li></ul></li><li><p>思考题</p><table><thead><tr><th>A</th><th>B</th><th>﹁ (A⊕B)</th></tr></thead><tbody><tr><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>False</td><td>False</td></tr><tr><td>False</td><td>True</td><td>False</td></tr><tr><td>False</td><td>False</td><td>True</td></tr></tbody></table><ul><li>(﹁ (A⊕B)) = (A = B )</li></ul></li><li><p><strong>蕴涵</strong></p><table><thead><tr><th>A</th><th>B</th><th>A =&gt; B</th></tr></thead><tbody><tr><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>False</td><td>False</td></tr><tr><td>False</td><td>True</td><td>True</td></tr><tr><td>False</td><td>False</td><td>True</td></tr></tbody></table></li></ul><h2 id="德摩根定律"><a href="#德摩根定律" class="headerlink" title="德摩根定律"></a>德摩根定律</h2><ul><li><p>德摩根定律是什么？</p><ul><li><p>(﹁A) v (﹁B) = ﹁(A ∧ B) =&gt; ”非 A“ 或者 ”非 B“，和非”A 与 B“ 等价</p></li><li><p>(﹁A) ∧ (﹁B) = ﹁(A v B) =&gt; ”非 A“ 并且 ”非 B“，和非”A 或 B“ 等价</p><table><thead><tr><th>A</th><th>B</th><th>(﹁A) v (﹁B)</th><th>﹁(A ∧ B)</th><th>(﹁A) ∧ (﹁B)</th><th>﹁(A v B)</th></tr></thead><tbody><tr><td>true</td><td>true</td><td>false</td><td>false</td><td>false</td><td>false</td></tr><tr><td>true</td><td>false</td><td>true</td><td>true</td><td>false</td><td>false</td></tr><tr><td>false</td><td>true</td><td>true</td><td>true</td><td>false</td><td>false</td></tr><tr><td>false</td><td>false</td><td>true</td><td>true</td><td>true</td><td>true</td></tr></tbody></table><table><thead><tr><th>A</th><th>﹁A</th></tr></thead><tbody><tr><td>true</td><td>false</td></tr><tr><td>∧</td><td>v</td></tr></tbody></table></li></ul></li></ul><h2 id="卡诺图"><a href="#卡诺图" class="headerlink" title="卡诺图"></a>卡诺图</h2><ul><li><p>二灯游戏</p><ul><li><p>二灯游戏规则</p><ul><li>红灯灭，黄灯亮</li><li>绿灯、黄灯都灭</li><li>绿灯、黄灯都亮</li></ul></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      程序员数学1-逻辑
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="https://rm-rf.one/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="逻辑" scheme="https://rm-rf.one/tags/%E9%80%BB%E8%BE%91/"/>
+    
+      <category term="真与假" scheme="https://rm-rf.one/tags/%E7%9C%9F%E4%B8%8E%E5%81%87/"/>
+    
+      <category term="二元世界" scheme="https://rm-rf.one/tags/%E4%BA%8C%E5%85%83%E4%B8%96%E7%95%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《程序员数学 1》 - 笔记1</title>
+    <link href="https://rm-rf.one/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/"/>
+    <id>https://rm-rf.one/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/</id>
+    <published>2020-03-30T03:20:15.000Z</published>
+    <updated>2020-04-01T07:50:13.716Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事–无即是有"><a href="#第一章-0-的故事–无即是有" class="headerlink" title="第一章 0 的故事–无即是有"></a>第一章 0 的故事–无即是有</h1><h2 id="10-进制计数法"><a href="#10-进制计数法" class="headerlink" title="10 进制计数法"></a>10 进制计数法</h2><ul><li><p>什么是 10 进制计数法</p><ul><li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li><li>数位:从右往左数表示 个、十、百、千、万…位。</li></ul></li><li><p>分解</p><ul><li>2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li></ul></li></ul><h2 id="2-进制计数法"><a href="#2-进制计数法" class="headerlink" title="2 进制计数法"></a>2 进制计数法</h2><ul><li>什么是 2 进制计数法<ul><li>数字有 2 种，0、1.</li><li>从右往左分别表示 1 位、2 位、4 位、8 位</li></ul></li><li>分解<ul><li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li></ul></li><li>基数转换<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*&#x2F;</span><br><span class="line">12 &#x2F; 2 &#x3D; 6  余数 0</span><br><span class="line">6  &#x2F; 2 &#x3D; 3  余数 0</span><br><span class="line">3  &#x2F; 2 &#x3D; 1  余数 1</span><br><span class="line">1  &#x2F; 2 &#x3D; 0  余数 1</span><br><span class="line">&#x2F;**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*&#x2F;</span><br><span class="line">1000 &#x2F; 2 &#x3D; 500 余数 0</span><br><span class="line">500  &#x2F; 2 &#x3D; 250 余数 0</span><br><span class="line">250  &#x2F; 2 &#x3D; 125 余数 0</span><br><span class="line">125  &#x2F; 2 &#x3D; 62  余数 1</span><br><span class="line">62   &#x2F; 2 &#x3D; 31  余数 0</span><br><span class="line">31   &#x2F; 2 &#x3D; 15  余数 1</span><br><span class="line">15   &#x2F; 2 &#x3D; 7   余数 1</span><br><span class="line">7    &#x2F; 2 &#x3D; 3   余数 1</span><br><span class="line">3    &#x2F; 2 &#x3D; 1   余数 1</span><br><span class="line">1    &#x2F; 2 &#x3D; 0   余数 1</span><br></pre></td></tr></table></figure></li><li>计算机中为什么采用 2 进制计数法<ul><li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li><li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li></ul></li></ul><h2 id="按位计数法"><a href="#按位计数法" class="headerlink" title="按位计数法"></a>按位计数法</h2><ul><li><p>什么是按位计数法</p><ul><li><p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p></li><li><p>N 进制计数法:</p><ul><li>使用数字有 0、1、2、3…、N-1,共 N 种</li><li>从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li><li>例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li></ul></li></ul></li><li><p>不按位计数法的罗马数字</p><ul><li>没有数位，只表示数字本身</li><li>没有 0</li><li>使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li><li>并排的数字加起来，就是所表示的数</li><li>III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li><li>IV(4) 减法规则表示 5 - 1 = 4</li></ul></li></ul><p>##指数法则</p><ul><li><p>10 的 0 次方是什么？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">10³ &#x3D; 1000</span><br><span class="line">10² &#x3D; 100</span><br><span class="line">10¹ &#x3D; 10</span><br><span class="line">10º &#x3D; ？</span><br></pre></td></tr></table></figure></li><li><p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p></li><li><p>规则的扩展</p><ul><li>指数法则表达式: N <em>* a + N ** b = N *\</em> (a + b)</li></ul></li></ul><h2 id="0-所起的作用"><a href="#0-所起的作用" class="headerlink" title="0 所起的作用"></a>0 所起的作用</h2><ul><li><p>0 的作用: 占位</p><ul><li>2503 如果没有了 0 就变成了 253</li></ul></li></ul><h2 id="人类的极限和构造的发现"><a href="#人类的极限和构造的发现" class="headerlink" title="人类的极限和构造的发现"></a>人类的极限和构造的发现</h2><ul><li><p>重温历史进程</p><ul><li><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li><li><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li><li><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li><li><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li><li><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li><li><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      程序员数学-进制计数法
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="https://rm-rf.one/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="进制" scheme="https://rm-rf.one/tags/%E8%BF%9B%E5%88%B6/"/>
+    
+      <category term="计数法" scheme="https://rm-rf.one/tags/%E8%AE%A1%E6%95%B0%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我们不像诗歌</title>
+    <link href="https://rm-rf.one/2020/03/27/%E6%88%91%E4%BB%AC%E4%B8%8D%E5%83%8F%E8%AF%97%E6%AD%8C/"/>
+    <id>https://rm-rf.one/2020/03/27/%E6%88%91%E4%BB%AC%E4%B8%8D%E5%83%8F%E8%AF%97%E6%AD%8C/</id>
+    <published>2020-03-27T07:20:12.000Z</published>
+    <updated>2020-03-27T07:22:39.630Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>我们不像诗歌</p><p>&emsp;–才华横溢,</p><p>我们拒绝押韵。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://rm-rf.one/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="少年" scheme="https://rm-rf.one/tags/%E5%B0%91%E5%B9%B4/"/>
+    
+      <category term="年轻" scheme="https://rm-rf.one/tags/%E5%B9%B4%E8%BD%BB/"/>
+    
+      <category term="诗歌" scheme="https://rm-rf.one/tags/%E8%AF%97%E6%AD%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>路</title>
@@ -509,37 +616,6 @@
       <category term="git" scheme="https://rm-rf.one/tags/git/"/>
     
       <category term="Jekyll" scheme="https://rm-rf.one/tags/Jekyll/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一篇博客</title>
-    <link href="https://rm-rf.one/2018/05/30/2018-05-30-%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://rm-rf.one/2018/05/30/2018-05-30-%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
-    <published>2018-05-29T16:00:00.000Z</published>
-    <updated>2020-03-24T06:53:19.969Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p><p>一生中有很多重要时刻，而能让你清晰的记得的，只有几个 — <strong>成人礼、成家、生子</strong>。</p><a id="more"></a><p><img src="/images/2I3A3839.JPG" alt="2I3A3839"></p><p>距离辞职已经一个月了，那是做了很长的时间斗争，在五月的一个早晨做的决定。每天早出晚归，早上孩子没有睡醒我就爬起来上班，晚上孩子睡着了，我才到家。那段时间我只要抱他就会哭，所以就决定在家里多<del>陪陪</del>他们母子俩。</p><p>作为<strong>新手</strong><del>自由职业者</del>，也有一个月时间了，这段时间我的<strong>作息</strong>及其不<del>规律</del>，很多次夜里 12 点之后睡觉，早上 10 点起床。<strong>不建议自律性比较差的同学从事自由职业。</strong></p><p>这是我的第一篇博客，上一次写不记得是什么时候了,还没有组织好语言要说些什么，下边我就引用一下 Bob Dylan 的 《<strong>犹如滚石</strong>》，像一颗滚石一样<strong>顽强</strong>的活着吧！！！！</p><hr><blockquote><h5 id="《Like-a-Rolling-Stone》"><a href="#《Like-a-Rolling-Stone》" class="headerlink" title="《Like a Rolling Stone》"></a>《Like a Rolling Stone》</h5><p>作词 : Dylan</p><p>Once upon a time you dressed so fine</p><p>Threw bums a dime in your prime,</p><p>随手抛给路边潦倒不堪的乞丐几个小钱，</p><p>didn’t you?</p><p>对不？</p><p>People’d call say, Beware doll,</p><p>人们屡屡良言相劝:”成熟点小丫头，你早晚得明白什么叫风水轮流转”</p><p>You thought they were all</p><p>而你只当他们</p><p>kidding you</p><p>存心嘲弄视若不见</p><p>You used to laugh about</p><p>你总是肆意嗤笑着毫不掩饰自己的优越感</p><p>Everybody that was hangin’ out</p><p>那些落魄人儿游荡飘零在外</p><p>Now you don’t talk so loud</p><p>你那些高谈阔论怎么收起来了？</p><p>Now you don’t seem so proud</p><p>你那高贵的头颅怎么低下去了？</p><p>About having to be scrounging your next meal</p><p>只因今天的你已三餐不继，衣食无着，为寻生计迫不得已四处奔波。</p><p>How does it feel, how does it feel?</p><p>这滋味如何？ 这滋味如何？</p><p>To be without a home</p><p>你孑身独行 找不到回家的方向</p><p>Like a complete unknown, like a rolling stone</p><p>完全没有人知道你颠沛流离一如滚石</p><p>You’ve gone to the finest schools,</p><p>你考上了一所名牌校</p><p>but you know you only used to</p><p>可你也清楚</p><p>alright miss lonely</p><p>你除了被榨干的灵魂外</p><p>get juiced in it</p><p>一无所获</p><p>Nobody’s ever taught you</p><p>你从不曾想过</p><p>how to live out on the street</p><p>真实的底层社会该是怎般图景</p><p>And now you’re gonna have to get used to it</p><p>如今你为了讨生活已不得不学着去直面污浊与残缺</p><p>You say you never compromise</p><p>你曾经说，你永不妥协</p><p>With the mystery tramp, but now you realize</p><p>但面对那位神秘的流浪者，现在你已明白</p><p>He’s not selling any alibies</p><p>他可不会跟你卖关子故作姿态</p><p>As you stare into the vacuum of his eyes</p><p>你只得强忍厌恶望向他空洞无物的瞳眸，问道</p><p>And say do you want to make a deal</p><p>用最卑下的口吻问他要不要做笔买卖</p><p>How does it feel, how does it feel</p><p>这滋味如何？这滋味如何？</p><p>To be on your own,With no direction home</p><p>你孑身独行找不到回家的方向</p><p>a complete unknown, like a rolling stone</p><p>完全没有人知道你颠沛流离一如滚石</p><p>Oh, you never turned around to see the frowns</p><p>你从未注意过那些魔术师和小丑们</p><p>On the jumpers and the clowns</p><p>笑容中藏着双眉紧蹙</p><p>when they did their tricks for you</p><p>他们极尽卑下变着花样不过为了取悦于你</p><p>You never understood that it ain’t no good</p><p>你从来不明白那样不对</p><p>You shouldn’t let other people</p><p>你让别人</p><p>get your kicks for you</p><p>替你受苦受难你还颇以为乐</p><p>You used to ride on your chrome horse</p><p>你那位跨着哈雷机车带你兜风的花花公子</p><p>Who carried on his shoulder a siamese cat</p><p>肩头还安伏着一只华贵的暹罗猫</p><p>Ain’t it hard when you discovered that</p><p>而当你一朝醒悟</p><p>He really wasn’t where it’s at</p><p>他并非你心所渴求</p><p>After he took from you</p><p>却发现他已携着</p><p>everything he could steal</p><p>你所有的一切飘然远遁</p><p>How does it feel, how does it feel?</p><p>这滋味如何？这滋味如何？</p><p>To be on your own, With no direction home</p><p>你孑身独行 找不到回家的方向</p><p>Like a complete unknown, like a rolling stone</p><p>完全没有人知道你颠沛流离一如滚石</p><p>Princess on a steeple</p><p>幽居高塔的公主</p><p>and all the pretty people</p><p>和所有那些优雅体面的上层人士</p><p>They’re all drinking,</p><p>整日里狂饮，</p><p>thinking that they’ve got it made</p><p>以为他们已经成功</p><p>Exchanging all precious gifts</p><p>他们交换著各种珍贵的玩意和礼物</p><p>You better take your diamond ring,</p><p>可是你最好脱下那只钻石戒指</p><p>you better pawn it babe</p><p>当掉它吧，宝贝</p><p>You used to be so amused</p><p>你过去不是觉得很有趣吗？</p><p>At Napoleon in rags</p><p>对于那满面风尘</p><p>and the language that he used</p><p>用语鄙俗的流浪汉</p><p>Go to him he calls you, you can’t refuse</p><p>现在，到他那儿去吧。而今召唤声中你向他走去这一切不由你自主</p><p>When you ain’t got nothing,</p><p>当你一无所有，</p><p>you got nothing to loose</p><p>你也就再没什么可失去</p><p>You’re invisible now,</p><p>现在你周身透明</p><p>you’ve got not secret to conceal</p><p>再藏不住一丝秘密。</p><p>How does it feel, how does it feel?</p><p>这滋味如何？这滋味如何？</p><p>To be on your own, With no direction home</p><p>你孑身独行 找不到回家的方向</p><p>Like a complete unknown, like a rolling stone</p><p>完全没有人知道你颠沛流离一如滚石</p></blockquote><embed src="http://dl.stream.qqmusic.qq.com/C400003dcpAx3m6OM1.m4a?vkey=D142AEB05AAA6506B86F32ABAFCDCC88DFE1E924CA52C3E5098E9C989B3056240302A2B466C7A1A9ADEEF1A234834ADB0E43660F7E22B22E&guid=6280129848&uin=470510471&fromtag=66" height="0" width="0" loop="true" autostart="true">]]></content>
-    
-    <summary type="html">
-    
-      今天是2018年05月30日，2015年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是2017年12月22日 早上05:15分 出生。
-    
-    </summary>
-    
-    
-      <category term="生活" scheme="https://rm-rf.one/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="生活" scheme="https://rm-rf.one/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="重要时刻" scheme="https://rm-rf.one/tags/%E9%87%8D%E8%A6%81%E6%97%B6%E5%88%BB/"/>
-    
-      <category term="心情" scheme="https://rm-rf.one/tags/%E5%BF%83%E6%83%85/"/>
-    
-      <category term="Like a Rolling Stone" scheme="https://rm-rf.one/tags/Like-a-Rolling-Stone/"/>
-    
-      <category term="Bob Dylan" scheme="https://rm-rf.one/tags/Bob-Dylan/"/>
     
   </entry>
   
