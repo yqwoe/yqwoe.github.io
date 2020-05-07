@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>打造自己的产品 1</title>
+    <url>/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br> –《小王子》</p>
+</blockquote>
+<h2 id="0-念头"><a href="#0-念头" class="headerlink" title="0. 念头"></a>0. 念头</h2><p>  距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
+<h2 id="1-失眠"><a href="#1-失眠" class="headerlink" title="1. 失眠"></a>1. 失眠</h2><p>   现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
+<h2 id="10-性格"><a href="#10-性格" class="headerlink" title="10. 性格"></a>10. 性格</h2><p>  我是一个瞻前顾后的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
+<pre><code>&gt; 往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。</code></pre><h2 id="11-计划"><a href="#11-计划" class="headerlink" title="11. 计划"></a>11. 计划</h2><p>  借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
+<h2 id="100-技术选型"><a href="#100-技术选型" class="headerlink" title="100. 技术选型"></a>100. 技术选型</h2><ul>
+<li>后端: <strong>Rails Api only</strong></li>
+<li>app: <strong>uni-app</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
+<li>web: <strong>React</strong>、<strong>umijs</strong></li>
+<li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
+<li>搜索: <strong>EleasticSearch</strong></li>
+<li>队列: <strong>Sidekiq</strong></li>
+</ul>
+<h2 id="101-产品"><a href="#101-产品" class="headerlink" title="101. 产品"></a>101. 产品</h2><ul>
+<li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li>
+<li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li>
+<li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>创业</category>
+      </categories>
+      <tags>
+        <tag>创业</tag>
+        <tag>社群</tag>
+        <tag>电商</tag>
+        <tag>墨刀</tag>
+        <tag>github</tag>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>29岁,再见！</title>
+    <url>/2020/04/08/29%E5%B2%81-%E5%86%8D%E8%A7%81%EF%BC%81/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>冬冬：因为你明天过生日了吗？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《程序员数学-1》-笔记3</title>
     <url>/2020/04/01/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B03/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a href="#第三章-余数" class="headerlink" title="第三章 余数"></a>第三章 余数</h1><ul>
