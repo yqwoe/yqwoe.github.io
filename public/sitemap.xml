@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.one/about/</loc>
+    
+    <lastmod>2020-05-07T19:38:05.242Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://rm-rf.one/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</loc>
     
     <lastmod>2020-05-07T19:22:46.140Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://rm-rf.one/2018/05/30/2018-05-30-%E7%94%9F%E6%B4%BB-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2020-03-24T06:53:19.969Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.one/about/</loc>
-    
-    <lastmod>2020-03-22T06:21:36.812Z</lastmod>
     
   </url>
   
