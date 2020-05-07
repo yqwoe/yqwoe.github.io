@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.one/"/>
-  <updated>2020-04-02T06:22:37.792Z</updated>
+  <updated>2020-05-07T19:22:46.140Z</updated>
   <id>https://rm-rf.one/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>打造自己的产品 1</title>
+    <link href="https://rm-rf.one/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/"/>
+    <id>https://rm-rf.one/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</id>
+    <published>2020-05-07T18:17:12.000Z</published>
+    <updated>2020-05-07T19:22:46.140Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br> –《小王子》</p></blockquote><h2 id="0-念头"><a href="#0-念头" class="headerlink" title="0. 念头"></a>0. 念头</h2><p>  距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p><h2 id="1-失眠"><a href="#1-失眠" class="headerlink" title="1. 失眠"></a>1. 失眠</h2><p>   现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p><h2 id="10-性格"><a href="#10-性格" class="headerlink" title="10. 性格"></a>10. 性格</h2><p>  我是一个瞻前顾后的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p><pre><code>&gt; 往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。</code></pre><h2 id="11-计划"><a href="#11-计划" class="headerlink" title="11. 计划"></a>11. 计划</h2><p>  借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p><h2 id="100-技术选型"><a href="#100-技术选型" class="headerlink" title="100. 技术选型"></a>100. 技术选型</h2><ul><li>后端: <strong>Rails Api only</strong></li><li>app: <strong>uni-app</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li><li>web: <strong>React</strong>、<strong>umijs</strong></li><li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li><li>搜索: <strong>EleasticSearch</strong></li><li>队列: <strong>Sidekiq</strong></li></ul><h2 id="101-产品"><a href="#101-产品" class="headerlink" title="101. 产品"></a>101. 产品</h2><ul><li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li><li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li><li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      我的创业日志
+    
+    </summary>
+    
+    
+      <category term="创业" scheme="https://rm-rf.one/categories/%E5%88%9B%E4%B8%9A/"/>
+    
+    
+      <category term="创业" scheme="https://rm-rf.one/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="社群" scheme="https://rm-rf.one/tags/%E7%A4%BE%E7%BE%A4/"/>
+    
+      <category term="电商" scheme="https://rm-rf.one/tags/%E7%94%B5%E5%95%86/"/>
+    
+      <category term="墨刀" scheme="https://rm-rf.one/tags/%E5%A2%A8%E5%88%80/"/>
+    
+      <category term="github" scheme="https://rm-rf.one/tags/github/"/>
+    
+      <category term="小程序" scheme="https://rm-rf.one/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>29岁,再见！</title>
+    <link href="https://rm-rf.one/2020/04/08/29%E5%B2%81-%E5%86%8D%E8%A7%81%EF%BC%81/"/>
+    <id>https://rm-rf.one/2020/04/08/29%E5%B2%81-%E5%86%8D%E8%A7%81%EF%BC%81/</id>
+    <published>2020-04-08T02:15:39.000Z</published>
+    <updated>2020-05-07T19:19:26.675Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>我：儿子，你再也没有29岁的爸爸了。<br>冬冬：因为你明天过生日了吗？</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://rm-rf.one/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="29岁" scheme="https://rm-rf.one/tags/29%E5%B2%81/"/>
+    
+      <category term="30岁" scheme="https://rm-rf.one/tags/30%E5%B2%81/"/>
+    
+  </entry>
   
   <entry>
     <title>《程序员数学-1》-笔记3</title>
@@ -560,62 +621,6 @@
       <category term="macbook pro" scheme="https://rm-rf.one/tags/macbook-pro/"/>
     
       <category term="vue" scheme="https://rm-rf.one/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>过六一的&quot;儿童&quot;们</title>
-    <link href="https://rm-rf.one/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/"/>
-    <id>https://rm-rf.one/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/</id>
-    <published>2018-05-31T16:00:00.000Z</published>
-    <updated>2020-03-20T12:51:04.401Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><h5 id="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"><a href="#今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！" class="headerlink" title="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"></a><em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5></blockquote><a id="more"></a><blockquote><p>刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p></blockquote><p><img src="/images/WechatIMG80.jpeg" alt="WechatIMG80"></p><blockquote><p>我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>每次当我有”我不是幸运的大多数”这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p></blockquote><p><img src="/images/WechatIMG81.jpeg" alt="WechatIMG81"></p><blockquote><p>我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过”<del>是冬冬毁掉了我的生活</del>“这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。<br>说话要小声，走路要小声，就连呼吸都要思考着呼吸，”这样呼吸对吗？我是不是不该这样呼吸？”</p><h1 id="“W-T-F-”"><a href="#“W-T-F-”" class="headerlink" title="“W T F !!!!!!!”"></a><del><em>“W T F !!!!!!!”</em></del></h1><h1 id="“完了完了完了！！！”"><a href="#“完了完了完了！！！”" class="headerlink" title="“完了完了完了！！！”"></a><del><em>“完了完了完了！！！”</em></del></h1><h1 id="“我的生活是不是就这样了？”"><a href="#“我的生活是不是就这样了？”" class="headerlink" title="“我的生活是不是就这样了？”"></a><del><em>“我的生活是不是就这样了？”</em></del></h1><p>不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p><p>如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<del>你们是对的！！！！</del> 你们还只是孩子。</p><p>写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！
-    
-    </summary>
-    
-    
-      <category term="生活" scheme="https://rm-rf.one/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="六一" scheme="https://rm-rf.one/tags/%E5%85%AD%E4%B8%80/"/>
-    
-      <category term="巨婴" scheme="https://rm-rf.one/tags/%E5%B7%A8%E5%A9%B4/"/>
-    
-      <category term="孩子" scheme="https://rm-rf.one/tags/%E5%AD%A9%E5%AD%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>给博客增加评论功能</title>
-    <link href="https://rm-rf.one/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
-    <id>https://rm-rf.one/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</id>
-    <published>2018-05-30T16:00:00.000Z</published>
-    <updated>2020-03-20T12:48:32.162Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢-imsun大神的插件Gitment"><a href="#首先感谢-imsun大神的插件Gitment" class="headerlink" title="首先感谢@imsun大神的插件Gitment"></a>首先感谢<a href="https://github.com/imsun" target="_blank" rel="noopener">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a></h3><a id="more"></a><p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p><p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment Demo Page</a> 再进行操作。</p><ul><li><a href="https://www.jekyll.com.cn/docs/home/" target="_blank" rel="noopener">Jekyll 教程</a></li><li><a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">Gitment Readme</a></li></ul><h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><h4 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h4><p><a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p><h4 id="2-引入-js、css-到文章页面"><a href="#2-引入-js、css-到文章页面" class="headerlink" title="2.引入 js、css 到文章页面"></a>2.引入 js、css 到文章页面</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;container&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;yqwoe.space&#x2F;yqwoe.github.io&#x2F;static&#x2F;css&#x2F;gitment.css&quot;&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;yqwoe.space&#x2F;yqwoe.github.io&#x2F;static&#x2F;js&#x2F;gitment.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">&#x2F;**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*&#x2F;</span><br><span class="line">var paths &#x3D; location.pathname.split(&#39;&#x2F;&#39;)</span><br><span class="line">var id &#x3D; decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment &#x3D; new Gitment(&#123;</span><br><span class="line">  id: id, &#x2F;&#x2F; 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#39;你的 GitHub ID&#39;,</span><br><span class="line">  repo: &#39;存储评论的 repo&#39;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#39;你注册 OAuth 的 client ID&#39;,</span><br><span class="line">    client_secret: &#39;你注册 OAuth 的 client secret&#39;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#39;container&#39;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure><h4 id="3-初始化评论"><a href="#3-初始化评论" class="headerlink" title="3. 初始化评论"></a>3. 初始化评论</h4><p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p><h4 id="敲黑板，下一篇博客会介绍-《Jekyll-Admin-插件的使用方法》和一些填坑技巧。"><a href="#敲黑板，下一篇博客会介绍-《Jekyll-Admin-插件的使用方法》和一些填坑技巧。" class="headerlink" title="敲黑板，下一篇博客会介绍 《Jekyll-Admin 插件的使用方法》和一些填坑技巧。"></a>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4><p>我的博客评论功能目前只支持全球最大<del>同性</del>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>以上是我的分享，谢谢！！</p>]]></content>
-    
-    <summary type="html">
-    
-      插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：[giment.js](yqwoe.space/yqwoe.github.io/static/js/gitment.js)
-    
-    </summary>
-    
-    
-      <category term="Jekyll" scheme="https://rm-rf.one/categories/Jekyll/"/>
-    
-    
-      <category term="技巧" scheme="https://rm-rf.one/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-      <category term="gitment" scheme="https://rm-rf.one/tags/gitment/"/>
-    
-      <category term="git" scheme="https://rm-rf.one/tags/git/"/>
-    
-      <category term="Jekyll" scheme="https://rm-rf.one/tags/Jekyll/"/>
     
   </entry>
   
