@@ -21,3 +21,14 @@ layout: "about"
 | Gitlab | SpringCloud   | Dva          |                |
 | Gogs   | Python        | AntDesign    |                |
 |        | Go            | AntDesignPro |                |
+
+
+# 微信
+<div  align="center">    
+<img src="/images/1588880253457.jpg"  height = "400" alt="我的微信账号"/>
+</div>
+# 订阅号
+<div  align="center">
+<img src="/images/v0_347734.jpg@596w_1l.jpg"  height = "400" alt="我的微信账号"/>
+</div>
+
