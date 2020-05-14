@@ -467,9 +467,12 @@ code {
   text-align: right;
 }
 .highlight .code pre {
-  background: #f7f7f7;
   padding-left: 10px;
-  width: 100%;
+  padding-right: 10px;
+  background-color: #f7f7f7;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .gist table {
   width: auto;
@@ -1189,7 +1192,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d6791f;
+  background: #6a40d2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
