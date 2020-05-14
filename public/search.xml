@@ -11,8 +11,8 @@
 <h2 id="10-性格"><a href="#10-性格" class="headerlink" title="10. 性格"></a>10. 性格</h2><p>  我是一个瞻前顾后的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
 <pre><code>&gt; 往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。</code></pre><h2 id="11-计划"><a href="#11-计划" class="headerlink" title="11. 计划"></a>11. 计划</h2><p>  借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
 <h2 id="100-技术选型"><a href="#100-技术选型" class="headerlink" title="100. 技术选型"></a>100. 技术选型</h2><ul>
-<li>后端: <strong>Rails Api only</strong></li>
-<li>app: <strong>uni-app</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
+<li>后端: <strong><del>Rails Api only</del></strong> <strong>Rails Graphql-Ruby</strong></li>
+<li>app: <strong><del>uni-app</del></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
 <li>web: <strong>React</strong>、<strong>umijs</strong></li>
 <li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
 <li>搜索: <strong>EleasticSearch</strong></li>
@@ -551,8 +551,8 @@
         <category>数学</category>
       </categories>
       <tags>
-        <tag>进制</tag>
         <tag>计数法</tag>
+        <tag>进制</tag>
       </tags>
   </entry>
   <entry>
@@ -577,12 +577,12 @@
     <title>路</title>
     <url>/2020/03/21/%E8%B7%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-lfVqpCPr" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-lrCQXMSE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-lfVqpCPr"),
+            element: document.getElementById("aplayer-lrCQXMSE"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -614,11 +614,11 @@
         <category>生活</category>
       </categories>
       <tags>
+        <tag>人生</tag>
         <tag>生活</tag>
         <tag>书</tag>
         <tag>路</tag>
         <tag>有趣</tag>
-        <tag>人生</tag>
         <tag>春天</tag>
       </tags>
   </entry>
@@ -1038,10 +1038,10 @@
       <tags>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
         <tag>nginx</tag>
         <tag>ssl</tag>
         <tag>acme.sh</tag>
+        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
@@ -1080,8 +1080,8 @@
         <tag>git</tag>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
-        <tag>gogs</tag>
         <tag>ubuntu 14.04</tag>
+        <tag>gogs</tag>
       </tags>
   </entry>
   <entry>
