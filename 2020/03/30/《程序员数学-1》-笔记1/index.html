@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
+  <meta name="msvalidate.01" content="93677F9EE28967A12957AAF9D56B110C st">
+  <meta name="baidu-site-verification" content="zHihNc100Z">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"rm-rf.one","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="程序员数学-进制计数法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《程序员数学 1》 - 笔记1">
+<meta property="og:url" content="https://rm-rf.one/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/">
+<meta property="og:site_name" content="rm-rf.one">
+<meta property="og:description" content="程序员数学-进制计数法">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-30T03:20:15.000Z">
+<meta property="article:modified_time" content="2020-04-01T07:50:13.716Z">
+<meta property="article:author" content="Yq Woe">
+<meta property="article:tag" content="计数法">
+<meta property="article:tag" content="进制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://rm-rf.one/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>《程序员数学 1》 - 笔记1 | rm-rf.one</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="rm-rf.one" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">rm-rf.one</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">To destroy be to create!</h1>
+      
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="search-pop-overlay">
+  <div class="popup search-popup">
+      <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://rm-rf.one/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Yq Woe">
+      <meta itemprop="description" content="To destroy be to create!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rm-rf.one">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          《程序员数学 1》 - 笔记1
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-30 11:20:15" itemprop="dateCreated datePublished" datetime="2020-03-30T11:20:15+08:00">2020-03-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-01 15:50:13" itemprop="dateModified" datetime="2020-04-01T15:50:13+08:00">2020-04-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数学</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">程序员数学-进制计数法</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="第一章-0-的故事–无即是有"><a href="#第一章-0-的故事–无即是有" class="headerlink" title="第一章 0 的故事–无即是有"></a>第一章 0 的故事–无即是有</h1><h2 id="10-进制计数法"><a href="#10-进制计数法" class="headerlink" title="10 进制计数法"></a>10 进制计数法</h2><ul>
+<li><p>什么是 10 进制计数法</p>
+<ul>
+<li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
+<li>数位:从右往左数表示 个、十、百、千、万…位。</li>
+</ul>
+</li>
+<li><p>分解</p>
+<ul>
+<li>2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-进制计数法"><a href="#2-进制计数法" class="headerlink" title="2 进制计数法"></a>2 进制计数法</h2><ul>
+<li>什么是 2 进制计数法<ul>
+<li>数字有 2 种，0、1.</li>
+<li>从右往左分别表示 1 位、2 位、4 位、8 位</li>
+</ul>
+</li>
+<li>分解<ul>
+<li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
+</ul>
+</li>
+<li>基数转换<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*&#x2F;</span><br><span class="line">12 &#x2F; 2 &#x3D; 6  余数 0</span><br><span class="line">6  &#x2F; 2 &#x3D; 3  余数 0</span><br><span class="line">3  &#x2F; 2 &#x3D; 1  余数 1</span><br><span class="line">1  &#x2F; 2 &#x3D; 0  余数 1</span><br><span class="line">&#x2F;**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*&#x2F;</span><br><span class="line">1000 &#x2F; 2 &#x3D; 500 余数 0</span><br><span class="line">500  &#x2F; 2 &#x3D; 250 余数 0</span><br><span class="line">250  &#x2F; 2 &#x3D; 125 余数 0</span><br><span class="line">125  &#x2F; 2 &#x3D; 62  余数 1</span><br><span class="line">62   &#x2F; 2 &#x3D; 31  余数 0</span><br><span class="line">31   &#x2F; 2 &#x3D; 15  余数 1</span><br><span class="line">15   &#x2F; 2 &#x3D; 7   余数 1</span><br><span class="line">7    &#x2F; 2 &#x3D; 3   余数 1</span><br><span class="line">3    &#x2F; 2 &#x3D; 1   余数 1</span><br><span class="line">1    &#x2F; 2 &#x3D; 0   余数 1</span><br></pre></td></tr></table></figure></li>
+<li>计算机中为什么采用 2 进制计数法<ul>
+<li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
+<li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="按位计数法"><a href="#按位计数法" class="headerlink" title="按位计数法"></a>按位计数法</h2><ul>
+<li><p>什么是按位计数法</p>
+<ul>
+<li><p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p>
+</li>
+<li><p>N 进制计数法:</p>
+<ul>
+<li>使用数字有 0、1、2、3…、N-1,共 N 种</li>
+<li>从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li>
+<li>例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>不按位计数法的罗马数字</p>
+<ul>
+<li>没有数位，只表示数字本身</li>
+<li>没有 0</li>
+<li>使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li>
+<li>并排的数字加起来，就是所表示的数</li>
+<li>III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li>
+<li>IV(4) 减法规则表示 5 - 1 = 4</li>
+</ul>
+</li>
+</ul>
+<p>##指数法则</p>
+<ul>
+<li><p>10 的 0 次方是什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">10³ &#x3D; 1000</span><br><span class="line">10² &#x3D; 100</span><br><span class="line">10¹ &#x3D; 10</span><br><span class="line">10º &#x3D; ？</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p>
+</li>
+<li><p>规则的扩展</p>
+<ul>
+<li>指数法则表达式: N <em>* a + N ** b = N *\</em> (a + b)</li>
+</ul>
+</li>
+</ul>
+<h2 id="0-所起的作用"><a href="#0-所起的作用" class="headerlink" title="0 所起的作用"></a>0 所起的作用</h2><ul>
+<li><p>0 的作用: 占位</p>
+<ul>
+<li>2503 如果没有了 0 就变成了 253</li>
+</ul>
+</li>
+</ul>
+<h2 id="人类的极限和构造的发现"><a href="#人类的极限和构造的发现" class="headerlink" title="人类的极限和构造的发现"></a>人类的极限和构造的发现</h2><ul>
+<li><p>重温历史进程</p>
+<ul>
+<li><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li>
+<li><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li>
+<li><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li>
+<li><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li>
+<li><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li>
+<li><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AE%A1%E6%95%B0%E6%B3%95/" rel="tag"># 计数法</a>
+              <a href="/tags/%E8%BF%9B%E5%88%B6/" rel="tag"># 进制</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/27/%E6%88%91%E4%BB%AC%E4%B8%8D%E5%83%8F%E8%AF%97%E6%AD%8C/" rel="prev" title="我们不像诗歌">
+      <i class="fa fa-chevron-left"></i> 我们不像诗歌
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/31/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B02/" rel="next" title="《程序员数学-1》-笔记2">
+      《程序员数学-1》-笔记2 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-0-的故事–无即是有"><span class="nav-number">1.</span> <span class="nav-text">第一章 0 的故事–无即是有</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#10-进制计数法"><span class="nav-number">1.1.</span> <span class="nav-text">10 进制计数法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-进制计数法"><span class="nav-number">1.2.</span> <span class="nav-text">2 进制计数法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#按位计数法"><span class="nav-number">1.3.</span> <span class="nav-text">按位计数法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-所起的作用"><span class="nav-number">1.4.</span> <span class="nav-text">0 所起的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人类的极限和构造的发现"><span class="nav-number">1.5.</span> <span class="nav-text">人类的极限和构造的发现</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yq Woe"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Yq Woe</p>
+  <div class="site-description" itemprop="description">To destroy be to create!</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">89</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yqwoe" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yqwoe" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/yqwoe" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;yqwoe" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yq Woe</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '38908a117aeb2426fddb',
+      clientSecret: 'fab30686c5598f5ba19e726492b27e33e40eceda',
+      repo        : 'yqwoe.github.io',
+      owner       : 'yqwoe',
+      admin       : ['yqwoe'],
+      id          : 'd8aae551dea55670c061c46987f3fb34',
+        language: 'en',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
