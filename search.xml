@@ -152,6 +152,33 @@
       </tags>
   </entry>
   <entry>
+    <title>给博客增加评论功能</title>
+    <url>/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢-imsun大神的插件Gitment"><a href="#首先感谢-imsun大神的插件Gitment" class="headerlink" title="首先感谢@imsun大神的插件Gitment"></a>首先感谢<a href="https://github.com/imsun" target="_blank" rel="noopener">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a></h3><a id="more"></a>
+
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment Demo Page</a> 再进行操作。</p>
+<ul>
+<li><a href="https://www.jekyll.com.cn/docs/home/" target="_blank" rel="noopener">Jekyll 教程</a></li>
+<li><a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">Gitment Readme</a></li>
+</ul>
+<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><h4 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h4><p><a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4 id="2-引入-js、css-到文章页面"><a href="#2-引入-js、css-到文章页面" class="headerlink" title="2.引入 js、css 到文章页面"></a>2.引入 js、css 到文章页面</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;container&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;yqwoe.space&#x2F;yqwoe.github.io&#x2F;static&#x2F;css&#x2F;gitment.css&quot;&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;yqwoe.space&#x2F;yqwoe.github.io&#x2F;static&#x2F;js&#x2F;gitment.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">&#x2F;**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*&#x2F;</span><br><span class="line">var paths &#x3D; location.pathname.split(&#39;&#x2F;&#39;)</span><br><span class="line">var id &#x3D; decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment &#x3D; new Gitment(&#123;</span><br><span class="line">  id: id, &#x2F;&#x2F; 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#39;你的 GitHub ID&#39;,</span><br><span class="line">  repo: &#39;存储评论的 repo&#39;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#39;你注册 OAuth 的 client ID&#39;,</span><br><span class="line">    client_secret: &#39;你注册 OAuth 的 client secret&#39;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#39;container&#39;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-初始化评论"><a href="#3-初始化评论" class="headerlink" title="3. 初始化评论"></a>3. 初始化评论</h4><p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4 id="敲黑板，下一篇博客会介绍-《Jekyll-Admin-插件的使用方法》和一些填坑技巧。"><a href="#敲黑板，下一篇博客会介绍-《Jekyll-Admin-插件的使用方法》和一些填坑技巧。" class="headerlink" title="敲黑板，下一篇博客会介绍 《Jekyll-Admin 插件的使用方法》和一些填坑技巧。"></a>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4><p>我的博客评论功能目前只支持全球最大<del>同性</del>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>以上是我的分享，谢谢！！</p>
+]]></content>
+      <categories>
+        <category>Jekyll</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -209,30 +236,143 @@
       </tags>
   </entry>
   <entry>
-    <title>给博客增加评论功能</title>
-    <url>/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢-imsun大神的插件Gitment"><a href="#首先感谢-imsun大神的插件Gitment" class="headerlink" title="首先感谢@imsun大神的插件Gitment"></a>首先感谢<a href="https://github.com/imsun" target="_blank" rel="noopener">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a></h3><a id="more"></a>
+    <title>一次gogs采坑之旅</title>
+    <url>/2018/06/03/2018-06-03-git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+<a id="more"></a>
 
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment Demo Page</a> 再进行操作。</p>
-<ul>
-<li><a href="https://www.jekyll.com.cn/docs/home/" target="_blank" rel="noopener">Jekyll 教程</a></li>
-<li><a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">Gitment Readme</a></li>
-</ul>
-<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><h4 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h4><p><a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4 id="2-引入-js、css-到文章页面"><a href="#2-引入-js、css-到文章页面" class="headerlink" title="2.引入 js、css 到文章页面"></a>2.引入 js、css 到文章页面</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;container&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;yqwoe.space&#x2F;yqwoe.github.io&#x2F;static&#x2F;css&#x2F;gitment.css&quot;&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;yqwoe.space&#x2F;yqwoe.github.io&#x2F;static&#x2F;js&#x2F;gitment.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">&#x2F;**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*&#x2F;</span><br><span class="line">var paths &#x3D; location.pathname.split(&#39;&#x2F;&#39;)</span><br><span class="line">var id &#x3D; decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment &#x3D; new Gitment(&#123;</span><br><span class="line">  id: id, &#x2F;&#x2F; 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#39;你的 GitHub ID&#39;,</span><br><span class="line">  repo: &#39;存储评论的 repo&#39;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#39;你注册 OAuth 的 client ID&#39;,</span><br><span class="line">    client_secret: &#39;你注册 OAuth 的 client secret&#39;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#39;container&#39;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>1.创建用户，一定要记住密码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
 
-<h4 id="3-初始化评论"><a href="#3-初始化评论" class="headerlink" title="3. 初始化评论"></a>3. 初始化评论</h4><p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4 id="敲黑板，下一篇博客会介绍-《Jekyll-Admin-插件的使用方法》和一些填坑技巧。"><a href="#敲黑板，下一篇博客会介绍-《Jekyll-Admin-插件的使用方法》和一些填坑技巧。" class="headerlink" title="敲黑板，下一篇博客会介绍 《Jekyll-Admin 插件的使用方法》和一些填坑技巧。"></a>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4><p>我的博客评论功能目前只支持全球最大<del>同性</del>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>以上是我的分享，谢谢！！</p>
+<p>2.下载并解压安装包</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;dl.gogs.io&#x2F;0.11.43&#x2F;gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
+
+<p>3.拷贝启动项到系统下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cp &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;init&#x2F;debian&#x2F;gogs &#x2F;etc&#x2F;init.d&#x2F;</span><br><span class="line">chmod +x &#x2F;etc&#x2F;init.d&#x2F;gogs</span><br></pre></td></tr></table></figure>
+
+<p>4.安装 mysql</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#39;gogs&#39;@&#39;localhost&#39; identified by &#39;密码&#39;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#39;gogs&#39;@&#39;localhost&#39;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
+
+<p>5.启动 gogs</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http:&#x2F;&#x2F;localhost:3000  &#x3D;&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
+
+<p>6.nginx 配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location &#x2F; &#123;</span><br><span class="line">          proxy_pass http:&#x2F;&#x2F;localhost:3000&#x2F;;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>7.访问 <a href="http://www.example.com/install" target="_blank" rel="noopener">www.example.com/install</a> 进行初始化</p>
+<p>8.你可能遇到的问题</p>
+<p><a href="https://blog.csdn.net/u013710784/article/details/78778044" target="_blank" rel="noopener">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
+<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786" target="_blank" rel="noopener">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
 ]]></content>
       <categories>
-        <category>Jekyll</category>
+        <category>服务器</category>
       </categories>
       <tags>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
         <tag>git</tag>
-        <tag>Jekyll</tag>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>gogs</tag>
+        <tag>ubuntu 14.04</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云mysql外网访问</title>
+    <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+<a id="more"></a>
+
+<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
+<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
+<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
+<p>3.mysql 默认只能自本机访问</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf</span><br><span class="line">#bind-address &#x3D; 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
+
+<p>4.检查是不是在监听状态</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
+
+<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
+]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生活计划</title>
+    <url>/2018/07/28/2018-07-28-%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>所以，我深刻的意识到有一个健康的身体太重要了。</p>
+<a id="more"></a>
+
+<p>以下是我近期的生活计划</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>项目</th>
+<th>时长</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>06:00</td>
+<td>山地车</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>08:00</td>
+<td>早饭 、洗漱</td>
+<td>1h</td>
+</tr>
+<tr>
+<td>09:00</td>
+<td>工作时间</td>
+<td>3h</td>
+</tr>
+<tr>
+<td>12:00</td>
+<td>午饭、午休</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>14:00</td>
+<td>工作时间</td>
+<td>4h</td>
+</tr>
+<tr>
+<td>18:00</td>
+<td>遛娃、买菜、做饭</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>20:00</td>
+<td>孩子洗澡</td>
+<td>1h</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td>二人世界</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>–</td>
+<td>结束</td>
+<td>14h</td>
+</tr>
+</tbody></table>
+<p>饮食（待补充..）</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>山地车</tag>
+        <tag>篮球</tag>
+        <tag>羽毛球</tag>
+        <tag>带孩子</tag>
       </tags>
   </entry>
   <entry>
@@ -274,77 +414,28 @@
       <tags>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
         <tag>nginx</tag>
         <tag>ssl</tag>
         <tag>acme.sh</tag>
-        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
-    <title>一次gogs采坑之旅</title>
-    <url>/2018/06/03/2018-06-03-git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+    <title>英语学习</title>
+    <url>/2018/10/09/2018-10-09-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: duolinguo（多邻国）</p>
+<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
+<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
 <a id="more"></a>
 
-<p>1.创建用户，一定要记住密码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
-
-<p>2.下载并解压安装包</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;dl.gogs.io&#x2F;0.11.43&#x2F;gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
-
-<p>3.拷贝启动项到系统下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cp &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;init&#x2F;debian&#x2F;gogs &#x2F;etc&#x2F;init.d&#x2F;</span><br><span class="line">chmod +x &#x2F;etc&#x2F;init.d&#x2F;gogs</span><br></pre></td></tr></table></figure>
-
-<p>4.安装 mysql</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#39;gogs&#39;@&#39;localhost&#39; identified by &#39;密码&#39;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#39;gogs&#39;@&#39;localhost&#39;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
-
-<p>5.启动 gogs</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http:&#x2F;&#x2F;localhost:3000  &#x3D;&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
-
-<p>6.nginx 配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location &#x2F; &#123;</span><br><span class="line">          proxy_pass http:&#x2F;&#x2F;localhost:3000&#x2F;;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>7.访问 <a href="http://www.example.com/install" target="_blank" rel="noopener">www.example.com/install</a> 进行初始化</p>
-<p>8.你可能遇到的问题</p>
-<p><a href="https://blog.csdn.net/u013710784/article/details/78778044" target="_blank" rel="noopener">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
-<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786" target="_blank" rel="noopener">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
+<p>待补充..</p>
 ]]></content>
       <categories>
-        <category>服务器</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>git</tag>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>gogs</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云mysql外网访问</title>
-    <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
-<a id="more"></a>
-
-<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
-<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
-<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
-<p>3.mysql 默认只能自本机访问</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf</span><br><span class="line">#bind-address &#x3D; 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
-
-<p>4.检查是不是在监听状态</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
-
-<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
-]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>mysql</tag>
+        <tag>英语单词</tag>
+        <tag>入门</tag>
       </tags>
   </entry>
   <entry>
@@ -435,97 +526,6 @@
       </tags>
   </entry>
   <entry>
-    <title>生活计划</title>
-    <url>/2018/07/28/2018-07-28-%E7%94%9F%E6%B4%BB-%E7%94%9F%E6%B4%BB%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>所以，我深刻的意识到有一个健康的身体太重要了。</p>
-<a id="more"></a>
-
-<p>以下是我近期的生活计划</p>
-<table>
-<thead>
-<tr>
-<th>时间</th>
-<th>项目</th>
-<th>时长</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>06:00</td>
-<td>山地车</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>08:00</td>
-<td>早饭 、洗漱</td>
-<td>1h</td>
-</tr>
-<tr>
-<td>09:00</td>
-<td>工作时间</td>
-<td>3h</td>
-</tr>
-<tr>
-<td>12:00</td>
-<td>午饭、午休</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>14:00</td>
-<td>工作时间</td>
-<td>4h</td>
-</tr>
-<tr>
-<td>18:00</td>
-<td>遛娃、买菜、做饭</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>20:00</td>
-<td>孩子洗澡</td>
-<td>1h</td>
-</tr>
-<tr>
-<td>21:00</td>
-<td>二人世界</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>–</td>
-<td>结束</td>
-<td>14h</td>
-</tr>
-</tbody></table>
-<p>饮食（待补充..）</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>山地车</tag>
-        <tag>篮球</tag>
-        <tag>羽毛球</tag>
-        <tag>带孩子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>英语学习</title>
-    <url>/2018/10/09/2018-10-09-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: duolinguo（多邻国）</p>
-<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
-<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
-<a id="more"></a>
-
-<p>待补充..</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>英语单词</tag>
-        <tag>入门</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mybatis动态查询实现</title>
     <url>/2018/10/30/2018-10-30-mybatis-dynamic%20condition%20/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
@@ -600,6 +600,39 @@
       </tags>
   </entry>
   <entry>
+    <title>集群、负载均衡、分布式</title>
+    <url>/2018/11/17/2018-11-17-%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
+<a id="more"></a>
+
+<p>1.集群<br>集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
+<p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
+<p>2.负载均衡<br>至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
+<p>3.分布式<br>分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
+<p>今天看到个通俗的例子，大家可以借鉴下：</p>
+<p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
+<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。<br>1）负载均衡集群（LB:load balancing）</p>
+<p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
+<p>2）高可用性集群（HA:High Availability）</p>
+<p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
+<p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
+<p>3）高性能集群（HP:High Performance）</p>
+<p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
+<p>作者：普 if 加的帕<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/qq_34896887/article/details/78616209" target="_blank" rel="noopener">https://blog.csdn.net/qq_34896887/article/details/78616209</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+<p><a href="http://server.51cto.com/News-557053.htm" target="_blank" rel="noopener">http://server.51cto.com/News-557053.htm</a></p>
+<p><a href="https://www.cnblogs.com/xzwblog/p/7255364.html" target="_blank" rel="noopener">https://www.cnblogs.com/xzwblog/p/7255364.html</a></p>
+]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+        <tag>集群</tag>
+        <tag>负载均衡</tag>
+        <tag>分布式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nginx 负载均衡</title>
     <url>/2018/11/17/2018-11-17-nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么？"><a href="#nginx-是什么？" class="headerlink" title="nginx 是什么？"></a>nginx 是什么？</h1><blockquote>
@@ -639,36 +672,29 @@
       </tags>
   </entry>
   <entry>
-    <title>集群、负载均衡、分布式</title>
-    <url>/2018/11/17/2018-11-17-%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
+    <title>《小王子》阅读</title>
+    <url>/2020/03/16/2020-03-16-%E3%80%8A%E5%B0%8F%E7%8E%8B%E5%AD%90%E3%80%8B%E9%98%85%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
 <a id="more"></a>
 
-<p>1.集群<br>集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
-<p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
-<p>2.负载均衡<br>至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
-<p>3.分布式<br>分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
-<p>今天看到个通俗的例子，大家可以借鉴下：</p>
-<p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
-<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。<br>1）负载均衡集群（LB:load balancing）</p>
-<p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
-<p>2）高可用性集群（HA:High Availability）</p>
-<p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
-<p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
-<p>3）高性能集群（HP:High Performance）</p>
-<p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
-<p>作者：普 if 加的帕<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/qq_34896887/article/details/78616209" target="_blank" rel="noopener">https://blog.csdn.net/qq_34896887/article/details/78616209</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
-<p><a href="http://server.51cto.com/News-557053.htm" target="_blank" rel="noopener">http://server.51cto.com/News-557053.htm</a></p>
-<p><a href="https://www.cnblogs.com/xzwblog/p/7255364.html" target="_blank" rel="noopener">https://www.cnblogs.com/xzwblog/p/7255364.html</a></p>
+<blockquote>
+<p>​ 《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>​ 旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>​ 小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>​ 小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>服务器</category>
+        <category>读书</category>
       </categories>
       <tags>
-        <tag>nginx</tag>
-        <tag>集群</tag>
-        <tag>负载均衡</tag>
-        <tag>分布式</tag>
+        <tag>小王子</tag>
+        <tag>儿子</tag>
+        <tag>书</tag>
+        <tag>星球旅行</tag>
+        <tag>点灯的人</tag>
+        <tag>狐狸</tag>
+        <tag>独一无二</tag>
       </tags>
   </entry>
   <entry>
@@ -786,65 +812,111 @@
       </tags>
   </entry>
   <entry>
-    <title>《小王子》阅读</title>
-    <url>/2020/03/16/2020-03-16-%E3%80%8A%E5%B0%8F%E7%8E%8B%E5%AD%90%E3%80%8B%E9%98%85%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
-<a id="more"></a>
-
-<blockquote>
-<p>​ 《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>​ 旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>​ 小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>​ 小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
-</blockquote>
+    <title>一年要赚多少钱才能支撑一个三口之家？</title>
+    <url>/2020/11/12/2020-11-12-%20%E4%B8%80%E5%B9%B4%E8%A6%81%E8%B5%9A%E5%A4%9A%E5%B0%91%E9%92%B1%E6%89%8D%E8%83%BD%E6%94%AF%E6%92%91%E4%B8%80%E4%B8%AA%E4%B8%89%E5%8F%A3%E4%B9%8B%E5%AE%B6%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><table>
+<thead>
+<tr>
+<th>预算</th>
+<th>年收入</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>年收入 * 0.1 = 1.5w</td>
+<td>15w</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>风险</th>
+<th>险种</th>
+<th>保额</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>身故没有收入、养家费用没保障、房贷车贷无力偿还</td>
+<td>寿险</td>
+<td>250w + 50w （300w）</td>
+<td>60岁</td>
+</tr>
+<tr>
+<td>高额医疗费、生病期间没收入、后期康复费用</td>
+<td>重疾</td>
+<td>50 + 30 （80w）</td>
+<td></td>
+</tr>
+<tr>
+<td>医疗费用报销</td>
+<td>百万医疗</td>
+<td>100 + 100 (200w) 一万不计免赔</td>
+<td></td>
+</tr>
+<tr>
+<td>意外伤残 意外身故</td>
+<td>意外险</td>
+<td>100 + 100 (200w)</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>年收入</th>
+<th>类型</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>15w</td>
+<td>保险</td>
+<td>10%</td>
+</tr>
+<tr>
+<td></td>
+<td>投资</td>
+<td>？</td>
+</tr>
+<tr>
+<td></td>
+<td>子女教育</td>
+<td>？</td>
+</tr>
+<tr>
+<td></td>
+<td>生活支出</td>
+<td>？</td>
+</tr>
+<tr>
+<td></td>
+<td>紧急备用金</td>
+<td>？</td>
+</tr>
+<tr>
+<td></td>
+<td>父母赡养</td>
+<td>?</td>
+</tr>
+<tr>
+<td></td>
+<td>….</td>
+<td>?</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
-        <category>读书</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>小王子</tag>
-        <tag>儿子</tag>
-        <tag>书</tag>
-        <tag>星球旅行</tag>
-        <tag>点灯的人</tag>
-        <tag>狐狸</tag>
-        <tag>独一无二</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>打造自己的产品 1</title>
-    <url>/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br> –《小王子》</p>
-</blockquote>
-<h2 id="0-念头"><a href="#0-念头" class="headerlink" title="0. 念头"></a>0. 念头</h2><p>  距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
-<h2 id="1-失眠"><a href="#1-失眠" class="headerlink" title="1. 失眠"></a>1. 失眠</h2><p>   现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
-<h2 id="10-性格"><a href="#10-性格" class="headerlink" title="10. 性格"></a>10. 性格</h2><p>  我是一个瞻前顾后的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
-<pre><code>&gt; 往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。</code></pre><h2 id="11-计划"><a href="#11-计划" class="headerlink" title="11. 计划"></a>11. 计划</h2><p>  借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
-<h2 id="100-技术选型"><a href="#100-技术选型" class="headerlink" title="100. 技术选型"></a>100. 技术选型</h2><ul>
-<li>后端: <strong><del>Rails Api only</del></strong> <strong>Rails Graphql-Ruby</strong></li>
-<li>app: <strong><del>uni-app</del></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
-<li>web: <strong>React</strong>、<strong>umijs</strong></li>
-<li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
-<li>搜索: <strong>EleasticSearch</strong></li>
-<li>队列: <strong>Sidekiq</strong></li>
-</ul>
-<h2 id="101-产品"><a href="#101-产品" class="headerlink" title="101. 产品"></a>101. 产品</h2><ul>
-<li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li>
-<li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li>
-<li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>创业</category>
-      </categories>
-      <tags>
-        <tag>创业</tag>
-        <tag>社群</tag>
-        <tag>电商</tag>
-        <tag>墨刀</tag>
-        <tag>github</tag>
-        <tag>小程序</tag>
+        <tag>保险</tag>
+        <tag>收入</tag>
+        <tag>支出</tag>
       </tags>
   </entry>
   <entry>
@@ -1271,15 +1343,90 @@
       </tags>
   </entry>
   <entry>
+    <title>打造自己的产品 1</title>
+    <url>/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br> –《小王子》</p>
+</blockquote>
+<h2 id="0-念头"><a href="#0-念头" class="headerlink" title="0. 念头"></a>0. 念头</h2><p>  距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
+<h2 id="1-失眠"><a href="#1-失眠" class="headerlink" title="1. 失眠"></a>1. 失眠</h2><p>   现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
+<h2 id="10-性格"><a href="#10-性格" class="headerlink" title="10. 性格"></a>10. 性格</h2><p>  我是一个瞻前顾后的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
+<pre><code>&gt; 往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。</code></pre><h2 id="11-计划"><a href="#11-计划" class="headerlink" title="11. 计划"></a>11. 计划</h2><p>  借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
+<h2 id="100-技术选型"><a href="#100-技术选型" class="headerlink" title="100. 技术选型"></a>100. 技术选型</h2><ul>
+<li>后端: <strong><del>Rails Api only</del></strong> <strong>Rails Graphql-Ruby</strong></li>
+<li>app: <strong><del>uni-app</del></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
+<li>web: <strong>React</strong>、<strong>umijs</strong></li>
+<li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
+<li>搜索: <strong>EleasticSearch</strong></li>
+<li>队列: <strong>Sidekiq</strong></li>
+</ul>
+<h2 id="101-产品"><a href="#101-产品" class="headerlink" title="101. 产品"></a>101. 产品</h2><ul>
+<li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li>
+<li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li>
+<li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>创业</category>
+      </categories>
+      <tags>
+        <tag>创业</tag>
+        <tag>社群</tag>
+        <tag>电商</tag>
+        <tag>墨刀</tag>
+        <tag>github</tag>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安全风险评估</title>
+    <url>/2020/08/18/%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9%E8%AF%84%E4%BC%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a href="#评估" class="headerlink" title="评估"></a>评估</h2><ul>
+<li><p>适用范围: 工人、工厂、设施、设备。</p>
+<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <del>公式</del> 得出最终的评估结果。</p>
+<p>采集数据:</p>
+<ul>
+<li>视频监控</li>
+<li>机械设备状态</li>
+<li>化学物质 （有害物质…）</li>
+<li>厂区环境（温湿度）</li>
+<li>工人 （行为）</li>
+<li>等…系列影响安全风险的重要指标数据</li>
+</ul>
+</li>
+</ul>
+<h2 id="检测"><a href="#检测" class="headerlink" title="检测"></a>检测</h2><ul>
+<li><p>适用范围: 生产过程中的环节检测。</p>
+<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
+<p>…</p>
+</li>
+</ul>
+<h2 id="决策"><a href="#决策" class="headerlink" title="决策"></a>决策</h2><ul>
+<li><p>适用范围: 辅助决策</p>
+<p>通过以上结果知道生产过程….</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>机器学习</category>
+      </categories>
+      <tags>
+        <tag>安全</tag>
+        <tag>检测</tag>
+        <tag>策略</tag>
+        <tag>预测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>路</title>
     <url>/2020/03/21/%E8%B7%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-lrCQXMSE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-GQqFCKpe" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-lrCQXMSE"),
+            element: document.getElementById("aplayer-GQqFCKpe"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -1335,153 +1482,6 @@
         <tag>云计算</tag>
         <tag>雾计算</tag>
         <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安全风险评估</title>
-    <url>/2020/08/18/%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9%E8%AF%84%E4%BC%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a href="#评估" class="headerlink" title="评估"></a>评估</h2><ul>
-<li><p>适用范围: 工人、工厂、设施、设备。</p>
-<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <del>公式</del> 得出最终的评估结果。</p>
-<p>采集数据:</p>
-<ul>
-<li>视频监控</li>
-<li>机械设备状态</li>
-<li>化学物质 （有害物质…）</li>
-<li>厂区环境（温湿度）</li>
-<li>工人 （行为）</li>
-<li>等…系列影响安全风险的重要指标数据</li>
-</ul>
-</li>
-</ul>
-<h2 id="检测"><a href="#检测" class="headerlink" title="检测"></a>检测</h2><ul>
-<li><p>适用范围: 生产过程中的环节检测。</p>
-<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
-<p>…</p>
-</li>
-</ul>
-<h2 id="决策"><a href="#决策" class="headerlink" title="决策"></a>决策</h2><ul>
-<li><p>适用范围: 辅助决策</p>
-<p>通过以上结果知道生产过程….</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>机器学习</category>
-      </categories>
-      <tags>
-        <tag>安全</tag>
-        <tag>检测</tag>
-        <tag>策略</tag>
-        <tag>预测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一年要赚多少钱才能支撑一个三口之家？</title>
-    <url>/2020/11/12/2020-11-12-%20%E4%B8%80%E5%B9%B4%E8%A6%81%E8%B5%9A%E5%A4%9A%E5%B0%91%E9%92%B1%E6%89%8D%E8%83%BD%E6%94%AF%E6%92%91%E4%B8%80%E4%B8%AA%E4%B8%89%E5%8F%A3%E4%B9%8B%E5%AE%B6%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><table>
-<thead>
-<tr>
-<th>预算</th>
-<th>年收入</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>年收入 * 0.1 = 1.5w</td>
-<td>15w</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>风险</th>
-<th>险种</th>
-<th>保额</th>
-<th>期限</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>身故没有收入、养家费用没保障、房贷车贷无力偿还</td>
-<td>寿险</td>
-<td>250w + 50w （300w）</td>
-<td>60岁</td>
-</tr>
-<tr>
-<td>高额医疗费、生病期间没收入、后期康复费用</td>
-<td>重疾</td>
-<td>50 + 30 （80w）</td>
-<td></td>
-</tr>
-<tr>
-<td>医疗费用报销</td>
-<td>百万医疗</td>
-<td>100 + 100 (200w) 一万不计免赔</td>
-<td></td>
-</tr>
-<tr>
-<td>意外伤残 意外身故</td>
-<td>意外险</td>
-<td>100 + 100 (200w)</td>
-<td></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>年收入</th>
-<th>类型</th>
-<th>比例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>15w</td>
-<td>保险</td>
-<td>10%</td>
-</tr>
-<tr>
-<td></td>
-<td>投资</td>
-<td>？</td>
-</tr>
-<tr>
-<td></td>
-<td>子女教育</td>
-<td>？</td>
-</tr>
-<tr>
-<td></td>
-<td>生活支出</td>
-<td>？</td>
-</tr>
-<tr>
-<td></td>
-<td>紧急备用金</td>
-<td>？</td>
-</tr>
-<tr>
-<td></td>
-<td>父母赡养</td>
-<td>?</td>
-</tr>
-<tr>
-<td></td>
-<td>….</td>
-<td>?</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>保险</tag>
-        <tag>收入</tag>
-        <tag>支出</tag>
       </tags>
   </entry>
 </search>
