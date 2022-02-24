@@ -369,7 +369,7 @@ blockquote {
 img {
   box-sizing: border-box;
   display: block;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-width: 100%;
 }
 
@@ -394,11 +394,14 @@ a img:hover {
   border: 1px solid var(--tertiary-color);
   /* border-bottom: 1px solid var(--tertiary-color); */
   border-collapse: collapse;
+  min-width: 25em;
+  text-align: left;
 }
 
 td, th {
   border: 1px solid var(--tertiary-color);
   padding: 0.25em;
+  margin: 0.25em;
 }
 
 .video-container {
@@ -452,3 +455,42 @@ td, th {
     color: var(--text-color);
     font-family: var(--body-stack);
   }
+
+
+
+blockquote {
+    position: relative;
+    padding: 10px 15px 10px 60px;
+    box-sizing: border-box;
+    font-style: italic;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-left: 4px solid ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    content: "\f10d";
+    font-family: FontAwesome;
+    color: var(--text-color);
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+blockquote p {
+    padding: 0;
+    margin: 7px 0;
+    line-height: 1.7;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}

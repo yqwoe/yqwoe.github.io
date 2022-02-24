@@ -17,8 +17,12 @@ code {
   font-family: var(--highlight-stack);
 }
 
+.highlight table {
+  border: 0 !important;
+}
+
 .highlight td, .highlight th, .highlight table caption, .highlight table td, .highlight table th {
-  border: none;
+  border: 0 !important;
   padding: 0;
 }
 
