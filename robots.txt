@@ -12,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://rm-rf.one/sitemap.xml
-Sitemap: https://rm-rf.one/baidusitemap.xml
+Sitemap: https://viva-la-vida.cn/sitemap.xml
+Sitemap: https://viva-la-vida.cn/baidusitemap.xml
