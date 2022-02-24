@@ -460,7 +460,7 @@ td, th {
 
 blockquote {
     position: relative;
-    padding: 10px 15px 10px 60px;
+    padding: 1.5em 1.5em 1.5em 2em;
     box-sizing: border-box;
     font-style: italic;
     background: var(--bg-color);
@@ -474,7 +474,6 @@ blockquote:before{
     position: absolute;
     top: 15px;
     left: 15px;
-    content: "\f10d";
     font-family: FontAwesome;
     color: var(--text-color);
     font-size: 30px;
