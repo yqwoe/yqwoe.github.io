@@ -391,10 +391,13 @@ a img:hover {
 
 .article-gallery img, table {
   margin: 1em auto;
+  border: 1px solid var(--tertiary-color);
+  /* border-bottom: 1px solid var(--tertiary-color); */
+  border-collapse: collapse;
 }
 
-td, th, table caption, table td, table th {
-  border-bottom: 1px solid var(--tertiary-color);
+td, th {
+  border: 1px solid var(--tertiary-color);
   padding: 0.25em;
 }
 
