@@ -23,7 +23,7 @@
 <meta property="og:description" content="程序员数学-进制计数法">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-30T03:20:15.000Z">
-<meta property="article:modified_time" content="2022-02-24T03:29:18.820Z">
+<meta property="article:modified_time" content="2022-02-24T06:48:56.001Z">
 <meta property="article:author" content="Yq Woe">
 <meta property="article:tag" content="计数法">
 <meta property="article:tag" content="进制">
@@ -74,8 +74,7 @@
     <div class="article-entry" itemprop="articleBody">
       
       
-        <h1 id="第一章-0-的故事–无即是有"><a href="#第一章-0-的故事–无即是有" class="headerlink" title="第一章 0 的故事–无即是有"></a>第一章 0 的故事–无即是有</h1><a id="more"></a>
-<h2 id="10-进制计数法"><a href="#10-进制计数法" class="headerlink" title="10 进制计数法"></a>10 进制计数法</h2><ul>
+        <h1 id="第一章-0-的故事–无即是有"><a href="#第一章-0-的故事–无即是有" class="headerlink" title="第一章 0 的故事–无即是有"></a>第一章 0 的故事–无即是有</h1><h2 id="10-进制计数法"><a href="#10-进制计数法" class="headerlink" title="10 进制计数法"></a>10 进制计数法</h2><ul>
 <li><p>什么是 10 进制计数法</p>
 <ul>
 <li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
@@ -89,17 +88,21 @@
 </li>
 </ul>
 <h2 id="2-进制计数法"><a href="#2-进制计数法" class="headerlink" title="2 进制计数法"></a>2 进制计数法</h2><ul>
-<li>什么是 2 进制计数法<ul>
+<li><p>什么是 2 进制计数法</p>
+<ul>
 <li>数字有 2 种，0、1.</li>
 <li>从右往左分别表示 1 位、2 位、4 位、8 位</li>
 </ul>
 </li>
-<li>分解<ul>
+<li><p>分解</p>
+<ul>
 <li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
 </ul>
 </li>
-<li>基数转换<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*&#x2F;</span><br><span class="line">12 &#x2F; 2 &#x3D; 6  余数 0</span><br><span class="line">6  &#x2F; 2 &#x3D; 3  余数 0</span><br><span class="line">3  &#x2F; 2 &#x3D; 1  余数 1</span><br><span class="line">1  &#x2F; 2 &#x3D; 0  余数 1</span><br><span class="line">&#x2F;**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*&#x2F;</span><br><span class="line">1000 &#x2F; 2 &#x3D; 500 余数 0</span><br><span class="line">500  &#x2F; 2 &#x3D; 250 余数 0</span><br><span class="line">250  &#x2F; 2 &#x3D; 125 余数 0</span><br><span class="line">125  &#x2F; 2 &#x3D; 62  余数 1</span><br><span class="line">62   &#x2F; 2 &#x3D; 31  余数 0</span><br><span class="line">31   &#x2F; 2 &#x3D; 15  余数 1</span><br><span class="line">15   &#x2F; 2 &#x3D; 7   余数 1</span><br><span class="line">7    &#x2F; 2 &#x3D; 3   余数 1</span><br><span class="line">3    &#x2F; 2 &#x3D; 1   余数 1</span><br><span class="line">1    &#x2F; 2 &#x3D; 0   余数 1</span><br></pre></td></tr></table></figure></li>
-<li>计算机中为什么采用 2 进制计数法<ul>
+<li><p>基数转换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*&#x2F;</span><br><span class="line">12 &#x2F; 2 &#x3D; 6  余数 0</span><br><span class="line">6  &#x2F; 2 &#x3D; 3  余数 0</span><br><span class="line">3  &#x2F; 2 &#x3D; 1  余数 1</span><br><span class="line">1  &#x2F; 2 &#x3D; 0  余数 1</span><br><span class="line">&#x2F;**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*&#x2F;</span><br><span class="line">1000 &#x2F; 2 &#x3D; 500 余数 0</span><br><span class="line">500  &#x2F; 2 &#x3D; 250 余数 0</span><br><span class="line">250  &#x2F; 2 &#x3D; 125 余数 0</span><br><span class="line">125  &#x2F; 2 &#x3D; 62  余数 1</span><br><span class="line">62   &#x2F; 2 &#x3D; 31  余数 0</span><br><span class="line">31   &#x2F; 2 &#x3D; 15  余数 1</span><br><span class="line">15   &#x2F; 2 &#x3D; 7   余数 1</span><br><span class="line">7    &#x2F; 2 &#x3D; 3   余数 1</span><br><span class="line">3    &#x2F; 2 &#x3D; 1   余数 1</span><br><span class="line">1    &#x2F; 2 &#x3D; 0   余数 1</span><br></pre></td></tr></table></figure></li>
+<li><p>计算机中为什么采用 2 进制计数法</p>
+<ul>
 <li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
 <li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
 </ul>
