@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://viva-la-vida.cn/"/>
-  <updated>2020-11-24T06:50:31.411Z</updated>
+  <updated>2022-04-08T09:56:27.255Z</updated>
   <id>https://viva-la-vida.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <link href="https://viva-la-vida.cn/2022/04/08/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E5%86%99%E9%81%93-%E7%88%B6%E6%AF%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%84%8F%E4%B9%89/"/>
+    <id>https://viva-la-vida.cn/2022/04/08/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E5%86%99%E9%81%93-%E7%88%B6%E6%AF%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%84%8F%E4%B9%89/</id>
+    <published>2022-04-08T09:48:15.000Z</published>
+    <updated>2022-04-08T09:56:27.255Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p><strong>鲁迅先生写父母存在的意义是：</strong><br>父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>基于k8s\traefik\springboot的微服务实践</title>
@@ -334,16 +356,16 @@
     <published>2020-03-21T14:57:20.000Z</published>
     <updated>2022-02-24T03:31:21.326Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-HFklzaCU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-HFklzaCU"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "The Lion Sleeps Tonight",              author: "The Tokens",              url: "/music/The Lion Sleeps Tonight.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><a id="more"></a><blockquote><p>如果你能在下午四点来，那么在三点的时候，我就会开始感到幸福了。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; –《小王子》</p></blockquote><p>​&emsp;&emsp;大多时候无法静下心来做好一件事，比如这篇拖了很多天的日志。还有每天早晨起床锻炼身体、按时喝水…</p><!--more--><p>​&emsp;&emsp;写这篇日志的想法来自于上周六，早饭后，和老婆商量着带孩子出去感受一下春暖花开，疫情持续了两个月的时间，也让小家伙待在家里两个月，不能见小朋友、不能去游乐场。以至于最近出门以后，小家伙变的很拘束、对外面的世界也很陌生。<br>​<br>&emsp;&emsp;小家伙已经两岁三个月了，会背很多首唐诗。如果你剩饭剩菜的话，小家伙会说:”谁知盘中餐，粒粒皆辛苦。”。有次晚上和老婆带着小家伙出门散步，刮起一阵风，树上的叶子沙沙响，”夜来风雨声，花落知多少。”</p><p>&emsp;&emsp;上个周六的上午，坐在马桶上，熟练的掏出手机，开始搜索适合踏青的地方，<del>如意湖</del>、<del>森林公园</del>、<del>郑州之林</del>、最后我选了特别冷门的<a href="https://map.baidu.com/poi/%E9%BE%99%E6%B3%89%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/@1264607135.35301,408408639.5094941,21z,87t#panoid=c3596d067083c715f90cad67&panotype=inter&heading=355&pitch=0&l=21&tn=B_NORMAL_MAP&sc=0&newmap=1&shareurl=1&pid=1002890000150427124704361IN&iid=c3596d067083c715f90cad67&psp=%7B%22PanoIndoorPoiModule%22%3A%7B%22uid%22%3A%225b8c96862988758e2fb90853%22%7D%7D" target="_blank" rel="noopener">龙泉湿地公园</a> ，然而这并没有结束，跑了将近 30 公里，去到的是一个荒废了的公园。也或者是因为长时间封闭状态，看起来很旧，基本没什么人来。让我满怀期待的上了路，最终又满怀失望的回了家。</p><p>&emsp;&emsp;现在是周二的晚上08:20，小家伙下午没睡觉，早早的已经睡下了。我和老婆吃着火锅喝着啤酒，大聊人生。是这三年多以来，为数不多的能够静下心来一起吃饭聊天的。聊从前、现在和将来，我们还是会充满希望.</p><p>&emsp;&emsp;人生难免会走上曲曲折折的道路，但是不要担心，这些路的那头一定会有美丽的风景。</p><p>&emsp;&emsp;路，是人走出来的。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-TXAtbcRU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-TXAtbcRU"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "The Lion Sleeps Tonight",              author: "The Tokens",              url: "/music/The Lion Sleeps Tonight.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><a id="more"></a><blockquote><p>如果你能在下午四点来，那么在三点的时候，我就会开始感到幸福了。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; –《小王子》</p></blockquote><p>​&emsp;&emsp;大多时候无法静下心来做好一件事，比如这篇拖了很多天的日志。还有每天早晨起床锻炼身体、按时喝水…</p><!--more--><p>​&emsp;&emsp;写这篇日志的想法来自于上周六，早饭后，和老婆商量着带孩子出去感受一下春暖花开，疫情持续了两个月的时间，也让小家伙待在家里两个月，不能见小朋友、不能去游乐场。以至于最近出门以后，小家伙变的很拘束、对外面的世界也很陌生。<br>​<br>&emsp;&emsp;小家伙已经两岁三个月了，会背很多首唐诗。如果你剩饭剩菜的话，小家伙会说:”谁知盘中餐，粒粒皆辛苦。”。有次晚上和老婆带着小家伙出门散步，刮起一阵风，树上的叶子沙沙响，”夜来风雨声，花落知多少。”</p><p>&emsp;&emsp;上个周六的上午，坐在马桶上，熟练的掏出手机，开始搜索适合踏青的地方，<del>如意湖</del>、<del>森林公园</del>、<del>郑州之林</del>、最后我选了特别冷门的<a href="https://map.baidu.com/poi/%E9%BE%99%E6%B3%89%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/@1264607135.35301,408408639.5094941,21z,87t#panoid=c3596d067083c715f90cad67&panotype=inter&heading=355&pitch=0&l=21&tn=B_NORMAL_MAP&sc=0&newmap=1&shareurl=1&pid=1002890000150427124704361IN&iid=c3596d067083c715f90cad67&psp=%7B%22PanoIndoorPoiModule%22%3A%7B%22uid%22%3A%225b8c96862988758e2fb90853%22%7D%7D" target="_blank" rel="noopener">龙泉湿地公园</a> ，然而这并没有结束，跑了将近 30 公里，去到的是一个荒废了的公园。也或者是因为长时间封闭状态，看起来很旧，基本没什么人来。让我满怀期待的上了路，最终又满怀失望的回了家。</p><p>&emsp;&emsp;现在是周二的晚上08:20，小家伙下午没睡觉，早早的已经睡下了。我和老婆吃着火锅喝着啤酒，大聊人生。是这三年多以来，为数不多的能够静下心来一起吃饭聊天的。聊从前、现在和将来，我们还是会充满希望.</p><p>&emsp;&emsp;人生难免会走上曲曲折折的道路，但是不要担心，这些路的那头一定会有美丽的风景。</p><p>&emsp;&emsp;路，是人走出来的。</p>]]></content>
     
     <summary type="html">
     
-      &lt;div id=&quot;aplayer-HFklzaCU&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+      &lt;div id=&quot;aplayer-TXAtbcRU&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
             &lt;pre class=&quot;aplayer-lrc-content&quot;&gt;&lt;/pre&gt;
         &lt;/div&gt;
         &lt;script&gt;
           var ap = new APlayer({
-            element: document.getElementById(&quot;aplayer-HFklzaCU&quot;),
+            element: document.getElementById(&quot;aplayer-TXAtbcRU&quot;),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -583,31 +605,6 @@
       <category term="英语单词" scheme="https://viva-la-vida.cn/tags/%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/"/>
     
       <category term="入门" scheme="https://viva-la-vida.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序员数学1</title>
-    <link href="https://viva-la-vida.cn/2018/10/06/2018-10-06-%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A61/"/>
-    <id>https://viva-la-vida.cn/2018/10/06/2018-10-06-%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A61/</id>
-    <published>2018-10-05T16:00:00.000Z</published>
-    <updated>2022-02-24T03:30:10.362Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="学习列表"><a href="#学习列表" class="headerlink" title="学习列表:"></a>学习列表:</h2><a id="more"></a><h3 id="2-进制"><a href="#2-进制" class="headerlink" title="2 进制:"></a>2 进制:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">2503</span><br><span class="line">1251  余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">625   余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">312   余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">156   余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">78    余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">39    余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line"></span><br><span class="line">19    余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">9     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line">4     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">2     余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">1     余  0  &#x3D;&#x3D;&gt; 0</span><br><span class="line">0     余  1  &#x3D;&#x3D;&gt; 1</span><br><span class="line"></span><br><span class="line">111 000 111 001</span><br></pre></td></tr></table></figure><h3 id="指数"><a href="#指数" class="headerlink" title="指数:"></a>指数:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">10 ** 3 &#x3D; 1000</span><br><span class="line">10 ** 2 &#x3D; 100  (1000 * 1&#x2F;10)</span><br><span class="line">10 ** 1 &#x3D; 10   (100 * 1&#x2F;10)</span><br><span class="line">10 ** 0 &#x3D; ？  (10 * 1&#x2F;10)</span><br><span class="line">10 ** -1 &#x3D; (1&#x2F;10)</span><br></pre></td></tr></table></figure><blockquote><p>指数每减 1，数字就变为原来的十分之一。</p></blockquote><blockquote><h2 id="指数法则"><a href="#指数法则" class="headerlink" title="指数法则:"></a>指数法则:</h2></blockquote><blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">N ** a + N ** b &#x3D; N ** (a + b)      N &gt; 0</span><br></pre></td></tr></table></figure></blockquote><h2 id="0-所起的作用"><a href="#0-所起的作用" class="headerlink" title="0 所起的作用:"></a>0 所起的作用:</h2><blockquote><h3 id="0-的作用-占位"><a href="#0-的作用-占位" class="headerlink" title="0 的作用: 占位"></a>0 的作用: 占位</h3></blockquote><blockquote><p>​ 2503 中 0 如果省略，那就变成 253.数值放生了变化，所以 0 不能省略。</p></blockquote><blockquote><p>##</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      程序员数学1
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://viva-la-vida.cn/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="数学" scheme="https://viva-la-vida.cn/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="程序员" scheme="https://viva-la-vida.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
     
   </entry>
   
