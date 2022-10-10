@@ -152,32 +152,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一次ios网页样式问题排查心路历程</title>
-    <url>/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。"><a href="#我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。" class="headerlink" title="我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。"></a>我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4><a id="more"></a>
-
-<p>大概是这样：</p>
-<p><img src="/images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
-<p>选中的区域无法正常显示。</p>
-<h4 id="准备调试环境："><a href="#准备调试环境：" class="headerlink" title="准备调试环境："></a>准备调试环境：</h4><h5 id="1-打开-sifari-的开发模式。"><a href="#1-打开-sifari-的开发模式。" class="headerlink" title="1.打开 sifari 的开发模式。"></a>1.打开 sifari 的开发模式。</h5><p><img src="/images/1527947682461.jpg" alt="1527947682461"></p>
-<h5 id="2-手机-sifari-打开调试模式"><a href="#2-手机-sifari-打开调试模式" class="headerlink" title="2.手机 sifari 打开调试模式"></a>2.手机 sifari 打开调试模式</h5><p><img src="/images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
-<h5 id="3-手机连接电脑"><a href="#3-手机连接电脑" class="headerlink" title="3.手机连接电脑"></a>3.手机连接电脑</h5><p><img src="/images/1527947709241.jpg" alt="1527947709241"></p>
-<h5 id="勾选上图的-ip-地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。"><a href="#勾选上图的-ip-地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。" class="headerlink" title="勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。"></a>勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。</h5><h4 id="正经话题，我是如何找到问题并解决的。"><a href="#正经话题，我是如何找到问题并解决的。" class="headerlink" title="正经话题，我是如何找到问题并解决的。"></a>正经话题，我是如何找到问题并解决的。</h4><p>#####调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。</p>
-<p><img src="/images/1527950086573.jpg" alt="1527950086573"></p>
-<h5 id="最后锁定"><a href="#最后锁定" class="headerlink" title="最后锁定"></a>最后锁定</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="webkit-overflow-scrolling-属性控制元素在移动设备上是否使用滚动回弹效果"><a href="#webkit-overflow-scrolling-属性控制元素在移动设备上是否使用滚动回弹效果" class="headerlink" title="-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果."></a>-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.</h5><h5 id="auto-使用普通滚动-当手指从触摸屏上移开，滚动会立即停止。"><a href="#auto-使用普通滚动-当手指从触摸屏上移开，滚动会立即停止。" class="headerlink" title="auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。"></a>auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。</h5><h5 id="touch-使用具有回弹效果的滚动-当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。"><a href="#touch-使用具有回弹效果的滚动-当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。" class="headerlink" title="touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。"></a>touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。</h5><h5 id="最常见的例子就是，"><a href="#最常见的例子就是，" class="headerlink" title="最常见的例子就是，"></a>最常见的例子就是，</h5><h5 id="在-safari-上，使用了-webkit-overflow-scrolling-touch-之后，页面偶尔会卡住不动。"><a href="#在-safari-上，使用了-webkit-overflow-scrolling-touch-之后，页面偶尔会卡住不动。" class="headerlink" title="在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。"></a>在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。</h5><h5 id="在-safari-上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的-bug。"><a href="#在-safari-上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的-bug。" class="headerlink" title="在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。"></a>在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。</h5><h5 id="通过动态添加内容撑开容器，结果根本不能滑动的-bug。"><a href="#通过动态添加内容撑开容器，结果根本不能滑动的-bug。" class="headerlink" title="通过动态添加内容撑开容器，结果根本不能滑动的 bug。"></a>通过动态添加内容撑开容器，结果根本不能滑动的 bug。</h5><h5 id="最终无得解决方法是改成-auto，我还没有找到更完美解决的办法。"><a href="#最终无得解决方法是改成-auto，我还没有找到更完美解决的办法。" class="headerlink" title="最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。"></a>最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。</h5><h5 id="网上有很多关于-webkit-overflow-scrolling-ios-的问题，有兴趣的可以研究一下。不过我不建议研究，一研究估计小半年就过去了，也没有答案"><a href="#网上有很多关于-webkit-overflow-scrolling-ios-的问题，有兴趣的可以研究一下。不过我不建议研究，一研究估计小半年就过去了，也没有答案" class="headerlink" title="网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。不过我不建议研究，一研究估计小半年就过去了，也没有答案"></a>网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。<del>不过我不建议研究，一研究估计小半年就过去了，也没有答案</del></h5>]]></content>
-      <categories>
-        <category>css</category>
-      </categories>
-      <tags>
-        <tag>mac</tag>
-        <tag>ios</tag>
-        <tag>macbook pro</tag>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>给博客增加评论功能</title>
     <url>/2018/05/31/2018-05-31-%E6%8A%80%E5%B7%A7-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢-imsun大神的插件Gitment"><a href="#首先感谢-imsun大神的插件Gitment" class="headerlink" title="首先感谢@imsun大神的插件Gitment"></a>首先感谢<a href="https://github.com/imsun" target="_blank" rel="noopener">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a></h3><a id="more"></a>
@@ -202,6 +176,63 @@
         <tag>gitment</tag>
         <tag>git</tag>
         <tag>Jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>过六一的&quot;儿童&quot;们</title>
+    <url>/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<h5 id="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"><a href="#今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！" class="headerlink" title="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"></a><em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5></blockquote>
+<a id="more"></a>
+
+<blockquote>
+<p>刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p>
+</blockquote>
+<p><img src="/images/WechatIMG80.jpeg" alt="WechatIMG80"></p>
+<blockquote>
+<p>我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>每次当我有”我不是幸运的大多数”这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p>
+</blockquote>
+<p><img src="/images/WechatIMG81.jpeg" alt="WechatIMG81"></p>
+<blockquote>
+<p>我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过”<del>是冬冬毁掉了我的生活</del>“这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。<br>说话要小声，走路要小声，就连呼吸都要思考着呼吸，”这样呼吸对吗？我是不是不该这样呼吸？”</p>
+<h1 id="“W-T-F-”"><a href="#“W-T-F-”" class="headerlink" title="“W T F !!!!!!!”"></a><del><em>“W T F !!!!!!!”</em></del></h1><h1 id="“完了完了完了！！！”"><a href="#“完了完了完了！！！”" class="headerlink" title="“完了完了完了！！！”"></a><del><em>“完了完了完了！！！”</em></del></h1><h1 id="“我的生活是不是就这样了？”"><a href="#“我的生活是不是就这样了？”" class="headerlink" title="“我的生活是不是就这样了？”"></a><del><em>“我的生活是不是就这样了？”</em></del></h1><p>不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p>
+<p>如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<del>你们是对的！！！！</del> 你们还只是孩子。</p>
+<p>写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>六一</tag>
+        <tag>巨婴</tag>
+        <tag>孩子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次ios网页样式问题排查心路历程</title>
+    <url>/2018/06/02/2018-06-02-%20%E5%89%8D%E7%AB%AF-%E4%B8%80%E6%AC%A1ios%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。"><a href="#我的开发环境：Macbook-pro-、iphone-手机端页面使用-vue、scss。本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示。" class="headerlink" title="我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。"></a>我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4><a id="more"></a>
+
+<p>大概是这样：</p>
+<p><img src="/images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
+<p>选中的区域无法正常显示。</p>
+<h4 id="准备调试环境："><a href="#准备调试环境：" class="headerlink" title="准备调试环境："></a>准备调试环境：</h4><h5 id="1-打开-sifari-的开发模式。"><a href="#1-打开-sifari-的开发模式。" class="headerlink" title="1.打开 sifari 的开发模式。"></a>1.打开 sifari 的开发模式。</h5><p><img src="/images/1527947682461.jpg" alt="1527947682461"></p>
+<h5 id="2-手机-sifari-打开调试模式"><a href="#2-手机-sifari-打开调试模式" class="headerlink" title="2.手机 sifari 打开调试模式"></a>2.手机 sifari 打开调试模式</h5><p><img src="/images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
+<h5 id="3-手机连接电脑"><a href="#3-手机连接电脑" class="headerlink" title="3.手机连接电脑"></a>3.手机连接电脑</h5><p><img src="/images/1527947709241.jpg" alt="1527947709241"></p>
+<h5 id="勾选上图的-ip-地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。"><a href="#勾选上图的-ip-地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。" class="headerlink" title="勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。"></a>勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。</h5><h4 id="正经话题，我是如何找到问题并解决的。"><a href="#正经话题，我是如何找到问题并解决的。" class="headerlink" title="正经话题，我是如何找到问题并解决的。"></a>正经话题，我是如何找到问题并解决的。</h4><p>#####调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。</p>
+<p><img src="/images/1527950086573.jpg" alt="1527950086573"></p>
+<h5 id="最后锁定"><a href="#最后锁定" class="headerlink" title="最后锁定"></a>最后锁定</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="webkit-overflow-scrolling-属性控制元素在移动设备上是否使用滚动回弹效果"><a href="#webkit-overflow-scrolling-属性控制元素在移动设备上是否使用滚动回弹效果" class="headerlink" title="-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果."></a>-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.</h5><h5 id="auto-使用普通滚动-当手指从触摸屏上移开，滚动会立即停止。"><a href="#auto-使用普通滚动-当手指从触摸屏上移开，滚动会立即停止。" class="headerlink" title="auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。"></a>auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。</h5><h5 id="touch-使用具有回弹效果的滚动-当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。"><a href="#touch-使用具有回弹效果的滚动-当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。" class="headerlink" title="touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。"></a>touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。</h5><h5 id="最常见的例子就是，"><a href="#最常见的例子就是，" class="headerlink" title="最常见的例子就是，"></a>最常见的例子就是，</h5><h5 id="在-safari-上，使用了-webkit-overflow-scrolling-touch-之后，页面偶尔会卡住不动。"><a href="#在-safari-上，使用了-webkit-overflow-scrolling-touch-之后，页面偶尔会卡住不动。" class="headerlink" title="在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。"></a>在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。</h5><h5 id="在-safari-上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的-bug。"><a href="#在-safari-上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的-bug。" class="headerlink" title="在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。"></a>在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。</h5><h5 id="通过动态添加内容撑开容器，结果根本不能滑动的-bug。"><a href="#通过动态添加内容撑开容器，结果根本不能滑动的-bug。" class="headerlink" title="通过动态添加内容撑开容器，结果根本不能滑动的 bug。"></a>通过动态添加内容撑开容器，结果根本不能滑动的 bug。</h5><h5 id="最终无得解决方法是改成-auto，我还没有找到更完美解决的办法。"><a href="#最终无得解决方法是改成-auto，我还没有找到更完美解决的办法。" class="headerlink" title="最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。"></a>最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。</h5><h5 id="网上有很多关于-webkit-overflow-scrolling-ios-的问题，有兴趣的可以研究一下。不过我不建议研究，一研究估计小半年就过去了，也没有答案"><a href="#网上有很多关于-webkit-overflow-scrolling-ios-的问题，有兴趣的可以研究一下。不过我不建议研究，一研究估计小半年就过去了，也没有答案" class="headerlink" title="网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。不过我不建议研究，一研究估计小半年就过去了，也没有答案"></a>网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。<del>不过我不建议研究，一研究估计小半年就过去了，也没有答案</del></h5>]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>ios</tag>
+        <tag>macbook pro</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -242,6 +273,33 @@
         <tag>阿里云</tag>
         <tag>gogs</tag>
         <tag>ubuntu 14.04</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云mysql外网访问</title>
+    <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+<a id="more"></a>
+
+<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
+<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
+<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
+<p>3.mysql 默认只能自本机访问</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf</span><br><span class="line">#bind-address &#x3D; 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
+
+<p>4.检查是不是在监听状态</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
+
+<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
+]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -287,64 +345,6 @@
         <tag>nginx</tag>
         <tag>ssl</tag>
         <tag>acme.sh</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>过六一的&quot;儿童&quot;们</title>
-    <url>/2018/06/01/2018-06-01-%E7%94%9F%E6%B4%BB-%E8%BF%87%E5%85%AD%E4%B8%80%E7%9A%84%E2%80%9D%E5%84%BF%E7%AB%A5%E2%80%9C%E4%BB%AC/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<h5 id="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"><a href="#今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！" class="headerlink" title="今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！"></a><em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5></blockquote>
-<a id="more"></a>
-
-<blockquote>
-<p>刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p>
-</blockquote>
-<p><img src="/images/WechatIMG80.jpeg" alt="WechatIMG80"></p>
-<blockquote>
-<p>我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>每次当我有”我不是幸运的大多数”这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p>
-</blockquote>
-<p><img src="/images/WechatIMG81.jpeg" alt="WechatIMG81"></p>
-<blockquote>
-<p>我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过”<del>是冬冬毁掉了我的生活</del>“这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。<br>说话要小声，走路要小声，就连呼吸都要思考着呼吸，”这样呼吸对吗？我是不是不该这样呼吸？”</p>
-<h1 id="“W-T-F-”"><a href="#“W-T-F-”" class="headerlink" title="“W T F !!!!!!!”"></a><del><em>“W T F !!!!!!!”</em></del></h1><h1 id="“完了完了完了！！！”"><a href="#“完了完了完了！！！”" class="headerlink" title="“完了完了完了！！！”"></a><del><em>“完了完了完了！！！”</em></del></h1><h1 id="“我的生活是不是就这样了？”"><a href="#“我的生活是不是就这样了？”" class="headerlink" title="“我的生活是不是就这样了？”"></a><del><em>“我的生活是不是就这样了？”</em></del></h1><p>不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p>
-<p>如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<del>你们是对的！！！！</del> 你们还只是孩子。</p>
-<p>写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>六一</tag>
-        <tag>巨婴</tag>
-        <tag>孩子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云mysql外网访问</title>
-    <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
-<a id="more"></a>
-
-<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
-<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
-<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
-<p>3.mysql 默认只能自本机访问</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf</span><br><span class="line">#bind-address &#x3D; 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
-
-<p>4.检查是不是在监听状态</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
-
-<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
-]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -697,116 +697,6 @@
       </tags>
   </entry>
   <entry>
-    <title>k8s 1.19.2 部署 traefik 2.2</title>
-    <url>/2020/11/13/2020-11-13-%20traefik2%20%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
-<a id="more"></a>
-
-<ul>
-<li>Traefik 版本：v2.2</li>
-<li>Kubernetes 版本：1.19.2</li>
-</ul>
-<p><strong>地址：</strong></p>
-<ul>
-<li>Traefik 2.2 官方文档：<a href="https://doc.traefik.io/traefik/v2.2/" target="_blank" rel="noopener">https://doc.traefik.io/traefik/v2.2/</a></li>
-</ul>
-<h2 id="一、Traefik-简介"><a href="#一、Traefik-简介" class="headerlink" title="一、Traefik 简介"></a>一、Traefik 简介</h2><p>Traefik 最新推出了 v2.2 版本，这里将 Traefik 升级到最新版本，简单的介绍了下如何在 Kubernetes 环境下安装 Traefik v2.2</p>
-<h2 id="二、Kubernetes-部署-Traefik"><a href="#二、Kubernetes-部署-Traefik" class="headerlink" title="二、Kubernetes 部署 Traefik"></a>二、Kubernetes 部署 Traefik</h2><blockquote>
-<p>注意：这里 Traefik 是部署在 Kube-system Namespace 下，使用kustomize部署。</p>
-</blockquote>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-rw-r--r--  1 yqwoe  staff   287 11 23 09:54 cluster-role-binding.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   736 11 23 09:54 cluster-role.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2578 11 23 09:54 config.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  1110 11 23 09:54 daemon-set.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2021 11 23 09:54 ingress-route.yml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   268 11 23 09:54 kustomization.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff    81 11 23 09:54 service-account.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   220 11 23 09:54 service.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   257 11 23 09:54 traefik-dashboard-route.yml</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>kustomization.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">kustomize.config.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Kustomization</span></span><br><span class="line"></span><br><span class="line"><span class="attr">resources:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role-binding.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service-account.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">config.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">daemon-set.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">ingress-route.yaml</span></span><br><span class="line"><span class="attr">namespace:</span> <span class="string">kube-system</span></span><br><span class="line"></span><br><span class="line"><span class="attr">commonLabels:</span></span><br><span class="line">  <span class="attr">app:</span> <span class="string">traefik</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="1、ingress-route-yml"><a href="#1、ingress-route-yml" class="headerlink" title="1、ingress-route.yml"></a>1、ingress-route.yml</h3><p>在 traefik v2.1 版本后，开始使用 CRD（Custom Resource Definition）来完成路由配置等，所以需要提前创建 CRD 资源。</p>
-<p><strong>创建 ingress-route.yml 文件</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutes.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutes</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroute</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">middlewares.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">Middleware</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">middlewares</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">middleware</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutetcps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteTCP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutetcps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroutetcp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressrouteudps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteUDP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressrouteudps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressrouteudp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsoptions.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSOption</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsoptions</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsoption</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsstores.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSStore</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsstore</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefikservices.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TraefikService</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">traefikservices</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">traefikservice</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2、创建-RBAC-权限"><a href="#2、创建-RBAC-权限" class="headerlink" title="2、创建 RBAC 权限"></a>2、创建 RBAC 权限</h3><p>Kubernetes 在 1.6 版本中引入了基于角色的访问控制（RBAC）策略，方便对 Kubernetes 资源和 API 进行细粒度控制。Traefik 需要一定的权限，所以这里提前创建好 Traefik ServiceAccount 并分配一定的权限。</p>
-<p><strong>创建 service-account.yaml 文件</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>创建cluster-role.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">rules:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">""</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">services</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">endpoints</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">secrets</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses/status</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">update</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik.containo.us</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">middlewares</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutes</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefikservices</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutetcps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressrouteudps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsoptions</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>创建cluster-role-binding.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRoleBinding</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">roleRef:</span></span><br><span class="line">  <span class="attr">apiGroup:</span> <span class="string">rbac.authorization.k8s.io</span></span><br><span class="line">  <span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">subjects:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3、创建-Traefik-配置文件"><a href="#3、创建-Traefik-配置文件" class="headerlink" title="3、创建 Traefik 配置文件"></a>3、创建 Traefik 配置文件</h3><p>由于 Traefik 配置很多，通过 CLI 定义不是很方便，一般时候选择将其配置选项放到配置文件中，然后存入 ConfigMap，将其挂入 traefik 中。</p>
-<p><strong>创建 config.yaml 文件</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ConfigMap</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line"><span class="attr">data:</span></span><br><span class="line">  <span class="attr">traefik.yaml:</span> <span class="string">|-</span></span><br><span class="line">    <span class="attr">ping:</span> <span class="string">""</span>                    <span class="comment">## 启用 Ping</span></span><br><span class="line">    <span class="attr">serversTransport:</span></span><br><span class="line">      <span class="attr">insecureSkipVerify:</span> <span class="literal">true</span>  <span class="comment">## Traefik 忽略验证代理服务的 TLS 证书</span></span><br><span class="line">    <span class="attr">api:</span></span><br><span class="line">      <span class="attr">insecure:</span> <span class="literal">true</span>            <span class="comment">## 允许 HTTP 方式访问 API</span></span><br><span class="line">      <span class="attr">dashboard:</span> <span class="literal">true</span>           <span class="comment">## 启用 Dashboard</span></span><br><span class="line">      <span class="attr">debug:</span> <span class="literal">false</span>              <span class="comment">## 启用 Debug 调试模式</span></span><br><span class="line">    <span class="attr">metrics:</span></span><br><span class="line">      <span class="attr">prometheus:</span> <span class="string">""</span>            <span class="comment">## 配置 Prometheus 监控指标数据，并使用默认配置</span></span><br><span class="line">    <span class="attr">entryPoints:</span></span><br><span class="line">      <span class="attr">web:</span></span><br><span class="line">        <span class="attr">address:</span> <span class="string">":80"</span>          <span class="comment">## 配置 80 端口，并设置入口名称为 web</span></span><br><span class="line">      <span class="attr">websecure:</span></span><br><span class="line">        <span class="attr">address:</span> <span class="string">":443"</span>         <span class="comment">## 配置 443 端口，并设置入口名称为 websecure</span></span><br><span class="line">    <span class="attr">providers:</span></span><br><span class="line">      <span class="attr">kubernetesCRD:</span> <span class="string">""</span>         <span class="comment">## 启用 Kubernetes CRD 方式来配置路由规则</span></span><br><span class="line">      <span class="attr">kubernetesIngress:</span> <span class="string">""</span>     <span class="comment">## 启动 Kubernetes Ingress 方式来配置路由规则</span></span><br><span class="line">    <span class="attr">log:</span></span><br><span class="line">      <span class="attr">filePath:</span> <span class="string">""</span>              <span class="comment">## 设置调试日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line">      <span class="attr">level:</span> <span class="string">error</span>              <span class="comment">## 设置调试日志级别</span></span><br><span class="line">      <span class="attr">format:</span> <span class="string">json</span>              <span class="comment">## 设置调试日志格式</span></span><br><span class="line">    <span class="attr">accessLog:</span></span><br><span class="line">      <span class="attr">filePath:</span> <span class="string">""</span>              <span class="comment">## 设置访问日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line">      <span class="attr">format:</span> <span class="string">json</span>              <span class="comment">## 设置访问调试日志格式</span></span><br><span class="line">      <span class="attr">bufferingSize:</span> <span class="number">0</span>          <span class="comment">## 设置访问日志缓存行数</span></span><br><span class="line">      <span class="attr">filters:</span></span><br><span class="line">        <span class="comment">#statusCodes: ["200"]   ## 设置只保留指定状态码范围内的访问日志</span></span><br><span class="line">        <span class="attr">retryAttempts:</span> <span class="literal">true</span>     <span class="comment">## 设置代理访问重试失败时，保留访问日志</span></span><br><span class="line">        <span class="attr">minDuration:</span> <span class="number">20</span>         <span class="comment">## 设置保留请求时间超过指定持续时间的访问日志</span></span><br><span class="line">      <span class="attr">fields:</span>                   <span class="comment">## 设置访问日志中的字段是否保留（keep 保留、drop 不保留）</span></span><br><span class="line">        <span class="attr">defaultMode:</span> <span class="string">keep</span>       <span class="comment">## 设置默认保留访问日志字段</span></span><br><span class="line">        <span class="attr">names:</span>                  <span class="comment">## 针对访问日志特别字段特别配置保留模式</span></span><br><span class="line">          <span class="attr">ClientUsername:</span> <span class="string">drop</span></span><br><span class="line">        <span class="attr">headers:</span>                <span class="comment">## 设置 Header 中字段是否保留</span></span><br><span class="line">          <span class="attr">defaultMode:</span> <span class="string">keep</span>     <span class="comment">## 设置默认保留 Header 中字段</span></span><br><span class="line">          <span class="attr">names:</span>                <span class="comment">## 针对 Header 中特别字段特别配置保留模式</span></span><br><span class="line">            <span class="attr">User-Agent:</span> <span class="string">redact</span></span><br><span class="line">            <span class="attr">Authorization:</span> <span class="string">drop</span></span><br><span class="line">            <span class="attr">Content-Type:</span> <span class="string">keep</span></span><br><span class="line">    <span class="attr">certificatesresolvers:</span></span><br><span class="line">      <span class="attr">default:</span></span><br><span class="line">        <span class="attr">acme:</span></span><br><span class="line">          <span class="attr">tlsChallenge:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">email:</span> <span class="string">"yqwoe@live.cn"</span></span><br><span class="line">          <span class="attr">storage:</span> <span class="string">"acme.json"</span></span><br><span class="line">          <span class="attr">caserver:</span> <span class="string">"https://acme-v02.api.letsencrypt.org/directory"</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4、节点设置-Label-标签"><a href="#4、节点设置-Label-标签" class="headerlink" title="4、节点设置 Label 标签"></a>4、节点设置 Label 标签</h3><p>由于是 Kubernetes DeamonSet 这种方式部署 Traefik，所以需要提前给节点设置 Label，这样当程序部署时 Pod 会自动调度到设置 Label 的节点上。</p>
-<p><strong>节点设置 Label 标签</strong></p>
-<ul>
-<li>格式：kubectl label nodes [节点名] [key=value]</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl label nodes minikube IngressProxy=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>查看节点是否设置 Label 成功</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl get nodes --show-labels</span><br><span class="line"></span><br><span class="line">NAME       STATUS   ROLES    AGE   VERSION   LABELS</span><br><span class="line">minikube   Ready    master   3d    v1.19.2   IngressProxy=<span class="literal">true</span>,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=minikube,kubernetes.io/os=linux,minikube.k8s.io/commit=b09ee50ec047410326a85435f4d99026f9c4f5c4,minikube.k8s.io/name=minikube,minikube.k8s.io/updated_at=2020_11_10T10_20_51_0700,minikube.k8s.io/version=v1.14.0,node-role.kubernetes.io/master=</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>如果想删除标签，可以使用 <code>kubectl label nodes minikube IngressProxy-</code> 命令</p>
-</blockquote>
-<h3 id="5、Kubernetes-部署-Traefik"><a href="#5、Kubernetes-部署-Traefik" class="headerlink" title="5、Kubernetes 部署 Traefik"></a>5、Kubernetes 部署 Traefik</h3><p> DaemonSet 方式部署，便于在多服务器间扩展，用 hostport 方式占用服务器 80、443 端口，方便流量进入。</p>
-<p><strong>创建 traefik 部署文件 daemon-set.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">DaemonSet</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apps/v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">template:</span></span><br><span class="line">    <span class="attr">spec:</span></span><br><span class="line">      <span class="attr">serviceAccountName:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line">      <span class="attr">terminationGracePeriodSeconds:</span> <span class="number">60</span></span><br><span class="line">      <span class="attr">containers:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">image:</span> <span class="string">traefik:v2.2</span></span><br><span class="line">        <span class="attr">name:</span> <span class="string">traefik-ingress-lb</span></span><br><span class="line">        <span class="attr">ports:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">80</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">80</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">443</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">443</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">8080</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">8080</span></span><br><span class="line">        <span class="attr">securityContext:</span></span><br><span class="line">          <span class="attr">capabilities:</span></span><br><span class="line">            <span class="attr">drop:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">ALL</span></span><br><span class="line">            <span class="attr">add:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">NET_BIND_SERVICE</span></span><br><span class="line">        <span class="attr">args:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">--configfile=/config/traefik.yaml</span></span><br><span class="line">        <span class="attr">volumeMounts:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">mountPath:</span> <span class="string">"/config"</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">"config"</span></span><br><span class="line">      <span class="attr">volumes:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">config</span></span><br><span class="line">          <span class="attr">configMap:</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line">      <span class="attr">tolerations:</span>              <span class="comment">## 设置容忍所有污点，防止节点被设置污点</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">operator:</span> <span class="string">"Exists"</span></span><br><span class="line">      <span class="attr">nodeSelector:</span>             <span class="comment">## 设置node筛选器，在特定label的节点上启动</span></span><br><span class="line">        <span class="attr">IngressProxy:</span> <span class="string">"true"</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>创建Traefik Service service.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Service</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">ports:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">80</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">443</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line">  <span class="attr">selector:</span></span><br><span class="line">    <span class="attr">app:</span> <span class="string">traefik</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">NodePort</span></span><br></pre></td></tr></table></figure>
-
-<p>至此，traefik的配置基本完成。</p>
-<p><strong>执行 kustomization.yaml</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">kubectl apply -k . -n kube-system</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、Traefik-路由规则配置"><a href="#三、Traefik-路由规则配置" class="headerlink" title="三、Traefik 路由规则配置"></a>三、Traefik 路由规则配置</h2><h3 id="1、配置-HTTP-路由规则-（Traefik-Dashboard-为例）"><a href="#1、配置-HTTP-路由规则-（Traefik-Dashboard-为例）" class="headerlink" title="1、配置 HTTP 路由规则 （Traefik Dashboard 为例）"></a>1、配置 HTTP 路由规则 （Traefik Dashboard 为例）</h3><p>Traefik 应用已经部署完成，但是想让外部访问 Kubernetes 内部服务，还需要配置路由规则，这里开启了 Traefik Dashboard 配置，所以首先配置 Traefik Dashboard 看板的路由规则，使外部能够访问 Traefik Dashboard。</p>
-<p><strong>创建 Traefik Dashboard 路由规则文件 traefik-dashboard-route.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">traefik.containo.us/v1alpha1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-dashboard-route</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">entryPoints:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">web</span></span><br><span class="line">  <span class="attr">routes:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">match:</span> <span class="string">Host(`yqwoe.k8s.com`)</span></span><br><span class="line">      <span class="attr">kind:</span> <span class="string">Rule</span></span><br><span class="line">      <span class="attr">services:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line">          <span class="attr">port:</span> <span class="number">8080</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>创建 Traefik Dashboard 路由规则对象</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl apply -f traefik-dashboard-route.yaml -n kube-system</span><br></pre></td></tr></table></figure>
-
-<p><strong>接下来配置 Hosts</strong>，客户端想通过域名访问服务，必须要进行 DNS 解析，由于这里没有 DNS 服务器进行域名解析，所以修改 hosts 文件将 Traefik 指定节点的 IP 和自定义 host 绑定。打开电脑的 Hosts 配置文件，往其加入下面配置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">192.168.10.2  yqwoe.k8s.com</span><br></pre></td></tr></table></figure>
-
-<p><strong>配置完成后，打开浏览器输入地址：http://<code>yqwoe.k8s.com</code> 打开 Traefik Dashboard。</strong></p>
-]]></content>
-      <categories>
-        <category>k8s</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>29岁,再见！</title>
-    <url>/2020/04/08/29%E5%B2%81-%E5%86%8D%E8%A7%81%EF%BC%81/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一年要赚多少钱才能支撑一个三口之家？</title>
     <url>/2020/11/12/2020-11-12-%20%E4%B8%80%E5%B9%B4%E8%A6%81%E8%B5%9A%E5%A4%9A%E5%B0%91%E9%92%B1%E6%89%8D%E8%83%BD%E6%94%AF%E6%92%91%E4%B8%80%E4%B8%AA%E4%B8%89%E5%8F%A3%E4%B9%8B%E5%AE%B6%EF%BC%9F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><table>
@@ -912,39 +802,248 @@
       </tags>
   </entry>
   <entry>
-    <title>《程序员数学-1》-笔记3</title>
-    <url>/2020/04/01/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B03/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a href="#第三章-余数" class="headerlink" title="第三章 余数"></a>第三章 余数</h1><a id="more"></a>
-<ul>
-<li><p>什么是余数？</p>
-<ul>
-<li><strong>余数</strong> 就是除法运算时剩下的数</li>
-</ul>
-</li>
-</ul>
-<h2 id="星期数的思考题-1"><a href="#星期数的思考题-1" class="headerlink" title="星期数的思考题 1"></a>星期数的思考题 1</h2><ul>
-<li>今天是星期日,那么 100 天以后是星期几？</li>
-</ul>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">x &#x3D; 100 % 7</span><br><span class="line">x &#x3D; 2 &#x2F;&#x2F;答案:星期二</span><br></pre></td></tr></table></figure></code></pre><h2 id="星期数的思考题-2"><a href="#星期数的思考题-2" class="headerlink" title="星期数的思考题 2"></a>星期数的思考题 2</h2><ul>
-<li><p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> <span class="params">|i|</span></span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+    <title>29岁,再见！</title>
+    <url>/2020/04/08/29%E5%B2%81-%E5%86%8D%E8%A7%81%EF%BC%81/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>冬冬：因为你明天过生日了吗？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建maven私库</title>
+    <url>/2022/08/31/maven/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a href="#1-docker-搭建maven私库" class="headerlink" title="1. docker 搭建maven私库"></a>1. docker 搭建maven私库</h1><a id="more"></a>
 
-</li>
-</ul>
-<h2 id="乘方思考题"><a href="#乘方思考题" class="headerlink" title="乘方思考题"></a>乘方思考题</h2><ul>
-<li><p>1234567 的 987654321 次方的个位数是多少？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> <span class="params">|i|</span></span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">""</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># ["1", "7", "9", "3"]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
 
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus &#x2F;&#x2F;进入容器</span><br><span class="line">cd &#x2F;nexus-data</span><br><span class="line">cat admin.password &#x2F;&#x2F;复制密码</span><br></pre></td></tr></table></figure>
+
+<p>访问 <a href="http://ip:8081" target="_blank" rel="noopener">http://ip:8081</a><br>修改密码后 admin.password自动删除</p>
+<h1 id="2-配置maven私库"><a href="#2-配置maven私库" class="headerlink" title="2. 配置maven私库"></a>2. 配置maven私库</h1><h4 id="2-1添加-role"><a href="#2-1添加-role" class="headerlink" title="2.1添加 role"></a>2.1添加 role</h4><p>develop =&gt; nx-all</p>
+<h5 id="2-2-添加-user"><a href="#2-2-添加-user" class="headerlink" title="2.2 添加 user"></a>2.2 添加 user</h5><p>developer =&gt; develop</p>
+<h1 id="3-插件开发环境配置"><a href="#3-插件开发环境配置" class="headerlink" title="3. 插件开发环境配置"></a>3. 插件开发环境配置</h1><h4 id="3-1-maven-setting-xml配置"><a href="#3-1-maven-setting-xml配置" class="headerlink" title="3.1 maven/setting.xml配置"></a>3.1 maven/setting.xml配置</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>####3.2 插件项目pom.xml配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">...</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">...</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="3-3-项目依赖pom-xml"><a href="#3-3-项目依赖pom-xml" class="headerlink" title="3.3 项目依赖pom.xml"></a>3.3 项目依赖pom.xml</h5><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>maven</tag>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>k8s 1.19.2 部署 traefik 2.2</title>
+    <url>/2020/11/13/2020-11-13-%20traefik2%20%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
+<a id="more"></a>
+
+<ul>
+<li>Traefik 版本：v2.2</li>
+<li>Kubernetes 版本：1.19.2</li>
+</ul>
+<p><strong>地址：</strong></p>
+<ul>
+<li>Traefik 2.2 官方文档：<a href="https://doc.traefik.io/traefik/v2.2/" target="_blank" rel="noopener">https://doc.traefik.io/traefik/v2.2/</a></li>
+</ul>
+<h2 id="一、Traefik-简介"><a href="#一、Traefik-简介" class="headerlink" title="一、Traefik 简介"></a>一、Traefik 简介</h2><p>Traefik 最新推出了 v2.2 版本，这里将 Traefik 升级到最新版本，简单的介绍了下如何在 Kubernetes 环境下安装 Traefik v2.2</p>
+<h2 id="二、Kubernetes-部署-Traefik"><a href="#二、Kubernetes-部署-Traefik" class="headerlink" title="二、Kubernetes 部署 Traefik"></a>二、Kubernetes 部署 Traefik</h2><blockquote>
+<p>注意：这里 Traefik 是部署在 Kube-system Namespace 下，使用kustomize部署。</p>
+</blockquote>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-rw-r--r--  1 yqwoe  staff   287 11 23 09:54 cluster-role-binding.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   736 11 23 09:54 cluster-role.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2578 11 23 09:54 config.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  1110 11 23 09:54 daemon-set.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2021 11 23 09:54 ingress-route.yml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   268 11 23 09:54 kustomization.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff    81 11 23 09:54 service-account.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   220 11 23 09:54 service.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   257 11 23 09:54 traefik-dashboard-route.yml</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>kustomization.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">kustomize.config.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Kustomization</span></span><br><span class="line"></span><br><span class="line"><span class="attr">resources:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role-binding.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service-account.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">config.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">daemon-set.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">ingress-route.yaml</span></span><br><span class="line"><span class="attr">namespace:</span> <span class="string">kube-system</span></span><br><span class="line"></span><br><span class="line"><span class="attr">commonLabels:</span></span><br><span class="line">  <span class="attr">app:</span> <span class="string">traefik</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="1、ingress-route-yml"><a href="#1、ingress-route-yml" class="headerlink" title="1、ingress-route.yml"></a>1、ingress-route.yml</h3><p>在 traefik v2.1 版本后，开始使用 CRD（Custom Resource Definition）来完成路由配置等，所以需要提前创建 CRD 资源。</p>
+<p><strong>创建 ingress-route.yml 文件</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutes.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutes</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroute</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">middlewares.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">Middleware</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">middlewares</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">middleware</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutetcps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteTCP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutetcps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroutetcp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressrouteudps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteUDP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressrouteudps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressrouteudp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsoptions.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSOption</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsoptions</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsoption</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsstores.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSStore</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsstore</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefikservices.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TraefikService</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">traefikservices</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">traefikservice</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2、创建-RBAC-权限"><a href="#2、创建-RBAC-权限" class="headerlink" title="2、创建 RBAC 权限"></a>2、创建 RBAC 权限</h3><p>Kubernetes 在 1.6 版本中引入了基于角色的访问控制（RBAC）策略，方便对 Kubernetes 资源和 API 进行细粒度控制。Traefik 需要一定的权限，所以这里提前创建好 Traefik ServiceAccount 并分配一定的权限。</p>
+<p><strong>创建 service-account.yaml 文件</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>创建cluster-role.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">rules:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">""</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">services</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">endpoints</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">secrets</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses/status</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">update</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik.containo.us</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">middlewares</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutes</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefikservices</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutetcps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressrouteudps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsoptions</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>创建cluster-role-binding.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRoleBinding</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">roleRef:</span></span><br><span class="line">  <span class="attr">apiGroup:</span> <span class="string">rbac.authorization.k8s.io</span></span><br><span class="line">  <span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">subjects:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3、创建-Traefik-配置文件"><a href="#3、创建-Traefik-配置文件" class="headerlink" title="3、创建 Traefik 配置文件"></a>3、创建 Traefik 配置文件</h3><p>由于 Traefik 配置很多，通过 CLI 定义不是很方便，一般时候选择将其配置选项放到配置文件中，然后存入 ConfigMap，将其挂入 traefik 中。</p>
+<p><strong>创建 config.yaml 文件</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ConfigMap</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line"><span class="attr">data:</span></span><br><span class="line">  <span class="attr">traefik.yaml:</span> <span class="string">|-</span></span><br><span class="line">    <span class="attr">ping:</span> <span class="string">""</span>                    <span class="comment">## 启用 Ping</span></span><br><span class="line">    <span class="attr">serversTransport:</span></span><br><span class="line">      <span class="attr">insecureSkipVerify:</span> <span class="literal">true</span>  <span class="comment">## Traefik 忽略验证代理服务的 TLS 证书</span></span><br><span class="line">    <span class="attr">api:</span></span><br><span class="line">      <span class="attr">insecure:</span> <span class="literal">true</span>            <span class="comment">## 允许 HTTP 方式访问 API</span></span><br><span class="line">      <span class="attr">dashboard:</span> <span class="literal">true</span>           <span class="comment">## 启用 Dashboard</span></span><br><span class="line">      <span class="attr">debug:</span> <span class="literal">false</span>              <span class="comment">## 启用 Debug 调试模式</span></span><br><span class="line">    <span class="attr">metrics:</span></span><br><span class="line">      <span class="attr">prometheus:</span> <span class="string">""</span>            <span class="comment">## 配置 Prometheus 监控指标数据，并使用默认配置</span></span><br><span class="line">    <span class="attr">entryPoints:</span></span><br><span class="line">      <span class="attr">web:</span></span><br><span class="line">        <span class="attr">address:</span> <span class="string">":80"</span>          <span class="comment">## 配置 80 端口，并设置入口名称为 web</span></span><br><span class="line">      <span class="attr">websecure:</span></span><br><span class="line">        <span class="attr">address:</span> <span class="string">":443"</span>         <span class="comment">## 配置 443 端口，并设置入口名称为 websecure</span></span><br><span class="line">    <span class="attr">providers:</span></span><br><span class="line">      <span class="attr">kubernetesCRD:</span> <span class="string">""</span>         <span class="comment">## 启用 Kubernetes CRD 方式来配置路由规则</span></span><br><span class="line">      <span class="attr">kubernetesIngress:</span> <span class="string">""</span>     <span class="comment">## 启动 Kubernetes Ingress 方式来配置路由规则</span></span><br><span class="line">    <span class="attr">log:</span></span><br><span class="line">      <span class="attr">filePath:</span> <span class="string">""</span>              <span class="comment">## 设置调试日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line">      <span class="attr">level:</span> <span class="string">error</span>              <span class="comment">## 设置调试日志级别</span></span><br><span class="line">      <span class="attr">format:</span> <span class="string">json</span>              <span class="comment">## 设置调试日志格式</span></span><br><span class="line">    <span class="attr">accessLog:</span></span><br><span class="line">      <span class="attr">filePath:</span> <span class="string">""</span>              <span class="comment">## 设置访问日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line">      <span class="attr">format:</span> <span class="string">json</span>              <span class="comment">## 设置访问调试日志格式</span></span><br><span class="line">      <span class="attr">bufferingSize:</span> <span class="number">0</span>          <span class="comment">## 设置访问日志缓存行数</span></span><br><span class="line">      <span class="attr">filters:</span></span><br><span class="line">        <span class="comment">#statusCodes: ["200"]   ## 设置只保留指定状态码范围内的访问日志</span></span><br><span class="line">        <span class="attr">retryAttempts:</span> <span class="literal">true</span>     <span class="comment">## 设置代理访问重试失败时，保留访问日志</span></span><br><span class="line">        <span class="attr">minDuration:</span> <span class="number">20</span>         <span class="comment">## 设置保留请求时间超过指定持续时间的访问日志</span></span><br><span class="line">      <span class="attr">fields:</span>                   <span class="comment">## 设置访问日志中的字段是否保留（keep 保留、drop 不保留）</span></span><br><span class="line">        <span class="attr">defaultMode:</span> <span class="string">keep</span>       <span class="comment">## 设置默认保留访问日志字段</span></span><br><span class="line">        <span class="attr">names:</span>                  <span class="comment">## 针对访问日志特别字段特别配置保留模式</span></span><br><span class="line">          <span class="attr">ClientUsername:</span> <span class="string">drop</span></span><br><span class="line">        <span class="attr">headers:</span>                <span class="comment">## 设置 Header 中字段是否保留</span></span><br><span class="line">          <span class="attr">defaultMode:</span> <span class="string">keep</span>     <span class="comment">## 设置默认保留 Header 中字段</span></span><br><span class="line">          <span class="attr">names:</span>                <span class="comment">## 针对 Header 中特别字段特别配置保留模式</span></span><br><span class="line">            <span class="attr">User-Agent:</span> <span class="string">redact</span></span><br><span class="line">            <span class="attr">Authorization:</span> <span class="string">drop</span></span><br><span class="line">            <span class="attr">Content-Type:</span> <span class="string">keep</span></span><br><span class="line">    <span class="attr">certificatesresolvers:</span></span><br><span class="line">      <span class="attr">default:</span></span><br><span class="line">        <span class="attr">acme:</span></span><br><span class="line">          <span class="attr">tlsChallenge:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">email:</span> <span class="string">"yqwoe@live.cn"</span></span><br><span class="line">          <span class="attr">storage:</span> <span class="string">"acme.json"</span></span><br><span class="line">          <span class="attr">caserver:</span> <span class="string">"https://acme-v02.api.letsencrypt.org/directory"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4、节点设置-Label-标签"><a href="#4、节点设置-Label-标签" class="headerlink" title="4、节点设置 Label 标签"></a>4、节点设置 Label 标签</h3><p>由于是 Kubernetes DeamonSet 这种方式部署 Traefik，所以需要提前给节点设置 Label，这样当程序部署时 Pod 会自动调度到设置 Label 的节点上。</p>
+<p><strong>节点设置 Label 标签</strong></p>
+<ul>
+<li>格式：kubectl label nodes [节点名] [key=value]</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl label nodes minikube IngressProxy=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>查看节点是否设置 Label 成功</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl get nodes --show-labels</span><br><span class="line"></span><br><span class="line">NAME       STATUS   ROLES    AGE   VERSION   LABELS</span><br><span class="line">minikube   Ready    master   3d    v1.19.2   IngressProxy=<span class="literal">true</span>,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=minikube,kubernetes.io/os=linux,minikube.k8s.io/commit=b09ee50ec047410326a85435f4d99026f9c4f5c4,minikube.k8s.io/name=minikube,minikube.k8s.io/updated_at=2020_11_10T10_20_51_0700,minikube.k8s.io/version=v1.14.0,node-role.kubernetes.io/master=</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果想删除标签，可以使用 <code>kubectl label nodes minikube IngressProxy-</code> 命令</p>
+</blockquote>
+<h3 id="5、Kubernetes-部署-Traefik"><a href="#5、Kubernetes-部署-Traefik" class="headerlink" title="5、Kubernetes 部署 Traefik"></a>5、Kubernetes 部署 Traefik</h3><p> DaemonSet 方式部署，便于在多服务器间扩展，用 hostport 方式占用服务器 80、443 端口，方便流量进入。</p>
+<p><strong>创建 traefik 部署文件 daemon-set.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">DaemonSet</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apps/v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">template:</span></span><br><span class="line">    <span class="attr">spec:</span></span><br><span class="line">      <span class="attr">serviceAccountName:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line">      <span class="attr">terminationGracePeriodSeconds:</span> <span class="number">60</span></span><br><span class="line">      <span class="attr">containers:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">image:</span> <span class="string">traefik:v2.2</span></span><br><span class="line">        <span class="attr">name:</span> <span class="string">traefik-ingress-lb</span></span><br><span class="line">        <span class="attr">ports:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">80</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">80</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">443</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">443</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">8080</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">8080</span></span><br><span class="line">        <span class="attr">securityContext:</span></span><br><span class="line">          <span class="attr">capabilities:</span></span><br><span class="line">            <span class="attr">drop:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">ALL</span></span><br><span class="line">            <span class="attr">add:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">NET_BIND_SERVICE</span></span><br><span class="line">        <span class="attr">args:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">--configfile=/config/traefik.yaml</span></span><br><span class="line">        <span class="attr">volumeMounts:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">mountPath:</span> <span class="string">"/config"</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">"config"</span></span><br><span class="line">      <span class="attr">volumes:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">config</span></span><br><span class="line">          <span class="attr">configMap:</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line">      <span class="attr">tolerations:</span>              <span class="comment">## 设置容忍所有污点，防止节点被设置污点</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">operator:</span> <span class="string">"Exists"</span></span><br><span class="line">      <span class="attr">nodeSelector:</span>             <span class="comment">## 设置node筛选器，在特定label的节点上启动</span></span><br><span class="line">        <span class="attr">IngressProxy:</span> <span class="string">"true"</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>创建Traefik Service service.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Service</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">ports:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">80</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">443</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line">  <span class="attr">selector:</span></span><br><span class="line">    <span class="attr">app:</span> <span class="string">traefik</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">NodePort</span></span><br></pre></td></tr></table></figure>
+
+<p>至此，traefik的配置基本完成。</p>
+<p><strong>执行 kustomization.yaml</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">kubectl apply -k . -n kube-system</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、Traefik-路由规则配置"><a href="#三、Traefik-路由规则配置" class="headerlink" title="三、Traefik 路由规则配置"></a>三、Traefik 路由规则配置</h2><h3 id="1、配置-HTTP-路由规则-（Traefik-Dashboard-为例）"><a href="#1、配置-HTTP-路由规则-（Traefik-Dashboard-为例）" class="headerlink" title="1、配置 HTTP 路由规则 （Traefik Dashboard 为例）"></a>1、配置 HTTP 路由规则 （Traefik Dashboard 为例）</h3><p>Traefik 应用已经部署完成，但是想让外部访问 Kubernetes 内部服务，还需要配置路由规则，这里开启了 Traefik Dashboard 配置，所以首先配置 Traefik Dashboard 看板的路由规则，使外部能够访问 Traefik Dashboard。</p>
+<p><strong>创建 Traefik Dashboard 路由规则文件 traefik-dashboard-route.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">traefik.containo.us/v1alpha1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-dashboard-route</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">entryPoints:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">web</span></span><br><span class="line">  <span class="attr">routes:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">match:</span> <span class="string">Host(`yqwoe.k8s.com`)</span></span><br><span class="line">      <span class="attr">kind:</span> <span class="string">Rule</span></span><br><span class="line">      <span class="attr">services:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line">          <span class="attr">port:</span> <span class="number">8080</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>创建 Traefik Dashboard 路由规则对象</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl apply -f traefik-dashboard-route.yaml -n kube-system</span><br></pre></td></tr></table></figure>
+
+<p><strong>接下来配置 Hosts</strong>，客户端想通过域名访问服务，必须要进行 DNS 解析，由于这里没有 DNS 服务器进行域名解析，所以修改 hosts 文件将 Traefik 指定节点的 IP 和自定义 host 绑定。打开电脑的 Hosts 配置文件，往其加入下面配置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">192.168.10.2  yqwoe.k8s.com</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置完成后，打开浏览器输入地址：http://<code>yqwoe.k8s.com</code> 打开 Traefik Dashboard。</strong></p>
+]]></content>
+      <categories>
+        <category>k8s</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+        <tag>k8s</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《程序员数学 1》 - 笔记1</title>
+    <url>/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事–无即是有"><a href="#第一章-0-的故事–无即是有" class="headerlink" title="第一章 0 的故事–无即是有"></a>第一章 0 的故事–无即是有</h1><h2 id="10-进制计数法"><a href="#10-进制计数法" class="headerlink" title="10 进制计数法"></a>10 进制计数法</h2><ul>
+<li><p>什么是 10 进制计数法</p>
+<ul>
+<li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
+<li>数位:从右往左数表示 个、十、百、千、万…位。</li>
+</ul>
+</li>
+<li><p>分解</p>
+<ul>
+<li>2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li>
+</ul>
 </li>
 </ul>
-<p>—未完—</p>
+<h2 id="2-进制计数法"><a href="#2-进制计数法" class="headerlink" title="2 进制计数法"></a>2 进制计数法</h2><ul>
+<li><p>什么是 2 进制计数法</p>
+<ul>
+<li>数字有 2 种，0、1.</li>
+<li>从右往左分别表示 1 位、2 位、4 位、8 位</li>
+</ul>
+</li>
+<li><p>分解</p>
+<ul>
+<li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
+</ul>
+</li>
+<li><p>基数转换</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*&#x2F;</span><br><span class="line">12 &#x2F; 2 &#x3D; 6  余数 0</span><br><span class="line">6  &#x2F; 2 &#x3D; 3  余数 0</span><br><span class="line">3  &#x2F; 2 &#x3D; 1  余数 1</span><br><span class="line">1  &#x2F; 2 &#x3D; 0  余数 1</span><br><span class="line">&#x2F;**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*&#x2F;</span><br><span class="line">1000 &#x2F; 2 &#x3D; 500 余数 0</span><br><span class="line">500  &#x2F; 2 &#x3D; 250 余数 0</span><br><span class="line">250  &#x2F; 2 &#x3D; 125 余数 0</span><br><span class="line">125  &#x2F; 2 &#x3D; 62  余数 1</span><br><span class="line">62   &#x2F; 2 &#x3D; 31  余数 0</span><br><span class="line">31   &#x2F; 2 &#x3D; 15  余数 1</span><br><span class="line">15   &#x2F; 2 &#x3D; 7   余数 1</span><br><span class="line">7    &#x2F; 2 &#x3D; 3   余数 1</span><br><span class="line">3    &#x2F; 2 &#x3D; 1   余数 1</span><br><span class="line">1    &#x2F; 2 &#x3D; 0   余数 1</span><br></pre></td></tr></table></figure></li>
+<li><p>计算机中为什么采用 2 进制计数法</p>
+<ul>
+<li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
+<li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="按位计数法"><a href="#按位计数法" class="headerlink" title="按位计数法"></a>按位计数法</h2><ul>
+<li><p>什么是按位计数法</p>
+<ul>
+<li><p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p>
+</li>
+<li><p>N 进制计数法:</p>
+<ul>
+<li>使用数字有 0、1、2、3…、N-1,共 N 种</li>
+<li>从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li>
+<li>例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>不按位计数法的罗马数字</p>
+<ul>
+<li>没有数位，只表示数字本身</li>
+<li>没有 0</li>
+<li>使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li>
+<li>并排的数字加起来，就是所表示的数</li>
+<li>III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li>
+<li>IV(4) 减法规则表示 5 - 1 = 4</li>
+</ul>
+</li>
+</ul>
+<p>##指数法则</p>
+<ul>
+<li><p>10 的 0 次方是什么？</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">10³ &#x3D; 1000</span><br><span class="line">10² &#x3D; 100</span><br><span class="line">10¹ &#x3D; 10</span><br><span class="line">10º &#x3D; ？</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p>
+</li>
+<li><p>规则的扩展</p>
+<ul>
+<li>指数法则表达式: N <em>* a + N ** b = N *\</em> (a + b)</li>
+</ul>
+</li>
+</ul>
+<h2 id="0-所起的作用"><a href="#0-所起的作用" class="headerlink" title="0 所起的作用"></a>0 所起的作用</h2><ul>
+<li><p>0 的作用: 占位</p>
+<ul>
+<li>2503 如果没有了 0 就变成了 253</li>
+</ul>
+</li>
+</ul>
+<h2 id="人类的极限和构造的发现"><a href="#人类的极限和构造的发现" class="headerlink" title="人类的极限和构造的发现"></a>人类的极限和构造的发现</h2><ul>
+<li><p>重温历史进程</p>
+<ul>
+<li><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li>
+<li><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li>
+<li><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li>
+<li><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li>
+<li><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li>
+<li><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>数学</category>
       </categories>
       <tags>
-        <tag>余数</tag>
-        <tag>分组</tag>
+        <tag>计数法</tag>
+        <tag>进制</tag>
       </tags>
   </entry>
   <entry>
@@ -1319,120 +1418,51 @@
       </tags>
   </entry>
   <entry>
-    <title>《程序员数学 1》 - 笔记1</title>
-    <url>/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事–无即是有"><a href="#第一章-0-的故事–无即是有" class="headerlink" title="第一章 0 的故事–无即是有"></a>第一章 0 的故事–无即是有</h1><h2 id="10-进制计数法"><a href="#10-进制计数法" class="headerlink" title="10 进制计数法"></a>10 进制计数法</h2><ul>
-<li><p>什么是 10 进制计数法</p>
+    <title>《程序员数学-1》-笔记3</title>
+    <url>/2020/04/01/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B03/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a href="#第三章-余数" class="headerlink" title="第三章 余数"></a>第三章 余数</h1><a id="more"></a>
 <ul>
-<li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
-<li>数位:从右往左数表示 个、十、百、千、万…位。</li>
-</ul>
-</li>
-<li><p>分解</p>
+<li><p>什么是余数？</p>
 <ul>
-<li>2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li>
+<li><strong>余数</strong> 就是除法运算时剩下的数</li>
 </ul>
 </li>
 </ul>
-<h2 id="2-进制计数法"><a href="#2-进制计数法" class="headerlink" title="2 进制计数法"></a>2 进制计数法</h2><ul>
-<li><p>什么是 2 进制计数法</p>
-<ul>
-<li>数字有 2 种，0、1.</li>
-<li>从右往左分别表示 1 位、2 位、4 位、8 位</li>
+<h2 id="星期数的思考题-1"><a href="#星期数的思考题-1" class="headerlink" title="星期数的思考题 1"></a>星期数的思考题 1</h2><ul>
+<li>今天是星期日,那么 100 天以后是星期几？</li>
 </ul>
-</li>
-<li><p>分解</p>
-<ul>
-<li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
-</ul>
-</li>
-<li><p>基数转换</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*&#x2F;</span><br><span class="line">12 &#x2F; 2 &#x3D; 6  余数 0</span><br><span class="line">6  &#x2F; 2 &#x3D; 3  余数 0</span><br><span class="line">3  &#x2F; 2 &#x3D; 1  余数 1</span><br><span class="line">1  &#x2F; 2 &#x3D; 0  余数 1</span><br><span class="line">&#x2F;**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*&#x2F;</span><br><span class="line">1000 &#x2F; 2 &#x3D; 500 余数 0</span><br><span class="line">500  &#x2F; 2 &#x3D; 250 余数 0</span><br><span class="line">250  &#x2F; 2 &#x3D; 125 余数 0</span><br><span class="line">125  &#x2F; 2 &#x3D; 62  余数 1</span><br><span class="line">62   &#x2F; 2 &#x3D; 31  余数 0</span><br><span class="line">31   &#x2F; 2 &#x3D; 15  余数 1</span><br><span class="line">15   &#x2F; 2 &#x3D; 7   余数 1</span><br><span class="line">7    &#x2F; 2 &#x3D; 3   余数 1</span><br><span class="line">3    &#x2F; 2 &#x3D; 1   余数 1</span><br><span class="line">1    &#x2F; 2 &#x3D; 0   余数 1</span><br></pre></td></tr></table></figure></li>
-<li><p>计算机中为什么采用 2 进制计数法</p>
-<ul>
-<li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
-<li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
-</ul>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">x &#x3D; 100 % 7</span><br><span class="line">x &#x3D; 2 &#x2F;&#x2F;答案:星期二</span><br></pre></td></tr></table></figure></code></pre><h2 id="星期数的思考题-2"><a href="#星期数的思考题-2" class="headerlink" title="星期数的思考题 2"></a>星期数的思考题 2</h2><ul>
+<li><p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> <span class="params">|i|</span></span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-<h2 id="按位计数法"><a href="#按位计数法" class="headerlink" title="按位计数法"></a>按位计数法</h2><ul>
-<li><p>什么是按位计数法</p>
-<ul>
-<li><p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p>
-</li>
-<li><p>N 进制计数法:</p>
-<ul>
-<li>使用数字有 0、1、2、3…、N-1,共 N 种</li>
-<li>从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li>
-<li>例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li>
-</ul>
+<h2 id="乘方思考题"><a href="#乘方思考题" class="headerlink" title="乘方思考题"></a>乘方思考题</h2><ul>
+<li><p>1234567 的 987654321 次方的个位数是多少？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> <span class="params">|i|</span></span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">""</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># ["1", "7", "9", "3"]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</li>
-<li><p>不按位计数法的罗马数字</p>
-<ul>
-<li>没有数位，只表示数字本身</li>
-<li>没有 0</li>
-<li>使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li>
-<li>并排的数字加起来，就是所表示的数</li>
-<li>III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li>
-<li>IV(4) 减法规则表示 5 - 1 = 4</li>
-</ul>
-</li>
-</ul>
-<p>##指数法则</p>
-<ul>
-<li><p>10 的 0 次方是什么？</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">10³ &#x3D; 1000</span><br><span class="line">10² &#x3D; 100</span><br><span class="line">10¹ &#x3D; 10</span><br><span class="line">10º &#x3D; ？</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p>
-</li>
-<li><p>规则的扩展</p>
-<ul>
-<li>指数法则表达式: N <em>* a + N ** b = N *\</em> (a + b)</li>
-</ul>
-</li>
-</ul>
-<h2 id="0-所起的作用"><a href="#0-所起的作用" class="headerlink" title="0 所起的作用"></a>0 所起的作用</h2><ul>
-<li><p>0 的作用: 占位</p>
-<ul>
-<li>2503 如果没有了 0 就变成了 253</li>
-</ul>
-</li>
-</ul>
-<h2 id="人类的极限和构造的发现"><a href="#人类的极限和构造的发现" class="headerlink" title="人类的极限和构造的发现"></a>人类的极限和构造的发现</h2><ul>
-<li><p>重温历史进程</p>
-<ul>
-<li><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li>
-<li><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li>
-<li><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li>
-<li><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li>
-<li><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li>
-<li><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li>
-</ul>
-</li>
-</ul>
+<p>—未完—</p>
 ]]></content>
       <categories>
         <category>数学</category>
       </categories>
       <tags>
-        <tag>计数法</tag>
-        <tag>进制</tag>
+        <tag>余数</tag>
+        <tag>分组</tag>
       </tags>
   </entry>
   <entry>
-    <title>基于k8s\traefik\springboot的微服务实践</title>
-    <url>/2020/11/24/%E5%9F%BA%E4%BA%8Ek8s-traefik%E7%9A%84%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>k8s</category>
-      </categories>
+    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
+    <url>/2022/10/10/mysql-No-DataSource-Set-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以吧useSSL改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
+]]></content>
       <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
+        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>error</tag>
+        <tag>jdbc</tag>
         <tag>springboot</tag>
       </tags>
   </entry>
@@ -1478,6 +1508,59 @@
       </tags>
   </entry>
   <entry>
+    <title>打造自己的产品 1</title>
+    <url>/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br> –《小王子》</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="0-念头"><a href="#0-念头" class="headerlink" title="0. 念头"></a>0. 念头</h2><p>  距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
+<h2 id="1-失眠"><a href="#1-失眠" class="headerlink" title="1. 失眠"></a>1. 失眠</h2><p>   现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
+<h2 id="10-性格"><a href="#10-性格" class="headerlink" title="10. 性格"></a>10. 性格</h2><p>  我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
+<pre><code>往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。</code></pre><h2 id="11-计划"><a href="#11-计划" class="headerlink" title="11. 计划"></a>11. 计划</h2><p>  借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
+<h2 id="100-技术选型"><a href="#100-技术选型" class="headerlink" title="100. 技术选型"></a>100. 技术选型</h2><ul>
+<li>后端: <strong><del>Rails Api only</del></strong> <strong>Rails Graphql-Ruby</strong></li>
+<li>app: <strong><del>uni-app</del></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
+<li>web: <strong>React</strong>、<strong>umijs</strong></li>
+<li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
+<li>搜索: <strong>EleasticSearch</strong></li>
+<li>队列: <strong>Sidekiq</strong></li>
+</ul>
+<h2 id="101-产品"><a href="#101-产品" class="headerlink" title="101. 产品"></a>101. 产品</h2><ul>
+<li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li>
+<li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li>
+<li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>创业</category>
+      </categories>
+      <tags>
+        <tag>创业</tag>
+        <tag>社群</tag>
+        <tag>电商</tag>
+        <tag>墨刀</tag>
+        <tag>github</tag>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于k8s\traefik\springboot的微服务实践</title>
+    <url>/2020/11/24/%E5%9F%BA%E4%BA%8Ek8s-traefik%E7%9A%84%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>k8s</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+        <tag>k8s</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我们不像诗歌</title>
     <url>/2020/03/27/%E6%88%91%E4%BB%AC%E4%B8%8D%E5%83%8F%E8%AF%97%E6%AD%8C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -1496,15 +1579,34 @@
       </tags>
   </entry>
   <entry>
+    <title>边缘计算 1</title>
+    <url>/2020/08/05/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a href="#0-云计算" class="headerlink" title="0 云计算"></a>0 云计算</h2><a id="more"></a>
+<h2 id="1-雾计算"><a href="#1-雾计算" class="headerlink" title="1 雾计算"></a>1 雾计算</h2><h2 id="2-边缘计算"><a href="#2-边缘计算" class="headerlink" title="2 边缘计算"></a>2 边缘计算</h2><h3 id="2-1-什么是边缘计算"><a href="#2-1-什么是边缘计算" class="headerlink" title="2-1 什么是边缘计算?"></a>2-1 什么是边缘计算?</h3><blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3 id="2-2-为什么需要边缘计算？"><a href="#2-2-为什么需要边缘计算？" class="headerlink" title="2-2 为什么需要边缘计算？"></a>2-2 为什么需要边缘计算？</h3>]]></content>
+      <categories>
+        <category>边缘计算</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>路</title>
     <url>/2020/03/21/%E8%B7%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-TXAtbcRU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-MjbRmOPj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-TXAtbcRU"),
+            element: document.getElementById("aplayer-MjbRmOPj"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -1547,22 +1649,304 @@
       </tags>
   </entry>
   <entry>
-    <title>边缘计算 1</title>
-    <url>/2020/08/05/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97-1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a href="#0-云计算" class="headerlink" title="0 云计算"></a>0 云计算</h2><a id="more"></a>
-<h2 id="1-雾计算"><a href="#1-雾计算" class="headerlink" title="1 雾计算"></a>1 雾计算</h2><h2 id="2-边缘计算"><a href="#2-边缘计算" class="headerlink" title="2 边缘计算"></a>2 边缘计算</h2><h3 id="2-1-什么是边缘计算"><a href="#2-1-什么是边缘计算" class="headerlink" title="2-1 什么是边缘计算?"></a>2-1 什么是边缘计算?</h3><blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3 id="2-2-为什么需要边缘计算？"><a href="#2-2-为什么需要边缘计算？" class="headerlink" title="2-2 为什么需要边缘计算？"></a>2-2 为什么需要边缘计算？</h3>]]></content>
+    <title>飞桨OCR硬件清单</title>
+    <url>/2022/08/31/%E9%A3%9E%E6%A1%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B5%84%E6%BA%90%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="飞桨官方要求"><a href="#飞桨官方要求" class="headerlink" title="飞桨官方要求"></a>飞桨官方要求</h3><p><strong>1. 操作系统要求：</strong></p>
+<ul>
+<li><p>Ubuntu 20.04</p>
+</li>
+<li><p>CentOS 7</p>
+</li>
+<li><p>操作系统要求是 64 位版本</p>
+</li>
+</ul>
+<a id="more"></a>
+
+<p><strong>2. 处理器要求</strong></p>
+<ul>
+<li>处理器支持 MKL</li>
+<li>处理器架构是x86_64（或称作 x64、Intel 64、AMD64）架构，目前PaddlePaddle不支持arm64架构（mac M1除外，paddle 已支持Mac M1 芯片）</li>
+</ul>
+<h5 id="4-GPU-支持情况："><a href="#4-GPU-支持情况：" class="headerlink" title="4.  GPU 支持情况："></a>4.  <strong>GPU 支持情况：</strong></h5><ul>
+<li><p>目前 <strong>PaddlePaddle</strong> 支持 <strong>NVIDIA</strong> 显卡的 <strong>CUDA</strong> 驱动和 <strong>AMD</strong> 显卡的 <strong>ROCm</strong> 架构</p>
+<hr>
+</li>
+</ul>
+<h3 id="从深度学习硬件架构分析硬件需求"><a href="#从深度学习硬件架构分析硬件需求" class="headerlink" title="从深度学习硬件架构分析硬件需求"></a>从深度学习硬件架构分析硬件需求</h3><p>众所知周深度学习最需要的性能是GPU也就是显卡性能，理论上在同等条件下GPU性能越高，深度学习的效率越高。但这其中也有一个很大的误区，就是电脑性能是一个整体并不是由单一硬件所决定的，是一个木桶效应。</p>
+<p><strong>当GPU性能达到一定高度之后，其他硬件性能没有跟上，再好的GPU也带来不了性能的提升。</strong></p>
+<p><strong>GPU＞CPU≈主板（CPU主板相辅相成）＞内存＞硬盘＞电源＞机箱（装的下就行）</strong></p>
+<p><img src="https://pic3.zhimg.com/v2-c997a6cc407a491a6613f025640da266_r.jpg" alt="preview"></p>
+<p>上述图示，深度神经网络计算大致流程，下面通过深度神经网络计算环节，分析核心硬件配置理想要求：</p>
+<p><img src="https://pic2.zhimg.com/80/v2-3b17505bf0574e12f53b9b6fb7551bb5_720w.jpg" alt="img"></p>
+<h3 id="预算：15000-20000-元"><a href="#预算：15000-20000-元" class="headerlink" title="预算：15000-20000 元"></a>预算：15000-20000 元</h3><h3 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h3><ul>
+<li>CPU支持 MKL，架构是x86_64，</li>
+<li>CPU为英特尔 I5,I7,I9</li>
+<li>GPU 为RTX3080TI、RTX3090TI</li>
+<li>内存32GB</li>
+<li>硬盘10T</li>
+</ul>
+<p><strong>inter 处理器价格</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>cpu架构</th>
+<th>京东报价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Intel 酷睿 i5 12600K</td>
+<td>Golden Cove</td>
+<td>2029元</td>
+</tr>
+<tr>
+<td>Intel 酷睿 i7 12700K</td>
+<td>Golden Cove</td>
+<td>2929元</td>
+</tr>
+<tr>
+<td>Intel 酷睿 i9 12900K</td>
+<td>Golden Cove</td>
+<td>4649元</td>
+</tr>
+</tbody></table>
+<p><strong>GPU价格</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>显存容量</th>
+<th>京东报价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>英伟达（NVIDIA） RTX3090</td>
+<td>24G</td>
+<td>12999元</td>
+</tr>
+<tr>
+<td>英伟达（NVIDIA） RTX3080</td>
+<td>10G</td>
+<td>8999元</td>
+</tr>
+<tr>
+<td>英伟达（NVIDIA） RTX3070</td>
+<td>8G</td>
+<td>4699元</td>
+</tr>
+<tr>
+<td>英伟达（NVIDIA） RTX3060</td>
+<td>12G</td>
+<td>5499元</td>
+</tr>
+</tbody></table>
+<h6 id="内存价格："><a href="#内存价格：" class="headerlink" title="内存价格："></a><strong>内存价格：</strong></h6><table>
+<thead>
+<tr>
+<th>型号</th>
+<th>内存容量</th>
+<th>京东报价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>威刚（ADATA） DDR4 3600 16*2</td>
+<td>32G</td>
+<td>1189元</td>
+</tr>
+<tr>
+<td>金士顿 (Kingston) FURY 32GB DDR4 3200</td>
+<td>32G</td>
+<td>899元</td>
+</tr>
+<tr>
+<td>金士顿 (Kingston) FURY 32GB DDR4 3200               16×2</td>
+<td>32G</td>
+<td>899元</td>
+</tr>
+<tr>
+<td>金士顿 (Kingston) FURY 32GB DDR5 5200               16×2</td>
+<td>32G</td>
+<td>1179元</td>
+</tr>
+<tr>
+<td>光威（Gloway）32GB(16Gx2)套装 DDR4 3200</td>
+<td>32G</td>
+<td>599元</td>
+</tr>
+<tr>
+<td>美商海盗船（USCORSAIR）32GB(16G×2)</td>
+<td>32G</td>
+<td>799元</td>
+</tr>
+</tbody></table>
+<p><strong>机械硬盘价格</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>容量</th>
+<th>接口</th>
+<th>京东报价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>西部数据（WD）20T 氦气 WUH722020ALE6L4</td>
+<td>20T</td>
+<td>SATA</td>
+<td>3659元</td>
+</tr>
+<tr>
+<td>西部数据(Western Digital) 10TB  WUS721010ALE6L4</td>
+<td>10T</td>
+<td>SATA</td>
+<td>1759元</td>
+</tr>
+<tr>
+<td>西部数据(Western Digital) 14TB  WUH721414ALE6L4</td>
+<td>14T</td>
+<td>SATA</td>
+<td>1699元</td>
+</tr>
+<tr>
+<td>希捷Seagate   20T【ST20000NM007D】</td>
+<td>20T</td>
+<td>SATA</td>
+<td>4599元</td>
+</tr>
+<tr>
+<td>希捷（SEAGATE）【ST10000NM001G】10TB</td>
+<td>10T</td>
+<td>SATA</td>
+<td>1879元</td>
+</tr>
+<tr>
+<td>希捷（SEAGATE）【ST12000NM000J】12TB</td>
+<td>12T</td>
+<td>SATA</td>
+<td>1899元</td>
+</tr>
+<tr>
+<td>東芝（TOSHIBA）</td>
+<td>18T</td>
+<td>SATA</td>
+<td>2259元</td>
+</tr>
+<tr>
+<td>东芝(TOSHIBA) 10TB</td>
+<td>10T</td>
+<td>SATA</td>
+<td>1499元</td>
+</tr>
+<tr>
+<td>东芝(TOSHIBA) 12TB</td>
+<td>12T</td>
+<td>SATA</td>
+<td>1579元</td>
+</tr>
+<tr>
+<td>西部数据（WD） 4T HUS726T4TALE6L4</td>
+<td>4T</td>
+<td>STAT</td>
+<td>939元</td>
+</tr>
+<tr>
+<td>希捷Seagate     4TB【ST4000DM004】</td>
+<td>4T</td>
+<td>STAT</td>
+<td>549元</td>
+</tr>
+<tr>
+<td>東芝（TOSHIBA）</td>
+<td>4T</td>
+<td>STAT</td>
+<td>479元</td>
+</tr>
+</tbody></table>
+<p><strong>固态硬盘价格：</strong></p>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>容量</th>
+<th>接口</th>
+<th>京东报价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>金士顿（Kingston）FURY系列  2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>2199元</td>
+</tr>
+<tr>
+<td>英睿达（Crucial）美光 2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>949.9元</td>
+</tr>
+<tr>
+<td>铠侠（Kioxia）2000GB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>1149元</td>
+</tr>
+<tr>
+<td>西部数据（Western Digital）2T</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>1459元</td>
+</tr>
+<tr>
+<td>致态（ZhiTai）长江存储 2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>1299元</td>
+</tr>
+<tr>
+<td>七彩虹(Colorful) 2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>999元</td>
+</tr>
+<tr>
+<td>三星（SAMSUNG）2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>2399元</td>
+</tr>
+<tr>
+<td>海康威视（HIKVISION）2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>1049元</td>
+</tr>
+<tr>
+<td>闪迪（SanDisk） 2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>1399元</td>
+</tr>
+<tr>
+<td>美商海盗船（USCORSAIR） 2TB</td>
+<td>2TB</td>
+<td>NVMe</td>
+<td>1399元</td>
+</tr>
+</tbody></table>
+<h6 id="核心硬件价格总计-："><a href="#核心硬件价格总计-：" class="headerlink" title="核心硬件价格总计 ："></a>核心硬件价格总计 ：</h6><ul>
+<li><h6 id="Intel-酷睿-i9-12900K-英伟达（NVIDIA）-RTX3080-金士顿-Kingston-FURY-32GB-DDR4-3200-西部数据-Western-Digital-10TB-4649-8999-899-1759-16306-元"><a href="#Intel-酷睿-i9-12900K-英伟达（NVIDIA）-RTX3080-金士顿-Kingston-FURY-32GB-DDR4-3200-西部数据-Western-Digital-10TB-4649-8999-899-1759-16306-元" class="headerlink" title="Intel 酷睿 i9 12900K  +  英伟达（NVIDIA） RTX3080  + 金士顿 (Kingston) FURY 32GB DDR4 3200 + 西部数据(Western Digital) 10TB  = 4649 +   8999  + 899 + 1759 =16306 元"></a>Intel 酷睿 i9 12900K  +  英伟达（NVIDIA） RTX3080  + 金士顿 (Kingston) FURY 32GB DDR4 3200 + 西部数据(Western Digital) 10TB  = 4649 +   8999  + 899 + 1759 =16306 元</h6></li>
+</ul>
+<ul>
+<li>Intel 酷睿 i9 12900K  +  英伟达（NVIDIA） RTX3080  + 金士顿 (Kingston) FURY 32GB DDR4 3200 + 金士顿（Kingston）FURY系列  2TB x 2  = 4649 +   8999  + 899 + 2199 X 2 = 18945 元</li>
+</ul>
+<h3 id><a href="#" class="headerlink" title></a></h3>]]></content>
       <categories>
-        <category>边缘计算</category>
+        <category>机器学习</category>
       </categories>
       <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
+        <tag>机器学习</tag>
+        <tag>ocr</tag>
+        <tag>人工智能</tag>
       </tags>
   </entry>
   <entry>
@@ -1572,43 +1956,5 @@
 <p><strong>鲁迅先生写父母存在的意义是：</strong><br>父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>打造自己的产品 1</title>
-    <url>/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br> –《小王子》</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="0-念头"><a href="#0-念头" class="headerlink" title="0. 念头"></a>0. 念头</h2><p>  距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
-<h2 id="1-失眠"><a href="#1-失眠" class="headerlink" title="1. 失眠"></a>1. 失眠</h2><p>   现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
-<h2 id="10-性格"><a href="#10-性格" class="headerlink" title="10. 性格"></a>10. 性格</h2><p>  我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
-<pre><code>往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。</code></pre><h2 id="11-计划"><a href="#11-计划" class="headerlink" title="11. 计划"></a>11. 计划</h2><p>  借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
-<h2 id="100-技术选型"><a href="#100-技术选型" class="headerlink" title="100. 技术选型"></a>100. 技术选型</h2><ul>
-<li>后端: <strong><del>Rails Api only</del></strong> <strong>Rails Graphql-Ruby</strong></li>
-<li>app: <strong><del>uni-app</del></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
-<li>web: <strong>React</strong>、<strong>umijs</strong></li>
-<li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
-<li>搜索: <strong>EleasticSearch</strong></li>
-<li>队列: <strong>Sidekiq</strong></li>
-</ul>
-<h2 id="101-产品"><a href="#101-产品" class="headerlink" title="101. 产品"></a>101. 产品</h2><ul>
-<li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li>
-<li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li>
-<li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>创业</category>
-      </categories>
-      <tags>
-        <tag>创业</tag>
-        <tag>社群</tag>
-        <tag>电商</tag>
-        <tag>墨刀</tag>
-        <tag>github</tag>
-        <tag>小程序</tag>
-      </tags>
   </entry>
 </search>
