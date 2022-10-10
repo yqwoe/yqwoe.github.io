@@ -236,73 +236,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一次gogs采坑之旅</title>
-    <url>/2018/06/03/2018-06-03-git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
-<a id="more"></a>
-
-<p>1.创建用户，一定要记住密码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
-
-<p>2.下载并解压安装包</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;dl.gogs.io&#x2F;0.11.43&#x2F;gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
-
-<p>3.拷贝启动项到系统下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cp &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;init&#x2F;debian&#x2F;gogs &#x2F;etc&#x2F;init.d&#x2F;</span><br><span class="line">chmod +x &#x2F;etc&#x2F;init.d&#x2F;gogs</span><br></pre></td></tr></table></figure>
-
-<p>4.安装 mysql</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#39;gogs&#39;@&#39;localhost&#39; identified by &#39;密码&#39;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#39;gogs&#39;@&#39;localhost&#39;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
-
-<p>5.启动 gogs</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http:&#x2F;&#x2F;localhost:3000  &#x3D;&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
-
-<p>6.nginx 配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location &#x2F; &#123;</span><br><span class="line">          proxy_pass http:&#x2F;&#x2F;localhost:3000&#x2F;;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>7.访问 <a href="http://www.example.com/install" target="_blank" rel="noopener">www.example.com/install</a> 进行初始化</p>
-<p>8.你可能遇到的问题</p>
-<p><a href="https://blog.csdn.net/u013710784/article/details/78778044" target="_blank" rel="noopener">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
-<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786" target="_blank" rel="noopener">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
-]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>gogs</tag>
-        <tag>ubuntu 14.04</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云mysql外网访问</title>
-    <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
-<a id="more"></a>
-
-<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
-<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
-<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
-<p>3.mysql 默认只能自本机访问</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf</span><br><span class="line">#bind-address &#x3D; 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
-
-<p>4.检查是不是在监听状态</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
-
-<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
-]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nginx支持ssl+acme.sh定时更新证书</title>
     <url>/2018/06/04/2018-06-04-nginx-acme.sh%20nginx%20ssl/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>不废话，直接进入实战。</p>
@@ -341,10 +274,77 @@
       <tags>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
         <tag>nginx</tag>
         <tag>ssl</tag>
         <tag>acme.sh</tag>
+        <tag>ubuntu 14.04</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次gogs采坑之旅</title>
+    <url>/2018/06/03/2018-06-03-git-%E4%B8%80%E6%AC%A1gogs%E8%B8%A9%E5%9D%91%E4%B9%8B%E6%97%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+<a id="more"></a>
+
+<p>1.创建用户，一定要记住密码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
+
+<p>2.下载并解压安装包</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;dl.gogs.io&#x2F;0.11.43&#x2F;gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
+
+<p>3.拷贝启动项到系统下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cp &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;init&#x2F;debian&#x2F;gogs &#x2F;etc&#x2F;init.d&#x2F;</span><br><span class="line">chmod +x &#x2F;etc&#x2F;init.d&#x2F;gogs</span><br></pre></td></tr></table></figure>
+
+<p>4.安装 mysql</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; &#x2F;home&#x2F;xx&#x2F;gogs&#x2F;scripts&#x2F;mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#39;gogs&#39;@&#39;localhost&#39; identified by &#39;密码&#39;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#39;gogs&#39;@&#39;localhost&#39;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
+
+<p>5.启动 gogs</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http:&#x2F;&#x2F;localhost:3000  &#x3D;&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
+
+<p>6.nginx 配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location &#x2F; &#123;</span><br><span class="line">          proxy_pass http:&#x2F;&#x2F;localhost:3000&#x2F;;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>7.访问 <a href="http://www.example.com/install" target="_blank" rel="noopener">www.example.com/install</a> 进行初始化</p>
+<p>8.你可能遇到的问题</p>
+<p><a href="https://blog.csdn.net/u013710784/article/details/78778044" target="_blank" rel="noopener">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
+<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786" target="_blank" rel="noopener">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
+]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>gogs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云mysql外网访问</title>
+    <url>/2018/06/05/2018-06-05-mysql-%E9%98%BF%E9%87%8C%E4%BA%91mysql%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created" target="_blank" rel="noopener">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+<a id="more"></a>
+
+<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
+<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
+<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
+<p>3.mysql 默认只能自本机访问</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf</span><br><span class="line">#bind-address &#x3D; 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
+
+<p>4.检查是不是在监听状态</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
+
+<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
+]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -454,23 +454,6 @@
       </tags>
   </entry>
   <entry>
-    <title>英语学习</title>
-    <url>/2018/10/09/2018-10-09-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
-<a id="more"></a>
-<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
-<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
-<p>待补充..</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>英语单词</tag>
-        <tag>入门</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ruby 爬虫 一</title>
     <url>/2018/10/12/2018-10-12-ruby%20%E7%88%AC%E8%99%AB%20%E4%B8%80/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
@@ -525,6 +508,23 @@
       </tags>
   </entry>
   <entry>
+    <title>英语学习</title>
+    <url>/2018/10/09/2018-10-09-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
+<a id="more"></a>
+<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
+<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
+<p>待补充..</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>英语单词</tag>
+        <tag>入门</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mybatis动态查询实现</title>
     <url>/2018/10/30/2018-10-30-mybatis-dynamic%20condition%20/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
@@ -560,6 +560,42 @@
         <tag>mysql</tag>
         <tag>mybatis</tag>
         <tag>api</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cas Server 本地部署</title>
+    <url>/2018/10/31/2018-10-31-SpringBoot_Cas_SSO/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="Cas"><a href="#Cas" class="headerlink" title="Cas"></a>Cas</h1><blockquote>
+<p><strong><a href="https://github.com/apereo/cas" target="_blank" rel="noopener">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+</blockquote>
+<a id="more"></a>
+
+<blockquote>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是<strong><a href="https://github.com/apereo/cas-overlay-template" target="_blank" rel="noopener">cas-overlay-template</a></strong> 分支 5.2</p>
+<h2 id="部署-Cas-Server"><a href="#部署-Cas-Server" class="headerlink" title="部署 Cas Server"></a>部署 Cas Server</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay</span><span class="literal">-template</span>.git</span><br><span class="line">cd cas<span class="literal">-overlay</span><span class="literal">-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line">cp /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line">cp /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+
+<h4 id="application-properties"><a href="#application-properties" class="headerlink" title="application.properties"></a>application.properties</h4><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="services-HTTPSandIMAPS-10000001-json"><a href="#services-HTTPSandIMAPS-10000001-json" class="headerlink" title="services/HTTPSandIMAPS-10000001.json"></a>services/HTTPSandIMAPS-10000001.json</h4><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"@class"</span>: <span class="string">"org.apereo.cas.services.RegexRegisteredService"</span>,</span><br><span class="line">  <span class="attr">"serviceId"</span>: <span class="string">"^(https|imaps|http)://.*"</span>, <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"HTTPS and IMAPS"</span>,</span><br><span class="line">  <span class="attr">"id"</span>: <span class="number">10000001</span>,</span><br><span class="line">  <span class="attr">"description"</span>: <span class="string">"This service definition authorizes all application urls that support HTTPS and IMAPS protocols."</span>,</span><br><span class="line">  <span class="attr">"evaluationOrder"</span>: <span class="number">10000</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;build.sh run</span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>Cas</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
       </tags>
   </entry>
   <entry>
@@ -599,42 +635,6 @@
         <tag>poll</tag>
         <tag>linux</tag>
         <tag>unix like os</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cas Server 本地部署</title>
-    <url>/2018/10/31/2018-10-31-SpringBoot_Cas_SSO/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="Cas"><a href="#Cas" class="headerlink" title="Cas"></a>Cas</h1><blockquote>
-<p><strong><a href="https://github.com/apereo/cas" target="_blank" rel="noopener">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-</blockquote>
-<a id="more"></a>
-
-<blockquote>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
-</blockquote>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是<strong><a href="https://github.com/apereo/cas-overlay-template" target="_blank" rel="noopener">cas-overlay-template</a></strong> 分支 5.2</p>
-<h2 id="部署-Cas-Server"><a href="#部署-Cas-Server" class="headerlink" title="部署 Cas Server"></a>部署 Cas Server</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay</span><span class="literal">-template</span>.git</span><br><span class="line">cd cas<span class="literal">-overlay</span><span class="literal">-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line">cp /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line">cp /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-
-<h4 id="application-properties"><a href="#application-properties" class="headerlink" title="application.properties"></a>application.properties</h4><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="services-HTTPSandIMAPS-10000001-json"><a href="#services-HTTPSandIMAPS-10000001-json" class="headerlink" title="services/HTTPSandIMAPS-10000001.json"></a>services/HTTPSandIMAPS-10000001.json</h4><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"@class"</span>: <span class="string">"org.apereo.cas.services.RegexRegisteredService"</span>,</span><br><span class="line">  <span class="attr">"serviceId"</span>: <span class="string">"^(https|imaps|http)://.*"</span>, <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"HTTPS and IMAPS"</span>,</span><br><span class="line">  <span class="attr">"id"</span>: <span class="number">10000001</span>,</span><br><span class="line">  <span class="attr">"description"</span>: <span class="string">"This service definition authorizes all application urls that support HTTPS and IMAPS protocols."</span>,</span><br><span class="line">  <span class="attr">"evaluationOrder"</span>: <span class="number">10000</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;build.sh run</span><br></pre></td></tr></table></figure>
-
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
-]]></content>
-      <categories>
-        <category>Cas</category>
-      </categories>
-      <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
       </tags>
   </entry>
   <entry>
@@ -802,21 +802,6 @@
       </tags>
   </entry>
   <entry>
-    <title>29岁,再见！</title>
-    <url>/2020/04/08/29%E5%B2%81-%E5%86%8D%E8%A7%81%EF%BC%81/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搭建maven私库</title>
     <url>/2022/08/31/maven/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a href="#1-docker-搭建maven私库" class="headerlink" title="1. docker 搭建maven私库"></a>1. docker 搭建maven私库</h1><a id="more"></a>
@@ -944,6 +929,21 @@
       </tags>
   </entry>
   <entry>
+    <title>29岁,再见！</title>
+    <url>/2020/04/08/29%E5%B2%81-%E5%86%8D%E8%A7%81%EF%BC%81/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>冬冬：因为你明天过生日了吗？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《程序员数学 1》 - 笔记1</title>
     <url>/2020/03/30/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E5%AD%A6-1%E3%80%8B-%E7%AC%94%E8%AE%B01/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事–无即是有"><a href="#第一章-0-的故事–无即是有" class="headerlink" title="第一章 0 的故事–无即是有"></a>第一章 0 的故事–无即是有</h1><h2 id="10-进制计数法"><a href="#10-进制计数法" class="headerlink" title="10 进制计数法"></a>10 进制计数法</h2><ul>
@@ -1044,6 +1044,19 @@
       <tags>
         <tag>计数法</tag>
         <tag>进制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
+    <url>/2022/10/10/mysql-No-DataSource-Set-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以吧useSSL改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
+]]></content>
+      <tags>
+        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>error</tag>
+        <tag>jdbc</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -1454,15 +1467,17 @@
       </tags>
   </entry>
   <entry>
-    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
-    <url>/2022/10/10/mysql-No-DataSource-Set-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以吧useSSL改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
-]]></content>
+    <title>基于k8s\traefik\springboot的微服务实践</title>
+    <url>/2020/11/24/%E5%9F%BA%E4%BA%8Ek8s-traefik%E7%9A%84%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>k8s</category>
+      </categories>
       <tags>
-        <tag>mysql</tag>
-        <tag>java</tag>
-        <tag>error</tag>
-        <tag>jdbc</tag>
+        <tag>docker</tag>
+        <tag>k8s</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
         <tag>springboot</tag>
       </tags>
   </entry>
@@ -1508,6 +1523,24 @@
       </tags>
   </entry>
   <entry>
+    <title>我们不像诗歌</title>
+    <url>/2020/03/27/%E6%88%91%E4%BB%AC%E4%B8%8D%E5%83%8F%E8%AF%97%E6%AD%8C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p>&emsp;–才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打造自己的产品 1</title>
     <url>/2020/05/08/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81%E4%B8%80/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -1543,109 +1576,6 @@
         <tag>墨刀</tag>
         <tag>github</tag>
         <tag>小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于k8s\traefik\springboot的微服务实践</title>
-    <url>/2020/11/24/%E5%9F%BA%E4%BA%8Ek8s-traefik%E7%9A%84%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>k8s</category>
-      </categories>
-      <tags>
-        <tag>docker</tag>
-        <tag>k8s</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我们不像诗歌</title>
-    <url>/2020/03/27/%E6%88%91%E4%BB%AC%E4%B8%8D%E5%83%8F%E8%AF%97%E6%AD%8C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p>&emsp;–才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>边缘计算 1</title>
-    <url>/2020/08/05/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97-1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a href="#0-云计算" class="headerlink" title="0 云计算"></a>0 云计算</h2><a id="more"></a>
-<h2 id="1-雾计算"><a href="#1-雾计算" class="headerlink" title="1 雾计算"></a>1 雾计算</h2><h2 id="2-边缘计算"><a href="#2-边缘计算" class="headerlink" title="2 边缘计算"></a>2 边缘计算</h2><h3 id="2-1-什么是边缘计算"><a href="#2-1-什么是边缘计算" class="headerlink" title="2-1 什么是边缘计算?"></a>2-1 什么是边缘计算?</h3><blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3 id="2-2-为什么需要边缘计算？"><a href="#2-2-为什么需要边缘计算？" class="headerlink" title="2-2 为什么需要边缘计算？"></a>2-2 为什么需要边缘计算？</h3>]]></content>
-      <categories>
-        <category>边缘计算</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>路</title>
-    <url>/2020/03/21/%E8%B7%AF/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-MjbRmOPj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-MjbRmOPj"),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            music: {
-              title: "The Lion Sleeps Tonight",
-              author: "The Tokens",
-              url: "/music/The Lion Sleeps Tonight.mp3",
-              pic: "",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-
-<a id="more"></a>
-
-<blockquote>
-<p>如果你能在下午四点来，那么在三点的时候，我就会开始感到幸福了。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; –《小王子》</p>
-</blockquote>
-<p>​&emsp;&emsp;大多时候无法静下心来做好一件事，比如这篇拖了很多天的日志。还有每天早晨起床锻炼身体、按时喝水…</p>
-<!--more-->
-
-<p>​&emsp;&emsp;写这篇日志的想法来自于上周六，早饭后，和老婆商量着带孩子出去感受一下春暖花开，疫情持续了两个月的时间，也让小家伙待在家里两个月，不能见小朋友、不能去游乐场。以至于最近出门以后，小家伙变的很拘束、对外面的世界也很陌生。<br>​<br>&emsp;&emsp;小家伙已经两岁三个月了，会背很多首唐诗。如果你剩饭剩菜的话，小家伙会说:”谁知盘中餐，粒粒皆辛苦。”。有次晚上和老婆带着小家伙出门散步，刮起一阵风，树上的叶子沙沙响，”夜来风雨声，花落知多少。”</p>
-<p>&emsp;&emsp;上个周六的上午，坐在马桶上，熟练的掏出手机，开始搜索适合踏青的地方，<del>如意湖</del>、<del>森林公园</del>、<del>郑州之林</del>、最后我选了特别冷门的<a href="https://map.baidu.com/poi/%E9%BE%99%E6%B3%89%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/@1264607135.35301,408408639.5094941,21z,87t#panoid=c3596d067083c715f90cad67&panotype=inter&heading=355&pitch=0&l=21&tn=B_NORMAL_MAP&sc=0&newmap=1&shareurl=1&pid=1002890000150427124704361IN&iid=c3596d067083c715f90cad67&psp=%7B%22PanoIndoorPoiModule%22%3A%7B%22uid%22%3A%225b8c96862988758e2fb90853%22%7D%7D" target="_blank" rel="noopener">龙泉湿地公园</a> ，然而这并没有结束，跑了将近 30 公里，去到的是一个荒废了的公园。也或者是因为长时间封闭状态，看起来很旧，基本没什么人来。让我满怀期待的上了路，最终又满怀失望的回了家。</p>
-<p>&emsp;&emsp;现在是周二的晚上08:20，小家伙下午没睡觉，早早的已经睡下了。我和老婆吃着火锅喝着啤酒，大聊人生。是这三年多以来，为数不多的能够静下心来一起吃饭聊天的。聊从前、现在和将来，我们还是会充满希望.</p>
-<p>&emsp;&emsp;人生难免会走上曲曲折折的道路，但是不要担心，这些路的那头一定会有美丽的风景。</p>
-<p>&emsp;&emsp;路，是人走出来的。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>人生</tag>
-        <tag>生活</tag>
-        <tag>书</tag>
-        <tag>路</tag>
-        <tag>有趣</tag>
-        <tag>春天</tag>
       </tags>
   </entry>
   <entry>
@@ -1947,6 +1877,76 @@
         <tag>机器学习</tag>
         <tag>ocr</tag>
         <tag>人工智能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边缘计算 1</title>
+    <url>/2020/08/05/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a href="#0-云计算" class="headerlink" title="0 云计算"></a>0 云计算</h2><a id="more"></a>
+<h2 id="1-雾计算"><a href="#1-雾计算" class="headerlink" title="1 雾计算"></a>1 雾计算</h2><h2 id="2-边缘计算"><a href="#2-边缘计算" class="headerlink" title="2 边缘计算"></a>2 边缘计算</h2><h3 id="2-1-什么是边缘计算"><a href="#2-1-什么是边缘计算" class="headerlink" title="2-1 什么是边缘计算?"></a>2-1 什么是边缘计算?</h3><blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3 id="2-2-为什么需要边缘计算？"><a href="#2-2-为什么需要边缘计算？" class="headerlink" title="2-2 为什么需要边缘计算？"></a>2-2 为什么需要边缘计算？</h3>]]></content>
+      <categories>
+        <category>边缘计算</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>路</title>
+    <url>/2020/03/21/%E8%B7%AF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
+        <div id="aplayer-DxkNiSrq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-DxkNiSrq"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "The Lion Sleeps Tonight",
+              author: "The Tokens",
+              url: "/music/The Lion Sleeps Tonight.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<a id="more"></a>
+
+<blockquote>
+<p>如果你能在下午四点来，那么在三点的时候，我就会开始感到幸福了。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; –《小王子》</p>
+</blockquote>
+<p>​&emsp;&emsp;大多时候无法静下心来做好一件事，比如这篇拖了很多天的日志。还有每天早晨起床锻炼身体、按时喝水…</p>
+<!--more-->
+
+<p>​&emsp;&emsp;写这篇日志的想法来自于上周六，早饭后，和老婆商量着带孩子出去感受一下春暖花开，疫情持续了两个月的时间，也让小家伙待在家里两个月，不能见小朋友、不能去游乐场。以至于最近出门以后，小家伙变的很拘束、对外面的世界也很陌生。<br>​<br>&emsp;&emsp;小家伙已经两岁三个月了，会背很多首唐诗。如果你剩饭剩菜的话，小家伙会说:”谁知盘中餐，粒粒皆辛苦。”。有次晚上和老婆带着小家伙出门散步，刮起一阵风，树上的叶子沙沙响，”夜来风雨声，花落知多少。”</p>
+<p>&emsp;&emsp;上个周六的上午，坐在马桶上，熟练的掏出手机，开始搜索适合踏青的地方，<del>如意湖</del>、<del>森林公园</del>、<del>郑州之林</del>、最后我选了特别冷门的<a href="https://map.baidu.com/poi/%E9%BE%99%E6%B3%89%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/@1264607135.35301,408408639.5094941,21z,87t#panoid=c3596d067083c715f90cad67&panotype=inter&heading=355&pitch=0&l=21&tn=B_NORMAL_MAP&sc=0&newmap=1&shareurl=1&pid=1002890000150427124704361IN&iid=c3596d067083c715f90cad67&psp=%7B%22PanoIndoorPoiModule%22%3A%7B%22uid%22%3A%225b8c96862988758e2fb90853%22%7D%7D" target="_blank" rel="noopener">龙泉湿地公园</a> ，然而这并没有结束，跑了将近 30 公里，去到的是一个荒废了的公园。也或者是因为长时间封闭状态，看起来很旧，基本没什么人来。让我满怀期待的上了路，最终又满怀失望的回了家。</p>
+<p>&emsp;&emsp;现在是周二的晚上08:20，小家伙下午没睡觉，早早的已经睡下了。我和老婆吃着火锅喝着啤酒，大聊人生。是这三年多以来，为数不多的能够静下心来一起吃饭聊天的。聊从前、现在和将来，我们还是会充满希望.</p>
+<p>&emsp;&emsp;人生难免会走上曲曲折折的道路，但是不要担心，这些路的那头一定会有美丽的风景。</p>
+<p>&emsp;&emsp;路，是人走出来的。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>人生</tag>
+        <tag>生活</tag>
+        <tag>书</tag>
+        <tag>路</tag>
+        <tag>有趣</tag>
+        <tag>春天</tag>
       </tags>
   </entry>
   <entry>
