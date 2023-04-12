@@ -707,30 +707,48 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
 excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
 handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
 execute ->> done: 写入数据库</pre><pre class="mermaid">classDiagram
-ExcelHandler  导入导出excel --> Field 字段
-ExcelHandler  导入导出excel --> Record 数据
-
-class Field 字段{
-		+Intger index 索引
-		+String name  字段名
-		+String type  字段类型
-		+Object value  字段值
+class Field{
+		Intger index 索引
+		String name  字段名
+		String type  字段类型
+		Object value  字段值
 }
 
-class Record 数据{
-		+String tableName 表名
-		+List[Field] fields 字段
+class Record{
+		String tableName 表名
+		List fields 字段
 }
 
-class ExcelHandler 导入导出excel{
+class ExcelHandler{
+	-readAll() 读取excel
+	-execute() 写入数据到数据库
+}
+
+class ModeEnum{
+	INSERT("insert") 写入
+	IGNORE("ignore") 忽略重复数据
+	REPLACE("replace") 更新重复数据
+}
+
+class AbstraceExcelHandler{
 	+String tableName 数据表名
-	+List<string> fields 数据表字段名对应excel字段顺序
+	+List(String) fields 数据表字段名对应excel字段顺序
 	+Integer skipHeader 跳过行
-	+String mode 写入模式insert\ignore\replace
-	- abstract read() 读取行
-	- readAll() 读取excel
-	- execute() 写入excel
-}</string></pre>]]></content>
+	+ModeEnum mode 写入方式
+	-abstract read(Record) 读取行
+}
+
+class ImportExcelHandler{
+	-read(Record) 读取行
+	-readAll() 读取行
+	-execute() 写入数据
+}
+
+ExcelHandler -->AbstraceExcelHandler
+AbstraceExcelHandler --> ImportExcelHandler
+ImportExcelHandler --> ModeEnum
+ImportExcelHandler --> Field
+ImportExcelHandler --> Record</pre>]]></content>
       <tags>
         <tag>easyexcel</tag>
         <tag>excel</tag>
