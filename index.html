@@ -65,16 +65,22 @@ a("项目整体情况")
 subgraph "[产品研发]截止:  2023-04-14"
 	b1("负责人: 吴要权")
   b1 --> b2("事件系统升级，
-  					传统建表,动态配置接口开发模式;")
-  b1 --> b3("excel导入、导出通用封装")
+  					传统建表,动态配置接口开发模式; - testing")
+  b1 --> b3("excel导入、导出通用封装 - 导入待测试")
 end
 subgraph "[小学生学习报]截止: 2023-04-12"
   c1("负责人: 陈曦")
   c1 --> c2("第一批需求变更
-        开发、测试、发布")
+        开发、测试、发布  --已发布")
   c2 --> c3("程双")   
   c2 --> c4("刘欢")  
   c2 --> c5("连建锋")   
+  c1 --> c6("第二批需求变更
+        开发、测试、发布 -- 2023-04-25")
+        
+  c6 --> c7("程双")   
+  c6 --> c8("刘欢")  
+  c6 --> c9("杨波")  
 end
 
 subgraph "[事前管控系统]截止: 2023-04-25"
@@ -94,6 +100,7 @@ subgraph "[光灿售后系统]截止: 2023-04-12"
               确定售后流程和项目立项")
   e2 --> e3("弓远")  
   e2 --> e4("陈曦")
+  e1 --> e5("12日调研完和客户最终确定方案--")
 end
 
 
@@ -111,11 +118,12 @@ end
 subgraph "[铁塔代维资源核查]截止: 2023-04-13"
   g1("负责人: 弓远")
   g1 --> g2("代维资源二阶段需求
-              测试、并发布")
+              测试、并发布；
+              视频播放和多状态筛选 待解决")
   g2 --> g3("马国岭")    
   g2 --> g4("朱云飞")  
   g2 --> g5("尚雨鹏")  
 end
 
 
-a --> b1 & c1 & d1 & e1 & f1 & g1</pre></div></div></article><article id="post-gitlab-OKR-进行项目管理" class="article article-type-post" itemprop="blogPost" itemscope><div class="article-inner"><header class="article-header"><h2 class="article-title" itemprop="name"><a href="/*/2050102104.html">gitlab &amp; OKR 进行项目管理</a></h2><div class="article-meta"><time class="article-date" datetime="2023-03-28T02:40:36.000Z" itemprop="datePublished">23/3/28 10:40:36 上午</time></div></header><div class="article-entry" itemprop="articleBody"><blockquote><p>本文章围绕gitlab 和 OKR，使用gitlab已有功能，进行项目管理、问题追踪和开发流程规范。</p></blockquote></div><div class="article-more-link"><a href="/*/2050102104.html#more">查看更多</a></div></div></article><nav id="page-nav" class="page-nav"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/2/">&gt;</a></nav></div></div><div id="settings-container"><div id="dark-mode">黑色</div><div id="sans-font">无衬</div></div><span class="post-count" style="position:fixed;bottom:10px;left:10px">19.6k</span><script type="text/javascript">let d=document,r=d.documentElement.style,f=r.setProperty.bind(r),l=localStorage,s=l.getItem("s")||window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,n=l.getItem("n"),m=d.getElementById("dark-mode"),b=()=>{f("--bg-color","#fafafa"),f("--code-bg-color","#f4f4f4"),f("--text-color","#212121"),f("--secondary-color","#808080"),f("--tertiary-color","#b0b0b0"),f("--link-color","#b5c8cf"),f("--link-hover-color","#618794"),f("--link-bg-color","#dae4e7"),f("--selection-color","#dae4e7"),m.innerHTML="黑色"},c=()=>{f("--bg-color","#212121"),f("--code-bg-color","#292929"),f("--text-color","#fff"),f("--secondary-color","#c0c0c0"),f("--tertiary-color","#6e6e6e"),f("--link-color","#4d6b75"),f("--link-hover-color","#96b1bb"),f("--link-bg-color","#5d828e"),f("--selection-color","#acc1c9"),m.innerHTML="亮色"},o=d.getElementById("sans-font"),e=()=>{f("--body-stack",'"Lora", "Georgia", "Times New Roman", serif'),o.innerHTML="无衬"},g=()=>{f("--body-stack",'"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif'),o.innerHTML="衬线"};m.onclick=()=>{2==s?(s=1,l.setItem("s",s),c()):(s=2,l.setItem("s",s),b())},o.onclick=()=>{2==n?(n=1,l.setItem("n",n),g()):(n=2,l.setItem("n",n),e())},s||(s=2,l.setItem("s",2)),1==s&&c(),n||(n=2,l.setItem("n",2)),1==n&&g()</script><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@9.4.3/+esm";let theme=localStorage.getItem("s");mermaid.initialize({startOnLoad:!0,logLevel:"debug",theme:"2"===theme?"forest":"dark"});let mode=document.getElementById("dark-mode"),arrayGraphs=[],nodes=document.getElementsByClassName("mermaid");for(let e of nodes)console.log(e.innerHTML),arrayGraphs.push(e.innerHTML);mode.addEventListener("click",async()=>{theme=localStorage.getItem("s"),mermaid.initialize({startOnLoad:!0,logLevel:"debug",theme:"2"===theme?"forest":"dark"});for(let e=0;e<nodes.length;e++){let t=nodes[e];t.removeAttribute("data-processed"),t.setAttribute("id","mermaid-"+e),t.replaceChildren(),t.innerHTML=arrayGraphs[e],mermaid.init(void 0,t)}},!1)</script></body></html>
+a --> b1 & c1 & d1 & e1 & f1 & g1</pre></div></div></article><article id="post-gitlab-OKR-进行项目管理" class="article article-type-post" itemprop="blogPost" itemscope><div class="article-inner"><header class="article-header"><h2 class="article-title" itemprop="name"><a href="/*/2050102104.html">gitlab &amp; OKR 进行项目管理</a></h2><div class="article-meta"><time class="article-date" datetime="2023-03-28T02:40:36.000Z" itemprop="datePublished">23/3/28 10:40:36 上午</time></div></header><div class="article-entry" itemprop="articleBody"><blockquote><p>本文章围绕gitlab 和 OKR，使用gitlab已有功能，进行项目管理、问题追踪和开发流程规范。</p></blockquote></div><div class="article-more-link"><a href="/*/2050102104.html#more">查看更多</a></div></div></article><nav id="page-nav" class="page-nav"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/2/">&gt;</a></nav></div></div><div id="settings-container"><div id="dark-mode">黑色</div><div id="sans-font">无衬</div></div><span class="post-count" style="position:fixed;bottom:10px;left:10px">19.7k</span><script type="text/javascript">let d=document,r=d.documentElement.style,f=r.setProperty.bind(r),l=localStorage,s=l.getItem("s")||window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,n=l.getItem("n"),m=d.getElementById("dark-mode"),b=()=>{f("--bg-color","#fafafa"),f("--code-bg-color","#f4f4f4"),f("--text-color","#212121"),f("--secondary-color","#808080"),f("--tertiary-color","#b0b0b0"),f("--link-color","#b5c8cf"),f("--link-hover-color","#618794"),f("--link-bg-color","#dae4e7"),f("--selection-color","#dae4e7"),m.innerHTML="黑色"},c=()=>{f("--bg-color","#212121"),f("--code-bg-color","#292929"),f("--text-color","#fff"),f("--secondary-color","#c0c0c0"),f("--tertiary-color","#6e6e6e"),f("--link-color","#4d6b75"),f("--link-hover-color","#96b1bb"),f("--link-bg-color","#5d828e"),f("--selection-color","#acc1c9"),m.innerHTML="亮色"},o=d.getElementById("sans-font"),e=()=>{f("--body-stack",'"Lora", "Georgia", "Times New Roman", serif'),o.innerHTML="无衬"},g=()=>{f("--body-stack",'"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif'),o.innerHTML="衬线"};m.onclick=()=>{2==s?(s=1,l.setItem("s",s),c()):(s=2,l.setItem("s",s),b())},o.onclick=()=>{2==n?(n=1,l.setItem("n",n),g()):(n=2,l.setItem("n",n),e())},s||(s=2,l.setItem("s",2)),1==s&&c(),n||(n=2,l.setItem("n",2)),1==n&&g()</script><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@9.4.3/+esm";let theme=localStorage.getItem("s");mermaid.initialize({startOnLoad:!0,logLevel:"debug",theme:"2"===theme?"forest":"dark"});let mode=document.getElementById("dark-mode"),arrayGraphs=[],nodes=document.getElementsByClassName("mermaid");for(let e of nodes)console.log(e.innerHTML),arrayGraphs.push(e.innerHTML);mode.addEventListener("click",async()=>{theme=localStorage.getItem("s"),mermaid.initialize({startOnLoad:!0,logLevel:"debug",theme:"2"===theme?"forest":"dark"});for(let e=0;e<nodes.length;e++){let t=nodes[e];t.removeAttribute("data-processed"),t.setAttribute("id","mermaid-"+e),t.replaceChildren(),t.innerHTML=arrayGraphs[e],mermaid.init(void 0,t)}},!1)</script></body></html>

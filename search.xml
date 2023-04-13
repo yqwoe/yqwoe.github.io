@@ -375,16 +375,22 @@ a("项目整体情况")
 subgraph "[产品研发]截止:  2023-04-14"
 	b1("负责人: 吴要权")
   b1 --> b2("事件系统升级，
-  					传统建表,动态配置接口开发模式;")
-  b1 --> b3("excel导入、导出通用封装")
+  					传统建表,动态配置接口开发模式; - testing")
+  b1 --> b3("excel导入、导出通用封装 - 导入待测试")
 end
 subgraph "[小学生学习报]截止: 2023-04-12"
   c1("负责人: 陈曦")
   c1 --> c2("第一批需求变更
-        开发、测试、发布")
+        开发、测试、发布  --已发布")
   c2 --> c3("程双")   
   c2 --> c4("刘欢")  
   c2 --> c5("连建锋")   
+  c1 --> c6("第二批需求变更
+        开发、测试、发布 -- 2023-04-25")
+        
+  c6 --> c7("程双")   
+  c6 --> c8("刘欢")  
+  c6 --> c9("杨波")  
 end
 
 subgraph "[事前管控系统]截止: 2023-04-25"
@@ -404,6 +410,7 @@ subgraph "[光灿售后系统]截止: 2023-04-12"
               确定售后流程和项目立项")
   e2 --> e3("弓远")  
   e2 --> e4("陈曦")
+  e1 --> e5("12日调研完和客户最终确定方案--")
 end
 
 
@@ -421,7 +428,8 @@ end
 subgraph "[铁塔代维资源核查]截止: 2023-04-13"
   g1("负责人: 弓远")
   g1 --> g2("代维资源二阶段需求
-              测试、并发布")
+              测试、并发布；
+              视频播放和多状态筛选 待解决")
   g2 --> g3("马国岭")    
   g2 --> g4("朱云飞")  
   g2 --> g5("尚雨鹏")  
@@ -719,36 +727,32 @@ class Record{
 		List fields 字段
 }
 
-class ExcelHandler{
-	-readAll() 读取excel
-	-execute() 写入数据到数据库
-}
-
 class ModeEnum{
 	INSERT("insert") 写入
 	IGNORE("ignore") 忽略重复数据
 	REPLACE("replace") 更新重复数据
 }
 
-class AbstraceExcelHandler{
-	+String tableName 数据表名
-	+List(String) fields 数据表字段名对应excel字段顺序
-	+Integer skipHeader 跳过行
-	+ModeEnum mode 写入方式
-	-abstract read(Record) 读取行
+class ExcelUtil{
+	+File file excel
+	+List:String fields 字段
+  +String tableName 数据表名
+  +Integer skip 跳过行
+  +ModeEnum mode 写入方式
+  +List:String dupKeys 用于校验重复的字段 
+  +RecordHandler recordHandler 数据行处理
+	-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入
+	-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出
 }
 
-class ImportExcelHandler{
+class RecordHandler{
 	-read(Record) 读取行
-	-readAll() 读取行
-	-execute() 写入数据
 }
 
-ExcelHandler -->AbstraceExcelHandler
-AbstraceExcelHandler --> ImportExcelHandler
-ImportExcelHandler --> ModeEnum
-ImportExcelHandler --> Field
-ImportExcelHandler --> Record</pre>]]></content>
+ExcelUtil --> ModeEnum
+ExcelUtil --> Field
+ExcelUtil --> Record
+ExcelUtil --> RecordHandler</pre>]]></content>
       <tags>
         <tag>easyexcel</tag>
         <tag>excel</tag>
