@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2023-04-12T01:44:54.000Z</updated>
+  <updated>2023-04-14T03:34:01.000Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -17,21 +17,52 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ER图方式创建数据库表</title>
+    <link href="https://rm-rf.ink/*/13814498.html"/>
+    <id>https://rm-rf.ink/*/13814498.html</id>
+    <published>2023-04-14T03:34:01.000Z</published>
+    <updated>2023-04-14T03:34:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务描述"><a class="markdownIt-Anchor" href="#业务描述"></a> 业务描述</h2><ol><li>打开数据源，默认展示全部数据表的er图</li><li>点击单个数据表弹出修改数据表表单；</li><li>支持添加数据表</li><li>支持er连线操作；</li></ol><a id="more"></a><p><img src="/*/13814498/image-20230417143005282.png" alt="image-20230417143005282"></p><p><img src="/*/13814498/image-20230417142753561.png" alt="image-20230417142753561"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;业务描述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#业务描述&quot;&gt;&lt;/a&gt; 业务描述&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;打开数据源，默认展示全部数据表的er图&lt;/li&gt;&lt;li&gt;点击单个数据表弹出修改数据表表单；&lt;/li&gt;&lt;li&gt;支持添加数据表&lt;/li&gt;&lt;li&gt;支持er连线操作；&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="er图" scheme="https://rm-rf.ink/tags/er%E5%9B%BE/"/>
+    
+      <category term="react" scheme="https://rm-rf.ink/tags/react/"/>
+    
+      <category term="数据库" scheme="https://rm-rf.ink/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="建表" scheme="https://rm-rf.ink/tags/%E5%BB%BA%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>通用excel导入设计</title>
     <link href="https://rm-rf.ink/*/7178be5f.html"/>
     <id>https://rm-rf.ink/*/7178be5f.html</id>
     <published>2023-04-12T01:44:54.000Z</published>
     <updated>2023-04-12T01:44:54.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2><ol><li>上传excel按需写入字段；</li><li>覆盖更新数据；</li><li>行数据修改；</li></ol><a id="more"></a><h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2><pre class="mermaid">sequenceDiagramexcel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]execute ->> done: 写入数据库</pre><pre class="mermaid">classDiagramclass Field{Intger index 索引String name  字段名String type  字段类型Object value  字段值}class Record{String tableName 表名List fields 字段}class ModeEnum{INSERT("insert") 写入IGNORE("ignore") 忽略重复数据REPLACE("replace") 更新重复数据}class ExcelUtil{+File file excel+List:String fields 字段  +String tableName 数据表名  +Integer skip 跳过行  +ModeEnum mode 写入方式  +List:String dupKeys 用于校验重复的字段   +RecordHandler recordHandler 数据行处理-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出}class RecordHandler{-read(Record) 读取行}ExcelUtil --> ModeEnumExcelUtil --> FieldExcelUtil --> RecordExcelUtil --> RecordHandler</pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2><ol><li>上传excel按需写入字段；</li><li>覆盖更新数据；</li></ol><a id="more"></a><h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2><pre class="mermaid">sequenceDiagramexcel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]execute ->> done: 写入数据库</pre><h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2><ol><li>insert into table () select ‘’ from dual where not exsits ()</li><li>insert ignore into id={IDGenerrate.gernxxx}</li><li>Insert into on dupli update xx=values()</li></ol><p>Sql:</p><ol><li><p>select id from table where dupKeys = ‘’</p></li><li><p>insert ignore into values (id)</p></li><li><p>ignore : insert into table () select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p></li><li><p>Insert into table () select ‘x’,‘id’ from dual on dupli update xx=values()</p></li></ol><pre class="mermaid">classDiagramclass Field{Intger index 索引String name  字段名String type  字段类型Object value  字段值String exp 校验表达式}class Record{String tableName 表名List fields 字段}class ModeEnum{INSERT("insert") 写入IGNORE("ignore") 忽略重复数据REPLACE("replace") 更新重复数据}class ExcelUtil{+File file excel+List:String fields 字段  +String tableName 数据表名  +Integer skip 跳过行  +ModeEnum mode 写入方式  +List:String dupKeys 用于校验重复的字段   +RecordHandler recordHandler 数据行处理-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出}class RecordHandler{-read(Record) 读取行}ExcelUtil --> ModeEnumExcelUtil --> FieldExcelUtil --> RecordExcelUtil --> RecordHandler</pre>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;业务场景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#业务场景&quot;&gt;&lt;/a&gt; 业务场景:&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;上传excel按需写入字段；&lt;/li&gt;&lt;li&gt;覆盖更新数据；&lt;/li&gt;&lt;li&gt;行数据修改；&lt;/li&gt;&lt;/ol&gt;
+      &lt;h2 id=&quot;业务场景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#业务场景&quot;&gt;&lt;/a&gt; 业务场景:&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;上传excel按需写入字段；&lt;/li&gt;&lt;li&gt;覆盖更新数据；&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
     
+    
+      <category term="mysql" scheme="https://rm-rf.ink/tags/mysql/"/>
+    
+      <category term="jdbc" scheme="https://rm-rf.ink/tags/jdbc/"/>
     
       <category term="easyexcel" scheme="https://rm-rf.ink/tags/easyexcel/"/>
     
@@ -40,6 +71,12 @@
       <category term="import" scheme="https://rm-rf.ink/tags/import/"/>
     
       <category term="export" scheme="https://rm-rf.ink/tags/export/"/>
+    
+      <category term="replace" scheme="https://rm-rf.ink/tags/replace/"/>
+    
+      <category term="ignore" scheme="https://rm-rf.ink/tags/ignore/"/>
+    
+      <category term="insert" scheme="https://rm-rf.ink/tags/insert/"/>
     
   </entry>
   
@@ -50,14 +87,11 @@
     <published>2023-04-07T08:35:09.000Z</published>
     <updated>2023-04-07T08:35:09.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><a id="more"></a><pre class="mermaid">gantttitle 项目一览dateFormat YYYY-MM-DDexcludes weekendssection [产品研发][事件系统升级研发] :a1, 2023-04-03,2023-04-14[excel导入/导出封装] :a2, 2023-04-10,2023-04-14section [小学生学习报][第一批需求研发] :b2,2023-04-04,6dsection [事前管控][4月份需求迭代] :c2,2023-04-07,2023-04-25section [光灿售后][需求调研] :d2,2023-04-09,2023-04-12section [铁塔六费稽核][线上bug修改] :e1,2023-04-09,2023-04-13section [铁塔代维资源核查][二阶段需求] :f2,2023-03-25,2023-04-13</pre><pre class="mermaid">gantttitle 人员dateFormat YYYY-MM-DDexcludes weekendssection [产品研发][事件系统升级研发] :active, a1, 2023-04-03,2023-04-14[excel导入/导出封装] :a2, 2023-04-10,2023-04-14section [小学生学习报][第一批需求研发] :active,b2,2023-04-04,6dsection [事前管控][4月份需求迭代] :active, c2,2023-04-07,2023-04-25section [光灿售后][需求调研] :d2,2023-04-09,2023-04-12section [铁塔六费稽核][线上bug修改] :e1,2023-04-09,2023-04-13section [铁塔代维资源核查][二阶段需求] :active,f2,2023-03-25,2023-04-13</pre><pre class="mermaid">gantt    dateFormat  YYYY-MM-DD    title       人员分布    excludes    weekends section 【陈曦】 [小学生学习报][第一批需求研发] :a2,2023-04-07,2023-04-12 section 【弓远】 [代维资源核查] :active,a1,2023-04-07,2023-04-13 section 【杨波】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 [光灿售后][需求调研] :active,a1,2023-04-10,2023-04-12 section 【连建锋】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【张道书】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【李剑威】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【张豪豪】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【程双】 [学习报][第一批需求][研发] :active,a1,2023-04-07,2023-04-12 section 【马国岭】 [代维资源核查] :active,a1,2023-04-07,2023-04-13 section 【刘欢】 [学习报][第一批需求][测试] :active,a1,2023-04-07,2023-04-12 section 【朱云飞】 [代维资源核查] :active,a1,2023-04-10,2023-04-13 section 【吴要权】 [产品研发][事件系统升级] :active,a1,2023-04-07,2023-04-14 [产品研发][excel导入、导出] :a1,2023-04-10,2023-04-14</pre><pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%flowchart LRa("项目整体情况")subgraph "[产品研发]截止:  2023-04-14"b1("负责人: 吴要权")  b1 --> b2("事件系统升级，  传统建表,动态配置接口开发模式; - testing")  b1 --> b3("excel导入、导出通用封装 - 导入待测试")endsubgraph "[小学生学习报]截止: 2023-04-12"  c1("负责人: 陈曦")  c1 --> c2("第一批需求变更        开发、测试、发布  --已发布")  c2 --> c3("程双")     c2 --> c4("刘欢")    c2 --> c5("连建锋")     c1 --> c6("第二批需求变更        开发、测试、发布 -- 2023-04-25")          c6 --> c7("程双")     c6 --> c8("刘欢")    c6 --> c9("杨波")  endsubgraph "[事前管控系统]截止: 2023-04-25"  d1("负责人: 连建锋")  d1 --> d2("4月份需求分析        开发、测试、发布")  d2 --> d3("杨波")     d2 --> d4("张道书")   d2 --> d5("李剑威")   d2 --> d6("张豪豪")   d2 --> d7("马国岭")  endsubgraph "[光灿售后系统]截止: 2023-04-12"  e1("负责人: 杨波")  e1 --> e2("12日之前和客户约定时间              确定售后流程和项目立项")  e2 --> e3("弓远")    e2 --> e4("陈曦")  e1 --> e5("12日调研完和客户最终确定方案--")endsubgraph "[铁塔六费稽核]截止: 2023-04-13"  f1("负责人: 弓远")  f1 --> f2("1.审批页面附件预览问题；             2. 3月份问题修复；             以上问题开发、测试、并发布")  f2 --> f3("程双")      f2 --> f4("连建锋")    f2 --> f5("马国岭")  endsubgraph "[铁塔代维资源核查]截止: 2023-04-13"  g1("负责人: 弓远")  g1 --> g2("代维资源二阶段需求              测试、并发布；              视频播放和多状态筛选 待解决")  g2 --> g3("马国岭")      g2 --> g4("朱云飞")    g2 --> g5("尚雨鹏")  enda --> b1 & c1 & d1 & e1 & f1 & g1</pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="项目一览"><a class="markdownIt-Anchor" href="#项目一览"></a> 项目一览</h2><a id="more"></a><pre class="mermaid">gantttitle 项目一览dateFormat YYYY-MM-DDexcludes weekendssection [产品研发][事件系统升级研发] :a1, 2023-04-03,2023-04-14[excel导入/导出封装] :a2, 2023-04-10,2023-04-14section [小学生学习报][第一批需求研发] :b2,2023-04-04,6dsection [事前管控][4月份需求迭代] :c2,2023-04-07,2023-04-25section [光灿售后][需求调研] :d2,2023-04-09,2023-04-12section [铁塔六费稽核][线上bug修改] :e1,2023-04-09,2023-04-13section [铁塔代维资源核查][二阶段需求] :f2,2023-03-25,2023-04-13</pre><pre class="mermaid">gantttitle 人员dateFormat YYYY-MM-DDexcludes weekendssection [产品研发][事件系统升级研发] :active, a1, 2023-04-03,2023-04-14[excel导入/导出封装] :a2, 2023-04-10,2023-04-14section [小学生学习报][第一批需求研发] :active,b2,2023-04-04,6dsection [事前管控][4月份需求迭代] :active, c2,2023-04-07,2023-04-25section [光灿售后][需求调研] :d2,2023-04-09,2023-04-12section [铁塔六费稽核][线上bug修改] :e1,2023-04-09,2023-04-13section [铁塔代维资源核查][二阶段需求] :active,f2,2023-03-25,2023-04-13</pre><pre class="mermaid">gantt    dateFormat  YYYY-MM-DD    title       人员分布    excludes    weekends section 【陈曦】 [小学生学习报][第一批需求研发] :a2,2023-04-07,2023-04-12 section 【弓远】 [代维资源核查] :active,a1,2023-04-07,2023-04-13 section 【杨波】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 [光灿售后][需求调研] :active,a1,2023-04-10,2023-04-12 section 【连建锋】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【张道书】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【李剑威】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【张豪豪】 [事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25 section 【程双】 [学习报][第一批需求][研发] :active,a1,2023-04-07,2023-04-12 section 【马国岭】 [代维资源核查] :active,a1,2023-04-07,2023-04-13 section 【刘欢】 [学习报][第一批需求][测试] :active,a1,2023-04-07,2023-04-12 section 【朱云飞】 [代维资源核查] :active,a1,2023-04-10,2023-04-13 section 【吴要权】 [产品研发][事件系统升级] :active,a1,2023-04-07,2023-04-14 [产品研发][excel导入、导出] :a1,2023-04-10,2023-04-14</pre><pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%flowchart LRa("项目整体情况")subgraph "[产品研发]截止:  2023-04-14"b1("负责人: 吴要权")  b1 --> b2("事件系统升级，  传统建表,动态配置接口开发模式; - testing")  b1 --> b3("excel导入、导出通用封装 - 导入待测试")endsubgraph "[小学生学习报]截止: 2023-04-12"  c1("负责人: 陈曦")  c1 --> c2("第一批需求变更        开发、测试、发布  --已发布")  c2 --> c3("程双")     c2 --> c4("刘欢")    c2 --> c5("连建锋")     c1 --> c6("第二批需求变更        开发、测试、发布 -- 2023-04-25")          c6 --> c7("程双")     c6 --> c8("刘欢")    c6 --> c9("杨波")  endsubgraph "[事前管控系统]截止: 2023-04-25"  d1("负责人: 连建锋")  d1 --> d2("4月份需求分析        开发、测试、发布")  d2 --> d3("杨波")     d2 --> d4("张道书")   d2 --> d5("李剑威")   d2 --> d6("张豪豪")   d2 --> d7("马国岭")  endsubgraph "[光灿售后系统]截止: 2023-04-12"  e1("负责人: 杨波")  e1 --> e2("12日之前和客户约定时间              确定售后流程和项目立项")  e2 --> e3("弓远")    e2 --> e4("陈曦")  e1 --> e5("12日调研完和客户最终确定方案--")endsubgraph "[铁塔六费稽核]截止: 2023-04-13"  f1("负责人: 弓远")  f1 --> f2("1.审批页面附件预览问题；             2. 3月份问题修复；             以上问题开发、测试、并发布")  f2 --> f3("程双")      f2 --> f4("连建锋")    f2 --> f5("马国岭")  endsubgraph "[铁塔代维资源核查]截止: 2023-04-13"  g1("负责人: 弓远")  g1 --> g2("代维资源二阶段需求              测试、并发布；              视频播放和多状态筛选 待解决")  g2 --> g3("马国岭")      g2 --> g4("朱云飞")    g2 --> g5("尚雨鹏")  enda --> b1 & c1 & d1 & e1 & f1 & g1</pre>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
+      &lt;h2 id=&quot;项目一览&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#项目一览&quot;&gt;&lt;/a&gt; 项目一览&lt;/h2&gt;
     
     </summary>
     
@@ -550,31 +584,6 @@
       <category term="真与假" scheme="https://rm-rf.ink/tags/%E7%9C%9F%E4%B8%8E%E5%81%87/"/>
     
       <category term="二元世界" scheme="https://rm-rf.ink/tags/%E4%BA%8C%E5%85%83%E4%B8%96%E7%95%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《程序员数学 1》 - 笔记1</title>
-    <link href="https://rm-rf.ink/*/965849311.html"/>
-    <id>https://rm-rf.ink/*/965849311.html</id>
-    <published>2020-03-30T03:20:15.000Z</published>
-    <updated>2020-03-30T03:20:15.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1><h2 id="10-进制计数法"><a class="markdownIt-Anchor" href="#10-进制计数法"></a> 10 进制计数法</h2><ul><li><p>什么是 10 进制计数法</p><ul><li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li><li>数位:从右往左数表示 个、十、百、千、万…位。</li></ul></li><li><p>分解</p><ul><li>2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li></ul></li></ul><h2 id="2-进制计数法"><a class="markdownIt-Anchor" href="#2-进制计数法"></a> 2 进制计数法</h2><ul><li><p>什么是 2 进制计数法</p><ul><li>数字有 2 种，0、1.</li><li>从右往左分别表示 1 位、2 位、4 位、8 位</li></ul></li><li><p>分解</p><ul><li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li></ul></li><li><p>基数转换</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*&#x2F;</span><br><span class="line">12 &#x2F; 2 &#x3D; 6  余数 0</span><br><span class="line">6  &#x2F; 2 &#x3D; 3  余数 0</span><br><span class="line">3  &#x2F; 2 &#x3D; 1  余数 1</span><br><span class="line">1  &#x2F; 2 &#x3D; 0  余数 1</span><br><span class="line">&#x2F;**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*&#x2F;</span><br><span class="line">1000 &#x2F; 2 &#x3D; 500 余数 0</span><br><span class="line">500  &#x2F; 2 &#x3D; 250 余数 0</span><br><span class="line">250  &#x2F; 2 &#x3D; 125 余数 0</span><br><span class="line">125  &#x2F; 2 &#x3D; 62  余数 1</span><br><span class="line">62   &#x2F; 2 &#x3D; 31  余数 0</span><br><span class="line">31   &#x2F; 2 &#x3D; 15  余数 1</span><br><span class="line">15   &#x2F; 2 &#x3D; 7   余数 1</span><br><span class="line">7    &#x2F; 2 &#x3D; 3   余数 1</span><br><span class="line">3    &#x2F; 2 &#x3D; 1   余数 1</span><br><span class="line">1    &#x2F; 2 &#x3D; 0   余数 1</span><br></pre></td></tr></table></figure></li><li><p>计算机中为什么采用 2 进制计数法</p><ul><li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li><li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li></ul></li></ul><h2 id="按位计数法"><a class="markdownIt-Anchor" href="#按位计数法"></a> 按位计数法</h2><ul><li><p>什么是按位计数法</p><ul><li><p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p></li><li><p>N 进制计数法:</p><ul><li>使用数字有 0、1、2、3…、N-1,共 N 种</li><li>从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li><li>例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li></ul></li></ul></li><li><p>不按位计数法的罗马数字</p><ul><li>没有数位，只表示数字本身</li><li>没有 0</li><li>使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li><li>并排的数字加起来，就是所表示的数</li><li>III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li><li>IV(4) 减法规则表示 5 - 1 = 4</li></ul></li></ul><p>##指数法则</p><ul><li><p>10 的 0 次方是什么？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">10³ &#x3D; 1000</span><br><span class="line">10² &#x3D; 100</span><br><span class="line">10¹ &#x3D; 10</span><br><span class="line">10º &#x3D; ？</span><br></pre></td></tr></table></figure></li><li><p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p></li><li><p>规则的扩展</p><ul><li>指数法则表达式: N ** a + N ** b = N ** (a + b)</li></ul></li></ul><h2 id="0-所起的作用"><a class="markdownIt-Anchor" href="#0-所起的作用"></a> 0 所起的作用</h2><ul><li><p>0 的作用: 占位</p><ul><li>2503 如果没有了 0 就变成了 253</li></ul></li></ul><h2 id="人类的极限和构造的发现"><a class="markdownIt-Anchor" href="#人类的极限和构造的发现"></a> 人类的极限和构造的发现</h2><ul><li><p>重温历史进程</p><ul><li><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li><li><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li><li><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li><li><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li><li><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li><li><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      程序员数学-进制计数法
-    
-    </summary>
-    
-    
-      <category term="数学" scheme="https://rm-rf.ink/categories/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-      <category term="计数法" scheme="https://rm-rf.ink/tags/%E8%AE%A1%E6%95%B0%E6%B3%95/"/>
-    
-      <category term="进制" scheme="https://rm-rf.ink/tags/%E8%BF%9B%E5%88%B6/"/>
     
   </entry>
   
