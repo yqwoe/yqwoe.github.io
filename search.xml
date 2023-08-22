@@ -437,17 +437,26 @@ subgraph "[小学生学习报]截止: 2023-04-25"
   c1("负责人: 陈曦")
   c1 --> c6("第二批需求变更
         开发、测试、发布 -- 2023-04-25")
-        
   c6 --> c7("程双")   
   c6 --> c8("刘欢")  
-  c6 --> c9("杨波")  
 end
 
 subgraph "[事前管控系统]截止: 2023-04-25"
   d1("负责人: 连建锋")
   d1 --> d2("4月份需求分析
-        开发、测试、发布")
-  d2 --> d3("杨波")   
+        开发、测试、发布
+         六费稽核需要建锋解决问题
+         进度不理想
+		---------截止04.25----------
+		
+		 -------------截止04.27---------------
+			sit保持测试
+     问题列表收集
+     dev -> prod 数据同步，代码部署；
+     -------------截止04.27--------------
+     
+
+ ")  
   d2 --> d4("张道书") 
   d2 --> d7("马国岭")  
 end
@@ -457,26 +466,88 @@ subgraph "[铁塔六费稽核]截止: 2023-04-13"
   f1 --> f2("1.审批页面附件预览问题；
              2. 3月份问题修复；
              以上问题开发、测试、并发布，
-             处理遗留问题")
+             处理遗留问题  截止时间待定
+							
+      --------截止04.28号------
+			增加 时间区间筛选；
+			定时发起流程；
+      更新无历史数据；
+      一键发起流程； 已测试，待发布；
+       工单pdf预览，图片放大缩小；
+       --------截止04.28号----------
+
+       根据当前角色缩小区域范围；
+       
+       优化点: 1.excel审批支持 通过、驳回。
+       
+       增加 纠纷台账 支持excel导入；
+")
   f2 --> f3("程双")    
   f2 --> f4("连建锋")  
   f2 --> f5("马国岭")  
 end
 
 
-subgraph "[铁塔代维资源核查]截止: 2023-04-13"
+subgraph "[铁塔代维资源核查]截止: 2023-04-13 "
   g1("负责人: 弓远")
   g1 --> g2("代维资源二阶段需求
               测试、并发布；
               视频播放和多状态筛选 待解决，
-              处理遗留问题")
+              处理遗留问题 截止时间待定
+              	
+              --------------
+              04-27 bug:
+							1.表头
+
+		列表展示复合表头，导出复合表头；
+    报表管理，支持导出和扫描上传； 技术方案待定，时间待定；
+    ")
   g2 --> g3("马国岭")    
   g2 --> g4("朱云飞")  
   g2 --> g5("尚雨鹏")  
 end
 
 
-a --> c1 & d1  & f1 & g1</pre>]]></content>
+a --> c1 & d1  & f1 & g1</pre><pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+a("项目整体情况")
+subgraph "[小学生学习报]"
+  c1("负责人: 陈曦")
+  c1 --> c6("标签功能已发布
+  						消息通知待测试发布")   
+  c6 --> c8("刘欢")  
+end
+
+
+subgraph "[铁塔六费稽核]截止: 2023-06-16"
+  f1("负责人: 弓远")
+  f1 --> f2("评分 时间待确定
+                费用需求调研确认 06-14进行
+                费用报表 实施 截止06-16号")    
+  f2 --> f4("朱云飞")  
+  f2 --> f5("马国岭")  
+end
+
+
+subgraph "[移动宝冶]截止: 2023-06-21"
+  e1("负责人: 杨波")
+  e1 --> e2("官网和后端工作流")    
+  e2 --> e4("张道书")  
+  e2 --> e5("杨波")  
+end
+
+
+subgraph "[研发需求]截止: "
+  b1("负责人: 吴要权")
+  b1 --> b2("1.铁塔工单、事前导入性能问题
+             2. 工单验证码刷新问题")    
+  b2 --> b4("连建锋")  
+  b2 --> b5("程双")  
+end
+
+
+
+a --> c1 & f1 & e1 & b1</pre>]]></content>
       <tags>
         <tag>wbs</tag>
         <tag>项目一览</tag>
@@ -837,25 +908,5 @@ ExcelUtil --> RecordHandler</pre>]]></content>
         <tag>数据库</tag>
         <tag>建表</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>关于我</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p><img src="/images/pics_cloud_z_f_1454180483.jpg" alt="第一场电影 2015/05/30 星期六 20:00"><br>第一场电影 2015/05/30 星期六 20:00</p></blockquote><h1 id="about"><a class="markdownIt-Anchor" href="#about"></a> About</h1><p>一位丈夫、父亲、程序员。</p><table><thead><tr><th>服务器</th><th>后端</th><th>前端</th><th>App</th></tr></thead><tbody><tr><td>Ubuntu</td><td>Ruby on Rails</td><td>React</td><td>Flutter</td></tr><tr><td>Centos</td><td>Java</td><td>Vue</td><td>React Native</td></tr><tr><td>k8s</td><td>Spring</td><td>Redux</td><td>Android Native</td></tr><tr><td>Docker</td><td>SpringBoot</td><td>Vuex</td><td></td></tr><tr><td>Gitlab</td><td>SpringCloud</td><td>Dva</td><td></td></tr><tr><td>Gogs</td><td>Python</td><td>AntDesign</td><td></td></tr><tr><td></td><td>低代码</td><td>AntDesignPro</td><td></td></tr><tr><td></td><td>无代码</td><td>低代码</td><td></td></tr><tr><td></td><td>BI</td><td>无代码</td><td></td></tr><tr><td></td><td>大数据</td><td>echarts</td><td></td></tr><tr><td></td><td>ETL</td><td>antv</td><td></td></tr></tbody></table><h1 id="微信"><a class="markdownIt-Anchor" href="#微信"></a> 微信</h1><div align="center"><img src="/images/1588880253457.jpg" height="400" alt="我的微信账号"></div>]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-  </entry>
-  <entry>
-    <title>viva la vida</title>
-    <url>/rm-rf/index.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>“而我,孑然一身,徒留我的梦想,在你脚下展开梦想之翼 轻轻的踩着步伐 ,因为你踩在我的梦想之翼上”<br>–《撕裂的末日》</p></blockquote><div align="center"><img src="/images/vivas/911645692907_.pic.jpg" height="200" alt="生命万岁"></div><div align="center"><img src="/images/vivas/921645692907_.pic.jpg" height="200" alt="生命万岁"></div>]]></content>
   </entry>
 </search>
