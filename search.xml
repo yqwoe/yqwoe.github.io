@@ -296,17 +296,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ER图方式创建数据库表</title>
-    <url>//*/13814498.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务描述"><a class="markdownIt-Anchor" href="#业务描述"></a> 业务描述</h2><ol><li>打开数据源，默认展示全部数据表的er图</li><li>点击单个数据表弹出修改数据表表单；</li><li>支持添加数据表</li><li>支持er连线操作；</li></ol><a id="more"></a><p><img src="/*/13814498/image-20230417143005282.png" alt="image-20230417143005282"></p><p><img src="/*/13814498/image-20230417142753561.png" alt="image-20230417142753561"></p>]]></content>
-      <tags>
-        <tag>er图</tag>
-        <tag>react</tag>
-        <tag>数据库</tag>
-        <tag>建表</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>4月份wbs</title>
     <url>//*/c2cb16de.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="项目一览"><a class="markdownIt-Anchor" href="#项目一览"></a> 项目一览</h2><a id="more"></a><pre class="mermaid">gantt
@@ -684,7 +673,7 @@ section 运维阶段
   <entry>
     <title>mysql &#39;No DataSource Set&#39;解决办法</title>
     <url>//*/202678719.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以吧useSSL改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>]]></content>
       <tags>
         <tag>mysql</tag>
         <tag>java</tag>
@@ -823,7 +812,7 @@ section 运维阶段
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2><ol><li>上传excel按需写入字段；</li><li>覆盖更新数据；</li></ol><a id="more"></a><h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2><pre class="mermaid">sequenceDiagram
 excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
 handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
-execute ->> done: 写入数据库</pre><h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2><ol><li>insert into table () select ‘’ from dual where not exsits ()</li><li>insert ignore into id={IDGenerrate.gernxxx}</li><li>Insert into on dupli update xx=values()</li></ol><p>Sql:</p><ol><li><p>select id from table where dupKeys = ‘’</p></li><li><p>insert ignore into values (id)</p></li><li><p>ignore : insert into table () select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p></li><li><p>Insert into table () select ‘x’,‘id’ from dual on dupli update xx=values()</p></li></ol><pre class="mermaid">classDiagram
+execute ->> insert: 写入数据库</pre><h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2><ol><li>insert into table () select ‘’ from dual where not exsits ()</li><li>insert ignore into id={IDGenerrate.gernxxx}</li><li>Insert into on dupli update xx=values()</li></ol><p>Sql:</p><ol><li><p>select id from table where dupKeys = ‘’</p></li><li><p>insert ignore into values (id)</p></li><li><p>ignore : insert into table () select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p></li><li><p>Insert into table () select ‘x’,‘id’ from dual on dupli update xx=values()</p></li></ol><pre class="mermaid">classDiagram
 class Field{
 		Intger index 索引
 		String name  字段名

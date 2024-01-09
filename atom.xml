@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2023-04-14T03:34:01.000Z</updated>
+  <updated>2023-04-12T01:44:54.000Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -17,40 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ER图方式创建数据库表</title>
-    <link href="https://rm-rf.ink/*/13814498.html"/>
-    <id>https://rm-rf.ink/*/13814498.html</id>
-    <published>2023-04-14T03:34:01.000Z</published>
-    <updated>2023-04-14T03:34:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务描述"><a class="markdownIt-Anchor" href="#业务描述"></a> 业务描述</h2><ol><li>打开数据源，默认展示全部数据表的er图</li><li>点击单个数据表弹出修改数据表表单；</li><li>支持添加数据表</li><li>支持er连线操作；</li></ol><a id="more"></a><p><img src="/*/13814498/image-20230417143005282.png" alt="image-20230417143005282"></p><p><img src="/*/13814498/image-20230417142753561.png" alt="image-20230417142753561"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;业务描述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#业务描述&quot;&gt;&lt;/a&gt; 业务描述&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;打开数据源，默认展示全部数据表的er图&lt;/li&gt;&lt;li&gt;点击单个数据表弹出修改数据表表单；&lt;/li&gt;&lt;li&gt;支持添加数据表&lt;/li&gt;&lt;li&gt;支持er连线操作；&lt;/li&gt;&lt;/ol&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="er图" scheme="https://rm-rf.ink/tags/er%E5%9B%BE/"/>
-    
-      <category term="react" scheme="https://rm-rf.ink/tags/react/"/>
-    
-      <category term="数据库" scheme="https://rm-rf.ink/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-      <category term="建表" scheme="https://rm-rf.ink/tags/%E5%BB%BA%E8%A1%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>通用excel导入设计</title>
     <link href="https://rm-rf.ink/*/7178be5f.html"/>
     <id>https://rm-rf.ink/*/7178be5f.html</id>
     <published>2023-04-12T01:44:54.000Z</published>
     <updated>2023-04-12T01:44:54.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2><ol><li>上传excel按需写入字段；</li><li>覆盖更新数据；</li></ol><a id="more"></a><h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2><pre class="mermaid">sequenceDiagramexcel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]execute ->> done: 写入数据库</pre><h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2><ol><li>insert into table () select ‘’ from dual where not exsits ()</li><li>insert ignore into id={IDGenerrate.gernxxx}</li><li>Insert into on dupli update xx=values()</li></ol><p>Sql:</p><ol><li><p>select id from table where dupKeys = ‘’</p></li><li><p>insert ignore into values (id)</p></li><li><p>ignore : insert into table () select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p></li><li><p>Insert into table () select ‘x’,‘id’ from dual on dupli update xx=values()</p></li></ol><pre class="mermaid">classDiagramclass Field{Intger index 索引String name  字段名String type  字段类型Object value  字段值String exp 校验表达式}class Record{String tableName 表名List fields 字段}class ModeEnum{INSERT("insert") 写入IGNORE("ignore") 忽略重复数据REPLACE("replace") 更新重复数据}class ExcelUtil{+File file excel+List:String fields 字段  +String tableName 数据表名  +Integer skip 跳过行  +ModeEnum mode 写入方式  +List:String dupKeys 用于校验重复的字段   +RecordHandler recordHandler 数据行处理-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出}class RecordHandler{-read(Record) 读取行}ExcelUtil --> ModeEnumExcelUtil --> FieldExcelUtil --> RecordExcelUtil --> RecordHandler</pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2><ol><li>上传excel按需写入字段；</li><li>覆盖更新数据；</li></ol><a id="more"></a><h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2><pre class="mermaid">sequenceDiagramexcel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]execute ->> insert: 写入数据库</pre><h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2><ol><li>insert into table () select ‘’ from dual where not exsits ()</li><li>insert ignore into id={IDGenerrate.gernxxx}</li><li>Insert into on dupli update xx=values()</li></ol><p>Sql:</p><ol><li><p>select id from table where dupKeys = ‘’</p></li><li><p>insert ignore into values (id)</p></li><li><p>ignore : insert into table () select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p></li><li><p>Insert into table () select ‘x’,‘id’ from dual on dupli update xx=values()</p></li></ol><pre class="mermaid">classDiagramclass Field{Intger index 索引String name  字段名String type  字段类型Object value  字段值String exp 校验表达式}class Record{String tableName 表名List fields 字段}class ModeEnum{INSERT("insert") 写入IGNORE("ignore") 忽略重复数据REPLACE("replace") 更新重复数据}class ExcelUtil{+File file excel+List:String fields 字段  +String tableName 数据表名  +Integer skip 跳过行  +ModeEnum mode 写入方式  +List:String dupKeys 用于校验重复的字段   +RecordHandler recordHandler 数据行处理-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出}class RecordHandler{-read(Record) 读取行}ExcelUtil --> ModeEnumExcelUtil --> FieldExcelUtil --> RecordExcelUtil --> RecordHandler</pre>]]></content>
     
     <summary type="html">
     
@@ -205,7 +178,7 @@
     <published>2022-10-10T06:38:01.000Z</published>
     <updated>2022-10-10T06:38:01.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以吧useSSL改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>]]></content>
     
     <summary type="html">
     
@@ -584,6 +557,36 @@
       <category term="计数法" scheme="https://rm-rf.ink/tags/%E8%AE%A1%E6%95%B0%E6%B3%95/"/>
     
       <category term="进制" scheme="https://rm-rf.ink/tags/%E8%BF%9B%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我们不像诗歌</title>
+    <link href="https://rm-rf.ink/*/340466787.html"/>
+    <id>https://rm-rf.ink/*/340466787.html</id>
+    <published>2020-03-27T07:20:12.000Z</published>
+    <updated>2020-03-27T07:20:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>我们不像诗歌</p><p> --才华横溢,</p><p>我们拒绝押韵。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://rm-rf.ink/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="少年" scheme="https://rm-rf.ink/tags/%E5%B0%91%E5%B9%B4/"/>
+    
+      <category term="年轻" scheme="https://rm-rf.ink/tags/%E5%B9%B4%E8%BD%BB/"/>
+    
+      <category term="诗歌" scheme="https://rm-rf.ink/tags/%E8%AF%97%E6%AD%8C/"/>
     
   </entry>
   
