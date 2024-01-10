@@ -521,30 +521,6 @@
       </tags>
   </entry>
   <entry>
-    <title>阿里云mysql外网访问</title>
-    <url>//*/3031836898.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
-<span id="more"></span>
-<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
-<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
-<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
-<p>3.mysql 默认只能自本机访问</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
-<p>4.检查是不是在监听状态</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
-<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生活计划</title>
     <url>//*/2784064196.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>
@@ -617,6 +593,30 @@
         <tag>篮球</tag>
         <tag>羽毛球</tag>
         <tag>带孩子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云mysql外网访问</title>
+    <url>//*/3031836898.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+<span id="more"></span>
+<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
+<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
+<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
+<p>3.mysql 默认只能自本机访问</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
+<p>4.检查是不是在监听状态</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
+<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -1007,6 +1007,22 @@
       </tags>
   </entry>
   <entry>
+    <title>29岁,再见！</title>
+    <url>//*/1873749776.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>
+冬冬：因为你明天过生日了吗？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -1084,22 +1100,6 @@
         <tag>docker</tag>
         <tag>容器技术</tag>
         <tag>traefik2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>29岁,再见！</title>
-    <url>//*/1873749776.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>
-冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
       </tags>
   </entry>
   <entry>
@@ -2219,21 +2219,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>基于k8s\traefik\springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>安全风险评估</title>
     <url>//*/2576489939.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
@@ -2299,21 +2284,18 @@ section 运维阶段
       </categories>
   </entry>
   <entry>
-    <title>我们不像诗歌</title>
-    <url>//*/340466787.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p> --才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
-]]></content>
+    <title>基于k8s\traefik\springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
-        <category>生活</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2361,6 +2343,24 @@ section 运维阶段
         <tag>墨刀</tag>
         <tag>github</tag>
         <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我们不像诗歌</title>
+    <url>//*/340466787.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p> --才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
       </tags>
   </entry>
   <entry>
@@ -2414,12 +2414,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-MDoHDzeB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-UIeQctLw" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-MDoHDzeB"),
+            element: document.getElementById("aplayer-UIeQctLw"),
             narrow: false,
             autoplay: true,
             showlrc: false,
