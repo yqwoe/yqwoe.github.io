@@ -685,34 +685,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/tags/spring-boot/</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/tags/cas-client/</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/tags/cas-server/</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/tags/sso/</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/tags/ruby/</loc>
     <lastmod>2024-01-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -756,6 +728,34 @@
   
   <url>
     <loc>https://rm-rf.ink/tags/api/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/spring-boot/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/cas-client/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/cas-server/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/sso/</loc>
     <lastmod>2024-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
