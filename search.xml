@@ -44,6 +44,9 @@
 <p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
 <p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
 ]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
       <tags>
         <tag>国立软件</tag>
         <tag>低代码</tag>
@@ -154,6 +157,9 @@
 <p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
 <p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
 ]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
       <tags>
         <tag>国立软件</tag>
         <tag>低代码</tag>
@@ -340,7 +346,7 @@
 以上是我的分享，谢谢！！</p>
 ]]></content>
       <categories>
-        <category>Jekyll</category>
+        <category>学习</category>
       </categories>
       <tags>
         <tag>技巧</tag>
@@ -436,7 +442,7 @@
 <p>网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。<s>不过我不建议研究，一研究估计小半年就过去了，也没有答案</s></p>
 ]]></content>
       <categories>
-        <category>css</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>mac</tag>
@@ -468,7 +474,7 @@
 <p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
 ]]></content>
       <categories>
-        <category>服务器</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>git</tag>
@@ -493,7 +499,7 @@
 <p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
 ]]></content>
       <categories>
-        <category>服务器</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>aliyun</tag>
@@ -527,7 +533,7 @@
 <p><a href="https://ruby-china.org/topics/31983">使用 acme.sh 给 Nginx 安装 Let’ s Encrypt 提供的免费 SSL 证书</a></p>
 ]]></content>
       <categories>
-        <category>nginx</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>aliyun</tag>
@@ -614,23 +620,6 @@
       </tags>
   </entry>
   <entry>
-    <title>英语学习</title>
-    <url>//*/1061411954.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
-<span id="more"></span>
-<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
-<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
-<p>待补充…</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>英语单词</tag>
-        <tag>入门</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>程序员数学1</title>
     <url>//*/752254673.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="学习列表"><a class="markdownIt-Anchor" href="#学习列表"></a> 学习列表:</h2>
@@ -660,11 +649,28 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>生活</category>
       </categories>
       <tags>
         <tag>数学</tag>
         <tag>程序员</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英语学习</title>
+    <url>//*/1061411954.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
+<span id="more"></span>
+<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
+<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
+<p>待补充…</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>英语单词</tag>
+        <tag>入门</tag>
       </tags>
   </entry>
   <entry>
@@ -708,7 +714,7 @@
 <p>更多细节配置可以查看 <a href="https://github.com/vifreefly/kimuraframework#installation">kimurai</a></p>
 ]]></content>
       <categories>
-        <category>爬虫</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>ruby</tag>
@@ -741,7 +747,7 @@
 <p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
 ]]></content>
       <categories>
-        <category>mybatis</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>mysql</tag>
@@ -775,7 +781,7 @@
 <p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
 ]]></content>
       <categories>
-        <category>Cas</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>spring boot</tag>
@@ -813,10 +819,10 @@
 <p>4、网络依赖型低。NGINX 对网络的依赖程度非常低，理论上讲，只要能够 ping 通就可以实施负载均衡，而且可以有效区分内网和外网流量</p>
 <p>5、支持服务器检测。NGINX 能够根据应用服务器处理页面返回的状态码、超时信息等检测服务器是否出现故障，并及时返回错误的请求重新提交到其它节点上</p>
 <h1 id="nginx-配置"><a class="markdownIt-Anchor" href="#nginx-配置"></a> nginx 配置</h1>
-<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">upstream</span> www.blog.com &#123;</span><br><span class="line">    <span class="comment">#upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。</span></span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.121:80</span> weight=<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.122:80</span> weight=<span class="number">2</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.123:80</span> weight=<span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">upstream</span> www.blog.com &#123;</span><br><span class="line">    <span class="comment">#upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。</span></span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.121:80</span> weight=<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.122:80</span> weight=<span class="number">2</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.123:80</span> weight=<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>nginx</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>nginx</tag>
@@ -856,7 +862,7 @@
 <p><a href="https://www.cnblogs.com/xzwblog/p/7255364.html">https://www.cnblogs.com/xzwblog/p/7255364.html</a></p>
 ]]></content>
       <categories>
-        <category>服务器</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>nginx</tag>
@@ -871,14 +877,14 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&amp;fm=15&amp;gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
 <span id="more"></span>
 <blockquote>
-<p>​ 《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>​ 旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>​ 小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>​ 小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
+<p>《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
 </blockquote>
 ]]></content>
       <categories>
-        <category>读书</category>
+        <category>生活</category>
       </categories>
       <tags>
         <tag>小王子</tag>
@@ -1071,7 +1077,7 @@
 <p><strong>配置完成后，打开浏览器输入地址：http://<code>yqwoe.k8s.com</code> 打开 Traefik Dashboard。</strong></p>
 ]]></content>
       <categories>
-        <category>k8s</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>k8s</tag>
@@ -1347,6 +1353,9 @@ end
 
 a --> c1 & f1 & e1 & b1</pre>
 ]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
       <tags>
         <tag>wbs</tag>
         <tag>项目一览</tag>
@@ -1508,6 +1517,9 @@ section 运维阶段
 <li>持续学习：了解新的技术和工具，以保持对软件项目管理最新的见解和技能。</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
       <tags>
         <tag>git</tag>
         <tag>gitlab</tag>
@@ -1538,25 +1550,12 @@ section 运维阶段
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>java</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>java</tag>
         <tag>docker</tag>
         <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
-    <url>//*/202678719.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
-]]></content>
-      <tags>
-        <tag>mysql</tag>
-        <tag>java</tag>
-        <tag>error</tag>
-        <tag>jdbc</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -1607,6 +1606,9 @@ section 运维阶段
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
       <tags>
         <tag>mysql</tag>
         <tag>mybatis</tag>
@@ -1614,6 +1616,22 @@ section 运维阶段
         <tag>聚合函数</tag>
         <tag>InnoDB</tag>
         <tag>MyISAM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
+    <url>//*/202678719.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>error</tag>
+        <tag>jdbc</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -1735,11 +1753,55 @@ section 运维阶段
 </ul>
 ]]></content>
       <categories>
-        <category>数学</category>
+        <category>学习</category>
       </categories>
       <tags>
         <tag>计数法</tag>
         <tag>进制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《程序员数学-1》-笔记3</title>
+    <url>//*/375539532.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
+<span id="more"></span>
+<ul>
+<li>
+<p>什么是余数？</p>
+<ul>
+<li><strong>余数</strong> 就是除法运算时剩下的数</li>
+</ul>
+</li>
+</ul>
+<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
+<ul>
+<li>
+<p>今天是星期日,那么 100 天以后是星期几？</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
+<ul>
+<li>
+<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
+<ul>
+<li>
+<p>1234567 的 987654321 次方的个位数是多少？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>—未完—</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>余数</tag>
+        <tag>分组</tag>
       </tags>
   </entry>
   <entry>
@@ -2148,7 +2210,7 @@ section 运维阶段
 </ul>
 ]]></content>
       <categories>
-        <category>数学</category>
+        <category>学习</category>
       </categories>
       <tags>
         <tag>逻辑</tag>
@@ -2157,55 +2219,11 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>《程序员数学-1》-笔记3</title>
-    <url>//*/375539532.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
-<span id="more"></span>
-<ul>
-<li>
-<p>什么是余数？</p>
-<ul>
-<li><strong>余数</strong> 就是除法运算时剩下的数</li>
-</ul>
-</li>
-</ul>
-<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
-<ul>
-<li>
-<p>今天是星期日,那么 100 天以后是星期几？</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
-<ul>
-<li>
-<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
-<ul>
-<li>
-<p>1234567 的 987654321 次方的个位数是多少？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>—未完—</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-      <tags>
-        <tag>余数</tag>
-        <tag>分组</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于k8s\traefik\springboot的微服务实践</title>
     <url>//*/3382022550.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
-        <category>k8s</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>k8s</tag>
@@ -2252,7 +2270,7 @@ section 运维阶段
 </ul>
 ]]></content>
       <categories>
-        <category>机器学习</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>安全</tag>
@@ -2260,6 +2278,25 @@ section 运维阶段
         <tag>策略</tag>
         <tag>预测</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>工作日报汇总</title>
+    <url>//*/1ea1f1d4.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码查看内容</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
   </entry>
   <entry>
     <title>我们不像诗歌</title>
@@ -2315,7 +2352,7 @@ section 运维阶段
 </ul>
 ]]></content>
       <categories>
-        <category>创业</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>创业</tag>
@@ -2363,6 +2400,9 @@ section 运维阶段
 <li>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
       <tags>
         <tag>芝麻叶</tag>
         <tag>面条</tag>
@@ -2374,12 +2414,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-RxygCFVp" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-NIQuJXiP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-RxygCFVp"),
+            element: document.getElementById("aplayer-NIQuJXiP"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2437,7 +2477,7 @@ section 运维阶段
 <h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
 ]]></content>
       <categories>
-        <category>边缘计算</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>云计算</tag>
@@ -2521,6 +2561,9 @@ ExcelUtil --> Field
 ExcelUtil --> Record
 ExcelUtil --> RecordHandler</pre>
 ]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
       <tags>
         <tag>mysql</tag>
         <tag>jdbc</tag>
@@ -2849,7 +2892,7 @@ ExcelUtil --> RecordHandler</pre>
 <h3 id><a class="markdownIt-Anchor" href="#"></a> </h3>
 ]]></content>
       <categories>
-        <category>机器学习</category>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>机器学习</tag>
@@ -2865,6 +2908,9 @@ ExcelUtil --> RecordHandler</pre>
 父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
       <tags>
         <tag>鲁迅先生</tag>
         <tag>父母</tag>
