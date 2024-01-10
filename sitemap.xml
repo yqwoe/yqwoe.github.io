@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/1d180e51.html</loc>
+    
+    <lastmod>2024-01-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/9f600c63.html</loc>
     
     <lastmod>2024-01-09</lastmod>
@@ -1181,6 +1188,34 @@
   
   <url>
     <loc>https://rm-rf.ink/tags/MyISAM/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/%E8%8A%9D%E9%BA%BB%E5%8F%B6/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/%E9%9D%A2%E6%9D%A1/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/%E7%B3%8A%E6%B6%82/</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/%E6%B2%B3%E5%8D%97/</loc>
     <lastmod>2024-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
