@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2024-01-11T07:03:51.437Z</updated>
+  <updated>2024-01-11T09:23:50.220Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前端定时器</title>
+    <link href="https://rm-rf.ink/*/3423146f.html"/>
+    <id>https://rm-rf.ink/*/3423146f.html</id>
+    <published>2024-01-11T07:09:31.000Z</published>
+    <updated>2024-01-11T09:23:50.220Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="0-背景"><a class="markdownIt-Anchor" href="#0-背景"></a> 0. 背景</h1><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p><span id="more"></span><p>我在<code>博客</code>- <a href="/tags">标签</a>页面中使用到了<code>定时器</code>来做<code>::hover</code>动画效果。</p><div>    <video width="100%" height="500px" src="/images/video/tags-view.mp4" autoplay muted loop></video>    <div style="text-align: center;user-select: none;">视频：博客-标签</div>  </div><h1 id="1定时器"><a class="markdownIt-Anchor" href="#1定时器"></a> 1.定时器</h1><h2 id="11-settimeout"><a class="markdownIt-Anchor" href="#11-settimeout"></a> 1.1. setTimeout</h2><h2 id="12-setinterval"><a class="markdownIt-Anchor" href="#12-setinterval"></a> 1.2. setInterval</h2><h2 id="13-requestanimationframe"><a class="markdownIt-Anchor" href="#13-requestanimationframe"></a> 1.3. requestAnimationFrame</h2><h1 id="2-标签动画"><a class="markdownIt-Anchor" href="#2-标签动画"></a> 2. 标签动画</h1>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;0-背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#0-背景&quot;&gt;&lt;/a&gt; 0. 背景&lt;/h1&gt;
+&lt;p&gt;  前端开发中，会经常接到&lt;code&gt;定时器&lt;/code&gt;的需求，&lt;code&gt;倒计时&lt;/code&gt;、&lt;code&gt;计时器&lt;/code&gt;、&lt;code&gt;动画效果&lt;/code&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="vue" scheme="https://rm-rf.ink/tags/vue/"/>
+    
+    <category term="react" scheme="https://rm-rf.ink/tags/react/"/>
+    
+    <category term="javascript" scheme="https://rm-rf.ink/tags/javascript/"/>
+    
+    <category term="typescript" scheme="https://rm-rf.ink/tags/typescript/"/>
+    
+    <category term="setTimeout" scheme="https://rm-rf.ink/tags/setTimeout/"/>
+    
+    <category term="setInterval" scheme="https://rm-rf.ink/tags/setInterval/"/>
+    
+    <category term="requestAnimationFrame" scheme="https://rm-rf.ink/tags/requestAnimationFrame/"/>
+    
+  </entry>
+  
+  <entry>
     <title>炝锅面</title>
     <link href="https://rm-rf.ink/*/b2113df8.html"/>
     <id>https://rm-rf.ink/*/b2113df8.html</id>
     <published>2024-01-11T06:44:21.000Z</published>
-    <updated>2024-01-11T07:03:51.437Z</updated>
+    <updated>2024-01-11T09:04:03.259Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p><span id="more"></span><h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1><ul><li>干面条</li><li>番茄</li><li>梅花肉</li><li>大葱</li><li>白菜</li><li>姜</li><li>干辣椒</li><li>花椒</li></ul><h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1><ul><li>花生油 15ml</li><li>盐 5g</li><li>味精 5g</li><li>鸡精 5g</li><li>生抽 5g</li><li>十三香 2g</li><li>香油 5ml</li></ul><h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1><ul><li>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</li><li>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</li><li>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</li><li>放入番茄翻炒出汁后放入白菜翻炒；</li><li>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</li><li>水开放入干面条；（自己估算食用的量）</li><li>煮至2分钟后，加入鸡精、味精；</li><li>出锅前放入少许香油，味道更佳；</li></ul>]]></content>
     
@@ -549,32 +583,6 @@
     <category term="github" scheme="https://rm-rf.ink/tags/github/"/>
     
     <category term="小程序" scheme="https://rm-rf.ink/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>29岁,再见！</title>
-    <link href="https://rm-rf.ink/*/1873749776.html"/>
-    <id>https://rm-rf.ink/*/1873749776.html</id>
-    <published>2020-04-08T02:15:39.000Z</published>
-    <updated>2024-01-10T12:49:19.581Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>我：儿子，你再也没有29岁的爸爸了。<br>冬冬：因为你明天过生日了吗？</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="生活" scheme="https://rm-rf.ink/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="29岁" scheme="https://rm-rf.ink/tags/29%E5%B2%81/"/>
-    
-    <category term="30岁" scheme="https://rm-rf.ink/tags/30%E5%B2%81/"/>
     
   </entry>
   
