@@ -754,6 +754,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Cas Server 本地部署</title>
+    <url>//*/1854714444.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
+<blockquote>
+<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+</blockquote>
+<span id="more"></span>
+<blockquote>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
+<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nginx 负载均衡</title>
     <url>//*/1506548690.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
@@ -796,38 +831,28 @@
       </tags>
   </entry>
   <entry>
-    <title>Cas Server 本地部署</title>
-    <url>//*/1854714444.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
-<blockquote>
-<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-</blockquote>
+    <title>《小王子》阅读</title>
+    <url>//*/2855774435.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&amp;fm=15&amp;gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
 <span id="more"></span>
 <blockquote>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
+<p>《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
 </blockquote>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
-<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
 ]]></content>
       <categories>
-        <category>工作</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
+        <tag>小王子</tag>
+        <tag>儿子</tag>
+        <tag>书</tag>
+        <tag>星球旅行</tag>
+        <tag>点灯的人</tag>
+        <tag>狐狸</tag>
+        <tag>独一无二</tag>
       </tags>
   </entry>
   <entry>
@@ -867,31 +892,6 @@
         <tag>集群</tag>
         <tag>负载均衡</tag>
         <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《小王子》阅读</title>
-    <url>//*/2855774435.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&amp;fm=15&amp;gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
-<span id="more"></span>
-<blockquote>
-<p>《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>小王子</tag>
-        <tag>儿子</tag>
-        <tag>书</tag>
-        <tag>星球旅行</tag>
-        <tag>点灯的人</tag>
-        <tag>狐狸</tag>
-        <tag>独一无二</tag>
       </tags>
   </entry>
   <entry>
@@ -1759,6 +1759,50 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>《程序员数学-1》-笔记3</title>
+    <url>//*/375539532.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
+<span id="more"></span>
+<ul>
+<li>
+<p>什么是余数？</p>
+<ul>
+<li><strong>余数</strong> 就是除法运算时剩下的数</li>
+</ul>
+</li>
+</ul>
+<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
+<ul>
+<li>
+<p>今天是星期日,那么 100 天以后是星期几？</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
+<ul>
+<li>
+<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
+<ul>
+<li>
+<p>1234567 的 987654321 次方的个位数是多少？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>—未完—</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>余数</tag>
+        <tag>分组</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《程序员数学-1》-笔记2</title>
     <url>//*/1634039770.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第二章-逻辑"><a class="markdownIt-Anchor" href="#第二章-逻辑"></a> 第二章 逻辑</h1>
@@ -2173,50 +2217,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>《程序员数学-1》-笔记3</title>
-    <url>//*/375539532.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
-<span id="more"></span>
-<ul>
-<li>
-<p>什么是余数？</p>
-<ul>
-<li><strong>余数</strong> 就是除法运算时剩下的数</li>
-</ul>
-</li>
-</ul>
-<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
-<ul>
-<li>
-<p>今天是星期日,那么 100 天以后是星期几？</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
-<ul>
-<li>
-<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
-<ul>
-<li>
-<p>1234567 的 987654321 次方的个位数是多少？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>—未完—</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>余数</tag>
-        <tag>分组</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>前端定时器</title>
     <url>//*/3423146f.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="0-背景"><a class="markdownIt-Anchor" href="#0-背景"></a> 0. 背景</h1>
@@ -2332,6 +2332,24 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>我们不像诗歌</title>
+    <url>//*/340466787.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p> --才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打造自己的产品 1</title>
     <url>//*/1000976984.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -2376,24 +2394,6 @@ section 运维阶段
         <tag>墨刀</tag>
         <tag>github</tag>
         <tag>小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我们不像诗歌</title>
-    <url>//*/340466787.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p> --才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
       </tags>
   </entry>
   <entry>
@@ -2493,12 +2493,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-wASmTSTP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-jAGODoKF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-wASmTSTP"),
+            element: document.getElementById("aplayer-jAGODoKF"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2562,6 +2562,113 @@ section 运维阶段
         <tag>云计算</tag>
         <tag>雾计算</tag>
         <tag>边缘计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通用excel导入设计</title>
+    <url>//*/7178be5f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2>
+<ol>
+<li>上传excel按需写入字段；</li>
+<li>覆盖更新数据；</li>
+</ol>
+<span id="more"></span>
+<h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2>
+<pre class="mermaid">sequenceDiagram
+excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
+handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
+execute ->> insert: 写入数据库</pre>
+<h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2>
+<ol>
+<li>insert into  table ()  select ‘’ from dual where not exsits ()</li>
+<li>insert ignore into id={IDGenerrate.gernxxx}</li>
+<li>Insert into on dupli   update  xx=values()</li>
+</ol>
+<p>Sql:</p>
+<ol>
+<li>
+<p>select id from table where dupKeys = ‘’</p>
+</li>
+<li>
+<p>insert ignore into  values (id)</p>
+</li>
+<li>
+<p>ignore :  insert into  table ()  select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p>
+</li>
+<li>
+<p>Insert into table ()  select ‘x’,‘id’ from dual  on dupli   update  xx=values()</p>
+</li>
+</ol>
+<pre class="mermaid">classDiagram
+class Field{
+		Intger index 索引
+		String name  字段名
+		String type  字段类型
+		Object value  字段值
+		String exp 校验表达式
+}
+
+class Record{
+		String tableName 表名
+		List fields 字段
+}
+
+class ModeEnum{
+	INSERT("insert") 写入
+	IGNORE("ignore") 忽略重复数据
+	REPLACE("replace") 更新重复数据
+}
+
+class ExcelUtil{
+	+File file excel
+	+List:String fields 字段
+  +String tableName 数据表名
+  +Integer skip 跳过行
+  +ModeEnum mode 写入方式
+  +List:String dupKeys 用于校验重复的字段
+  +RecordHandler recordHandler 数据行处理
+	-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入
+	-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出
+}
+
+class RecordHandler{
+	-read(Record) 读取行
+}
+
+ExcelUtil --> ModeEnum
+ExcelUtil --> Field
+ExcelUtil --> Record
+ExcelUtil --> RecordHandler</pre>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>jdbc</tag>
+        <tag>easyexcel</tag>
+        <tag>excel</tag>
+        <tag>import</tag>
+        <tag>export</tag>
+        <tag>replace</tag>
+        <tag>ignore</tag>
+        <tag>insert</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
       </tags>
   </entry>
   <entry>
@@ -2886,113 +2993,6 @@ section 运维阶段
         <tag>机器学习</tag>
         <tag>ocr</tag>
         <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通用excel导入设计</title>
-    <url>//*/7178be5f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2>
-<ol>
-<li>上传excel按需写入字段；</li>
-<li>覆盖更新数据；</li>
-</ol>
-<span id="more"></span>
-<h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2>
-<pre class="mermaid">sequenceDiagram
-excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
-handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
-execute ->> insert: 写入数据库</pre>
-<h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2>
-<ol>
-<li>insert into  table ()  select ‘’ from dual where not exsits ()</li>
-<li>insert ignore into id={IDGenerrate.gernxxx}</li>
-<li>Insert into on dupli   update  xx=values()</li>
-</ol>
-<p>Sql:</p>
-<ol>
-<li>
-<p>select id from table where dupKeys = ‘’</p>
-</li>
-<li>
-<p>insert ignore into  values (id)</p>
-</li>
-<li>
-<p>ignore :  insert into  table ()  select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p>
-</li>
-<li>
-<p>Insert into table ()  select ‘x’,‘id’ from dual  on dupli   update  xx=values()</p>
-</li>
-</ol>
-<pre class="mermaid">classDiagram
-class Field{
-		Intger index 索引
-		String name  字段名
-		String type  字段类型
-		Object value  字段值
-		String exp 校验表达式
-}
-
-class Record{
-		String tableName 表名
-		List fields 字段
-}
-
-class ModeEnum{
-	INSERT("insert") 写入
-	IGNORE("ignore") 忽略重复数据
-	REPLACE("replace") 更新重复数据
-}
-
-class ExcelUtil{
-	+File file excel
-	+List:String fields 字段
-  +String tableName 数据表名
-  +Integer skip 跳过行
-  +ModeEnum mode 写入方式
-  +List:String dupKeys 用于校验重复的字段
-  +RecordHandler recordHandler 数据行处理
-	-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入
-	-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出
-}
-
-class RecordHandler{
-	-read(Record) 读取行
-}
-
-ExcelUtil --> ModeEnum
-ExcelUtil --> Field
-ExcelUtil --> Record
-ExcelUtil --> RecordHandler</pre>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>jdbc</tag>
-        <tag>easyexcel</tag>
-        <tag>excel</tag>
-        <tag>import</tag>
-        <tag>export</tag>
-        <tag>replace</tag>
-        <tag>ignore</tag>
-        <tag>insert</tag>
       </tags>
   </entry>
 </search>
