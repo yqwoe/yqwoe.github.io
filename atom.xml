@@ -192,7 +192,7 @@
     <link href="https://rm-rf.ink/*/2967963195.html"/>
     <id>https://rm-rf.ink/*/2967963195.html</id>
     <published>2022-12-22T11:06:16.000Z</published>
-    <updated>2024-01-10T12:55:03.460Z</updated>
+    <updated>2024-01-11T01:25:33.097Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p><span id="more"></span><h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2><table><thead><tr><th>服务端</th><th>前端</th></tr></thead><tbody><tr><td>Java</td><td>react</td></tr><tr><td>springboot</td><td>ant-design</td></tr><tr><td>shenyu</td><td>formily</td></tr><tr><td>redis</td><td>Form-render</td></tr><tr><td>mysql</td><td>Designable</td></tr><tr><td>magic-api</td><td></td></tr><tr><td>dataway</td><td></td></tr><tr><td>es(全文检索)</td><td></td></tr><tr><td>flowable</td><td></td></tr><tr><td>Paddle</td><td></td></tr></tbody></table><h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2><table><thead><tr><th>名称</th><th>描述</th></tr></thead><tbody><tr><td>系统权限</td><td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td></tr><tr><td>组织机构</td><td>行政区域、机构、部门、职位、人员…</td></tr><tr><td>流程引擎</td><td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td></tr><tr><td>开发者工具</td><td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td></tr><tr><td>页面设计器</td><td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td></tr></tbody></table><h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2><h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5><p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p><p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p><h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4><p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p><p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p><h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4><p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p><h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4><p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p><p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p><p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>]]></content>
     
@@ -214,8 +214,6 @@
     
     <category term="组织管理" scheme="https://rm-rf.ink/tags/%E7%BB%84%E7%BB%87%E7%AE%A1%E7%90%86/"/>
     
-    <category term="代码生成" scheme="https://rm-rf.ink/tags/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/"/>
-    
     <category term="flowable" scheme="https://rm-rf.ink/tags/flowable/"/>
     
     <category term="bpmn" scheme="https://rm-rf.ink/tags/bpmn/"/>
@@ -229,7 +227,7 @@
     <link href="https://rm-rf.ink/*/725797460.html"/>
     <id>https://rm-rf.ink/*/725797460.html</id>
     <published>2022-12-22T04:14:33.000Z</published>
-    <updated>2024-01-10T12:56:15.775Z</updated>
+    <updated>2024-01-11T01:25:23.434Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2><blockquote><p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p><p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p></blockquote><span id="more"></span><h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2><ol><li>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</li><li>需要能提供给IT技术人员使用，不能只给平民开发者使用；</li><li>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</li><li>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</li><li>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</li><li>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</li><li>第三方集成：支持引入第三方API或事件驱动机制；</li><li>自动运维：提供自动化的应用升级和版本管理机制；</li><li>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</li><li>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</li></ol><h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2><p>​低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p><p>​从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p><h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3><p>​这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p><p>####整体而言，IT技术人员具备以下特征：</p><p>​具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>​考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>​学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p><h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2><p>​在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p><h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3><p>​具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>​考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>​学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p><h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2><p>​与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>​业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p><h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2><p>​低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p><p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>]]></content>
     
@@ -254,8 +252,6 @@
     <category term="流程引擎" scheme="https://rm-rf.ink/tags/%E6%B5%81%E7%A8%8B%E5%BC%95%E6%93%8E/"/>
     
     <category term="组织管理" scheme="https://rm-rf.ink/tags/%E7%BB%84%E7%BB%87%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="代码生成" scheme="https://rm-rf.ink/tags/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/"/>
     
   </entry>
   

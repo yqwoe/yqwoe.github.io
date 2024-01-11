@@ -53,7 +53,6 @@
         <tag>权限管理</tag>
         <tag>流程引擎</tag>
         <tag>组织管理</tag>
-        <tag>代码生成</tag>
       </tags>
   </entry>
   <entry>
@@ -166,7 +165,6 @@
         <tag>权限管理</tag>
         <tag>流程引擎</tag>
         <tag>组织管理</tag>
-        <tag>代码生成</tag>
         <tag>flowable</tag>
         <tag>bpmn</tag>
         <tag>lowcode</tag>
@@ -395,7 +393,7 @@
   <entry>
     <title>一次ios网页样式问题排查心路历程</title>
     <url>//*/149409992.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="我的开发环境macbook-pro-iphone手机端页面使用-vue-scss-本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示"><a class="markdownIt-Anchor" href="#我的开发环境macbook-pro-iphone手机端页面使用-vue-scss-本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示"></a> 我的开发环境：Macbook pro 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="我的开发环境macos-iphone手机端页面使用-vue-scss-本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示"><a class="markdownIt-Anchor" href="#我的开发环境macos-iphone手机端页面使用-vue-scss-本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示"></a> 我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4>
 <span id="more"></span>
 <p>大概是这样：</p>
 <p><img src="/images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
@@ -447,8 +445,8 @@
       <tags>
         <tag>mac</tag>
         <tag>ios</tag>
-        <tag>macbook pro</tag>
         <tag>vue</tag>
+        <tag>mbp</tag>
       </tags>
   </entry>
   <entry>
