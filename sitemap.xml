@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/9ddcf808.html</loc>
+    
+    <lastmod>2024-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/about/index.html</loc>
     
     <lastmod>2024-01-15</lastmod>
@@ -1376,6 +1385,20 @@
   
   <url>
     <loc>https://rm-rf.ink/tags/%E7%88%B6%E6%AF%8D/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/%E8%99%BE%E5%B0%BE/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/tags/%E9%BA%BB%E8%BE%A3/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
