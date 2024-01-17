@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>0. 低代码</title>
+    <url>//*/725797460.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
+<blockquote>
+<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
+<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
+<ol>
+<li>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</li>
+<li>需要能提供给IT技术人员使用，不能只给平民开发者使用；</li>
+<li>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</li>
+<li>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</li>
+<li>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</li>
+<li>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</li>
+<li>第三方集成：支持引入第三方API或事件驱动机制；</li>
+<li>自动运维：提供自动化的应用升级和版本管理机制；</li>
+<li>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</li>
+<li>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</li>
+</ol>
+<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
+<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
+<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
+<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
+<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
+<p>####整体而言，IT技术人员具备以下特征：</p>
+<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
+​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
+​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
+<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
+<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
+<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
+<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
+​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
+​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
+<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
+<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
+​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
+<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
+<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
+<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1. 低代码</title>
     <url>//*/2967963195.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
@@ -113,93 +168,6 @@
         <tag>flowable</tag>
         <tag>bpmn</tag>
         <tag>lowcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>0. 低代码</title>
-    <url>//*/725797460.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
-<blockquote>
-<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
-<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
-<ol>
-<li>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</li>
-<li>需要能提供给IT技术人员使用，不能只给平民开发者使用；</li>
-<li>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</li>
-<li>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</li>
-<li>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</li>
-<li>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</li>
-<li>第三方集成：支持引入第三方API或事件驱动机制；</li>
-<li>自动运维：提供自动化的应用升级和版本管理机制；</li>
-<li>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</li>
-<li>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</li>
-</ol>
-<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
-<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
-<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
-<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
-<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
-<p>####整体而言，IT技术人员具备以下特征：</p>
-<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
-​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
-​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
-<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
-<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
-<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
-<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
-​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
-​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
-<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
-<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
-​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
-<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
-<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
-<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给博客增加评论功能</title>
-    <url>//*/762727420.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
-<span id="more"></span>
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
-<ul>
-<li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></li>
-<li><a href="https://github.com/imsun/gitment">Gitment Readme</a></li>
-</ul>
-<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
-<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
-<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
-<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
-以上是我的分享，谢谢！！</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
-        <tag>git</tag>
-        <tag>Jekyll</tag>
       </tags>
   </entry>
   <entry>
@@ -354,22 +322,47 @@
       </tags>
   </entry>
   <entry>
+    <title>给博客增加评论功能</title>
+    <url>//*/762727420.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
+<span id="more"></span>
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+<ul>
+<li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></li>
+<li><a href="https://github.com/imsun/gitment">Gitment Readme</a></li>
+</ul>
+<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
+<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
+<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
+<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
+以上是我的分享，谢谢！！</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>//*/465957431.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<h5 id="今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情"><a class="markdownIt-Anchor" href="#今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情"></a> <em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5>
-</blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h5 id="今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情_"><a class="markdownIt-Anchor" href="#今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情_"></a> 今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！_</h5>
 <span id="more"></span>
-<blockquote>
 <p>刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p>
-</blockquote>
 <p><img src="/images/WechatIMG80.jpeg" alt="WechatIMG80"></p>
-<blockquote>
 <p>我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>
 每次当我有&quot;我不是幸运的大多数&quot;这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p>
-</blockquote>
 <p><img src="/images/WechatIMG81.jpeg" alt="WechatIMG81"></p>
-<blockquote>
 <p>我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过&quot;<s>是冬冬毁掉了我的生活</s>&quot;这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>
 每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。<br>
 说话要小声，走路要小声，就连呼吸都要思考着呼吸，“这样呼吸对吗？我是不是不该这样呼吸？”</p>
@@ -379,7 +372,6 @@
 <p>不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p>
 <p>如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<s>你们是对的！！！！</s> 你们还只是孩子。</p>
 <p>写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p>
-</blockquote>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -388,65 +380,6 @@
         <tag>六一</tag>
         <tag>巨婴</tag>
         <tag>孩子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一次ios网页样式问题排查心路历程</title>
-    <url>//*/149409992.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="我的开发环境macos-iphone手机端页面使用-vue-scss-本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示"><a class="markdownIt-Anchor" href="#我的开发环境macos-iphone手机端页面使用-vue-scss-本次出现的问题是一个-css-样式在-iphone-手机端无法正常显示"></a> 我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</h4>
-<span id="more"></span>
-<p>大概是这样：</p>
-<p><img src="/images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
-<p>选中的区域无法正常显示。</p>
-<h4 id="准备调试环境"><a class="markdownIt-Anchor" href="#准备调试环境"></a> 准备调试环境：</h4>
-<h5 id="1打开-sifari-的开发模式"><a class="markdownIt-Anchor" href="#1打开-sifari-的开发模式"></a> 1.打开 sifari 的开发模式。</h5>
-<p><img src="/images/1527947682461.jpg" alt="1527947682461"></p>
-<h5 id="2手机-sifari-打开调试模式"><a class="markdownIt-Anchor" href="#2手机-sifari-打开调试模式"></a> 2.手机 sifari 打开调试模式</h5>
-<p><img src="/images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
-<h5 id="3手机连接电脑"><a class="markdownIt-Anchor" href="#3手机连接电脑"></a> 3.手机连接电脑</h5>
-<p><img src="/images/1527947709241.jpg" alt="1527947709241"></p>
-<h5 id="勾选上图的-ip-地址自动会弹出开发者窗口-接下来你就可以尽情的撒野了"><a class="markdownIt-Anchor" href="#勾选上图的-ip-地址自动会弹出开发者窗口-接下来你就可以尽情的撒野了"></a> 勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。</h5>
-<h4 id="正经话题我是如何找到问题并解决的"><a class="markdownIt-Anchor" href="#正经话题我是如何找到问题并解决的"></a> 正经话题，我是如何找到问题并解决的。</h4>
-<ul>
-<li>调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。</li>
-</ul>
-<p><img src="/images/1527950086573.jpg" alt="1527950086573"></p>
-<h5 id="最后锁定"><a class="markdownIt-Anchor" href="#最后锁定"></a> 最后锁定</h5>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  -webkit-<span class="attribute">overflow</span>-scrolling: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>**-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果. **</p>
-<ul>
-<li>
-<p>auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。</p>
-</li>
-<li>
-<p>touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。</p>
-</li>
-</ul>
-<p><strong>最常见的例子就是，</strong></p>
-<ul>
-<li>
-<p>在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。</p>
-</li>
-<li>
-<p>在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。</p>
-</li>
-<li>
-<p>通过动态添加内容撑开容器，结果根本不能滑动的 bug。</p>
-</li>
-<li>
-<p>最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。</p>
-</li>
-</ul>
-<p>网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。<s>不过我不建议研究，一研究估计小半年就过去了，也没有答案</s></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mac</tag>
-        <tag>ios</tag>
-        <tag>mbp</tag>
-        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -480,6 +413,64 @@
         <tag>阿里云</tag>
         <tag>gogs</tag>
         <tag>ubuntu 14.04</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次ios网页样式问题排查心路历程</title>
+    <url>//*/149409992.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</p>
+<span id="more"></span>
+<p>大概是这样：</p>
+<p><img src="/images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
+<p>选中的区域无法正常显示。</p>
+<h3 id="准备调试环境"><a class="markdownIt-Anchor" href="#准备调试环境"></a> 准备调试环境:</h3>
+<h4 id="1打开-sifari-的开发模式"><a class="markdownIt-Anchor" href="#1打开-sifari-的开发模式"></a> 1.打开 sifari 的开发模式。</h4>
+<p><img src="/images/1527947682461.jpg" alt="1527947682461"></p>
+<h4 id="2手机-sifari-打开调试模式"><a class="markdownIt-Anchor" href="#2手机-sifari-打开调试模式"></a> 2.手机 sifari 打开调试模式</h4>
+<p><img src="/images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
+<h4 id="3手机连接电脑"><a class="markdownIt-Anchor" href="#3手机连接电脑"></a> 3.手机连接电脑</h4>
+<p><img src="/images/1527947709241.jpg" alt="1527947709241"></p>
+<p>勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。</p>
+<p>正经话题，我是如何找到问题并解决的。</p>
+<p>调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。</p>
+<p><img src="/images/1527950086573.jpg" alt="1527950086573"></p>
+<h4 id="4最后锁定"><a class="markdownIt-Anchor" href="#4最后锁定"></a> 4.最后锁定</h4>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  -webkit-<span class="attribute">overflow</span>-scrolling: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id><a class="markdownIt-Anchor" href="#"></a> </h5>
+<p><strong>-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.</strong></p>
+<ul>
+<li>
+<p>auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。</p>
+</li>
+<li>
+<p>touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。</p>
+</li>
+</ul>
+<p><strong>最常见的例子就是，</strong></p>
+<ul>
+<li>
+<p>在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。</p>
+</li>
+<li>
+<p>在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。</p>
+</li>
+<li>
+<p>通过动态添加内容撑开容器，结果根本不能滑动的 bug。</p>
+</li>
+<li>
+<p>最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。</p>
+</li>
+</ul>
+<p>网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。<s>不过我不建议研究，一研究估计小半年就过去了，也没有答案</s></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>ios</tag>
+        <tag>mbp</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -629,21 +620,12 @@
 <blockquote>
 <p>指数每减 1，数字就变为原来的十分之一。</p>
 </blockquote>
-<blockquote>
 <h2 id="指数法则"><a class="markdownIt-Anchor" href="#指数法则"></a> 指数法则:</h2>
-</blockquote>
-<blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">N ** a + N ** b = N ** (a + b)      N &gt; 0</span><br></pre></td></tr></table></figure>
-</blockquote>
 <h2 id="0-所起的作用"><a class="markdownIt-Anchor" href="#0-所起的作用"></a> 0 所起的作用:</h2>
-<blockquote>
 <h3 id="0-的作用-占位"><a class="markdownIt-Anchor" href="#0-的作用-占位"></a> 0 的作用: 占位</h3>
-</blockquote>
 <blockquote>
-<p>​ 2503 中 0 如果省略，那就变成 253.数值放生了变化，所以 0 不能省略。</p>
-</blockquote>
-<blockquote>
-<h2 id><a class="markdownIt-Anchor" href="#"></a> </h2>
+<p>2503 中 0 如果省略，那就变成 253.数值放生了变化，所以 0 不能省略。</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -652,23 +634,6 @@
       <tags>
         <tag>数学</tag>
         <tag>程序员</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>英语学习</title>
-    <url>//*/1061411954.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
-<span id="more"></span>
-<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
-<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
-<p>待补充…</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>英语单词</tag>
-        <tag>入门</tag>
       </tags>
   </entry>
   <entry>
@@ -723,6 +688,23 @@
       </tags>
   </entry>
   <entry>
+    <title>英语学习</title>
+    <url>//*/1061411954.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
+<span id="more"></span>
+<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
+<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
+<p>待补充…</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>英语单词</tag>
+        <tag>入门</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mybatis动态查询实现</title>
     <url>//*/3058125875.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
@@ -759,11 +741,9 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
 <blockquote>
 <p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-</blockquote>
-<span id="more"></span>
-<blockquote>
 <p>Cas 是一种开放优秀的身份验证协议。</p>
 </blockquote>
+<span id="more"></span>
 <p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
 <p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
 <h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
@@ -797,20 +777,27 @@
 <p>Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人 Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个 IMAP/POP3/SMTP 代理服务器；也就是说，Nginx 本身就可以托管网站，进行 HTTP 服务处理，也可以作为反向代理服务器使用。</p>
 </blockquote>
 <h1 id="nginx-特点"><a class="markdownIt-Anchor" href="#nginx-特点"></a> nginx 特点</h1>
-<blockquote>
 <ul>
-<li>跨平台：Nginx 可以在大多数 Unix like OS 编译运行，而且也有 Windows 的移植版本。</li>
-<li>配置异常简单：非常容易上手。配置风格跟程序开发一样，神一般的配置</li>
-<li>非阻塞、高并发连接：数据复制时，磁盘 I/O 的第一阶段是非阻塞的。官方测试能够支撑 5 万并发连接，在实际生产环境中跑到 2 ～ 3 万并发连接数.(这得益于 Nginx 使用了最新的 epoll 模型)</li>
-<li>事件驱动：通信机制采用 epoll 模型，支持更大的并发连接。</li>
+<li>
+<p>跨平台：Nginx 可以在大多数 Unix like OS 编译运行，而且也有 Windows 的移植版本。</p>
+</li>
+<li>
+<p>配置异常简单：非常容易上手。配置风格跟程序开发一样，神一般的配置</p>
+</li>
+<li>
+<p>非阻塞、高并发连接：数据复制时，磁盘 I/O 的第一阶段是非阻塞的。官方测试能够支撑 5 万并发连接，在实际生产环境中跑到 2 ～ 3 万并发连接数.(这得益于 Nginx 使用了最新的 epoll 模型)</p>
+</li>
+<li>
+<p>事件驱动：通信机制采用 epoll 模型，支持更大的并发连接。</p>
+</li>
 </ul>
-</blockquote>
 <h1 id="nginx-特性"><a class="markdownIt-Anchor" href="#nginx-特性"></a> nginx 特性</h1>
-<p>master/worker 结构：一个 master 进程，生成一个或多个 worker 进程</p>
-<p>内存消耗小：处理大并发的请求内存消耗非常小。在 3 万并发连接下，开启的 10 个 Nginx 进程才消耗 150M 内存（15M*10=150M） 成本低廉：Nginx 为开源软件，可以免费使用。而购买 F5 BIG-IP、NetScaler 等硬件负载均衡交换机则需要十多万至几十万人民币</p>
-<p>内置的健康检查功能：如果 Nginx Proxy 后端的某台 Web 服务器宕机了，不会影响前端访问。</p>
-<p>节省带宽：支持 GZIP 压缩，可以添加浏览器本地缓存的 Header 头。</p>
-<p>稳定性高：用于反向代理，宕机的概率微乎其微</p>
+<p><strong>master/worker 结构：</strong> 一个 master 进程，生成一个或多个 worker 进程</p>
+<p><strong>内存消耗小：</strong>  处理大并发的请求内存消耗非常小。在 3 万并发连接下，开启的 10 个 Nginx 进程才消耗 150M 内存（15M*10=150M）</p>
+<p><strong>成本低廉：</strong> Nginx 为开源软件，可以免费使用。而购买 F5 BIG-IP、NetScaler 等硬件负载均衡交换机则需要十多万至几十万人民币</p>
+<p><strong>内置的健康检查功能：</strong> 如果 Nginx Proxy 后端的某台 Web 服务器宕机了，不会影响前端访问。</p>
+<p><strong>节省带宽：</strong> 支持 GZIP 压缩，可以添加浏览器本地缓存的 Header 头。</p>
+<p><strong>稳定性高：</strong> 用于反向代理，宕机的概率微乎其微</p>
 <p>1、nginx 代理和后端 web 服务器间无需长连接；</p>
 <p>2、接收用户请求是异步的，即先将用户请求全部接收下来，再一次性发送后后端 web 服务器，极大的减轻后端 web 服务器的压力</p>
 <p>3、发送响应报文时，是边接收来自后端 web 服务器的数据，边发送给客户端的</p>
@@ -835,22 +822,24 @@
     <url>//*/4074971168.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
 <span id="more"></span>
-<p>1.集群<br>
-集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
+<h2 id="1集群"><a class="markdownIt-Anchor" href="#1集群"></a> 1.集群</h2>
+<p>集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
 <p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
-<p>2.负载均衡<br>
-至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
-<p>3.分布式<br>
-分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
-<p>今天看到个通俗的例子，大家可以借鉴下：</p>
+<h2 id="2负载均衡"><a class="markdownIt-Anchor" href="#2负载均衡"></a> 2.负载均衡</h2>
+<p>至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
+<h2 id="3分布式"><a class="markdownIt-Anchor" href="#3分布式"></a> 3.分布式</h2>
+<p>分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
+<p><strong>今天看到个通俗的例子，大家可以借鉴下：</strong></p>
 <p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
-<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。<br>
-1）负载均衡集群（LB:load balancing）</p>
+<blockquote>
+<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。</p>
+</blockquote>
+<h3 id="1负载均衡集群lbload-balancing"><a class="markdownIt-Anchor" href="#1负载均衡集群lbload-balancing"></a> 1）负载均衡集群（LB:load balancing）</h3>
 <p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
-<p>2）高可用性集群（HA:High Availability）</p>
+<h3 id="2高可用性集群hahigh-availability"><a class="markdownIt-Anchor" href="#2高可用性集群hahigh-availability"></a> 2）高可用性集群（HA:High Availability）</h3>
 <p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
 <p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
-<p>3）高性能集群（HP:High Performance）</p>
+<h3 id="3高性能集群hphigh-performance"><a class="markdownIt-Anchor" href="#3高性能集群hphigh-performance"></a> 3）高性能集群（HP:High Performance）</h3>
 <p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
 <p>作者：普 if 加的帕<br>
 来源：CSDN<br>
@@ -874,12 +863,10 @@
     <url>//*/2855774435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
 <span id="more"></span>
-<blockquote>
-<p>《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
-</blockquote>
+<p>  《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>  旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>  小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -2288,7 +2275,7 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>基于k8s\traefik\springboot的微服务实践</title>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
     <url>//*/3382022550.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
@@ -2438,6 +2425,52 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>炝锅面</title>
+    <url>//*/b2113df8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
+<span id="more"></span>
+<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
+<ul>
+<li>干面条</li>
+<li>番茄</li>
+<li>梅花肉</li>
+<li>大葱</li>
+<li>白菜</li>
+<li>姜</li>
+<li>干辣椒</li>
+<li>花椒</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul>
+<li>花生油 15ml</li>
+<li>盐 5g</li>
+<li>味精 5g</li>
+<li>鸡精 5g</li>
+<li>生抽 5g</li>
+<li>十三香 2g</li>
+<li>香油 5ml</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul>
+<li>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</li>
+<li>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</li>
+<li>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</li>
+<li>放入番茄翻炒出汁后放入白菜翻炒；</li>
+<li>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</li>
+<li>水开放入干面条；（自己估算食用的量）</li>
+<li>煮至2分钟后，加入鸡精、味精；</li>
+<li>出锅前放入少许香油，味道更佳；</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>美食</tag>
+        <tag>河南</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打造自己的产品 1</title>
     <url>//*/1000976984.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -2482,52 +2515,6 @@ section 运维阶段
         <tag>墨刀</tag>
         <tag>github</tag>
         <tag>小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>炝锅面</title>
-    <url>//*/b2113df8.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
-<span id="more"></span>
-<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
-<ul>
-<li>干面条</li>
-<li>番茄</li>
-<li>梅花肉</li>
-<li>大葱</li>
-<li>白菜</li>
-<li>姜</li>
-<li>干辣椒</li>
-<li>花椒</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul>
-<li>花生油 15ml</li>
-<li>盐 5g</li>
-<li>味精 5g</li>
-<li>鸡精 5g</li>
-<li>生抽 5g</li>
-<li>十三香 2g</li>
-<li>香油 5ml</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul>
-<li>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</li>
-<li>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</li>
-<li>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</li>
-<li>放入番茄翻炒出汁后放入白菜翻炒；</li>
-<li>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</li>
-<li>水开放入干面条；（自己估算食用的量）</li>
-<li>煮至2分钟后，加入鸡精、味精；</li>
-<li>出锅前放入少许香油，味道更佳；</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>河南</tag>
       </tags>
   </entry>
   <entry>
@@ -2578,39 +2565,15 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
-<span id="more"></span>
-<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
-<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
-<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-ukuPsTKS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-BqXIhEVp" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-ukuPsTKS"),
+            element: document.getElementById("aplayer-BqXIhEVp"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2650,6 +2613,30 @@ section 运维阶段
         <tag>有趣</tag>
         <tag>人生</tag>
         <tag>春天</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
+<span id="more"></span>
+<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
+<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
+<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
       </tags>
   </entry>
   <entry>
