@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2024-01-16T02:24:40.802Z</updated>
+  <updated>2024-01-17T09:08:29.017Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://rm-rf.ink/*/c43e7c0d.html"/>
     <id>https://rm-rf.ink/*/c43e7c0d.html</id>
     <published>2024-01-16T02:06:47.000Z</published>
-    <updated>2024-01-16T02:24:40.802Z</updated>
+    <updated>2024-01-17T09:08:29.017Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p><span id="more"></span><h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1><ul><li>鸡肉</li><li>梅花肉</li><li>土豆</li><li>洋葱</li><li>青椒</li><li>大葱</li><li>姜</li><li>蒜</li><li>八角</li><li>花椒</li><li>干辣椒</li><li>啤酒</li></ul><h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1><ul><li>花生油 20ml</li><li>郫县豆瓣酱 10ml</li><li>盐 5g</li><li>鸡精 5g</li><li>味精 5g</li><li>生抽 5g</li><li>蚝油5ml</li></ul><h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1><ul><li>起锅烧油，放入梅花肉打底炒出油；</li><li>放入豆瓣炒出红油，放入八角、花椒、干辣椒；</li><li>放入洗干净的鸡肉，炒至肉质紧实；</li><li>放入大葱，盐、鸡精、生抽、蚝油；</li><li>翻炒2分钟，加入两罐啤酒，炖15分钟；</li><li>最后放入土豆、青椒、洋葱，再炖5分钟；</li><li>放入味精，搅拌均匀后出锅；</li></ul>]]></content>
     
@@ -156,13 +156,13 @@
     <category term="菜谱" scheme="https://rm-rf.ink/categories/%E8%8F%9C%E8%B0%B1/"/>
     
     
-    <category term="河南" scheme="https://rm-rf.ink/tags/%E6%B2%B3%E5%8D%97/"/>
-    
     <category term="芝麻叶" scheme="https://rm-rf.ink/tags/%E8%8A%9D%E9%BA%BB%E5%8F%B6/"/>
     
     <category term="面条" scheme="https://rm-rf.ink/tags/%E9%9D%A2%E6%9D%A1/"/>
     
     <category term="糊涂" scheme="https://rm-rf.ink/tags/%E7%B3%8A%E6%B6%82/"/>
+    
+    <category term="河南" scheme="https://rm-rf.ink/tags/%E6%B2%B3%E5%8D%97/"/>
     
   </entry>
   
