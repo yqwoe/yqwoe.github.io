@@ -383,39 +383,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一次gogs踩坑之路</title>
-    <url>//*/1398242790.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
-<span id="more"></span>
-<p>1.创建用户，一定要记住密码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
-<p>2.下载并解压安装包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
-<p>3.拷贝启动项到系统下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
-<p>4.安装 mysql</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
-<p>5.启动 gogs</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
-<p>6.nginx 配置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
-<p>8.你可能遇到的问题</p>
-<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
-<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>gogs</tag>
-        <tag>ubuntu 14.04</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一次ios网页样式问题排查心路历程</title>
     <url>//*/149409992.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</p>
@@ -471,6 +438,39 @@
         <tag>ios</tag>
         <tag>mbp</tag>
         <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次gogs踩坑之路</title>
+    <url>//*/1398242790.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+<span id="more"></span>
+<p>1.创建用户，一定要记住密码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
+<p>2.下载并解压安装包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
+<p>3.拷贝启动项到系统下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
+<p>4.安装 mysql</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
+<p>5.启动 gogs</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
+<p>6.nginx 配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
+<p>8.你可能遇到的问题</p>
+<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
+<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>gogs</tag>
+        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
@@ -629,11 +629,28 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>学习</category>
       </categories>
       <tags>
         <tag>数学</tag>
         <tag>程序员</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英语学习</title>
+    <url>//*/1061411954.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
+<span id="more"></span>
+<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
+<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
+<p>待补充…</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>英语单词</tag>
+        <tag>入门</tag>
       </tags>
   </entry>
   <entry>
@@ -685,23 +702,6 @@
         <tag>python</tag>
         <tag>java</tag>
         <tag>kimurai</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>英语学习</title>
-    <url>//*/1061411954.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
-<span id="more"></span>
-<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
-<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
-<p>待补充…</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>英语单词</tag>
-        <tag>入门</tag>
       </tags>
   </entry>
   <entry>
@@ -869,7 +869,7 @@
 <p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>学习</category>
       </categories>
       <tags>
         <tag>小王子</tag>
@@ -1619,7 +1619,7 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>《程序员数学 1》 - 笔记1</title>
+    <title>笔记1-《程序员数学 1》</title>
     <url>//*/965849311.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1>
 <h2 id="10-进制计数法"><a class="markdownIt-Anchor" href="#10-进制计数法"></a> 10 进制计数法</h2>
@@ -1745,7 +1745,7 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>《程序员数学-1》-笔记2</title>
+    <title>笔记2-《程序员数学-1》</title>
     <url>//*/1634039770.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第二章-逻辑"><a class="markdownIt-Anchor" href="#第二章-逻辑"></a> 第二章 逻辑</h1>
 <span id="more"></span>
@@ -2159,7 +2159,7 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>《程序员数学-1》-笔记3</title>
+    <title>笔记3-《程序员数学-1》</title>
     <url>//*/375539532.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
 <span id="more"></span>
@@ -2182,7 +2182,7 @@ section 运维阶段
 <ul>
 <li>
 <p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line"></span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line">  </span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line">  </span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
@@ -2275,21 +2275,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大盘鸡</title>
     <url>//*/c43e7c0d.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p>
@@ -2336,6 +2321,21 @@ section 运维阶段
       <tags>
         <tag>大盘鸡</tag>
         <tag>美食</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2425,52 +2425,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>炝锅面</title>
-    <url>//*/b2113df8.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
-<span id="more"></span>
-<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
-<ul>
-<li>干面条</li>
-<li>番茄</li>
-<li>梅花肉</li>
-<li>大葱</li>
-<li>白菜</li>
-<li>姜</li>
-<li>干辣椒</li>
-<li>花椒</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul>
-<li>花生油 15ml</li>
-<li>盐 5g</li>
-<li>味精 5g</li>
-<li>鸡精 5g</li>
-<li>生抽 5g</li>
-<li>十三香 2g</li>
-<li>香油 5ml</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul>
-<li>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</li>
-<li>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</li>
-<li>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</li>
-<li>放入番茄翻炒出汁后放入白菜翻炒；</li>
-<li>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</li>
-<li>水开放入干面条；（自己估算食用的量）</li>
-<li>煮至2分钟后，加入鸡精、味精；</li>
-<li>出锅前放入少许香油，味道更佳；</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>河南</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>打造自己的产品 1</title>
     <url>//*/1000976984.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -2515,6 +2469,52 @@ section 运维阶段
         <tag>墨刀</tag>
         <tag>github</tag>
         <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>炝锅面</title>
+    <url>//*/b2113df8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
+<span id="more"></span>
+<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
+<ul>
+<li>干面条</li>
+<li>番茄</li>
+<li>梅花肉</li>
+<li>大葱</li>
+<li>白菜</li>
+<li>姜</li>
+<li>干辣椒</li>
+<li>花椒</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul>
+<li>花生油 15ml</li>
+<li>盐 5g</li>
+<li>味精 5g</li>
+<li>鸡精 5g</li>
+<li>生抽 5g</li>
+<li>十三香 2g</li>
+<li>香油 5ml</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul>
+<li>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</li>
+<li>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</li>
+<li>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</li>
+<li>放入番茄翻炒出汁后放入白菜翻炒；</li>
+<li>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</li>
+<li>水开放入干面条；（自己估算食用的量）</li>
+<li>煮至2分钟后，加入鸡精、味精；</li>
+<li>出锅前放入少许香油，味道更佳；</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>美食</tag>
+        <tag>河南</tag>
       </tags>
   </entry>
   <entry>
@@ -2568,12 +2568,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-BqXIhEVp" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-AACzYkgP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-BqXIhEVp"),
+            element: document.getElementById("aplayer-AACzYkgP"),
             narrow: false,
             autoplay: true,
             showlrc: false,
