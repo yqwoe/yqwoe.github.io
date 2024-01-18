@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>给博客增加评论功能</title>
+    <url>//*/762727420.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
+<span id="more"></span>
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+<ul>
+<li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></li>
+<li><a href="https://github.com/imsun/gitment">Gitment Readme</a></li>
+</ul>
+<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
+<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
+<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
+<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
+以上是我的分享，谢谢！！</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一篇博客</title>
     <url>//*/4278564287.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
@@ -149,38 +181,6 @@
         <tag>心情</tag>
         <tag>Like a Rolling Stone</tag>
         <tag>Bob Dylan</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给博客增加评论功能</title>
-    <url>//*/762727420.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
-<span id="more"></span>
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
-<ul>
-<li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></li>
-<li><a href="https://github.com/imsun/gitment">Gitment Readme</a></li>
-</ul>
-<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
-<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
-<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
-<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
-以上是我的分享，谢谢！！</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
-        <tag>git</tag>
-        <tag>Jekyll</tag>
       </tags>
   </entry>
   <entry>
@@ -535,37 +535,6 @@
       </tags>
   </entry>
   <entry>
-    <title>mybatis动态查询实现</title>
-    <url>//*/3058125875.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
-<span id="more"></span>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
-<p>Where 条件中包含 字段名称、运算符、值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>mybatis 公共 xml 文件配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Product mapper.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ProductController</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>api</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cas Server 本地部署</title>
     <url>//*/1854714444.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
@@ -709,61 +678,6 @@
         <tag>点灯的人</tag>
         <tag>狐狸</tag>
         <tag>独一无二</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>0. 低代码</title>
-    <url>//*/725797460.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
-<blockquote>
-<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
-<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
-<ol>
-<li>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</li>
-<li>需要能提供给IT技术人员使用，不能只给平民开发者使用；</li>
-<li>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</li>
-<li>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</li>
-<li>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</li>
-<li>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</li>
-<li>第三方集成：支持引入第三方API或事件驱动机制；</li>
-<li>自动运维：提供自动化的应用升级和版本管理机制；</li>
-<li>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</li>
-<li>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</li>
-</ol>
-<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
-<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
-<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
-<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
-<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
-<p>####整体而言，IT技术人员具备以下特征：</p>
-<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
-​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
-​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
-<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
-<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
-<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
-<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
-​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
-​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
-<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
-<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
-​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
-<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
-<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
-<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
       </tags>
   </entry>
   <entry>
@@ -957,6 +871,37 @@
       </tags>
   </entry>
   <entry>
+    <title>mybatis动态查询实现</title>
+    <url>//*/3058125875.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
+<span id="more"></span>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
+<p>Where 条件中包含 字段名称、运算符、值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>mybatis 公共 xml 文件配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Product mapper.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ProductController</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>api</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>29岁,再见！</title>
     <url>//*/1873749776.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -973,105 +918,48 @@
       </tags>
   </entry>
   <entry>
-    <title>1. 低代码</title>
-    <url>//*/2967963195.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
+    <title>0. 低代码</title>
+    <url>//*/725797460.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
+<blockquote>
+<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
+<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
+</blockquote>
 <span id="more"></span>
-<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
-<table>
-<thead>
-<tr>
-<th>服务端</th>
-<th>前端</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java</td>
-<td>react</td>
-</tr>
-<tr>
-<td>springboot</td>
-<td>ant-design</td>
-</tr>
-<tr>
-<td>shenyu</td>
-<td>formily</td>
-</tr>
-<tr>
-<td>redis</td>
-<td>Form-render</td>
-</tr>
-<tr>
-<td>mysql</td>
-<td>Designable</td>
-</tr>
-<tr>
-<td>magic-api</td>
-<td></td>
-</tr>
-<tr>
-<td>dataway</td>
-<td></td>
-</tr>
-<tr>
-<td>es(全文检索)</td>
-<td></td>
-</tr>
-<tr>
-<td>flowable</td>
-<td></td>
-</tr>
-<tr>
-<td>Paddle</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>系统权限</td>
-<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
-</tr>
-<tr>
-<td>组织机构</td>
-<td>行政区域、机构、部门、职位、人员…</td>
-</tr>
-<tr>
-<td>流程引擎</td>
-<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
-</tr>
-<tr>
-<td>开发者工具</td>
-<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
-</tr>
-<tr>
-<td>页面设计器</td>
-<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
-<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
-<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
-<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
-<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
-<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
-<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
-<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
-<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
-<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
-<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
-<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
-<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
+<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
+<ol>
+<li>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</li>
+<li>需要能提供给IT技术人员使用，不能只给平民开发者使用；</li>
+<li>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</li>
+<li>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</li>
+<li>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</li>
+<li>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</li>
+<li>第三方集成：支持引入第三方API或事件驱动机制；</li>
+<li>自动运维：提供自动化的应用升级和版本管理机制；</li>
+<li>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</li>
+<li>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</li>
+</ol>
+<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
+<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
+<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
+<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
+<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
+<p>####整体而言，IT技术人员具备以下特征：</p>
+<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
+​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
+​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
+<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
+<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
+<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
+<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
+​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
+​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
+<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
+<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
+​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
+<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
+<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
+<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
 ]]></content>
       <categories>
         <category>工作</category>
@@ -1082,25 +970,6 @@
         <tag>权限管理</tag>
         <tag>流程引擎</tag>
         <tag>组织管理</tag>
-        <tag>flowable</tag>
-        <tag>bpmn</tag>
-        <tag>lowcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
-    <url>//*/202678719.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>java</tag>
-        <tag>error</tag>
-        <tag>jdbc</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -1270,6 +1139,152 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>1. 低代码</title>
+    <url>//*/2967963195.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
+<span id="more"></span>
+<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
+<table>
+<thead>
+<tr>
+<th>服务端</th>
+<th>前端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Java</td>
+<td>react</td>
+</tr>
+<tr>
+<td>springboot</td>
+<td>ant-design</td>
+</tr>
+<tr>
+<td>shenyu</td>
+<td>formily</td>
+</tr>
+<tr>
+<td>redis</td>
+<td>Form-render</td>
+</tr>
+<tr>
+<td>mysql</td>
+<td>Designable</td>
+</tr>
+<tr>
+<td>magic-api</td>
+<td></td>
+</tr>
+<tr>
+<td>dataway</td>
+<td></td>
+</tr>
+<tr>
+<td>es(全文检索)</td>
+<td></td>
+</tr>
+<tr>
+<td>flowable</td>
+<td></td>
+</tr>
+<tr>
+<td>Paddle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统权限</td>
+<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
+</tr>
+<tr>
+<td>组织机构</td>
+<td>行政区域、机构、部门、职位、人员…</td>
+</tr>
+<tr>
+<td>流程引擎</td>
+<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
+</tr>
+<tr>
+<td>开发者工具</td>
+<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
+</tr>
+<tr>
+<td>页面设计器</td>
+<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
+<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
+<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
+<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
+<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
+<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
+<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
+<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
+<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
+<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
+<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
+<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
+<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+        <tag>flowable</tag>
+        <tag>bpmn</tag>
+        <tag>lowcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建maven私库</title>
+    <url>//*/1406322052.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
+<span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
+修改密码后 admin.password自动删除</p>
+<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
+<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
+<p>develop =&gt; nx-all</p>
+<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
+<p>developer =&gt; develop</p>
+<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
+<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>docker</tag>
+        <tag>maven</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>笔记1-《程序员数学 1》</title>
     <url>//*/965849311.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1>
@@ -1393,6 +1408,22 @@ section 运维阶段
       <tags>
         <tag>计数法</tag>
         <tag>进制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
+    <url>//*/202678719.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>error</tag>
+        <tag>jdbc</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -1854,6 +1885,21 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端定时器</title>
     <url>//*/3423146f.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
@@ -1923,52 +1969,6 @@ section 运维阶段
         <tag>setTimeout</tag>
         <tag>setInterval</tag>
         <tag>requestAnimationFrame</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建maven私库</title>
-    <url>//*/1406322052.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
-<span id="more"></span>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
-<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
-修改密码后 admin.password自动删除</p>
-<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
-<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
-<p>develop =&gt; nx-all</p>
-<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
-<p>developer =&gt; develop</p>
-<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
-<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>docker</tag>
-        <tag>maven</tag>
       </tags>
   </entry>
   <entry>
@@ -2142,28 +2142,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>工作日报汇总</title>
-    <url>//*/1ea1f1d4.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码查看内容</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>工作汇报</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大盘鸡</title>
     <url>//*/c43e7c0d.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p>
@@ -2213,15 +2191,37 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>工作日报汇总</title>
+    <url>//*/1ea1f1d4.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码查看内容</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作汇报</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-WckZCsyh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-KYHkcJxX" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-WckZCsyh"),
+            element: document.getElementById("aplayer-KYHkcJxX"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2261,30 +2261,6 @@ section 运维阶段
         <tag>有趣</tag>
         <tag>人生</tag>
         <tag>春天</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
-<span id="more"></span>
-<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
-<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
-<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
       </tags>
   </entry>
   <entry>
@@ -2638,6 +2614,22 @@ a --> c1 & f1 & e1 & b1</pre>
       </tags>
   </entry>
   <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>炝锅面</title>
     <url>//*/b2113df8.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
@@ -2684,19 +2676,51 @@ a --> c1 & f1 & e1 & b1</pre>
       </tags>
   </entry>
   <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
+    <title>芝麻叶糊涂面</title>
+    <url>//*/1d180e51.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
+<span id="more"></span>
+<h1 id="食料"><a class="markdownIt-Anchor" href="#食料"></a> 食料</h1>
+<ul>
+<li>芝麻叶</li>
+<li>豆腐丁</li>
+<li>韭菜</li>
+<li>小香芹</li>
+<li>面粉</li>
+<li>葱</li>
+<li>蒜</li>
+<li>干辣椒</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul>
+<li>花生油 25ml</li>
+<li>盐 5g</li>
+<li>味精 5g</li>
+<li>鸡精 5g</li>
+<li>十三香 2g</li>
+<li>香油 5ml</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul>
+<li>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</li>
+<li>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</li>
+<li>豆腐切丁放入花生油煎至焦香；</li>
+<li>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</li>
+<li>热油放入葱、蒜、干辣椒炒香；</li>
+<li>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</li>
+<li>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</li>
+<li>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</li>
+</ul>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>菜谱</category>
       </categories>
       <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
+        <tag>美食</tag>
+        <tag>河南</tag>
+        <tag>芝麻叶</tag>
+        <tag>面条</tag>
+        <tag>糊涂</tag>
       </tags>
   </entry>
   <entry>
@@ -3024,54 +3048,6 @@ a --> c1 & f1 & e1 & b1</pre>
       </tags>
   </entry>
   <entry>
-    <title>芝麻叶糊涂面</title>
-    <url>//*/1d180e51.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
-<span id="more"></span>
-<h1 id="食料"><a class="markdownIt-Anchor" href="#食料"></a> 食料</h1>
-<ul>
-<li>芝麻叶</li>
-<li>豆腐丁</li>
-<li>韭菜</li>
-<li>小香芹</li>
-<li>面粉</li>
-<li>葱</li>
-<li>蒜</li>
-<li>干辣椒</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul>
-<li>花生油 25ml</li>
-<li>盐 5g</li>
-<li>味精 5g</li>
-<li>鸡精 5g</li>
-<li>十三香 2g</li>
-<li>香油 5ml</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul>
-<li>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</li>
-<li>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</li>
-<li>豆腐切丁放入花生油煎至焦香；</li>
-<li>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</li>
-<li>热油放入葱、蒜、干辣椒炒香；</li>
-<li>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</li>
-<li>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</li>
-<li>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>河南</tag>
-        <tag>芝麻叶</tag>
-        <tag>面条</tag>
-        <tag>糊涂</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>麻辣炒虾尾</title>
     <url>//*/9ddcf808.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
@@ -3130,6 +3106,30 @@ a --> c1 & f1 & e1 & b1</pre>
         <tag>美食</tag>
         <tag>虾尾</tag>
         <tag>麻辣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
+<span id="more"></span>
+<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
+<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
+<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
       </tags>
   </entry>
 </search>
