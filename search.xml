@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>给博客增加评论功能</title>
-    <url>//*/762727420.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
-<span id="more"></span>
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
-<ul>
-<li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></li>
-<li><a href="https://github.com/imsun/gitment">Gitment Readme</a></li>
-</ul>
-<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
-<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
-<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
-<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
-以上是我的分享，谢谢！！</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
-        <tag>git</tag>
-        <tag>Jekyll</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第一篇博客</title>
     <url>//*/4278564287.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
@@ -184,6 +152,38 @@
       </tags>
   </entry>
   <entry>
+    <title>给博客增加评论功能</title>
+    <url>//*/762727420.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
+<span id="more"></span>
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+<ul>
+<li><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></li>
+<li><a href="https://github.com/imsun/gitment">Gitment Readme</a></li>
+</ul>
+<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
+<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
+<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
+<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
+以上是我的分享，谢谢！！</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>//*/465957431.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h5 id="今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情_"><a class="markdownIt-Anchor" href="#今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情_"></a> 今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！_</h5>
@@ -210,6 +210,39 @@
         <tag>六一</tag>
         <tag>巨婴</tag>
         <tag>孩子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次gogs踩坑之路</title>
+    <url>//*/1398242790.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+<span id="more"></span>
+<p>1.创建用户，一定要记住密码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
+<p>2.下载并解压安装包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
+<p>3.拷贝启动项到系统下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
+<p>4.安装 mysql</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
+<p>5.启动 gogs</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
+<p>6.nginx 配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
+<p>8.你可能遇到的问题</p>
+<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
+<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>gogs</tag>
+        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
@@ -268,39 +301,6 @@
         <tag>ios</tag>
         <tag>mbp</tag>
         <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一次gogs踩坑之路</title>
-    <url>//*/1398242790.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
-<span id="more"></span>
-<p>1.创建用户，一定要记住密码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
-<p>2.下载并解压安装包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
-<p>3.拷贝启动项到系统下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
-<p>4.安装 mysql</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
-<p>5.启动 gogs</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
-<p>6.nginx 配置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
-<p>8.你可能遇到的问题</p>
-<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
-<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>gogs</tag>
-        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
@@ -568,6 +568,37 @@
       </tags>
   </entry>
   <entry>
+    <title>mybatis动态查询实现</title>
+    <url>//*/3058125875.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
+<span id="more"></span>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
+<p>Where 条件中包含 字段名称、运算符、值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>mybatis 公共 xml 文件配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Product mapper.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ProductController</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>api</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nginx 负载均衡</title>
     <url>//*/1506548690.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
@@ -617,6 +648,29 @@
       </tags>
   </entry>
   <entry>
+    <title>读《小王子》</title>
+    <url>//*/2855774435.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
+<span id="more"></span>
+<p>  《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>  旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>  小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>小王子</tag>
+        <tag>儿子</tag>
+        <tag>书</tag>
+        <tag>星球旅行</tag>
+        <tag>点灯的人</tag>
+        <tag>狐狸</tag>
+        <tag>独一无二</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>集群、负载均衡、分布式</title>
     <url>//*/4074971168.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
@@ -655,29 +709,6 @@
         <tag>集群</tag>
         <tag>负载均衡</tag>
         <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>读《小王子》</title>
-    <url>//*/2855774435.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
-<span id="more"></span>
-<p>  《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>  旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>  小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>小王子</tag>
-        <tag>儿子</tag>
-        <tag>书</tag>
-        <tag>星球旅行</tag>
-        <tag>点灯的人</tag>
-        <tag>狐狸</tag>
-        <tag>独一无二</tag>
       </tags>
   </entry>
   <entry>
@@ -871,37 +902,6 @@
       </tags>
   </entry>
   <entry>
-    <title>mybatis动态查询实现</title>
-    <url>//*/3058125875.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
-<span id="more"></span>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
-<p>Where 条件中包含 字段名称、运算符、值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>mybatis 公共 xml 文件配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Product mapper.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ProductController</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>api</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>29岁,再见！</title>
     <url>//*/1873749776.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -915,6 +915,121 @@
       <tags>
         <tag>29岁</tag>
         <tag>30岁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1. 低代码</title>
+    <url>//*/2967963195.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
+<span id="more"></span>
+<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
+<table>
+<thead>
+<tr>
+<th>服务端</th>
+<th>前端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Java</td>
+<td>react</td>
+</tr>
+<tr>
+<td>springboot</td>
+<td>ant-design</td>
+</tr>
+<tr>
+<td>shenyu</td>
+<td>formily</td>
+</tr>
+<tr>
+<td>redis</td>
+<td>Form-render</td>
+</tr>
+<tr>
+<td>mysql</td>
+<td>Designable</td>
+</tr>
+<tr>
+<td>magic-api</td>
+<td></td>
+</tr>
+<tr>
+<td>dataway</td>
+<td></td>
+</tr>
+<tr>
+<td>es(全文检索)</td>
+<td></td>
+</tr>
+<tr>
+<td>flowable</td>
+<td></td>
+</tr>
+<tr>
+<td>Paddle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统权限</td>
+<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
+</tr>
+<tr>
+<td>组织机构</td>
+<td>行政区域、机构、部门、职位、人员…</td>
+</tr>
+<tr>
+<td>流程引擎</td>
+<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
+</tr>
+<tr>
+<td>开发者工具</td>
+<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
+</tr>
+<tr>
+<td>页面设计器</td>
+<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
+<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
+<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
+<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
+<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
+<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
+<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
+<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
+<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
+<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
+<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
+<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
+<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+        <tag>flowable</tag>
+        <tag>bpmn</tag>
+        <tag>lowcode</tag>
       </tags>
   </entry>
   <entry>
@@ -1136,278 +1251,6 @@ section 运维阶段
         <tag>gitlab</tag>
         <tag>okr</tag>
         <tag>项目管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1. 低代码</title>
-    <url>//*/2967963195.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
-<span id="more"></span>
-<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
-<table>
-<thead>
-<tr>
-<th>服务端</th>
-<th>前端</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java</td>
-<td>react</td>
-</tr>
-<tr>
-<td>springboot</td>
-<td>ant-design</td>
-</tr>
-<tr>
-<td>shenyu</td>
-<td>formily</td>
-</tr>
-<tr>
-<td>redis</td>
-<td>Form-render</td>
-</tr>
-<tr>
-<td>mysql</td>
-<td>Designable</td>
-</tr>
-<tr>
-<td>magic-api</td>
-<td></td>
-</tr>
-<tr>
-<td>dataway</td>
-<td></td>
-</tr>
-<tr>
-<td>es(全文检索)</td>
-<td></td>
-</tr>
-<tr>
-<td>flowable</td>
-<td></td>
-</tr>
-<tr>
-<td>Paddle</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>系统权限</td>
-<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
-</tr>
-<tr>
-<td>组织机构</td>
-<td>行政区域、机构、部门、职位、人员…</td>
-</tr>
-<tr>
-<td>流程引擎</td>
-<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
-</tr>
-<tr>
-<td>开发者工具</td>
-<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
-</tr>
-<tr>
-<td>页面设计器</td>
-<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
-<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
-<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
-<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
-<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
-<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
-<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
-<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
-<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
-<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
-<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
-<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
-<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-        <tag>flowable</tag>
-        <tag>bpmn</tag>
-        <tag>lowcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建maven私库</title>
-    <url>//*/1406322052.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
-<span id="more"></span>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
-<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
-修改密码后 admin.password自动删除</p>
-<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
-<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
-<p>develop =&gt; nx-all</p>
-<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
-<p>developer =&gt; develop</p>
-<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
-<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>docker</tag>
-        <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>笔记1-《程序员数学 1》</title>
-    <url>//*/965849311.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1>
-<h2 id="10-进制计数法"><a class="markdownIt-Anchor" href="#10-进制计数法"></a> 10 进制计数法</h2>
-<ul>
-<li>
-<p>什么是 10 进制计数法</p>
-<ul>
-<li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
-<li>数位:从右往左数表示 个、十、百、千、万…位。</li>
-</ul>
-</li>
-<li>
-<p>分解</p>
-<ul>
-<li>2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li>
-</ul>
-</li>
-</ul>
-<span id="more"></span>
-<h2 id="2-进制计数法"><a class="markdownIt-Anchor" href="#2-进制计数法"></a> 2 进制计数法</h2>
-<ul>
-<li>
-<p>什么是 2 进制计数法</p>
-<ul>
-<li>数字有 2 种，0、1.</li>
-<li>从右往左分别表示 1 位、2 位、4 位、8 位</li>
-</ul>
-</li>
-<li>
-<p>分解</p>
-<ul>
-<li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
-</ul>
-</li>
-<li>
-<p>基数转换</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*/</span><br><span class="line">12 / 2 = 6  余数 0</span><br><span class="line">6  / 2 = 3  余数 0</span><br><span class="line">3  / 2 = 1  余数 1</span><br><span class="line">1  / 2 = 0  余数 1</span><br><span class="line">/**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*/</span><br><span class="line">1000 / 2 = 500 余数 0</span><br><span class="line">500  / 2 = 250 余数 0</span><br><span class="line">250  / 2 = 125 余数 0</span><br><span class="line">125  / 2 = 62  余数 1</span><br><span class="line">62   / 2 = 31  余数 0</span><br><span class="line">31   / 2 = 15  余数 1</span><br><span class="line">15   / 2 = 7   余数 1</span><br><span class="line">7    / 2 = 3   余数 1</span><br><span class="line">3    / 2 = 1   余数 1</span><br><span class="line">1    / 2 = 0   余数 1</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>计算机中为什么采用 2 进制计数法</p>
-<ul>
-<li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
-<li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
-</ul>
-</li>
-</ul>
-<h2 id="按位计数法"><a class="markdownIt-Anchor" href="#按位计数法"></a> 按位计数法</h2>
-<ul>
-<li>
-<p>什么是按位计数法</p>
-<ul>
-<li>
-<p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p>
-</li>
-<li>
-<p>N 进制计数法:</p>
-<ul>
-<li>使用数字有 0、1、2、3…、N-1,共 N 种</li>
-<li>从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li>
-<li>例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>不按位计数法的罗马数字</p>
-<ul>
-<li>没有数位，只表示数字本身</li>
-<li>没有 0</li>
-<li>使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li>
-<li>并排的数字加起来，就是所表示的数</li>
-<li>III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li>
-<li>IV(4) 减法规则表示 5 - 1 = 4</li>
-</ul>
-</li>
-</ul>
-<p>##指数法则</p>
-<ul>
-<li>
-<p>10 的 0 次方是什么？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10³ = 1000</span><br><span class="line">10² = 100</span><br><span class="line">10¹ = 10</span><br><span class="line">10º = ？</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p>
-</li>
-<li>
-<p>规则的扩展</p>
-<ul>
-<li>指数法则表达式: N ** a + N ** b = N ** (a + b)</li>
-</ul>
-</li>
-</ul>
-<h2 id="0-所起的作用"><a class="markdownIt-Anchor" href="#0-所起的作用"></a> 0 所起的作用</h2>
-<ul>
-<li>
-<p>0 的作用: 占位</p>
-<ul>
-<li>2503 如果没有了 0 就变成了 253</li>
-</ul>
-</li>
-</ul>
-<h2 id="人类的极限和构造的发现"><a class="markdownIt-Anchor" href="#人类的极限和构造的发现"></a> 人类的极限和构造的发现</h2>
-<ul>
-<li>
-<p>重温历史进程</p>
-<ul>
-<li><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li>
-<li><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li>
-<li><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li>
-<li><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li>
-<li><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li>
-<li><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>计数法</tag>
-        <tag>进制</tag>
       </tags>
   </entry>
   <entry>
@@ -1885,18 +1728,129 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+    <title>笔记1-《程序员数学 1》</title>
+    <url>//*/965849311.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1>
+<h2 id="10-进制计数法"><a class="markdownIt-Anchor" href="#10-进制计数法"></a> 10 进制计数法</h2>
+<ul>
+<li>
+<p>什么是 10 进制计数法</p>
+<ul>
+<li>数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
+<li>数位:从右往左数表示 个、十、百、千、万…位。</li>
+</ul>
+</li>
+<li>
+<p>分解</p>
+<ul>
+<li>2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+<h2 id="2-进制计数法"><a class="markdownIt-Anchor" href="#2-进制计数法"></a> 2 进制计数法</h2>
+<ul>
+<li>
+<p>什么是 2 进制计数法</p>
+<ul>
+<li>数字有 2 种，0、1.</li>
+<li>从右往左分别表示 1 位、2 位、4 位、8 位</li>
+</ul>
+</li>
+<li>
+<p>分解</p>
+<ul>
+<li>1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
+</ul>
+</li>
+<li>
+<p>基数转换</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*/</span><br><span class="line">12 / 2 = 6  余数 0</span><br><span class="line">6  / 2 = 3  余数 0</span><br><span class="line">3  / 2 = 1  余数 1</span><br><span class="line">1  / 2 = 0  余数 1</span><br><span class="line">/**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*/</span><br><span class="line">1000 / 2 = 500 余数 0</span><br><span class="line">500  / 2 = 250 余数 0</span><br><span class="line">250  / 2 = 125 余数 0</span><br><span class="line">125  / 2 = 62  余数 1</span><br><span class="line">62   / 2 = 31  余数 0</span><br><span class="line">31   / 2 = 15  余数 1</span><br><span class="line">15   / 2 = 7   余数 1</span><br><span class="line">7    / 2 = 3   余数 1</span><br><span class="line">3    / 2 = 1   余数 1</span><br><span class="line">1    / 2 = 0   余数 1</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>计算机中为什么采用 2 进制计数法</p>
+<ul>
+<li>在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
+<li>在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="按位计数法"><a class="markdownIt-Anchor" href="#按位计数法"></a> 按位计数法</h2>
+<ul>
+<li>
+<p>什么是按位计数法</p>
+<ul>
+<li>
+<p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p>
+</li>
+<li>
+<p>N 进制计数法:</p>
+<ul>
+<li>使用数字有 0、1、2、3…、N-1,共 N 种</li>
+<li>从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li>
+<li>例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>不按位计数法的罗马数字</p>
+<ul>
+<li>没有数位，只表示数字本身</li>
+<li>没有 0</li>
+<li>使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li>
+<li>并排的数字加起来，就是所表示的数</li>
+<li>III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li>
+<li>IV(4) 减法规则表示 5 - 1 = 4</li>
+</ul>
+</li>
+</ul>
+<p>##指数法则</p>
+<ul>
+<li>
+<p>10 的 0 次方是什么？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10³ = 1000</span><br><span class="line">10² = 100</span><br><span class="line">10¹ = 10</span><br><span class="line">10º = ？</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p>
+</li>
+<li>
+<p>规则的扩展</p>
+<ul>
+<li>指数法则表达式: N ** a + N ** b = N ** (a + b)</li>
+</ul>
+</li>
+</ul>
+<h2 id="0-所起的作用"><a class="markdownIt-Anchor" href="#0-所起的作用"></a> 0 所起的作用</h2>
+<ul>
+<li>
+<p>0 的作用: 占位</p>
+<ul>
+<li>2503 如果没有了 0 就变成了 253</li>
+</ul>
+</li>
+</ul>
+<h2 id="人类的极限和构造的发现"><a class="markdownIt-Anchor" href="#人类的极限和构造的发现"></a> 人类的极限和构造的发现</h2>
+<ul>
+<li>
+<p>重温历史进程</p>
+<ul>
+<li><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li>
+<li><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li>
+<li><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li>
+<li><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li>
+<li><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li>
+<li><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li>
+</ul>
+</li>
+</ul>
+]]></content>
       <categories>
-        <category>工作</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
+        <tag>计数法</tag>
+        <tag>进制</tag>
       </tags>
   </entry>
   <entry>
@@ -1972,49 +1926,18 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>安全风险评估</title>
-    <url>//*/2576489939.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
-<span id="more"></span>
-<ul>
-<li>
-<p>适用范围: 工人、工厂、设施、设备。</p>
-<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
-<p>采集数据:</p>
-<ul>
-<li>视频监控</li>
-<li>机械设备状态</li>
-<li>化学物质 （有害物质…）</li>
-<li>厂区环境（温湿度）</li>
-<li>工人 （行为）</li>
-<li>等…系列影响安全风险的重要指标数据</li>
-</ul>
-</li>
-</ul>
-<h2 id="检测"><a class="markdownIt-Anchor" href="#检测"></a> 检测</h2>
-<ul>
-<li>
-<p>适用范围: 生产过程中的环节检测。</p>
-<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
-<p>…</p>
-</li>
-</ul>
-<h2 id="决策"><a class="markdownIt-Anchor" href="#决策"></a> 决策</h2>
-<ul>
-<li>
-<p>适用范围: 辅助决策</p>
-<p>通过以上结果知道生产过程…</p>
-</li>
-</ul>
-]]></content>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>安全</tag>
-        <tag>检测</tag>
-        <tag>策略</tag>
-        <tag>预测</tag>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2077,68 +2000,49 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>我们不像诗歌</title>
-    <url>//*/340466787.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p> --才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>打造自己的产品 1</title>
-    <url>//*/1000976984.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br>
-–《小王子》</p>
-</blockquote>
+    <title>安全风险评估</title>
+    <url>//*/2576489939.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
 <span id="more"></span>
-<h2 id="0-念头"><a class="markdownIt-Anchor" href="#0-念头"></a> 0. 念头</h2>
-<p>距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
-<h2 id="1-失眠"><a class="markdownIt-Anchor" href="#1-失眠"></a> 1. 失眠</h2>
-<p>现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
-<h2 id="10-性格"><a class="markdownIt-Anchor" href="#10-性格"></a> 10. 性格</h2>
-<p>我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
-<blockquote>
-<p>“往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。”</p>
-</blockquote>
-<h2 id="11-计划"><a class="markdownIt-Anchor" href="#11-计划"></a> 11. 计划</h2>
-<p>借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
-<h2 id="100-技术选型"><a class="markdownIt-Anchor" href="#100-技术选型"></a> 100. 技术选型</h2>
 <ul>
-<li>后端: <strong><s>Rails Api only</s></strong> <strong>Rails Graphql-Ruby</strong></li>
-<li>app: <strong><s>uni-app</s></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
-<li>web: <strong>React</strong>、<strong>umijs</strong></li>
-<li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
-<li>搜索: <strong>EleasticSearch</strong></li>
-<li>队列: <strong>Sidekiq</strong></li>
+<li>
+<p>适用范围: 工人、工厂、设施、设备。</p>
+<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
+<p>采集数据:</p>
+<ul>
+<li>视频监控</li>
+<li>机械设备状态</li>
+<li>化学物质 （有害物质…）</li>
+<li>厂区环境（温湿度）</li>
+<li>工人 （行为）</li>
+<li>等…系列影响安全风险的重要指标数据</li>
 </ul>
-<h2 id="101-产品"><a class="markdownIt-Anchor" href="#101-产品"></a> 101. 产品</h2>
+</li>
+</ul>
+<h2 id="检测"><a class="markdownIt-Anchor" href="#检测"></a> 检测</h2>
 <ul>
-<li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li>
-<li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li>
-<li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li>
+<li>
+<p>适用范围: 生产过程中的环节检测。</p>
+<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
+<p>…</p>
+</li>
+</ul>
+<h2 id="决策"><a class="markdownIt-Anchor" href="#决策"></a> 决策</h2>
+<ul>
+<li>
+<p>适用范围: 辅助决策</p>
+<p>通过以上结果知道生产过程…</p>
+</li>
 </ul>
 ]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>创业</tag>
-        <tag>社群</tag>
-        <tag>电商</tag>
-        <tag>墨刀</tag>
-        <tag>github</tag>
-        <tag>小程序</tag>
+        <tag>安全</tag>
+        <tag>检测</tag>
+        <tag>策略</tag>
+        <tag>预测</tag>
       </tags>
   </entry>
   <entry>
@@ -2191,37 +2095,157 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>工作日报汇总</title>
-    <url>//*/1ea1f1d4.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码查看内容</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <title>我们不像诗歌</title>
+    <url>//*/340466787.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p> --才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建maven私库</title>
+    <url>//*/1406322052.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
+<span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
+修改密码后 admin.password自动删除</p>
+<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
+<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
+<p>develop =&gt; nx-all</p>
+<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
+<p>developer =&gt; develop</p>
+<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
+<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>工作汇报</tag>
+        <tag>java</tag>
+        <tag>docker</tag>
+        <tag>maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>打造自己的产品 1</title>
+    <url>//*/1000976984.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br>
+–《小王子》</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="0-念头"><a class="markdownIt-Anchor" href="#0-念头"></a> 0. 念头</h2>
+<p>距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
+<h2 id="1-失眠"><a class="markdownIt-Anchor" href="#1-失眠"></a> 1. 失眠</h2>
+<p>现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
+<h2 id="10-性格"><a class="markdownIt-Anchor" href="#10-性格"></a> 10. 性格</h2>
+<p>我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
+<blockquote>
+<p>“往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。”</p>
+</blockquote>
+<h2 id="11-计划"><a class="markdownIt-Anchor" href="#11-计划"></a> 11. 计划</h2>
+<p>借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
+<h2 id="100-技术选型"><a class="markdownIt-Anchor" href="#100-技术选型"></a> 100. 技术选型</h2>
+<ul>
+<li>后端: <strong><s>Rails Api only</s></strong> <strong>Rails Graphql-Ruby</strong></li>
+<li>app: <strong><s>uni-app</s></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</li>
+<li>web: <strong>React</strong>、<strong>umijs</strong></li>
+<li>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></li>
+<li>搜索: <strong>EleasticSearch</strong></li>
+<li>队列: <strong>Sidekiq</strong></li>
+</ul>
+<h2 id="101-产品"><a class="markdownIt-Anchor" href="#101-产品"></a> 101. 产品</h2>
+<ul>
+<li>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</li>
+<li>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</li>
+<li>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>创业</tag>
+        <tag>社群</tag>
+        <tag>电商</tag>
+        <tag>墨刀</tag>
+        <tag>github</tag>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>炝锅面</title>
+    <url>//*/b2113df8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
+<span id="more"></span>
+<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
+<ul>
+<li>干面条</li>
+<li>番茄</li>
+<li>梅花肉</li>
+<li>大葱</li>
+<li>白菜</li>
+<li>姜</li>
+<li>干辣椒</li>
+<li>花椒</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul>
+<li>花生油 15ml</li>
+<li>盐 5g</li>
+<li>味精 5g</li>
+<li>鸡精 5g</li>
+<li>生抽 5g</li>
+<li>十三香 2g</li>
+<li>香油 5ml</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul>
+<li>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</li>
+<li>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</li>
+<li>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</li>
+<li>放入番茄翻炒出汁后放入白菜翻炒；</li>
+<li>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</li>
+<li>水开放入干面条；（自己估算食用的量）</li>
+<li>煮至2分钟后，加入鸡精、味精；</li>
+<li>出锅前放入少许香油，味道更佳；</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>美食</tag>
+        <tag>河南</tag>
       </tags>
   </entry>
   <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-KYHkcJxX" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-jFbQSYsI" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-KYHkcJxX"),
+            element: document.getElementById("aplayer-jFbQSYsI"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2264,94 +2288,75 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>通用excel导入设计</title>
-    <url>//*/7178be5f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2>
-<ol>
-<li>上传excel按需写入字段；</li>
-<li>覆盖更新数据；</li>
-</ol>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
 <span id="more"></span>
-<h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2>
-<pre class="mermaid">sequenceDiagram
-excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
-handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
-execute ->> insert: 写入数据库</pre>
-<h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2>
-<ol>
-<li>insert into  table ()  select ‘’ from dual where not exsits ()</li>
-<li>insert ignore into id={IDGenerrate.gernxxx}</li>
-<li>Insert into on dupli   update  xx=values()</li>
-</ol>
-<p>Sql:</p>
-<ol>
-<li>
-<p>select id from table where dupKeys = ‘’</p>
-</li>
-<li>
-<p>insert ignore into  values (id)</p>
-</li>
-<li>
-<p>ignore :  insert into  table ()  select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p>
-</li>
-<li>
-<p>Insert into table ()  select ‘x’,‘id’ from dual  on dupli   update  xx=values()</p>
-</li>
-</ol>
-<pre class="mermaid">classDiagram
-class Field{
-		Intger index 索引
-		String name  字段名
-		String type  字段类型
-		Object value  字段值
-		String exp 校验表达式
-}
-
-class Record{
-		String tableName 表名
-		List fields 字段
-}
-
-class ModeEnum{
-	INSERT("insert") 写入
-	IGNORE("ignore") 忽略重复数据
-	REPLACE("replace") 更新重复数据
-}
-
-class ExcelUtil{
-	+File file excel
-	+List:String fields 字段
-  +String tableName 数据表名
-  +Integer skip 跳过行
-  +ModeEnum mode 写入方式
-  +List:String dupKeys 用于校验重复的字段
-  +RecordHandler recordHandler 数据行处理
-	-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入
-	-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出
-}
-
-class RecordHandler{
-	-read(Record) 读取行
-}
-
-ExcelUtil --> ModeEnum
-ExcelUtil --> Field
-ExcelUtil --> Record
-ExcelUtil --> RecordHandler</pre>
+<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
+<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
+<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
 ]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>mysql</tag>
-        <tag>jdbc</tag>
-        <tag>easyexcel</tag>
-        <tag>excel</tag>
-        <tag>import</tag>
-        <tag>export</tag>
-        <tag>replace</tag>
-        <tag>ignore</tag>
-        <tag>insert</tag>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>芝麻叶糊涂面</title>
+    <url>//*/1d180e51.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
+<span id="more"></span>
+<h1 id="食料"><a class="markdownIt-Anchor" href="#食料"></a> 食料</h1>
+<ul>
+<li>芝麻叶</li>
+<li>豆腐丁</li>
+<li>韭菜</li>
+<li>小香芹</li>
+<li>面粉</li>
+<li>葱</li>
+<li>蒜</li>
+<li>干辣椒</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul>
+<li>花生油 25ml</li>
+<li>盐 5g</li>
+<li>味精 5g</li>
+<li>鸡精 5g</li>
+<li>十三香 2g</li>
+<li>香油 5ml</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul>
+<li>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</li>
+<li>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</li>
+<li>豆腐切丁放入花生油煎至焦香；</li>
+<li>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</li>
+<li>热油放入葱、蒜、干辣椒炒香；</li>
+<li>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</li>
+<li>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</li>
+<li>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>美食</tag>
+        <tag>河南</tag>
+        <tag>芝麻叶</tag>
+        <tag>面条</tag>
+        <tag>糊涂</tag>
       </tags>
   </entry>
   <entry>
@@ -2614,6 +2619,119 @@ a --> c1 & f1 & e1 & b1</pre>
       </tags>
   </entry>
   <entry>
+    <title>通用excel导入设计</title>
+    <url>//*/7178be5f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2>
+<ol>
+<li>上传excel按需写入字段；</li>
+<li>覆盖更新数据；</li>
+</ol>
+<span id="more"></span>
+<h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2>
+<pre class="mermaid">sequenceDiagram
+excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
+handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
+execute ->> insert: 写入数据库</pre>
+<h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2>
+<ol>
+<li>insert into  table ()  select ‘’ from dual where not exsits ()</li>
+<li>insert ignore into id={IDGenerrate.gernxxx}</li>
+<li>Insert into on dupli   update  xx=values()</li>
+</ol>
+<p>Sql:</p>
+<ol>
+<li>
+<p>select id from table where dupKeys = ‘’</p>
+</li>
+<li>
+<p>insert ignore into  values (id)</p>
+</li>
+<li>
+<p>ignore :  insert into  table ()  select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p>
+</li>
+<li>
+<p>Insert into table ()  select ‘x’,‘id’ from dual  on dupli   update  xx=values()</p>
+</li>
+</ol>
+<pre class="mermaid">classDiagram
+class Field{
+		Intger index 索引
+		String name  字段名
+		String type  字段类型
+		Object value  字段值
+		String exp 校验表达式
+}
+
+class Record{
+		String tableName 表名
+		List fields 字段
+}
+
+class ModeEnum{
+	INSERT("insert") 写入
+	IGNORE("ignore") 忽略重复数据
+	REPLACE("replace") 更新重复数据
+}
+
+class ExcelUtil{
+	+File file excel
+	+List:String fields 字段
+  +String tableName 数据表名
+  +Integer skip 跳过行
+  +ModeEnum mode 写入方式
+  +List:String dupKeys 用于校验重复的字段
+  +RecordHandler recordHandler 数据行处理
+	-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入
+	-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出
+}
+
+class RecordHandler{
+	-read(Record) 读取行
+}
+
+ExcelUtil --> ModeEnum
+ExcelUtil --> Field
+ExcelUtil --> Record
+ExcelUtil --> RecordHandler</pre>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>jdbc</tag>
+        <tag>easyexcel</tag>
+        <tag>excel</tag>
+        <tag>import</tag>
+        <tag>export</tag>
+        <tag>replace</tag>
+        <tag>ignore</tag>
+        <tag>insert</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工作日报汇总</title>
+    <url>//*/1ea1f1d4.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码查看内容</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作汇报</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>鲁迅先生写道: 父母存在的意义</title>
     <url>//*/2375039249.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -2630,41 +2748,55 @@ a --> c1 & f1 & e1 & b1</pre>
       </tags>
   </entry>
   <entry>
-    <title>炝锅面</title>
-    <url>//*/b2113df8.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
+    <title>麻辣炒虾尾</title>
+    <url>//*/9ddcf808.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
 <span id="more"></span>
 <h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
 <ul>
-<li>干面条</li>
-<li>番茄</li>
-<li>梅花肉</li>
-<li>大葱</li>
-<li>白菜</li>
-<li>姜</li>
-<li>干辣椒</li>
-<li>花椒</li>
+<li>
+<p>小龙虾（冻虾尾）</p>
+</li>
+<li>
+<p>大葱</p>
+</li>
+<li>
+<p>姜</p>
+</li>
+<li>
+<p>蒜</p>
+</li>
+<li>
+<p>八角</p>
+</li>
+<li>
+<p>花椒</p>
+</li>
+<li>
+<p>干辣椒</p>
+</li>
+<li>
+<p>啤酒</p>
+</li>
 </ul>
 <h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
 <ul>
-<li>花生油 15ml</li>
+<li>花生油 30ml</li>
+<li>郫县豆瓣酱 10ml</li>
 <li>盐 5g</li>
 <li>味精 5g</li>
 <li>鸡精 5g</li>
 <li>生抽 5g</li>
-<li>十三香 2g</li>
-<li>香油 5ml</li>
+<li>蚝油 5ml</li>
 </ul>
 <h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
 <ul>
-<li>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</li>
-<li>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</li>
-<li>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</li>
-<li>放入番茄翻炒出汁后放入白菜翻炒；</li>
-<li>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</li>
-<li>水开放入干面条；（自己估算食用的量）</li>
-<li>煮至2分钟后，加入鸡精、味精；</li>
-<li>出锅前放入少许香油，味道更佳；</li>
+<li>清水清洗小龙虾（冻虾尾），起锅烧油炸4分钟；</li>
+<li>放入蒜末翻炒，再放入大葱、姜片、豆瓣酱；</li>
+<li>放入八角、花椒、干辣椒，继续翻炒；</li>
+<li>放入盐、味精、鸡精、生抽、蚝油调味；</li>
+<li>炒香后加入2罐啤酒，煮20分钟；</li>
+<li>最后收汁后即可盛出食用；</li>
 </ul>
 ]]></content>
       <categories>
@@ -2672,55 +2804,8 @@ a --> c1 & f1 & e1 & b1</pre>
       </categories>
       <tags>
         <tag>美食</tag>
-        <tag>河南</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>芝麻叶糊涂面</title>
-    <url>//*/1d180e51.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
-<span id="more"></span>
-<h1 id="食料"><a class="markdownIt-Anchor" href="#食料"></a> 食料</h1>
-<ul>
-<li>芝麻叶</li>
-<li>豆腐丁</li>
-<li>韭菜</li>
-<li>小香芹</li>
-<li>面粉</li>
-<li>葱</li>
-<li>蒜</li>
-<li>干辣椒</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul>
-<li>花生油 25ml</li>
-<li>盐 5g</li>
-<li>味精 5g</li>
-<li>鸡精 5g</li>
-<li>十三香 2g</li>
-<li>香油 5ml</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul>
-<li>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</li>
-<li>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</li>
-<li>豆腐切丁放入花生油煎至焦香；</li>
-<li>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</li>
-<li>热油放入葱、蒜、干辣椒炒香；</li>
-<li>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</li>
-<li>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</li>
-<li>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>河南</tag>
-        <tag>芝麻叶</tag>
-        <tag>面条</tag>
-        <tag>糊涂</tag>
+        <tag>虾尾</tag>
+        <tag>麻辣</tag>
       </tags>
   </entry>
   <entry>
@@ -3045,91 +3130,6 @@ a --> c1 & f1 & e1 & b1</pre>
         <tag>机器学习</tag>
         <tag>ocr</tag>
         <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>麻辣炒虾尾</title>
-    <url>//*/9ddcf808.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
-<span id="more"></span>
-<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
-<ul>
-<li>
-<p>小龙虾（冻虾尾）</p>
-</li>
-<li>
-<p>大葱</p>
-</li>
-<li>
-<p>姜</p>
-</li>
-<li>
-<p>蒜</p>
-</li>
-<li>
-<p>八角</p>
-</li>
-<li>
-<p>花椒</p>
-</li>
-<li>
-<p>干辣椒</p>
-</li>
-<li>
-<p>啤酒</p>
-</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul>
-<li>花生油 30ml</li>
-<li>郫县豆瓣酱 10ml</li>
-<li>盐 5g</li>
-<li>味精 5g</li>
-<li>鸡精 5g</li>
-<li>生抽 5g</li>
-<li>蚝油 5ml</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul>
-<li>清水清洗小龙虾（冻虾尾），起锅烧油炸4分钟；</li>
-<li>放入蒜末翻炒，再放入大葱、姜片、豆瓣酱；</li>
-<li>放入八角、花椒、干辣椒，继续翻炒；</li>
-<li>放入盐、味精、鸡精、生抽、蚝油调味；</li>
-<li>炒香后加入2罐啤酒，煮20分钟；</li>
-<li>最后收汁后即可盛出食用；</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>虾尾</tag>
-        <tag>麻辣</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
-<span id="more"></span>
-<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
-<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
-<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
       </tags>
   </entry>
 </search>
