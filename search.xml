@@ -76,6 +76,121 @@
       </tags>
   </entry>
   <entry>
+    <title>1. 低代码</title>
+    <url>//*/2967963195.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
+<span id="more"></span>
+<h2><a id="0_11"></a>0.技术路线</h2>
+<table>
+<thead>
+<tr>
+<th>服务端</th>
+<th>前端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Java</td>
+<td>react</td>
+</tr>
+<tr>
+<td>springboot</td>
+<td>ant-design</td>
+</tr>
+<tr>
+<td>shenyu</td>
+<td>formily</td>
+</tr>
+<tr>
+<td>redis</td>
+<td>Form-render</td>
+</tr>
+<tr>
+<td>mysql</td>
+<td>Designable</td>
+</tr>
+<tr>
+<td>magic-api</td>
+<td></td>
+</tr>
+<tr>
+<td>dataway</td>
+<td></td>
+</tr>
+<tr>
+<td>es(全文检索)</td>
+<td></td>
+</tr>
+<tr>
+<td>flowable</td>
+<td></td>
+</tr>
+<tr>
+<td>Paddle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2><a id="1_26"></a>1.功能</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统权限</td>
+<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
+</tr>
+<tr>
+<td>组织机构</td>
+<td>行政区域、机构、部门、职位、人员…</td>
+</tr>
+<tr>
+<td>流程引擎</td>
+<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
+</tr>
+<tr>
+<td>开发者工具</td>
+<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
+</tr>
+<tr>
+<td>页面设计器</td>
+<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="2_40"></a>2.介绍</h2>
+<h5><a id="_44"></a>系统</h5>
+<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
+<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
+<h4><a id="_50"></a>工作流</h4>
+<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
+<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
+<h4><a id="_58"></a>开发者</h4>
+<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
+<h4><a id="_62"></a>页面设计</h4>
+<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
+<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
+<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+        <tag>flowable</tag>
+        <tag>bpmn</tag>
+        <tag>lowcode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一篇博客</title>
     <url>//*/4278564287.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
@@ -515,6 +630,34 @@
         <tag>篮球</tag>
         <tag>羽毛球</tag>
         <tag>带孩子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序员数学1</title>
+    <url>//*/752254673.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="_1"></a>学习列表:</h2>
+<span id="more"></span>
+<h3><a id="2__4"></a>2 进制:</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2503</span><br><span class="line">1251  余  1  ==&gt; 1</span><br><span class="line">625   余  1  ==&gt; 1</span><br><span class="line">312   余  1  ==&gt; 1</span><br><span class="line"></span><br><span class="line">156   余  0  ==&gt; 0</span><br><span class="line">78    余  0  ==&gt; 0</span><br><span class="line">39    余  0  ==&gt; 0</span><br><span class="line"></span><br><span class="line">19    余  1  ==&gt; 1</span><br><span class="line">9     余  1  ==&gt; 1</span><br><span class="line">4     余  1  ==&gt; 1</span><br><span class="line"></span><br><span class="line">2     余  0  ==&gt; 0</span><br><span class="line">1     余  0  ==&gt; 0</span><br><span class="line">0     余  1  ==&gt; 1</span><br><span class="line"></span><br><span class="line">111 000 111 001</span><br></pre></td></tr></table></figure>
+<h3><a id="_8"></a>指数:</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10 ** 3 = 1000</span><br><span class="line">10 ** 2 = 100 	 (1000 * 1/10)</span><br><span class="line">10 ** 1 = 10  	 (100 * 1/10)</span><br><span class="line">10 ** 0 = ？ 	 (10 * 1/10)</span><br><span class="line">10 ** -1 = (1/10)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>指数每减 1，数字就变为原来的十分之一。</p>
+</blockquote>
+<h2><a id="_14"></a>指数法则:</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">N ** a + N ** b = N ** (a + b)      N &gt; 0</span><br></pre></td></tr></table></figure>
+<h2><a id="0__20"></a>0 所起的作用:</h2>
+<h3><a id="0___22"></a>0 的作用: 占位</h3>
+<blockquote>
+<p>2503 中 0 如果省略，那就变成 253.数值放生了变化，所以 0 不能省略。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>程序员</tag>
       </tags>
   </entry>
   <entry>
@@ -961,6 +1104,265 @@
       </tags>
   </entry>
   <entry>
+    <title>4月份wbs</title>
+    <url>//*/c2cb16de.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="_1"></a>项目一览</h2>
+<span id="more"></span>
+<pre class="mermaid">gantt
+title 项目一览
+dateFormat YYYY-MM-DD
+excludes weekends
+section [产品研发]
+[事件系统升级研发] :a1, 2023-04-03,2023-04-14
+[excel导入/导出封装] :a2, 2023-04-10,2023-04-14
+section [小学生学习报]
+[第一批需求研发] :b2,2023-04-04,6d
+section [事前管控]
+[4月份需求迭代] :c2,2023-04-07,2023-04-25
+section [光灿售后]
+[需求调研] :d2,2023-04-09,2023-04-12
+section [铁塔六费稽核]
+[线上bug修改] :e1,2023-04-09,2023-04-13
+section [铁塔代维资源核查]
+[二阶段需求] :f2,2023-03-25,2023-04-13</pre>
+<pre class="mermaid">gantt
+title 人员
+dateFormat YYYY-MM-DD
+excludes weekends
+section [产品研发]
+[事件系统升级研发] :active, a1, 2023-04-03,2023-04-14
+[excel导入/导出封装] :a2, 2023-04-10,2023-04-14
+section [小学生学习报]
+[第一批需求研发] :active,b2,2023-04-04,6d
+section [事前管控]
+[4月份需求迭代] :active, c2,2023-04-07,2023-04-25
+section [光灿售后]
+[需求调研] :d2,2023-04-09,2023-04-12
+section [铁塔六费稽核]
+[线上bug修改] :e1,2023-04-09,2023-04-13
+section [铁塔代维资源核查]
+[二阶段需求] :active,f2,2023-03-25,2023-04-13</pre>
+<pre class="mermaid">gantt
+    dateFormat  YYYY-MM-DD
+    title       人员分布
+    excludes    weekends
+ section 【陈曦】
+ 	[小学生学习报][第一批需求研发] :a2,2023-04-07,2023-04-12
+ section 【弓远】
+ 	[代维资源核查] :active,a1,2023-04-07,2023-04-13
+ section 【杨波】
+ 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
+ 	[光灿售后][需求调研] :active,a1,2023-04-10,2023-04-12
+ section 【连建锋】
+ 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
+ section 【张道书】
+ 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
+ section 【李剑威】
+ 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
+ section 【张豪豪】
+ 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
+ section 【程双】
+ 	[学习报][第一批需求][研发] :active,a1,2023-04-07,2023-04-12
+ section 【马国岭】
+ 	[代维资源核查] :active,a1,2023-04-07,2023-04-13
+ section 【刘欢】
+ 	[学习报][第一批需求][测试] :active,a1,2023-04-07,2023-04-12
+ section 【朱云飞】
+ 	[代维资源核查] :active,a1,2023-04-10,2023-04-13
+ section 【吴要权】
+ 	[产品研发][事件系统升级] :active,a1,2023-04-07,2023-04-14
+ 	[产品研发][excel导入、导出] :a1,2023-04-10,2023-04-14</pre>
+<pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+a("项目整体情况")
+subgraph "[产品研发]截止:  2023-04-14"
+	b1("负责人: 吴要权")
+  b1 --> b2("事件系统升级，
+  					传统建表,动态配置接口开发模式; - testing")
+  b1 --> b3("excel导入、导出通用封装 - 导入待测试")
+end
+subgraph "[小学生学习报]截止: 2023-04-12"
+  c1("负责人: 陈曦")
+  c1 --> c2("第一批需求变更
+        开发、测试、发布  --已发布")
+  c2 --> c3("程双")
+  c2 --> c4("刘欢")
+  c2 --> c5("连建锋")
+end
+
+subgraph "[事前管控系统]截止: 2023-04-25"
+  d1("负责人: 连建锋")
+  d1 --> d2("4月份需求分析
+        开发、测试、发布")
+  d2 --> d3("杨波")
+  d2 --> d4("张道书")
+  d2 --> d5("李剑威")
+  d2 --> d6("张豪豪")
+  d2 --> d7("马国岭")
+end
+
+subgraph "[光灿售后系统]截止: 2023-04-12"
+  e1("负责人: 杨波")
+  e1 --> e2("12日之前和客户约定时间
+              确定售后流程和项目立项")
+  e2 --> e3("弓远")
+  e2 --> e4("陈曦")
+  e1 --> e5("12日调研完和客户最终确定方案--")
+end
+
+
+subgraph "[铁塔六费稽核]截止: 2023-04-13"
+  f1("负责人: 弓远")
+  f1 --> f2("1.审批页面附件预览问题；
+             2. 3月份问题修复；
+             以上问题开发、测试、并发布")
+  f2 --> f3("程双")
+  f2 --> f4("连建锋")
+  f2 --> f5("马国岭")
+end
+
+
+subgraph "[铁塔代维资源核查]截止: 2023-04-13"
+  g1("负责人: 弓远")
+  g1 --> g2("代维资源二阶段需求
+              测试、并发布；
+              视频播放和多状态筛选 待解决")
+  g2 --> g3("马国岭")
+  g2 --> g4("朱云飞")
+  g2 --> g5("尚雨鹏")
+end
+
+
+a --> b1 & c1 & d1 & e1 & f1 & g1</pre>
+<pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+a("项目整体情况")
+subgraph "[小学生学习报]截止: 2023-04-25"
+  c1("负责人: 陈曦")
+  c1 --> c6("第二批需求变更
+        开发、测试、发布 -- 2023-04-25")
+  c6 --> c7("程双")
+  c6 --> c8("刘欢")
+end
+
+subgraph "[事前管控系统]截止: 2023-04-25"
+  d1("负责人: 连建锋")
+  d1 --> d2("4月份需求分析
+        开发、测试、发布
+         六费稽核需要建锋解决问题
+         进度不理想
+		---------截止04.25----------
+
+		 -------------截止04.27---------------
+			sit保持测试
+     问题列表收集
+     dev -> prod 数据同步，代码部署；
+     -------------截止04.27--------------
+
+
+ ")
+  d2 --> d4("张道书")
+  d2 --> d7("马国岭")
+end
+
+subgraph "[铁塔六费稽核]截止: 2023-04-13"
+  f1("负责人: 弓远")
+  f1 --> f2("1.审批页面附件预览问题；
+             2. 3月份问题修复；
+             以上问题开发、测试、并发布，
+             处理遗留问题  截止时间待定
+
+      --------截止04.28号------
+			增加 时间区间筛选；
+			定时发起流程；
+      更新无历史数据；
+      一键发起流程； 已测试，待发布；
+       工单pdf预览，图片放大缩小；
+       --------截止04.28号----------
+
+       根据当前角色缩小区域范围；
+
+       优化点: 1.excel审批支持 通过、驳回。
+
+       增加 纠纷台账 支持excel导入；
+")
+  f2 --> f3("程双")
+  f2 --> f4("连建锋")
+  f2 --> f5("马国岭")
+end
+
+
+subgraph "[铁塔代维资源核查]截止: 2023-04-13 "
+  g1("负责人: 弓远")
+  g1 --> g2("代维资源二阶段需求
+              测试、并发布；
+              视频播放和多状态筛选 待解决，
+              处理遗留问题 截止时间待定
+
+              --------------
+              04-27 bug:
+							1.表头
+
+		列表展示复合表头，导出复合表头；
+    报表管理，支持导出和扫描上传； 技术方案待定，时间待定；
+    ")
+  g2 --> g3("马国岭")
+  g2 --> g4("朱云飞")
+  g2 --> g5("尚雨鹏")
+end
+
+
+a --> c1 & d1  & f1 & g1</pre>
+<pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+a("项目整体情况")
+subgraph "[小学生学习报]"
+  c1("负责人: 陈曦")
+  c1 --> c6("标签功能已发布
+  						消息通知待测试发布")
+  c6 --> c8("刘欢")
+end
+
+
+subgraph "[铁塔六费稽核]截止: 2023-06-16"
+  f1("负责人: 弓远")
+  f1 --> f2("评分 时间待确定
+                费用需求调研确认 06-14进行
+                费用报表 实施 截止06-16号")
+  f2 --> f4("朱云飞")
+  f2 --> f5("马国岭")
+end
+
+
+subgraph "[移动宝冶]截止: 2023-06-21"
+  e1("负责人: 杨波")
+  e1 --> e2("官网和后端工作流")
+  e2 --> e4("张道书")
+  e2 --> e5("杨波")
+end
+
+
+subgraph "[研发需求]截止: "
+  b1("负责人: 吴要权")
+  b1 --> b2("1.铁塔工单、事前导入性能问题
+             2. 工单验证码刷新问题")
+  b2 --> b4("连建锋")
+  b2 --> b5("程双")
+end
+
+
+
+a --> c1 & f1 & e1 & b1</pre>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>wbs</tag>
+        <tag>项目一览</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>29岁,再见！</title>
     <url>//*/1873749776.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -977,152 +1379,11 @@
       </tags>
   </entry>
   <entry>
-    <title>1. 低代码</title>
-    <url>//*/2967963195.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
-<span id="more"></span>
-<h2><a id="0_11"></a>0.技术路线</h2>
-<table>
-<thead>
-<tr>
-<th>服务端</th>
-<th>前端</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java</td>
-<td>react</td>
-</tr>
-<tr>
-<td>springboot</td>
-<td>ant-design</td>
-</tr>
-<tr>
-<td>shenyu</td>
-<td>formily</td>
-</tr>
-<tr>
-<td>redis</td>
-<td>Form-render</td>
-</tr>
-<tr>
-<td>mysql</td>
-<td>Designable</td>
-</tr>
-<tr>
-<td>magic-api</td>
-<td></td>
-</tr>
-<tr>
-<td>dataway</td>
-<td></td>
-</tr>
-<tr>
-<td>es(全文检索)</td>
-<td></td>
-</tr>
-<tr>
-<td>flowable</td>
-<td></td>
-</tr>
-<tr>
-<td>Paddle</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2><a id="1_26"></a>1.功能</h2>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>系统权限</td>
-<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
-</tr>
-<tr>
-<td>组织机构</td>
-<td>行政区域、机构、部门、职位、人员…</td>
-</tr>
-<tr>
-<td>流程引擎</td>
-<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
-</tr>
-<tr>
-<td>开发者工具</td>
-<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
-</tr>
-<tr>
-<td>页面设计器</td>
-<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
-</tr>
-</tbody>
-</table>
-<h2><a id="2_40"></a>2.介绍</h2>
-<h5><a id="_44"></a>系统</h5>
-<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
-<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
-<h4><a id="_50"></a>工作流</h4>
-<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
-<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
-<h4><a id="_58"></a>开发者</h4>
-<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
-<h4><a id="_62"></a>页面设计</h4>
-<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
-<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
-<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-        <tag>flowable</tag>
-        <tag>bpmn</tag>
-        <tag>lowcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序员数学1</title>
-    <url>//*/752254673.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="_1"></a>学习列表:</h2>
-<span id="more"></span>
-<h3><a id="2__4"></a>2 进制:</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2503</span><br><span class="line">1251  余  1  ==&gt; 1</span><br><span class="line">625   余  1  ==&gt; 1</span><br><span class="line">312   余  1  ==&gt; 1</span><br><span class="line"></span><br><span class="line">156   余  0  ==&gt; 0</span><br><span class="line">78    余  0  ==&gt; 0</span><br><span class="line">39    余  0  ==&gt; 0</span><br><span class="line"></span><br><span class="line">19    余  1  ==&gt; 1</span><br><span class="line">9     余  1  ==&gt; 1</span><br><span class="line">4     余  1  ==&gt; 1</span><br><span class="line"></span><br><span class="line">2     余  0  ==&gt; 0</span><br><span class="line">1     余  0  ==&gt; 0</span><br><span class="line">0     余  1  ==&gt; 1</span><br><span class="line"></span><br><span class="line">111 000 111 001</span><br></pre></td></tr></table></figure>
-<h3><a id="_8"></a>指数:</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10 ** 3 = 1000</span><br><span class="line">10 ** 2 = 100 	 (1000 * 1/10)</span><br><span class="line">10 ** 1 = 10  	 (100 * 1/10)</span><br><span class="line">10 ** 0 = ？ 	 (10 * 1/10)</span><br><span class="line">10 ** -1 = (1/10)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>指数每减 1，数字就变为原来的十分之一。</p>
-</blockquote>
-<h2><a id="_14"></a>指数法则:</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">N ** a + N ** b = N ** (a + b)      N &gt; 0</span><br></pre></td></tr></table></figure>
-<h2><a id="0__20"></a>0 所起的作用:</h2>
-<h3><a id="0___22"></a>0 的作用: 占位</h3>
-<blockquote>
-<p>2503 中 0 如果省略，那就变成 253.数值放生了变化，所以 0 不能省略。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-        <tag>程序员</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Reveal.js使用</title>
     <url>//*/6befbd07.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed" style="[object Object]"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
+<br>
+<br>
 <details open>
 <summary><span class="pre-summary">&nbsp;</span><strong>代码:</strong></summary><figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># Index 1</span><br><span class="line">### 我是第一个页面</span><br><span class="line">`js [1-2|3|4]</span><br><span class="line">    let a = 1;</span><br><span class="line">    let b = 2;</span><br><span class="line">    let c = x =&gt; 1 + 2 + x;</span><br><span class="line">    c(3);</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Index 2</span><br><span class="line">### 我是第二个页面</span><br><span class="line"></span><br><span class="line">* 一 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;</span><br><span class="line">* 二 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;2&quot; --&gt;</span><br><span class="line">* 三 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;3&quot; --&gt;</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"># Index 3</span><br><span class="line">### 我是第三个页面</span><br><span class="line">* 一 &lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span><br><span class="line">* 二 &lt;!-- .element: class=&quot;fragment highlight-red&quot; --&gt;</span><br><span class="line">* 三 &lt;!-- .element: class=&quot;fragment fade-out&quot; --&gt;</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"># Index 3.1</span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Index 3.2</span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"># Index 4</span><br><span class="line">### 我是第四个页面</span><br></pre></td></tr></table></figure>
 </details>
@@ -1323,6 +1584,37 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>搭建maven私库</title>
+    <url>//*/1406322052.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="1_docker_maven_2"></a>1. docker 搭建maven私库</h1>
+<span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
+修改密码后 admin.password自动删除</p>
+<h1><a id="2_maven_20"></a>2. 配置maven私库</h1>
+<h4><a id="21_role_22"></a>2.1添加 role</h4>
+<p>develop =&gt; nx-all</p>
+<h5><a id="22__user_26"></a>2.2 添加 user</h5>
+<p>developer =&gt; develop</p>
+<h1><a id="3__34"></a>3. 插件开发环境配置</h1>
+<h4><a id="31_mavensettingxml_36"></a>3.1 maven/setting.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4><a id="32_pomxml_40"></a>3.2 插件项目pom.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5><a id="33_pomxml_46"></a>3.3 项目依赖pom.xml</h5>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>docker</tag>
+        <tag>maven</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mysql &#39;No DataSource Set&#39;解决办法</title>
     <url>//*/202678719.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
@@ -1336,6 +1628,65 @@ section 运维阶段
         <tag>error</tag>
         <tag>jdbc</tag>
         <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql count函数正确使用姿势</title>
+    <url>//*/9f600c63.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
+<span id="more"></span>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(id) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列去重不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="keyword">distinct</span> id) <span class="keyword">from</span> zs_access_log;</span><br></pre></td></tr></table></figure>
+<h1><a id="1__7"></a>1. 背景</h1>
+<p>  生产环境使用 <code>mysql: 8.0.18 Innodb</code>，  <code>mybatis</code>分页查询由两次查询完成，第一次获取总的记录行数，再次获取具体分页数据。<br>
+  以下查询可以看到<code>count</code>是存在性能问题的，接口的响应<code>&gt; 800ms</code>  <code>&lt; 4s</code>，但是该如何优化呢？</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> * from zs_access_log  <span class="built_in">limit</span> 0,10;</span><br><span class="line">10 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1><a id="2_count_14"></a>2. count性能对比</h1>
+<p>​		对比 <code>count</code> 几种使用姿势，在<code>InnoDB</code>和<code>MyISAM</code>引擎的性能对比。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; show engines;</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| Engine             | Support | Comment                                                        | Transactions | XA   | Savepoints |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| FEDERATED          | NO      | Federated MySQL storage engine                                 | NULL         | NULL | NULL       |</span><br><span class="line">| MEMORY             | YES     | Hash based, stored <span class="keyword">in</span> memory, useful <span class="keyword">for</span> temporary tables      | NO           | NO   | NO         |</span><br><span class="line">| InnoDB             | DEFAULT | Supports transactions, row-level locking, and foreign keys     | YES          | YES  | YES        |</span><br><span class="line">| PERFORMANCE_SCHEMA | YES     | Performance Schema                                             | NO           | NO   | NO         |</span><br><span class="line">| MyISAM             | YES     | MyISAM storage engine                                          | NO           | NO   | NO         |</span><br><span class="line">| MRG_MYISAM         | YES     | Collection of identical MyISAM tables                          | NO           | NO   | NO         |</span><br><span class="line">| BLACKHOLE          | YES     | /dev/null storage engine (anything you write to it disappears) | NO           | NO   | NO         |</span><br><span class="line">| CSV                | YES     | CSV storage engine                                             | NO           | NO   | NO         |</span><br><span class="line">| ARCHIVE            | YES     | Archive storage engine                                         | NO           | NO   | NO         |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">9 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<p>​		数据表 <code>zs_access_log</code> 和 <code>zs_access_log_myisam</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> TABLE_NAME , ENGINE from information_schema.tables <span class="built_in">where</span> TABLE_SCHEMA = <span class="string">&#x27;unified-form&#x27;</span> and TABLE_NAME like <span class="string">&#x27;%zs_access%&#x27;</span>;</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| TABLE_NAME           | ENGINE |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| zs_access_log        | InnoDB |</span><br><span class="line">| zs_access_log_myisam | MyISAM |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">2 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h2><a id="21_InnoDB_23"></a>2.1 InnoDB</h2>
+<h3><a id="211_count1_26"></a>2.1.1 count(1)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br></pre></td></tr></table></figure>
+<h3><a id="212_count_29"></a>2.1.2 count(*)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.52 sec)</span><br></pre></td></tr></table></figure>
+<h3><a id="213_countcolumn_33"></a>2.1.3 count(column)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.50 sec)</span><br></pre></td></tr></table></figure>
+<p>​		数据表明以上几种方式查询效率相差无几，为什么会出现这样的问题呢？</p>
+<h2><a id="22_MyISAM_39"></a>2.2 MyISAM</h2>
+<h3><a id="211_count1_41"></a>2.1.1 count(1)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3><a id="212_count_44"></a>2.1.2 count(*)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3><a id="213_countcolumn_48"></a>2.1.3 count(column)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log_myisam;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<p>​		数据表明以上几种方式在<code>InnoDB</code>和<code>MyISAM</code>引擎中，查询效率差别很大。</p>
+<p>​		<code>MyISAM</code>把总行数存在磁盘(<code>information_schema.partitions</code>)中，<code>count(*)</code>和<code>count(1)</code>的性能会好很多。</p>
+<p>​		<code>InnoDB</code>获取所有数据，并逐行计算总行数，<code>count(*)</code>和<code>count(1)</code>的性能会差很多。`</p>
+<p><a href="https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_count">mysql文档原文</a></p>
+<h1><a id="3__60"></a>3. 性能优化</h1>
+<p>​		在实际开发过程中，业务系统的数据表均使用<code>InnoDB</code>支持事务。</p>
+<p>​		该如何优化<code>InnoDB</code>中<code>count</code>的性能？</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>使用<code>redis</code>记录数据行数</p>
+</li>
+<li class="lvl-2">
+<p>使用除了<code>主键</code>以外索引列</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.54 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> count(action) from zs_access_log;</span><br><span class="line">+---------------+</span><br><span class="line">| count(action) |</span><br><span class="line">+---------------+</span><br><span class="line">|         37485 |</span><br><span class="line">+---------------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.01 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>count</tag>
+        <tag>聚合函数</tag>
+        <tag>InnoDB</tag>
+        <tag>MyISAM</tag>
       </tags>
   </entry>
   <entry>
@@ -1929,169 +2280,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>搭建maven私库</title>
-    <url>//*/1406322052.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="1_docker_maven_2"></a>1. docker 搭建maven私库</h1>
-<span id="more"></span>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
-<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
-修改密码后 admin.password自动删除</p>
-<h1><a id="2_maven_20"></a>2. 配置maven私库</h1>
-<h4><a id="21_role_22"></a>2.1添加 role</h4>
-<p>develop =&gt; nx-all</p>
-<h5><a id="22__user_26"></a>2.2 添加 user</h5>
-<p>developer =&gt; develop</p>
-<h1><a id="3__34"></a>3. 插件开发环境配置</h1>
-<h4><a id="31_mavensettingxml_36"></a>3.1 maven/setting.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4><a id="32_pomxml_40"></a>3.2 插件项目pom.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5><a id="33_pomxml_46"></a>3.3 项目依赖pom.xml</h5>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>docker</tag>
-        <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql count函数正确使用姿势</title>
-    <url>//*/9f600c63.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
-<span id="more"></span>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(id) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列去重不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="keyword">distinct</span> id) <span class="keyword">from</span> zs_access_log;</span><br></pre></td></tr></table></figure>
-<h1><a id="1__7"></a>1. 背景</h1>
-<p>  生产环境使用 <code>mysql: 8.0.18 Innodb</code>，  <code>mybatis</code>分页查询由两次查询完成，第一次获取总的记录行数，再次获取具体分页数据。<br>
-  以下查询可以看到<code>count</code>是存在性能问题的，接口的响应<code>&gt; 800ms</code>  <code>&lt; 4s</code>，但是该如何优化呢？</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> * from zs_access_log  <span class="built_in">limit</span> 0,10;</span><br><span class="line">10 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1><a id="2_count_14"></a>2. count性能对比</h1>
-<p>​		对比 <code>count</code> 几种使用姿势，在<code>InnoDB</code>和<code>MyISAM</code>引擎的性能对比。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; show engines;</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| Engine             | Support | Comment                                                        | Transactions | XA   | Savepoints |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| FEDERATED          | NO      | Federated MySQL storage engine                                 | NULL         | NULL | NULL       |</span><br><span class="line">| MEMORY             | YES     | Hash based, stored <span class="keyword">in</span> memory, useful <span class="keyword">for</span> temporary tables      | NO           | NO   | NO         |</span><br><span class="line">| InnoDB             | DEFAULT | Supports transactions, row-level locking, and foreign keys     | YES          | YES  | YES        |</span><br><span class="line">| PERFORMANCE_SCHEMA | YES     | Performance Schema                                             | NO           | NO   | NO         |</span><br><span class="line">| MyISAM             | YES     | MyISAM storage engine                                          | NO           | NO   | NO         |</span><br><span class="line">| MRG_MYISAM         | YES     | Collection of identical MyISAM tables                          | NO           | NO   | NO         |</span><br><span class="line">| BLACKHOLE          | YES     | /dev/null storage engine (anything you write to it disappears) | NO           | NO   | NO         |</span><br><span class="line">| CSV                | YES     | CSV storage engine                                             | NO           | NO   | NO         |</span><br><span class="line">| ARCHIVE            | YES     | Archive storage engine                                         | NO           | NO   | NO         |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">9 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<p>​		数据表 <code>zs_access_log</code> 和 <code>zs_access_log_myisam</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> TABLE_NAME , ENGINE from information_schema.tables <span class="built_in">where</span> TABLE_SCHEMA = <span class="string">&#x27;unified-form&#x27;</span> and TABLE_NAME like <span class="string">&#x27;%zs_access%&#x27;</span>;</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| TABLE_NAME           | ENGINE |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| zs_access_log        | InnoDB |</span><br><span class="line">| zs_access_log_myisam | MyISAM |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">2 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<h2><a id="21_InnoDB_23"></a>2.1 InnoDB</h2>
-<h3><a id="211_count1_26"></a>2.1.1 count(1)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br></pre></td></tr></table></figure>
-<h3><a id="212_count_29"></a>2.1.2 count(*)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.52 sec)</span><br></pre></td></tr></table></figure>
-<h3><a id="213_countcolumn_33"></a>2.1.3 count(column)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.50 sec)</span><br></pre></td></tr></table></figure>
-<p>​		数据表明以上几种方式查询效率相差无几，为什么会出现这样的问题呢？</p>
-<h2><a id="22_MyISAM_39"></a>2.2 MyISAM</h2>
-<h3><a id="211_count1_41"></a>2.1.1 count(1)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<h3><a id="212_count_44"></a>2.1.2 count(*)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<h3><a id="213_countcolumn_48"></a>2.1.3 count(column)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log_myisam;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<p>​		数据表明以上几种方式在<code>InnoDB</code>和<code>MyISAM</code>引擎中，查询效率差别很大。</p>
-<p>​		<code>MyISAM</code>把总行数存在磁盘(<code>information_schema.partitions</code>)中，<code>count(*)</code>和<code>count(1)</code>的性能会好很多。</p>
-<p>​		<code>InnoDB</code>获取所有数据，并逐行计算总行数，<code>count(*)</code>和<code>count(1)</code>的性能会差很多。`</p>
-<p><a href="https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_count">mysql文档原文</a></p>
-<h1><a id="3__60"></a>3. 性能优化</h1>
-<p>​		在实际开发过程中，业务系统的数据表均使用<code>InnoDB</code>支持事务。</p>
-<p>​		该如何优化<code>InnoDB</code>中<code>count</code>的性能？</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>使用<code>redis</code>记录数据行数</p>
-</li>
-<li class="lvl-2">
-<p>使用除了<code>主键</code>以外索引列</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.54 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> count(action) from zs_access_log;</span><br><span class="line">+---------------+</span><br><span class="line">| count(action) |</span><br><span class="line">+---------------+</span><br><span class="line">|         37485 |</span><br><span class="line">+---------------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.01 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>count</tag>
-        <tag>聚合函数</tag>
-        <tag>InnoDB</tag>
-        <tag>MyISAM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安全风险评估</title>
-    <url>//*/2576489939.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="_3"></a>评估</h2>
-<span id="more"></span>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 工人、工厂、设施、设备。</p>
-<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
-<p>采集数据:</p>
-<ul class="lvl-2">
-<li class="lvl-4">
-<p>视频监控</p>
-</li>
-<li class="lvl-4">
-<p>机械设备状态</p>
-</li>
-<li class="lvl-4">
-<p>化学物质 （有害物质…）</p>
-</li>
-<li class="lvl-4">
-<p>厂区环境（温湿度）</p>
-</li>
-<li class="lvl-4">
-<p>工人 （行为）</p>
-</li>
-<li class="lvl-4">
-<p>等…系列影响安全风险的重要指标数据</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2><a id="_21"></a>检测</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 生产过程中的环节检测。</p>
-<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
-<p>…</p>
-</li>
-</ul>
-<h2><a id="_29"></a>决策</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 辅助决策</p>
-<p>通过以上结果知道生产过程…</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>安全</tag>
-        <tag>检测</tag>
-        <tag>策略</tag>
-        <tag>预测</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>前端定时器</title>
     <url>//*/3423146f.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
@@ -2177,6 +2365,206 @@ section 运维阶段
         <tag>setTimeout</tag>
         <tag>setInterval</tag>
         <tag>requestAnimationFrame</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大盘鸡🐔</title>
+    <url>//*/c43e7c0d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p>
+<span id="more"></span>
+<h1><a id="_7"></a>食材</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>鸡肉</p>
+</li>
+<li class="lvl-2">
+<p>梅花肉</p>
+</li>
+<li class="lvl-2">
+<p>土豆</p>
+</li>
+<li class="lvl-2">
+<p>洋葱</p>
+</li>
+<li class="lvl-2">
+<p>青椒</p>
+</li>
+<li class="lvl-2">
+<p>大葱</p>
+</li>
+<li class="lvl-2">
+<p>姜</p>
+</li>
+<li class="lvl-2">
+<p>蒜</p>
+</li>
+<li class="lvl-2">
+<p>八角</p>
+</li>
+<li class="lvl-2">
+<p>花椒</p>
+</li>
+<li class="lvl-2">
+<p>干辣椒</p>
+</li>
+<li class="lvl-2">
+<p>啤酒</p>
+</li>
+</ul>
+<h1><a id="_24"></a>调味料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>花生油 20ml</p>
+</li>
+<li class="lvl-2">
+<p>郫县豆瓣酱 10ml</p>
+</li>
+<li class="lvl-2">
+<p>盐 5g</p>
+</li>
+<li class="lvl-2">
+<p>鸡精 5g</p>
+</li>
+<li class="lvl-2">
+<p>味精 5g</p>
+</li>
+<li class="lvl-2">
+<p>生抽 5g</p>
+</li>
+<li class="lvl-2">
+<p>蚝油5ml</p>
+</li>
+</ul>
+<h1><a id="_36"></a>操作</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>起锅烧油，放入梅花肉打底炒出油；</p>
+</li>
+<li class="lvl-2">
+<p>放入豆瓣炒出红油，放入八角、花椒、干辣椒；</p>
+</li>
+<li class="lvl-2">
+<p>放入洗干净的鸡肉，炒至肉质紧实；</p>
+</li>
+<li class="lvl-2">
+<p>放入大葱，盐、鸡精、生抽、蚝油；</p>
+</li>
+<li class="lvl-2">
+<p>翻炒2分钟，加入两罐啤酒，炖15分钟；</p>
+</li>
+<li class="lvl-2">
+<p>最后放入土豆、青椒、洋葱，再炖5分钟；</p>
+</li>
+<li class="lvl-2">
+<p>放入味精，搅拌均匀后出锅；</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>大盘鸡</tag>
+        <tag>美食</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安全风险评估</title>
+    <url>//*/2576489939.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="_3"></a>评估</h2>
+<span id="more"></span>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 工人、工厂、设施、设备。</p>
+<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
+<p>采集数据:</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>视频监控</p>
+</li>
+<li class="lvl-4">
+<p>机械设备状态</p>
+</li>
+<li class="lvl-4">
+<p>化学物质 （有害物质…）</p>
+</li>
+<li class="lvl-4">
+<p>厂区环境（温湿度）</p>
+</li>
+<li class="lvl-4">
+<p>工人 （行为）</p>
+</li>
+<li class="lvl-4">
+<p>等…系列影响安全风险的重要指标数据</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a id="_21"></a>检测</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 生产过程中的环节检测。</p>
+<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
+<p>…</p>
+</li>
+</ul>
+<h2><a id="_29"></a>决策</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 辅助决策</p>
+<p>通过以上结果知道生产过程…</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>安全</tag>
+        <tag>检测</tag>
+        <tag>策略</tag>
+        <tag>预测</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工作日报汇总</title>
+    <url>//*/1ea1f1d4.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="3327cf17738e12f81ca2319b0d1322d3b6c78f6db2f46bb2fed26dddd4aa2ba9">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49435f3c20c5c9ad4a3abc0519151de57c95fffff2498a7dc839561d9bfdbb13ac1f23c160b824c88aad51da54bf5cbb1a37ab7cf4d4499cbe50625f4ec8daa7cf79</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作汇报</tag>
       </tags>
   </entry>
   <entry>
@@ -2289,208 +2677,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>大盘鸡🐔</title>
-    <url>//*/c43e7c0d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p>
-<span id="more"></span>
-<h1><a id="_7"></a>食材</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>鸡肉</p>
-</li>
-<li class="lvl-2">
-<p>梅花肉</p>
-</li>
-<li class="lvl-2">
-<p>土豆</p>
-</li>
-<li class="lvl-2">
-<p>洋葱</p>
-</li>
-<li class="lvl-2">
-<p>青椒</p>
-</li>
-<li class="lvl-2">
-<p>大葱</p>
-</li>
-<li class="lvl-2">
-<p>姜</p>
-</li>
-<li class="lvl-2">
-<p>蒜</p>
-</li>
-<li class="lvl-2">
-<p>八角</p>
-</li>
-<li class="lvl-2">
-<p>花椒</p>
-</li>
-<li class="lvl-2">
-<p>干辣椒</p>
-</li>
-<li class="lvl-2">
-<p>啤酒</p>
-</li>
-</ul>
-<h1><a id="_24"></a>调味料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>花生油 20ml</p>
-</li>
-<li class="lvl-2">
-<p>郫县豆瓣酱 10ml</p>
-</li>
-<li class="lvl-2">
-<p>盐 5g</p>
-</li>
-<li class="lvl-2">
-<p>鸡精 5g</p>
-</li>
-<li class="lvl-2">
-<p>味精 5g</p>
-</li>
-<li class="lvl-2">
-<p>生抽 5g</p>
-</li>
-<li class="lvl-2">
-<p>蚝油5ml</p>
-</li>
-</ul>
-<h1><a id="_36"></a>操作</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>起锅烧油，放入梅花肉打底炒出油；</p>
-</li>
-<li class="lvl-2">
-<p>放入豆瓣炒出红油，放入八角、花椒、干辣椒；</p>
-</li>
-<li class="lvl-2">
-<p>放入洗干净的鸡肉，炒至肉质紧实；</p>
-</li>
-<li class="lvl-2">
-<p>放入大葱，盐、鸡精、生抽、蚝油；</p>
-</li>
-<li class="lvl-2">
-<p>翻炒2分钟，加入两罐啤酒，炖15分钟；</p>
-</li>
-<li class="lvl-2">
-<p>最后放入土豆、青椒、洋葱，再炖5分钟；</p>
-</li>
-<li class="lvl-2">
-<p>放入味精，搅拌均匀后出锅；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>大盘鸡</tag>
-        <tag>美食</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工作日报汇总</title>
-    <url>//*/1ea1f1d4.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="3327cf17738e12f81ca2319b0d1322d3b6c78f6db2f46bb2fed26dddd4aa2ba9">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49435f3c20c5c9ad4a3abc0519151de57c95fffff2498a7dc839561d9bfdbb13ac1f23c160b824c88aad51da54bf5cbb1a37ab7cf4d4499cbe50625f4ec8daa7cf79</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>工作汇报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>路</title>
-    <url>//*/3042827788.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-bLDvswhl" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-bLDvswhl"),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            music: {
-              title: "The Lion Sleeps Tonight",
-              author: "The Tokens",
-              url: "/music/The Lion Sleeps Tonight.mp3",
-              pic: "",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-<span id="more"></span>
-<blockquote>
-<p>如果你能在下午四点来，那么在三点的时候，我就会开始感到幸福了。<br>
-                       --《小王子》</p>
-</blockquote>
-<p>  大多时候无法静下心来做好一件事，比如这篇拖了很多天的日志。还有每天早晨起床锻炼身体、按时喝水…</p>
-<!--more-->
-<p>  写这篇日志的想法来自于上周六，早饭后，和老婆商量着带孩子出去感受一下春暖花开，疫情持续了两个月的时间，也让小家伙待在家里两个月，不能见小朋友、不能去游乐场。以至于最近出门以后，小家伙变的很拘束、对外面的世界也很陌生。<br>
-​<br>
-  小家伙已经两岁三个月了，会背很多首唐诗。如果你剩饭剩菜的话，小家伙会说:“谁知盘中餐，粒粒皆辛苦。”。有次晚上和老婆带着小家伙出门散步，刮起一阵风，树上的叶子沙沙响，“夜来风雨声，花落知多少。”</p>
-<p>  一个周六的上午，坐在马桶上，熟练的掏出手机，开始搜索适合踏青的地方，<s>如意湖</s>、<s>森林公园</s>、<s>郑州之林</s>、最后我选了特别冷门的<a href="https://map.baidu.com/poi/%E9%BE%99%E6%B3%89%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/@1264607135.35301,408408639.5094941,21z,87t#panoid=c3596d067083c715f90cad67&amp;panotype=inter&amp;heading=355&amp;pitch=0&amp;l=21&amp;tn=B_NORMAL_MAP&amp;sc=0&amp;newmap=1&amp;shareurl=1&amp;pid=1002890000150427124704361IN&amp;iid=c3596d067083c715f90cad67&amp;psp=%7B%22PanoIndoorPoiModule%22%3A%7B%22uid%22%3A%225b8c96862988758e2fb90853%22%7D%7D">龙泉湿地公园</a> ，然而这并没有结束，跑了将近 30 公里，去到的是一个荒废了的公园。也或者是因为长时间封闭状态，看起来很旧，基本没什么人来。让我满怀期待的出发，最终又满怀失望的回了家。</p>
-<p>  现在是周二的晚上08:20，小家伙下午没睡觉，早早的已经睡下了。我和老婆吃着火锅喝着啤酒，大聊人生。是这三年多以来，为数不多的能够静下心来一起吃饭畅谈人生，我们依然会充满希望.</p>
-<p>  人生难免会走上曲曲折折的道路，但是不要担心，这些路的那头一定会有美丽的风景。</p>
-<p>  路，是人走出来的。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>书</tag>
-        <tag>路</tag>
-        <tag>有趣</tag>
-        <tag>人生</tag>
-        <tag>春天</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0__1"></a>0 云计算</h2>
-<span id="more"></span>
-<h2><a id="1__4"></a>1 雾计算</h2>
-<h2><a id="2__6"></a>2 边缘计算</h2>
-<h3><a id="21__8"></a>2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3><a id="22__18"></a>2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>炝锅面</title>
     <url>//*/b2113df8.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
@@ -2580,6 +2766,173 @@ section 运维阶段
       <tags>
         <tag>美食</tag>
         <tag>河南</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>芝麻叶糊涂面</title>
+    <url>//*/1d180e51.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
+<span id="more"></span>
+<h1><a id="_7"></a>食料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>芝麻叶</p>
+</li>
+<li class="lvl-2">
+<p>豆腐丁</p>
+</li>
+<li class="lvl-2">
+<p>韭菜</p>
+</li>
+<li class="lvl-2">
+<p>小香芹</p>
+</li>
+<li class="lvl-2">
+<p>面粉</p>
+</li>
+<li class="lvl-2">
+<p>葱</p>
+</li>
+<li class="lvl-2">
+<p>蒜</p>
+</li>
+<li class="lvl-2">
+<p>干辣椒</p>
+</li>
+</ul>
+<h1><a id="_18"></a>调味料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>花生油 25ml</p>
+</li>
+<li class="lvl-2">
+<p>盐 5g</p>
+</li>
+<li class="lvl-2">
+<p>味精 5g</p>
+</li>
+<li class="lvl-2">
+<p>鸡精 5g</p>
+</li>
+<li class="lvl-2">
+<p>十三香 2g</p>
+</li>
+<li class="lvl-2">
+<p>香油 5ml</p>
+</li>
+</ul>
+<h1><a id="_27"></a>操作</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</p>
+</li>
+<li class="lvl-2">
+<p>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</p>
+</li>
+<li class="lvl-2">
+<p>豆腐切丁放入花生油煎至焦香；</p>
+</li>
+<li class="lvl-2">
+<p>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</p>
+</li>
+<li class="lvl-2">
+<p>热油放入葱、蒜、干辣椒炒香；</p>
+</li>
+<li class="lvl-2">
+<p>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</p>
+</li>
+<li class="lvl-2">
+<p>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</p>
+</li>
+<li class="lvl-2">
+<p>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>美食</tag>
+        <tag>河南</tag>
+        <tag>芝麻叶</tag>
+        <tag>面条</tag>
+        <tag>糊涂</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>路</title>
+    <url>//*/3042827788.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
+        <div id="aplayer-BymngPDf" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-BymngPDf"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "The Lion Sleeps Tonight",
+              author: "The Tokens",
+              url: "/music/The Lion Sleeps Tonight.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+<span id="more"></span>
+<blockquote>
+<p>如果你能在下午四点来，那么在三点的时候，我就会开始感到幸福了。<br>
+                       --《小王子》</p>
+</blockquote>
+<p>  大多时候无法静下心来做好一件事，比如这篇拖了很多天的日志。还有每天早晨起床锻炼身体、按时喝水…</p>
+<!--more-->
+<p>  写这篇日志的想法来自于上周六，早饭后，和老婆商量着带孩子出去感受一下春暖花开，疫情持续了两个月的时间，也让小家伙待在家里两个月，不能见小朋友、不能去游乐场。以至于最近出门以后，小家伙变的很拘束、对外面的世界也很陌生。<br>
+​<br>
+  小家伙已经两岁三个月了，会背很多首唐诗。如果你剩饭剩菜的话，小家伙会说:“谁知盘中餐，粒粒皆辛苦。”。有次晚上和老婆带着小家伙出门散步，刮起一阵风，树上的叶子沙沙响，“夜来风雨声，花落知多少。”</p>
+<p>  一个周六的上午，坐在马桶上，熟练的掏出手机，开始搜索适合踏青的地方，<s>如意湖</s>、<s>森林公园</s>、<s>郑州之林</s>、最后我选了特别冷门的<a href="https://map.baidu.com/poi/%E9%BE%99%E6%B3%89%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/@1264607135.35301,408408639.5094941,21z,87t#panoid=c3596d067083c715f90cad67&amp;panotype=inter&amp;heading=355&amp;pitch=0&amp;l=21&amp;tn=B_NORMAL_MAP&amp;sc=0&amp;newmap=1&amp;shareurl=1&amp;pid=1002890000150427124704361IN&amp;iid=c3596d067083c715f90cad67&amp;psp=%7B%22PanoIndoorPoiModule%22%3A%7B%22uid%22%3A%225b8c96862988758e2fb90853%22%7D%7D">龙泉湿地公园</a> ，然而这并没有结束，跑了将近 30 公里，去到的是一个荒废了的公园。也或者是因为长时间封闭状态，看起来很旧，基本没什么人来。让我满怀期待的出发，最终又满怀失望的回了家。</p>
+<p>  现在是周二的晚上08:20，小家伙下午没睡觉，早早的已经睡下了。我和老婆吃着火锅喝着啤酒，大聊人生。是这三年多以来，为数不多的能够静下心来一起吃饭畅谈人生，我们依然会充满希望.</p>
+<p>  人生难免会走上曲曲折折的道路，但是不要担心，这些路的那头一定会有美丽的风景。</p>
+<p>  路，是人走出来的。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>书</tag>
+        <tag>路</tag>
+        <tag>有趣</tag>
+        <tag>人生</tag>
+        <tag>春天</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0__1"></a>0 云计算</h2>
+<span id="more"></span>
+<h2><a id="1__4"></a>1 雾计算</h2>
+<h2><a id="2__6"></a>2 边缘计算</h2>
+<h3><a id="21__8"></a>2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3><a id="22__18"></a>2-2 为什么需要边缘计算？</h3>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
       </tags>
   </entry>
   <entry>
@@ -2677,460 +3030,6 @@ ExcelUtil --> RecordHandler</pre>
         <tag>replace</tag>
         <tag>ignore</tag>
         <tag>insert</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>麻辣炒虾尾 🦞</title>
-    <url>//*/9ddcf808.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
-<span id="more"></span>
-<h1><a id="_7"></a>食材</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>小龙虾（冻虾尾）</p>
-</li>
-<li class="lvl-2">
-<p>大葱</p>
-</li>
-<li class="lvl-2">
-<p>姜</p>
-</li>
-<li class="lvl-2">
-<p>蒜</p>
-</li>
-<li class="lvl-2">
-<p>八角</p>
-</li>
-<li class="lvl-2">
-<p>花椒</p>
-</li>
-<li class="lvl-2">
-<p>干辣椒</p>
-</li>
-<li class="lvl-2">
-<p>啤酒</p>
-</li>
-</ul>
-<h1><a id="_25"></a>调味料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>花生油 30ml</p>
-</li>
-<li class="lvl-2">
-<p>郫县豆瓣酱 10ml</p>
-</li>
-<li class="lvl-2">
-<p>盐 5g</p>
-</li>
-<li class="lvl-2">
-<p>味精 5g</p>
-</li>
-<li class="lvl-2">
-<p>鸡精 5g</p>
-</li>
-<li class="lvl-2">
-<p>生抽 5g</p>
-</li>
-<li class="lvl-2">
-<p>蚝油 5ml</p>
-</li>
-</ul>
-<h1><a id="_35"></a>操作</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>清水清洗小龙虾（冻虾尾），起锅烧油炸4分钟；</p>
-</li>
-<li class="lvl-2">
-<p>放入蒜末翻炒，再放入大葱、姜片、豆瓣酱；</p>
-</li>
-<li class="lvl-2">
-<p>放入八角、花椒、干辣椒，继续翻炒；</p>
-</li>
-<li class="lvl-2">
-<p>放入盐、味精、鸡精、生抽、蚝油调味；</p>
-</li>
-<li class="lvl-2">
-<p>炒香后加入2罐啤酒，煮20分钟；</p>
-</li>
-<li class="lvl-2">
-<p>最后收汁后即可盛出食用；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>虾尾</tag>
-        <tag>麻辣</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4月份wbs</title>
-    <url>//*/c2cb16de.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="_1"></a>项目一览</h2>
-<span id="more"></span>
-<pre class="mermaid">gantt
-title 项目一览
-dateFormat YYYY-MM-DD
-excludes weekends
-section [产品研发]
-[事件系统升级研发] :a1, 2023-04-03,2023-04-14
-[excel导入/导出封装] :a2, 2023-04-10,2023-04-14
-section [小学生学习报]
-[第一批需求研发] :b2,2023-04-04,6d
-section [事前管控]
-[4月份需求迭代] :c2,2023-04-07,2023-04-25
-section [光灿售后]
-[需求调研] :d2,2023-04-09,2023-04-12
-section [铁塔六费稽核]
-[线上bug修改] :e1,2023-04-09,2023-04-13
-section [铁塔代维资源核查]
-[二阶段需求] :f2,2023-03-25,2023-04-13</pre>
-<pre class="mermaid">gantt
-title 人员
-dateFormat YYYY-MM-DD
-excludes weekends
-section [产品研发]
-[事件系统升级研发] :active, a1, 2023-04-03,2023-04-14
-[excel导入/导出封装] :a2, 2023-04-10,2023-04-14
-section [小学生学习报]
-[第一批需求研发] :active,b2,2023-04-04,6d
-section [事前管控]
-[4月份需求迭代] :active, c2,2023-04-07,2023-04-25
-section [光灿售后]
-[需求调研] :d2,2023-04-09,2023-04-12
-section [铁塔六费稽核]
-[线上bug修改] :e1,2023-04-09,2023-04-13
-section [铁塔代维资源核查]
-[二阶段需求] :active,f2,2023-03-25,2023-04-13</pre>
-<pre class="mermaid">gantt
-    dateFormat  YYYY-MM-DD
-    title       人员分布
-    excludes    weekends
- section 【陈曦】
- 	[小学生学习报][第一批需求研发] :a2,2023-04-07,2023-04-12
- section 【弓远】
- 	[代维资源核查] :active,a1,2023-04-07,2023-04-13
- section 【杨波】
- 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
- 	[光灿售后][需求调研] :active,a1,2023-04-10,2023-04-12
- section 【连建锋】
- 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
- section 【张道书】
- 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
- section 【李剑威】
- 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
- section 【张豪豪】
- 	[事前管控系统][4月份需求迭代] :active,a1,2023-04-07,2023-04-25
- section 【程双】
- 	[学习报][第一批需求][研发] :active,a1,2023-04-07,2023-04-12
- section 【马国岭】
- 	[代维资源核查] :active,a1,2023-04-07,2023-04-13
- section 【刘欢】
- 	[学习报][第一批需求][测试] :active,a1,2023-04-07,2023-04-12
- section 【朱云飞】
- 	[代维资源核查] :active,a1,2023-04-10,2023-04-13
- section 【吴要权】
- 	[产品研发][事件系统升级] :active,a1,2023-04-07,2023-04-14
- 	[产品研发][excel导入、导出] :a1,2023-04-10,2023-04-14</pre>
-<pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-a("项目整体情况")
-subgraph "[产品研发]截止:  2023-04-14"
-	b1("负责人: 吴要权")
-  b1 --> b2("事件系统升级，
-  					传统建表,动态配置接口开发模式; - testing")
-  b1 --> b3("excel导入、导出通用封装 - 导入待测试")
-end
-subgraph "[小学生学习报]截止: 2023-04-12"
-  c1("负责人: 陈曦")
-  c1 --> c2("第一批需求变更
-        开发、测试、发布  --已发布")
-  c2 --> c3("程双")
-  c2 --> c4("刘欢")
-  c2 --> c5("连建锋")
-end
-
-subgraph "[事前管控系统]截止: 2023-04-25"
-  d1("负责人: 连建锋")
-  d1 --> d2("4月份需求分析
-        开发、测试、发布")
-  d2 --> d3("杨波")
-  d2 --> d4("张道书")
-  d2 --> d5("李剑威")
-  d2 --> d6("张豪豪")
-  d2 --> d7("马国岭")
-end
-
-subgraph "[光灿售后系统]截止: 2023-04-12"
-  e1("负责人: 杨波")
-  e1 --> e2("12日之前和客户约定时间
-              确定售后流程和项目立项")
-  e2 --> e3("弓远")
-  e2 --> e4("陈曦")
-  e1 --> e5("12日调研完和客户最终确定方案--")
-end
-
-
-subgraph "[铁塔六费稽核]截止: 2023-04-13"
-  f1("负责人: 弓远")
-  f1 --> f2("1.审批页面附件预览问题；
-             2. 3月份问题修复；
-             以上问题开发、测试、并发布")
-  f2 --> f3("程双")
-  f2 --> f4("连建锋")
-  f2 --> f5("马国岭")
-end
-
-
-subgraph "[铁塔代维资源核查]截止: 2023-04-13"
-  g1("负责人: 弓远")
-  g1 --> g2("代维资源二阶段需求
-              测试、并发布；
-              视频播放和多状态筛选 待解决")
-  g2 --> g3("马国岭")
-  g2 --> g4("朱云飞")
-  g2 --> g5("尚雨鹏")
-end
-
-
-a --> b1 & c1 & d1 & e1 & f1 & g1</pre>
-<pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-a("项目整体情况")
-subgraph "[小学生学习报]截止: 2023-04-25"
-  c1("负责人: 陈曦")
-  c1 --> c6("第二批需求变更
-        开发、测试、发布 -- 2023-04-25")
-  c6 --> c7("程双")
-  c6 --> c8("刘欢")
-end
-
-subgraph "[事前管控系统]截止: 2023-04-25"
-  d1("负责人: 连建锋")
-  d1 --> d2("4月份需求分析
-        开发、测试、发布
-         六费稽核需要建锋解决问题
-         进度不理想
-		---------截止04.25----------
-
-		 -------------截止04.27---------------
-			sit保持测试
-     问题列表收集
-     dev -> prod 数据同步，代码部署；
-     -------------截止04.27--------------
-
-
- ")
-  d2 --> d4("张道书")
-  d2 --> d7("马国岭")
-end
-
-subgraph "[铁塔六费稽核]截止: 2023-04-13"
-  f1("负责人: 弓远")
-  f1 --> f2("1.审批页面附件预览问题；
-             2. 3月份问题修复；
-             以上问题开发、测试、并发布，
-             处理遗留问题  截止时间待定
-
-      --------截止04.28号------
-			增加 时间区间筛选；
-			定时发起流程；
-      更新无历史数据；
-      一键发起流程； 已测试，待发布；
-       工单pdf预览，图片放大缩小；
-       --------截止04.28号----------
-
-       根据当前角色缩小区域范围；
-
-       优化点: 1.excel审批支持 通过、驳回。
-
-       增加 纠纷台账 支持excel导入；
-")
-  f2 --> f3("程双")
-  f2 --> f4("连建锋")
-  f2 --> f5("马国岭")
-end
-
-
-subgraph "[铁塔代维资源核查]截止: 2023-04-13 "
-  g1("负责人: 弓远")
-  g1 --> g2("代维资源二阶段需求
-              测试、并发布；
-              视频播放和多状态筛选 待解决，
-              处理遗留问题 截止时间待定
-
-              --------------
-              04-27 bug:
-							1.表头
-
-		列表展示复合表头，导出复合表头；
-    报表管理，支持导出和扫描上传； 技术方案待定，时间待定；
-    ")
-  g2 --> g3("马国岭")
-  g2 --> g4("朱云飞")
-  g2 --> g5("尚雨鹏")
-end
-
-
-a --> c1 & d1  & f1 & g1</pre>
-<pre class="mermaid">%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-a("项目整体情况")
-subgraph "[小学生学习报]"
-  c1("负责人: 陈曦")
-  c1 --> c6("标签功能已发布
-  						消息通知待测试发布")
-  c6 --> c8("刘欢")
-end
-
-
-subgraph "[铁塔六费稽核]截止: 2023-06-16"
-  f1("负责人: 弓远")
-  f1 --> f2("评分 时间待确定
-                费用需求调研确认 06-14进行
-                费用报表 实施 截止06-16号")
-  f2 --> f4("朱云飞")
-  f2 --> f5("马国岭")
-end
-
-
-subgraph "[移动宝冶]截止: 2023-06-21"
-  e1("负责人: 杨波")
-  e1 --> e2("官网和后端工作流")
-  e2 --> e4("张道书")
-  e2 --> e5("杨波")
-end
-
-
-subgraph "[研发需求]截止: "
-  b1("负责人: 吴要权")
-  b1 --> b2("1.铁塔工单、事前导入性能问题
-             2. 工单验证码刷新问题")
-  b2 --> b4("连建锋")
-  b2 --> b5("程双")
-end
-
-
-
-a --> c1 & f1 & e1 & b1</pre>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>wbs</tag>
-        <tag>项目一览</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>芝麻叶糊涂面</title>
-    <url>//*/1d180e51.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
-<span id="more"></span>
-<h1><a id="_7"></a>食料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>芝麻叶</p>
-</li>
-<li class="lvl-2">
-<p>豆腐丁</p>
-</li>
-<li class="lvl-2">
-<p>韭菜</p>
-</li>
-<li class="lvl-2">
-<p>小香芹</p>
-</li>
-<li class="lvl-2">
-<p>面粉</p>
-</li>
-<li class="lvl-2">
-<p>葱</p>
-</li>
-<li class="lvl-2">
-<p>蒜</p>
-</li>
-<li class="lvl-2">
-<p>干辣椒</p>
-</li>
-</ul>
-<h1><a id="_18"></a>调味料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>花生油 25ml</p>
-</li>
-<li class="lvl-2">
-<p>盐 5g</p>
-</li>
-<li class="lvl-2">
-<p>味精 5g</p>
-</li>
-<li class="lvl-2">
-<p>鸡精 5g</p>
-</li>
-<li class="lvl-2">
-<p>十三香 2g</p>
-</li>
-<li class="lvl-2">
-<p>香油 5ml</p>
-</li>
-</ul>
-<h1><a id="_27"></a>操作</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</p>
-</li>
-<li class="lvl-2">
-<p>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</p>
-</li>
-<li class="lvl-2">
-<p>豆腐切丁放入花生油煎至焦香；</p>
-</li>
-<li class="lvl-2">
-<p>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</p>
-</li>
-<li class="lvl-2">
-<p>热油放入葱、蒜、干辣椒炒香；</p>
-</li>
-<li class="lvl-2">
-<p>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</p>
-</li>
-<li class="lvl-2">
-<p>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</p>
-</li>
-<li class="lvl-2">
-<p>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>河南</tag>
-        <tag>芝麻叶</tag>
-        <tag>面条</tag>
-        <tag>糊涂</tag>
       </tags>
   </entry>
   <entry>
@@ -3469,6 +3368,109 @@ a --> c1 & f1 & e1 & b1</pre>
         <tag>机器学习</tag>
         <tag>ocr</tag>
         <tag>人工智能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>麻辣炒虾尾 🦞</title>
+    <url>//*/9ddcf808.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
+<span id="more"></span>
+<h1><a id="_7"></a>食材</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>小龙虾（冻虾尾）</p>
+</li>
+<li class="lvl-2">
+<p>大葱</p>
+</li>
+<li class="lvl-2">
+<p>姜</p>
+</li>
+<li class="lvl-2">
+<p>蒜</p>
+</li>
+<li class="lvl-2">
+<p>八角</p>
+</li>
+<li class="lvl-2">
+<p>花椒</p>
+</li>
+<li class="lvl-2">
+<p>干辣椒</p>
+</li>
+<li class="lvl-2">
+<p>啤酒</p>
+</li>
+</ul>
+<h1><a id="_25"></a>调味料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>花生油 30ml</p>
+</li>
+<li class="lvl-2">
+<p>郫县豆瓣酱 10ml</p>
+</li>
+<li class="lvl-2">
+<p>盐 5g</p>
+</li>
+<li class="lvl-2">
+<p>味精 5g</p>
+</li>
+<li class="lvl-2">
+<p>鸡精 5g</p>
+</li>
+<li class="lvl-2">
+<p>生抽 5g</p>
+</li>
+<li class="lvl-2">
+<p>蚝油 5ml</p>
+</li>
+</ul>
+<h1><a id="_35"></a>操作</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>清水清洗小龙虾（冻虾尾），起锅烧油炸4分钟；</p>
+</li>
+<li class="lvl-2">
+<p>放入蒜末翻炒，再放入大葱、姜片、豆瓣酱；</p>
+</li>
+<li class="lvl-2">
+<p>放入八角、花椒、干辣椒，继续翻炒；</p>
+</li>
+<li class="lvl-2">
+<p>放入盐、味精、鸡精、生抽、蚝油调味；</p>
+</li>
+<li class="lvl-2">
+<p>炒香后加入2罐啤酒，煮20分钟；</p>
+</li>
+<li class="lvl-2">
+<p>最后收汁后即可盛出食用；</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>美食</tag>
+        <tag>虾尾</tag>
+        <tag>麻辣</tag>
       </tags>
   </entry>
 </search>
