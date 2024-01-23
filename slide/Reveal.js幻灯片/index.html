@@ -66,11 +66,27 @@ $"
 ### 我是第三个页面
 
 
-| Item | Value | Qunantity |
-| --- | --- | --- |
-| Apples | $1 | 7|
-| Apples | $1 | 7|
-| Apples | $1 | 7|
+```mermaid
+gantt
+dateFormat YYYY-MM-DD
+title 流程中心、表单中心
+excludes weekdays
+
+section 需求阶段
+需求调研 :desc1, 2023-11-15,2023-12-05
+
+section 设计阶段
+设计 :desc2,2023-12-05,2023-12-10
+
+section 开发阶段
+开发 :desc3,2023-12-01,2023-12-29
+
+section 测试阶段
+测试     :desc4,2023-12-20,2023-12-29
+
+section 上线启动
+部署培训     :desc5,2023-12-22,2023-12-29
+```
 
 
 --
@@ -98,12 +114,13 @@ hahhahahaha
       </div>
 
       <script src="/reveal.js/dist/reveal.js?v=0.0.1"></script>
+      <script src="/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.js?v=0.0.1"></script>
       <script src="/reveal.js/plugin/markdown/markdown.js?v=0.0.1"></script><script src="/reveal.js/plugin/highlight/highlight.js?v=0.0.1"></script><script src="/reveal.js/plugin/search/search.js?v=0.0.1"></script><script src="/reveal.js/plugin/notes/notes.js?v=0.0.1"></script><script src="/reveal.js/plugin/math/math.js?v=0.0.1"></script><script src="/reveal.js/plugin/zoom/zoom.js?v=0.0.1"></script>
       
       <script>
         Reveal.initialize({
           ...{"hash":true,"help":false,"transition":"zoom","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"slide","autoSlide":5000,"loop":true,"transitionSpeed":"slow"},
-          plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealZoom],
+          plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealZoom,RevealMermaid],
         });
       </script>
     </body>
