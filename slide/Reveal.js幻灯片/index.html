@@ -1,38 +1,39 @@
 
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="googlebot" content="noindex,indexifembedded" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!doctype html>
+  <html lang="zh-CN">
+    <head>
+      <meta charset="utf-8">
+      <meta name="googlebot" content="noindex,indexifembedded" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>rm -rf /*</title>
+      <title>演示reveal.js</title>
 
-    <link rel="stylesheet" href="/reveal.js/dist/reset.css?v=0.0.1">
-    <link rel="stylesheet" href="/reveal.js/dist/reveal.css?v=0.0.1">
-    <link rel="stylesheet" href="/reveal.js/dist/theme/black.css?v=0.0.1">
+      <link rel="stylesheet" href="/reveal.js/dist/reset.css?v=0.0.1">
+      <link rel="stylesheet" href="/reveal.js/dist/reveal.css?v=0.0.1">
+      <link rel="stylesheet" href="/reveal.js/dist/theme/dracula.css?v=0.0.1">
 
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="/reveal.js/plugin/highlight/monokai.css?v=0.0.1">
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/reveal.js/plugin/highlight/monokai.css?v=0.0.1">
 
-    
+      
 
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section data-markdown
-              data-auto-animate
-              data-separator="^?
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          <section data-markdown
+                data-auto-animate
+                data-separator="^?
 ----?
 $"
-              data-separator-vertical="^?
+                data-separator-vertical="^?
 --?
 $"
-              data-separator-notes="^Note:"
-              data-charset="utf-8">
-          <textarea data-template>
-            # Index 1
+                data-separator-notes="^Note:"
+                data-charset="utf-8">
+            <textarea data-template>
+              # Index 1
+
 ### 我是第一个页面
 ```js [1-2|3|4]
     let a = 1;
@@ -91,19 +92,20 @@ Note:
 hahhahahaha
 
 
-          </textarea>
-        </section>
+            </textarea>
+          </section>
+        </div>
       </div>
-    </div>
 
-    <script src="/reveal.js/dist/reveal.js?v=0.0.1"></script>
-    <script src="/reveal.js/plugin/markdown/markdown.js?v=0.0.1"></script><script src="/reveal.js/plugin/highlight/highlight.js?v=0.0.1"></script><script src="/reveal.js/plugin/notes/notes.js?v=0.0.1"></script><script src="/reveal.js/plugin/zoom/zoom.js?v=0.0.1"></script>
-    
-    <script>
-      Reveal.initialize({
-        ...{"hash":true,"help":false,"transition":"linear","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"zoom","autoSlide":5000,"loop":true},
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
-      });
-    </script>
-  </body>
-</html>
+      <script src="/reveal.js/dist/reveal.js?v=0.0.1"></script>
+      <script src="/reveal.js/plugin/markdown/markdown.js?v=0.0.1"></script><script src="/reveal.js/plugin/highlight/highlight.js?v=0.0.1"></script><script src="/reveal.js/plugin/search/search.js?v=0.0.1"></script><script src="/reveal.js/plugin/notes/notes.js?v=0.0.1"></script><script src="/reveal.js/plugin/math/math.js?v=0.0.1"></script><script src="/reveal.js/plugin/zoom/zoom.js?v=0.0.1"></script>
+      
+      <script>
+        Reveal.initialize({
+          ...{"hash":true,"help":false,"transition":"zoom","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"slide","autoSlide":5000,"loop":true,"transitionSpeed":"slow"},
+          plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealZoom],
+        });
+      </script>
+    </body>
+  </html>
+  

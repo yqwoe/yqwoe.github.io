@@ -1,81 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>0. 低代码</title>
-    <url>//*/725797460.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0_3"></a>0.什么是低代码？</h2>
-<blockquote>
-<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
-<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
-</blockquote>
-<span id="more"></span>
-<h2><a id="1_13"></a>1.低代码的特点</h2>
-<ol>
-<li class="lvl-3">
-<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
-</li>
-<li class="lvl-3">
-<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
-</li>
-<li class="lvl-3">
-<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
-</li>
-<li class="lvl-3">
-<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
-</li>
-<li class="lvl-3">
-<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
-</li>
-<li class="lvl-3">
-<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
-</li>
-<li class="lvl-3">
-<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
-</li>
-<li class="lvl-3">
-<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
-</li>
-<li class="lvl-3">
-<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
-</li>
-<li class="lvl-4">
-<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
-</li>
-</ol>
-<h2><a id="2_28"></a>2.谁在使用低代码？</h2>
-<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
-<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
-<h3><a id="IT_34"></a>低代码赋能IT技术人员</h3>
-<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
-<p>####整体而言，IT技术人员具备以下特征：</p>
-<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
-​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
-​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
-<h2><a id="3_46"></a>3.赋能业务人员</h2>
-<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
-<h3><a id="_50"></a>整体而言，业务开发者具备以下特征：</h3>
-<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
-​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
-​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
-<h2><a id="4_56"></a>4.对业务开发者的价值</h2>
-<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
-​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
-<h2><a id="5_61"></a>5.低代码的应用价值</h2>
-<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
-<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>1. 低代码</title>
     <url>//*/2967963195.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
@@ -188,6 +113,81 @@
         <tag>flowable</tag>
         <tag>bpmn</tag>
         <tag>lowcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>0. 低代码</title>
+    <url>//*/725797460.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0_3"></a>0.什么是低代码？</h2>
+<blockquote>
+<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
+<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
+</blockquote>
+<span id="more"></span>
+<h2><a id="1_13"></a>1.低代码的特点</h2>
+<ol>
+<li class="lvl-3">
+<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
+</li>
+<li class="lvl-3">
+<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
+</li>
+<li class="lvl-3">
+<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
+</li>
+<li class="lvl-3">
+<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
+</li>
+<li class="lvl-3">
+<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
+</li>
+<li class="lvl-3">
+<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
+</li>
+<li class="lvl-3">
+<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
+</li>
+<li class="lvl-3">
+<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
+</li>
+<li class="lvl-3">
+<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
+</li>
+<li class="lvl-4">
+<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
+</li>
+</ol>
+<h2><a id="2_28"></a>2.谁在使用低代码？</h2>
+<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
+<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
+<h3><a id="IT_34"></a>低代码赋能IT技术人员</h3>
+<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
+<p>####整体而言，IT技术人员具备以下特征：</p>
+<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
+​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
+​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
+<h2><a id="3_46"></a>3.赋能业务人员</h2>
+<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
+<h3><a id="_50"></a>整体而言，业务开发者具备以下特征：</h3>
+<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
+​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
+​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
+<h2><a id="4_56"></a>4.对业务开发者的价值</h2>
+<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
+​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
+<h2><a id="5_61"></a>5.低代码的应用价值</h2>
+<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
+<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
       </tags>
   </entry>
   <entry>
@@ -407,6 +407,39 @@
       </tags>
   </entry>
   <entry>
+    <title>一次gogs踩坑之路</title>
+    <url>//*/1398242790.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+<span id="more"></span>
+<p>1.创建用户，一定要记住密码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
+<p>2.下载并解压安装包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
+<p>3.拷贝启动项到系统下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
+<p>4.安装 mysql</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
+<p>5.启动 gogs</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
+<p>6.nginx 配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
+<p>8.你可能遇到的问题</p>
+<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
+<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>gogs</tag>
+        <tag>ubuntu 14.04</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一次ios网页样式问题排查心路历程</title>
     <url>//*/149409992.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</p>
@@ -462,39 +495,6 @@
         <tag>ios</tag>
         <tag>mbp</tag>
         <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一次gogs踩坑之路</title>
-    <url>//*/1398242790.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
-<span id="more"></span>
-<p>1.创建用户，一定要记住密码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
-<p>2.下载并解压安装包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
-<p>3.拷贝启动项到系统下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
-<p>4.安装 mysql</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
-<p>5.启动 gogs</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
-<p>6.nginx 配置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
-<p>8.你可能遇到的问题</p>
-<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
-<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>gogs</tag>
-        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
   <entry>
@@ -757,39 +757,6 @@
         <tag>mysql</tag>
         <tag>mybatis</tag>
         <tag>api</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cas Server 本地部署</title>
-    <url>//*/1854714444.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="Cas_1"></a>Cas</h1>
-<blockquote>
-<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
-</blockquote>
-<span id="more"></span>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
-<h2><a id="_Cas_Server_13"></a>部署 Cas Server</h2>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-<h4><a id="applicationproperties_17"></a>application.properties</h4>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-<h4><a id="servicesHTTPSandIMAPS10000001json_21"></a>services/HTTPSandIMAPS-10000001.json</h4>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
       </tags>
   </entry>
   <entry>
@@ -1615,6 +1582,22 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
+    <url>//*/202678719.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>error</tag>
+        <tag>jdbc</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mysql count函数正确使用姿势</title>
     <url>//*/9f600c63.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
@@ -1671,22 +1654,6 @@ section 运维阶段
         <tag>聚合函数</tag>
         <tag>InnoDB</tag>
         <tag>MyISAM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
-    <url>//*/202678719.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>java</tag>
-        <tag>error</tag>
-        <tag>jdbc</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2280,94 +2247,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>前端定时器</title>
-    <url>//*/3423146f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
-<span id="more"></span>
-<p>  在<code>博客</code>- <a href="/tags">标签</a>页面中使用到了<code>定时器</code>来做<code>::hover</code>动画效果。接下来我会对比一下<code>setTimeout</code>、<code>setInterval</code>、<code>requestAnimationFrame</code>来实现定时器。</p>
-<div style="display:flex;justify-content: center;">
-    <div>
-      <video width="100%" height="auto" src="/images/video/tags-view.mp4" autoplay muted loop></video>
-      <div style="text-align: center;user-select: none;">视频：
-博客-标签
-</div>
-    </div>
-  </div>
-<h1><a id="1_11"></a>1.定时器</h1>
-<h2><a id="11_setTimeout_15"></a>1.1. setTimeout</h2>
-<p>  <strong>setTimeout是JavaScript中的一个函数，用于在指定的延迟时间后执行一段代码或函数。它的工作原理是在指定的延迟时间后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
-<p><strong>setTimeout的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>func|code</code>：要执行的函数或代码。</p>
-</li>
-<li class="lvl-2">
-<p><code>delay</code>：延迟时间，以毫秒为单位。</p>
-</li>
-<li class="lvl-2">
-<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
-</li>
-</ul>
-<p>  当使用setTimeout时，它将在指定的延迟时间后执行一次函数或代码，然后返回一个定时器ID，可以使用<code>clearTimeout()</code>方法来取消定时器的执行。</p>
-<p>  需要注意的是，setTimeout并不会立即执行函数或代码，而是在指定的延迟时间后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setTimeout中的函数或代码可能会在预期的时间之后才被执行。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setTimeout</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="title function_">cleatTimeout</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2><a id="12_setInterval_41"></a>1.2. setInterval</h2>
-<p>  <strong>setInterval是JavaScript中的一个函数，用于在指定的时间间隔后重复执行一段代码或函数。它的工作原理是在指定的时间间隔后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
-<p><strong>setInterval的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>func|code</code>：要执行的函数或代码。</p>
-</li>
-<li class="lvl-2">
-<p><code>delay</code>：时间间隔，以毫秒为单位。</p>
-</li>
-<li class="lvl-2">
-<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
-</li>
-</ul>
-<p>  当使用setInterval时，它将在指定的时间间隔后重复执行函数或代码，直到调用<code>clearInterval()</code>方法来停止执行。与setTimeout不同的是，setInterval会持续不断地重复执行函数或代码，直到被明确停止。</p>
-<p>  需要注意的是，setInterval并不会立即执行函数或代码，而是在指定的时间间隔后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setInterval中的函数或代码可能会在预期的时间之后才被执行。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setInterval</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setInterval</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">clearInterval</span>();</span><br></pre></td></tr></table></figure>
-<h2><a id="13_requestAnimationFrame_69"></a>1.3. requestAnimationFrame</h2>
-<p>  <strong>requestAnimationFrame是Web动画API的一部分，用于在浏览器下一次重绘之前调用指定的回调函数，从而实现平滑的动画效果。与setTimeout和setInterval相比，requestAnimationFrame具有更高的性能和更好的用户体验。</strong></p>
-<p><strong>requestAnimationFrame的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">requestAnimationFrame</span>(callback);</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>callback</code>：要执行的回调函数。</p>
-</li>
-</ul>
-<p>  当使用requestAnimationFrame时，它会返回一个唯一的ID，可以使用这个ID来取消动画帧的调用。与setTimeout和setInterval不同的是，requestAnimationFrame的回调函数将在浏览器下一次重绘之前执行，而不是简单地等待指定的时间后执行。这样可以充分利用浏览器的重绘机制，实现更平滑的动画效果。</p>
-<p>  requestAnimationFrame的优势在于它能够根据浏览器的刷新率来同步动画，避免了由于不同的屏幕刷新率和硬件配置导致的动画卡顿和闪烁。同时，它也避免了在动画过程中不必要的重绘和计算，提高了动画的性能和响应性。</p>
-<p>  使用requestAnimationFrame时需要注意，它只会在浏览器处于激活状态时执行回调函数。如果浏览器处于最小化或隐藏状态，那么回调函数将不会被执行。因此，在使用requestAnimationFrame时，需要确保浏览器处于激活状态，或者在回调函数中添加适当的逻辑来处理浏览器不处于激活状态的情况。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">frame</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;frame&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">requestAnimationFrame</span>(frame);</span><br></pre></td></tr></table></figure>
-<h1><a id="2__97"></a>2. 标签动画</h1>
-<p>  使用 <code>requestAnimationFrame</code> 可以替代 <code>setInterval</code> 来实现定时任务，因为 <code>requestAnimationFrame</code> 更加高效，能够根据屏幕刷新率来同步动画，避免了不必要的重绘和计算。</p>
-<p>下面是使用 <code>requestAnimationFrame</code> 实现 <code>setInterval</code> 更新<code>博客</code>- <a href="/tags">标签</a>的示例代码：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * 兼容不支持requestAnimationFrame的浏览器</span></span><br><span class="line"><span class="comment"> ***/</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitRequestAnimationFrame</span> ||<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozRequestAnimationFrame</span> ||<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oRequestAnimationFrame</span>      ||<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msRequestAnimationFrame</span>     ||<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="keyword">function</span> (<span class="params">callback</span>) &#123;</span><br><span class="line">      <span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(callback, <span class="number">6000</span> / <span class="number">60</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msCancelAnimationFrame</span> || <span class="built_in">clearTimeout</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 设置精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">function</span>&#125; 回调函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125;   延迟时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;  定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="keyword">function</span> <span class="title function_">setIntervalPrecision</span>(<span class="params">callback, delay</span>) &#123;</span><br><span class="line">  <span class="comment">// 生成并记录定时器ID</span></span><br><span class="line">  <span class="keyword">let</span> obj = <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> || (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> = &#123; <span class="attr">num</span>: <span class="number">0</span> &#125;)</span><br><span class="line">  obj.<span class="property">num</span>++</span><br><span class="line">  obj[<span class="string">&#x27;n&#x27;</span> + obj.<span class="property">num</span>] = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">var</span> intervalId = obj.<span class="property">num</span></span><br><span class="line">  <span class="comment">// 开始时间</span></span><br><span class="line">  <span class="keyword">var</span> startTime = +<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">  <span class="comment">// 已执行次数</span></span><br><span class="line">  <span class="keyword">var</span> count = <span class="number">0</span></span><br><span class="line">  <span class="comment">// 延迟时间</span></span><br><span class="line">  delay = delay || <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ;(<span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 定时器被清除，则终止</span></span><br><span class="line">    <span class="keyword">if</span> (!obj[<span class="string">&#x27;n&#x27;</span> + intervalId]) <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 满足条件执行回调</span></span><br><span class="line">    <span class="keyword">if</span> (+<span class="keyword">new</span> <span class="title class_">Date</span>() &gt; startTime + delay * (count + <span class="number">1</span>)) &#123;</span><br><span class="line">      count++</span><br><span class="line">      <span class="title function_">callback</span>(count)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">requestAnimationFrame</span>(loop)</span><br><span class="line">  &#125;)()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> intervalId</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 清除精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; 定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clearIntervalPrecision</span>(<span class="params">intervalId</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">cancelAnimationFrame</span>(<span class="string">&#x27;n&#x27;</span> + intervalId)</span><br><span class="line">    <span class="keyword">delete</span> <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>[<span class="string">&#x27;n&#x27;</span> + intervalId]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//loopHover 自己的业务实现</span></span><br><span class="line">setIntervalPrecision(loopHover, <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-        <tag>react</tag>
-        <tag>javascript</tag>
-        <tag>typescript</tag>
-        <tag>setTimeout</tag>
-        <tag>setInterval</tag>
-        <tag>requestAnimationFrame</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
     <url>//*/3382022550.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
@@ -2481,6 +2360,94 @@ section 运维阶段
       <tags>
         <tag>大盘鸡</tag>
         <tag>美食</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端定时器</title>
+    <url>//*/3423146f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
+<span id="more"></span>
+<p>  在<code>博客</code>- <a href="/tags">标签</a>页面中使用到了<code>定时器</code>来做<code>::hover</code>动画效果。接下来我会对比一下<code>setTimeout</code>、<code>setInterval</code>、<code>requestAnimationFrame</code>来实现定时器。</p>
+<div style="display:flex;justify-content: center;">
+    <div>
+      <video width="100%" height="auto" src="/images/video/tags-view.mp4" autoplay muted loop></video>
+      <div style="text-align: center;user-select: none;">视频：
+博客-标签
+</div>
+    </div>
+  </div>
+<h1><a id="1_11"></a>1.定时器</h1>
+<h2><a id="11_setTimeout_15"></a>1.1. setTimeout</h2>
+<p>  <strong>setTimeout是JavaScript中的一个函数，用于在指定的延迟时间后执行一段代码或函数。它的工作原理是在指定的延迟时间后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
+<p><strong>setTimeout的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>func|code</code>：要执行的函数或代码。</p>
+</li>
+<li class="lvl-2">
+<p><code>delay</code>：延迟时间，以毫秒为单位。</p>
+</li>
+<li class="lvl-2">
+<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
+</li>
+</ul>
+<p>  当使用setTimeout时，它将在指定的延迟时间后执行一次函数或代码，然后返回一个定时器ID，可以使用<code>clearTimeout()</code>方法来取消定时器的执行。</p>
+<p>  需要注意的是，setTimeout并不会立即执行函数或代码，而是在指定的延迟时间后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setTimeout中的函数或代码可能会在预期的时间之后才被执行。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setTimeout</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="title function_">cleatTimeout</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2><a id="12_setInterval_41"></a>1.2. setInterval</h2>
+<p>  <strong>setInterval是JavaScript中的一个函数，用于在指定的时间间隔后重复执行一段代码或函数。它的工作原理是在指定的时间间隔后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
+<p><strong>setInterval的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>func|code</code>：要执行的函数或代码。</p>
+</li>
+<li class="lvl-2">
+<p><code>delay</code>：时间间隔，以毫秒为单位。</p>
+</li>
+<li class="lvl-2">
+<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
+</li>
+</ul>
+<p>  当使用setInterval时，它将在指定的时间间隔后重复执行函数或代码，直到调用<code>clearInterval()</code>方法来停止执行。与setTimeout不同的是，setInterval会持续不断地重复执行函数或代码，直到被明确停止。</p>
+<p>  需要注意的是，setInterval并不会立即执行函数或代码，而是在指定的时间间隔后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setInterval中的函数或代码可能会在预期的时间之后才被执行。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setInterval</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setInterval</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">clearInterval</span>();</span><br></pre></td></tr></table></figure>
+<h2><a id="13_requestAnimationFrame_69"></a>1.3. requestAnimationFrame</h2>
+<p>  <strong>requestAnimationFrame是Web动画API的一部分，用于在浏览器下一次重绘之前调用指定的回调函数，从而实现平滑的动画效果。与setTimeout和setInterval相比，requestAnimationFrame具有更高的性能和更好的用户体验。</strong></p>
+<p><strong>requestAnimationFrame的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">requestAnimationFrame</span>(callback);</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>callback</code>：要执行的回调函数。</p>
+</li>
+</ul>
+<p>  当使用requestAnimationFrame时，它会返回一个唯一的ID，可以使用这个ID来取消动画帧的调用。与setTimeout和setInterval不同的是，requestAnimationFrame的回调函数将在浏览器下一次重绘之前执行，而不是简单地等待指定的时间后执行。这样可以充分利用浏览器的重绘机制，实现更平滑的动画效果。</p>
+<p>  requestAnimationFrame的优势在于它能够根据浏览器的刷新率来同步动画，避免了由于不同的屏幕刷新率和硬件配置导致的动画卡顿和闪烁。同时，它也避免了在动画过程中不必要的重绘和计算，提高了动画的性能和响应性。</p>
+<p>  使用requestAnimationFrame时需要注意，它只会在浏览器处于激活状态时执行回调函数。如果浏览器处于最小化或隐藏状态，那么回调函数将不会被执行。因此，在使用requestAnimationFrame时，需要确保浏览器处于激活状态，或者在回调函数中添加适当的逻辑来处理浏览器不处于激活状态的情况。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">frame</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;frame&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">requestAnimationFrame</span>(frame);</span><br></pre></td></tr></table></figure>
+<h1><a id="2__97"></a>2. 标签动画</h1>
+<p>  使用 <code>requestAnimationFrame</code> 可以替代 <code>setInterval</code> 来实现定时任务，因为 <code>requestAnimationFrame</code> 更加高效，能够根据屏幕刷新率来同步动画，避免了不必要的重绘和计算。</p>
+<p>下面是使用 <code>requestAnimationFrame</code> 实现 <code>setInterval</code> 更新<code>博客</code>- <a href="/tags">标签</a>的示例代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * 兼容不支持requestAnimationFrame的浏览器</span></span><br><span class="line"><span class="comment"> ***/</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitRequestAnimationFrame</span> ||<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozRequestAnimationFrame</span> ||<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oRequestAnimationFrame</span>      ||<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msRequestAnimationFrame</span>     ||<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="keyword">function</span> (<span class="params">callback</span>) &#123;</span><br><span class="line">      <span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(callback, <span class="number">6000</span> / <span class="number">60</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msCancelAnimationFrame</span> || <span class="built_in">clearTimeout</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 设置精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">function</span>&#125; 回调函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125;   延迟时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;  定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="keyword">function</span> <span class="title function_">setIntervalPrecision</span>(<span class="params">callback, delay</span>) &#123;</span><br><span class="line">  <span class="comment">// 生成并记录定时器ID</span></span><br><span class="line">  <span class="keyword">let</span> obj = <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> || (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> = &#123; <span class="attr">num</span>: <span class="number">0</span> &#125;)</span><br><span class="line">  obj.<span class="property">num</span>++</span><br><span class="line">  obj[<span class="string">&#x27;n&#x27;</span> + obj.<span class="property">num</span>] = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">var</span> intervalId = obj.<span class="property">num</span></span><br><span class="line">  <span class="comment">// 开始时间</span></span><br><span class="line">  <span class="keyword">var</span> startTime = +<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">  <span class="comment">// 已执行次数</span></span><br><span class="line">  <span class="keyword">var</span> count = <span class="number">0</span></span><br><span class="line">  <span class="comment">// 延迟时间</span></span><br><span class="line">  delay = delay || <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ;(<span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 定时器被清除，则终止</span></span><br><span class="line">    <span class="keyword">if</span> (!obj[<span class="string">&#x27;n&#x27;</span> + intervalId]) <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 满足条件执行回调</span></span><br><span class="line">    <span class="keyword">if</span> (+<span class="keyword">new</span> <span class="title class_">Date</span>() &gt; startTime + delay * (count + <span class="number">1</span>)) &#123;</span><br><span class="line">      count++</span><br><span class="line">      <span class="title function_">callback</span>(count)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">requestAnimationFrame</span>(loop)</span><br><span class="line">  &#125;)()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> intervalId</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 清除精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; 定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clearIntervalPrecision</span>(<span class="params">intervalId</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">cancelAnimationFrame</span>(<span class="string">&#x27;n&#x27;</span> + intervalId)</span><br><span class="line">    <span class="keyword">delete</span> <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>[<span class="string">&#x27;n&#x27;</span> + intervalId]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//loopHover 自己的业务实现</span></span><br><span class="line">setIntervalPrecision(loopHover, <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>react</tag>
+        <tag>javascript</tag>
+        <tag>typescript</tag>
+        <tag>setTimeout</tag>
+        <tag>setInterval</tag>
+        <tag>requestAnimationFrame</tag>
       </tags>
   </entry>
   <entry>
@@ -2862,12 +2829,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-uVEcenKF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-CZfcSRjh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-uVEcenKF"),
+            element: document.getElementById("aplayer-CZfcSRjh"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -3469,6 +3436,39 @@ ExcelUtil --> RecordHandler</pre>
         <tag>美食</tag>
         <tag>虾尾</tag>
         <tag>麻辣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cas Server 本地部署</title>
+    <url>//*/1854714444.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="Cas_1"></a>Cas</h1>
+<blockquote>
+<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<span id="more"></span>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
+<h2><a id="_Cas_Server_13"></a>部署 Cas Server</h2>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+<h4><a id="applicationproperties_17"></a>application.properties</h4>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+<h4><a id="servicesHTTPSandIMAPS10000001json_21"></a>services/HTTPSandIMAPS-10000001.json</h4>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
       </tags>
   </entry>
 </search>
