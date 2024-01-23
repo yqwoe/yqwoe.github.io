@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="googlebot" content="noindex,indexifembedded" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>rm -rf /*</title>
+
+    <link rel="stylesheet" href="/reveal.js/dist/reset.css?v=0.0.1">
+    <link rel="stylesheet" href="/reveal.js/dist/reveal.css?v=0.0.1">
+    <link rel="stylesheet" href="/reveal.js/dist/theme/black.css?v=0.0.1">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="/reveal.js/plugin/highlight/monokai.css?v=0.0.1">
+
+    
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown
+              data-separator="^?
+----?
+$"
+              data-separator-vertical="^?
+--?
+$"
+              data-separator-notes="^Note:"
+              data-charset="utf-8">
+          <textarea data-template>
+            # Index 1
+### 我是第一个页面
+```js [1-2|3|4]
+    let a = 1;
+    let b = 2;
+    let c = x => 1 + 2 + x;
+    c(3);
+```
+
+----
+
+
+# Index 2
+### 我是第二个页面
+
+* 一 <!-- .element: class="fragment" data-fragment-index="1" -->
+* 二 <!-- .element: class="fragment" data-fragment-index="2" -->
+* 三 <!-- .element: class="fragment" data-fragment-index="3" -->
+
+----
+
+# Index 3
+### 我是第三个页面
+* 一 <!-- .element: class="fragment fade-in" -->
+* 二 <!-- .element: class="fragment highlight-red" -->
+* 三 <!-- .element: class="fragment fade-out" -->
+
+--
+
+# Index 3.1
+### 我是第三个页面
+
+
+--
+
+
+# Index 3.2
+### 我是第三个页面
+
+----
+
+# Index 4
+### 我是第四个页面
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="/reveal.js/dist/reveal.js?v=0.0.1"></script>
+    <script src="/reveal.js/plugin/markdown/markdown.js?v=0.0.1"></script><script src="/reveal.js/plugin/highlight/highlight.js?v=0.0.1"></script><script src="/reveal.js/plugin/notes/notes.js?v=0.0.1"></script><script src="/reveal.js/plugin/zoom/zoom.js?v=0.0.1"></script>
+    
+    <script>
+      Reveal.initialize({
+        ...{"hash":true,"help":false,"transition":"linear","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false},
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
+      });
+    </script>
+  </body>
+</html>
