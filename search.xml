@@ -191,42 +191,6 @@
       </tags>
   </entry>
   <entry>
-    <title>给博客增加评论功能</title>
-    <url>//*/762727420.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3><a id="imsunhttpsgithubcomimsunGitmenthttpsimsungithubiogitment_1"></a>首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
-<span id="more"></span>
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
-</li>
-<li class="lvl-2">
-<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
-</li>
-</ul>
-<h3><a id="_12"></a>基本使用</h3>
-<h4><a id="1__OAuth_Application_14"></a>1. 注册 OAuth Application</h4>
-<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4><a id="2_jscss__18"></a>2.引入 js、css 到文章页面</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4><a id="3__22"></a>3. 初始化评论</h4>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4><a id="_JekyllAdmin__26"></a>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
-<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
-以上是我的分享，谢谢！！</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
-        <tag>git</tag>
-        <tag>Jekyll</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第一篇博客</title>
     <url>//*/4278564287.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
@@ -375,6 +339,42 @@
         <tag>心情</tag>
         <tag>Like a Rolling Stone</tag>
         <tag>Bob Dylan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给博客增加评论功能</title>
+    <url>//*/762727420.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3><a id="imsunhttpsgithubcomimsunGitmenthttpsimsungithubiogitment_1"></a>首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
+<span id="more"></span>
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
+</li>
+</ul>
+<h3><a id="_12"></a>基本使用</h3>
+<h4><a id="1__OAuth_Application_14"></a>1. 注册 OAuth Application</h4>
+<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4><a id="2_jscss__18"></a>2.引入 js、css 到文章页面</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4><a id="3__22"></a>3. 初始化评论</h4>
+<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4><a id="_JekyllAdmin__26"></a>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
+以上是我的分享，谢谢！！</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
       </tags>
   </entry>
   <entry>
@@ -760,6 +760,88 @@
       </tags>
   </entry>
   <entry>
+    <title>Cas Server 本地部署</title>
+    <url>//*/1854714444.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="Cas_1"></a>Cas</h1>
+<blockquote>
+<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<span id="more"></span>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
+<h2><a id="_Cas_Server_13"></a>部署 Cas Server</h2>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+<h4><a id="applicationproperties_17"></a>application.properties</h4>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+<h4><a id="servicesHTTPSandIMAPS10000001json_21"></a>services/HTTPSandIMAPS-10000001.json</h4>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nginx 负载均衡</title>
+    <url>//*/1506548690.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="nginx__1"></a>nginx 是什么？</h1>
+<span id="more"></span>
+<blockquote>
+<p>Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人 Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个 IMAP/POP3/SMTP 代理服务器；也就是说，Nginx 本身就可以托管网站，进行 HTTP 服务处理，也可以作为反向代理服务器使用。</p>
+</blockquote>
+<h1><a id="nginx__8"></a>nginx 特点</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>跨平台：Nginx 可以在大多数 Unix like OS 编译运行，而且也有 Windows 的移植版本。</p>
+</li>
+<li class="lvl-2">
+<p>配置异常简单：非常容易上手。配置风格跟程序开发一样，神一般的配置</p>
+</li>
+<li class="lvl-2">
+<p>非阻塞、高并发连接：数据复制时，磁盘 I/O 的第一阶段是非阻塞的。官方测试能够支撑 5 万并发连接，在实际生产环境中跑到 2 ～ 3 万并发连接数.(这得益于 Nginx 使用了最新的 epoll 模型)</p>
+</li>
+<li class="lvl-2">
+<p>事件驱动：通信机制采用 epoll 模型，支持更大的并发连接。</p>
+</li>
+</ul>
+<h1><a id="nginx__18"></a>nginx 特性</h1>
+<p><strong>master/worker 结构：</strong> 一个 master 进程，生成一个或多个 worker 进程</p>
+<p><strong>内存消耗小：</strong>  处理大并发的请求内存消耗非常小。在 3 万并发连接下，开启的 10 个 Nginx 进程才消耗 150M 内存（15M*10=150M）</p>
+<p><strong>成本低廉：</strong> Nginx 为开源软件，可以免费使用。而购买 F5 BIG-IP、NetScaler 等硬件负载均衡交换机则需要十多万至几十万人民币</p>
+<p><strong>内置的健康检查功能：</strong> 如果 Nginx Proxy 后端的某台 Web 服务器宕机了，不会影响前端访问。</p>
+<p><strong>节省带宽：</strong> 支持 GZIP 压缩，可以添加浏览器本地缓存的 Header 头。</p>
+<p><strong>稳定性高：</strong> 用于反向代理，宕机的概率微乎其微</p>
+<p>1、nginx 代理和后端 web 服务器间无需长连接；</p>
+<p>2、接收用户请求是异步的，即先将用户请求全部接收下来，再一次性发送后后端 web 服务器，极大的减轻后端 web 服务器的压力</p>
+<p>3、发送响应报文时，是边接收来自后端 web 服务器的数据，边发送给客户端的</p>
+<p>4、网络依赖型低。NGINX 对网络的依赖程度非常低，理论上讲，只要能够 ping 通就可以实施负载均衡，而且可以有效区分内网和外网流量</p>
+<p>5、支持服务器检测。NGINX 能够根据应用服务器处理页面返回的状态码、超时信息等检测服务器是否出现故障，并及时返回错误的请求重新提交到其它节点上</p>
+<h1><a id="nginx__50"></a>nginx 配置</h1>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">upstream</span> www.blog.com &#123;</span><br><span class="line">    <span class="comment">#upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。</span></span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.121:80</span> weight=<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.122:80</span> weight=<span class="number">2</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.123:80</span> weight=<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+        <tag>epoll</tag>
+        <tag>poll</tag>
+        <tag>linux</tag>
+        <tag>unix like os</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>集群、负载均衡、分布式</title>
     <url>//*/4074971168.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
@@ -798,39 +880,6 @@
         <tag>集群</tag>
         <tag>负载均衡</tag>
         <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cas Server 本地部署</title>
-    <url>//*/1854714444.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="Cas_1"></a>Cas</h1>
-<blockquote>
-<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
-</blockquote>
-<span id="more"></span>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
-<h2><a id="_Cas_Server_13"></a>部署 Cas Server</h2>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-<h4><a id="applicationproperties_17"></a>application.properties</h4>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-<h4><a id="servicesHTTPSandIMAPS10000001json_21"></a>services/HTTPSandIMAPS-10000001.json</h4>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
       </tags>
   </entry>
   <entry>
@@ -2231,6 +2280,21 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端定时器</title>
     <url>//*/3423146f.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
@@ -2316,21 +2380,6 @@ section 运维阶段
         <tag>setTimeout</tag>
         <tag>setInterval</tag>
         <tag>requestAnimationFrame</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2521,7 +2570,7 @@ section 运维阶段
     <title>工作计划[2024-01-22] ⏳</title>
     <url>//*/5b16fb9e.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="4a22d75b274dc62b54f4cb451fb13da5cafd7d49b84ef041972a41730225233e">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b4828d8f39e620ac1502d518a4678e988594881f2464b2715770c2fd8b9a0c6111c93306b1c22a628dd063599d683923cf894c7dd80eeddc6de1992e9433e17b0086951811625e5ea3697777df3297d20c1211cf7d920501f9844cbfe488aec1c349484396fd41ed3f2f94a5cb96d9fdaa7c675cccb0f7e3609f0a29dacd0af36da95a3343eaa806ac90fa834bc753aaffbeed9d263f1567d07903e8040b1cae36d7397881afc2f81de2a615a412168d5bea707009735f97b7620cfd38e01d88433c34953566a7cdc9b0eceb645204a6480edb71ced635f8ad9024e8307ae4e0a30189c497c399d97cd281da7a44ede2655e5772bc5a45be8a0876ce743faed607fcd04272df292f3125d783134317fd66492aaf414a2efe6eaca5d554f1a1caf0442e9c59005c664be1a3e507bfce123a6e4695d4fa32f6d3e08a716b04dc368e178837a304d4aba406be492507581316d451c270a0628ae2b2c44757ef550ef1dfdafac58ff9001a184bbb5a2ccb391562381cf0e915a20fa6e3e09498b301d2d37ef3165f11dd1de0bfb9fe1937e3ab37bd4eb6451851df31ee1e56a46b186db4f8550c8fdb364cbbc6d225ac8a326c72ec705a17663798546d25598bbeb8272d11ffe028307d0a9f671df7e5fa5944aaa5de89ae63e2425e22ed6bfe642d31e66f69003199a6608a76ca7ba9e858ba11e1133910cf70bdbbb3c215c18c7f9a7afec8f949c281fd5a36105c4eb042bf611a7d8599170de56936e8d401678beadc91a0a1f06948d866b3900eafd8b9da6875cf203e1756a782d83aee0491338b9d1aae0f68355cf42e77c13390d9da5d8b72b0c39898bcd77319b67a6e49aa8231afb30a96fee1bed6a63946885664755d4670adfbfa786dc61ad0616b3c72ff8a764aeb1964b36892b382380e5cf11007860fcc6b9c579a21354ebdf7d2b1136d07c47858e359c14694084e8dbce15de34bd984ec46b685cd660703cce18402011c8d120f110bde5c3d0310a4b8b4e6d29a0d02d82b9624a1a44c57e63966843cb17a501c0e60ec3f4350021f949c8e4eb7f3729cc5b4c6fb4bfb2cf543b92c5e7d6941920d9290be2bc00e63bf1c844d20342b2c6d08da891164c86d8ff5fb3102c7d4dd886b20e5d6d71e288274f8187e986525e41726379790bf7b910c853371a1135f190cf4d129d0592188228fdf4a287c69a5a614ecdedeb74fbab4743e70c312ebeea6ad102b62542994215d4e9197ed6091aa7b97b46eea379b2a6b96dcdd2f83b59995a546c0fa4343a218879caef5c31c0bf55a45c623fb5dc04f3cf9f9231c1bbde6ac9b518e89a09e41eed0497d62fe68ed69a4e02efb25c83419a3cab263cf01809e59c329d51020a259e8ad6b3f7ef90376510d73d756839fdc45674305b5612fe5b3025d0f36287ed33b6709c1e6762050af32616c23a271bf90596f903b993933965d478ea39594a2ba07b53c53ed69bd3db889067110208d2802c4878ea7a0f6eb9a58231e500c645157c984270b80f042d9845f95181d22f7d074dfa238485411f532b429965c3f5f822b5d6e663e42f835c4d0d6340ebe93330b40c8f797214cb1a184a45b1e1d74a86b69ab8f63c77829247190f9c6073d7f9dbae2664c6536a30330b8f6a5991e5a41a6553d20fc742cab2979e97aadec9057ffe205f7a302d028433c4e7c24032f5db26b8393ea5cd0f2504e485b6565198ed13db34eba1c75f34feb1ea9aae860a2598d227159d94779f4417c82c1b549e1dfbd878d2ea3c0013b137eca23d38878507cb9b0e613d4d8d79a59db298b6006d6e0692a7b7f4079d1abbda5cebe05f555ced507a5a6da15d5fe8ae6531eeec8ee9fdd56dd35c03357f59f716e2fa72007f558912c59b68af11a203e0658fe0fa0065122a9d31ebf7cf9c7104b435720bb23247c9bb7c19a5fe2e0de3d7c5b00925f52c53732b8d1111aa4d0</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="fa406d226768261d014a9dd238e7d7dcb60e144ef8c06ab67c024400b65700ad">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b4828d8f39e620ac1502d518a4678e988594881f2464b2715770c2fd8b9a0c6111c93306b1c22a628dd063599d683923cf894c7dd80eeddc6de1992e9433e17b0086951811625e5ea3697777df3297d20c1211cf7d920501f9844cbfe488aec1c349484396fd41ed3f2f94a5cb96d9fdaa7c675cccb0f7e3609f0a29dacd0af36da95a3343eaa806ac90fa834bc753aaffbeed9d263f1567d07903e8040b1cae36d7397881afc2f81de2a615a412168d5b347b20d9e21534076e9150373fee6f73e2195d66cbca1f02355bcc3934d363b64e9a47f76d1d6204ab5b926529c1949a30910d9e3f4f84f2030a6f2c3371fcec137048c15d5f05db7595601c1216c54703177352ec1552741d8544ec6d0b53c440833c438254a9922dea8d01aa8fcced15e8f38bc04120b249c211e26b74cb395451506a00993404b9344a01976f62fda00d6ad4bab23e01b00bac10cfb55a7b339b65a6854076d125e926b7574678d6c6ea8e0f60907795ca01306a9485271bbb87b74358277bab888222aa17bb8bd7be3e05e483b3015e5bb2e8557c2b19b5888627b3e36cb196c92b52222dd42138c69c7b5f9af2be5d3a15809c07783967dcd864708c1d4772a2774ec2664951a6fb7c3d285956c2d4cfad52bd61a3810caf53e91c04652dff8e5340674836e2ed529be07e1a23c19182f834c6b27d5bde673f543ba7fe7931c4c2b6533ed6a0917dfa897c8f8d3f01afe1efb340f423c211550c5004d6dc99e7bc8b78828f653632564e2b795f21323056317e93317dca9894d7d43a5f4c88046c5c0eac9b645579fc9e1f456b884bc984ed297954bc748dae2b95e9642ed28b2f85578eed24bb84d4ad1569b030d62be624cfc872c2869573460e8e1098028237c9e26a478698f0f8efb75301ed53dcd161f2f59bc42176b827b31e88838ede9caeab884e6ed699a3fdd445cd2f693dcbff9912db5780df0a837db2ae87d366c858a45b29da018a7ae7f9fb3179ee38484f93420066b4ae183d26b0bc62480da5b3676fdeb31b6c955392b81a3a9d36c770ecde2eba2d9fa201c68f5d60678bdd45f2823f35f9d50d734e4fb0eb3aa451f4aad978ada9cec55467a6d522a995688cb271d7c134b03b88217cd1895cf0aafec980520596e43725d1d9afa6cf6bea9a3e249ee0164c1603c5fded0a3d96ecdd7bd4c40d3986d118b999bc4c39718184cdb39e122c868aa9ab4e3af0024279d72b8728b4136cfd2dc6ec82cfdff0cd4049006a7e8aaf0a26a7cba310f3e9d177c8652179f8a343a39d7c02e96ef88ef026776c92e5adaa442cefb1601278eec42de6c7eacd196a927979854d4a7242a74ded49059429771100974d2ec4e686adfad1a6cf7714663006f08446d74d9a8d62a16182e2571b1f4249028416541226175f5ae49bfa48c81fe7472e0254e836a2510d21c69269b8a75e97832cda26964a1c5074373ce92989d6d299144ab152fb11f05e5fe387b12faf1dc8120ee1e6c330f6ec94444a770abba36f53fe02163e1fbb65b6b26da8d88d9467c816e8783da4d07f36c92fdf411446c9995bf05378053aa68e766a96150d19701b6b226090ff303e1ad60f04c28ce81646f41fc80902bbbd3b3faf7668939afe41405db4a726c4a73e90cadd8be07305a601f4f0d906eefc034d054b80c08ac4e8a345863493775935aba35643e443494b277e3112d5ddbf7dbffa37aad4b9dab8bed919e63975c2965773cd41c5a850d2be56c33f7ebf6d4921026d5815dffc21a6867ca65184ff08db9826a6b72d8d06f98bf962b50e5702ad47c9f2a2189cd6fd8c55239885e444fd9c3da42c905c4afaadb23d46618b448eda62c545e647d40612025c05ab8b4e23b65bd1e40350804b738b03df3a437765f0a51d0d209578041f9aed307261e55632d0fd4d3b78048d5909780902fa56ab3ded100e005f3bc06a42660c6f592335d33028ba7fc2ae8836af7ec90c85e4e97531ea3114696368e348330776d652cc1ddbbe38f573d2c863cf0c6093ecdaf5365f6d5ca40a0b46636aef1926a5424fb0563c512d3b923cdd26f33a47f23bca45da7e8549792b9dd085a1924413a17c3880ad5b1ddc5582d201b15d44bce52bfd6977463609f7484a37b492d9f02cb1ce871bb93154d1e900f288d94114efa406d695f3439e3ce247b057654694281607abbfd636a72385cd2f4177ae81d4328ecd04228762e5044e8c065f95d9efaf92fdacb1df61ef7cd1c4ac8c40f7bbdc141a8bbeba9b6efed23827f6e203f910c35e2f8dbcb544f5a834f89b747e66cd2de13358efb65c38e7372bca40cbec37c2895ba95ad74b4d8f87d0604b0793af6b6f98732ce8fc8aebf71f3fd4912461dc31e4e86f033d9fcb4accb931b65c8f7d6fd7335d99bafb062f15d09fe5bf8a59267438e244cfc2e032e68aad6da4698d11e5a4bd19ab920ac067f33966733991b299679a8e59d97d893f86259c841fe25f87240595624d8f3ce94d69a30e1a2de9144e2cb35f565d5e5df9d856ea441cb5a4db961fa2c55d4b88e9227a088d437bd24598a6fda5b120c9d8fadd0146404d86d8b9c6a7a5e236d946d1d9146a7d87111fd0ae72df93a810ad663550</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-wave">
       <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
@@ -2558,71 +2607,6 @@ section 运维阶段
         <tag>少年</tag>
         <tag>年轻</tag>
         <tag>诗歌</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>打造自己的产品 1</title>
-    <url>//*/1000976984.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br>
-–《小王子》</p>
-</blockquote>
-<span id="more"></span>
-<h2><a id="0__6"></a>0. 念头</h2>
-<p>距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
-<h2><a id="1__10"></a>1. 失眠</h2>
-<p>现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
-<h2><a id="10__14"></a>10. 性格</h2>
-<p>我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
-<blockquote>
-<p>“往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。”</p>
-</blockquote>
-<h2><a id="11__20"></a>11. 计划</h2>
-<p>借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
-<h2><a id="100__24"></a>100. 技术选型</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>后端: <strong><s>Rails Api only</s></strong> <strong>Rails Graphql-Ruby</strong></p>
-</li>
-<li class="lvl-2">
-<p>app: <strong><s>uni-app</s></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</p>
-</li>
-<li class="lvl-2">
-<p>web: <strong>React</strong>、<strong>umijs</strong></p>
-</li>
-<li class="lvl-2">
-<p>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></p>
-</li>
-<li class="lvl-2">
-<p>搜索: <strong>EleasticSearch</strong></p>
-</li>
-<li class="lvl-2">
-<p>队列: <strong>Sidekiq</strong></p>
-</li>
-</ul>
-<h2><a id="101__33"></a>101. 产品</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</p>
-</li>
-<li class="lvl-2">
-<p>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</p>
-</li>
-<li class="lvl-2">
-<p>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>创业</tag>
-        <tag>社群</tag>
-        <tag>电商</tag>
-        <tag>墨刀</tag>
-        <tag>github</tag>
-        <tag>小程序</tag>
       </tags>
   </entry>
   <entry>
@@ -2715,6 +2699,71 @@ section 运维阶段
       <tags>
         <tag>美食</tag>
         <tag>河南</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>打造自己的产品 1</title>
+    <url>//*/1000976984.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br>
+–《小王子》</p>
+</blockquote>
+<span id="more"></span>
+<h2><a id="0__6"></a>0. 念头</h2>
+<p>距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
+<h2><a id="1__10"></a>1. 失眠</h2>
+<p>现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
+<h2><a id="10__14"></a>10. 性格</h2>
+<p>我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
+<blockquote>
+<p>“往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。”</p>
+</blockquote>
+<h2><a id="11__20"></a>11. 计划</h2>
+<p>借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
+<h2><a id="100__24"></a>100. 技术选型</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>后端: <strong><s>Rails Api only</s></strong> <strong>Rails Graphql-Ruby</strong></p>
+</li>
+<li class="lvl-2">
+<p>app: <strong><s>uni-app</s></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</p>
+</li>
+<li class="lvl-2">
+<p>web: <strong>React</strong>、<strong>umijs</strong></p>
+</li>
+<li class="lvl-2">
+<p>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></p>
+</li>
+<li class="lvl-2">
+<p>搜索: <strong>EleasticSearch</strong></p>
+</li>
+<li class="lvl-2">
+<p>队列: <strong>Sidekiq</strong></p>
+</li>
+</ul>
+<h2><a id="101__33"></a>101. 产品</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</p>
+</li>
+<li class="lvl-2">
+<p>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</p>
+</li>
+<li class="lvl-2">
+<p>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>创业</tag>
+        <tag>社群</tag>
+        <tag>电商</tag>
+        <tag>墨刀</tag>
+        <tag>github</tag>
+        <tag>小程序</tag>
       </tags>
   </entry>
   <entry>
@@ -2813,12 +2862,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-psmwtRKH" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-yHzgTyWh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-psmwtRKH"),
+            element: document.getElementById("aplayer-yHzgTyWh"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2858,79 +2907,6 @@ section 运维阶段
         <tag>有趣</tag>
         <tag>人生</tag>
         <tag>春天</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0__1"></a>0 云计算</h2>
-<span id="more"></span>
-<h2><a id="1__4"></a>1 雾计算</h2>
-<h2><a id="2__6"></a>2 边缘计算</h2>
-<h3><a id="21__8"></a>2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3><a id="22__18"></a>2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>nginx 负载均衡</title>
-    <url>//*/1506548690.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="nginx__1"></a>nginx 是什么？</h1>
-<span id="more"></span>
-<blockquote>
-<p>Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人 Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个 IMAP/POP3/SMTP 代理服务器；也就是说，Nginx 本身就可以托管网站，进行 HTTP 服务处理，也可以作为反向代理服务器使用。</p>
-</blockquote>
-<h1><a id="nginx__8"></a>nginx 特点</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>跨平台：Nginx 可以在大多数 Unix like OS 编译运行，而且也有 Windows 的移植版本。</p>
-</li>
-<li class="lvl-2">
-<p>配置异常简单：非常容易上手。配置风格跟程序开发一样，神一般的配置</p>
-</li>
-<li class="lvl-2">
-<p>非阻塞、高并发连接：数据复制时，磁盘 I/O 的第一阶段是非阻塞的。官方测试能够支撑 5 万并发连接，在实际生产环境中跑到 2 ～ 3 万并发连接数.(这得益于 Nginx 使用了最新的 epoll 模型)</p>
-</li>
-<li class="lvl-2">
-<p>事件驱动：通信机制采用 epoll 模型，支持更大的并发连接。</p>
-</li>
-</ul>
-<h1><a id="nginx__18"></a>nginx 特性</h1>
-<p><strong>master/worker 结构：</strong> 一个 master 进程，生成一个或多个 worker 进程</p>
-<p><strong>内存消耗小：</strong>  处理大并发的请求内存消耗非常小。在 3 万并发连接下，开启的 10 个 Nginx 进程才消耗 150M 内存（15M*10=150M）</p>
-<p><strong>成本低廉：</strong> Nginx 为开源软件，可以免费使用。而购买 F5 BIG-IP、NetScaler 等硬件负载均衡交换机则需要十多万至几十万人民币</p>
-<p><strong>内置的健康检查功能：</strong> 如果 Nginx Proxy 后端的某台 Web 服务器宕机了，不会影响前端访问。</p>
-<p><strong>节省带宽：</strong> 支持 GZIP 压缩，可以添加浏览器本地缓存的 Header 头。</p>
-<p><strong>稳定性高：</strong> 用于反向代理，宕机的概率微乎其微</p>
-<p>1、nginx 代理和后端 web 服务器间无需长连接；</p>
-<p>2、接收用户请求是异步的，即先将用户请求全部接收下来，再一次性发送后后端 web 服务器，极大的减轻后端 web 服务器的压力</p>
-<p>3、发送响应报文时，是边接收来自后端 web 服务器的数据，边发送给客户端的</p>
-<p>4、网络依赖型低。NGINX 对网络的依赖程度非常低，理论上讲，只要能够 ping 通就可以实施负载均衡，而且可以有效区分内网和外网流量</p>
-<p>5、支持服务器检测。NGINX 能够根据应用服务器处理页面返回的状态码、超时信息等检测服务器是否出现故障，并及时返回错误的请求重新提交到其它节点上</p>
-<h1><a id="nginx__50"></a>nginx 配置</h1>
-<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">upstream</span> www.blog.com &#123;</span><br><span class="line">    <span class="comment">#upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。</span></span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.121:80</span> weight=<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.122:80</span> weight=<span class="number">2</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.123:80</span> weight=<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>nginx</tag>
-        <tag>epoll</tag>
-        <tag>poll</tag>
-        <tag>linux</tag>
-        <tag>unix like os</tag>
       </tags>
   </entry>
   <entry>
@@ -3028,6 +3004,133 @@ ExcelUtil --> RecordHandler</pre>
         <tag>replace</tag>
         <tag>ignore</tag>
         <tag>insert</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0__1"></a>0 云计算</h2>
+<span id="more"></span>
+<h2><a id="1__4"></a>1 雾计算</h2>
+<h2><a id="2__6"></a>2 边缘计算</h2>
+<h3><a id="21__8"></a>2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3><a id="22__18"></a>2-2 为什么需要边缘计算？</h3>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>麻辣炒虾尾 🦞</title>
+    <url>//*/9ddcf808.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
+<span id="more"></span>
+<h1><a id="_7"></a>食材</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>小龙虾（冻虾尾）</p>
+</li>
+<li class="lvl-2">
+<p>大葱</p>
+</li>
+<li class="lvl-2">
+<p>姜</p>
+</li>
+<li class="lvl-2">
+<p>蒜</p>
+</li>
+<li class="lvl-2">
+<p>八角</p>
+</li>
+<li class="lvl-2">
+<p>花椒</p>
+</li>
+<li class="lvl-2">
+<p>干辣椒</p>
+</li>
+<li class="lvl-2">
+<p>啤酒</p>
+</li>
+</ul>
+<h1><a id="_25"></a>调味料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>花生油 30ml</p>
+</li>
+<li class="lvl-2">
+<p>郫县豆瓣酱 10ml</p>
+</li>
+<li class="lvl-2">
+<p>盐 5g</p>
+</li>
+<li class="lvl-2">
+<p>味精 5g</p>
+</li>
+<li class="lvl-2">
+<p>鸡精 5g</p>
+</li>
+<li class="lvl-2">
+<p>生抽 5g</p>
+</li>
+<li class="lvl-2">
+<p>蚝油 5ml</p>
+</li>
+</ul>
+<h1><a id="_35"></a>操作</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>清水清洗小龙虾（冻虾尾），起锅烧油炸4分钟；</p>
+</li>
+<li class="lvl-2">
+<p>放入蒜末翻炒，再放入大葱、姜片、豆瓣酱；</p>
+</li>
+<li class="lvl-2">
+<p>放入八角、花椒、干辣椒，继续翻炒；</p>
+</li>
+<li class="lvl-2">
+<p>放入盐、味精、鸡精、生抽、蚝油调味；</p>
+</li>
+<li class="lvl-2">
+<p>炒香后加入2罐啤酒，煮20分钟；</p>
+</li>
+<li class="lvl-2">
+<p>最后收汁后即可盛出食用；</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>美食</tag>
+        <tag>虾尾</tag>
+        <tag>麻辣</tag>
       </tags>
   </entry>
   <entry>
@@ -3366,109 +3469,6 @@ ExcelUtil --> RecordHandler</pre>
         <tag>机器学习</tag>
         <tag>ocr</tag>
         <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>麻辣炒虾尾 🦞</title>
-    <url>//*/9ddcf808.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
-<span id="more"></span>
-<h1><a id="_7"></a>食材</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>小龙虾（冻虾尾）</p>
-</li>
-<li class="lvl-2">
-<p>大葱</p>
-</li>
-<li class="lvl-2">
-<p>姜</p>
-</li>
-<li class="lvl-2">
-<p>蒜</p>
-</li>
-<li class="lvl-2">
-<p>八角</p>
-</li>
-<li class="lvl-2">
-<p>花椒</p>
-</li>
-<li class="lvl-2">
-<p>干辣椒</p>
-</li>
-<li class="lvl-2">
-<p>啤酒</p>
-</li>
-</ul>
-<h1><a id="_25"></a>调味料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>花生油 30ml</p>
-</li>
-<li class="lvl-2">
-<p>郫县豆瓣酱 10ml</p>
-</li>
-<li class="lvl-2">
-<p>盐 5g</p>
-</li>
-<li class="lvl-2">
-<p>味精 5g</p>
-</li>
-<li class="lvl-2">
-<p>鸡精 5g</p>
-</li>
-<li class="lvl-2">
-<p>生抽 5g</p>
-</li>
-<li class="lvl-2">
-<p>蚝油 5ml</p>
-</li>
-</ul>
-<h1><a id="_35"></a>操作</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>清水清洗小龙虾（冻虾尾），起锅烧油炸4分钟；</p>
-</li>
-<li class="lvl-2">
-<p>放入蒜末翻炒，再放入大葱、姜片、豆瓣酱；</p>
-</li>
-<li class="lvl-2">
-<p>放入八角、花椒、干辣椒，继续翻炒；</p>
-</li>
-<li class="lvl-2">
-<p>放入盐、味精、鸡精、生抽、蚝油调味；</p>
-</li>
-<li class="lvl-2">
-<p>炒香后加入2罐啤酒，煮20分钟；</p>
-</li>
-<li class="lvl-2">
-<p>最后收汁后即可盛出食用；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>虾尾</tag>
-        <tag>麻辣</tag>
       </tags>
   </entry>
 </search>
