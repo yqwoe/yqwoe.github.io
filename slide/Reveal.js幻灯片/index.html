@@ -22,6 +22,7 @@
     <div class="reveal">
       <div class="slides">
         <section data-markdown
+              data-auto-animate
               data-separator="^?
 ----?
 $"
@@ -64,16 +65,30 @@ $"
 ### 我是第三个页面
 
 
+| Item | Value | Qunantity |
+| --- | --- | --- |
+| Apples | $1 | 7|
+| Apples | $1 | 7|
+| Apples | $1 | 7|
+
+
 --
 
 
 # Index 3.2
 ### 我是第三个页面
 
+> 我是一个备注文件
+
 ----
 
 # Index 4
 ### 我是第四个页面
+
+
+
+Note:
+hahhahahaha
 
 
           </textarea>
@@ -86,7 +101,7 @@ $"
     
     <script>
       Reveal.initialize({
-        ...{"hash":true,"help":false,"transition":"linear","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false},
+        ...{"hash":true,"help":false,"transition":"linear","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"zoom","autoSlide":5000,"loop":true},
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
       });
     </script>

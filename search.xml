@@ -342,6 +342,42 @@
       </tags>
   </entry>
   <entry>
+    <title>给博客增加评论功能</title>
+    <url>//*/762727420.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3><a id="imsunhttpsgithubcomimsunGitmenthttpsimsungithubiogitment_1"></a>首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
+<span id="more"></span>
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
+</li>
+</ul>
+<h3><a id="_12"></a>基本使用</h3>
+<h4><a id="1__OAuth_Application_14"></a>1. 注册 OAuth Application</h4>
+<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4><a id="2_jscss__18"></a>2.引入 js、css 到文章页面</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4><a id="3__22"></a>3. 初始化评论</h4>
+<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4><a id="_JekyllAdmin__26"></a>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
+以上是我的分享，谢谢！！</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>//*/465957431.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h5><a id="__1"></a>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！_</h5>
@@ -454,10 +490,10 @@
         <category>工作</category>
       </categories>
       <tags>
+        <tag>git</tag>
         <tag>aliyun</tag>
         <tag>阿里云</tag>
         <tag>gogs</tag>
-        <tag>git</tag>
         <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
@@ -625,42 +661,6 @@
       </tags>
   </entry>
   <entry>
-    <title>给博客增加评论功能</title>
-    <url>//*/762727420.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3><a id="imsunhttpsgithubcomimsunGitmenthttpsimsungithubiogitment_1"></a>首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
-<span id="more"></span>
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
-</li>
-<li class="lvl-2">
-<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
-</li>
-</ul>
-<h3><a id="_12"></a>基本使用</h3>
-<h4><a id="1__OAuth_Application_14"></a>1. 注册 OAuth Application</h4>
-<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4><a id="2_jscss__18"></a>2.引入 js、css 到文章页面</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4><a id="3__22"></a>3. 初始化评论</h4>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4><a id="_JekyllAdmin__26"></a>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
-<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
-以上是我的分享，谢谢！！</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
-        <tag>Jekyll</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>英语学习</title>
     <url>//*/1061411954.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
@@ -729,6 +729,37 @@
       </tags>
   </entry>
   <entry>
+    <title>mybatis动态查询实现</title>
+    <url>//*/3058125875.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
+<span id="more"></span>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><a id="_7"></a>分析:</h2>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
+<p>Where 条件中包含 字段名称、运算符、值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>mybatis 公共 xml 文件配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Product mapper.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ProductController</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3><a id="_31"></a>演示</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>api</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cas Server 本地部署</title>
     <url>//*/1854714444.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="Cas_1"></a>Cas</h1>
@@ -759,37 +790,6 @@
         <tag>cas client</tag>
         <tag>cas server</tag>
         <tag>sso</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mybatis动态查询实现</title>
-    <url>//*/3058125875.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
-<span id="more"></span>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2><a id="_7"></a>分析:</h2>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
-<p>Where 条件中包含 字段名称、运算符、值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>mybatis 公共 xml 文件配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Product mapper.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ProductController</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3><a id="_31"></a>演示</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>api</tag>
       </tags>
   </entry>
   <entry>
@@ -1016,22 +1016,6 @@
       </tags>
   </entry>
   <entry>
-    <title>29岁,再见！</title>
-    <url>//*/1873749776.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>
-冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -1117,6 +1101,22 @@
         <tag>docker</tag>
         <tag>容器技术</tag>
         <tag>traefik2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>29岁,再见！</title>
+    <url>//*/1873749776.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>
+冬冬：因为你明天过生日了吗？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
       </tags>
   </entry>
   <entry>
@@ -1615,22 +1615,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
-    <url>//*/202678719.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>java</tag>
-        <tag>error</tag>
-        <tag>jdbc</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql count函数正确使用姿势</title>
     <url>//*/9f600c63.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
@@ -1687,6 +1671,22 @@ section 运维阶段
         <tag>聚合函数</tag>
         <tag>InnoDB</tag>
         <tag>MyISAM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
+    <url>//*/202678719.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>error</tag>
+        <tag>jdbc</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2570,7 +2570,7 @@ section 运维阶段
     <title>工作计划[2024-01-22] ⏳</title>
     <url>//*/5b16fb9e.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="fa406d226768261d014a9dd238e7d7dcb60e144ef8c06ab67c024400b65700ad">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b4828d8f39e620ac1502d518a4678e988594881f2464b2715770c2fd8b9a0c6111c93306b1c22a628dd063599d683923cf894c7dd80eeddc6de1992e9433e17b0086951811625e5ea3697777df3297d20c1211cf7d920501f9844cbfe488aec1c349484396fd41ed3f2f94a5cb96d9fdaa7c675cccb0f7e3609f0a29dacd0af36da95a3343eaa806ac90fa834bc753aaffbeed9d263f1567d07903e8040b1cae36d7397881afc2f81de2a615a412168d5b347b20d9e21534076e9150373fee6f73e2195d66cbca1f02355bcc3934d363b64e9a47f76d1d6204ab5b926529c1949a30910d9e3f4f84f2030a6f2c3371fcec137048c15d5f05db7595601c1216c54703177352ec1552741d8544ec6d0b53c440833c438254a9922dea8d01aa8fcced15e8f38bc04120b249c211e26b74cb395451506a00993404b9344a01976f62fda00d6ad4bab23e01b00bac10cfb55a7b339b65a6854076d125e926b7574678d6c6ea8e0f60907795ca01306a9485271bbb87b74358277bab888222aa17bb8bd7be3e05e483b3015e5bb2e8557c2b19b5888627b3e36cb196c92b52222dd42138c69c7b5f9af2be5d3a15809c07783967dcd864708c1d4772a2774ec2664951a6fb7c3d285956c2d4cfad52bd61a3810caf53e91c04652dff8e5340674836e2ed529be07e1a23c19182f834c6b27d5bde673f543ba7fe7931c4c2b6533ed6a0917dfa897c8f8d3f01afe1efb340f423c211550c5004d6dc99e7bc8b78828f653632564e2b795f21323056317e93317dca9894d7d43a5f4c88046c5c0eac9b645579fc9e1f456b884bc984ed297954bc748dae2b95e9642ed28b2f85578eed24bb84d4ad1569b030d62be624cfc872c2869573460e8e1098028237c9e26a478698f0f8efb75301ed53dcd161f2f59bc42176b827b31e88838ede9caeab884e6ed699a3fdd445cd2f693dcbff9912db5780df0a837db2ae87d366c858a45b29da018a7ae7f9fb3179ee38484f93420066b4ae183d26b0bc62480da5b3676fdeb31b6c955392b81a3a9d36c770ecde2eba2d9fa201c68f5d60678bdd45f2823f35f9d50d734e4fb0eb3aa451f4aad978ada9cec55467a6d522a995688cb271d7c134b03b88217cd1895cf0aafec980520596e43725d1d9afa6cf6bea9a3e249ee0164c1603c5fded0a3d96ecdd7bd4c40d3986d118b999bc4c39718184cdb39e122c868aa9ab4e3af0024279d72b8728b4136cfd2dc6ec82cfdff0cd4049006a7e8aaf0a26a7cba310f3e9d177c8652179f8a343a39d7c02e96ef88ef026776c92e5adaa442cefb1601278eec42de6c7eacd196a927979854d4a7242a74ded49059429771100974d2ec4e686adfad1a6cf7714663006f08446d74d9a8d62a16182e2571b1f4249028416541226175f5ae49bfa48c81fe7472e0254e836a2510d21c69269b8a75e97832cda26964a1c5074373ce92989d6d299144ab152fb11f05e5fe387b12faf1dc8120ee1e6c330f6ec94444a770abba36f53fe02163e1fbb65b6b26da8d88d9467c816e8783da4d07f36c92fdf411446c9995bf05378053aa68e766a96150d19701b6b226090ff303e1ad60f04c28ce81646f41fc80902bbbd3b3faf7668939afe41405db4a726c4a73e90cadd8be07305a601f4f0d906eefc034d054b80c08ac4e8a345863493775935aba35643e443494b277e3112d5ddbf7dbffa37aad4b9dab8bed919e63975c2965773cd41c5a850d2be56c33f7ebf6d4921026d5815dffc21a6867ca65184ff08db9826a6b72d8d06f98bf962b50e5702ad47c9f2a2189cd6fd8c55239885e444fd9c3da42c905c4afaadb23d46618b448eda62c545e647d40612025c05ab8b4e23b65bd1e40350804b738b03df3a437765f0a51d0d209578041f9aed307261e55632d0fd4d3b78048d5909780902fa56ab3ded100e005f3bc06a42660c6f592335d33028ba7fc2ae8836af7ec90c85e4e97531ea3114696368e348330776d652cc1ddbbe38f573d2c863cf0c6093ecdaf5365f6d5ca40a0b46636aef1926a5424fb0563c512d3b923cdd26f33a47f23bca45da7e8549792b9dd085a1924413a17c3880ad5b1ddc5582d201b15d44bce52bfd6977463609f7484a37b492d9f02cb1ce871bb93154d1e900f288d94114efa406d695f3439e3ce247b057654694281607abbfd636a72385cd2f4177ae81d4328ecd04228762e5044e8c065f95d9efaf92fdacb1df61ef7cd1c4ac8c40f7bbdc141a8bbeba9b6efed23827f6e203f910c35e2f8dbcb544f5a834f89b747e66cd2de13358efb65c38e7372bca40cbec37c2895ba95ad74b4d8f87d0604b0793af6b6f98732ce8fc8aebf71f3fd4912461dc31e4e86f033d9fcb4accb931b65c8f7d6fd7335d99bafb062f15d09fe5bf8a59267438e244cfc2e032e68aad6da4698d11e5a4bd19ab920ac067f33966733991b299679a8e59d97d893f86259c841fe25f87240595624d8f3ce94d69a30e1a2de9144e2cb35f565d5e5df9d856ea441cb5a4db961fa2c55d4b88e9227a088d437bd24598a6fda5b120c9d8fadd0146404d86d8b9c6a7a5e236d946d1d9146a7d87111fd0ae72df93a810ad663550</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="b56f6284c7d8a0fe55e3fc2fe6809aec25cbec39756577d623ec9515f1b8b4b6">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b4828d8f39e620ac1502d518a4678e988594881f2464b2715770c2fd8b9a0c6111c93306b1c22a628dd063599d683923cf894c7dd80eeddc6de1992e9433e17b0086951811625e5ea3697777df3297d20c1211cf7d920501f9844cbfe488aec1c349484396fd41ed3f2f94a5cb96d9fdaa7c675cccb0f7e3609f0a29dacd0af36da95a3343eaa806ac90fa834bc753aaffbeed9d263f1567d07903e8040b1cae36d7397881afc2f81de2a615a412168d5b347b20d9e21534076e9150373fee6f73e2195d66cbca1f02355bcc3934d363b64e9a47f76d1d6204ab5b926529c1949a30910d9e3f4f84f2030a6f2c3371fcec137048c15d5f05db7595601c1216c54703177352ec1552741d8544ec6d0b53c440833c438254a9922dea8d01aa8fcced15e8f38bc04120b249c211e26b74cb395451506a00993404b9344a01976f62fda00d6ad4bab23e01b00bac10cfb55a7b339b65a6854076d125e926b7574678d6c6ea8e0f60907795ca01306a9485271bbb87b74358277bab888222aa17bb8bd7be3e05e483b3015e5bb2e8557c2b19b5888627b3e36cb196c92b52222dd42138c69c7b5f9af2be5d3a15809c07783967dcd864708c1d4772a2774ec2664951a6fb7c3d285956c2d4cfad52bd61a3810caf53e91c04652dff8e5340674836e2ed529be07e1a23c19182f834c6b27d5bde673f543ba7fe7931c4c2b6533ed6a0917dfa897c8f8d3f01afe1efb340f423c211550c5004d6dc99e7bc8b78828f653632564e2b795f21323056317e93317dca9894d7d43a5f4c88046c5c0eac9b645579fc9e1f456b884bc984ed297954bc748dae2b95e9642ed28b2f85578eed24bb84d4ad1569b030d62be624cfc872c2869573460e8e1098028237c9e26a478698f0f8efb75301ed53dcd161f2f59bc42176b827b31e88838ede9caeab884e6ed699a3fdd445cd2f693dcbff9912db5780df0a837db2ae87d366c858a45b29da018a7ae7f9fb3179ee38484f93420066b4ae183d26b0bc62480da5b3676fdeb31b6c955392b81a3a9d36c770ecde2eba2d9fa201c68f5d60678bdd45f2823f35f9d50d734e4fb0eb3aa451f4aad978ada9cec55467a6d522a995688cb271d7c134b03b88217cd1895cf0aafec980520596e43725d1d9afa6cf6bea9a3e249ee0164c1603c5fded0a3d96ecdd7bd4c40d3986d118b999bc4c39718184cdb39e122c868aa9ab4e3af0024279d72b8728b4136cfd2dc6ec82cfdff0cd4049006a7e8aaf0a26a7cba310f3e9d177c8652179f8a343a39d7c02e96ef88ef026776c92e5adaa442cefb1601278eec42de6c7eacd196a927979854d4a7242a74ded49059429771100974d2ec4e686adfad1a6cf7714663006f08446d74d9a8d62a16182e2571b1f4249028416541226175f5ae49bfa48c81fe7472e0254e836a2510d21c69269b8a75e97832cda26964a1c5074373ce92989d6d299144ab152fb11f05e5fe387b12faf1dc8120ee1e6c330f6ec94444a770abba36f53fe02163e1fbb65b6b26da8d88d9467c816e8783da4d07f36c92fdf411446c9995bf05378053aa68e766a96150d19701b6b226090ff303e1ad60f04c28ce81646f41fc80902bbbd3b3faf7668939afe41405db4a726c4a73e90cadd8be07305a601f4f0d906eefc034d054b80c08ac4e8a345863493775935aba35643e443494b277e3112d5ddbf7dbffa37aad4b9dab8bed919e63975c2965773cd41c5a850d2be56c33f7ebf6d4921026d5815dffc21a6867ca65184ff08db9826a6b72d8d06f98bf962b50e5702ad47c9f2a2189cd6fd8c55239885e444fd9c3da42c905c4afaadb23d46618b448eda62c545e647d40612025c05ab8b4e23b65bd1e40350804b738b03df3a437765f0a51d0d209578041f9aed307261e55632d0fd4d3b78048d5909780902fa56ab3ded100e005f3bc06a42660c6f592335d33028ba7fc2ae8836af7ec90c85e4e97531ea3114696368e348330776d652cc1ddbbe38f573d2c863cf0c6093ecdaf5365f6d5ca40a0b46636aef1926a5424fb0563c512d3b923cdd26f33a47f23bca45da7e8549792b9dd085a1924413a17c3880ad5b1ddc5582d201b15d44bce52bfd6977463609f7484a37b492d9f02cb1ce871bb93154d1e900f288d94114efa406d695f3439e3ce247b057654694281607abbfd636a72385cd2f4177ae81d4328ecd04228762e5044e8c065f95d9efaf92fdacb1df61ef7cd1c4ac8c40f7bbdc141a8bbeba9b6efed23827f6e203f910c35e2f8dbcb544f5a834f89b747e66cd2de13358efb65c38e7372bca40cbec37c2895ba95ad74b4d8f87d0604b0793af6b6f98732ce8fc8aebf71f3fd4912461dc31e4e86f033d9fcb4accb931b65c8f7d6fd7335d99bafb062f15d09fe5bf8a59267438e244cfc2e032e68aad6da4698d11e5a4bd19ab920ac067f33966733991b299679a8e59d97d893f86259c841fe25f87240595624d8f3ce94d69a30e1a2de9144e2cb35f565d5e5df9d856ea441cb5a4db961fa2c55d4b88e9227a088d437bd24598a6fda5b120c9d8fadd019d99b97f3e05c927ed397b208773111e6ad608cd1370b80fc93e347e5547509651a7b51bfc7832384f5c665472f9db89c869543821019f6d6525cc85fe4282b00c3efd80326719ea61e2a20c63bef06ac237b84a08b51e71329e45538a90eaf940773aedb269cc180c79b41168d44fb58372c9fff4cdd78b1f4f86f63dd0b735956fc0552b8bff197ff4d73dfc5cd95e1f0e6c5097a9dec4b206e796f641dd8c7e292147b01b67c87e7cc9db44e2de129500303f879cd9ad1937b477e1f13409811165f49b896e5c0fd96609e0c9cbcf87b008488ef070d6de5b67af5601ce55f11ef15fdb5f1296534f48dd210ff680ad30e8c1894efd87fc7f23d0b490383d3cbbf2deb739d68b037f7a9ae1789149f49cfaf833ecb03f595e16a35987250dc68be7b11369e2e2e01777f9cf2e77a951bdc8ffa07f56daf11ce17b95d2239463fea2a74f5595ab2606a7134947a014b4f72f341dff9c58c7deb45e117bb361ad6820c4b59a14738979f5c1e6ce6ea9d888035fc208c09eb3c526418fae7f8c9b66496c72f933d53770a1897328b58d653fddb30f6bad51bbbea50afa19946ed33c4fd5f5956624fd6474db150032512d47cfbcacb93d06451b2db1a523d19c</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-wave">
       <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
@@ -2862,12 +2862,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-aSqmlLfT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-uVEcenKF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-aSqmlLfT"),
+            element: document.getElementById("aplayer-uVEcenKF"),
             narrow: false,
             autoplay: true,
             showlrc: false,
