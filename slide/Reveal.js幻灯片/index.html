@@ -15,7 +15,22 @@
       <!-- Theme used for syntax highlighted code -->
       <link rel="stylesheet" href="/reveal.js/plugin/highlight/monokai.css?v=0.0.1">
 
-      
+      <link rel="stylesheet" href="/reveal.js-plugins/customcontrols/style.css"><link rel="stylesheet" href="/reveal.js-plugins/chalkboard/style.css">
+
+      <style type="text/css">
+          .fragment.blur {
+            filter: blur(5px);
+          }
+
+          .fragment.blur.visible {
+            filter: none;
+          }
+
+          #notescanvas {
+            -webkit-backdrop-filter: unset;
+            backdrop-filter: unset;hexo
+          }
+      </style>
 
     </head>
     <body>
@@ -37,6 +52,7 @@ $"
 # Index 1
 
 ### 我是第一个页面
+<!-- .element: class="fragment custom blur animated move-to-middle-top" data-animated-move-to-top="100px" -->
 
 ```js [1-2|3|4]
     let a = 1;
@@ -44,6 +60,11 @@ $"
     let c = x => 1 + 2 + x;
     c(3);
 ```
+<!-- .element: class="fragment fade-in  animated rotate" data-animated-rotate-to="360deg"-->
+
+`$$ J(\theta_0,\theta_1) = \sum_{i=0} $$`
+<!-- .element: class="fragment fade-in  animated move-to-middle-top rotate" data-animated-rotate-to="360deg" data-animated-move-to-top="20px"-->
+
 
 ```mermaid
 gantt
@@ -66,6 +87,7 @@ section 测试阶段
 section 上线启动
 部署培训     :desc5,2023-12-22,2023-12-29
 ```
+<!-- .element: class=" fragment fade-in  animated move-to-middle-top rotate" data-animated-rotate-to="360deg" data-animated-move-to-top="50px" -->
 
 Note:
 第一个页面的备注文件
@@ -80,15 +102,22 @@ Note:
 
 ### 我是第二个页面
 
+<!-- .element: class="fragment fade-in" -->
+
 [打开index1](#/slide1)
+<!-- .element: class="fragment fade-in" -->
 
 [打开index3](#/slide3)
+<!-- .element: class="fragment fade-in" -->
 
 [打开index3.1](#/slide3.1)
+<!-- .element: class="fragment fade-in" -->
 
 [打开index3.2](#/slide3.2)
+<!-- .element: class="fragment fade-in" -->
 
 [打开index4](#/slide4)
+<!-- .element: class="fragment fade-in" -->
 
 Note:
 第二个页面的备注文件
@@ -103,6 +132,11 @@ Note:
 # Index 3
 
 ### 我是第三个页面
+
+我是<!-- .element: style="color: lightred" -->
+第三<!-- .element:  style="color: lightyellow" -->
+个页面<!-- .element: style="color: lightblue" -->
+
 * 一 <!-- .element: class="fragment fade-in" -->
 * 二 <!-- .element: class="fragment highlight-red" -->
 * 三 <!-- .element: class="fragment fade-out" -->
@@ -180,14 +214,17 @@ Note:
         </div>
       </div>
 
+      <!-- Font awesome is required for the chalkboard plugin -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
       <script src="/reveal.js/dist/reveal.js?v=0.0.1"></script>
-      <script src="/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.js?v=0.0.1"></script>
-      <script src="/reveal.js/plugin/markdown/markdown.js?v=0.0.1"></script><script src="/reveal.js/plugin/highlight/highlight.js?v=0.0.1"></script><script src="/reveal.js/plugin/search/search.js?v=0.0.1"></script><script src="/reveal.js/plugin/notes/notes.js?v=0.0.1"></script><script src="/reveal.js/plugin/math/math.js?v=0.0.1"></script><script src="/reveal.js/plugin/zoom/zoom.js?v=0.0.1"></script>
+      <script src="/reveal.js/plugin/markdown/markdown.js?v=0.0.1"></script><script src="/reveal.js/plugin/highlight/highlight.js?v=0.0.1"></script><script src="/reveal.js/plugin/search/search.js?v=0.0.1"></script><script src="/reveal.js/plugin/notes/notes.js?v=0.0.1"></script><script src="/reveal.js/plugin/math/math.js?v=0.0.1"></script><script src="/reveal.js/plugin/math/math.js?v=0.0.1"></script><script src="/reveal.js/plugin/zoom/zoom.js?v=0.0.1"></script><script src="/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.js?v=0.0.1"></script><script src="/reveal.js-plugins/chalkboard/plugin.js?v=0.0.1"></script><script src="/reveal.js-plugins/customcontrols/plugin.js?v=0.0.1"></script>
       
-      <script>
+      <script type="module">
         Reveal.initialize({
-          ...{"hash":true,"help":false,"transition":"zoom","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"slide","autoSlide":false,"loop":true,"controls":true,"transitionSpeed":"slow","showNotes":false,"slideNumber":true,"mermaid":{"theme":"dark"}},
-          plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealZoom,RevealMermaid],
+          ...{"hash":true,"help":false,"transition":"zoom","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"slide","autoSlide":false,"loop":true,"chalkboard":{"boardmarkerWidth":3,"chalkWidth":7,"chalkEffect":1,"storage":null,"src":null,"transition":800,"theme":"chalkboard","background":["rgba(127,127,127,.1)","/reveal.js-plugins/chalkboard/img/blackboard.png"],"grid":{"color":"rgb(50,50,10,0.5)","distance":80,"width":2},"eraser":{"src":"/reveal.js-plugins/chalkboard/img/sponge.png","radius":20},"boardmarkers":[{"color":"rgba(100,100,100,1)","cursor":"url(/reveal.js-plugins/chalkboard/img/boardmarker-black.png), auto","opacity":0},{"color":"rgba(30,144,255, 1)","cursor":"url(/reveal.js-plugins/chalkboard/img/boardmarker-blue.png), auto"},{"color":"rgba(220,20,60,1)","cursor":"url(1img/boardmarker-red.png), auto"},{"color":"rgba(50,205,50,1)","cursor":"url(/reveal.js-plugins/chalkboard/img/boardmarker-green.png), auto"},{"color":"rgba(255,140,0,1)","cursor":"url(/reveal.js-plugins/chalkboard/img/boardmarker-orange.png), auto"},{"color":"rgba(150,0,20150,1)","cursor":"url(/reveal.js-plugins/chalkboard/img/boardmarker-purple.png), auto"},{"color":"rgba(255,220,0,1)","cursor":"url(/reveal.js-plugins/chalkboard/img/boardmarker-yellow.png), auto"}],"chalks":[{"color":"rgba(255,255,255,0.5)","cursor":"url(/reveal.js-plugins/chalkboard/img/chalk-white.png), auto"},{"color":"rgba(96, 154, 244, 0.5)","cursor":"url(/reveal.js-plugins/chalkboard/img/chalk-blue.png), auto"},{"color":"rgba(237, 20, 28, 0.5)","cursor":"url(/reveal.js-plugins/chalkboard/img/chalk-red.png), auto"},{"color":"rgba(20, 237, 28, 0.5)","cursor":"url(/reveal.js-plugins/chalkboard/img/chalk-green.png), auto"},{"color":"rgba(220, 133, 41, 0.5)","cursor":"url(/reveal.js-plugins/chalkboard/img/chalk-orange.png), auto"},{"color":"rgba(220,0,220,0.5)","cursor":"url(/reveal.js-plugins/chalkboard/img/chalk-purple.png), auto"},{"color":"rgba(255,220,0,0.5)","cursor":"url(/reveal.js-plugins/chalkboard/img/chalk-yellow.png), auto"}]},"showNotes":false,"dependencies":[{"src":"/revealjs-animated/dist/revealjs-animated.js","async":true}],"autoAnimate":true,"controls":true,"transitionSpeed":"slow","slideNumber":true,"mermaid":{"theme":"dark"}},
+          plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealMath.KaTeX, RevealZoom, RevealMermaid, RevealChalkboard, RevealCustomControls],
         });
       </script>
     </body>
