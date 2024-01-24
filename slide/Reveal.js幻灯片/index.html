@@ -10,7 +10,7 @@
 
       <link rel="stylesheet" href="/reveal.js/dist/reset.css?v=0.0.1">
       <link rel="stylesheet" href="/reveal.js/dist/reveal.css?v=0.0.1">
-      <link rel="stylesheet" href="/reveal.js/dist/theme/dracula.css?v=0.0.1">
+      <link rel="stylesheet" href="/reveal.js/dist/theme/league.css?v=0.0.1">
 
       <!-- Theme used for syntax highlighted code -->
       <link rel="stylesheet" href="/reveal.js/plugin/highlight/monokai.css?v=0.0.1">
@@ -32,9 +32,12 @@ $"
                 data-separator-notes="^Note:"
                 data-charset="utf-8">
             <textarea data-template>
-              # Index 1
+              <!-- .slide: id="slide1" data-background-image="./1.jpeg" data-background-opacity="0.5" -->
+
+# Index 1
 
 ### 我是第一个页面
+
 ```js [1-2|3|4]
     let a = 1;
     let b = 2;
@@ -64,27 +67,57 @@ section 上线启动
 部署培训     :desc5,2023-12-22,2023-12-29
 ```
 
+Note:
+第一个页面的备注文件
+
 ----
 
+
+
+<!-- .slide: id="slide2" data-background-image="./2.jpeg" data-background-opacity="0.5"-->
 
 # Index 2
+
 ### 我是第二个页面
 
-* 一 <!-- .element: class="fragment" data-fragment-index="1" -->
-* 二 <!-- .element: class="fragment" data-fragment-index="2" -->
-* 三 <!-- .element: class="fragment" data-fragment-index="3" -->
+[打开index1](#/slide1)
+
+[打开index3](#/slide3)
+
+[打开index3.1](#/slide3.1)
+
+[打开index3.2](#/slide3.2)
+
+[打开index4](#/slide4)
+
+Note:
+第二个页面的备注文件
+
 
 ----
 
+
+
+<!-- .slide: id="slide3" data-background-image="./3.jpeg" data-background-opacity="0.5"-->
+
 # Index 3
+
 ### 我是第三个页面
 * 一 <!-- .element: class="fragment fade-in" -->
 * 二 <!-- .element: class="fragment highlight-red" -->
 * 三 <!-- .element: class="fragment fade-out" -->
 
+Note:
+第三个页面的备注文件
+
 --
 
+
+
+<!-- .slide: id="slide3.1" data-background-image="./3.jpeg" data-background-opacity="0.5" -->
+
 # Index 3.1
+
 ### 我是第三个页面
 
 
@@ -110,25 +143,36 @@ section 上线启动
 部署培训     :desc5,2023-12-22,2023-12-29
 ```
 
+Note:
+第三个页面的备注文件
 
 --
 
+<!-- .slide: id="slide3.2" data-background-image="./3.jpeg" data-background-opacity="0.5" -->
 
 # Index 3.2
+
 ### 我是第三个页面
 
 > 我是一个备注文件
 
+Note:
+第三个页面的备注文件
+
 ----
 
+
+
+<!-- .slide: id="slide4" data-background-image="./4.jpeg" data-background-opacity="0.5" -->
+
 # Index 4
+
 ### 我是第四个页面
 
-
-
 Note:
-hahhahahaha
-hahahaha
+第四个页面的备注文件
+
+
 
 
             </textarea>
@@ -142,7 +186,7 @@ hahahaha
       
       <script>
         Reveal.initialize({
-          ...{"hash":true,"help":false,"transition":"zoom","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"slide","autoSlide":5000,"loop":true,"transitionSpeed":"slow","showNotes":true,"mermaid":{"theme":"dark"}},
+          ...{"hash":true,"help":false,"transition":"zoom","overview":false,"history":true,"autoAnimateEasing":"ease-out","autoAnimateDuration":0.8,"autoAnimateUnmatched":false,"backgroundTransition":"slide","autoSlide":false,"loop":true,"transitionSpeed":"slow","showNotes":false,"slideNumber":true,"mermaid":{"theme":"dark"}},
           plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealZoom,RevealMermaid],
         });
       </script>

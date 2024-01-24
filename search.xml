@@ -498,6 +498,30 @@
       </tags>
   </entry>
   <entry>
+    <title>阿里云mysql外网访问</title>
+    <url>//*/3031836898.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+<span id="more"></span>
+<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
+<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
+<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
+<p>3.mysql 默认只能自本机访问</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
+<p>4.检查是不是在监听状态</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
+<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nginx支持ssl+acme.sh定时更新证书</title>
     <url>//*/1101146699.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>不废话，直接进入实战。</p>
@@ -531,30 +555,6 @@
         <tag>nginx</tag>
         <tag>ssl</tag>
         <tag>acme.sh</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云mysql外网访问</title>
-    <url>//*/3031836898.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
-<span id="more"></span>
-<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
-<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
-<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
-<p>3.mysql 默认只能自本机访问</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
-<p>4.检查是不是在监听状态</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
-<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -678,6 +678,70 @@
       </tags>
   </entry>
   <entry>
+    <title>mybatis动态查询实现</title>
+    <url>//*/3058125875.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
+<span id="more"></span>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><a id="_7"></a>分析:</h2>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
+<p>Where 条件中包含 字段名称、运算符、值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>mybatis 公共 xml 文件配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Product mapper.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ProductController</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3><a id="_31"></a>演示</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>api</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cas Server 本地部署</title>
+    <url>//*/1854714444.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="Cas_1"></a>Cas</h1>
+<blockquote>
+<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<span id="more"></span>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
+<h2><a id="_Cas_Server_13"></a>部署 Cas Server</h2>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+<h4><a id="applicationproperties_17"></a>application.properties</h4>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+<h4><a id="servicesHTTPSandIMAPS10000001json_21"></a>services/HTTPSandIMAPS-10000001.json</h4>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ruby 爬虫 一</title>
     <url>//*/1911085415.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
@@ -726,70 +790,6 @@
         <tag>python</tag>
         <tag>java</tag>
         <tag>kimurai</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cas Server 本地部署</title>
-    <url>//*/1854714444.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1><a id="Cas_1"></a>Cas</h1>
-<blockquote>
-<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
-</blockquote>
-<span id="more"></span>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
-<h2><a id="_Cas_Server_13"></a>部署 Cas Server</h2>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-<h4><a id="applicationproperties_17"></a>application.properties</h4>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-<h4><a id="servicesHTTPSandIMAPS10000001json_21"></a>services/HTTPSandIMAPS-10000001.json</h4>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mybatis动态查询实现</title>
-    <url>//*/3058125875.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
-<span id="more"></span>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2><a id="_7"></a>分析:</h2>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
-<p>Where 条件中包含 字段名称、运算符、值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>mybatis 公共 xml 文件配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Product mapper.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ProductController</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3><a id="_31"></a>演示</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>api</tag>
       </tags>
   </entry>
   <entry>
@@ -1016,22 +1016,6 @@
       </tags>
   </entry>
   <entry>
-    <title>29岁,再见！</title>
-    <url>//*/1873749776.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>
-冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -1120,20 +1104,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Reveal.js使用</title>
-    <url>//*/6befbd07.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed" style="[object Object]"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
-<br>
-<br>
-<details open>
-<summary><span class="pre-summary">&nbsp;</span><mark><strong>代码:</strong></mark></summary><figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># Index 1</span><br><span class="line">### 我是第一个页面</span><br><span class="line">`js [1-2|3|4]</span><br><span class="line">    let a = 1;</span><br><span class="line">    let b = 2;</span><br><span class="line">    let c = x =&gt; 1 + 2 + x;</span><br><span class="line">    c(3);</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Index 2</span><br><span class="line">### 我是第二个页面</span><br><span class="line"></span><br><span class="line">* 一 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;</span><br><span class="line">* 二 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;2&quot; --&gt;</span><br><span class="line">* 三 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;3&quot; --&gt;</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"># Index 3</span><br><span class="line">### 我是第三个页面</span><br><span class="line">* 一 &lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span><br><span class="line">* 二 &lt;!-- .element: class=&quot;fragment highlight-red&quot; --&gt;</span><br><span class="line">* 三 &lt;!-- .element: class=&quot;fragment fade-out&quot; --&gt;</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"># Index 3.1</span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Index 3.2</span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"># Index 4</span><br><span class="line">### 我是第四个页面</span><br></pre></td></tr></table></figure>
-</details>
+    <title>29岁,再见！</title>
+    <url>//*/1873749776.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>
+冬冬：因为你明天过生日了吗？</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>reveal.js</tag>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
       </tags>
   </entry>
   <entry>
@@ -1581,6 +1564,23 @@ section 运维阶段
         <tag>gitlab</tag>
         <tag>okr</tag>
         <tag>项目管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Reveal.js使用</title>
+    <url>//*/6befbd07.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
+<br>
+<br>
+<details open>
+<summary><span class="pre-summary">&nbsp;</span><mark><strong>代码:</strong></mark></summary><figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># Index 1</span><br><span class="line">### 我是第一个页面</span><br><span class="line">`js [1-2|3|4]</span><br><span class="line">    let a = 1;</span><br><span class="line">    let b = 2;</span><br><span class="line">    let c = x =&gt; 1 + 2 + x;</span><br><span class="line">    c(3);</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Index 2</span><br><span class="line">### 我是第二个页面</span><br><span class="line"></span><br><span class="line">* 一 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;</span><br><span class="line">* 二 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;2&quot; --&gt;</span><br><span class="line">* 三 &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;3&quot; --&gt;</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"># Index 3</span><br><span class="line">### 我是第三个页面</span><br><span class="line">* 一 &lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span><br><span class="line">* 二 &lt;!-- .element: class=&quot;fragment highlight-red&quot; --&gt;</span><br><span class="line">* 三 &lt;!-- .element: class=&quot;fragment fade-out&quot; --&gt;</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"># Index 3.1</span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Index 3.2</span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"># Index 4</span><br><span class="line">### 我是第四个页面</span><br></pre></td></tr></table></figure>
+</details>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>reveal.js</tag>
       </tags>
   </entry>
   <entry>
@@ -2859,39 +2859,15 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0__1"></a>0 云计算</h2>
-<span id="more"></span>
-<h2><a id="1__4"></a>1 雾计算</h2>
-<h2><a id="2__6"></a>2 边缘计算</h2>
-<h3><a id="21__8"></a>2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3><a id="22__18"></a>2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-GRaqzJjm" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-tlYiCguj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-GRaqzJjm"),
+            element: document.getElementById("aplayer-tlYiCguj"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2931,6 +2907,30 @@ section 运维阶段
         <tag>有趣</tag>
         <tag>人生</tag>
         <tag>春天</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2><a id="0__1"></a>0 云计算</h2>
+<span id="more"></span>
+<h2><a id="1__4"></a>1 雾计算</h2>
+<h2><a id="2__6"></a>2 边缘计算</h2>
+<h3><a id="21__8"></a>2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3><a id="22__18"></a>2-2 为什么需要边缘计算？</h3>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
       </tags>
   </entry>
   <entry>
@@ -3369,22 +3369,6 @@ ExcelUtil --> RecordHandler</pre>
       </tags>
   </entry>
   <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>麻辣炒虾尾 🦞</title>
     <url>//*/9ddcf808.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
@@ -3469,6 +3453,22 @@ ExcelUtil --> RecordHandler</pre>
         <tag>美食</tag>
         <tag>虾尾</tag>
         <tag>麻辣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
       </tags>
   </entry>
 </search>
