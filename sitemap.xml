@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/6befbd07.html</loc>
+    
+    <lastmod>2024-01-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/2afb063d.html</loc>
     
     <lastmod>2024-01-25</lastmod>
@@ -21,15 +30,6 @@
   
   <url>
     <loc>https://rm-rf.ink/*/8212ba91.html</loc>
-    
-    <lastmod>2024-01-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/6befbd07.html</loc>
     
     <lastmod>2024-01-25</lastmod>
     
