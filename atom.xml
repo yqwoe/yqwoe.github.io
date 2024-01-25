@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2024-01-25T01:53:21.591Z</updated>
+  <updated>2024-01-25T02:50:58.395Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>奇怪的梦</title>
+    <link href="https://rm-rf.ink/*/2afb063d.html"/>
+    <id>https://rm-rf.ink/*/2afb063d.html</id>
+    <published>2024-01-25T02:09:11.000Z</published>
+    <updated>2024-01-25T02:50:58.395Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><pre class="mermaid">mindmap  root((奇怪的梦))    失业      成都找工作      辗转进入一个神秘组织      一觉睡醒发现妻女身在美国    混乱街区      枪支泛滥        每个成年人          要枪杀一个以上人        妻女被挟持          愤起开枪          被自己射杀惊醒    黑人社区      入室“0”元购          随身财物被抢</pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="https://rm-rf.ink/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="奇怪" scheme="https://rm-rf.ink/tags/%E5%A5%87%E6%80%AA/"/>
+    
+    <category term="梦" scheme="https://rm-rf.ink/tags/%E6%A2%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>revealjs-animated动画文档</title>
@@ -345,7 +371,7 @@
     <link href="https://rm-rf.ink/*/2050102104.html"/>
     <id>https://rm-rf.ink/*/2050102104.html</id>
     <published>2023-03-28T02:40:36.000Z</published>
-    <updated>2024-01-10T12:53:22.481Z</updated>
+    <updated>2024-01-25T02:20:35.219Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>本文章围绕gitlab 和 OKR，使用gitlab已有功能，进行项目管理、问题追踪和开发流程规范。</p></blockquote><span id="more"></span><h2 id="需求管理"><a class="markdownIt-Anchor" href="#需求管理"></a> 需求管理</h2><pre class="mermaid">graph TBA[需求池] -->|产品/研发共同确认| B[需求分类]B --> High[高优先级:high] ----CB --> Medium[普通优先级:medium]----CB --> Low[低优先级:low]----CB --> Trivial[微小改动:trivial]----CC(需求队列)</pre><h2 id="版本管理"><a class="markdownIt-Anchor" href="#版本管理"></a> 版本管理</h2><pre class="mermaid">graph LRA[个人开发分支:feat]B[开发分支:dev]C[测试分支:test]D[预发布分支:stag]E[稳定版本分支:realse]F[hot/fix分支]subgraph P1 [分支管理流程]direction BTA-->|合并|BB-->|合并|CC-->|合并|DD-->|合并|Eendsubgraph P2 [紧急修复]direction LRF:::pureRed -.->  B & C & EendclassDef red fill:#eeaa9c,color:#fff;classDef blue fill:#93b5cf,color:#fff;classDef yellow fill:#fcd217,color:#fff;classDef purple fill:#e0c8d1,color:#fff;classDef green fill:#0f0;classDef pureRed fill:#f00,color:#fff;classDef pureBlue fill:#00f,color:#fff;classDef lightBlue fill:#2e317c,color:#fff;classDef lightGreen fill:#a4cab6,color:#fff;</pre><h2 id="里程碑管理"><a class="markdownIt-Anchor" href="#里程碑管理"></a> 里程碑管理</h2><p>里程碑可以是具体的项目、要发布的版本、特定的研发类需求…</p><p>里程碑作为【售前】【产品】【研发】 【测试】【运维】目标（O）</p><p>根据目标来拆解各自的KR。</p><ul class="lvl-0"><li class="lvl-2"><p><strong>售前: 跟踪项目进展、时间把控；客户问题沟通；</strong></p></li><li class="lvl-2"><p>产品: 跟进项目进展、业务答疑；测试跟进；</p></li><li class="lvl-2"><p><strong>研发: 完成既定研发目标；项目进展反馈；</strong></p></li><li class="lvl-2"><p>测试: 测试方案推敲；</p></li><li class="lvl-2"><p>运维: 准备开发、测试、预发布环境；</p></li></ul><pre class="mermaid">graph LRA[Timeline]B[里程碑]C[看板]D[OKR]E[Bug]F[发布上线]subgraph 里程碑管理direction LRA --> BB --->|个人OKR拆解|DB --->|bug关联里程碑|EB --->|日常项目看板|CC & D & E --> Fend</pre><pre class="mermaid">ganttdateFormat YYYY/MM/DDtitle 项目一览excludes weekdays 2023-03-28section 需求阶段启动会议 : des1,2023-04-01,2023-04-10客户调研 : des2,2023-04-01,2d需求整理 : des3,after desc2,2d需求报告 : des4,after des3,2dsection 开发阶段需求分析 : des21,after des4,2d原型选定 : des22,after des21,2d代码开发 : des23,after des22,2d内测 : des24,after des23,2dsection 测试阶段部署     : des1,2023-04-06,2023-05-08客户测试  : des2,2023-04-06,2dbug修复  :  desc3,after des2,2d问题修复  : desc4,after des3,5dsection 上线启动培训     :  des1,2023-04-06,2023-04-08问题日结  : des2,2023-04-09,2d问题修复  : des3,after des2,2d发版      : des4,after des3,2d项目验收   : des5,after des4,2dsection 运维阶段问题整理   : des1,2023-04-10,2023-04-20问题修复   : des2,after des1,2d发版      : des3,after des2,2d</pre><h2 id="工作流程"><a class="markdownIt-Anchor" href="#工作流程"></a> 工作流程</h2><pre class="mermaid">sequenceDiagramActor A as 售前Actor B as 产品Actor C as 设计Actor D as 测试Actor E as 研发Actor F as 运维par 售前解决方案      A->> B: 需求调研      note left of A: 产品和售前做充分调研、客户问题跟踪、项目进展跟踪    and 产品 -> 设计、测试    B -->>C: 原型、设计评审      note left of C: 根据项目情况是否需要原型、设计    B ->>D: 测试用例评审      B ->>E: 需求评审(拆解)    par 研发 -> 测试、运维        E ->>D: 提交版本测试、问题修复        E -->>F: 开发、预发布环境准备      and 测试 -> 产品、售前      D ->> B: 分支管理、版本发布、交付验收      note left of C: 分支管理由测试统一管理、测试问题跟踪、内部演示验收    end    end</pre><ol><li class="lvl-3"><p>需求分析：首先，需要了解客户的需求，并定义项目的目标、范围和可交付成果。</p></li><li class="lvl-3"><p>规划阶段：在这一阶段，需要确定项目的资源、时间表和预算。制定项目计划，并确定项目的关键里程碑和交付时间。</p></li><li class="lvl-3"><p>执行阶段：在这一阶段，需要跟踪项目的进度，分配任务，并确保项目按计划进行。确保与客户和利益相关者进行沟通和协调。</p></li><li class="lvl-3"><p>控制阶段：在这一阶段，需要监控项目的进度和成本，并及时采取纠正措施。需要定期评估项目的绩效和成果，并与客户和利益相关者分享进展。</p></li><li class="lvl-3"><p>收尾阶段：在这一阶段，需要完成项目并提交可交付成果。需要评估项目的成功和教训，并为下一个项目做准备。</p></li></ol><p>此外，以下是一些有助于软件项目管理的最佳实践：</p><ul class="lvl-0"><li class="lvl-2"><p>使用项目管理软件：使用项目管理软件可以帮助您轻松跟踪任务、资源、时间表和预算。</p></li><li class="lvl-2"><p>与利益相关者沟通：确保您与客户、团队成员和其他利益相关者进行沟通和协调。</p></li><li class="lvl-2"><p>采用敏捷开发方法：敏捷开发方法强调快速反馈和快速迭代，可以帮助您更快地实现项目目标。</p></li><li class="lvl-2"><p>风险管理：在整个项目周期内，您需要识别和管理风险，并制定应对措施。</p></li><li class="lvl-2"><p>团队管理：鼓励团队成员进行有效的协作和沟通，并激励他们为项目成功做出贡献。</p></li><li class="lvl-2"><p>持续学习：了解新的技术和工具，以保持对软件项目管理最新的见解和技能。</p></li></ul>]]></content>
     
@@ -542,35 +568,6 @@
     <category term="鲁迅先生" scheme="https://rm-rf.ink/tags/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F/"/>
     
     <category term="父母" scheme="https://rm-rf.ink/tags/%E7%88%B6%E6%AF%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <link href="https://rm-rf.ink/*/3382022550.html"/>
-    <id>https://rm-rf.ink/*/3382022550.html</id>
-    <published>2020-11-24T06:46:04.000Z</published>
-    <updated>2024-01-10T12:52:37.925Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-    
-    
-    <summary type="html">基于k8s&#92;traefik&#92;springboot的微服务实践</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="k8s" scheme="https://rm-rf.ink/tags/k8s/"/>
-    
-    <category term="docker" scheme="https://rm-rf.ink/tags/docker/"/>
-    
-    <category term="容器技术" scheme="https://rm-rf.ink/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="traefik2" scheme="https://rm-rf.ink/tags/traefik2/"/>
-    
-    <category term="springboot" scheme="https://rm-rf.ink/tags/springboot/"/>
     
   </entry>
   
