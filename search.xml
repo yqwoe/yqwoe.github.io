@@ -1,193 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>0. 低代码</title>
-    <url>//*/725797460.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
-<blockquote>
-<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
-<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
-</blockquote>
+    <title>给博客增加评论功能</title>
+    <url>//*/762727420.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
 <span id="more"></span>
-<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
-<ol>
-<li class="lvl-3">
-<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
 </li>
-<li class="lvl-3">
-<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
+<li class="lvl-2">
+<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
 </li>
-<li class="lvl-3">
-<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
-</li>
-<li class="lvl-3">
-<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
-</li>
-<li class="lvl-3">
-<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
-</li>
-<li class="lvl-3">
-<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
-</li>
-<li class="lvl-3">
-<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
-</li>
-<li class="lvl-3">
-<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
-</li>
-<li class="lvl-3">
-<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
-</li>
-<li class="lvl-4">
-<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
-</li>
-</ol>
-<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
-<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
-<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
-<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
-<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
-<p>####整体而言，IT技术人员具备以下特征：</p>
-<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
-​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
-​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
-<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
-<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
-<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
-<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
-​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
-​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
-<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
-<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
-​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
-<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
-<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
-<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
+</ul>
+<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
+<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
+<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
+<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
+以上是我的分享，谢谢！！</p>
 ]]></content>
       <categories>
-        <category>工作</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1. 低代码</title>
-    <url>//*/2967963195.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
-<span id="more"></span>
-<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
-<table>
-<thead>
-<tr>
-<th>服务端</th>
-<th>前端</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java</td>
-<td>react</td>
-</tr>
-<tr>
-<td>springboot</td>
-<td>ant-design</td>
-</tr>
-<tr>
-<td>shenyu</td>
-<td>formily</td>
-</tr>
-<tr>
-<td>redis</td>
-<td>Form-render</td>
-</tr>
-<tr>
-<td>mysql</td>
-<td>Designable</td>
-</tr>
-<tr>
-<td>magic-api</td>
-<td></td>
-</tr>
-<tr>
-<td>dataway</td>
-<td></td>
-</tr>
-<tr>
-<td>es(全文检索)</td>
-<td></td>
-</tr>
-<tr>
-<td>flowable</td>
-<td></td>
-</tr>
-<tr>
-<td>Paddle</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>系统权限</td>
-<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
-</tr>
-<tr>
-<td>组织机构</td>
-<td>行政区域、机构、部门、职位、人员…</td>
-</tr>
-<tr>
-<td>流程引擎</td>
-<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
-</tr>
-<tr>
-<td>开发者工具</td>
-<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
-</tr>
-<tr>
-<td>页面设计器</td>
-<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
-<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
-<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
-<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
-<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
-<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
-<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
-<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
-<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
-<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
-<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
-<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
-<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-        <tag>flowable</tag>
-        <tag>bpmn</tag>
-        <tag>lowcode</tag>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
       </tags>
   </entry>
   <entry>
@@ -339,42 +185,6 @@
         <tag>心情</tag>
         <tag>Like a Rolling Stone</tag>
         <tag>Bob Dylan</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给博客增加评论功能</title>
-    <url>//*/762727420.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
-<span id="more"></span>
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
-</li>
-<li class="lvl-2">
-<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
-</li>
-</ul>
-<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
-<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
-<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
-<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
-以上是我的分享，谢谢！！</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
-        <tag>git</tag>
-        <tag>Jekyll</tag>
       </tags>
   </entry>
   <entry>
@@ -1016,22 +826,6 @@
       </tags>
   </entry>
   <entry>
-    <title>29岁,再见！</title>
-    <url>//*/1873749776.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>
-冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -1120,6 +914,229 @@
       </tags>
   </entry>
   <entry>
+    <title>29岁,再见！</title>
+    <url>//*/1873749776.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>
+冬冬：因为你明天过生日了吗？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1. 低代码</title>
+    <url>//*/2967963195.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
+<span id="more"></span>
+<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
+<table>
+<thead>
+<tr>
+<th>服务端</th>
+<th>前端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Java</td>
+<td>react</td>
+</tr>
+<tr>
+<td>springboot</td>
+<td>ant-design</td>
+</tr>
+<tr>
+<td>shenyu</td>
+<td>formily</td>
+</tr>
+<tr>
+<td>redis</td>
+<td>Form-render</td>
+</tr>
+<tr>
+<td>mysql</td>
+<td>Designable</td>
+</tr>
+<tr>
+<td>magic-api</td>
+<td></td>
+</tr>
+<tr>
+<td>dataway</td>
+<td></td>
+</tr>
+<tr>
+<td>es(全文检索)</td>
+<td></td>
+</tr>
+<tr>
+<td>flowable</td>
+<td></td>
+</tr>
+<tr>
+<td>Paddle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统权限</td>
+<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
+</tr>
+<tr>
+<td>组织机构</td>
+<td>行政区域、机构、部门、职位、人员…</td>
+</tr>
+<tr>
+<td>流程引擎</td>
+<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
+</tr>
+<tr>
+<td>开发者工具</td>
+<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
+</tr>
+<tr>
+<td>页面设计器</td>
+<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
+<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
+<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
+<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
+<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
+<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
+<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
+<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
+<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
+<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
+<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
+<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
+<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+        <tag>flowable</tag>
+        <tag>bpmn</tag>
+        <tag>lowcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>0. 低代码</title>
+    <url>//*/725797460.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
+<blockquote>
+<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
+<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
+<ol>
+<li class="lvl-3">
+<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
+</li>
+<li class="lvl-3">
+<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
+</li>
+<li class="lvl-3">
+<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
+</li>
+<li class="lvl-3">
+<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
+</li>
+<li class="lvl-3">
+<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
+</li>
+<li class="lvl-3">
+<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
+</li>
+<li class="lvl-3">
+<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
+</li>
+<li class="lvl-3">
+<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
+</li>
+<li class="lvl-3">
+<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
+</li>
+<li class="lvl-4">
+<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
+</li>
+</ol>
+<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
+<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
+<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
+<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
+<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
+<p>####整体而言，IT技术人员具备以下特征：</p>
+<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
+​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
+​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
+<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
+<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
+<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
+<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
+​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
+​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
+<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
+<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
+​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
+<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
+<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
+<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Reveal.js使用</title>
+    <url>//*/6befbd07.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
+<br>
+<br>
+<details open>
+<summary><span class="pre-summary">&nbsp;</span><mark><strong>代码:</strong></mark></summary><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide1&quot; data-background-image=&quot;./1.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 1</span><br><span class="line"></span><br><span class="line">### 我是第一个页面</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment custom blur animated scale-down&quot; data-animated-scale-down-from=&quot;10&quot; data-animated-scale-down-to=&quot;1&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">`js [1|2|3|4]</span><br><span class="line">    let a = 1;</span><br><span class="line">    let b = 2;</span><br><span class="line">    let c = x =&gt; 1 + 2 + x;</span><br><span class="line">    c(3);</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in  animated rotate&quot; data-animated-rotate-to=&quot;360deg&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot; fragment fade-in  animated move-to rotate&quot; data-animated-rotate-to=&quot;360deg&quot; data-animated-move-to-top=&quot;-50px&quot; data-animated-move-to-left=&quot;0px&quot; ---&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第一个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide2&quot; data-background-image=&quot;./2.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 2</span><br><span class="line"></span><br><span class="line">### 我是第二个页面</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index1](#/slide1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3](#/slide3)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.1](#/slide3.1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.2](#/slide3.2)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index4](#/slide4)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第二个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">我是<span class="comment">&lt;!-- .element: style=&quot;color: lightred&quot; --&gt;</span></span><br><span class="line">第三<span class="comment">&lt;!-- .element:  style=&quot;color: lightyellow&quot; --&gt;</span></span><br><span class="line">个页面<span class="comment">&lt;!-- .element: style=&quot;color: lightblue&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">* 一 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line">* 二 <span class="comment">&lt;!-- .element: class=&quot;fragment highlight-red&quot; --&gt;</span></span><br><span class="line">* 三 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-out&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.1&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.1</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.2&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.2</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">&gt; 我是一个备注文件</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide4&quot; data-background-image=&quot;./4.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 4</span><br><span class="line"></span><br><span class="line">### 我是第四个页面</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第四个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</details>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>reveal.js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>4月份wbs</title>
     <url>//*/c2cb16de.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -1143,23 +1160,6 @@
       <tags>
         <tag>wbs</tag>
         <tag>项目一览</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Reveal.js使用</title>
-    <url>//*/6befbd07.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
-<br>
-<br>
-<details open>
-<summary><span class="pre-summary">&nbsp;</span><mark><strong>代码:</strong></mark></summary><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide1&quot; data-background-image=&quot;./1.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 1</span><br><span class="line"></span><br><span class="line">### 我是第一个页面</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment custom blur animated scale-down&quot; data-animated-scale-down-from=&quot;10&quot; data-animated-scale-down-to=&quot;1&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">`js [1|2|3|4]</span><br><span class="line">    let a = 1;</span><br><span class="line">    let b = 2;</span><br><span class="line">    let c = x =&gt; 1 + 2 + x;</span><br><span class="line">    c(3);</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in  animated rotate&quot; data-animated-rotate-to=&quot;360deg&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot; fragment fade-in  animated move-to rotate&quot; data-animated-rotate-to=&quot;360deg&quot; data-animated-move-to-top=&quot;-50px&quot; data-animated-move-to-left=&quot;0px&quot; ---&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第一个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide2&quot; data-background-image=&quot;./2.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 2</span><br><span class="line"></span><br><span class="line">### 我是第二个页面</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index1](#/slide1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3](#/slide3)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.1](#/slide3.1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.2](#/slide3.2)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index4](#/slide4)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第二个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">我是<span class="comment">&lt;!-- .element: style=&quot;color: lightred&quot; --&gt;</span></span><br><span class="line">第三<span class="comment">&lt;!-- .element:  style=&quot;color: lightyellow&quot; --&gt;</span></span><br><span class="line">个页面<span class="comment">&lt;!-- .element: style=&quot;color: lightblue&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">* 一 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line">* 二 <span class="comment">&lt;!-- .element: class=&quot;fragment highlight-red&quot; --&gt;</span></span><br><span class="line">* 三 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-out&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.1&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.1</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.2&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.2</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">&gt; 我是一个备注文件</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide4&quot; data-background-image=&quot;./4.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 4</span><br><span class="line"></span><br><span class="line">### 我是第四个页面</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第四个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</details>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>reveal.js</tag>
       </tags>
   </entry>
   <entry>
@@ -1351,53 +1351,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>搭建maven私库</title>
-    <url>//*/1406322052.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
-<span id="more"></span>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
-<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
-修改密码后 admin.password自动删除</p>
-<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
-<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
-<p>develop =&gt; nx-all</p>
-<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
-<p>developer =&gt; develop</p>
-<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
-<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>docker</tag>
-        <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
-    <url>//*/202678719.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>java</tag>
-        <tag>error</tag>
-        <tag>jdbc</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql count函数正确使用姿势</title>
     <url>//*/9f600c63.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
@@ -1457,169 +1410,19 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>revealjs-animated动画文档</title>
-    <url>//*/8212ba91.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://rogeralmeida.github.io/revealjs-animated-examples/">查看示例</a></p>
-<h2 id="如何安装"><a class="markdownIt-Anchor" href="#如何安装"></a> 如何安装</h2>
-<ol>
-<li class="lvl-3">
-<p>安装revealjs-animated插件</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install revealjs-animated</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li class="lvl-3">
-<p>在Reveal.js中初始化安装路径</p>
-</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//index.html</span></span><br><span class="line"><span class="title class_">Reveal</span>.<span class="title function_">initialize</span>(&#123;</span><br><span class="line">    <span class="attr">dependencies</span>: [</span><br><span class="line">        <span class="comment">// Other plugins</span></span><br><span class="line">        &#123;<span class="attr">src</span>: <span class="string">&#x27;node_modules/revealjs-animated/dist/revealjs-animated.js&#x27;</span>, <span class="attr">async</span>: <span class="literal">true</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="如何使用"><a class="markdownIt-Anchor" href="#如何使用"></a> 如何使用？</h2>
-<h3 id="居中移动动画"><a class="markdownIt-Anchor" href="#居中移动动画"></a> 居中移动动画</h3>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;titulo&quot;</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated move-to-middle-top&quot;</span>&gt;</span>居中<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line"># 居中<span class="comment">&lt;!-- .element: class=&quot;fragment animated move-to-middle-top&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="属性"><a class="markdownIt-Anchor" href="#属性"></a> 属性</h4>
-<p>此动画不允许使用任何属性。</p>
-<h3 id="自定义位置移动动画"><a class="markdownIt-Anchor" href="#自定义位置移动动画"></a> 自定义位置移动动画</h3>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated move-to&quot;</span>&gt;</span>默认参数<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">默认参数<span class="comment">&lt;!-- .element: class=&quot;fragment animated move-to&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="属性-2"><a class="markdownIt-Anchor" href="#属性-2"></a> 属性</h4>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data-animated-move-to-left</td>
-<td>50px</td>
-<td>动画对象应在X轴上移动的距离</td>
-</tr>
-<tr>
-<td>data-animated-move-to-top</td>
-<td>25px</td>
-<td>动画对象应在Y轴上移动的距离</td>
-</tr>
-</tbody>
-</table>
-<h3 id="放大动画"><a class="markdownIt-Anchor" href="#放大动画"></a> 放大动画</h3>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated scale-up&quot;</span>&gt;</span>放大<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">放大<span class="comment">&lt;!-- .element: class=&quot;fragment animated scale-up&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="属性-3"><a class="markdownIt-Anchor" href="#属性-3"></a> 属性</h4>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data-animated-scale-up-from</td>
-<td>1</td>
-<td>起始值</td>
-</tr>
-<tr>
-<td>data-animated-scale-up-to</td>
-<td>2</td>
-<td>最大值</td>
-</tr>
-</tbody>
-</table>
-<h3 id="缩小动画"><a class="markdownIt-Anchor" href="#缩小动画"></a> 缩小动画</h3>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated scale-down&quot;</span>&gt;</span>缩小<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">缩小<span class="comment">&lt;!-- .element: class=&quot;fragment animated scale-down&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="属性-4"><a class="markdownIt-Anchor" href="#属性-4"></a> 属性</h4>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data-animated-scale-down-from</td>
-<td>1</td>
-<td>起始值</td>
-</tr>
-<tr>
-<td>data-animated-scale-down-to</td>
-<td>0.5</td>
-<td>最小值</td>
-</tr>
-</tbody>
-</table>
-<h3 id="旋转动画"><a class="markdownIt-Anchor" href="#旋转动画"></a> 旋转动画</h3>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated rotate&quot;</span>&gt;</span>旋转<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">旋转<span class="comment">&lt;!-- .element: class=&quot;fragment animated rotate&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="属性-5"><a class="markdownIt-Anchor" href="#属性-5"></a> 属性</h4>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data-animated-rotate-from</td>
-<td><code>0deg</code></td>
-<td>起始角度</td>
-</tr>
-<tr>
-<td>data-animated-rotate-to</td>
-<td><code>180deg</code></td>
-<td>最大角度</td>
-</tr>
-</tbody>
-</table>
-<h2 id="时间属性"><a class="markdownIt-Anchor" href="#时间属性"></a> 时间属性</h2>
-<p><code>duration</code>, <code>iteration</code> 和 <code>fill</code> 动画属性可以通过以下属性进行控制：</p>
-<h4 id="属性-6"><a class="markdownIt-Anchor" href="#属性-6"></a> 属性</h4>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>必填</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data-animated-duration</td>
-<td>否</td>
-<td>1000</td>
-<td>动画持续时间(毫秒)</td>
-</tr>
-<tr>
-<td>data-animated-iterations</td>
-<td>否</td>
-<td>1</td>
-<td>动画循环次数</td>
-</tr>
-<tr>
-<td>data-animated-fill</td>
-<td>否</td>
-<td>forwards</td>
-<td>动画最终状态 <code>forwards</code>, <code>none</code>, <code>backwards</code>, <code>both</code>, <code>auto</code>. 更多属性设置 <a href="https://developer.mozilla.org/en-US/docs/Web/API/EffectTiming/fill">MDN: EffectTiming.fill</a></td>
-</tr>
-</tbody>
-</table>
-<h1 id="组合动画"><a class="markdownIt-Anchor" href="#组合动画"></a> 组合动画</h1>
-<p>从1.2.0版本开始，可以将多个动画组合在一起以创建动画。只需要添加多个CSS类。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated move-to-middle-top rotate&quot;</span>&gt;</span>移动并旋转<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">移动并旋转<span class="comment">&lt;!-- .element: class=&quot;fragment animated  move-to-middle-top rotate&quot; --&gt;</span></span><br></pre></td></tr></table></figure>
-<p><a href="#general-time-attributes">时间属性</a> 只能用于组合动画，不能单独用于每个动画；</p>
+    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
+    <url>//*/202678719.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>reveal.js</tag>
-        <tag>animate</tag>
-        <tag>css动画</tag>
-        <tag>css</tag>
+        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>error</tag>
+        <tag>jdbc</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2213,6 +2016,273 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>revealjs-animated动画文档</title>
+    <url>//*/8212ba91.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://rogeralmeida.github.io/revealjs-animated-examples/">查看示例</a></p>
+<h2 id="如何安装"><a class="markdownIt-Anchor" href="#如何安装"></a> 如何安装</h2>
+<ol>
+<li class="lvl-3">
+<p>安装revealjs-animated插件</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install revealjs-animated</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li class="lvl-3">
+<p>在Reveal.js中初始化安装路径</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//index.html</span></span><br><span class="line"><span class="title class_">Reveal</span>.<span class="title function_">initialize</span>(&#123;</span><br><span class="line">    <span class="attr">dependencies</span>: [</span><br><span class="line">        <span class="comment">// Other plugins</span></span><br><span class="line">        &#123;<span class="attr">src</span>: <span class="string">&#x27;node_modules/revealjs-animated/dist/revealjs-animated.js&#x27;</span>, <span class="attr">async</span>: <span class="literal">true</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="如何使用"><a class="markdownIt-Anchor" href="#如何使用"></a> 如何使用？</h2>
+<h3 id="居中移动动画"><a class="markdownIt-Anchor" href="#居中移动动画"></a> 居中移动动画</h3>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;titulo&quot;</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated move-to-middle-top&quot;</span>&gt;</span>居中<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line"># 居中<span class="comment">&lt;!-- .element: class=&quot;fragment animated move-to-middle-top&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="属性"><a class="markdownIt-Anchor" href="#属性"></a> 属性</h4>
+<p>此动画不允许使用任何属性。</p>
+<h3 id="自定义位置移动动画"><a class="markdownIt-Anchor" href="#自定义位置移动动画"></a> 自定义位置移动动画</h3>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated move-to&quot;</span>&gt;</span>默认参数<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">默认参数<span class="comment">&lt;!-- .element: class=&quot;fragment animated move-to&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="属性-2"><a class="markdownIt-Anchor" href="#属性-2"></a> 属性</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-move-to-left</td>
+<td>50px</td>
+<td>动画对象应在X轴上移动的距离</td>
+</tr>
+<tr>
+<td>data-animated-move-to-top</td>
+<td>25px</td>
+<td>动画对象应在Y轴上移动的距离</td>
+</tr>
+</tbody>
+</table>
+<h3 id="放大动画"><a class="markdownIt-Anchor" href="#放大动画"></a> 放大动画</h3>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated scale-up&quot;</span>&gt;</span>放大<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">放大<span class="comment">&lt;!-- .element: class=&quot;fragment animated scale-up&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="属性-3"><a class="markdownIt-Anchor" href="#属性-3"></a> 属性</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-scale-up-from</td>
+<td>1</td>
+<td>起始值</td>
+</tr>
+<tr>
+<td>data-animated-scale-up-to</td>
+<td>2</td>
+<td>最大值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="缩小动画"><a class="markdownIt-Anchor" href="#缩小动画"></a> 缩小动画</h3>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated scale-down&quot;</span>&gt;</span>缩小<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">缩小<span class="comment">&lt;!-- .element: class=&quot;fragment animated scale-down&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="属性-4"><a class="markdownIt-Anchor" href="#属性-4"></a> 属性</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-scale-down-from</td>
+<td>1</td>
+<td>起始值</td>
+</tr>
+<tr>
+<td>data-animated-scale-down-to</td>
+<td>0.5</td>
+<td>最小值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="旋转动画"><a class="markdownIt-Anchor" href="#旋转动画"></a> 旋转动画</h3>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated rotate&quot;</span>&gt;</span>旋转<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">旋转<span class="comment">&lt;!-- .element: class=&quot;fragment animated rotate&quot; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="属性-5"><a class="markdownIt-Anchor" href="#属性-5"></a> 属性</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-rotate-from</td>
+<td><code>0deg</code></td>
+<td>起始角度</td>
+</tr>
+<tr>
+<td>data-animated-rotate-to</td>
+<td><code>180deg</code></td>
+<td>最大角度</td>
+</tr>
+</tbody>
+</table>
+<h2 id="时间属性"><a class="markdownIt-Anchor" href="#时间属性"></a> 时间属性</h2>
+<p><code>duration</code>, <code>iteration</code> 和 <code>fill</code> 动画属性可以通过以下属性进行控制：</p>
+<h4 id="属性-6"><a class="markdownIt-Anchor" href="#属性-6"></a> 属性</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>必填</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-duration</td>
+<td>否</td>
+<td>1000</td>
+<td>动画持续时间(毫秒)</td>
+</tr>
+<tr>
+<td>data-animated-iterations</td>
+<td>否</td>
+<td>1</td>
+<td>动画循环次数</td>
+</tr>
+<tr>
+<td>data-animated-fill</td>
+<td>否</td>
+<td>forwards</td>
+<td>动画最终状态 <code>forwards</code>, <code>none</code>, <code>backwards</code>, <code>both</code>, <code>auto</code>. 更多属性设置 <a href="https://developer.mozilla.org/en-US/docs/Web/API/EffectTiming/fill">MDN: EffectTiming.fill</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="组合动画"><a class="markdownIt-Anchor" href="#组合动画"></a> 组合动画</h1>
+<p>从1.2.0版本开始，可以将多个动画组合在一起以创建动画。只需要添加多个CSS类。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--html--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;fragment animated move-to-middle-top rotate&quot;</span>&gt;</span>移动并旋转<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--md--&gt;</span></span><br><span class="line">移动并旋转<span class="comment">&lt;!-- .element: class=&quot;fragment animated  move-to-middle-top rotate&quot; --&gt;</span></span><br></pre></td></tr></table></figure>
+<p><a href="#general-time-attributes">时间属性</a> 只能用于组合动画，不能单独用于每个动画；</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>reveal.js</tag>
+        <tag>animate</tag>
+        <tag>css动画</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>奇怪的梦</title>
+    <url>//*/2afb063d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><pre class="mermaid">mindmap
+  root((奇怪的梦))
+    失业
+      成都找工作
+      	辗转进入一个神秘组织
+      	一觉睡醒发现妻女身在美国
+    混乱街区
+      枪支泛滥
+        每个成年人
+          要枪杀一个以上人
+        妻女被挟持
+          愤起开枪
+          被自己射杀惊醒
+    黑人社区
+      入室“0”元购
+          随身财物被抢</pre>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇怪</tag>
+        <tag>梦</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安全风险评估</title>
+    <url>//*/2576489939.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
+<span id="more"></span>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 工人、工厂、设施、设备。</p>
+<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
+<p>采集数据:</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>视频监控</p>
+</li>
+<li class="lvl-4">
+<p>机械设备状态</p>
+</li>
+<li class="lvl-4">
+<p>化学物质 （有害物质…）</p>
+</li>
+<li class="lvl-4">
+<p>厂区环境（温湿度）</p>
+</li>
+<li class="lvl-4">
+<p>工人 （行为）</p>
+</li>
+<li class="lvl-4">
+<p>等…系列影响安全风险的重要指标数据</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="检测"><a class="markdownIt-Anchor" href="#检测"></a> 检测</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 生产过程中的环节检测。</p>
+<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
+<p>…</p>
+</li>
+</ul>
+<h2 id="决策"><a class="markdownIt-Anchor" href="#决策"></a> 决策</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 辅助决策</p>
+<p>通过以上结果知道生产过程…</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>安全</tag>
+        <tag>检测</tag>
+        <tag>策略</tag>
+        <tag>预测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端定时器</title>
     <url>//*/3423146f.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
@@ -2301,18 +2371,133 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+    <title>工作计划[2024-01-22] ⏳</title>
+    <url>//*/5b16fb9e.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="7cd2f386c806b9c97a709dc2a9dc997063722defbd9e27b1f4dd23275112b91a">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b49a127d2ae3ed6c214e7e3d2fa707ac4ce14cee1f999847f7c008d77549f529b7a80484e1f0502a1fa604a7aff82b7bdf0b456b64e7075a89a524570aa89ac470939249e9dcaf002bb2fb85dff9b52e16559acd08d4b1a1fc147ca90e8dafe643383e23512f0863cfd8732d487120de856b843a1f6bd016be0123d42b842d01dcd2ba2c3645f8d33ef006340fe1d00f673c921457c3f04ad8efc3fa4352235e00dd831d0579ee16aab97415705c8f502f4e3223acab9d098d1cd3db0b71bf11332d8e8ff8dad4e16db988ca55687e3aee8c1b8f61a474a79e0610ac5838d49517b7bc0b0e9f00d7f63d74d2140a391e48b5893785e40feb1b2349e9784b05736eb13a0137913ef872fcf8ec8a30c20719da31426f227a8e9aee18e4656a3504c175d8685af708bdf044958cc60b8c1c0e6690cc1c0c6f4bea8c25fd92db72f5c8726b52a5668473fa4b09494d23ce41248d68be7af954ba02c9258c99707ec60a29a44ddd8805d65be01fed3ce1463bc9649d51f21fefce8f142235ba2936a75c7987dba8657b616ccfc9eca1ecc0436c4120aab50ddaebc1829f498f7a3317d9b22d92bc00e42ed65bdb45c08e1227cf9fb33ead57b4ec3e477f01c7b3bb73273c6c6b117b950a72322540c813d2e80d243201c3b2b72a6489ae5f34b7be9b9f6ce61d7346226c30c016ba8b488bf8a26b59ba90136dc9af2655fc3fa4a4e6d300f56eb592cdd6643dd885fc35f8ebf5457ef0a60a43469f2fa53f78071ac81ceafa3456b26cca7e2c94afaf062da9c16fcd9f4e3c2dc32a56da78742fae410c27cd178621112ff7b05837af2dc3e8eee15b24ecc7e9d1d85a9a3252cf84ee81025d64cfd32b14b197d69b83b4ba45101d9c5e838e6609ae4ebace48f9916c4d3da8c1edb6a38a0e46e789467570c3487791b644f2348d2eb89c4d7ccaebd61e598a63c5b095e9edb72058266cd697e7d0783b34a135c9840e693fc6c0e2659ee9292d797d979731f55c147947ac5fadcbb585babfa950e9216a7c9425bea5d8abadc1eecd6aff5eb634c0e9118c89db74028b3d4f4628468ce6c343f7f2d88cc728876cf46ac8f8494de8c8f17c01c75a061245acf6387aae094e3650e82f5991ae7bb579c24d3642c46215db9963990346e65c0a988ca9907cec41e93d2a9696cf3775c4106032759fcae7146a9835128710d42aed7752b2a314549008ea187779613fef55e2e62c60a6ebf099da28074e6f1c3f5ad53d615598eb0f40ebc3dc8868254e5144e12541d6d4220ba7f48610c6b188bdca0903287d7c5d8927e0fe6dc74319da9e6b613c51704ceb616e68d3db9142d3f2ea4a3c590536d249388ed6814db9eca0245e62de8ed2125433abb659ae09f9d0343114f4fe55b316bb2033c7e67105672967679d710673987732e74389b2e830360f2863ca80516f133db9a74237c4deb0465ea359a1717883951a5fcc83ce572af62798768500ad690b43dc6005fb368f8b0f972d9ceee54d3286fdf9cd19e2692812119ea118b6145877194cb16b9e0867c8cc3b273068df03ae03865dbb37befb0ff0719289aa8627c872cf2c89e201aab94356c7aef4ef1bfc1b945829b79f0f34de8c4673f164</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
+        <tag>工作计划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>成本核算</title>
+    <url>//*/fb428c48.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b717d5bdf6b8af7b17a1089067d38f65b6038f5791d5e710a54b2ef348a38503">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0195048f25efe9b21ce963d68bba31f68109d09d5e9a4798ba30c885f456814a1f79a3813597deaa347db33459cd74ba7a0df0f4961b35961cf13b305d52d09764798e16bc3970b56199d955ddc1cc9c04c353fb965ceadfc5376a7704a76f05c3da2895c2e503e0f9acd812b0bc56d7b3677b1a7366b54e384df56d66b32e47484884bf3ad6f10f3899fa6a1d0ebc8f4a8f15a25926c5f09faafa892771e672dce8e9193fa9821d44cf076aab160fdd0005724034d18e4ec566a57f74d507df6d98454bbb420fcada5e86fac9dbfa97eeb919651443dcdc350dc638e6283d9e889b5ef81fbdf4f010db814ea35ae2d88b145fddbb9a4ec5fb960e01b8dccc33d9d1472271d360d47d559c2cd5ae29072cf1682091e200aaa447262efc45994d84b2c885e9b76e9f6b3ef00b89976974fb39dc4bdf102c62aba6f4d39dd48aa679f191b17b8ff5f2e0abcd9bd1f2337ad24b07c79ad4db23273f4d9b18e4413df745c0f31919fcc98d3b2a2ff051813176fcb8d58ee7f78dc47725baf6037a8c9c9023cd0664a14ad3df32b1860769e27cfc62a526a7429fc8a9bfa8f0c4eaf21b91b43f495b19552fc3cd3ba2059a4b27288ebba98589861a37f28b9e654f66021082d4c872a88d3facc4a920fd93fbe53794151d3810e0f41ae6ef736202eddf98d357b518c8ee5d24291815099bce81bbd1e3d5be21a6190e11110ebcebc495f364fb7ddd71af01062f3f4331541424ae155572f54b5b1a9e2a4451b7e5a67dc4ae23b02e2bcf8c5405caf52af747361a7e201552703e9e68652e283e243ae778b4fb061e2fe1c5a88b32885fa001c19342685e6d35240c9c60816dc0f52dd9ec1a10c1a98d8425d219009af06c78c76a0a5af095e3eadd043e992cd5442016008d372de0e2e28276f719e434042c8687a3001f4ac17e62f96f8116976622af1d3b02fc36f20a441b7b8a0137e695b972671ce2e8bd72d6d5657e0801f89d5fec028eb460e1e5648a7f8cd5aab70056414069cc9cab4956d21a0ca6862624f175f0fdd3e5235e1849953f95bc1aca628de0f0302d774a56bb88f74a38135d4475c2d58c8bc3da4f4e2dd372eba1d384d85b3974a96648b10c245e5e236abc4079c2b74b6ee2361ed5562b7668c911d515a64b6a997799db65b8e7e84692d7ce4760f5330d53d887ef48426fc4b010815316f79ea6ec39c44aaad8c17bf5641aa2791ced0e687fbac1653bfb460b485d5c5749d365189fb0e665dd6594abac78c78a89708f8a342d255adcf5c65073577d1260a589b93071cf836c261b1323838e497a9eeba19d9ce2560a9b124f30ba7b9d0215080f80d120b274989324c2859a89f196875620b717573e344ba19b9c50dc62adeafaace6439140c177feb10ab320bb933c1446ce46aa89267b7d762cd4b484be40a114030d3d88fc844e27293d2c5d5c0589e4385e7969311e93127b3fe159fd02febc78973a274dfa7cffac4734c5968ad1be60fa48a6b661ec085d7dfd59dfa4b4971b08733cc707bc9917f792a7295c22a236fc1caa0df5f142f630a2471ccee6dde5e0a5e477e6faa593114a9ce01f136dfa3ed4cb9f303f72e1004b53e92a90188166f9bb1c0d3d19ee71a6e5c9e08f744a8dff9aede11780d2870991417df97ca9cf0cbea3a165e888856bf167f16c121d1c6c27d9bd221a45fbca688aef75df5f319347f10849d3be256d21f1eb894af2a1cf3af16b36a27d7c4508e19b0520f06bff68f9932ec397c56e16ec54d02264b3426c4bdd422acf8aa01bec8751dace3c11a23da65c4a2a78b9d35e4ce3bfbd4e5164ef94294c9309890af0ea906618c8185409f0c62a23a2daca528dc47006c186d7ac85cfb0704e5e0bbb68d14948bcd335c4c91d5b025942c33e0d0f3f2f81e0579c59b47774434bc0cb0c9ea595e99855e49961941d35f3d1884ba9b61fcc08e8942e1ff7d197dfbb063fb7be569dac0bce3dcbfd0477cc08f06f919b682235d84fccc3abc5355aa31d00ae277ae45d0f6b18231f1085d2cc2a09b9ce7e8a7a3efbc068c469db4e787837ab06b9992ed3a2d212a51b13dfa660e4fb1bc8ef5242d2f4703c81984cf42725b51e09697f3d2c41ceb0a5cce49fe3b5e1ea2604c067155ffd8d8eee261bb018bfb7d463ebf9e95afd61afee4ec04a63e83a3b69db502e759513faab321c2889d5312a6736c03aff05cc6050db40acee71c561369c745107eaf9bc43d4841599ab277e4d5fc16737231f891874aca14e662003c62d6fd17ea2a17396f81a88c2600f863b10a84a15a6c173bbbc368644412020b0b22803acbc3e74109a9de8ad380587600e89f761fc9284f4b10d933a18380f22676f59f7f179fb25f3b02006af53e32107262deb3ea4dc27b9fe5e662b0462ceb71edd04f8602537132e05aee6426ee4bb898611519a548ed2df02a2b23a6afc0199aef0f8b6253b0f33d80537c3bcd8eb829eda82cae8836f23e38345c7b0a32a00030c7301758e936981f504c042af464e955539d9d5b81e584e4e0f223d56903942a590b7afe8eb92e5a858d21a0a9d9d423dbf5cdc3bbaaffd0c548f0730fc4e6ebe8282440227401489f8acc93d507f0caaffcbdf7c00eeada1307b4f039c9abf65bed9c9d6a87b0599d745856402d690338fe2b0df6dff86693a1a585b7e7f0289cad67449b2329f31c0c0f64c0b9d40feedbfbb09f39e3d81d8d00ad9740b65b5a47da7632294d6c3348d8858390045b649539874e0a164db978e206cd20189efbe8970463bdeea9a35ca216983c40d4318d7e02ed85d74f55c011859a5f1484d7fc4b22e9ff5f07d25c52102e187bbef0fd3cbfc346a6aa009b1b85d308fa37181b2857667025acaa73419e1eb424d1778375b25829c891279a71c2a7ae130ee7da9303425ad938192a618f24d3e59d6a5b1adad6d216dd703550118a564bbad95d3c9</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>我们不像诗歌</title>
+    <url>//*/340466787.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p> --才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>打造自己的产品 1</title>
+    <url>//*/1000976984.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br>
+–《小王子》</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="0-念头"><a class="markdownIt-Anchor" href="#0-念头"></a> 0. 念头</h2>
+<p>距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
+<h2 id="1-失眠"><a class="markdownIt-Anchor" href="#1-失眠"></a> 1. 失眠</h2>
+<p>现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
+<h2 id="10-性格"><a class="markdownIt-Anchor" href="#10-性格"></a> 10. 性格</h2>
+<p>我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
+<blockquote>
+<p>“往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。”</p>
+</blockquote>
+<h2 id="11-计划"><a class="markdownIt-Anchor" href="#11-计划"></a> 11. 计划</h2>
+<p>借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
+<h2 id="100-技术选型"><a class="markdownIt-Anchor" href="#100-技术选型"></a> 100. 技术选型</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>后端: <strong><s>Rails Api only</s></strong> <strong>Rails Graphql-Ruby</strong></p>
+</li>
+<li class="lvl-2">
+<p>app: <strong><s>uni-app</s></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</p>
+</li>
+<li class="lvl-2">
+<p>web: <strong>React</strong>、<strong>umijs</strong></p>
+</li>
+<li class="lvl-2">
+<p>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></p>
+</li>
+<li class="lvl-2">
+<p>搜索: <strong>EleasticSearch</strong></p>
+</li>
+<li class="lvl-2">
+<p>队列: <strong>Sidekiq</strong></p>
+</li>
+</ul>
+<h2 id="101-产品"><a class="markdownIt-Anchor" href="#101-产品"></a> 101. 产品</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</p>
+</li>
+<li class="lvl-2">
+<p>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</p>
+</li>
+<li class="lvl-2">
+<p>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>创业</tag>
+        <tag>社群</tag>
+        <tag>电商</tag>
+        <tag>墨刀</tag>
+        <tag>github</tag>
+        <tag>小程序</tag>
       </tags>
   </entry>
   <entry>
@@ -2417,390 +2602,46 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>安全风险评估</title>
-    <url>//*/2576489939.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
+    <title>搭建maven私库</title>
+    <url>//*/1406322052.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
 <span id="more"></span>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 工人、工厂、设施、设备。</p>
-<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
-<p>采集数据:</p>
-<ul class="lvl-2">
-<li class="lvl-4">
-<p>视频监控</p>
-</li>
-<li class="lvl-4">
-<p>机械设备状态</p>
-</li>
-<li class="lvl-4">
-<p>化学物质 （有害物质…）</p>
-</li>
-<li class="lvl-4">
-<p>厂区环境（温湿度）</p>
-</li>
-<li class="lvl-4">
-<p>工人 （行为）</p>
-</li>
-<li class="lvl-4">
-<p>等…系列影响安全风险的重要指标数据</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="检测"><a class="markdownIt-Anchor" href="#检测"></a> 检测</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 生产过程中的环节检测。</p>
-<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
-<p>…</p>
-</li>
-</ul>
-<h2 id="决策"><a class="markdownIt-Anchor" href="#决策"></a> 决策</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 辅助决策</p>
-<p>通过以上结果知道生产过程…</p>
-</li>
-</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
+修改密码后 admin.password自动删除</p>
+<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
+<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
+<p>develop =&gt; nx-all</p>
+<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
+<p>developer =&gt; develop</p>
+<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
+<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>安全</tag>
-        <tag>检测</tag>
-        <tag>策略</tag>
-        <tag>预测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工作日报汇总</title>
-    <url>//*/1ea1f1d4.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>工作汇报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工作计划[2024-01-22] ⏳</title>
-    <url>//*/5b16fb9e.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="7cd2f386c806b9c97a709dc2a9dc997063722defbd9e27b1f4dd23275112b91a">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b49a127d2ae3ed6c214e7e3d2fa707ac4ce14cee1f999847f7c008d77549f529b7a80484e1f0502a1fa604a7aff82b7bdf0b456b64e7075a89a524570aa89ac470939249e9dcaf002bb2fb85dff9b52e16559acd08d4b1a1fc147ca90e8dafe643383e23512f0863cfd8732d487120de856b843a1f6bd016be0123d42b842d01dcd2ba2c3645f8d33ef006340fe1d00f673c921457c3f04ad8efc3fa4352235e00dd831d0579ee16aab97415705c8f502f4e3223acab9d098d1cd3db0b71bf11332d8e8ff8dad4e16db988ca55687e3aee8c1b8f61a474a79e0610ac5838d49517b7bc0b0e9f00d7f63d74d2140a391e48b5893785e40feb1b2349e9784b05736eb13a0137913ef872fcf8ec8a30c20719da31426f227a8e9aee18e4656a3504c175d8685af708bdf044958cc60b8c1c0e6690cc1c0c6f4bea8c25fd92db72f5c8726b52a5668473fa4b09494d23ce41248d68be7af954ba02c9258c99707ec60a29a44ddd8805d65be01fed3ce1463bc9649d51f21fefce8f142235ba2936a75c7987dba8657b616ccfc9eca1ecc0436c4120aab50ddaebc1829f498f7a3317d9b22d92bc00e42ed65bdb45c08e1227cf9fb33ead57b4ec3e477f01c7b3bb73273c6c6b117b950a72322540c813d2e80d243201c3b2b72a6489ae5f34b7be9b9f6ce61d7346226c30c016ba8b488bf8a26b59ba90136dc9af2655fc3fa4a4e6d300f56eb592cdd6643dd885fc35f8ebf5457ef0a60a43469f2fa53f78071ac81ceafa3456b26cca7e2c94afaf062da9c16fcd9f4e3c2dc32a56da78742fae410c27cd178621112ff7b05837af2dc3e8eee15b24ecc7e9d1d85a9a3252cf84ee81025d64cfd32b14b197d69b83b4ba45101d9c5e838e6609ae4ebace48f9916c4d3da8c1edb6a38a0e46e789467570c3487791b644f2348d2eb89c4d7ccaebd61e598a63c5b095e9edb72058266cd697e7d0783b34a135c9840e693fc6c0e2659ee9292d797d979731f55c147947ac5fadcbb585babfa950e9216a7c9425bea5d8abadc1eecd6aff5eb634c0e9118c89db74028b3d4f4628468ce6c343f7f2d88cc728876cf46ac8f8494de8c8f17c01c75a061245acf6387aae094e3650e82f5991ae7bb579c24d3642c46215db9963990346e65c0a988ca9907cec41e93d2a9696cf3775c4106032759fcae7146a9835128710d42aed7752b2a314549008ea187779613fef55e2e62c60a6ebf099da28074e6f1c3f5ad53d615598eb0f40ebc3dc8868254e5144e12541d6d4220ba7f48610c6b188bdca0903287d7c5d8927e0fe6dc74319da9e6b613c51704ceb616e68d3db9142d3f2ea4a3c590536d249388ed6814db9eca0245e62de8ed2125433abb659ae09f9d0343114f4fe55b316bb2033c7e67105672967679d710673987732e74389b2e830360f2863ca80516f133db9a74237c4deb0465ea359a1717883951a5fcc83ce572af62798768500ad690b43dc6005fb368f8b0f972d9ceee54d3286fdf9cd19e2692812119ea118b6145877194cb16b9e0867c8cc3b273068df03ae03865dbb37befb0ff0719289aa8627c872cf2c89e201aab94356c7aef4ef1bfc1b945829b79f0f34de8c4673f164</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>工作计划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我们不像诗歌</title>
-    <url>//*/340466787.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p> --才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>打造自己的产品 1</title>
-    <url>//*/1000976984.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>如果你想造一艘船，先不要雇人收集木头，也不要给人分配任务，而是激发他们对海洋的渴望。<br>
-–《小王子》</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="0-念头"><a class="markdownIt-Anchor" href="#0-念头"></a> 0. 念头</h2>
-<p>距离发生疫情过去100多天了，在这段时间里给了我更多的时间来思考，创业与我的重要性。从工作到现在，我几乎无时无刻不想着要创造一个属于自己的产品。这段时间这种想法尤其强烈。</p>
-<h2 id="1-失眠"><a class="markdownIt-Anchor" href="#1-失眠"></a> 1. 失眠</h2>
-<p>现在是凌晨2点钟，又失眠了，昨天我终于下定决心，把自己的idea打造成一个产品。我必须要尝试一下，哪怕一次失败的尝试。</p>
-<h2 id="10-性格"><a class="markdownIt-Anchor" href="#10-性格"></a> 10. 性格</h2>
-<p>我是一个<code>瞻前顾后</code>的人，对一件事情不容易下定决心。时常脑子里都会有一些想法，最后都只是在脑子里，没有付诸实现。</p>
-<blockquote>
-<p>“往往一个人的失败之处，就在于有想法，而做一个行动上的侏儒。”</p>
-</blockquote>
-<h2 id="11-计划"><a class="markdownIt-Anchor" href="#11-计划"></a> 11. 计划</h2>
-<p>借助工具把脑海里的idea设计成产品原型，这里我使用的是<strong>墨刀</strong>,一个设计原型和设计稿的工具。文档使用<strong>Markdown</strong>编写，代码工具使用<strong>Github</strong>,最终产品的源代码一定会是开源的。</p>
-<h2 id="100-技术选型"><a class="markdownIt-Anchor" href="#100-技术选型"></a> 100. 技术选型</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>后端: <strong><s>Rails Api only</s></strong> <strong>Rails Graphql-Ruby</strong></p>
-</li>
-<li class="lvl-2">
-<p>app: <strong><s>uni-app</s></strong> <strong>tarojs</strong>(android、ios、微信小程序、支付宝小程序、字节跳动小程序、qq小程序)</p>
-</li>
-<li class="lvl-2">
-<p>web: <strong>React</strong>、<strong>umijs</strong></p>
-</li>
-<li class="lvl-2">
-<p>数据库: <strong>Postgresql</strong>、<strong>Redis</strong></p>
-</li>
-<li class="lvl-2">
-<p>搜索: <strong>EleasticSearch</strong></p>
-</li>
-<li class="lvl-2">
-<p>队列: <strong>Sidekiq</strong></p>
-</li>
-</ul>
-<h2 id="101-产品"><a class="markdownIt-Anchor" href="#101-产品"></a> 101. 产品</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>产品的雏形已经出来了，接着我会把想法写成一份文档做记录。</p>
-</li>
-<li class="lvl-2">
-<p>产品形态: 后台（员工入口、商家入口）、商家app端、社区app端。</p>
-</li>
-<li class="lvl-2">
-<p>产品方向:打造一个社区工具类应用，提供基础服务，通过增值服务实现盈利。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>创业</tag>
-        <tag>社群</tag>
-        <tag>电商</tag>
-        <tag>墨刀</tag>
-        <tag>github</tag>
-        <tag>小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>炝锅面</title>
-    <url>//*/b2113df8.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
-<span id="more"></span>
-<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>干面条</p>
-</li>
-<li class="lvl-2">
-<p>番茄</p>
-</li>
-<li class="lvl-2">
-<p>梅花肉</p>
-</li>
-<li class="lvl-2">
-<p>大葱</p>
-</li>
-<li class="lvl-2">
-<p>白菜</p>
-</li>
-<li class="lvl-2">
-<p>姜</p>
-</li>
-<li class="lvl-2">
-<p>干辣椒</p>
-</li>
-<li class="lvl-2">
-<p>花椒</p>
-</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>花生油 15ml</p>
-</li>
-<li class="lvl-2">
-<p>盐 5g</p>
-</li>
-<li class="lvl-2">
-<p>味精 5g</p>
-</li>
-<li class="lvl-2">
-<p>鸡精 5g</p>
-</li>
-<li class="lvl-2">
-<p>生抽 5g</p>
-</li>
-<li class="lvl-2">
-<p>十三香 2g</p>
-</li>
-<li class="lvl-2">
-<p>香油 5ml</p>
-</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</p>
-</li>
-<li class="lvl-2">
-<p>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</p>
-</li>
-<li class="lvl-2">
-<p>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</p>
-</li>
-<li class="lvl-2">
-<p>放入番茄翻炒出汁后放入白菜翻炒；</p>
-</li>
-<li class="lvl-2">
-<p>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</p>
-</li>
-<li class="lvl-2">
-<p>水开放入干面条；（自己估算食用的量）</p>
-</li>
-<li class="lvl-2">
-<p>煮至2分钟后，加入鸡精、味精；</p>
-</li>
-<li class="lvl-2">
-<p>出锅前放入少许香油，味道更佳；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>河南</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>芝麻叶糊涂面</title>
-    <url>//*/1d180e51.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
-<span id="more"></span>
-<h1 id="食料"><a class="markdownIt-Anchor" href="#食料"></a> 食料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>芝麻叶</p>
-</li>
-<li class="lvl-2">
-<p>豆腐丁</p>
-</li>
-<li class="lvl-2">
-<p>韭菜</p>
-</li>
-<li class="lvl-2">
-<p>小香芹</p>
-</li>
-<li class="lvl-2">
-<p>面粉</p>
-</li>
-<li class="lvl-2">
-<p>葱</p>
-</li>
-<li class="lvl-2">
-<p>蒜</p>
-</li>
-<li class="lvl-2">
-<p>干辣椒</p>
-</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>花生油 25ml</p>
-</li>
-<li class="lvl-2">
-<p>盐 5g</p>
-</li>
-<li class="lvl-2">
-<p>味精 5g</p>
-</li>
-<li class="lvl-2">
-<p>鸡精 5g</p>
-</li>
-<li class="lvl-2">
-<p>十三香 2g</p>
-</li>
-<li class="lvl-2">
-<p>香油 5ml</p>
-</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</p>
-</li>
-<li class="lvl-2">
-<p>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</p>
-</li>
-<li class="lvl-2">
-<p>豆腐切丁放入花生油煎至焦香；</p>
-</li>
-<li class="lvl-2">
-<p>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</p>
-</li>
-<li class="lvl-2">
-<p>热油放入葱、蒜、干辣椒炒香；</p>
-</li>
-<li class="lvl-2">
-<p>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</p>
-</li>
-<li class="lvl-2">
-<p>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</p>
-</li>
-<li class="lvl-2">
-<p>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>美食</tag>
-        <tag>河南</tag>
-        <tag>芝麻叶</tag>
-        <tag>面条</tag>
-        <tag>糊涂</tag>
+        <tag>java</tag>
+        <tag>docker</tag>
+        <tag>maven</tag>
       </tags>
   </entry>
   <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-JgqLFVqF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-vEVGXZfA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-JgqLFVqF"),
+            element: document.getElementById("aplayer-vEVGXZfA"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2864,6 +2705,144 @@ section 运维阶段
         <tag>云计算</tag>
         <tag>雾计算</tag>
         <tag>边缘计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通用excel导入设计</title>
+    <url>//*/7178be5f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2>
+<ol>
+<li class="lvl-3">上传excel按需写入字段；</li>
+<li class="lvl-3">覆盖更新数据；</li>
+</ol>
+<span id="more"></span>
+<h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2>
+<pre class="mermaid">sequenceDiagram
+excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
+handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
+execute ->> insert: 写入数据库</pre>
+<h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2>
+<ol>
+<li class="lvl-3">
+<p>insert into  table ()  select ‘’ from dual where not exsits ()</p>
+</li>
+<li class="lvl-3">
+<p>insert ignore into id={IDGenerrate.gernxxx}</p>
+</li>
+<li class="lvl-3">
+<p>Insert into on dupli   update  xx=values()</p>
+</li>
+</ol>
+<p>Sql:</p>
+<ol>
+<li class="lvl-3">
+<p>select id from table where dupKeys = ‘’</p>
+</li>
+<li class="lvl-3">
+<p>insert ignore into  values (id)</p>
+</li>
+<li class="lvl-3">
+<p>ignore :  insert into  table ()  select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p>
+</li>
+<li class="lvl-3">
+<p>Insert into table ()  select ‘x’,‘id’ from dual  on dupli   update  xx=values()</p>
+</li>
+</ol>
+<pre class="mermaid">classDiagram
+class Field{
+		Intger index 索引
+		String name  字段名
+		String type  字段类型
+		Object value  字段值
+		String exp 校验表达式
+}
+
+class Record{
+		String tableName 表名
+		List fields 字段
+}
+
+class ModeEnum{
+	INSERT("insert") 写入
+	IGNORE("ignore") 忽略重复数据
+	REPLACE("replace") 更新重复数据
+}
+
+class ExcelUtil{
+	+File file excel
+	+List:String fields 字段
+  +String tableName 数据表名
+  +Integer skip 跳过行
+  +ModeEnum mode 写入方式
+  +List:String dupKeys 用于校验重复的字段
+  +RecordHandler recordHandler 数据行处理
+	-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入
+	-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出
+}
+
+class RecordHandler{
+	-read(Record) 读取行
+}
+
+ExcelUtil --> ModeEnum
+ExcelUtil --> Field
+ExcelUtil --> Record
+ExcelUtil --> RecordHandler</pre>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>jdbc</tag>
+        <tag>easyexcel</tag>
+        <tag>excel</tag>
+        <tag>import</tag>
+        <tag>export</tag>
+        <tag>replace</tag>
+        <tag>ignore</tag>
+        <tag>insert</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工作日报汇总</title>
+    <url>//*/1ea1f1d4.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作汇报</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
       </tags>
   </entry>
   <entry>
@@ -3205,116 +3184,95 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>通用excel导入设计</title>
-    <url>//*/7178be5f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2>
-<ol>
-<li class="lvl-3">上传excel按需写入字段；</li>
-<li class="lvl-3">覆盖更新数据；</li>
-</ol>
+    <title>炝锅面</title>
+    <url>//*/b2113df8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
 <span id="more"></span>
-<h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2>
-<pre class="mermaid">sequenceDiagram
-excel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引
-handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]
-execute ->> insert: 写入数据库</pre>
-<h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2>
-<ol>
-<li class="lvl-3">
-<p>insert into  table ()  select ‘’ from dual where not exsits ()</p>
+<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>干面条</p>
 </li>
-<li class="lvl-3">
-<p>insert ignore into id={IDGenerrate.gernxxx}</p>
+<li class="lvl-2">
+<p>番茄</p>
 </li>
-<li class="lvl-3">
-<p>Insert into on dupli   update  xx=values()</p>
+<li class="lvl-2">
+<p>梅花肉</p>
 </li>
-</ol>
-<p>Sql:</p>
-<ol>
-<li class="lvl-3">
-<p>select id from table where dupKeys = ‘’</p>
+<li class="lvl-2">
+<p>大葱</p>
 </li>
-<li class="lvl-3">
-<p>insert ignore into  values (id)</p>
+<li class="lvl-2">
+<p>白菜</p>
 </li>
-<li class="lvl-3">
-<p>ignore :  insert into  table ()  select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p>
+<li class="lvl-2">
+<p>姜</p>
 </li>
-<li class="lvl-3">
-<p>Insert into table ()  select ‘x’,‘id’ from dual  on dupli   update  xx=values()</p>
+<li class="lvl-2">
+<p>干辣椒</p>
 </li>
-</ol>
-<pre class="mermaid">classDiagram
-class Field{
-		Intger index 索引
-		String name  字段名
-		String type  字段类型
-		Object value  字段值
-		String exp 校验表达式
-}
-
-class Record{
-		String tableName 表名
-		List fields 字段
-}
-
-class ModeEnum{
-	INSERT("insert") 写入
-	IGNORE("ignore") 忽略重复数据
-	REPLACE("replace") 更新重复数据
-}
-
-class ExcelUtil{
-	+File file excel
-	+List:String fields 字段
-  +String tableName 数据表名
-  +Integer skip 跳过行
-  +ModeEnum mode 写入方式
-  +List:String dupKeys 用于校验重复的字段
-  +RecordHandler recordHandler 数据行处理
-	-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入
-	-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出
-}
-
-class RecordHandler{
-	-read(Record) 读取行
-}
-
-ExcelUtil --> ModeEnum
-ExcelUtil --> Field
-ExcelUtil --> Record
-ExcelUtil --> RecordHandler</pre>
+<li class="lvl-2">
+<p>花椒</p>
+</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>花生油 15ml</p>
+</li>
+<li class="lvl-2">
+<p>盐 5g</p>
+</li>
+<li class="lvl-2">
+<p>味精 5g</p>
+</li>
+<li class="lvl-2">
+<p>鸡精 5g</p>
+</li>
+<li class="lvl-2">
+<p>生抽 5g</p>
+</li>
+<li class="lvl-2">
+<p>十三香 2g</p>
+</li>
+<li class="lvl-2">
+<p>香油 5ml</p>
+</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>大葱切碎；番茄开水烫后去皮切块；白菜手撕小块备用；（个人喜欢可以放一些黄豆芽）</p>
+</li>
+<li class="lvl-2">
+<p>起锅烧油，油热调小火，放入花椒炸焦，撇出丢掉；</p>
+</li>
+<li class="lvl-2">
+<p>梅花肉切小片，起锅热油，放入肥肉超出油后放入瘦肉和姜片炒香；</p>
+</li>
+<li class="lvl-2">
+<p>放入番茄翻炒出汁后放入白菜翻炒；</p>
+</li>
+<li class="lvl-2">
+<p>放入盐、十三香、生抽后继续翻炒，白菜炒夹生后加入开水；</p>
+</li>
+<li class="lvl-2">
+<p>水开放入干面条；（自己估算食用的量）</p>
+</li>
+<li class="lvl-2">
+<p>煮至2分钟后，加入鸡精、味精；</p>
+</li>
+<li class="lvl-2">
+<p>出锅前放入少许香油，味道更佳；</p>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>工作</category>
+        <category>菜谱</category>
       </categories>
       <tags>
-        <tag>mysql</tag>
-        <tag>jdbc</tag>
-        <tag>easyexcel</tag>
-        <tag>excel</tag>
-        <tag>import</tag>
-        <tag>export</tag>
-        <tag>replace</tag>
-        <tag>ignore</tag>
-        <tag>insert</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
+        <tag>美食</tag>
+        <tag>河南</tag>
       </tags>
   </entry>
   <entry>
@@ -3405,53 +3363,95 @@ ExcelUtil --> RecordHandler</pre>
       </tags>
   </entry>
   <entry>
-    <title>奇怪的梦</title>
-    <url>//*/2afb063d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><pre class="mermaid">mindmap
-  root((奇怪的梦))
-    失业
-      成都找工作
-      	辗转进入一个神秘组织
-      	一觉睡醒发现妻女身在美国
-    混乱街区
-      枪支泛滥
-        每个成年人
-          要枪杀一个以上人
-        妻女被挟持
-          愤起开枪
-          被自己射杀惊醒
-    黑人社区
-      入室“0”元购
-          随身财物被抢</pre>
+    <title>芝麻叶糊涂面</title>
+    <url>//*/1d180e51.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>芝麻叶面条是河南的家常面食，喜不喜欢面食，吃上一次就会想第二次。</p>
+<span id="more"></span>
+<h1 id="食料"><a class="markdownIt-Anchor" href="#食料"></a> 食料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>芝麻叶</p>
+</li>
+<li class="lvl-2">
+<p>豆腐丁</p>
+</li>
+<li class="lvl-2">
+<p>韭菜</p>
+</li>
+<li class="lvl-2">
+<p>小香芹</p>
+</li>
+<li class="lvl-2">
+<p>面粉</p>
+</li>
+<li class="lvl-2">
+<p>葱</p>
+</li>
+<li class="lvl-2">
+<p>蒜</p>
+</li>
+<li class="lvl-2">
+<p>干辣椒</p>
+</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>花生油 25ml</p>
+</li>
+<li class="lvl-2">
+<p>盐 5g</p>
+</li>
+<li class="lvl-2">
+<p>味精 5g</p>
+</li>
+<li class="lvl-2">
+<p>鸡精 5g</p>
+</li>
+<li class="lvl-2">
+<p>十三香 2g</p>
+</li>
+<li class="lvl-2">
+<p>香油 5ml</p>
+</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>开水后放入芝麻叶，煮至软化即可，沥干水分备用；</p>
+</li>
+<li class="lvl-2">
+<p>韭菜切段，芹菜杆切碎，加入香油、盐腌制备用；</p>
+</li>
+<li class="lvl-2">
+<p>豆腐切丁放入花生油煎至焦香；</p>
+</li>
+<li class="lvl-2">
+<p>碗中放入20g面粉，花生油烧热，浇入后搅拌至面糊状；</p>
+</li>
+<li class="lvl-2">
+<p>热油放入葱、蒜、干辣椒炒香；</p>
+</li>
+<li class="lvl-2">
+<p>放入芝麻叶、豆腐丁、芹菜叶，翻炒2分钟后加入开水；</p>
+</li>
+<li class="lvl-2">
+<p>锅内下入干面条，煮熟后，加入少许盐、味精、鸡精、十三香、面油；</p>
+</li>
+<li class="lvl-2">
+<p>最后倒入腌好的韭菜、芹菜，搅拌几次后出锅；</p>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>菜谱</category>
       </categories>
       <tags>
-        <tag>奇怪</tag>
-        <tag>梦</tag>
+        <tag>美食</tag>
+        <tag>河南</tag>
+        <tag>芝麻叶</tag>
+        <tag>面条</tag>
+        <tag>糊涂</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>成本核算</title>
-    <url>//*/fb428c48.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b717d5bdf6b8af7b17a1089067d38f65b6038f5791d5e710a54b2ef348a38503">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0195048f25efe9b21ce963d68bba31f68109d09d5e9a4798ba30c885f456814a1f79a3813597deaa347db33459cd74ba7a0df0f4961b35961cf13b305d52d09764798e16bc3970b56199d955ddc1cc9c04c353fb965ceadfc5376a7704a76f05c3da2895c2e503e0f9acd812b0bc56d7b3677b1a7366b54e384df56d66b32e47484884bf3ad6f10f3899fa6a1d0ebc8f4a8f15a25926c5f09faafa892771e672dce8e9193fa9821d44cf076aab160fdd0005724034d18e4ec566a57f74d507df6d98454bbb420fcada5e86fac9dbfa97eeb919651443dcdc350dc638e6283d9e889b5ef81fbdf4f010db814ea35ae2d88b145fddbb9a4ec5fb960e01b8dccc33d9d1472271d360d47d559c2cd5ae29072cf1682091e200aaa447262efc45994d84b2c885e9b76e9f6b3ef00b89976974fb39dc4bdf102c62aba6f4d39dd48aa679f191b17b8ff5f2e0abcd9bd1f2337ad24b07c79ad4db23273f4d9b18e4413df745c0f31919fcc98d3b2a2ff051813176fcb8d58ee7f78dc47725baf6037a8c9c9023cd0664a14ad3df32b1860769e27cfc62a526a7429fc8a9bfa8f0c4eaf21b91b43f495b19552fc3cd3ba2059a4b27288ebba98589861a37f28b9e654f66021082d4c872a88d3facc4a920fd93fbe53794151d3810e0f41ae6ef736202eddf98d357b518c8ee5d24291815099bce81bbd1e3d5be21a6190e11110ebcebc495f364fb7ddd71af01062f3f4331541424ae155572f54b5b1a9e2a4451b7e5a67dc4ae23b02e2bcf8c5405caf52af747361a7e201552703e9e68652e283e243ae778b4fb061e2fe1c5a88b32885fa001c19342685e6d35240c9c60816dc0f52dd9ec1a10c1a98d8425d219009af06c78c76a0a5af095e3eadd043e992cd5442016008d372de0e2e28276f719e434042c8687a3001f4ac17e62f96f8116976622af1d3b02fc36f20a441b7b8a0137e695b972671ce2e8bd72d6d5657e0801f89d5fec028eb460e1e5648a7f8cd5aab70056414069cc9cab4956d21a0ca6862624f175f0fdd3e5235e1849953f95bc1aca628de0f0302d774a56bb88f74a38135d4475c2d58c8bc3da4f4e2dd372eba1d384d85b3974a96648b10c245e5e236abc4079c2b74b6ee2361ed5562b7668c911d515a64b6a997799db65b8e7e84692d7ce4760f5330d53d887ef48426fc4b010815316f79ea6ec39c44aaad8c17bf5641aa2791ced0e687fbac1653bfb460b485d5c5749d365189fb0e665dd6594abac78c78a89708f8a342d255adcf5c65073577d1260a589b93071cf836c261b1323838e497a9eeba19d9ce2560a9b124f30ba7b9d0215080f80d120b274989324c2859a89f196875620b717573e344ba19b9c50dc62adeafaace6439140c177feb10ab320bb933c1446ce46aa89267b7d762cd4b484be40a114030d3d88fc844e27293d2c5d5c0589e4385e7969311e93127b3fe159fd02febc78973a274dfa7cffac4734c5968ad1be60fa48a6b661ec085d7dfd59dfa4b4971b08733cc707bc9917f792a7295c22a236fc1caa0df5f142f630a2471ccee6dde5e0a5e477e6faa593114a9ce01f136dfa3ed4cb9f303f72e1004b53e92a90188166f9bb1c0d3d19ee71a6e5c9e08f744a8dff9aede11780d2870991417df97ca9cf0cbea3a165e888856bf167f16c121d1c6c27d9bd221a45fbca688aef75df5f319347f10849d3be256d21f1eb894af2a1cf3af16b36a27d7c4508e19b0520f06bff68f9932ec397c56e16ec54d02264b3426c4bdd422acf8aa01bec8751dace3c11a23da65c4a2a78b9d35e4ce3bfbd4e5164ef94294c9309890af0ea906618c8185409f0c62a23a2daca528dc47006c186d7ac85cfb0704e5e0bbb68d14948bcd335c4c91d5b025942c33e0d0f3f2f81e0579c59b47774434bc0cb0c9ea595e99855e49961941d35f3d1884ba9b61fcc08e8942e1ff7d197dfbb063fb7be569dac0bce3dcbfd0477cc08f06f919b682235d84fccc3abc5355aa31d00ae277ae45d0f6b18231f1085d2cc2a09b9ce7e8a7a3efbc068c469db4e787837ab06b9992ed3a2d212a51b13dfa660e4fb1bc8ef5242d2f4703c81984cf42725b51e09697f3d2c41ceb0a5cce49fe3b5e1ea2604c067155ffd8d8eee261bb018bfb7d463ebf9e95afd61afee4ec04a63e83a3b69db502e759513faab321c2889d5312a6736c03aff05cc6050db40acee71c561369c745107eaf9bc43d4841599ab277e4d5fc16737231f891874aca14e662003c62d6fd17ea2a17396f81a88c2600f863b10a84a15a6c173bbbc368644412020b0b22803acbc3e74109a9de8ad380587600e89f761fc9284f4b10d933a18380f22676f59f7f179fb25f3b02006af53e32107262deb3ea4dc27b9fe5e662b0462ceb71edd04f8602537132e05aee6426ee4bb898611519a548ed2df02a2b23a6afc0199aef0f8b6253b0f33d80537c3bcd8eb829eda82cae8836f23e38345c7b0a32a00030c7301758e936981f504c042af464e955539d9d5b81e584e4e0f223d56903942a590b7afe8eb92e5a858d21a0a9d9d423dbf5cdc3bbaaffd0c548f0730fc4e6ebe8282440227401489f8acc93d507f0caaffcbdf7c00eeada1307b4f039c9abf65bed9c9d6a87b0599d745856402d690338fe2b0df6dff86693a1a585b7e7f0289cad67449b2329f31c0c0f64c0b9d40feedbfbb09f39e3d81d8d00ad9740b65b5a47da7632294d6c3348d8858390045b649539874e0a164db978e206cd20189efbe8970463bdeea9a35ca216983c40d4318d7e02ed85d74f55c011859a5f1484d7fc4b22e9ff5f07d25c52102e187bbef0fd3cbfc346a6aa009b1b85d308fa37181b2857667025acaa73419e1eb424d1778375b25829c891279a71c2a7ae130ee7da9303425ad938192a618f24d3e59d6a5b1adad6d216dd703550118a564bbad95d3c9</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
   </entry>
 </search>
