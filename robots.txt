@@ -1,10 +1,10 @@
 User-agent: *
 Allow: /
-Allow: /about/ 
+Allow: /about/
 Allow: /archives/
 Allow: /categories/
-Allow: /tags/ 
-Allow: /resources/ 
+Allow: /tags/
+Allow: /resources/
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
@@ -12,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://viva-la-vida.cn/sitemap.xml
-Sitemap: https://viva-la-vida.cn/baidusitemap.xml
+Sitemap: https://rm-rf.ink/sitemap.xml
+Sitemap: https://rm-rf.ink/baidusitemap.xml
