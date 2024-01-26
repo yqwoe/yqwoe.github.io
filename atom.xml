@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2024-01-25T09:51:10.596Z</updated>
+  <updated>2024-01-26T01:48:47.376Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>流程、表单部署清单</title>
+    <link href="https://rm-rf.ink/*/33e82e70.html"/>
+    <id>https://rm-rf.ink/*/33e82e70.html</id>
+    <published>2024-01-26T01:21:28.000Z</published>
+    <updated>2024-01-26T01:48:47.376Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="cec733b1812f926d2f8313b1c7c5b18dca2a7b8f13c1631dff54f67e3096c5cd">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb0044dda9db2a9cf59656d3901c03e4e9b3dff12383f3d32a36c2df76af2d9a4e85ca6282f53d58df1bb285708b96d347717f72520217e6a1c9aff8f5d2e823246cb520ab973b64a5914ee18a7ab27759d10c174b673f3a3b8533a6e98672c0d7e501b37da80d39c332f49dc03f60faa6afe79bd96e81b7fd5a13398565b9f5e122d4b6b9264c1b0718ad1088a75fb7e45956bd07a2fd261bcc66c699d9fdfb695ea6e9c14c63b323e99bc13021e44fa4a41d3444233b4d8a630fb93aa5165d7f41759d934d0438cda8d52866cdfadb760fb1d0329c2cd2de570eb1127ed7aca18cc5f703de0c4f142e38c5857ce11548457363f6d5da33d9b74ce428f78f30d71a52c545d88e4dd282d5ac43467f2dbcecbb8592ebada5a1f186615c191d1c7e45f0ca8df6832dbc0e41b0ba657dff40047d7ffa0080c8865bd1b27cf35da2ccb624b9a6e989c1387088c55c6d6434f675f194e5f4dbda311a9d83918bac1cd6991cbed4448f54e503a35ff34604c8b3483f724cb371a36c02b3480a2d00e600fd6af13fd6ae4accfb89014cd2714b350dd3</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">文章加密了，需要输入密码查看</summary>
+    
+    
+    
+    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="docker" scheme="https://rm-rf.ink/tags/docker/"/>
+    
+    <category term="正数" scheme="https://rm-rf.ink/tags/%E6%AD%A3%E6%95%B0/"/>
+    
+    <category term="部署" scheme="https://rm-rf.ink/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>成本核算</title>
@@ -536,31 +561,6 @@
     <category term="docker" scheme="https://rm-rf.ink/tags/docker/"/>
     
     <category term="maven" scheme="https://rm-rf.ink/tags/maven/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>飞桨OCR硬件清单</title>
-    <link href="https://rm-rf.ink/*/1156593666.html"/>
-    <id>https://rm-rf.ink/*/1156593666.html</id>
-    <published>2022-08-31T06:46:04.000Z</published>
-    <updated>2024-01-10T12:52:31.567Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="飞桨官方要求"><a class="markdownIt-Anchor" href="#飞桨官方要求"></a> 飞桨官方要求</h3><p><strong>1. 操作系统要求：</strong></p><ul class="lvl-0"><li class="lvl-3"><p>Ubuntu 20.04</p></li><li class="lvl-2"><p>CentOS 7</p></li><li class="lvl-2"><p>操作系统要求是 64 位版本</p></li></ul><span id="more"></span><p><strong>2. 处理器要求</strong></p><ul class="lvl-0"><li class="lvl-2"><p>处理器支持 MKL</p></li><li class="lvl-2"><p>处理器架构是x86_64（或称作 x64、Intel 64、AMD64）架构，目前PaddlePaddle不支持arm64架构（mac M1除外，paddle 已支持Mac M1 芯片）</p></li></ul><h5 id="4-gpu-支持情况"><a class="markdownIt-Anchor" href="#4-gpu-支持情况"></a> 4.  <strong>GPU 支持情况：</strong></h5><ul class="lvl-0"><li class="lvl-2"><p>目前 <strong>PaddlePaddle</strong> 支持 <strong>NVIDIA</strong> 显卡的 <strong>CUDA</strong> 驱动和 <strong>AMD</strong> 显卡的 <strong>ROCm</strong> 架构</p><hr></li></ul><h3 id="从深度学习硬件架构分析硬件需求"><a class="markdownIt-Anchor" href="#从深度学习硬件架构分析硬件需求"></a> 从深度学习硬件架构分析硬件需求</h3><p>众所知周深度学习最需要的性能是GPU也就是显卡性能，理论上在同等条件下GPU性能越高，深度学习的效率越高。但这其中也有一个很大的误区，就是电脑性能是一个整体并不是由单一硬件所决定的，是一个木桶效应。</p><p><strong>当GPU性能达到一定高度之后，其他硬件性能没有跟上，再好的GPU也带来不了性能的提升。</strong></p><p><strong>GPU＞CPU≈主板（CPU主板相辅相成）＞内存＞硬盘＞电源＞机箱（装的下就行）</strong></p><p><img src="https://pic3.zhimg.com/v2-c997a6cc407a491a6613f025640da266_r.jpg" alt="preview"></p><p>上述图示，深度神经网络计算大致流程，下面通过深度神经网络计算环节，分析核心硬件配置理想要求：</p><p><img src="https://pic2.zhimg.com/80/v2-3b17505bf0574e12f53b9b6fb7551bb5_720w.jpg" alt="img"></p><h3 id="预算15000-20000-元"><a class="markdownIt-Anchor" href="#预算15000-20000-元"></a> 预算：15000-20000 元</h3><h3 id="需求"><a class="markdownIt-Anchor" href="#需求"></a> 需求：</h3><ul class="lvl-0"><li class="lvl-2"><p>CPU支持 MKL，架构是x86_64，</p></li><li class="lvl-2"><p>CPU为英特尔 I5,I7,I9</p></li><li class="lvl-2"><p>GPU 为RTX3080TI、RTX3090TI</p></li><li class="lvl-2"><p>内存32GB</p></li><li class="lvl-2"><p>硬盘10T</p></li></ul><p><strong>inter 处理器价格</strong>：</p><table><thead><tr><th>型号</th><th>cpu架构</th><th>京东报价</th></tr></thead><tbody><tr><td>Intel 酷睿 i5 12600K</td><td>Golden Cove</td><td>2029元</td></tr><tr><td>Intel 酷睿 i7 12700K</td><td>Golden Cove</td><td>2929元</td></tr><tr><td>Intel 酷睿 i9 12900K</td><td>Golden Cove</td><td>4649元</td></tr></tbody></table><p><strong>GPU价格</strong>：</p><table><thead><tr><th>型号</th><th>显存容量</th><th>京东报价</th></tr></thead><tbody><tr><td>英伟达（NVIDIA） RTX3090</td><td>24G</td><td>12999元</td></tr><tr><td>英伟达（NVIDIA） RTX3080</td><td>10G</td><td>8999元</td></tr><tr><td>英伟达（NVIDIA） RTX3070</td><td>8G</td><td>4699元</td></tr><tr><td>英伟达（NVIDIA） RTX3060</td><td>12G</td><td>5499元</td></tr></tbody></table><h6 id="内存价格"><a class="markdownIt-Anchor" href="#内存价格"></a> <strong>内存价格：</strong></h6><table><thead><tr><th>型号</th><th>内存容量</th><th>京东报价</th></tr></thead><tbody><tr><td>威刚（ADATA） DDR4 3600 16*2</td><td>32G</td><td>1189元</td></tr><tr><td>金士顿 (Kingston) FURY 32GB DDR4 3200</td><td>32G</td><td>899元</td></tr><tr><td>金士顿 (Kingston) FURY 32GB DDR4 3200               16×2</td><td>32G</td><td>899元</td></tr><tr><td>金士顿 (Kingston) FURY 32GB DDR5 5200               16×2</td><td>32G</td><td>1179元</td></tr><tr><td>光威（Gloway）32GB(16Gx2)套装 DDR4 3200</td><td>32G</td><td>599元</td></tr><tr><td>美商海盗船（USCORSAIR）32GB(16G×2)</td><td>32G</td><td>799元</td></tr></tbody></table><p><strong>机械硬盘价格</strong>：</p><table><thead><tr><th>型号</th><th>容量</th><th>接口</th><th>京东报价</th></tr></thead><tbody><tr><td>西部数据（WD）20T 氦气 WUH722020ALE6L4</td><td>20T</td><td>SATA</td><td>3659元</td></tr><tr><td>西部数据(Western Digital) 10TB  WUS721010ALE6L4</td><td>10T</td><td>SATA</td><td>1759元</td></tr><tr><td>西部数据(Western Digital) 14TB  WUH721414ALE6L4</td><td>14T</td><td>SATA</td><td>1699元</td></tr><tr><td>希捷Seagate   20T【ST20000NM007D】</td><td>20T</td><td>SATA</td><td>4599元</td></tr><tr><td>希捷（SEAGATE）【ST10000NM001G】10TB</td><td>10T</td><td>SATA</td><td>1879元</td></tr><tr><td>希捷（SEAGATE）【ST12000NM000J】12TB</td><td>12T</td><td>SATA</td><td>1899元</td></tr><tr><td>東芝（TOSHIBA）</td><td>18T</td><td>SATA</td><td>2259元</td></tr><tr><td>东芝(TOSHIBA) 10TB</td><td>10T</td><td>SATA</td><td>1499元</td></tr><tr><td>东芝(TOSHIBA) 12TB</td><td>12T</td><td>SATA</td><td>1579元</td></tr><tr><td>西部数据（WD） 4T HUS726T4TALE6L4</td><td>4T</td><td>STAT</td><td>939元</td></tr><tr><td>希捷Seagate     4TB【ST4000DM004】</td><td>4T</td><td>STAT</td><td>549元</td></tr><tr><td>東芝（TOSHIBA）</td><td>4T</td><td>STAT</td><td>479元</td></tr></tbody></table><p><strong>固态硬盘价格：</strong></p><table><thead><tr><th>型号</th><th>容量</th><th>接口</th><th>京东报价</th></tr></thead><tbody><tr><td>金士顿（Kingston）FURY系列  2TB</td><td>2TB</td><td>NVMe</td><td>2199元</td></tr><tr><td>英睿达（Crucial）美光 2TB</td><td>2TB</td><td>NVMe</td><td>949.9元</td></tr><tr><td>铠侠（Kioxia）2000GB</td><td>2TB</td><td>NVMe</td><td>1149元</td></tr><tr><td>西部数据（Western Digital）2T</td><td>2TB</td><td>NVMe</td><td>1459元</td></tr><tr><td>致态（ZhiTai）长江存储 2TB</td><td>2TB</td><td>NVMe</td><td>1299元</td></tr><tr><td>七彩虹(Colorful) 2TB</td><td>2TB</td><td>NVMe</td><td>999元</td></tr><tr><td>三星（SAMSUNG）2TB</td><td>2TB</td><td>NVMe</td><td>2399元</td></tr><tr><td>海康威视（HIKVISION）2TB</td><td>2TB</td><td>NVMe</td><td>1049元</td></tr><tr><td>闪迪（SanDisk） 2TB</td><td>2TB</td><td>NVMe</td><td>1399元</td></tr><tr><td>美商海盗船（USCORSAIR） 2TB</td><td>2TB</td><td>NVMe</td><td>1399元</td></tr></tbody></table><h6 id="核心硬件价格总计"><a class="markdownIt-Anchor" href="#核心硬件价格总计"></a> 核心硬件价格总计 ：</h6><ul class="lvl-0"><li class="lvl-2"><h6 id="intel-酷睿-i9-12900k-英伟达nvidia-rtx3080-金士顿-kingston-fury-32gb-ddr4-3200-西部数据western-digital-10tb-4649-8999-899-1759-16306-元"><a class="markdownIt-Anchor" href="#intel-酷睿-i9-12900k-英伟达nvidia-rtx3080-金士顿-kingston-fury-32gb-ddr4-3200-西部数据western-digital-10tb-4649-8999-899-1759-16306-元"></a> Intel 酷睿 i9 12900K  +  英伟达（NVIDIA） RTX3080  + 金士顿 (Kingston) FURY 32GB DDR4 3200 + 西部数据(Western Digital) 10TB  = 4649 +   8999  + 899 + 1759 =16306 元</h6></li><li class="lvl-2"><p>Intel 酷睿 i9 12900K  +  英伟达（NVIDIA） RTX3080  + 金士顿 (Kingston) FURY 32GB DDR4 3200 + 金士顿（Kingston）FURY系列  2TB x 2  = 4649 +   8999  + 899 + 2199 X 2 = 18945 元</p></li></ul><h3 id><a class="markdownIt-Anchor" href="#"></a> </h3>]]></content>
-    
-    
-    <summary type="html">机器学习入门</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="机器学习" scheme="https://rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="ocr" scheme="https://rm-rf.ink/tags/ocr/"/>
-    
-    <category term="人工智能" scheme="https://rm-rf.ink/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   

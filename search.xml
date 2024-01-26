@@ -193,13 +193,13 @@
   <entry>
     <title>第一篇博客</title>
     <url>//*/4278564287.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
-<p>一生中有很多重要时刻，而能让你清晰的记得的，只有几个 — <strong>成人礼、成家、生子</strong>。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
+<p>  一生中有很多重要时刻，而能让你清晰的记得的，只有几个 — <strong>成人礼、成家、生子</strong>。</p>
 <span id="more"></span>
-<p><img src="/images/2I3A3839.JPG" alt="2I3A3839"></p>
-<p>距离辞职已经一个月了，那是做了很长的时间斗争，在五月的一个早晨做的决定。每天早出晚归，早上孩子没有睡醒我就爬起来上班，晚上孩子睡着了，我才到家。那段时间我只要抱他就会哭，所以就决定在家里多<s>陪陪</s>他们母子俩。</p>
-<p>作为<strong>新手</strong><s>自由职业者</s>，也有一个月时间了，这段时间我的<strong>作息</strong>及其不<s>规律</s>，很多次夜里 12 点之后睡觉，早上 10 点起床。<strong>不建议自律性比较差的同学从事自由职业。</strong></p>
-<p>这是我的第一篇博客，上一次写不记得是什么时候了,还没有组织好语言要说些什么，下边我就引用一下 Bob Dylan 的 《<strong>犹如滚石</strong>》，像一颗滚石一样<strong>顽强</strong>的活着吧！！！！</p>
+<p><img src="../images/2I3A3839.JPG" alt="2I3A3839"></p>
+<p>  距离辞职已经一个月了，那是做了很长的时间斗争，在五月的一个早晨做的决定。每天早出晚归，早上孩子没有睡醒我就爬起来上班，晚上孩子睡着了，我才到家。那段时间我只要抱他就会哭，所以就决定在家里多<s>陪陪</s>他们母子俩。</p>
+<p>  作为<strong>新手</strong><s>自由职业者</s>，也有一个月时间了，这段时间我的<strong>作息</strong>及其不<s>规律</s>，很多次夜里 12 点之后睡觉，早上 10 点起床。<strong>不建议自律性比较差的同学从事自由职业。</strong></p>
+<p>  这是我的第一篇博客，上一次写不记得是什么时候了,还没有组织好语言要说些什么，下边我就引用一下 Bob Dylan 的 《<strong>犹如滚石</strong>》，像一颗滚石一样<strong>顽强</strong>的活着吧！！！！</p>
 <hr>
 <blockquote>
 <h5 id="like-a-rolling-stone"><a class="markdownIt-Anchor" href="#like-a-rolling-stone"></a> 《Like a Rolling Stone》</h5>
@@ -344,7 +344,7 @@
   <entry>
     <title>给博客增加评论功能</title>
     <url>//*/762727420.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></p>
 <span id="more"></span>
 <p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
 <p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
@@ -363,7 +363,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
 <p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p><strong>敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</strong></p>
 <p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
 以上是我的分享，谢谢！！</p>
 ]]></content>
@@ -380,22 +380,22 @@
   <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>//*/465957431.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h5 id="今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情_"><a class="markdownIt-Anchor" href="#今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情_"></a> 今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！_</h5>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <strong>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！_</strong></p>
 <span id="more"></span>
-<p>刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p>
-<p><img src="/images/WechatIMG80.jpeg" alt="WechatIMG80"></p>
-<p>我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>
-每次当我有&quot;我不是幸运的大多数&quot;这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p>
-<p><img src="/images/WechatIMG81.jpeg" alt="WechatIMG81"></p>
-<p>我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过&quot;<s>是冬冬毁掉了我的生活</s>&quot;这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>
+<p>  刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p>
+<p><img src="../images/WechatIMG80.jpeg" alt="WechatIMG80"></p>
+<p>  我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>
+  每次当我有&quot;我不是幸运的大多数&quot;这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p>
+<p><img src="../images/WechatIMG81.jpeg" alt="WechatIMG81"></p>
+<p>  我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过&quot;<s>是冬冬毁掉了我的生活</s>&quot;这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>
 每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。<br>
 说话要小声，走路要小声，就连呼吸都要思考着呼吸，“这样呼吸对吗？我是不是不该这样呼吸？”</p>
-<h1 id="w-t-f"><a class="markdownIt-Anchor" href="#w-t-f"></a> <s><em>“W T F !!!”</em></s></h1>
-<h1 id="完了完了完了"><a class="markdownIt-Anchor" href="#完了完了完了"></a> <s><em>“完了完了完了！！！”</em></s></h1>
-<h1 id="我的生活是不是就这样了"><a class="markdownIt-Anchor" href="#我的生活是不是就这样了"></a> <s><em>“我的生活是不是就这样了？”</em></s></h1>
-<p>不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p>
-<p>如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<s>你们是对的！！！！</s> 你们还只是孩子。</p>
-<p>写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p>
+<p>  ~~_“W T F !!!”</p>
+<p>  <s><em>“完了完了完了！！！”</em></s></p>
+<p>  <s><em>“我的生活是不是就这样了？”</em></s></p>
+<p>  不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p>
+<p>  如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<s>你们是对的！！！！</s> 你们还只是孩子。</p>
+<p>  写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -498,30 +498,6 @@
       </tags>
   </entry>
   <entry>
-    <title>阿里云mysql外网访问</title>
-    <url>//*/3031836898.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
-<span id="more"></span>
-<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
-<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
-<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
-<p>3.mysql 默认只能自本机访问</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
-<p>4.检查是不是在监听状态</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
-<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nginx支持ssl+acme.sh定时更新证书</title>
     <url>//*/1101146699.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>不废话，直接进入实战。</p>
@@ -555,6 +531,30 @@
         <tag>nginx</tag>
         <tag>ssl</tag>
         <tag>acme.sh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云mysql外网访问</title>
+    <url>//*/3031836898.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+<span id="more"></span>
+<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
+<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
+<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
+<p>3.mysql 默认只能自本机访问</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
+<p>4.检查是不是在监听状态</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
+<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -1146,6 +1146,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Reveal.js使用</title>
+    <url>//*/6befbd07.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
+<br>
+<br>
+<details open>
+<summary><span class="pre-summary">&nbsp;</span><mark><strong>代码:</strong></mark></summary><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide1&quot; data-background-image=&quot;./1.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 1</span><br><span class="line"></span><br><span class="line">### 我是第一个页面</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment custom blur animated scale-down&quot; data-animated-scale-down-from=&quot;10&quot; data-animated-scale-down-to=&quot;1&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">`js [1|2|3|4]</span><br><span class="line">    let a = 1;</span><br><span class="line">    let b = 2;</span><br><span class="line">    let c = x =&gt; 1 + 2 + x;</span><br><span class="line">    c(3);</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in  animated rotate&quot; data-animated-rotate-to=&quot;360deg&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot; fragment fade-in  animated move-to rotate&quot; data-animated-rotate-to=&quot;360deg&quot; data-animated-move-to-top=&quot;-50px&quot; data-animated-move-to-left=&quot;0px&quot; ---&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第一个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide2&quot; data-background-image=&quot;./2.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 2</span><br><span class="line"></span><br><span class="line">### 我是第二个页面</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index1](#/slide1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3](#/slide3)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.1](#/slide3.1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.2](#/slide3.2)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index4](#/slide4)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第二个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">我是<span class="comment">&lt;!-- .element: style=&quot;color: lightred&quot; --&gt;</span></span><br><span class="line">第三<span class="comment">&lt;!-- .element:  style=&quot;color: lightyellow&quot; --&gt;</span></span><br><span class="line">个页面<span class="comment">&lt;!-- .element: style=&quot;color: lightblue&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">* 一 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line">* 二 <span class="comment">&lt;!-- .element: class=&quot;fragment highlight-red&quot; --&gt;</span></span><br><span class="line">* 三 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-out&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.1&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.1</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.2&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.2</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">&gt; 我是一个备注文件</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide4&quot; data-background-image=&quot;./4.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 4</span><br><span class="line"></span><br><span class="line">### 我是第四个页面</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第四个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</details>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>reveal.js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>gitlab &amp; OKR 进行项目管理 </title>
     <url>//*/2050102104.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -1331,23 +1348,6 @@ section 运维阶段
         <tag>gitlab</tag>
         <tag>okr</tag>
         <tag>项目管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Reveal.js使用</title>
-    <url>//*/6befbd07.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
-<br>
-<br>
-<details open>
-<summary><span class="pre-summary">&nbsp;</span><mark><strong>代码:</strong></mark></summary><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide1&quot; data-background-image=&quot;./1.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 1</span><br><span class="line"></span><br><span class="line">### 我是第一个页面</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment custom blur animated scale-down&quot; data-animated-scale-down-from=&quot;10&quot; data-animated-scale-down-to=&quot;1&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">`js [1|2|3|4]</span><br><span class="line">    let a = 1;</span><br><span class="line">    let b = 2;</span><br><span class="line">    let c = x =&gt; 1 + 2 + x;</span><br><span class="line">    c(3);</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in  animated rotate&quot; data-animated-rotate-to=&quot;360deg&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot; fragment fade-in  animated move-to rotate&quot; data-animated-rotate-to=&quot;360deg&quot; data-animated-move-to-top=&quot;-50px&quot; data-animated-move-to-left=&quot;0px&quot; ---&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第一个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide2&quot; data-background-image=&quot;./2.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 2</span><br><span class="line"></span><br><span class="line">### 我是第二个页面</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index1](#/slide1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3](#/slide3)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.1](#/slide3.1)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index3.2](#/slide3.2)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">[打开index4](#/slide4)</span><br><span class="line"><span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第二个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot;--&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">我是<span class="comment">&lt;!-- .element: style=&quot;color: lightred&quot; --&gt;</span></span><br><span class="line">第三<span class="comment">&lt;!-- .element:  style=&quot;color: lightyellow&quot; --&gt;</span></span><br><span class="line">个页面<span class="comment">&lt;!-- .element: style=&quot;color: lightblue&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">* 一 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-in&quot; --&gt;</span></span><br><span class="line">* 二 <span class="comment">&lt;!-- .element: class=&quot;fragment highlight-red&quot; --&gt;</span></span><br><span class="line">* 三 <span class="comment">&lt;!-- .element: class=&quot;fragment fade-out&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.1&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.1</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">`mermaid</span><br><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 流程中心、表单中心</span><br><span class="line">excludes weekdays</span><br><span class="line"></span><br><span class="line">section 需求阶段</span><br><span class="line">需求调研 :desc1, 2023-11-15,2023-12-05</span><br><span class="line"></span><br><span class="line">section 设计阶段</span><br><span class="line">设计 :desc2,2023-12-05,2023-12-10</span><br><span class="line"></span><br><span class="line">section 开发阶段</span><br><span class="line">开发 :desc3,2023-12-01,2023-12-29</span><br><span class="line"></span><br><span class="line">section 测试阶段</span><br><span class="line">测试     :desc4,2023-12-20,2023-12-29</span><br><span class="line"></span><br><span class="line">section 上线启动</span><br><span class="line">部署培训     :desc5,2023-12-22,2023-12-29</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide3.2&quot; data-background-image=&quot;./3.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 3.2</span><br><span class="line"></span><br><span class="line">### 我是第三个页面</span><br><span class="line"></span><br><span class="line">&gt; 我是一个备注文件</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第三个页面的备注文件</span><br><span class="line"></span><br><span class="line">----</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- .slide: id=&quot;slide4&quot; data-background-image=&quot;./4.jpeg&quot; data-background-opacity=&quot;0.5&quot; --&gt;</span></span><br><span class="line"></span><br><span class="line"># Index 4</span><br><span class="line"></span><br><span class="line">### 我是第四个页面</span><br><span class="line"></span><br><span class="line">Note:</span><br><span class="line">第四个页面的备注文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</details>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>reveal.js</tag>
       </tags>
   </entry>
   <entry>
@@ -1746,138 +1746,6 @@ section 运维阶段
       <tags>
         <tag>计数法</tag>
         <tag>进制</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>笔记3-《程序员数学-1》</title>
-    <url>//*/375539532.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
-<span id="more"></span>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>什么是余数？</p>
-<ul class="lvl-2">
-<li class="lvl-4"><strong>余数</strong> 就是除法运算时剩下的数</li>
-</ul>
-</li>
-</ul>
-<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>今天是星期日,那么 100 天以后是星期几？</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line">  </span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line">  </span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>1234567 的 987654321 次方的个位数是多少？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>—未完—</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>余数</tag>
-        <tag>分组</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端定时器</title>
-    <url>//*/3423146f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
-<span id="more"></span>
-<p>  在<code>博客</code>- <a href="/tags">标签</a>页面中使用到了<code>定时器</code>来做<code>::hover</code>动画效果。接下来我会对比一下<code>setTimeout</code>、<code>setInterval</code>、<code>requestAnimationFrame</code>来实现定时器。</p>
-<div style="display:flex;justify-content: center;">
-    <div>
-      <video width="100%" height="auto" src="/images/video/tags-view.mp4" autoplay muted loop></video>
-      <div style="text-align: center;user-select: none;">视频：
-博客-标签
-</div>
-    </div>
-  </div>
-<h1 id="1定时器"><a class="markdownIt-Anchor" href="#1定时器"></a> 1.定时器</h1>
-<h2 id="11-settimeout"><a class="markdownIt-Anchor" href="#11-settimeout"></a> 1.1. setTimeout</h2>
-<p>  <strong>setTimeout是JavaScript中的一个函数，用于在指定的延迟时间后执行一段代码或函数。它的工作原理是在指定的延迟时间后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
-<p><strong>setTimeout的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>func|code</code>：要执行的函数或代码。</p>
-</li>
-<li class="lvl-2">
-<p><code>delay</code>：延迟时间，以毫秒为单位。</p>
-</li>
-<li class="lvl-2">
-<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
-</li>
-</ul>
-<p>  当使用setTimeout时，它将在指定的延迟时间后执行一次函数或代码，然后返回一个定时器ID，可以使用<code>clearTimeout()</code>方法来取消定时器的执行。</p>
-<p>  需要注意的是，setTimeout并不会立即执行函数或代码，而是在指定的延迟时间后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setTimeout中的函数或代码可能会在预期的时间之后才被执行。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setTimeout</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="title function_">cleatTimeout</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="12-setinterval"><a class="markdownIt-Anchor" href="#12-setinterval"></a> 1.2. setInterval</h2>
-<p>  <strong>setInterval是JavaScript中的一个函数，用于在指定的时间间隔后重复执行一段代码或函数。它的工作原理是在指定的时间间隔后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
-<p><strong>setInterval的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>func|code</code>：要执行的函数或代码。</p>
-</li>
-<li class="lvl-2">
-<p><code>delay</code>：时间间隔，以毫秒为单位。</p>
-</li>
-<li class="lvl-2">
-<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
-</li>
-</ul>
-<p>  当使用setInterval时，它将在指定的时间间隔后重复执行函数或代码，直到调用<code>clearInterval()</code>方法来停止执行。与setTimeout不同的是，setInterval会持续不断地重复执行函数或代码，直到被明确停止。</p>
-<p>  需要注意的是，setInterval并不会立即执行函数或代码，而是在指定的时间间隔后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setInterval中的函数或代码可能会在预期的时间之后才被执行。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setInterval</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setInterval</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">clearInterval</span>();</span><br></pre></td></tr></table></figure>
-<h2 id="13-requestanimationframe"><a class="markdownIt-Anchor" href="#13-requestanimationframe"></a> 1.3. requestAnimationFrame</h2>
-<p>  <strong>requestAnimationFrame是Web动画API的一部分，用于在浏览器下一次重绘之前调用指定的回调函数，从而实现平滑的动画效果。与setTimeout和setInterval相比，requestAnimationFrame具有更高的性能和更好的用户体验。</strong></p>
-<p><strong>requestAnimationFrame的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">requestAnimationFrame</span>(callback);</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>callback</code>：要执行的回调函数。</p>
-</li>
-</ul>
-<p>  当使用requestAnimationFrame时，它会返回一个唯一的ID，可以使用这个ID来取消动画帧的调用。与setTimeout和setInterval不同的是，requestAnimationFrame的回调函数将在浏览器下一次重绘之前执行，而不是简单地等待指定的时间后执行。这样可以充分利用浏览器的重绘机制，实现更平滑的动画效果。</p>
-<p>  requestAnimationFrame的优势在于它能够根据浏览器的刷新率来同步动画，避免了由于不同的屏幕刷新率和硬件配置导致的动画卡顿和闪烁。同时，它也避免了在动画过程中不必要的重绘和计算，提高了动画的性能和响应性。</p>
-<p>  使用requestAnimationFrame时需要注意，它只会在浏览器处于激活状态时执行回调函数。如果浏览器处于最小化或隐藏状态，那么回调函数将不会被执行。因此，在使用requestAnimationFrame时，需要确保浏览器处于激活状态，或者在回调函数中添加适当的逻辑来处理浏览器不处于激活状态的情况。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">frame</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;frame&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">requestAnimationFrame</span>(frame);</span><br></pre></td></tr></table></figure>
-<h1 id="2-标签动画"><a class="markdownIt-Anchor" href="#2-标签动画"></a> 2. 标签动画</h1>
-<p>  使用 <code>requestAnimationFrame</code> 可以替代 <code>setInterval</code> 来实现定时任务，因为 <code>requestAnimationFrame</code> 更加高效，能够根据屏幕刷新率来同步动画，避免了不必要的重绘和计算。</p>
-<p>下面是使用 <code>requestAnimationFrame</code> 实现 <code>setInterval</code> 更新<code>博客</code>- <a href="/tags">标签</a>的示例代码：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * 兼容不支持requestAnimationFrame的浏览器</span></span><br><span class="line"><span class="comment"> ***/</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitRequestAnimationFrame</span> ||<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozRequestAnimationFrame</span> ||<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oRequestAnimationFrame</span>      ||<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msRequestAnimationFrame</span>     ||<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="keyword">function</span> (<span class="params">callback</span>) &#123;</span><br><span class="line">      <span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(callback, <span class="number">6000</span> / <span class="number">60</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msCancelAnimationFrame</span> || <span class="built_in">clearTimeout</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 设置精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">function</span>&#125; 回调函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125;   延迟时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;  定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="keyword">function</span> <span class="title function_">setIntervalPrecision</span>(<span class="params">callback, delay</span>) &#123;</span><br><span class="line">  <span class="comment">// 生成并记录定时器ID</span></span><br><span class="line">  <span class="keyword">let</span> obj = <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> || (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> = &#123; <span class="attr">num</span>: <span class="number">0</span> &#125;)</span><br><span class="line">  obj.<span class="property">num</span>++</span><br><span class="line">  obj[<span class="string">&#x27;n&#x27;</span> + obj.<span class="property">num</span>] = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">var</span> intervalId = obj.<span class="property">num</span></span><br><span class="line">  <span class="comment">// 开始时间</span></span><br><span class="line">  <span class="keyword">var</span> startTime = +<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">  <span class="comment">// 已执行次数</span></span><br><span class="line">  <span class="keyword">var</span> count = <span class="number">0</span></span><br><span class="line">  <span class="comment">// 延迟时间</span></span><br><span class="line">  delay = delay || <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ;(<span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 定时器被清除，则终止</span></span><br><span class="line">    <span class="keyword">if</span> (!obj[<span class="string">&#x27;n&#x27;</span> + intervalId]) <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 满足条件执行回调</span></span><br><span class="line">    <span class="keyword">if</span> (+<span class="keyword">new</span> <span class="title class_">Date</span>() &gt; startTime + delay * (count + <span class="number">1</span>)) &#123;</span><br><span class="line">      count++</span><br><span class="line">      <span class="title function_">callback</span>(count)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">requestAnimationFrame</span>(loop)</span><br><span class="line">  &#125;)()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> intervalId</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 清除精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; 定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clearIntervalPrecision</span>(<span class="params">intervalId</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">cancelAnimationFrame</span>(<span class="string">&#x27;n&#x27;</span> + intervalId)</span><br><span class="line">    <span class="keyword">delete</span> <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>[<span class="string">&#x27;n&#x27;</span> + intervalId]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//loopHover 自己的业务实现</span></span><br><span class="line">setIntervalPrecision(loopHover, <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-        <tag>react</tag>
-        <tag>javascript</tag>
-        <tag>typescript</tag>
-        <tag>setTimeout</tag>
-        <tag>setInterval</tag>
-        <tag>requestAnimationFrame</tag>
       </tags>
   </entry>
   <entry>
@@ -2301,6 +2169,153 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>笔记3-《程序员数学-1》</title>
+    <url>//*/375539532.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
+<span id="more"></span>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>什么是余数？</p>
+<ul class="lvl-2">
+<li class="lvl-4"><strong>余数</strong> 就是除法运算时剩下的数</li>
+</ul>
+</li>
+</ul>
+<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>今天是星期日,那么 100 天以后是星期几？</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line">  </span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line">  </span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>1234567 的 987654321 次方的个位数是多少？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>—未完—</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>余数</tag>
+        <tag>分组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端定时器</title>
+    <url>//*/3423146f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
+<span id="more"></span>
+<p>  在<code>博客</code>- <a href="/tags">标签</a>页面中使用到了<code>定时器</code>来做<code>::hover</code>动画效果。接下来我会对比一下<code>setTimeout</code>、<code>setInterval</code>、<code>requestAnimationFrame</code>来实现定时器。</p>
+<div style="display:flex;justify-content: center;">
+    <div>
+      <video width="100%" height="auto" src="/images/video/tags-view.mp4" autoplay muted loop></video>
+      <div style="text-align: center;user-select: none;">视频：
+博客-标签
+</div>
+    </div>
+  </div>
+<h1 id="1定时器"><a class="markdownIt-Anchor" href="#1定时器"></a> 1.定时器</h1>
+<h2 id="11-settimeout"><a class="markdownIt-Anchor" href="#11-settimeout"></a> 1.1. setTimeout</h2>
+<p>  <strong>setTimeout是JavaScript中的一个函数，用于在指定的延迟时间后执行一段代码或函数。它的工作原理是在指定的延迟时间后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
+<p><strong>setTimeout的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>func|code</code>：要执行的函数或代码。</p>
+</li>
+<li class="lvl-2">
+<p><code>delay</code>：延迟时间，以毫秒为单位。</p>
+</li>
+<li class="lvl-2">
+<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
+</li>
+</ul>
+<p>  当使用setTimeout时，它将在指定的延迟时间后执行一次函数或代码，然后返回一个定时器ID，可以使用<code>clearTimeout()</code>方法来取消定时器的执行。</p>
+<p>  需要注意的是，setTimeout并不会立即执行函数或代码，而是在指定的延迟时间后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setTimeout中的函数或代码可能会在预期的时间之后才被执行。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setTimeout</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="title function_">cleatTimeout</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="12-setinterval"><a class="markdownIt-Anchor" href="#12-setinterval"></a> 1.2. setInterval</h2>
+<p>  <strong>setInterval是JavaScript中的一个函数，用于在指定的时间间隔后重复执行一段代码或函数。它的工作原理是在指定的时间间隔后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
+<p><strong>setInterval的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>func|code</code>：要执行的函数或代码。</p>
+</li>
+<li class="lvl-2">
+<p><code>delay</code>：时间间隔，以毫秒为单位。</p>
+</li>
+<li class="lvl-2">
+<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
+</li>
+</ul>
+<p>  当使用setInterval时，它将在指定的时间间隔后重复执行函数或代码，直到调用<code>clearInterval()</code>方法来停止执行。与setTimeout不同的是，setInterval会持续不断地重复执行函数或代码，直到被明确停止。</p>
+<p>  需要注意的是，setInterval并不会立即执行函数或代码，而是在指定的时间间隔后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setInterval中的函数或代码可能会在预期的时间之后才被执行。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setInterval</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setInterval</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">clearInterval</span>();</span><br></pre></td></tr></table></figure>
+<h2 id="13-requestanimationframe"><a class="markdownIt-Anchor" href="#13-requestanimationframe"></a> 1.3. requestAnimationFrame</h2>
+<p>  <strong>requestAnimationFrame是Web动画API的一部分，用于在浏览器下一次重绘之前调用指定的回调函数，从而实现平滑的动画效果。与setTimeout和setInterval相比，requestAnimationFrame具有更高的性能和更好的用户体验。</strong></p>
+<p><strong>requestAnimationFrame的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">requestAnimationFrame</span>(callback);</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>callback</code>：要执行的回调函数。</p>
+</li>
+</ul>
+<p>  当使用requestAnimationFrame时，它会返回一个唯一的ID，可以使用这个ID来取消动画帧的调用。与setTimeout和setInterval不同的是，requestAnimationFrame的回调函数将在浏览器下一次重绘之前执行，而不是简单地等待指定的时间后执行。这样可以充分利用浏览器的重绘机制，实现更平滑的动画效果。</p>
+<p>  requestAnimationFrame的优势在于它能够根据浏览器的刷新率来同步动画，避免了由于不同的屏幕刷新率和硬件配置导致的动画卡顿和闪烁。同时，它也避免了在动画过程中不必要的重绘和计算，提高了动画的性能和响应性。</p>
+<p>  使用requestAnimationFrame时需要注意，它只会在浏览器处于激活状态时执行回调函数。如果浏览器处于最小化或隐藏状态，那么回调函数将不会被执行。因此，在使用requestAnimationFrame时，需要确保浏览器处于激活状态，或者在回调函数中添加适当的逻辑来处理浏览器不处于激活状态的情况。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">frame</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;frame&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">requestAnimationFrame</span>(frame);</span><br></pre></td></tr></table></figure>
+<h1 id="2-标签动画"><a class="markdownIt-Anchor" href="#2-标签动画"></a> 2. 标签动画</h1>
+<p>  使用 <code>requestAnimationFrame</code> 可以替代 <code>setInterval</code> 来实现定时任务，因为 <code>requestAnimationFrame</code> 更加高效，能够根据屏幕刷新率来同步动画，避免了不必要的重绘和计算。</p>
+<p>下面是使用 <code>requestAnimationFrame</code> 实现 <code>setInterval</code> 更新<code>博客</code>- <a href="/tags">标签</a>的示例代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * 兼容不支持requestAnimationFrame的浏览器</span></span><br><span class="line"><span class="comment"> ***/</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitRequestAnimationFrame</span> ||<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozRequestAnimationFrame</span> ||<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oRequestAnimationFrame</span>      ||<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msRequestAnimationFrame</span>     ||<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="keyword">function</span> (<span class="params">callback</span>) &#123;</span><br><span class="line">      <span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(callback, <span class="number">6000</span> / <span class="number">60</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msCancelAnimationFrame</span> || <span class="built_in">clearTimeout</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 设置精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">function</span>&#125; 回调函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125;   延迟时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;  定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="keyword">function</span> <span class="title function_">setIntervalPrecision</span>(<span class="params">callback, delay</span>) &#123;</span><br><span class="line">  <span class="comment">// 生成并记录定时器ID</span></span><br><span class="line">  <span class="keyword">let</span> obj = <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> || (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> = &#123; <span class="attr">num</span>: <span class="number">0</span> &#125;)</span><br><span class="line">  obj.<span class="property">num</span>++</span><br><span class="line">  obj[<span class="string">&#x27;n&#x27;</span> + obj.<span class="property">num</span>] = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">var</span> intervalId = obj.<span class="property">num</span></span><br><span class="line">  <span class="comment">// 开始时间</span></span><br><span class="line">  <span class="keyword">var</span> startTime = +<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">  <span class="comment">// 已执行次数</span></span><br><span class="line">  <span class="keyword">var</span> count = <span class="number">0</span></span><br><span class="line">  <span class="comment">// 延迟时间</span></span><br><span class="line">  delay = delay || <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ;(<span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 定时器被清除，则终止</span></span><br><span class="line">    <span class="keyword">if</span> (!obj[<span class="string">&#x27;n&#x27;</span> + intervalId]) <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 满足条件执行回调</span></span><br><span class="line">    <span class="keyword">if</span> (+<span class="keyword">new</span> <span class="title class_">Date</span>() &gt; startTime + delay * (count + <span class="number">1</span>)) &#123;</span><br><span class="line">      count++</span><br><span class="line">      <span class="title function_">callback</span>(count)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">requestAnimationFrame</span>(loop)</span><br><span class="line">  &#125;)()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> intervalId</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 清除精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; 定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clearIntervalPrecision</span>(<span class="params">intervalId</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">cancelAnimationFrame</span>(<span class="string">&#x27;n&#x27;</span> + intervalId)</span><br><span class="line">    <span class="keyword">delete</span> <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>[<span class="string">&#x27;n&#x27;</span> + intervalId]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//loopHover 自己的业务实现</span></span><br><span class="line">setIntervalPrecision(loopHover, <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>react</tag>
+        <tag>javascript</tag>
+        <tag>typescript</tag>
+        <tag>setTimeout</tag>
+        <tag>setInterval</tag>
+        <tag>requestAnimationFrame</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>大盘鸡🐔</title>
     <url>//*/c43e7c0d.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p>
@@ -2399,21 +2414,6 @@ section 运维阶段
       <tags>
         <tag>大盘鸡</tag>
         <tag>美食</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2658,6 +2658,33 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>流程、表单部署清单</title>
+    <url>//*/33e82e70.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="cec733b1812f926d2f8313b1c7c5b18dca2a7b8f13c1631dff54f67e3096c5cd">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb0044dda9db2a9cf59656d3901c03e4e9b3dff12383f3d32a36c2df76af2d9a4e85ca6282f53d58df1bb285708b96d347717f72520217e6a1c9aff8f5d2e823246cb520ab973b64a5914ee18a7ab27759d10c174b673f3a3b8533a6e98672c0d7e501b37da80d39c332f49dc03f60faa6afe79bd96e81b7fd5a13398565b9f5e122d4b6b9264c1b0718ad1088a75fb7e45956bd07a2fd261bcc66c699d9fdfb695ea6e9c14c63b323e99bc13021e44fa4a41d3444233b4d8a630fb93aa5165d7f41759d934d0438cda8d52866cdfadb760fb1d0329c2cd2de570eb1127ed7aca18cc5f703de0c4f142e38c5857ce11548457363f6d5da33d9b74ce428f78f30d71a52c545d88e4dd282d5ac43467f2dbcecbb8592ebada5a1f186615c191d1c7e45f0ca8df6832dbc0e41b0ba657dff40047d7ffa0080c8865bd1b27cf35da2ccb624b9a6e989c1387088c55c6d6434f675f194e5f4dbda311a9d83918bac1cd6991cbed4448f54e503a35ff34604c8b3483f724cb371a36c02b3480a2d00e600fd6af13fd6ae4accfb89014cd2714b350dd3</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+        <tag>正数</tag>
+        <tag>部署</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>炝锅面</title>
     <url>//*/b2113df8.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>河南大多地方以面食为主，炝锅面又是最经典的面食之一。</p>
@@ -2845,12 +2872,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-bzkFWQhJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-vXFknUxC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-bzkFWQhJ"),
+            element: document.getElementById("aplayer-vXFknUxC"),
             narrow: false,
             autoplay: true,
             showlrc: false,
