@@ -1,81 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>0. 低代码</title>
-    <url>//*/725797460.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
-<blockquote>
-<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
-<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
-<ol>
-<li class="lvl-3">
-<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
-</li>
-<li class="lvl-3">
-<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
-</li>
-<li class="lvl-3">
-<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
-</li>
-<li class="lvl-3">
-<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
-</li>
-<li class="lvl-3">
-<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
-</li>
-<li class="lvl-3">
-<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
-</li>
-<li class="lvl-3">
-<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
-</li>
-<li class="lvl-3">
-<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
-</li>
-<li class="lvl-3">
-<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
-</li>
-<li class="lvl-4">
-<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
-</li>
-</ol>
-<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
-<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
-<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
-<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
-<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
-<p>####整体而言，IT技术人员具备以下特征：</p>
-<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
-​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
-​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
-<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
-<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
-<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
-<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
-​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
-​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
-<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
-<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
-​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
-<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
-<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
-<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>1. 低代码</title>
     <url>//*/2967963195.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
@@ -378,6 +303,81 @@
       </tags>
   </entry>
   <entry>
+    <title>0. 低代码</title>
+    <url>//*/725797460.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
+<blockquote>
+<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
+<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
+<ol>
+<li class="lvl-3">
+<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
+</li>
+<li class="lvl-3">
+<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
+</li>
+<li class="lvl-3">
+<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
+</li>
+<li class="lvl-3">
+<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
+</li>
+<li class="lvl-3">
+<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
+</li>
+<li class="lvl-3">
+<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
+</li>
+<li class="lvl-3">
+<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
+</li>
+<li class="lvl-3">
+<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
+</li>
+<li class="lvl-3">
+<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
+</li>
+<li class="lvl-4">
+<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
+</li>
+</ol>
+<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
+<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
+<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
+<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
+<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
+<p>####整体而言，IT技术人员具备以下特征：</p>
+<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
+​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
+​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
+<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
+<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
+<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
+<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
+​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
+​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
+<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
+<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
+​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
+<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
+<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
+<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>//*/465957431.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <strong>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！_</strong></p>
@@ -661,34 +661,20 @@
       </tags>
   </entry>
   <entry>
-    <title>mybatis动态查询实现</title>
-    <url>//*/3058125875.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
+    <title>英语学习</title>
+    <url>//*/1061411954.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
 <span id="more"></span>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
-<p>Where 条件中包含 字段名称、运算符、值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>mybatis 公共 xml 文件配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Product mapper.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ProductController</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
+<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
+<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
+<p>待补充…</p>
 ]]></content>
       <categories>
-        <category>工作</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>api</tag>
+        <tag>英语单词</tag>
+        <tag>入门</tag>
       </tags>
   </entry>
   <entry>
@@ -743,20 +729,34 @@
       </tags>
   </entry>
   <entry>
-    <title>英语学习</title>
-    <url>//*/1061411954.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
+    <title>mybatis动态查询实现</title>
+    <url>//*/3058125875.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
 <span id="more"></span>
-<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
-<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
-<p>待补充…</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
+<p>Where 条件中包含 字段名称、运算符、值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>mybatis 公共 xml 文件配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Product mapper.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ProductController</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>英语单词</tag>
-        <tag>入门</tag>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>api</tag>
       </tags>
   </entry>
   <entry>
@@ -1016,6 +1016,48 @@
       </tags>
   </entry>
   <entry>
+    <title>29岁,再见！</title>
+    <url>//*/1873749776.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>
+冬冬：因为你明天过生日了吗？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4月份wbs</title>
+    <url>//*/c2cb16de.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="9f5b05b711cd8d76c78f522186c670c84ac386564dc4d3dd96eea637bcd65112">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01b15f88bbf2f997a33ad0e4769faa2f375c06bbd0f0afbcebbc908a2fe4364deaf4f72f036cb807ae265943182dfb5bbe20ddce9924d0b51c7a7b667d702f15bb01847cd66970a3280b2ad672ba9f970f36becada1fb6c8e16bd97fe8122bbf3617184d08ec68939ade86ad83698f447e1f8119d12295fc3d4506a7f5c99ef3a9c61fdc9c7b558de110d0360dfc88ea84b02e20aa9564467bafa4dca79e88e11cd567128ef4bbe395ebdb7dd9a8279f3e3d0260261d41878b90418135fe46e100ca78ecd0e6f9753c5b3757cf29d0b71e2fdbb08848b51c8b99cc109c2cd80cbd34c9dd34e29906c0df3351353120fa9e045c94e232bbbe462fd3aab6fa3351bfbd857bd1eb32968916d6a12703c290f9e28a3b0b503d538f8358b8e007c54ca591c8e8dc7540724a58eab4f1c5845f1e27b76e639e78d17423b1c806f3f41f18bf176afd62e13d0b60f456b223e3a6bedfe2007cd3557d5fe8bdafb5d452da0979e169a72f8eed5208da7cd82514d85837708c9842661acf486198d1d3fcd7bab421f49fb1f86ae7662b96e9e5f656d07e1710f75d35653efe19fd03490f624429b157ce990fcbdfc3cf1cb28697b2807e7ba8c5b9e242a5eb24cf16dc2751218784374d3b196f02f34fa64e52c94c04f217aa44574ef1fae4936ddb7b4a05cc1cf83ea7fdbf441589da61a168e13fd51b40e20d634992fb5d5e35223c18fb1fbf87aa2e7db1997cbf592aa24f7683913436b1d46f5b3ab51e0090f1c0988d95608244eed85b8fb0c1857424b0c502613f019a0de482a242b703f14df8bfcb26fe1ea62de73cc826452ef10e4673714760da97f3a45f1fbb6d72d8527c8e54fa48bdc6020cb1650742e722d99df070303ed4fcfa1281d0dcf35a85543af3b578679282168877d886854c0d8593cbf17a6bc8fae57b6d05d459ee9b2f911935474562741036a9d1f71e0367f428cd770adebca9d7b96a3209ebb67077b79065f7b7566e28e271b9b7df3ec1d40f1e15ce6a84e248bf91e1606d2157bc2a93e96e9d2fe9d7eee2d2ce4e4a90655e7c3e09c4398a3b8de17623d2ad576b168d4d7e2de9fc0a02c08fe4a9ae5302b5256d940e8ae37a7d0c95a3b7833bb83423f6dae16410b57b7a667809fe58203e109f1fec151b082ce61596d5c2d445a342cd738f0f878a460d41dc7d971d2b6e2637eb8d10430129a0e356525eac5e4b1d8c3e759633a4923a07446397e206d511f8c66887d0cc9b8c00fa7a0eeb39532e65fc6bc7a9827bd941e38b775adbfa03d7adeb50d47ea4eccf1ce3b3445932dc111e56282f775d8e6b610c536824cced3de1f99519753e4eea4d32afbb4e3765a153887c7a16e3876072494702c179af7d2e8bdce142374c49ba16d0d8ee6d0d5121afa1c4efad18b5f855cb0f3e59160bde78ee21557ddc006808cf391dac622d5aa9d21ddfcfc0d6bce9e560b576a63a32c394a7dd4a4ed8dc1504f9801e94da547d4c3f44a8d5611703f3c9a9c2bde310dfc158ccce17413832b106234e8c2b6af7b2a6131ea8c727452c44ac37a49a0e6a26c4c46c9eb337e7033aa43ca37d338f100a06f5891b6a194581a27fbc11a251b1b7ed5d3228afa6ebe78d6ecf26277a6dc7b9ef309191eab42826f2daf2641522510e0357b64b1c25d4f1bab2b57d98caf3569e9252a05755f0de3a0d27216fcd07cf40de7fad8fbe70dadd3c557ca6d302313391b7a6d6b8bb0b8248779cb4b9bb0a3d23daa00fadb84f9ba4d53d7639463d02cb1886f98bc82e71290b7ca9f3cc6e476ffa6e1b2f215e843e4f7a625bdefd3a3a5687aaffa3bf2ff4a467924844fc9e0fb66bb488f722a7bc8d6ac4d90a795dbb4d5469f2a98ef64266e47f5aed1cdbdb94bdc21bf67d067552fba6fd551cb0f3a0521b12993b98d55577acc10c71730ad10712df52fc28710825d53e5e59a3ce0c21ef68f7381ae6c5eb84f906ac9ae992cf374db7a44594486e336e21c007d72b29f569054bf1c5e1277491a02bb54373351b12317bd174c46dd64bdac0dd6b542f92cb6f9b53ba9ab5ca2fbf5cba495c1f509d89661f18c83ee2b81e3b26ba3c777c8e12bf05e528028f991b91756cd3f609ed9cdaa000286ceacaa30c1fbdc8903674aa31d0ec1a2a5091c20be91a01e1af4bdc7c26a90661b8df6831eb5a9b5edbcf81ffbe00dafd370445a625bde337f12df1e4722a097e4557c6ab79404fb0f543ee1864fc17d9d6e1e1d96f5b8f89ca5601231c6278b468afc3dd02012006c95039eed28ec36687d32ae2ad1fded9026ee6deeda4281a05d6e511ce7f507318c03a8b0396613a3d566ab2498c6bcdb5fd285efe03341ca6e97d64f78fc767e6ef328b82bd8bd449a4d21c5b01c60650aa8d19f88feb1df7bf40f8c70b352437ce1b85fd0259de9951dadf82e1f828f8528101b59b5fcfb2e6caab15d3bf75f8c857d420cb04368ed96d3aab6fb58fcd31ee46d88bb64ccf50b84c4feb967d1734c944e71f76b6f01e2df5a445489ded42edf740c56a4a29e7ba771b8e8800a6c3e8e68a726458d62fe06f1d5f527394cdf7e8d9ff54bf0f007f607a05abc2b2af66f81c9b161fa426f93a70a35baecbe682d9d3d9e91ccf6eb22b992b0543ab56a89f223ab734855d7b809306b00b252125f2ac34a6b6635564f2d203121a1a16c4347a686a95253826d04993d96933c3570742c862647a9c32281ba94491fdb54734dcf438c7e357013318c25cd18b781f5a1282adb3ef0827047c1de9edee3258c3a5f473447e96206663b668c09a5fae2324a306658a2e13f45e23fc6a61a6b7f5736ff2e0e1232779c717b3c0006d71b4907f85284d9a267fbed7d4d8643921ddf5ea6d4402ee96b07b446071adcd91d577d8e5104133f49c115fa293a829b5d34b9d27606a1f480f7611b8d8b7c441bc2caf2cd5c34630cfae78d3240981df2fe2969015824231c98ddc4ce3991f85268bda68e12e1604fda7132e7edb358d7af6f62a2184360dfb5e9e67f0442aa685e753a068077897176bf6fce3009c54c0d1c3b2bafcc9f2311a6978e515f81bd97781402b40ff0ebf8cc7ffaec3e8eccd5d0352108f35a8586d119d4f19533a63851e1e231e665d87fdccc613e744fd03f72367b4810ebf6711862e09ad287706716a29ff512b61b5c72548b6a3178af5b5f4ba3929961bc7ee009f6f4d5bc94b1a8c6b9537cc4a64a53b77af173968fcbb5853f5c75090938a55de4a60c733ec065dd3aaa94817ea389493f4c6347a6e663773b2c01d766be76ec60836acc6115e999c9ea9899c12d6c52a811b382751e1c5ff84bb0e6316ddf12254810ee183d1c66593ea8fd76d7142af7884fb951d930962b638d586f967994caaa189e6f156155e8ebeab3072bbc8da26d92dab7d6f59333b7250f34244ef858827785f6b1ef8bab94285b911e4f894b9f2ad13706656b6917137c70eab8af371af427545fa207029377e72bb7bbc4b76b4275b944eef5150cee1dc7a8bb5004b293a82f2bb7f8b3d671e090287a72527e623ed1d039dfde88fc488c93d54bbfe463cf80e540ad4a96766db1e00485c2d663686af4c7d4b21b47fbdcb21d179032b69a35ac6cfeb8fe0c75b36c2c33858a604528328940cc43024dce297d9270f49ac2c9ff8a688e70022b9fd64f461edd3221b624ab97c10cfb9b95c40daa28d8e5b502da68d569dc2596e941d9fb631884325812bd91077e6472df0597f883984270d6f0e86bcf2d64b218fc4e02ff0bd33097da63dce68b5f55f98f2a60c2b9dc9bf4b247d800246780b65300640f0683b69b0d8cf48b50d3511c51238b055d8f0b6d3bb2c4552425f40308f1aeb5341c848382e57a3f9b364529a07c5fe773106ce13b4cdd0fd163564d0c4f3a9781c132d1e5bd9714b96496aa33db1749e25c66e5f954e2e1102e58c331cdbbfc7aa735abc6574e47862afe28fc4ec72e0a2995a525cacaa2b9cf61e09462f3b4e55068d331fb33f8869b179995a1261f5b9d92a1a37094919a5e953889c677c3293ce519910fb80bd21c28a870bb9330a66f37060623cedb74084084726b1c4edf8bab5f9190b1791fb8d8a76fb6c2d84d9814ae33c456d5138d9806cfec8205a41192c5bc227a6f615afa70fe2dc719ad26074ee8bb2eb798ff7eb3de39a2488fcfd609632ac32a224802930f62d9526bc0ef5ebddf82af05dc699763da36bc0309a6cf0b9352f4a9640f80bddfcd6e2b4db6974a6e2923d08185147c28f9d41b6e01a244e5948d5fdac9611a700aa0e1ed93711f21cb974a5bb9daa598bb19b23595b01e93fc9f4572c41bb126da96373c089083599ec7ca64e4aa75be9b59447f0ca80f6c385bbc01116f456e0fd389195ba2ef8f0a23769d35e108740d7bdae7bddb242aef6902be760d7299b41473e27ae7c3a3a0890355a92f294c2a463de8213ae61e7ea01e9f00ca6892898ae80e373f988fef69fa6b5594930632557d39e44b8a0658b7ae1451b3174d0e544d7346281d8fbbcc49dd7c7cc2b2f1f2a4d56dc09d252ac2a1bc501af1448c6e0e18fecf58da2e7d70da702d2e0363e162f18eff395206ab655321f815feb0deb6645ada785bc8def166813a644cd7e41dc591b6563fc296ddab92086cc89d621e02a80ad04d9ee302aec4ff17a9482a9c384e5f9135e77b7dabd0c2d9e6c76c97444a196311992e7e695c39693a05a119cd1daacc4ef926f74a0a19cb92165680afd79154175c0febdc17764bec76b279838f7e67c3023c5243fe94d5e0628375109e36377b81ff7e83023f2caf5a7100bf9fdbe8ac70fe6c89f8ae21923f6b0e169fd216b67a9a8e4d96d1f64b0aadb55fd872fa8b701244287f4946d5503adf83b82ff6b8246486a49508b4b9460aad0134f423f18693b166551bb20323a608180e0eea9342f08c048ceea25f855cccfa63b9ba0634e8d70220e5a9bb27ae6b8d7e499da8cf2cc721e159477b92b9cb9fd7bd14502ca55fa4a621643c7ff11e98d59b3bb5dcbe0f510754d143fad2b6c07aa243cbf46d8fec8eed3b29509b46041db1bf224143194356d5762914bed7d3eac7ff64a88b94975308a5983d1b22aea5f9f40d4f44f0610c3d58b8a9827b039ace5f4c74709979919ccd8165a57ae3b1f25e9118320b6842dafb527f6837c7f579e041e9457750c8b1beec33efe7fcc891b57e46d4f5fa1f5753bed0bdfadf56eb337d8375972aeec844d58f9126ad5ede92d62e3c6b7ad7f611d6cd5f9aaea486818c77f2cc32d4d2d6875467ec557603399e7fe82fedb8475cc24c113e56457617be85964e49d61973e5225039d404fb6f25d635868216376ddc309f3f42034a85a5e2863ca3bb8ff6ccbc2db92b08b010124b076e58366cf87d1b51128ba2947366a8689bc6dae386b84257a69af3a89db0ceb6073c6cb967a218ac2b34eaa2cc60541dad6303f3122102940be39f493b1f5a328874f6fe051c6d385e456b56e9d6948d3859f605582161e61671e351b384cac4a5826fa7fffbd9b6f667bb26c5924a1734f65ce32c4af3b0d4aff9c245cd7c450f14d234d807b05a6a5533be2bd0fd4a238de55fc63908e25af6f85d60ee235121e8f6a6b4f0d958191ccba30364949e159ab6700438e792e49b1014504e63fa705384da67e092964209481999aac14d363f423fdcedf518c50ed77e57d57fb5d44b17fe8bb9a268fe93cf4becde42c9a6e7286b463ee513ac8fc2403b165d362ba98926455282dedba38dc75206f56a09d3b0f3fb913c03ba333c7aa9289039634599120c1bbdac9618218c63a6a10e35ac9664f868adbf7b4ee4263aa3434e32dff12a01f9848c2e3774d177d7498533d4c9b17c329e401742ada870b03e219eb5405d9634eb65580243fec5ea4ce4f9051d174986d377b861c9b6dfb658ef52bbf3fdb37c0cf439f303430618b30f295a03dab8b04e36d1b2393e01ba06efd4b794c9f9703e720659c645b6b32f0a43adf18aad34df5f564e3a2f927f05d277ee323ea13bf3ae14996705c003eee829d81a7e1c733c35bca73dd548cbd5438111f4a682eb92a1cd2861a2c6206eeb8f3545d6e22fa9a7216307570d3eaa0cadec58ab32b7c3ec7e91d12a7d37491abe8f0307daa42af63f2a9b5d0c5fc4b16cc9aa6e4d1f1526b5b32db21ce991186f56a45c14ac4e8b837ca709e908f36f1950fc181e8fc198173adb6917ea9245d1a7819fe4abe881606fbc21079fc392cb9fb1240538547836967eeade86619f592cd56cb8e0c3e97ddc1bc604d364c188c79c364f1b3822b9ad667f0396491b2e430ec617ac93a863bf75de6f8410afe400a3242f8778607b90b9def2dad43256a766d01d5875714d2eb937c943875397dbfc205e921edf0f9971310229ad9d19c8f5bb6ab5b0d5e71f2dfe916ec432a59d74de498e39ba84627d4805d0280e4b472aa4aa61a4522a16e73cd6fe4ea0456a36d1d5ba2d6315b9bc30029d06df180f9820ab66a39ea04d769e0738b3206491c6035dfa60c3fd5438ef5e2380ea72fe409e2c12a84a2ad041d8fb97ddfc585b2bd62dd100d27495ec2ee510c14560816a3eb5f910df81f5f7a15593cb23561406538b438fdd63e661c11423ddd06e2e9a28724d92efeba6be1ffc3b6ff0dd25327864efa3279870956e284686386771c117818881717b507ee828fc0de5dd4c71a88c67fa24d856fbc188da664a59c9aa379e8831b6900ddbf8b696f1dc7abb361e42290c8a55e7401afe89e487f9269b5af8e7cc0b2101c6b7de40ef2f8b9473dc88d38e5d3b761d893f595ec1e8ac264033fac65641631bf802209ab292af69ff1df543b2b6df2ab46701a109b8603455787802cc23681839c92c59484d0c53be11944cefdec685dc65feae1611ddee454d94800e69f8353d52fc5f7d496d1d38681fbbdf70905bc23392872bcaa09f787b2e450c485a26a56deb94eb0f4667e299a06d6653ed8e59fe9ee5db8fde53399bab990cf417d8a61af3009bf44946b2f2fcf06d5f2fbda7c6e74174f4309ea4a9d50172a45b9444d96d7eaa46ffc16c3f787d670bab222fe03419bf27029e9cacdb0e8b29f2623aff1b8f45c8063fe7f5a633e302d87aa10172848c42969ebb4efb00e84bf03019feccb3538f9ff18004662ce1b4fd0aaaaa3a8cac1d45c8d36667892542db38e5d70dde98d1d134024e330d7b7fd991b7d1a9afe5b145486a8eb0e7f8761f9593edaba4ad95abe89238c3ec9f1166f9dafa59801fae06c9e93a2f0b9ee81853005ee3363a9b44d4f6d43d55d57fb1a3b5704433cf0f307345d832ba721c0e2d8c81400773e7ead18c85ebcd5210e536f3bbef12a84305f4adc3057acbcdb249f95968fcc0bd7d8780e36f6a4451a8a1d65ebf32627c00c4bef340247acb7280866b0e3404614dcbe67ab8a7ff75d63274c7d60b968e7a17052ffabb991f1c2d08c1e1a164495ee28edfd60f5012ab2f58acc895b3a66ce0702a401a1d9cd12a684a4c9aa46e118663b261118eb24d7daf933cbe8dd5488f98e0e735bcf21a46c91f01c4463ae7325a94e98ebd438c2ad0711182fed297a5fe5b32e6e47f3bc81ab8f4c2e7d91d40e4c46934e91907d06bd5c465e1cfb64954d631aa94ec3e17607dc18ce1d079d1e0a2edb76daefcdc54e35ae51844e034fce1b95945c9b0052b42dcd9f88b694dd4bd9cfbe65781a6e7083621e638a91f4bb006582a1c6a3a9a181a4a2b35569ddd1afae6bbb40c232ce923890aab5d0ec0dbb953b73c24c7b7ee817f9bee7c14b8dc9062a9116ece55eacc1289824a3392b4193b64f32bb776c16e858099326205e3d162729808440741ceedd8469e93ede590d72040171291dc04bd91db995e773eb30348b3d20cf423a37b3a21a61afda389c839b2ce600a009a80895e8e5d21b8dde91cd15f993c4bca4336251c82c3189a404b31570b601ed48312bbf325fafa46560b267e24d433bd74a261bf0fdd0fc547a45a8fade0ca30266a87b2800a76ca19ef3115ed6bae63831093cd5c172c50884a9508ec7a6096a1b875793f70d6a9b6f333ffee54b540be47c5947b2744bb1b205f2a74ad4982bd6eb43acdc680e591c5df85223130640942182028cb790a015404fcb2559fa0ebe3603268b83c94df857d964aa43c2ab694b341c62e9cb58f832b239ccf0dea16b9bfa989328506a6ea581310c8c36bc4a2b57460259b9ef98217ae1ddbfb233026ffffba6d5ec3f30b5ade5f6662f1c70ccc7eb12f2f094b8aadde8330ac6a58f826d523bba35faa9fb5239d47ea83fa00a8dec1dff252e8fc34945ccc465a1bad9448ca8c7531189110fb013fbf74c5acf46a939ae85fcac9b78c66f6f7d422cdcf31e6dce85b4732ce84d92f47df0fadba913893bfb44be710a0bff640468bc757503a49ab173aca63f0e43dc2f5e801fe09bab571ccabab11e43034c1dd41cf589483959a555f4dd5248cd945aa8f708be5a0df488bf9beaa66a267cb030ef2a419b5f7b21c4c0a70f030f61bd46fba808f0237f1a399fa3801a0eb183622fd9c2cf41cf4dc36aefbbf2d6a7c8341ff47b8f9de6c24648c5ca0291e59131c2e56ccc0ad9d79e0185f2d3abd86568b6dc83503ef31423c7e1f6888e677f8626c9ef0d087764a228cb864261f7e7a4f178b5609600c658ee7deaacfc23d8df20a0de8704ed71d29512315005bc6ce0318baaf843ce6fb2ba96c576be0acf7308044fdfb4b156b0c81c2613e28c064a334b02cdf45b6b6432438b339e4a0d90f9c9b3543772ce72c651af7379699e51aa93177bc86adaa6763494e57cd128300124b5d31664c8b6178e3f439ff3c9e8b6bef389cc38df6da2d5f0186e09097c0d6d325c7e3efdefee2f84ed521cfda5a88294244ba07573259b59fd58e19fdfb2753465c5c75c70a50a590440bf759bc0ce4546fc4675af494fee28954281fac9507ee358fc29c27ff3860920aa9271d0cf93e10ab4cafcd9d9c84e0c293e9d84c0e96bfd2205448e1f5975097c15fec2036a3f423f403dcebf0c8397f15503db90e797c4df07128c5f08051f8b6e04269a7534e366f2556358828afb510ea9c02aff3b99056f7622344066ad446ac0fb3bab874efc4b3b371effe9213f68f1fbfe68c1500ee7cd941a49fcb660d3a42abe23c39069feb6230c937e882c15384df948c7a22f560876d34d5740e7a201515de1c80c9e2c935b621547d2c5acfb25313d8eb8608b8e2a6bcdd460294962fc833990d40d9f199f56c567a5fe37a6ff45739210113d465822bf1cdae63c8b15c9eca8fd15080c5ceb5547fa3417be44c5d09a8f6a9f1d4cd6b85e51fd6d71782d1dc39f304743f564e0bbfe955474b171cf874d3976a75d323ab1bb84a162ef09b1b56aa708b468e190f1f4de321250667e3f1f70e3218cf194621778993036edfaa1d665b6d562d8cb973ff07cf1930b6056f4a0460f855f0771ac0e5aec0f5dcc28780e8c559b0a0133173c31c6e9852ca7bf3e93cfce4562857635ed80c9b74c3dd08967cc01ba0cb91e56373a21329dee4ed48e17884381cc5026a85845f4226cdbd1e79fc99fd954944f52386e0c59ecad2867b39795be69424933a58f4720b75703a8bae2970ea8be2fd447f26582520955563b6d5ff950794afba581c9354813e7c2b78da8419d5cfb8bcb5807f2058c8485b07c70dc0f547f51ec37df7cdf869ffcf1731d59e175f09f06ffbf8b16bba439f4a185fd40d64951f1622f296dc84c83b30f3efcb30fa33aaf720d1d690f409fda1fd5a9087d048028afcefda712b67d27c49202f8b21cca438d5144832c8f09ecb4f51ecce15e02d011a3c6a078b7bc050c6ef3100800b4856ba751fffbd3ea94335d8d95879046dc97241be521fa198103b82f5d4767319de5bcb3bebfea430481e72e6c2aca4967e3b798d1a6e944db7a93a65ed52d05e82f528d071a673238f6ca0e6d7da4022b20207db3bd2019dbeaea71df423afd94f09bf6980ef354a3fcba866c845079baf0dab62705abe94319921085faaba8a023ffb547b6ee369184e47832a7598bf327721a25175549bee2c92dd7167d34ed1bea37b965ec209181472f51e0c4964907cbf450b8637295dcf4e9ae595b0e3b4637516d8575e8b6b4887276f398e26db33dd49fc5d0707ea9ba64bde9ed179d54e2d6d68e9ad6b3921f9b57dcbc191687608f91399d68b8c9c91f43f1722a0bdad8ca2a116f7efdbb2b5968ad29735f443b2ed47be93b6c976657a1712f9016c0ec0c33bc2e8023d1f0f9cc77f021f6966483b1efea619eff7c7f37ec935e6a8b7fe0ee0ed830df96922a61206e3e7435abc2889643b6c8400c4ca0920f2c91b5e1de5a6fee6e0c462271ea402ae25ef9314fc5682109b074577007345edf02b4f85f074b8463e633a6d4b5f8a4127d2a179942c79d000d20b8b76bc4e1a57c10dc3d08cf2dc65ab969b26ea249308bcf7154655bd10234b1528a0e500da85b8f55f0280ff6c09099b4088b0054ff4381a064e5cc8dc52f0902b02608f5cbb1a2acc8c38c3d3483f462dae09d48b73acc8f88c611a387ad42e95504c4a41e2e814fdc66cb0abc5f692e3c7ed224a9f7ef03882ee8ecbc254131785696cbed509338bc1a57c2b3a46065491353f65c8313330c11bf12506ed0d0bec294f8fc544bbbaa4143de0c4581136fc2c36e540a6646c38ce2dcf621ac0a8b8ba96c30d209c9</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>wbs</tag>
+        <tag>项目一览</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -1104,51 +1146,9 @@
       </tags>
   </entry>
   <entry>
-    <title>29岁,再见！</title>
-    <url>//*/1873749776.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>
-冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4月份wbs</title>
-    <url>//*/c2cb16de.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="9f5b05b711cd8d76c78f522186c670c84ac386564dc4d3dd96eea637bcd65112">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01b15f88bbf2f997a33ad0e4769faa2f375c06bbd0f0afbcebbc908a2fe4364deaf4f72f036cb807ae265943182dfb5bbe20ddce9924d0b51c7a7b667d702f15bb01847cd66970a3280b2ad672ba9f970f36becada1fb6c8e16bd97fe8122bbf3617184d08ec68939ade86ad83698f447e1f8119d12295fc3d4506a7f5c99ef3a9c61fdc9c7b558de110d0360dfc88ea84b02e20aa9564467bafa4dca79e88e11cd567128ef4bbe395ebdb7dd9a8279f3e3d0260261d41878b90418135fe46e100ca78ecd0e6f9753c5b3757cf29d0b71e2fdbb08848b51c8b99cc109c2cd80cbd34c9dd34e29906c0df3351353120fa9e045c94e232bbbe462fd3aab6fa3351bfbd857bd1eb32968916d6a12703c290f9e28a3b0b503d538f8358b8e007c54ca591c8e8dc7540724a58eab4f1c5845f1e27b76e639e78d17423b1c806f3f41f18bf176afd62e13d0b60f456b223e3a6bedfe2007cd3557d5fe8bdafb5d452da0979e169a72f8eed5208da7cd82514d85837708c9842661acf486198d1d3fcd7bab421f49fb1f86ae7662b96e9e5f656d07e1710f75d35653efe19fd03490f624429b157ce990fcbdfc3cf1cb28697b2807e7ba8c5b9e242a5eb24cf16dc2751218784374d3b196f02f34fa64e52c94c04f217aa44574ef1fae4936ddb7b4a05cc1cf83ea7fdbf441589da61a168e13fd51b40e20d634992fb5d5e35223c18fb1fbf87aa2e7db1997cbf592aa24f7683913436b1d46f5b3ab51e0090f1c0988d95608244eed85b8fb0c1857424b0c502613f019a0de482a242b703f14df8bfcb26fe1ea62de73cc826452ef10e4673714760da97f3a45f1fbb6d72d8527c8e54fa48bdc6020cb1650742e722d99df070303ed4fcfa1281d0dcf35a85543af3b578679282168877d886854c0d8593cbf17a6bc8fae57b6d05d459ee9b2f911935474562741036a9d1f71e0367f428cd770adebca9d7b96a3209ebb67077b79065f7b7566e28e271b9b7df3ec1d40f1e15ce6a84e248bf91e1606d2157bc2a93e96e9d2fe9d7eee2d2ce4e4a90655e7c3e09c4398a3b8de17623d2ad576b168d4d7e2de9fc0a02c08fe4a9ae5302b5256d940e8ae37a7d0c95a3b7833bb83423f6dae16410b57b7a667809fe58203e109f1fec151b082ce61596d5c2d445a342cd738f0f878a460d41dc7d971d2b6e2637eb8d10430129a0e356525eac5e4b1d8c3e759633a4923a07446397e206d511f8c66887d0cc9b8c00fa7a0eeb39532e65fc6bc7a9827bd941e38b775adbfa03d7adeb50d47ea4eccf1ce3b3445932dc111e56282f775d8e6b610c536824cced3de1f99519753e4eea4d32afbb4e3765a153887c7a16e3876072494702c179af7d2e8bdce142374c49ba16d0d8ee6d0d5121afa1c4efad18b5f855cb0f3e59160bde78ee21557ddc006808cf391dac622d5aa9d21ddfcfc0d6bce9e560b576a63a32c394a7dd4a4ed8dc1504f9801e94da547d4c3f44a8d5611703f3c9a9c2bde310dfc158ccce17413832b106234e8c2b6af7b2a6131ea8c727452c44ac37a49a0e6a26c4c46c9eb337e7033aa43ca37d338f100a06f5891b6a194581a27fbc11a251b1b7ed5d3228afa6ebe78d6ecf26277a6dc7b9ef309191eab42826f2daf2641522510e0357b64b1c25d4f1bab2b57d98caf3569e9252a05755f0de3a0d27216fcd07cf40de7fad8fbe70dadd3c557ca6d302313391b7a6d6b8bb0b8248779cb4b9bb0a3d23daa00fadb84f9ba4d53d7639463d02cb1886f98bc82e71290b7ca9f3cc6e476ffa6e1b2f215e843e4f7a625bdefd3a3a5687aaffa3bf2ff4a467924844fc9e0fb66bb488f722a7bc8d6ac4d90a795dbb4d5469f2a98ef64266e47f5aed1cdbdb94bdc21bf67d067552fba6fd551cb0f3a0521b12993b98d55577acc10c71730ad10712df52fc28710825d53e5e59a3ce0c21ef68f7381ae6c5eb84f906ac9ae992cf374db7a44594486e336e21c007d72b29f569054bf1c5e1277491a02bb54373351b12317bd174c46dd64bdac0dd6b542f92cb6f9b53ba9ab5ca2fbf5cba495c1f509d89661f18c83ee2b81e3b26ba3c777c8e12bf05e528028f991b91756cd3f609ed9cdaa000286ceacaa30c1fbdc8903674aa31d0ec1a2a5091c20be91a01e1af4bdc7c26a90661b8df6831eb5a9b5edbcf81ffbe00dafd370445a625bde337f12df1e4722a097e4557c6ab79404fb0f543ee1864fc17d9d6e1e1d96f5b8f89ca5601231c6278b468afc3dd02012006c95039eed28ec36687d32ae2ad1fded9026ee6deeda4281a05d6e511ce7f507318c03a8b0396613a3d566ab2498c6bcdb5fd285efe03341ca6e97d64f78fc767e6ef328b82bd8bd449a4d21c5b01c60650aa8d19f88feb1df7bf40f8c70b352437ce1b85fd0259de9951dadf82e1f828f8528101b59b5fcfb2e6caab15d3bf75f8c857d420cb04368ed96d3aab6fb58fcd31ee46d88bb64ccf50b84c4feb967d1734c944e71f76b6f01e2df5a445489ded42edf740c56a4a29e7ba771b8e8800a6c3e8e68a726458d62fe06f1d5f527394cdf7e8d9ff54bf0f007f607a05abc2b2af66f81c9b161fa426f93a70a35baecbe682d9d3d9e91ccf6eb22b992b0543ab56a89f223ab734855d7b809306b00b252125f2ac34a6b6635564f2d203121a1a16c4347a686a95253826d04993d96933c3570742c862647a9c32281ba94491fdb54734dcf438c7e357013318c25cd18b781f5a1282adb3ef0827047c1de9edee3258c3a5f473447e96206663b668c09a5fae2324a306658a2e13f45e23fc6a61a6b7f5736ff2e0e1232779c717b3c0006d71b4907f85284d9a267fbed7d4d8643921ddf5ea6d4402ee96b07b446071adcd91d577d8e5104133f49c115fa293a829b5d34b9d27606a1f480f7611b8d8b7c441bc2caf2cd5c34630cfae78d3240981df2fe2969015824231c98ddc4ce3991f85268bda68e12e1604fda7132e7edb358d7af6f62a2184360dfb5e9e67f0442aa685e753a068077897176bf6fce3009c54c0d1c3b2bafcc9f2311a6978e515f81bd97781402b40ff0ebf8cc7ffaec3e8eccd5d0352108f35a8586d119d4f19533a63851e1e231e665d87fdccc613e744fd03f72367b4810ebf6711862e09ad287706716a29ff512b61b5c72548b6a3178af5b5f4ba3929961bc7ee009f6f4d5bc94b1a8c6b9537cc4a64a53b77af173968fcbb5853f5c75090938a55de4a60c733ec065dd3aaa94817ea389493f4c6347a6e663773b2c01d766be76ec60836acc6115e999c9ea9899c12d6c52a811b382751e1c5ff84bb0e6316ddf12254810ee183d1c66593ea8fd76d7142af7884fb951d930962b638d586f967994caaa189e6f156155e8ebeab3072bbc8da26d92dab7d6f59333b7250f34244ef858827785f6b1ef8bab94285b911e4f894b9f2ad13706656b6917137c70eab8af371af427545fa207029377e72bb7bbc4b76b4275b944eef5150cee1dc7a8bb5004b293a82f2bb7f8b3d671e090287a72527e623ed1d039dfde88fc488c93d54bbfe463cf80e540ad4a96766db1e00485c2d663686af4c7d4b21b47fbdcb21d179032b69a35ac6cfeb8fe0c75b36c2c33858a604528328940cc43024dce297d9270f49ac2c9ff8a688e70022b9fd64f461edd3221b624ab97c10cfb9b95c40daa28d8e5b502da68d569dc2596e941d9fb631884325812bd91077e6472df0597f883984270d6f0e86bcf2d64b218fc4e02ff0bd33097da63dce68b5f55f98f2a60c2b9dc9bf4b247d800246780b65300640f0683b69b0d8cf48b50d3511c51238b055d8f0b6d3bb2c4552425f40308f1aeb5341c848382e57a3f9b364529a07c5fe773106ce13b4cdd0fd163564d0c4f3a9781c132d1e5bd9714b96496aa33db1749e25c66e5f954e2e1102e58c331cdbbfc7aa735abc6574e47862afe28fc4ec72e0a2995a525cacaa2b9cf61e09462f3b4e55068d331fb33f8869b179995a1261f5b9d92a1a37094919a5e953889c677c3293ce519910fb80bd21c28a870bb9330a66f37060623cedb74084084726b1c4edf8bab5f9190b1791fb8d8a76fb6c2d84d9814ae33c456d5138d9806cfec8205a41192c5bc227a6f615afa70fe2dc719ad26074ee8bb2eb798ff7eb3de39a2488fcfd609632ac32a224802930f62d9526bc0ef5ebddf82af05dc699763da36bc0309a6cf0b9352f4a9640f80bddfcd6e2b4db6974a6e2923d08185147c28f9d41b6e01a244e5948d5fdac9611a700aa0e1ed93711f21cb974a5bb9daa598bb19b23595b01e93fc9f4572c41bb126da96373c089083599ec7ca64e4aa75be9b59447f0ca80f6c385bbc01116f456e0fd389195ba2ef8f0a23769d35e108740d7bdae7bddb242aef6902be760d7299b41473e27ae7c3a3a0890355a92f294c2a463de8213ae61e7ea01e9f00ca6892898ae80e373f988fef69fa6b5594930632557d39e44b8a0658b7ae1451b3174d0e544d7346281d8fbbcc49dd7c7cc2b2f1f2a4d56dc09d252ac2a1bc501af1448c6e0e18fecf58da2e7d70da702d2e0363e162f18eff395206ab655321f815feb0deb6645ada785bc8def166813a644cd7e41dc591b6563fc296ddab92086cc89d621e02a80ad04d9ee302aec4ff17a9482a9c384e5f9135e77b7dabd0c2d9e6c76c97444a196311992e7e695c39693a05a119cd1daacc4ef926f74a0a19cb92165680afd79154175c0febdc17764bec76b279838f7e67c3023c5243fe94d5e0628375109e36377b81ff7e83023f2caf5a7100bf9fdbe8ac70fe6c89f8ae21923f6b0e169fd216b67a9a8e4d96d1f64b0aadb55fd872fa8b701244287f4946d5503adf83b82ff6b8246486a49508b4b9460aad0134f423f18693b166551bb20323a608180e0eea9342f08c048ceea25f855cccfa63b9ba0634e8d70220e5a9bb27ae6b8d7e499da8cf2cc721e159477b92b9cb9fd7bd14502ca55fa4a621643c7ff11e98d59b3bb5dcbe0f510754d143fad2b6c07aa243cbf46d8fec8eed3b29509b46041db1bf224143194356d5762914bed7d3eac7ff64a88b94975308a5983d1b22aea5f9f40d4f44f0610c3d58b8a9827b039ace5f4c74709979919ccd8165a57ae3b1f25e9118320b6842dafb527f6837c7f579e041e9457750c8b1beec33efe7fcc891b57e46d4f5fa1f5753bed0bdfadf56eb337d8375972aeec844d58f9126ad5ede92d62e3c6b7ad7f611d6cd5f9aaea486818c77f2cc32d4d2d6875467ec557603399e7fe82fedb8475cc24c113e56457617be85964e49d61973e5225039d404fb6f25d635868216376ddc309f3f42034a85a5e2863ca3bb8ff6ccbc2db92b08b010124b076e58366cf87d1b51128ba2947366a8689bc6dae386b84257a69af3a89db0ceb6073c6cb967a218ac2b34eaa2cc60541dad6303f3122102940be39f493b1f5a328874f6fe051c6d385e456b56e9d6948d3859f605582161e61671e351b384cac4a5826fa7fffbd9b6f667bb26c5924a1734f65ce32c4af3b0d4aff9c245cd7c450f14d234d807b05a6a5533be2bd0fd4a238de55fc63908e25af6f85d60ee235121e8f6a6b4f0d958191ccba30364949e159ab6700438e792e49b1014504e63fa705384da67e092964209481999aac14d363f423fdcedf518c50ed77e57d57fb5d44b17fe8bb9a268fe93cf4becde42c9a6e7286b463ee513ac8fc2403b165d362ba98926455282dedba38dc75206f56a09d3b0f3fb913c03ba333c7aa9289039634599120c1bbdac9618218c63a6a10e35ac9664f868adbf7b4ee4263aa3434e32dff12a01f9848c2e3774d177d7498533d4c9b17c329e401742ada870b03e219eb5405d9634eb65580243fec5ea4ce4f9051d174986d377b861c9b6dfb658ef52bbf3fdb37c0cf439f303430618b30f295a03dab8b04e36d1b2393e01ba06efd4b794c9f9703e720659c645b6b32f0a43adf18aad34df5f564e3a2f927f05d277ee323ea13bf3ae14996705c003eee829d81a7e1c733c35bca73dd548cbd5438111f4a682eb92a1cd2861a2c6206eeb8f3545d6e22fa9a7216307570d3eaa0cadec58ab32b7c3ec7e91d12a7d37491abe8f0307daa42af63f2a9b5d0c5fc4b16cc9aa6e4d1f1526b5b32db21ce991186f56a45c14ac4e8b837ca709e908f36f1950fc181e8fc198173adb6917ea9245d1a7819fe4abe881606fbc21079fc392cb9fb1240538547836967eeade86619f592cd56cb8e0c3e97ddc1bc604d364c188c79c364f1b3822b9ad667f0396491b2e430ec617ac93a863bf75de6f8410afe400a3242f8778607b90b9def2dad43256a766d01d5875714d2eb937c943875397dbfc205e921edf0f9971310229ad9d19c8f5bb6ab5b0d5e71f2dfe916ec432a59d74de498e39ba84627d4805d0280e4b472aa4aa61a4522a16e73cd6fe4ea0456a36d1d5ba2d6315b9bc30029d06df180f9820ab66a39ea04d769e0738b3206491c6035dfa60c3fd5438ef5e2380ea72fe409e2c12a84a2ad041d8fb97ddfc585b2bd62dd100d27495ec2ee510c14560816a3eb5f910df81f5f7a15593cb23561406538b438fdd63e661c11423ddd06e2e9a28724d92efeba6be1ffc3b6ff0dd25327864efa3279870956e284686386771c117818881717b507ee828fc0de5dd4c71a88c67fa24d856fbc188da664a59c9aa379e8831b6900ddbf8b696f1dc7abb361e42290c8a55e7401afe89e487f9269b5af8e7cc0b2101c6b7de40ef2f8b9473dc88d38e5d3b761d893f595ec1e8ac264033fac65641631bf802209ab292af69ff1df543b2b6df2ab46701a109b8603455787802cc23681839c92c59484d0c53be11944cefdec685dc65feae1611ddee454d94800e69f8353d52fc5f7d496d1d38681fbbdf70905bc23392872bcaa09f787b2e450c485a26a56deb94eb0f4667e299a06d6653ed8e59fe9ee5db8fde53399bab990cf417d8a61af3009bf44946b2f2fcf06d5f2fbda7c6e74174f4309ea4a9d50172a45b9444d96d7eaa46ffc16c3f787d670bab222fe03419bf27029e9cacdb0e8b29f2623aff1b8f45c8063fe7f5a633e302d87aa10172848c42969ebb4efb00e84bf03019feccb3538f9ff18004662ce1b4fd0aaaaa3a8cac1d45c8d36667892542db38e5d70dde98d1d134024e330d7b7fd991b7d1a9afe5b145486a8eb0e7f8761f9593edaba4ad95abe89238c3ec9f1166f9dafa59801fae06c9e93a2f0b9ee81853005ee3363a9b44d4f6d43d55d57fb1a3b5704433cf0f307345d832ba721c0e2d8c81400773e7ead18c85ebcd5210e536f3bbef12a84305f4adc3057acbcdb249f95968fcc0bd7d8780e36f6a4451a8a1d65ebf32627c00c4bef340247acb7280866b0e3404614dcbe67ab8a7ff75d63274c7d60b968e7a17052ffabb991f1c2d08c1e1a164495ee28edfd60f5012ab2f58acc895b3a66ce0702a401a1d9cd12a684a4c9aa46e118663b261118eb24d7daf933cbe8dd5488f98e0e735bcf21a46c91f01c4463ae7325a94e98ebd438c2ad0711182fed297a5fe5b32e6e47f3bc81ab8f4c2e7d91d40e4c46934e91907d06bd5c465e1cfb64954d631aa94ec3e17607dc18ce1d079d1e0a2edb76daefcdc54e35ae51844e034fce1b95945c9b0052b42dcd9f88b694dd4bd9cfbe65781a6e7083621e638a91f4bb006582a1c6a3a9a181a4a2b35569ddd1afae6bbb40c232ce923890aab5d0ec0dbb953b73c24c7b7ee817f9bee7c14b8dc9062a9116ece55eacc1289824a3392b4193b64f32bb776c16e858099326205e3d162729808440741ceedd8469e93ede590d72040171291dc04bd91db995e773eb30348b3d20cf423a37b3a21a61afda389c839b2ce600a009a80895e8e5d21b8dde91cd15f993c4bca4336251c82c3189a404b31570b601ed48312bbf325fafa46560b267e24d433bd74a261bf0fdd0fc547a45a8fade0ca30266a87b2800a76ca19ef3115ed6bae63831093cd5c172c50884a9508ec7a6096a1b875793f70d6a9b6f333ffee54b540be47c5947b2744bb1b205f2a74ad4982bd6eb43acdc680e591c5df85223130640942182028cb790a015404fcb2559fa0ebe3603268b83c94df857d964aa43c2ab694b341c62e9cb58f832b239ccf0dea16b9bfa989328506a6ea581310c8c36bc4a2b57460259b9ef98217ae1ddbfb233026ffffba6d5ec3f30b5ade5f6662f1c70ccc7eb12f2f094b8aadde8330ac6a58f826d523bba35faa9fb5239d47ea83fa00a8dec1dff252e8fc34945ccc465a1bad9448ca8c7531189110fb013fbf74c5acf46a939ae85fcac9b78c66f6f7d422cdcf31e6dce85b4732ce84d92f47df0fadba913893bfb44be710a0bff640468bc757503a49ab173aca63f0e43dc2f5e801fe09bab571ccabab11e43034c1dd41cf589483959a555f4dd5248cd945aa8f708be5a0df488bf9beaa66a267cb030ef2a419b5f7b21c4c0a70f030f61bd46fba808f0237f1a399fa3801a0eb183622fd9c2cf41cf4dc36aefbbf2d6a7c8341ff47b8f9de6c24648c5ca0291e59131c2e56ccc0ad9d79e0185f2d3abd86568b6dc83503ef31423c7e1f6888e677f8626c9ef0d087764a228cb864261f7e7a4f178b5609600c658ee7deaacfc23d8df20a0de8704ed71d29512315005bc6ce0318baaf843ce6fb2ba96c576be0acf7308044fdfb4b156b0c81c2613e28c064a334b02cdf45b6b6432438b339e4a0d90f9c9b3543772ce72c651af7379699e51aa93177bc86adaa6763494e57cd128300124b5d31664c8b6178e3f439ff3c9e8b6bef389cc38df6da2d5f0186e09097c0d6d325c7e3efdefee2f84ed521cfda5a88294244ba07573259b59fd58e19fdfb2753465c5c75c70a50a590440bf759bc0ce4546fc4675af494fee28954281fac9507ee358fc29c27ff3860920aa9271d0cf93e10ab4cafcd9d9c84e0c293e9d84c0e96bfd2205448e1f5975097c15fec2036a3f423f403dcebf0c8397f15503db90e797c4df07128c5f08051f8b6e04269a7534e366f2556358828afb510ea9c02aff3b99056f7622344066ad446ac0fb3bab874efc4b3b371effe9213f68f1fbfe68c1500ee7cd941a49fcb660d3a42abe23c39069feb6230c937e882c15384df948c7a22f560876d34d5740e7a201515de1c80c9e2c935b621547d2c5acfb25313d8eb8608b8e2a6bcdd460294962fc833990d40d9f199f56c567a5fe37a6ff45739210113d465822bf1cdae63c8b15c9eca8fd15080c5ceb5547fa3417be44c5d09a8f6a9f1d4cd6b85e51fd6d71782d1dc39f304743f564e0bbfe955474b171cf874d3976a75d323ab1bb84a162ef09b1b56aa708b468e190f1f4de321250667e3f1f70e3218cf194621778993036edfaa1d665b6d562d8cb973ff07cf1930b6056f4a0460f855f0771ac0e5aec0f5dcc28780e8c559b0a0133173c31c6e9852ca7bf3e93cfce4562857635ed80c9b74c3dd08967cc01ba0cb91e56373a21329dee4ed48e17884381cc5026a85845f4226cdbd1e79fc99fd954944f52386e0c59ecad2867b39795be69424933a58f4720b75703a8bae2970ea8be2fd447f26582520955563b6d5ff950794afba581c9354813e7c2b78da8419d5cfb8bcb5807f2058c8485b07c70dc0f547f51ec37df7cdf869ffcf1731d59e175f09f06ffbf8b16bba439f4a185fd40d64951f1622f296dc84c83b30f3efcb30fa33aaf720d1d690f409fda1fd5a9087d048028afcefda712b67d27c49202f8b21cca438d5144832c8f09ecb4f51ecce15e02d011a3c6a078b7bc050c6ef3100800b4856ba751fffbd3ea94335d8d95879046dc97241be521fa198103b82f5d4767319de5bcb3bebfea430481e72e6c2aca4967e3b798d1a6e944db7a93a65ed52d05e82f528d071a673238f6ca0e6d7da4022b20207db3bd2019dbeaea71df423afd94f09bf6980ef354a3fcba866c845079baf0dab62705abe94319921085faaba8a023ffb547b6ee369184e47832a7598bf327721a25175549bee2c92dd7167d34ed1bea37b965ec209181472f51e0c4964907cbf450b8637295dcf4e9ae595b0e3b4637516d8575e8b6b4887276f398e26db33dd49fc5d0707ea9ba64bde9ed179d54e2d6d68e9ad6b3921f9b57dcbc191687608f91399d68b8c9c91f43f1722a0bdad8ca2a116f7efdbb2b5968ad29735f443b2ed47be93b6c976657a1712f9016c0ec0c33bc2e8023d1f0f9cc77f021f6966483b1efea619eff7c7f37ec935e6a8b7fe0ee0ed830df96922a61206e3e7435abc2889643b6c8400c4ca0920f2c91b5e1de5a6fee6e0c462271ea402ae25ef9314fc5682109b074577007345edf02b4f85f074b8463e633a6d4b5f8a4127d2a179942c79d000d20b8b76bc4e1a57c10dc3d08cf2dc65ab969b26ea249308bcf7154655bd10234b1528a0e500da85b8f55f0280ff6c09099b4088b0054ff4381a064e5cc8dc52f0902b02608f5cbb1a2acc8c38c3d3483f462dae09d48b73acc8f88c611a387ad42e95504c4a41e2e814fdc66cb0abc5f692e3c7ed224a9f7ef03882ee8ecbc254131785696cbed509338bc1a57c2b3a46065491353f65c8313330c11bf12506ed0d0bec294f8fc544bbbaa4143de0c4581136fc2c36e540a6646c38ce2dcf621ac0a8b8ba96c30d209c9</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>wbs</tag>
-        <tag>项目一览</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Reveal.js使用</title>
     <url>//*/6befbd07.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed" id="&#x2F;slide&#x2F;Reveal.js幻灯片&#x2F;-container"><iframe onload="revealLoading(&quot;&#x2F;slide&#x2F;Reveal.js幻灯片&#x2F;&quot;)" src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" id="&#x2F;slide&#x2F;Reveal.js幻灯片&#x2F;-iframe" allowfullscreen loading="lazy"></iframe></div>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
 <br>
 <br>
 <details open>
@@ -1160,6 +1160,37 @@
       </categories>
       <tags>
         <tag>reveal.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建maven私库</title>
+    <url>//*/1406322052.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
+<span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
+修改密码后 admin.password自动删除</p>
+<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
+<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
+<p>develop =&gt; nx-all</p>
+<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
+<p>developer =&gt; develop</p>
+<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
+<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>docker</tag>
+        <tag>maven</tag>
       </tags>
   </entry>
   <entry>
@@ -1351,37 +1382,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>搭建maven私库</title>
-    <url>//*/1406322052.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
-<span id="more"></span>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
-<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
-修改密码后 admin.password自动删除</p>
-<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
-<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
-<p>develop =&gt; nx-all</p>
-<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
-<p>developer =&gt; develop</p>
-<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
-<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>docker</tag>
-        <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql &#39;No DataSource Set&#39;解决办法</title>
     <url>//*/202678719.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>
@@ -1395,6 +1395,65 @@ section 运维阶段
         <tag>error</tag>
         <tag>jdbc</tag>
         <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql count函数正确使用姿势</title>
+    <url>//*/9f600c63.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
+<span id="more"></span>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(id) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列去重不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="keyword">distinct</span> id) <span class="keyword">from</span> zs_access_log;</span><br></pre></td></tr></table></figure>
+<h1 id="1-背景"><a class="markdownIt-Anchor" href="#1-背景"></a> 1. 背景</h1>
+<p>  生产环境使用 <code>mysql: 8.0.18 Innodb</code>，  <code>mybatis</code>分页查询由两次查询完成，第一次获取总的记录行数，再次获取具体分页数据。<br>
+  以下查询可以看到<code>count</code>是存在性能问题的，接口的响应<code>&gt; 800ms</code>  <code>&lt; 4s</code>，但是该如何优化呢？</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> * from zs_access_log  <span class="built_in">limit</span> 0,10;</span><br><span class="line">10 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="2-count性能对比"><a class="markdownIt-Anchor" href="#2-count性能对比"></a> 2. count性能对比</h1>
+<p>​		对比 <code>count</code> 几种使用姿势，在<code>InnoDB</code>和<code>MyISAM</code>引擎的性能对比。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; show engines;</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| Engine             | Support | Comment                                                        | Transactions | XA   | Savepoints |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| FEDERATED          | NO      | Federated MySQL storage engine                                 | NULL         | NULL | NULL       |</span><br><span class="line">| MEMORY             | YES     | Hash based, stored <span class="keyword">in</span> memory, useful <span class="keyword">for</span> temporary tables      | NO           | NO   | NO         |</span><br><span class="line">| InnoDB             | DEFAULT | Supports transactions, row-level locking, and foreign keys     | YES          | YES  | YES        |</span><br><span class="line">| PERFORMANCE_SCHEMA | YES     | Performance Schema                                             | NO           | NO   | NO         |</span><br><span class="line">| MyISAM             | YES     | MyISAM storage engine                                          | NO           | NO   | NO         |</span><br><span class="line">| MRG_MYISAM         | YES     | Collection of identical MyISAM tables                          | NO           | NO   | NO         |</span><br><span class="line">| BLACKHOLE          | YES     | /dev/null storage engine (anything you write to it disappears) | NO           | NO   | NO         |</span><br><span class="line">| CSV                | YES     | CSV storage engine                                             | NO           | NO   | NO         |</span><br><span class="line">| ARCHIVE            | YES     | Archive storage engine                                         | NO           | NO   | NO         |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">9 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<p>​		数据表 <code>zs_access_log</code> 和 <code>zs_access_log_myisam</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> TABLE_NAME , ENGINE from information_schema.tables <span class="built_in">where</span> TABLE_SCHEMA = <span class="string">&#x27;unified-form&#x27;</span> and TABLE_NAME like <span class="string">&#x27;%zs_access%&#x27;</span>;</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| TABLE_NAME           | ENGINE |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| zs_access_log        | InnoDB |</span><br><span class="line">| zs_access_log_myisam | MyISAM |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">2 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h2 id="21-innodb"><a class="markdownIt-Anchor" href="#21-innodb"></a> 2.1 InnoDB</h2>
+<h3 id="211-count1"><a class="markdownIt-Anchor" href="#211-count1"></a> 2.1.1 count(1)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="212-count"><a class="markdownIt-Anchor" href="#212-count"></a> 2.1.2 count(*)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.52 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="213-countcolumn"><a class="markdownIt-Anchor" href="#213-countcolumn"></a> 2.1.3 count(column)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.50 sec)</span><br></pre></td></tr></table></figure>
+<p>​		数据表明以上几种方式查询效率相差无几，为什么会出现这样的问题呢？</p>
+<h2 id="22-myisam"><a class="markdownIt-Anchor" href="#22-myisam"></a> 2.2 MyISAM</h2>
+<h3 id="211-count1-2"><a class="markdownIt-Anchor" href="#211-count1-2"></a> 2.1.1 count(1)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="212-count-2"><a class="markdownIt-Anchor" href="#212-count-2"></a> 2.1.2 count(*)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="213-countcolumn-2"><a class="markdownIt-Anchor" href="#213-countcolumn-2"></a> 2.1.3 count(column)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log_myisam;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<p>​		数据表明以上几种方式在<code>InnoDB</code>和<code>MyISAM</code>引擎中，查询效率差别很大。</p>
+<p>​		<code>MyISAM</code>把总行数存在磁盘(<code>information_schema.partitions</code>)中，<code>count(*)</code>和<code>count(1)</code>的性能会好很多。</p>
+<p>​		<code>InnoDB</code>获取所有数据，并逐行计算总行数，<code>count(*)</code>和<code>count(1)</code>的性能会差很多。`</p>
+<p><a href="https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_count">mysql文档原文</a></p>
+<h1 id="3-性能优化"><a class="markdownIt-Anchor" href="#3-性能优化"></a> 3. 性能优化</h1>
+<p>​		在实际开发过程中，业务系统的数据表均使用<code>InnoDB</code>支持事务。</p>
+<p>​		该如何优化<code>InnoDB</code>中<code>count</code>的性能？</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>使用<code>redis</code>记录数据行数</p>
+</li>
+<li class="lvl-2">
+<p>使用除了<code>主键</code>以外索引列</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.54 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> count(action) from zs_access_log;</span><br><span class="line">+---------------+</span><br><span class="line">| count(action) |</span><br><span class="line">+---------------+</span><br><span class="line">|         37485 |</span><br><span class="line">+---------------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.01 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>count</tag>
+        <tag>聚合函数</tag>
+        <tag>InnoDB</tag>
+        <tag>MyISAM</tag>
       </tags>
   </entry>
   <entry>
@@ -1564,65 +1623,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>mysql count函数正确使用姿势</title>
-    <url>//*/9f600c63.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
-<span id="more"></span>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中数据包括null</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(id) <span class="keyword">from</span> zs_access_log;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 统计表中指定列去重不为null的数据</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="keyword">distinct</span> id) <span class="keyword">from</span> zs_access_log;</span><br></pre></td></tr></table></figure>
-<h1 id="1-背景"><a class="markdownIt-Anchor" href="#1-背景"></a> 1. 背景</h1>
-<p>  生产环境使用 <code>mysql: 8.0.18 Innodb</code>，  <code>mybatis</code>分页查询由两次查询完成，第一次获取总的记录行数，再次获取具体分页数据。<br>
-  以下查询可以看到<code>count</code>是存在性能问题的，接口的响应<code>&gt; 800ms</code>  <code>&lt; 4s</code>，但是该如何优化呢？</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> * from zs_access_log  <span class="built_in">limit</span> 0,10;</span><br><span class="line">10 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="2-count性能对比"><a class="markdownIt-Anchor" href="#2-count性能对比"></a> 2. count性能对比</h1>
-<p>​		对比 <code>count</code> 几种使用姿势，在<code>InnoDB</code>和<code>MyISAM</code>引擎的性能对比。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; show engines;</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| Engine             | Support | Comment                                                        | Transactions | XA   | Savepoints |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">| FEDERATED          | NO      | Federated MySQL storage engine                                 | NULL         | NULL | NULL       |</span><br><span class="line">| MEMORY             | YES     | Hash based, stored <span class="keyword">in</span> memory, useful <span class="keyword">for</span> temporary tables      | NO           | NO   | NO         |</span><br><span class="line">| InnoDB             | DEFAULT | Supports transactions, row-level locking, and foreign keys     | YES          | YES  | YES        |</span><br><span class="line">| PERFORMANCE_SCHEMA | YES     | Performance Schema                                             | NO           | NO   | NO         |</span><br><span class="line">| MyISAM             | YES     | MyISAM storage engine                                          | NO           | NO   | NO         |</span><br><span class="line">| MRG_MYISAM         | YES     | Collection of identical MyISAM tables                          | NO           | NO   | NO         |</span><br><span class="line">| BLACKHOLE          | YES     | /dev/null storage engine (anything you write to it disappears) | NO           | NO   | NO         |</span><br><span class="line">| CSV                | YES     | CSV storage engine                                             | NO           | NO   | NO         |</span><br><span class="line">| ARCHIVE            | YES     | Archive storage engine                                         | NO           | NO   | NO         |</span><br><span class="line">+--------------------+---------+----------------------------------------------------------------+--------------+------+------------+</span><br><span class="line">9 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<p>​		数据表 <code>zs_access_log</code> 和 <code>zs_access_log_myisam</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> TABLE_NAME , ENGINE from information_schema.tables <span class="built_in">where</span> TABLE_SCHEMA = <span class="string">&#x27;unified-form&#x27;</span> and TABLE_NAME like <span class="string">&#x27;%zs_access%&#x27;</span>;</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| TABLE_NAME           | ENGINE |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">| zs_access_log        | InnoDB |</span><br><span class="line">| zs_access_log_myisam | MyISAM |</span><br><span class="line">+----------------------+--------+</span><br><span class="line">2 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<h2 id="21-innodb"><a class="markdownIt-Anchor" href="#21-innodb"></a> 2.1 InnoDB</h2>
-<h3 id="211-count1"><a class="markdownIt-Anchor" href="#211-count1"></a> 2.1.1 count(1)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.53 sec)</span><br></pre></td></tr></table></figure>
-<h3 id="212-count"><a class="markdownIt-Anchor" href="#212-count"></a> 2.1.2 count(*)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.52 sec)</span><br></pre></td></tr></table></figure>
-<h3 id="213-countcolumn"><a class="markdownIt-Anchor" href="#213-countcolumn"></a> 2.1.3 count(column)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.50 sec)</span><br></pre></td></tr></table></figure>
-<p>​		数据表明以上几种方式查询效率相差无几，为什么会出现这样的问题呢？</p>
-<h2 id="22-myisam"><a class="markdownIt-Anchor" href="#22-myisam"></a> 2.2 MyISAM</h2>
-<h3 id="211-count1-2"><a class="markdownIt-Anchor" href="#211-count1-2"></a> 2.1.1 count(1)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(1) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(1) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<h3 id="212-count-2"><a class="markdownIt-Anchor" href="#212-count-2"></a> 2.1.2 count(*)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(*) from zs_access_log_myisam;</span><br><span class="line">+----------+</span><br><span class="line">| count(*) |</span><br><span class="line">+----------+</span><br><span class="line">|    37485 |</span><br><span class="line">+----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<h3 id="213-countcolumn-2"><a class="markdownIt-Anchor" href="#213-countcolumn-2"></a> 2.1.3 count(column)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log_myisam;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
-<p>​		数据表明以上几种方式在<code>InnoDB</code>和<code>MyISAM</code>引擎中，查询效率差别很大。</p>
-<p>​		<code>MyISAM</code>把总行数存在磁盘(<code>information_schema.partitions</code>)中，<code>count(*)</code>和<code>count(1)</code>的性能会好很多。</p>
-<p>​		<code>InnoDB</code>获取所有数据，并逐行计算总行数，<code>count(*)</code>和<code>count(1)</code>的性能会差很多。`</p>
-<p><a href="https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_count">mysql文档原文</a></p>
-<h1 id="3-性能优化"><a class="markdownIt-Anchor" href="#3-性能优化"></a> 3. 性能优化</h1>
-<p>​		在实际开发过程中，业务系统的数据表均使用<code>InnoDB</code>支持事务。</p>
-<p>​		该如何优化<code>InnoDB</code>中<code>count</code>的性能？</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>使用<code>redis</code>记录数据行数</p>
-</li>
-<li class="lvl-2">
-<p>使用除了<code>主键</code>以外索引列</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">select</span> count(<span class="built_in">id</span>) from zs_access_log;</span><br><span class="line">+-----------+</span><br><span class="line">| count(<span class="built_in">id</span>) |</span><br><span class="line">+-----------+</span><br><span class="line">|     37485 |</span><br><span class="line">+-----------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.54 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">select</span> count(action) from zs_access_log;</span><br><span class="line">+---------------+</span><br><span class="line">| count(action) |</span><br><span class="line">+---------------+</span><br><span class="line">|         37485 |</span><br><span class="line">+---------------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.01 sec)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>count</tag>
-        <tag>聚合函数</tag>
-        <tag>InnoDB</tag>
-        <tag>MyISAM</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>笔记1-《程序员数学 1》</title>
     <url>//*/965849311.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1>
@@ -1746,50 +1746,6 @@ section 运维阶段
       <tags>
         <tag>计数法</tag>
         <tag>进制</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>笔记3-《程序员数学-1》</title>
-    <url>//*/375539532.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
-<span id="more"></span>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>什么是余数？</p>
-<ul class="lvl-2">
-<li class="lvl-4"><strong>余数</strong> 就是除法运算时剩下的数</li>
-</ul>
-</li>
-</ul>
-<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>今天是星期日,那么 100 天以后是星期几？</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line">  </span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line">  </span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>1234567 的 987654321 次方的个位数是多少？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>—未完—</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>余数</tag>
-        <tag>分组</tag>
       </tags>
   </entry>
   <entry>
@@ -2213,6 +2169,65 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>笔记3-《程序员数学-1》</title>
+    <url>//*/375539532.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
+<span id="more"></span>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>什么是余数？</p>
+<ul class="lvl-2">
+<li class="lvl-4"><strong>余数</strong> 就是除法运算时剩下的数</li>
+</ul>
+</li>
+</ul>
+<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>今天是星期日,那么 100 天以后是星期几？</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line">  </span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line">  </span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>1234567 的 987654321 次方的个位数是多少？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>—未完—</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>余数</tag>
+        <tag>分组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端定时器</title>
     <url>//*/3423146f.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
@@ -2298,21 +2313,6 @@ section 运维阶段
         <tag>setTimeout</tag>
         <tag>setInterval</tag>
         <tag>requestAnimationFrame</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -2417,6 +2417,34 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>奇怪的梦</title>
+    <url>//*/2afb063d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><pre class="mermaid">mindmap
+  root((奇怪的梦))
+    失业
+      成都找工作
+      	辗转进入一个神秘组织
+      	一觉睡醒发现妻女身在美国
+    混乱街区
+      枪支泛滥
+        每个成年人
+          要枪杀一个以上人
+        妻女被挟持
+          愤起开枪
+          被自己射杀惊醒
+    黑人社区
+      入室“0”元购
+          随身财物被抢</pre>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇怪</tag>
+        <tag>梦</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>安全风险评估</title>
     <url>//*/2576489939.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
@@ -2475,34 +2503,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>奇怪的梦</title>
-    <url>//*/2afb063d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><pre class="mermaid">mindmap
-  root((奇怪的梦))
-    失业
-      成都找工作
-      	辗转进入一个神秘组织
-      	一觉睡醒发现妻女身在美国
-    混乱街区
-      枪支泛滥
-        每个成年人
-          要枪杀一个以上人
-        妻女被挟持
-          愤起开枪
-          被自己射杀惊醒
-    黑人社区
-      入室“0”元购
-          随身财物被抢</pre>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇怪</tag>
-        <tag>梦</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>工作日报汇总</title>
     <url>//*/1ea1f1d4.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -2531,7 +2531,7 @@ section 运维阶段
     <title>工作计划[2024-01-22] ⏳</title>
     <url>//*/5b16fb9e.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="7cd2f386c806b9c97a709dc2a9dc997063722defbd9e27b1f4dd23275112b91a">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b49a127d2ae3ed6c214e7e3d2fa707ac4ce14cee1f999847f7c008d77549f529b7a80484e1f0502a1fa604a7aff82b7bdf0b456b64e7075a89a524570aa89ac470939249e9dcaf002bb2fb85dff9b52e16559acd08d4b1a1fc147ca90e8dafe643383e23512f0863cfd8732d487120de856b843a1f6bd016be0123d42b842d01dcd2ba2c3645f8d33ef006340fe1d00f673c921457c3f04ad8efc3fa4352235e00dd831d0579ee16aab97415705c8f502f4e3223acab9d098d1cd3db0b71bf11332d8e8ff8dad4e16db988ca55687e3aee8c1b8f61a474a79e0610ac5838d49517b7bc0b0e9f00d7f63d74d2140a391e48b5893785e40feb1b2349e9784b05736eb13a0137913ef872fcf8ec8a30c20719da31426f227a8e9aee18e4656a3504c175d8685af708bdf044958cc60b8c1c0e6690cc1c0c6f4bea8c25fd92db72f5c8726b52a5668473fa4b09494d23ce41248d68be7af954ba02c9258c99707ec60a29a44ddd8805d65be01fed3ce1463bc9649d51f21fefce8f142235ba2936a75c7987dba8657b616ccfc9eca1ecc0436c4120aab50ddaebc1829f498f7a3317d9b22d92bc00e42ed65bdb45c08e1227cf9fb33ead57b4ec3e477f01c7b3bb73273c6c6b117b950a72322540c813d2e80d243201c3b2b72a6489ae5f34b7be9b9f6ce61d7346226c30c016ba8b488bf8a26b59ba90136dc9af2655fc3fa4a4e6d300f56eb592cdd6643dd885fc35f8ebf5457ef0a60a43469f2fa53f78071ac81ceafa3456b26cca7e2c94afaf062da9c16fcd9f4e3c2dc32a56da78742fae410c27cd178621112ff7b05837af2dc3e8eee15b24ecc7e9d1d85a9a3252cf84ee81025d64cfd32b14b197d69b83b4ba45101d9c5e838e6609ae4ebace48f9916c4d3da8c1edb6a38a0e46e789467570c3487791b644f2348d2eb89c4d7ccaebd61e598a63c5b095e9edb72058266cd697e7d0783b34a135c9840e693fc6c0e2659ee9292d797d979731f55c147947ac5fadcbb585babfa950e9216a7c9425bea5d8abadc1eecd6aff5eb634c0e9118c89db74028b3d4f4628468ce6c343f7f2d88cc728876cf46ac8f8494de8c8f17c01c75a061245acf6387aae094e3650e82f5991ae7bb579c24d3642c46215db9963990346e65c0a988ca9907cec41e93d2a9696cf3775c4106032759fcae7146a9835128710d42aed7752b2a314549008ea187779613fef55e2e62c60a6ebf099da28074e6f1c3f5ad53d615598eb0f40ebc3dc8868254e5144e12541d6d4220ba7f48610c6b188bdca0903287d7c5d8927e0fe6dc74319da9e6b613c51704ceb616e68d3db9142d3f2ea4a3c590536d249388ed6814db9eca0245e62de8ed2125433abb659ae09f9d0343114f4fe55b316bb2033c7e67105672967679d710673987732e74389b2e830360f2863ca80516f133db9a74237c4deb0465ea359a1717883951a5fcc83ce572af62798768500ad690b43dc6005fb368f8b0f972d9ceee54d3286fdf9cd19e2692812119ea118b6145877194cb16b9e0867c8cc3b273068df03ae03865dbb37befb0ff0719289aa8627c872cf2c89e201aab94356c7aef4ef1bfc1b945829b79f0f34de8c4673f164</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="741976ce6067ecb17cbba6b081fdc4c58c2bdb2a9abeb45f91fb71fcef8a1e48">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b49a127d2ae3ed6c214e7e3d2fa707ac4ce14cee1f999847f7c008d77549f529b7a80484e1f0502a1fa604a7aff82b7bdf0b456b64e7075a89a524570aa89ac470939249e9dcaf002bb2fb85dff9b52e16559acd08d4b1a1fc147ca90e8dafe643383e23512f0863cfd8732d487120de856b843a1f6bd016be0123d42b842d01dcd2ba2c3645f8d33ef006340fe1d00f6772f2f33d8d3776dd8b0e43de3b2620c4f884761ef382705df156ade8ce7c707ab2c80c978ecc9d243d68fe2623b2678015e19ecd33d6ecf4bb6499555359159482a2d3ca570bdc3f081b3e83948936da02c02badd2b6994faac97d116ed2c8185086f492731714b8f2b53466ee0b0cdb56a64b4fb04d123ab2ea75d3fef1184219f43159c96cf410257954d218a9e6008e995af4c161b5f54cfbb69322c2d75b61091a94a63232238006680cd9b92c216805e56f609361dd2870c3ff5d8a341ca7032cbdf28e2f9b463494e79513160a2c832fefe6a78cfe258529efdd2ec36a7a8e2659bf66a36e80f856df927e31039fe7179341680043592821a67a187aaf96ab0a61059b4bd888f017813fe6fc9d07cb5228503e6256f268c6e756018c23b5fa5f1c2c6fe47f7a4c74c0c7ab48d4a0da98495c501d0f0afb3f6d22c9784cde57e8feebeb7eba9d23ebc80e404cc17641c702425d20fe685c58c6d35c72131fd5b2e3862b991a95fee2ead9f227cd82b5a44b4e73caead735779009cf024d5163e70f64d05350be76f86d476ae4ef52756e593920e2a77d08d5b9bcb59d5e9a65faf8b7b0fe945548b2db267bab177551f11269e4c16194cda8fe01e4f8caecc603954088beb8cafc75b5d19643a96f12f73d85bf69cbeb10ac3147e13e971b39eb480c7f1e1c557742f6dfc3aa39caf8073de67b257ec23ce8713c7d120d35ca002edf878753014578f4d48c3b9ab5a975b7033e349e3e4e41aac4c38d82f5292bd8892a420450b6709afe3aa150eb745ee1b570059820eceab9cbddc49ec2676af2707cf43c3036ef0785de155c3616c820462cf5443169e48498c735eb59addb86b9238b853d46e8e1f8c5b75ff35093ed8e28f70e287eacf8a1b1fa1e11869e3a9e67f40ac546862a051f17c08f43e94ebe12091dbf3b75c9a59f2f5b7f173131cd7d371aba9a161032b0cbcc13135ba0ac952ec0f70150618b388af0575710f91a5e047a1da7739d1ae06a28e6c3ed911972ebe4f1785b7854637f612373203febc4127272cae1edc807d43445d1c3e7f053361975f0c539dab99adbfd8272ee9ede9037637b50966b4410b0b6c87869a07de47ef307fdba348c9304e91463883c712701970229564a3353a1e6ee575a052a87d47994ca2044e2e934ac90cce45e1f37a0b59c62465ad63b8ddd49bca0a5632ffe3132be903130adacccc341a38c98f1f5e24f79b667b9b037cf3ee628d9076c3a475422ea45b76234d6ca6fbfba145435fa6bfbabbf6c482e3876eb0a0f403fbd9326a60241f4828527a520db9dcf1413c998e72c9df9b6a9781cc2faddb4c60c7f554e1973c06b8327cb51cc3808ed2b05fef755782b9ee2fca0bdbb90846b6957224440ad9d75099a6387583c948044a7b58c80fdfc27dadd866952c4bfd8a773c5db4d5be10f2a4965944c7c4510e3a8e28a19cfdc4fe1</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-wave">
       <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
@@ -2573,6 +2573,24 @@ section 运维阶段
       <categories>
         <category>工作</category>
       </categories>
+  </entry>
+  <entry>
+    <title>我们不像诗歌</title>
+    <url>//*/340466787.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p> --才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
+      </tags>
   </entry>
   <entry>
     <title>打造自己的产品 1</title>
@@ -2640,28 +2658,36 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>我们不像诗歌</title>
-    <url>//*/340466787.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p> --才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
-]]></content>
+    <title>正数工作日报[2024-01-29]⏳</title>
+    <url>//*/75ae3475.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="e0d7337f9a06fc868dc3b19efbce0b68e5fbeec63704195a2572750c7d0080e0">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb0044af765252262e6fd3149ba30c5a2506eb4aa513f82106c1be18f76c4e9f2075edc89c4f7b2e12ebfbb6172b6a2f313d847ba0b28487600dd8a1703e658df6a71f03e2bd80116bdb8fdfc7920a391b1a4c2c1ec5bd12a125a110970ee5f307e16a75635cd18561c7b48bd7724de34dccc471e701fd0dd7b9ac9e9c424aec36858c11b60b2f417f6e8b08bdbd01d7fc953c73d665c110cc5f27eadbac0996695a7c4167393f62d61fd9ce15990d3e5d4016f5f6076c0ad07994bcd133e1ee510192d1ea118cafd32bd4ccad13a558f4e6ae955eca63fbb3e11b998176fef11c17521835a0ee9ddaa49318f9357fab539806759846b50d30d3d78c75a4b31fb9900f3bf17e6daaad711ec66cd35b34c297eb8b18d9f34fc36bb019d15e301a64e378f6024816400ea567636b3129a4c9e976d4e5c1bd58e3cadce9b5f2f087a764bbb278a2b7a43470399293aff4cd697b93f47ae1f5d89f6f6737d06142f66180e0ce13bbb36acf0afb5f05a0fd5d2360757b4c608c1638332feff5c86465b4873f6213237e7423b36193c0bf0826c0c5424eccbf590421495783be67321946f17d354cf563139fbcaa17cb9d521f6ec12ed5b40225c8c0cc40449a4f2a7be4484800e6586317952a3fe42a2d1dd5cfee6b364dbee7b72a2ac6510f4f596e4e37850c187c2c6f057437fa5956353441335e937b93e9473f7e063465e0453682da6c4252279847b03f6bc648628a463f17560b430d774e546254d949ed6d14e7c894f6edfc30ea173426dc905360b405f7fbf17d305490626a4741a9e2d41430c3084541b623d72a065f2b46dfb3b042bf936acf60e74289576e0b31ded795e34ce8c69e64f80bdf6cd2bf0b573aa035886c3a0034e7b594667ff4274c9d3ab3a529be4cf8af0c07cf27fb744d6ec87d6a9fac2ae395a93fd8d7f355b120a7852e724f8047620a081786972a19c11c15871aa0790c88becea094217743bef3f8e03dd13c973fd52d9152106786ae157f97ae78810b288c39fb9b365d149c216875cad6ed02bb893bd854c81dc120456f2ce7027778064682415d449831e17ea6b2903589899b548408d0ee21f39fd8040d2fdfc45c19aebf1326a0bd17f84356c82bcdc86b932b1c0527944f0c062a5c669c31e131f249777323433bbf445b31ae2a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>生活</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
+        <tag>日报</tag>
+        <tag>部署</tag>
       </tags>
   </entry>
   <entry>
     <title>流程、表单部署清单</title>
     <url>//*/33e82e70.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="6e8c02dc00d50ee04d4a6df3ffb01a9f067ec71d13638511b9012927c3eb90b8">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb0044dda9db2a9cf59656d3901c03e4e9b3dff12383f3d32a36c2df76af2d9a4e85ca6282f53d58df1bb285708b96d347717f72520217e6a1c9aff8f5d2e823246cb520ab973b64a5914ee18a7ab27759d10c174b673f3a3b8533a6e98672c0d7e501b37da80d39c332f49dc03f60faa6afe79bd96e81b7fd5a13398565b9f5e122d4b6b9264c1b0718ad1088a75fb7e45956bd07a2fd261bcc66c699d9fdfb695ea6e9c14c63b323e99bc13021e44fa4a41d3444233b4d8a630fb93aa5165d7f41759d934d0438cda8d52866cdfadb760fb1d0329c2cd2de570eb1127ed7aca18cc5f703de0c4f142e38c5857ce11548457363f6d5da33d9b74ce428f78f30d71a52c545d88e4dd282d5ac43467f2dbcecbb8592ebada5a1f186615c191d1c7e45f0ca8df6832dbc0e41b0ba657dff40047d7ffa0080c8865bd1b27cf35da2ccb624b9a6e989c1387088c55c6d6434f675f194e5f4dbda311a9d83918bac1cd6991cbed4448f54e503a35ff34604c8b3483f724cb371a36c02b3480a2d00e600fd6ab262a7420b76562ecf6cee249ecf9e08b146aa8ef3f43de0ca1fdb16dfbf119aa8198b28c2456c5ce7f26549d685e3d5eb9a115c41feecdb468cdb156178614344ca6450b2efdd7d690718203ef2b54c5b0ad67abf936db261d61086ac5ce0b7617af0257cb69b3fdfaa4228fbc167ae549d29c3ef731866d220c024db29acb99623debf5244628cc10ba874d4b70d6c8d55ec288ed8e836b30edd3ed6d8ef0a698a8a2766f56efc7042ded1dc69d9035c20a527445758a43ac99dc7f1c54e84b61c25c749d1fd4bba35a9d7b0535d6c1d3caa33738274965bd03bcd361e9082c73e37cfd62ec9242b7d105ce136f54d82643017ee2ed0282ee945a2323274dd351f3523bec490c6de32585117134042be1e7a8b931a7036a25aee8a350eefe0b3f0f4cc8f285ea23e76115b08922d15070e358988f40025ac9fe38e4eac121445a47a26fe62ce87e21c2c4f46599637571a682f91b1993863a0a73521147d890bd7b59466171c3e1d8e3ddc0d15f05f5feaaff87d3822ec6bea4cca986b77a423b27c27d8e4cfaba39f8f0cfefb6ccae489d2b7fb614cf5835351b187b17252bab9f343a41e96a549db0cc60e0e014a5f2566ba9ae71a3f792836792a7480fb26b443be0fb31026b40e506f1ecf42be483e07c98db7e4c8bc0e695c0fc690b1a67aa262d7d1fc8503cbbe4ca23cd969ce224c3609bd9e9651a0a15891db701caf51ad9eb7ab9d8d171e80463bcc4c54724d6168c57cb9556541b9c1b5095754f3e4027fccb0b091849e5797a2686d1f0d80f85774999acf262eea6c93010945fd0a1649c72bf7e9dc492f5eb078ab66770d20c5335fb4a245caa5c0df351b2aa863b18c1092646856d7a55c2f31b8d710180bf27a3ba164346d7a7cc41bcb8eedc2b610ad2381f558a4c5588bd8071f94767b3e511ebc7581986381f5cf7010716b29220749c35b336172cda0aa89ad0a224b2440d9bffbdfd3a29b97452597c8b7864aa6d3bd5f874cb6d512dfc205</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="17627a78e0c0557a68a4f8dd8c8a8958da15fdd9c1cb9d20878e0eb74c93a059">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb0044dda9db2a9cf59656d3901c03e4e9b3dff12383f3d32a36c2df76af2d9a4e85ca6282f53d58df1bb285708b96d347717f72520217e6a1c9aff8f5d2e823246cb520ab973b64a5914ee18a7ab27759d10c174b673f3a3b8533a6e98672c0d7e501b37da80d39c332f49dc03f60faa6afe79bd96e81b7fd5a13398565b9f5e122d4b6b9264c1b0718ad1088a75fb7e45956bd07a2fd261bcc66c699d9fdfb695ea6e9c14c63b323e99bc13021e44fa4a41d3444233b4d8a630fb93aa5165d7f41759d934d0438cda8d52866cdfadb760fb1d0329c2cd2de570eb1127ed7aca18cc5f703de0c4f142e38c5857ce11548457363f6d5da33d9b74ce428f78f30d71a52c545d88e4dd282d5ac43467f2dbcecbb8592ebada5a1f186615c191d1c7e45f0ca8df6832dbc0e41b0ba657dff40047d7ffa0080c8865bd1b27cf35da2ccb624b9a6e989c1387088c55c6d6434f675f194e5f4dbda311a9d83918bac1cd6991cbed4448f54e503a35ff34604c8b3483f724cb371a36c02b3480a2d00e600fd6ab262a7420b76562ecf6cee249ecf9e08b146aa8ef3f43de0ca1fdb16dfbf119aa8198b28c2456c5ce7f26549d685e3d5eb9a115c41feecdb468cdb156178614344ca6450b2efdd7d690718203ef2b54c5b0ad67abf936db261d61086ac5ce0b7617af0257cb69b3fdfaa4228fbc167ae549d29c3ef731866d220c024db29acb99623debf5244628cc10ba874d4b70d6c8d55ec288ed8e836b30edd3ed6d8ef0a698a8a2766f56efc7042ded1dc69d9035c20a527445758a43ac99dc7f1c54e84b61c25c749d1fd4bba35a9d7b0535d6c1d3caa33738274965bd03bcd361e9082c73e37cfd62ec9242b7d105ce136f54d82643017ee2ed0282ee945a2323274dd351f3523bec490c6de32585117134042be1e7a8b931a7036a25aee8a350eefe0b3f0f4cc8f285ea23e76115b08922d15070e358988f40025ac9fe38e4eac121445a47a26fe62ce87e21c2c4f46599637571a682f91b1993863a0a73521147d890bd7b59466171c3e1d8e3ddc0d15f05f5feaaff87d3822ec6bea4cca986b77a423b27c27d8e4cfaba39f8f0cfefb6ccae489d2b7fb614cf5835351b187b17252bab9f343a41e96a549db0cc60e0e014a5f2566ba9ae71a3f792836792a7480fb26b443be0fb31026b40e506f1ecf42be483e07c98db7e4c8bc0e695c0fc690b1a67aa262d7d1fc8503cbbe4ca23cd969ce224c3609bd9e9651a0a15891db701caf51ad9eb7ab9d8d171e80463bcc4c54724d6168c57cb9556541b9c1b5095754f3e4027fccb0b091849e5797a2686d1f0d80f85774999acf262eea6c93010945fd0a1649c72bf7e9dc492f5eb078ab66770d20c5335fb4a245caa5c0df351b2aa863b18c1092646856d7a55c2f31b8d710180bf27a3ba164346d7a7cc41bcb8eedc2b610ad2381f558a4c5588bd8071f94767b3e511ebc7581986381f5cf7010716b29220749c35b336172cda0aa89ad0a224b2440d9bffbdfd3a29b974525976b98582c0c26df1c7b742deac3eb9590160a647bea356e903003ff8c7195ca67d5a00df1b204374e35b389ed076c7ef281f17d209eac6ca606b8d57d91a6b343</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-wave">
       <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
@@ -2680,8 +2706,8 @@ section 运维阶段
       </categories>
       <tags>
         <tag>docker</tag>
-        <tag>正数</tag>
         <tag>部署</tag>
+        <tag>正数</tag>
       </tags>
   </entry>
   <entry>
@@ -2869,39 +2895,15 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
-<span id="more"></span>
-<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
-<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
-<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-uxOLOjqt" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-SAqtSRzb" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-uxOLOjqt"),
+            element: document.getElementById("aplayer-SAqtSRzb"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -2941,6 +2943,30 @@ section 运维阶段
         <tag>有趣</tag>
         <tag>人生</tag>
         <tag>春天</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
+<span id="more"></span>
+<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
+<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
+<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
       </tags>
   </entry>
   <entry>
@@ -3038,6 +3064,22 @@ ExcelUtil --> RecordHandler</pre>
         <tag>replace</tag>
         <tag>ignore</tag>
         <tag>insert</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
       </tags>
   </entry>
   <entry>
@@ -3376,22 +3418,6 @@ ExcelUtil --> RecordHandler</pre>
         <tag>机器学习</tag>
         <tag>ocr</tag>
         <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
       </tags>
   </entry>
   <entry>
