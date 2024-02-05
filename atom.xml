@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2024-01-29T10:12:27.036Z</updated>
+  <updated>2024-02-05T02:00:52.519Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -17,36 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>正数工作日报[2024-01-29]⏳</title>
-    <link href="https://rm-rf.ink/*/75ae3475.html"/>
-    <id>https://rm-rf.ink/*/75ae3475.html</id>
-    <published>2024-01-29T10:04:20.000Z</published>
-    <updated>2024-01-29T10:12:27.036Z</updated>
+    <title>表单中心功能清单</title>
+    <link href="https://rm-rf.ink/*/74a10861.html"/>
+    <id>https://rm-rf.ink/*/74a10861.html</id>
+    <published>2024-01-30T00:58:31.000Z</published>
+    <updated>2024-02-05T02:00:52.519Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="e0d7337f9a06fc868dc3b19efbce0b68e5fbeec63704195a2572750c7d0080e0">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb0044af765252262e6fd3149ba30c5a2506eb4aa513f82106c1be18f76c4e9f2075edc89c4f7b2e12ebfbb6172b6a2f313d847ba0b28487600dd8a1703e658df6a71f03e2bd80116bdb8fdfc7920a391b1a4c2c1ec5bd12a125a110970ee5f307e16a75635cd18561c7b48bd7724de34dccc471e701fd0dd7b9ac9e9c424aec36858c11b60b2f417f6e8b08bdbd01d7fc953c73d665c110cc5f27eadbac0996695a7c4167393f62d61fd9ce15990d3e5d4016f5f6076c0ad07994bcd133e1ee510192d1ea118cafd32bd4ccad13a558f4e6ae955eca63fbb3e11b998176fef11c17521835a0ee9ddaa49318f9357fab539806759846b50d30d3d78c75a4b31fb9900f3bf17e6daaad711ec66cd35b34c297eb8b18d9f34fc36bb019d15e301a64e378f6024816400ea567636b3129a4c9e976d4e5c1bd58e3cadce9b5f2f087a764bbb278a2b7a43470399293aff4cd697b93f47ae1f5d89f6f6737d06142f66180e0ce13bbb36acf0afb5f05a0fd5d2360757b4c608c1638332feff5c86465b4873f6213237e7423b36193c0bf0826c0c5424eccbf590421495783be67321946f17d354cf563139fbcaa17cb9d521f6ec12ed5b40225c8c0cc40449a4f2a7be4484800e6586317952a3fe42a2d1dd5cfee6b364dbee7b72a2ac6510f4f596e4e37850c187c2c6f057437fa5956353441335e937b93e9473f7e063465e0453682da6c4252279847b03f6bc648628a463f17560b430d774e546254d949ed6d14e7c894f6edfc30ea173426dc905360b405f7fbf17d305490626a4741a9e2d41430c3084541b623d72a065f2b46dfb3b042bf936acf60e74289576e0b31ded795e34ce8c69e64f80bdf6cd2bf0b573aa035886c3a0034e7b594667ff4274c9d3ab3a529be4cf8af0c07cf27fb744d6ec87d6a9fac2ae395a93fd8d7f355b120a7852e724f8047620a081786972a19c11c15871aa0790c88becea094217743bef3f8e03dd13c973fd52d9152106786ae157f97ae78810b288c39fb9b365d149c216875cad6ed02bb893bd854c81dc120456f2ce7027778064682415d449831e17ea6b2903589899b548408d0ee21f39fd8040d2fdfc45c19aebf1326a0bd17f84356c82bcdc86b932b1c0527944f0c062a5c669c31e131f249777323433bbf445b31ae2a</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">文章加密了，需要输入密码查看</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="日报" scheme="https://rm-rf.ink/tags/%E6%97%A5%E6%8A%A5/"/>
-    
-    <category term="部署" scheme="https://rm-rf.ink/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>流程、表单部署清单</title>
-    <link href="https://rm-rf.ink/*/33e82e70.html"/>
-    <id>https://rm-rf.ink/*/33e82e70.html</id>
-    <published>2024-01-26T01:21:28.000Z</published>
-    <updated>2024-01-29T10:03:34.361Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="17627a78e0c0557a68a4f8dd8c8a8958da15fdd9c1cb9d20878e0eb74c93a059">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb0044dda9db2a9cf59656d3901c03e4e9b3dff12383f3d32a36c2df76af2d9a4e85ca6282f53d58df1bb285708b96d347717f72520217e6a1c9aff8f5d2e823246cb520ab973b64a5914ee18a7ab27759d10c174b673f3a3b8533a6e98672c0d7e501b37da80d39c332f49dc03f60faa6afe79bd96e81b7fd5a13398565b9f5e122d4b6b9264c1b0718ad1088a75fb7e45956bd07a2fd261bcc66c699d9fdfb695ea6e9c14c63b323e99bc13021e44fa4a41d3444233b4d8a630fb93aa5165d7f41759d934d0438cda8d52866cdfadb760fb1d0329c2cd2de570eb1127ed7aca18cc5f703de0c4f142e38c5857ce11548457363f6d5da33d9b74ce428f78f30d71a52c545d88e4dd282d5ac43467f2dbcecbb8592ebada5a1f186615c191d1c7e45f0ca8df6832dbc0e41b0ba657dff40047d7ffa0080c8865bd1b27cf35da2ccb624b9a6e989c1387088c55c6d6434f675f194e5f4dbda311a9d83918bac1cd6991cbed4448f54e503a35ff34604c8b3483f724cb371a36c02b3480a2d00e600fd6ab262a7420b76562ecf6cee249ecf9e08b146aa8ef3f43de0ca1fdb16dfbf119aa8198b28c2456c5ce7f26549d685e3d5eb9a115c41feecdb468cdb156178614344ca6450b2efdd7d690718203ef2b54c5b0ad67abf936db261d61086ac5ce0b7617af0257cb69b3fdfaa4228fbc167ae549d29c3ef731866d220c024db29acb99623debf5244628cc10ba874d4b70d6c8d55ec288ed8e836b30edd3ed6d8ef0a698a8a2766f56efc7042ded1dc69d9035c20a527445758a43ac99dc7f1c54e84b61c25c749d1fd4bba35a9d7b0535d6c1d3caa33738274965bd03bcd361e9082c73e37cfd62ec9242b7d105ce136f54d82643017ee2ed0282ee945a2323274dd351f3523bec490c6de32585117134042be1e7a8b931a7036a25aee8a350eefe0b3f0f4cc8f285ea23e76115b08922d15070e358988f40025ac9fe38e4eac121445a47a26fe62ce87e21c2c4f46599637571a682f91b1993863a0a73521147d890bd7b59466171c3e1d8e3ddc0d15f05f5feaaff87d3822ec6bea4cca986b77a423b27c27d8e4cfaba39f8f0cfefb6ccae489d2b7fb614cf5835351b187b17252bab9f343a41e96a549db0cc60e0e014a5f2566ba9ae71a3f792836792a7480fb26b443be0fb31026b40e506f1ecf42be483e07c98db7e4c8bc0e695c0fc690b1a67aa262d7d1fc8503cbbe4ca23cd969ce224c3609bd9e9651a0a15891db701caf51ad9eb7ab9d8d171e80463bcc4c54724d6168c57cb9556541b9c1b5095754f3e4027fccb0b091849e5797a2686d1f0d80f85774999acf262eea6c93010945fd0a1649c72bf7e9dc492f5eb078ab66770d20c5335fb4a245caa5c0df351b2aa863b18c1092646856d7a55c2f31b8d710180bf27a3ba164346d7a7cc41bcb8eedc2b610ad2381f558a4c5588bd8071f94767b3e511ebc7581986381f5cf7010716b29220749c35b336172cda0aa89ad0a224b2440d9bffbdfd3a29b974525976b98582c0c26df1c7b742deac3eb9590160a647bea356e903003ff8c7195ca67d5a00df1b204374e35b389ed076c7ef281f17d209eac6ca606b8d57d91a6b343</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="d4fdaf5f778ad2b7f7839b20408f063600471c71adaf758c95e523234574a9d6">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb004455057809151ad7f7ca7b6b37b48037dfaf87a9f1e3fd2e3e9fbcddefded0a9ffe4050860aaf8120a12909a51025f739ff300c37edce140a5b599c11a069c8d6716e7a198692712ae072cb0833533e07f38919c92312fb2f264239dc7ee606385a6f34772835d1e53de7cab5f35053a3c24486db2f6f061efb91dd54dbb6f7b7acb00bb2002d390eee61b94c5e4bcc9b0317177adb53e6fc797830898cc53c48bbcce3f80100cbcd489454ce64ecdd98984531a7dc6f0ef02d73406eda7728fd6</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
     
     <summary type="html">文章加密了，需要输入密码查看</summary>
@@ -56,11 +33,11 @@
     <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="docker" scheme="https://rm-rf.ink/tags/docker/"/>
+    <category term="vue" scheme="https://rm-rf.ink/tags/vue/"/>
     
-    <category term="部署" scheme="https://rm-rf.ink/tags/%E9%83%A8%E7%BD%B2/"/>
+    <category term="表单" scheme="https://rm-rf.ink/tags/%E8%A1%A8%E5%8D%95/"/>
     
-    <category term="正数" scheme="https://rm-rf.ink/tags/%E6%AD%A3%E6%95%B0/"/>
+    <category term="formily" scheme="https://rm-rf.ink/tags/formily/"/>
     
   </entry>
   
@@ -129,13 +106,13 @@
     <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="reveal.js" scheme="https://rm-rf.ink/tags/reveal-js/"/>
-    
     <category term="animate" scheme="https://rm-rf.ink/tags/animate/"/>
     
     <category term="css动画" scheme="https://rm-rf.ink/tags/css%E5%8A%A8%E7%94%BB/"/>
     
     <category term="css" scheme="https://rm-rf.ink/tags/css/"/>
+    
+    <category term="reveal.js" scheme="https://rm-rf.ink/tags/reveal-js/"/>
     
   </entry>
   
@@ -164,27 +141,6 @@
   </entry>
   
   <entry>
-    <title>工作计划[2024-01-22] ⏳</title>
-    <link href="https://rm-rf.ink/*/5b16fb9e.html"/>
-    <id>https://rm-rf.ink/*/5b16fb9e.html</id>
-    <published>2024-01-19T10:16:03.000Z</published>
-    <updated>2024-01-29T10:14:44.503Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="741976ce6067ecb17cbba6b081fdc4c58c2bdb2a9abeb45f91fb71fcef8a1e48">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1f7e183730e3e3725b40cbaffa2f9dacf0bc53fe460f92d73530023711fcf4b77d9f43baa810ae4218fc7f841ac33e89f5112a9031ff91d6bbe735a95d600e72d0b8196fa6c81e92867975a730259d0b49a127d2ae3ed6c214e7e3d2fa707ac4ce14cee1f999847f7c008d77549f529b7a80484e1f0502a1fa604a7aff82b7bdf0b456b64e7075a89a524570aa89ac470939249e9dcaf002bb2fb85dff9b52e16559acd08d4b1a1fc147ca90e8dafe643383e23512f0863cfd8732d487120de856b843a1f6bd016be0123d42b842d01dcd2ba2c3645f8d33ef006340fe1d00f6772f2f33d8d3776dd8b0e43de3b2620c4f884761ef382705df156ade8ce7c707ab2c80c978ecc9d243d68fe2623b2678015e19ecd33d6ecf4bb6499555359159482a2d3ca570bdc3f081b3e83948936da02c02badd2b6994faac97d116ed2c8185086f492731714b8f2b53466ee0b0cdb56a64b4fb04d123ab2ea75d3fef1184219f43159c96cf410257954d218a9e6008e995af4c161b5f54cfbb69322c2d75b61091a94a63232238006680cd9b92c216805e56f609361dd2870c3ff5d8a341ca7032cbdf28e2f9b463494e79513160a2c832fefe6a78cfe258529efdd2ec36a7a8e2659bf66a36e80f856df927e31039fe7179341680043592821a67a187aaf96ab0a61059b4bd888f017813fe6fc9d07cb5228503e6256f268c6e756018c23b5fa5f1c2c6fe47f7a4c74c0c7ab48d4a0da98495c501d0f0afb3f6d22c9784cde57e8feebeb7eba9d23ebc80e404cc17641c702425d20fe685c58c6d35c72131fd5b2e3862b991a95fee2ead9f227cd82b5a44b4e73caead735779009cf024d5163e70f64d05350be76f86d476ae4ef52756e593920e2a77d08d5b9bcb59d5e9a65faf8b7b0fe945548b2db267bab177551f11269e4c16194cda8fe01e4f8caecc603954088beb8cafc75b5d19643a96f12f73d85bf69cbeb10ac3147e13e971b39eb480c7f1e1c557742f6dfc3aa39caf8073de67b257ec23ce8713c7d120d35ca002edf878753014578f4d48c3b9ab5a975b7033e349e3e4e41aac4c38d82f5292bd8892a420450b6709afe3aa150eb745ee1b570059820eceab9cbddc49ec2676af2707cf43c3036ef0785de155c3616c820462cf5443169e48498c735eb59addb86b9238b853d46e8e1f8c5b75ff35093ed8e28f70e287eacf8a1b1fa1e11869e3a9e67f40ac546862a051f17c08f43e94ebe12091dbf3b75c9a59f2f5b7f173131cd7d371aba9a161032b0cbcc13135ba0ac952ec0f70150618b388af0575710f91a5e047a1da7739d1ae06a28e6c3ed911972ebe4f1785b7854637f612373203febc4127272cae1edc807d43445d1c3e7f053361975f0c539dab99adbfd8272ee9ede9037637b50966b4410b0b6c87869a07de47ef307fdba348c9304e91463883c712701970229564a3353a1e6ee575a052a87d47994ca2044e2e934ac90cce45e1f37a0b59c62465ad63b8ddd49bca0a5632ffe3132be903130adacccc341a38c98f1f5e24f79b667b9b037cf3ee628d9076c3a475422ea45b76234d6ca6fbfba145435fa6bfbabbf6c482e3876eb0a0f403fbd9326a60241f4828527a520db9dcf1413c998e72c9df9b6a9781cc2faddb4c60c7f554e1973c06b8327cb51cc3808ed2b05fef755782b9ee2fca0bdbb90846b6957224440ad9d75099a6387583c948044a7b58c80fdfc27dadd866952c4bfd8a773c5db4d5be10f2a4965944c7c4510e3a8e28a19cfdc4fe1</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">文章加密了，需要输入密码查看</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="工作计划" scheme="https://rm-rf.ink/tags/%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大盘鸡🐔</title>
     <link href="https://rm-rf.ink/*/c43e7c0d.html"/>
     <id>https://rm-rf.ink/*/c43e7c0d.html</id>
@@ -201,9 +157,9 @@
     <category term="菜谱" scheme="https://rm-rf.ink/categories/%E8%8F%9C%E8%B0%B1/"/>
     
     
-    <category term="大盘鸡" scheme="https://rm-rf.ink/tags/%E5%A4%A7%E7%9B%98%E9%B8%A1/"/>
-    
     <category term="美食" scheme="https://rm-rf.ink/tags/%E7%BE%8E%E9%A3%9F/"/>
+    
+    <category term="大盘鸡" scheme="https://rm-rf.ink/tags/%E5%A4%A7%E7%9B%98%E9%B8%A1/"/>
     
   </entry>
   
@@ -282,30 +238,9 @@
     <category term="菜谱" scheme="https://rm-rf.ink/categories/%E8%8F%9C%E8%B0%B1/"/>
     
     
-    <category term="美食" scheme="https://rm-rf.ink/tags/%E7%BE%8E%E9%A3%9F/"/>
-    
     <category term="河南" scheme="https://rm-rf.ink/tags/%E6%B2%B3%E5%8D%97/"/>
     
-  </entry>
-  
-  <entry>
-    <title>工作日报汇总</title>
-    <link href="https://rm-rf.ink/*/1ea1f1d4.html"/>
-    <id>https://rm-rf.ink/*/1ea1f1d4.html</id>
-    <published>2024-01-10T12:02:49.000Z</published>
-    <updated>2024-01-11T06:14:33.125Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="38b6470a6aa33df2efe96152d517a9f815ff3246aeaa6ae40238009b8e997af5">2e23f8e68cbe88aa819625b68ac55a8266ce328ff70dc49fb4138ebec264df230a8b739aea8c8842992e93ee6c59da38acac090b642863ea5b7ed1d68ce6f99f7a2ba95593622669878fba390ecca884ef96a5070ae1c507078de5d795330809cbf1dd913b6c215adc180f5b5a76130f5caa31c53486fa5e7d2e0c93148710d29531bb695df19a806fea4a9913498581eede7c29ff587377dadcb4495faa1764a79b6db8b6336ac1865be6f4820af4be2f2bece877018c909e76ec9b685ba953d65fcb21305698547e30d7971c0808de24f24d351e57988d0a5e89e873209de7b7ea5a9ce5535810c6619ac8900986b2a38163b17bc121483a1659e93426529e8e142b5dcffbe6313416a65e26aed5e4dd5c1fe13e22fbed1f628c07e3de49436f95cd217b229e82ce7738c6b5aa1213975154425367dd06d8b529ae92a9ea3c59ae0c8fec9a60b790ef73237f370f181dc7e1fbe6a0d31d5dde134f1ec7b26b44b1855b532aa780b8956f2fa3240e7d9aab545fd4f6091c5bde1d61d6c4a5c5e170ed6195d4fb7a19a9bd60828b3abb4635b857b114d87799df828f787e5671de6ae5d4eab57b50ff54275f82544530faee807064166e5c678d4763f9043d23</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">文章加密了，需要输入密码查看</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="工作汇报" scheme="https://rm-rf.ink/tags/%E5%B7%A5%E4%BD%9C%E6%B1%87%E6%8A%A5/"/>
+    <category term="美食" scheme="https://rm-rf.ink/tags/%E7%BE%8E%E9%A3%9F/"/>
     
   </entry>
   
@@ -326,15 +261,15 @@
     <category term="菜谱" scheme="https://rm-rf.ink/categories/%E8%8F%9C%E8%B0%B1/"/>
     
     
-    <category term="美食" scheme="https://rm-rf.ink/tags/%E7%BE%8E%E9%A3%9F/"/>
-    
-    <category term="河南" scheme="https://rm-rf.ink/tags/%E6%B2%B3%E5%8D%97/"/>
-    
     <category term="芝麻叶" scheme="https://rm-rf.ink/tags/%E8%8A%9D%E9%BA%BB%E5%8F%B6/"/>
     
     <category term="面条" scheme="https://rm-rf.ink/tags/%E9%9D%A2%E6%9D%A1/"/>
     
     <category term="糊涂" scheme="https://rm-rf.ink/tags/%E7%B3%8A%E6%B6%82/"/>
+    
+    <category term="河南" scheme="https://rm-rf.ink/tags/%E6%B2%B3%E5%8D%97/"/>
+    
+    <category term="美食" scheme="https://rm-rf.ink/tags/%E7%BE%8E%E9%A3%9F/"/>
     
   </entry>
   
@@ -559,6 +494,82 @@
     <category term="jdbc" scheme="https://rm-rf.ink/tags/jdbc/"/>
     
     <category term="springboot" scheme="https://rm-rf.ink/tags/springboot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建maven私库</title>
+    <link href="https://rm-rf.ink/*/1406322052.html"/>
+    <id>https://rm-rf.ink/*/1406322052.html</id>
+    <published>2022-08-31T06:46:04.000Z</published>
+    <updated>2024-01-10T12:53:27.280Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1><span id="more"></span><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure><p>访问 <a href="http://ip:8081">http://ip:8081</a><br>修改密码后 admin.password自动删除</p><h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1><h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4><p>develop =&gt; nx-all</p><h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5><p>developer =&gt; develop</p><h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1><h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">java</summary>
+    
+    
+    
+    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="java" scheme="https://rm-rf.ink/tags/java/"/>
+    
+    <category term="docker" scheme="https://rm-rf.ink/tags/docker/"/>
+    
+    <category term="maven" scheme="https://rm-rf.ink/tags/maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>飞桨OCR硬件清单</title>
+    <link href="https://rm-rf.ink/*/1156593666.html"/>
+    <id>https://rm-rf.ink/*/1156593666.html</id>
+    <published>2022-08-31T06:46:04.000Z</published>
+    <updated>2024-01-10T12:52:31.567Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="飞桨官方要求"><a class="markdownIt-Anchor" href="#飞桨官方要求"></a> 飞桨官方要求</h3><p><strong>1. 操作系统要求：</strong></p><ul class="lvl-0"><li class="lvl-3"><p>Ubuntu 20.04</p></li><li class="lvl-2"><p>CentOS 7</p></li><li class="lvl-2"><p>操作系统要求是 64 位版本</p></li></ul><span id="more"></span><p><strong>2. 处理器要求</strong></p><ul class="lvl-0"><li class="lvl-2"><p>处理器支持 MKL</p></li><li class="lvl-2"><p>处理器架构是x86_64（或称作 x64、Intel 64、AMD64）架构，目前PaddlePaddle不支持arm64架构（mac M1除外，paddle 已支持Mac M1 芯片）</p></li></ul><h5 id="4-gpu-支持情况"><a class="markdownIt-Anchor" href="#4-gpu-支持情况"></a> 4.  <strong>GPU 支持情况：</strong></h5><ul class="lvl-0"><li class="lvl-2"><p>目前 <strong>PaddlePaddle</strong> 支持 <strong>NVIDIA</strong> 显卡的 <strong>CUDA</strong> 驱动和 <strong>AMD</strong> 显卡的 <strong>ROCm</strong> 架构</p><hr></li></ul><h3 id="从深度学习硬件架构分析硬件需求"><a class="markdownIt-Anchor" href="#从深度学习硬件架构分析硬件需求"></a> 从深度学习硬件架构分析硬件需求</h3><p>众所知周深度学习最需要的性能是GPU也就是显卡性能，理论上在同等条件下GPU性能越高，深度学习的效率越高。但这其中也有一个很大的误区，就是电脑性能是一个整体并不是由单一硬件所决定的，是一个木桶效应。</p><p><strong>当GPU性能达到一定高度之后，其他硬件性能没有跟上，再好的GPU也带来不了性能的提升。</strong></p><p><strong>GPU＞CPU≈主板（CPU主板相辅相成）＞内存＞硬盘＞电源＞机箱（装的下就行）</strong></p><p><img src="https://pic3.zhimg.com/v2-c997a6cc407a491a6613f025640da266_r.jpg" alt="preview"></p><p>上述图示，深度神经网络计算大致流程，下面通过深度神经网络计算环节，分析核心硬件配置理想要求：</p><p><img src="https://pic2.zhimg.com/80/v2-3b17505bf0574e12f53b9b6fb7551bb5_720w.jpg" alt="img"></p><h3 id="预算15000-20000-元"><a class="markdownIt-Anchor" href="#预算15000-20000-元"></a> 预算：15000-20000 元</h3><h3 id="需求"><a class="markdownIt-Anchor" href="#需求"></a> 需求：</h3><ul class="lvl-0"><li class="lvl-2"><p>CPU支持 MKL，架构是x86_64，</p></li><li class="lvl-2"><p>CPU为英特尔 I5,I7,I9</p></li><li class="lvl-2"><p>GPU 为RTX3080TI、RTX3090TI</p></li><li class="lvl-2"><p>内存32GB</p></li><li class="lvl-2"><p>硬盘10T</p></li></ul><p><strong>inter 处理器价格</strong>：</p><table><thead><tr><th>型号</th><th>cpu架构</th><th>京东报价</th></tr></thead><tbody><tr><td>Intel 酷睿 i5 12600K</td><td>Golden Cove</td><td>2029元</td></tr><tr><td>Intel 酷睿 i7 12700K</td><td>Golden Cove</td><td>2929元</td></tr><tr><td>Intel 酷睿 i9 12900K</td><td>Golden Cove</td><td>4649元</td></tr></tbody></table><p><strong>GPU价格</strong>：</p><table><thead><tr><th>型号</th><th>显存容量</th><th>京东报价</th></tr></thead><tbody><tr><td>英伟达（NVIDIA） RTX3090</td><td>24G</td><td>12999元</td></tr><tr><td>英伟达（NVIDIA） RTX3080</td><td>10G</td><td>8999元</td></tr><tr><td>英伟达（NVIDIA） RTX3070</td><td>8G</td><td>4699元</td></tr><tr><td>英伟达（NVIDIA） RTX3060</td><td>12G</td><td>5499元</td></tr></tbody></table><h6 id="内存价格"><a class="markdownIt-Anchor" href="#内存价格"></a> <strong>内存价格：</strong></h6><table><thead><tr><th>型号</th><th>内存容量</th><th>京东报价</th></tr></thead><tbody><tr><td>威刚（ADATA） DDR4 3600 16*2</td><td>32G</td><td>1189元</td></tr><tr><td>金士顿 (Kingston) FURY 32GB DDR4 3200</td><td>32G</td><td>899元</td></tr><tr><td>金士顿 (Kingston) FURY 32GB DDR4 3200               16×2</td><td>32G</td><td>899元</td></tr><tr><td>金士顿 (Kingston) FURY 32GB DDR5 5200               16×2</td><td>32G</td><td>1179元</td></tr><tr><td>光威（Gloway）32GB(16Gx2)套装 DDR4 3200</td><td>32G</td><td>599元</td></tr><tr><td>美商海盗船（USCORSAIR）32GB(16G×2)</td><td>32G</td><td>799元</td></tr></tbody></table><p><strong>机械硬盘价格</strong>：</p><table><thead><tr><th>型号</th><th>容量</th><th>接口</th><th>京东报价</th></tr></thead><tbody><tr><td>西部数据（WD）20T 氦气 WUH722020ALE6L4</td><td>20T</td><td>SATA</td><td>3659元</td></tr><tr><td>西部数据(Western Digital) 10TB  WUS721010ALE6L4</td><td>10T</td><td>SATA</td><td>1759元</td></tr><tr><td>西部数据(Western Digital) 14TB  WUH721414ALE6L4</td><td>14T</td><td>SATA</td><td>1699元</td></tr><tr><td>希捷Seagate   20T【ST20000NM007D】</td><td>20T</td><td>SATA</td><td>4599元</td></tr><tr><td>希捷（SEAGATE）【ST10000NM001G】10TB</td><td>10T</td><td>SATA</td><td>1879元</td></tr><tr><td>希捷（SEAGATE）【ST12000NM000J】12TB</td><td>12T</td><td>SATA</td><td>1899元</td></tr><tr><td>東芝（TOSHIBA）</td><td>18T</td><td>SATA</td><td>2259元</td></tr><tr><td>东芝(TOSHIBA) 10TB</td><td>10T</td><td>SATA</td><td>1499元</td></tr><tr><td>东芝(TOSHIBA) 12TB</td><td>12T</td><td>SATA</td><td>1579元</td></tr><tr><td>西部数据（WD） 4T HUS726T4TALE6L4</td><td>4T</td><td>STAT</td><td>939元</td></tr><tr><td>希捷Seagate     4TB【ST4000DM004】</td><td>4T</td><td>STAT</td><td>549元</td></tr><tr><td>東芝（TOSHIBA）</td><td>4T</td><td>STAT</td><td>479元</td></tr></tbody></table><p><strong>固态硬盘价格：</strong></p><table><thead><tr><th>型号</th><th>容量</th><th>接口</th><th>京东报价</th></tr></thead><tbody><tr><td>金士顿（Kingston）FURY系列  2TB</td><td>2TB</td><td>NVMe</td><td>2199元</td></tr><tr><td>英睿达（Crucial）美光 2TB</td><td>2TB</td><td>NVMe</td><td>949.9元</td></tr><tr><td>铠侠（Kioxia）2000GB</td><td>2TB</td><td>NVMe</td><td>1149元</td></tr><tr><td>西部数据（Western Digital）2T</td><td>2TB</td><td>NVMe</td><td>1459元</td></tr><tr><td>致态（ZhiTai）长江存储 2TB</td><td>2TB</td><td>NVMe</td><td>1299元</td></tr><tr><td>七彩虹(Colorful) 2TB</td><td>2TB</td><td>NVMe</td><td>999元</td></tr><tr><td>三星（SAMSUNG）2TB</td><td>2TB</td><td>NVMe</td><td>2399元</td></tr><tr><td>海康威视（HIKVISION）2TB</td><td>2TB</td><td>NVMe</td><td>1049元</td></tr><tr><td>闪迪（SanDisk） 2TB</td><td>2TB</td><td>NVMe</td><td>1399元</td></tr><tr><td>美商海盗船（USCORSAIR） 2TB</td><td>2TB</td><td>NVMe</td><td>1399元</td></tr></tbody></table><h6 id="核心硬件价格总计"><a class="markdownIt-Anchor" href="#核心硬件价格总计"></a> 核心硬件价格总计 ：</h6><ul class="lvl-0"><li class="lvl-2"><h6 id="intel-酷睿-i9-12900k-英伟达nvidia-rtx3080-金士顿-kingston-fury-32gb-ddr4-3200-西部数据western-digital-10tb-4649-8999-899-1759-16306-元"><a class="markdownIt-Anchor" href="#intel-酷睿-i9-12900k-英伟达nvidia-rtx3080-金士顿-kingston-fury-32gb-ddr4-3200-西部数据western-digital-10tb-4649-8999-899-1759-16306-元"></a> Intel 酷睿 i9 12900K  +  英伟达（NVIDIA） RTX3080  + 金士顿 (Kingston) FURY 32GB DDR4 3200 + 西部数据(Western Digital) 10TB  = 4649 +   8999  + 899 + 1759 =16306 元</h6></li><li class="lvl-2"><p>Intel 酷睿 i9 12900K  +  英伟达（NVIDIA） RTX3080  + 金士顿 (Kingston) FURY 32GB DDR4 3200 + 金士顿（Kingston）FURY系列  2TB x 2  = 4649 +   8999  + 899 + 2199 X 2 = 18945 元</p></li></ul><h3 id><a class="markdownIt-Anchor" href="#"></a> </h3>]]></content>
+    
+    
+    <summary type="html">机器学习入门</summary>
+    
+    
+    
+    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="机器学习" scheme="https://rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="ocr" scheme="https://rm-rf.ink/tags/ocr/"/>
+    
+    <category term="人工智能" scheme="https://rm-rf.ink/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <link href="https://rm-rf.ink/*/2375039249.html"/>
+    <id>https://rm-rf.ink/*/2375039249.html</id>
+    <published>2022-04-08T09:48:15.000Z</published>
+    <updated>2024-01-10T12:52:43.681Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p><strong>鲁迅先生写父母存在的意义是：</strong><br>父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="https://rm-rf.ink/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="鲁迅先生" scheme="https://rm-rf.ink/tags/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F/"/>
+    
+    <category term="父母" scheme="https://rm-rf.ink/tags/%E7%88%B6%E6%AF%8D/"/>
     
   </entry>
   
