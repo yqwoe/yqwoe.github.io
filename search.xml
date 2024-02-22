@@ -3482,6 +3482,15 @@ ExcelUtil --> RecordHandler</pre>
 <p>  Transformer模型由两部分组成：编码器（Encoder）和解码器（Decoder）。编码器负责将输入序列转换为一系列向量表示，而解码器则负责根据这些向量表示生成输出序列。这两部分都由多个相同的层堆叠而成，每一层都包含一个多头自注意力子层和一个简单的全连接前馈神经网络。</p>
 <p>  由于Transformer模型不依赖RNN的顺序结构，因此它可以实现高效的并行化训练，这使得它在处理大规模数据集时具有显著的优势。此外，Transformer模型的强大表示能力和灵活性使得它在多个NLP任务上都取得了显著的效果，成为了自然语言处理领域的一种主流模型。</p>
 <p>  总的来说，Transformer模型是Google研究团队在2017年提出的一种基于自注意力机制的深度学习模型，它的出现为自然语言处理领域的发展带来了革命性的突破。</p>
+<p>引用:</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://zhuanlan.zhihu.com/p/647249972">Text-to-SQL小白入门（一）</a></p>
+</li>
+<li class="lvl-2">
+<p><a href="https://zhuanlan.zhihu.com/p/650407036">Text-to-SQL小白入门（二）</a></p>
+</li>
+</ul>
 <p>原论文:</p>
 
 
