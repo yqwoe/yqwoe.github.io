@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2024-02-19T01:27:05.661Z</updated>
+  <updated>2024-02-22T03:21:41.899Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Transformer模型</title>
+    <link href="https://rm-rf.ink/*/e4b8a22b.html"/>
+    <id>https://rm-rf.ink/*/e4b8a22b.html</id>
+    <published>2024-02-22T03:01:14.000Z</published>
+    <updated>2024-02-22T03:21:41.899Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  Transformer模型最早是由Google的研究团队在2017年提出的，并在论文《Attention is All You Need》<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 中进行了详细的介绍。这个模型是为了解决自然语言处理（NLP）任务中的一些问题而设计的，特别是为了克服传统循环神经网络（RNN）和长短期记忆网络（LSTM）在处理长序列时的局限性，如梯度消失或梯度爆炸问题。</p><p>  Transformer模型的核心思想是使用自注意力机制（Self-Attention Mechanism）来捕捉输入序列中的依赖关系。这种机制允许模型在处理每个输入元素时，都能够关注到输入序列中的所有其他元素，从而能够捕捉到更长的依赖关系。此外，Transformer模型还采用了位置编码（Positional Encoding）来弥补模型本身不具备处理序列顺序的能力。</p><p>  Transformer模型由两部分组成：编码器（Encoder）和解码器（Decoder）。编码器负责将输入序列转换为一系列向量表示，而解码器则负责根据这些向量表示生成输出序列。这两部分都由多个相同的层堆叠而成，每一层都包含一个多头自注意力子层和一个简单的全连接前馈神经网络。</p><p>  由于Transformer模型不依赖RNN的顺序结构，因此它可以实现高效的并行化训练，这使得它在处理大规模数据集时具有显著的优势。此外，Transformer模型的强大表示能力和灵活性使得它在多个NLP任务上都取得了显著的效果，成为了自然语言处理领域的一种主流模型。</p><p>  总的来说，Transformer模型是Google研究团队在2017年提出的一种基于自注意力机制的深度学习模型，它的出现为自然语言处理领域的发展带来了革命性的突破。</p><p>原论文:</p><div class="row">    <embed src="/images/1706.03762.pdf" width="100%" height="550" type="application/pdf"></div><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>《Attention is All You Need》 <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="机器学习" scheme="https://rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="NLP" scheme="https://rm-rf.ink/tags/NLP/"/>
+    
+    <category term="text2sql" scheme="https://rm-rf.ink/tags/text2sql/"/>
+    
+  </entry>
   
   <entry>
     <title>笔记4-《程序员数学-1》</title>
@@ -522,38 +550,6 @@
     <category term="流程引擎" scheme="https://rm-rf.ink/tags/%E6%B5%81%E7%A8%8B%E5%BC%95%E6%93%8E/"/>
     
     <category term="组织管理" scheme="https://rm-rf.ink/tags/%E7%BB%84%E7%BB%87%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql &#39;No DataSource Set&#39;解决办法</title>
-    <link href="https://rm-rf.ink/*/202678719.html"/>
-    <id>https://rm-rf.ink/*/202678719.html</id>
-    <published>2022-10-10T06:38:01.000Z</published>
-    <updated>2024-01-10T12:53:35.020Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>mysql 8.0.13开始，使用sslMode属性代替了原来的useSSL属性， 所以把<code>useSSL=true</code>改成<code>sslMode=DISABLED</code> 或者添加<code>allowPublicKeyRetrieval=true</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="mysql" scheme="https://rm-rf.ink/tags/mysql/"/>
-    
-    <category term="java" scheme="https://rm-rf.ink/tags/java/"/>
-    
-    <category term="error" scheme="https://rm-rf.ink/tags/error/"/>
-    
-    <category term="jdbc" scheme="https://rm-rf.ink/tags/jdbc/"/>
-    
-    <category term="springboot" scheme="https://rm-rf.ink/tags/springboot/"/>
     
   </entry>
   
