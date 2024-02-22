@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/c88b93d0.html</loc>
+    
+    <lastmod>2024-02-22T06:46:28.669Z</lastmod>
+    
+
+    <id>c88b93d0</id>
+    <date>1708304867000</date>
+    <title>笔记4-《程序员数学-1》 | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/e4b8a22b.html</loc>
     
     <lastmod>2024-02-22T03:30:25.314Z</lastmod>
@@ -10,19 +23,6 @@
     <id>e4b8a22b</id>
     <date>1708570874000</date>
     <title>Transformer模型 | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/c88b93d0.html</loc>
-    
-    <lastmod>2024-02-19T01:27:05.661Z</lastmod>
-    
-
-    <id>c88b93d0</id>
-    <date>1708304867000</date>
-    <title>笔记4-《程序员数学-1》 | rm -rf /*</title>
     
     <desc></desc>
   </url>
