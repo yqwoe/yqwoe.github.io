@@ -1388,7 +1388,7 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>基于k8s&#92;traefik&#92;springboot的微服务实践</title>
+    <title>基于k8s、traefik、springboot的微服务实践</title>
     <url>//*/3382022550.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
@@ -3073,19 +3073,19 @@ ExcelUtil --> RecordHandler</pre>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</p>
 <span id="more"></span>
 <p>大概是这样：</p>
-<p><img src="/images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
+<p><img src="../images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
 <p>选中的区域无法正常显示。</p>
 <h3 id="准备调试环境"><a class="markdownIt-Anchor" href="#准备调试环境"></a> 准备调试环境:</h3>
 <h4 id="1打开-sifari-的开发模式"><a class="markdownIt-Anchor" href="#1打开-sifari-的开发模式"></a> 1.打开 sifari 的开发模式。</h4>
-<p><img src="/images/1527947682461.jpg" alt="1527947682461"></p>
+<p><img src="../images/1527947682461.jpg" alt="1527947682461"></p>
 <h4 id="2手机-sifari-打开调试模式"><a class="markdownIt-Anchor" href="#2手机-sifari-打开调试模式"></a> 2.手机 sifari 打开调试模式</h4>
-<p><img src="/images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
+<p><img src="../images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
 <h4 id="3手机连接电脑"><a class="markdownIt-Anchor" href="#3手机连接电脑"></a> 3.手机连接电脑</h4>
-<p><img src="/images/1527947709241.jpg" alt="1527947709241"></p>
+<p><img src="../images/1527947709241.jpg" alt="1527947709241"></p>
 <p>勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。</p>
 <p>正经话题，我是如何找到问题并解决的。</p>
 <p>调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。</p>
-<p><img src="/images/1527950086573.jpg" alt="1527950086573"></p>
+<p><img src="../images/1527950086573.jpg" alt="1527950086573"></p>
 <h4 id="4最后锁定"><a class="markdownIt-Anchor" href="#4最后锁定"></a> 4.最后锁定</h4>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  -webkit-<span class="attribute">overflow</span>-scrolling: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id><a class="markdownIt-Anchor" href="#"></a> </h5>
