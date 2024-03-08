@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/about/index.html</loc>
+    
+    <lastmod>2024-03-08T14:05:42.742Z</lastmod>
+    
+
+    <id></id>
+    <date>1527609600000</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/c88b93d0.html</loc>
     
     <lastmod>2024-02-22T06:46:28.669Z</lastmod>
@@ -49,19 +62,6 @@
     <id>73b21f0a</id>
     <date>1708239620000</date>
     <title>开年大吉，工作顺利！ | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/about/index.html</loc>
-    
-    <lastmod>2024-02-05T09:23:29.976Z</lastmod>
-    
-
-    <id></id>
-    <date>1527609600000</date>
-    <title> | rm -rf /*</title>
     
     <desc></desc>
   </url>
