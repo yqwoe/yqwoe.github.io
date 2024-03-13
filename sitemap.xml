@@ -2,9 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/7d69317e.html</loc>
+    
+    <lastmod>2024-03-13T09:56:05.617Z</lastmod>
+    
+
+    <id>7d69317e</id>
+    <date>1710322529000</date>
+    <title>rust-枚举与模式匹配 | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/d1274d86.html</loc>
+    
+    <lastmod>2024-03-13T09:35:30.501Z</lastmod>
+    
+
+    <id>d1274d86</id>
+    <date>1710321512000</date>
+    <title>rust-方法语法 | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/e0d5ed17.html</loc>
+    
+    <lastmod>2024-03-13T09:23:11.291Z</lastmod>
+    
+
+    <id>e0d5ed17</id>
+    <date>1710320002000</date>
+    <title>rust-结构定义和实例化 | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/94fe59ce.html</loc>
     
-    <lastmod>2024-03-13T08:24:27.928Z</lastmod>
+    <lastmod>2024-03-13T08:53:31.213Z</lastmod>
     
 
     <id>94fe59ce</id>

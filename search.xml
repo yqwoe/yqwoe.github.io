@@ -3718,21 +3718,6 @@ ExcelUtil --> RecordHandler</pre>
 <blockquote>
 <p><em>slice</em> 允许你引用集合中一段连续的元素序列，而不用引用整个集合。slice 是一种引用，所以它没有所有权。</p>
 </blockquote>
-<h3 id="关键字"><a class="markdownIt-Anchor" href="#关键字"></a> 关键字</h3>
-<table>
-<thead>
-<tr>
-<th>关键字</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>as</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -3741,6 +3726,77 @@ ExcelUtil --> RecordHandler</pre>
         <tag>cargo</tag>
         <tag>rustc</tag>
         <tag>rustup</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>rust-结构定义和实例化</title>
+    <url>//*/e0d5ed17.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="结构定义"><a class="markdownIt-Anchor" href="#结构定义"></a> 结构定义</h1>
+<blockquote>
+<p>定义结构体，需要使用 <code>struct</code> 关键字并为整个结构体提供一个名字。结构体的名字需要描述它所组合的数据的意义。接着，在大括号中，定义每一部分数据的名字和类型，我们称为 <strong>字段</strong>（<em>field</em>）。</p>
+</blockquote>
+<p>以下演示了结构定义、打印对象、debug打印对象；</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>可以定义有字段和无字段结构，包括类似<code>Tuple</code>（元组）的方式定义；</p>
+</li>
+<li class="lvl-2">
+<p><code>println!</code>和<code>dbg!</code>打印对象需要在结构上添加外部属性 <code>#[derive(Debug)]</code>；</p>
+</li>
+<li class="lvl-2">
+<p><code>dbg!</code>宏打印需要注意值引用；</p>
+</li>
+</ul>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    active: <span class="type">bool</span>,</span><br><span class="line">    username: <span class="type">String</span>,</span><br><span class="line">    email: <span class="type">String</span>,</span><br><span class="line">    sign_in_count: <span class="type">u64</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Color</span>(<span class="type">i32</span>,<span class="type">i32</span>,<span class="type">i32</span>);</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Point</span>(<span class="type">i32</span>,<span class="type">i32</span>, <span class="type">i32</span>);</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">AlwaysEqual</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Square</span>(<span class="type">u32</span>,<span class="type">u32</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user</span> =  <span class="title function_ invoke__">build_user</span>(<span class="string">&quot;dong33@163.com&quot;</span>,<span class="string">&quot;dong33&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;user is &#123;:?&#125;&quot;</span>,user);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user1</span> = User&#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        username: user.username,</span><br><span class="line">        email: user.email,</span><br><span class="line">        sign_in_count: <span class="number">1</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;user1 is &#123;:?&#125;&quot;</span>,user1);</span><br><span class="line">    dbg!(user1);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">black</span> = <span class="title function_ invoke__">Color</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;black is &#123;:?&#125;&quot;</span>,black);</span><br><span class="line">    dbg!(black);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">origin</span> = <span class="title function_ invoke__">Point</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;origin is &#123;:?&#125;&quot;</span>,origin);</span><br><span class="line">    dbg!(origin);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">subject</span> = AlwaysEqual;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;subject is &#123;:?&#125;&quot;</span>,subject);</span><br><span class="line">    dbg!(subject);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">width</span> = <span class="number">30</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">height</span> = <span class="number">50</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot; area is &#123;&#125;&quot;</span>,<span class="title function_ invoke__">area</span>(width, height));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect</span> = <span class="title function_ invoke__">Square</span>(<span class="number">30</span>,<span class="number">50</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;rect is &#123;:?&#125;&quot;</span>,rect);</span><br><span class="line">    dbg!(&amp;rect);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;square area is &#123;&#125;&quot;</span>,<span class="title function_ invoke__">area_square</span>(&amp;rect));</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">build_user</span>(email: &amp;<span class="type">str</span>,username: &amp;<span class="type">str</span>) <span class="punctuation">-&gt;</span> User &#123;</span><br><span class="line">    User &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        username: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(username),</span><br><span class="line">        email: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(email),</span><br><span class="line">        sign_in_count: <span class="number">1</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">area</span>(width: <span class="type">u32</span>,height: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="type">u32</span>&#123;</span><br><span class="line">    width * height</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">area_square</span>(square: &amp;Square) <span class="punctuation">-&gt;</span> <span class="type">u32</span>&#123;</span><br><span class="line">    square.<span class="number">0</span> * square.<span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>struct</tag>
+        <tag>rust</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>rust-方法语法</title>
+    <url>//*/d1274d86.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="方法语法"><a class="markdownIt-Anchor" href="#方法语法"></a> 方法语法</h1>
+<blockquote>
+<p><strong>方法</strong>（method）与函数类似：它们使用 <code>fn</code> 关键字和名称声明，可以拥有参数和返回值，同时包含在某处调用该方法时会执行的代码。不过方法与函数是不同的，因为它们在结构体的上下文中被定义（或者是枚举或 trait 对象的上下文，并且它们第一个参数总是 <code>self</code>，它代表调用该方法的结构体实例。</p>
+</blockquote>
+<h2 id="方法定义"><a class="markdownIt-Anchor" href="#方法定义"></a> 方法定义</h2>
+<p>使用<code>impl</code>块为结构定义方法；</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Rectangle</span> &#123;</span><br><span class="line">    width: <span class="type">u32</span>,</span><br><span class="line">    height: <span class="type">u32</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Rectangle</span> &#123;</span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">area</span>(&amp;<span class="keyword">self</span>) <span class="punctuation">-&gt;</span> <span class="type">u32</span> &#123;</span><br><span class="line">        <span class="keyword">self</span>.width * <span class="keyword">self</span>.height</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="keyword">fn</span> <span class="title function_">can_hold</span>(&amp;<span class="keyword">self</span>,target: &amp;Rectangle ) <span class="punctuation">-&gt;</span> <span class="type">bool</span> &#123;</span><br><span class="line">      <span class="keyword">self</span>.width &gt; target.width &amp;&amp; <span class="keyword">self</span>.height &gt; target.height</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="comment">// 关联函数经常被用作返回一个结构体新实例的构造函数。</span></span><br><span class="line">  	<span class="comment">// 这些函数的名称通常为 new ，但 new 并不是一个关键字。</span></span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">square</span>(size: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="keyword">Self</span>&#123;</span><br><span class="line">        <span class="keyword">Self</span> &#123;</span><br><span class="line">            width: size,</span><br><span class="line">            height: size,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect</span> = Rectangle::<span class="title function_ invoke__">square</span>(<span class="number">30</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect1</span> = Rectangle &#123; width: <span class="number">10</span>, height: <span class="number">30</span> &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect2</span> = Rectangle &#123; width: <span class="number">60</span>, height: <span class="number">80</span> &#125;;</span><br><span class="line">    dbg!(&amp;rect);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;The area of the rectangle is &#123;&#125; square pixels.&quot;</span>, rect.<span class="title function_ invoke__">area</span>());</span><br><span class="line">  	<span class="built_in">println!</span>(<span class="string">&quot;Can rect hold rect1? &#123;&#125;&quot;</span>, rect.<span class="title function_ invoke__">can_hold</span>(&amp;rect1));</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Can rect hold rect2? &#123;&#125;&quot;</span>, rect.<span class="title function_ invoke__">can_hold</span>(&amp;rect2));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>rust</tag>
+        <tag>method</tag>
+        <tag>syntax</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>rust-枚举与模式匹配</title>
+    <url>//*/7d69317e.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="枚举"><a class="markdownIt-Anchor" href="#枚举"></a> 枚举</h1>
+<blockquote>
+<p>结构体给予你将字段和数据聚合在一起的方法，像 <code>Rectangle</code> 结构体有 <code>width</code> 和 <code>height</code> 两个字段。而枚举给予你一个途径去声明某个值是一个集合中的一员。比如，我们想让 <code>Rectangle</code> 是一些形状的集合，包含 <code>Circle</code> 和 <code>Triangle</code> 。为了做到这个，Rust 提供了枚举类型。</p>
+</blockquote>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">IpAddrKind</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">V4</span>(<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>),</span><br><span class="line">    <span class="title function_ invoke__">V6</span>(<span class="type">String</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    Quit,</span><br><span class="line">    Move&#123;x: <span class="type">i32</span>,y:<span class="type">i32</span>&#125;,</span><br><span class="line">    <span class="title function_ invoke__">Write</span>(<span class="type">String</span>),</span><br><span class="line">    <span class="title function_ invoke__">ChangeColor</span>(<span class="type">i32</span>,<span class="type">i32</span>,<span class="type">i32</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">call</span>(&amp;<span class="keyword">self</span>)&#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;self is &#123;:?&#125;&quot;</span>,&amp;<span class="keyword">self</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">four</span> = IpAddrKind::<span class="title function_ invoke__">V4</span>(<span class="number">127</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">six</span> = IpAddrKind::<span class="title function_ invoke__">V6</span>(<span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;::1&quot;</span>));</span><br><span class="line"></span><br><span class="line">    dbg!(&amp;four);</span><br><span class="line">    dbg!(&amp;six);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">m</span> = Message::Move &#123; x: <span class="number">1</span>, y: <span class="number">2</span> &#125;;</span><br><span class="line">    m.<span class="title function_ invoke__">call</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="option枚举"><a class="markdownIt-Anchor" href="#option枚举"></a> Option枚举</h2>
+<blockquote>
+<p><code>Option</code> 是标准库定义的另一个枚举。<code>Option</code> 类型应用广泛因为它编码了一个非常普遍的场景，即一个值要么有值要么没值。</p>
+</blockquote>
+<p>–未完–</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>rust</tag>
+        <tag>enum</tag>
       </tags>
   </entry>
 </search>
