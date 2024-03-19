@@ -3785,11 +3785,12 @@ ExcelUtil --> RecordHandler</pre>
 <p>结构体给予你将字段和数据聚合在一起的方法，像 <code>Rectangle</code> 结构体有 <code>width</code> 和 <code>height</code> 两个字段。而枚举给予你一个途径去声明某个值是一个集合中的一员。比如，我们想让 <code>Rectangle</code> 是一些形状的集合，包含 <code>Circle</code> 和 <code>Triangle</code> 。为了做到这个，Rust 提供了枚举类型。</p>
 </blockquote>
 <figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">IpAddrKind</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">V4</span>(<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>),</span><br><span class="line">    <span class="title function_ invoke__">V6</span>(<span class="type">String</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    Quit,</span><br><span class="line">    Move&#123;x: <span class="type">i32</span>,y:<span class="type">i32</span>&#125;,</span><br><span class="line">    <span class="title function_ invoke__">Write</span>(<span class="type">String</span>),</span><br><span class="line">    <span class="title function_ invoke__">ChangeColor</span>(<span class="type">i32</span>,<span class="type">i32</span>,<span class="type">i32</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">call</span>(&amp;<span class="keyword">self</span>)&#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;self is &#123;:?&#125;&quot;</span>,&amp;<span class="keyword">self</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">four</span> = IpAddrKind::<span class="title function_ invoke__">V4</span>(<span class="number">127</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">six</span> = IpAddrKind::<span class="title function_ invoke__">V6</span>(<span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;::1&quot;</span>));</span><br><span class="line"></span><br><span class="line">    dbg!(&amp;four);</span><br><span class="line">    dbg!(&amp;six);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">m</span> = Message::Move &#123; x: <span class="number">1</span>, y: <span class="number">2</span> &#125;;</span><br><span class="line">    m.<span class="title function_ invoke__">call</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="match匹配模式"><a class="markdownIt-Anchor" href="#match匹配模式"></a> match匹配模式</h1>
 <h2 id="option枚举"><a class="markdownIt-Anchor" href="#option枚举"></a> Option枚举</h2>
 <blockquote>
 <p><code>Option</code> 是标准库定义的另一个枚举。<code>Option</code> 类型应用广泛因为它编码了一个非常普遍的场景，即一个值要么有值要么没值。</p>
 </blockquote>
-<p>–未完–</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">Coin</span>&#123;</span><br><span class="line">    Penny,</span><br><span class="line">    Nickel,</span><br><span class="line">    Dime,</span><br><span class="line">    Quarter,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">v</span> = <span class="title function_ invoke__">value_in_cents</span>(Coin::Quarter);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;value_in_cents(coin) = &#123;&#125;&quot;</span>, v);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">value_in_cents</span>(coin: Coin) <span class="punctuation">-&gt;</span> <span class="type">u32</span> &#123;</span><br><span class="line">    <span class="keyword">match</span> coin &#123;</span><br><span class="line">        Coin::Penny =&gt; <span class="number">1</span>,</span><br><span class="line">        Coin::Nickel =&gt; <span class="number">5</span>,</span><br><span class="line">        Coin::Dime =&gt; <span class="number">10</span>,</span><br><span class="line">        Coin::Quarter =&gt; <span class="number">25</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -3797,6 +3798,20 @@ ExcelUtil --> RecordHandler</pre>
       <tags>
         <tag>rust</tag>
         <tag>enum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>rust-if-let简洁控制流</title>
+    <url>//*/eec35d0e.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="if-let-控制流"><a class="markdownIt-Anchor" href="#if-let-控制流"></a> if let 控制流</h1>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>rust</tag>
+        <tag>if</tag>
+        <tag>let</tag>
       </tags>
   </entry>
 </search>

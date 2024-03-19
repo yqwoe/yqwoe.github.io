@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2024-03-13T09:56:05.617Z</updated>
+  <updated>2024-03-14T00:43:03.555Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -17,13 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>rust-if-let简洁控制流</title>
+    <link href="https://rm-rf.ink/*/eec35d0e.html"/>
+    <id>https://rm-rf.ink/*/eec35d0e.html</id>
+    <published>2024-03-14T00:41:12.000Z</published>
+    <updated>2024-03-14T00:43:03.555Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="if-let-控制流"><a class="markdownIt-Anchor" href="#if-let-控制流"></a> if let 控制流</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    
+    <category term="if" scheme="https://rm-rf.ink/tags/if/"/>
+    
+    <category term="let" scheme="https://rm-rf.ink/tags/let/"/>
+    
+  </entry>
+  
+  <entry>
     <title>rust-枚举与模式匹配</title>
     <link href="https://rm-rf.ink/*/7d69317e.html"/>
     <id>https://rm-rf.ink/*/7d69317e.html</id>
     <published>2024-03-13T09:35:29.000Z</published>
-    <updated>2024-03-13T09:56:05.617Z</updated>
+    <updated>2024-03-14T00:41:38.964Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="枚举"><a class="markdownIt-Anchor" href="#枚举"></a> 枚举</h1><blockquote><p>结构体给予你将字段和数据聚合在一起的方法，像 <code>Rectangle</code> 结构体有 <code>width</code> 和 <code>height</code> 两个字段。而枚举给予你一个途径去声明某个值是一个集合中的一员。比如，我们想让 <code>Rectangle</code> 是一些形状的集合，包含 <code>Circle</code> 和 <code>Triangle</code> 。为了做到这个，Rust 提供了枚举类型。</p></blockquote><figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">IpAddrKind</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">V4</span>(<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>),</span><br><span class="line">    <span class="title function_ invoke__">V6</span>(<span class="type">String</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    Quit,</span><br><span class="line">    Move&#123;x: <span class="type">i32</span>,y:<span class="type">i32</span>&#125;,</span><br><span class="line">    <span class="title function_ invoke__">Write</span>(<span class="type">String</span>),</span><br><span class="line">    <span class="title function_ invoke__">ChangeColor</span>(<span class="type">i32</span>,<span class="type">i32</span>,<span class="type">i32</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">call</span>(&amp;<span class="keyword">self</span>)&#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;self is &#123;:?&#125;&quot;</span>,&amp;<span class="keyword">self</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">four</span> = IpAddrKind::<span class="title function_ invoke__">V4</span>(<span class="number">127</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">six</span> = IpAddrKind::<span class="title function_ invoke__">V6</span>(<span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;::1&quot;</span>));</span><br><span class="line"></span><br><span class="line">    dbg!(&amp;four);</span><br><span class="line">    dbg!(&amp;six);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">m</span> = Message::Move &#123; x: <span class="number">1</span>, y: <span class="number">2</span> &#125;;</span><br><span class="line">    m.<span class="title function_ invoke__">call</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="option枚举"><a class="markdownIt-Anchor" href="#option枚举"></a> Option枚举</h2><blockquote><p><code>Option</code> 是标准库定义的另一个枚举。<code>Option</code> 类型应用广泛因为它编码了一个非常普遍的场景，即一个值要么有值要么没值。</p></blockquote><p>–未完–</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="枚举"><a class="markdownIt-Anchor" href="#枚举"></a> 枚举</h1><blockquote><p>结构体给予你将字段和数据聚合在一起的方法，像 <code>Rectangle</code> 结构体有 <code>width</code> 和 <code>height</code> 两个字段。而枚举给予你一个途径去声明某个值是一个集合中的一员。比如，我们想让 <code>Rectangle</code> 是一些形状的集合，包含 <code>Circle</code> 和 <code>Triangle</code> 。为了做到这个，Rust 提供了枚举类型。</p></blockquote><figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">IpAddrKind</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">V4</span>(<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>,<span class="type">u8</span>),</span><br><span class="line">    <span class="title function_ invoke__">V6</span>(<span class="type">String</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    Quit,</span><br><span class="line">    Move&#123;x: <span class="type">i32</span>,y:<span class="type">i32</span>&#125;,</span><br><span class="line">    <span class="title function_ invoke__">Write</span>(<span class="type">String</span>),</span><br><span class="line">    <span class="title function_ invoke__">ChangeColor</span>(<span class="type">i32</span>,<span class="type">i32</span>,<span class="type">i32</span>),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Message</span>&#123;</span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">call</span>(&amp;<span class="keyword">self</span>)&#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;self is &#123;:?&#125;&quot;</span>,&amp;<span class="keyword">self</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">four</span> = IpAddrKind::<span class="title function_ invoke__">V4</span>(<span class="number">127</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">six</span> = IpAddrKind::<span class="title function_ invoke__">V6</span>(<span class="type">String</span>::<span class="title function_ invoke__">from</span>(<span class="string">&quot;::1&quot;</span>));</span><br><span class="line"></span><br><span class="line">    dbg!(&amp;four);</span><br><span class="line">    dbg!(&amp;six);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">m</span> = Message::Move &#123; x: <span class="number">1</span>, y: <span class="number">2</span> &#125;;</span><br><span class="line">    m.<span class="title function_ invoke__">call</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="match匹配模式"><a class="markdownIt-Anchor" href="#match匹配模式"></a> match匹配模式</h1><h2 id="option枚举"><a class="markdownIt-Anchor" href="#option枚举"></a> Option枚举</h2><blockquote><p><code>Option</code> 是标准库定义的另一个枚举。<code>Option</code> 类型应用广泛因为它编码了一个非常普遍的场景，即一个值要么有值要么没值。</p></blockquote><figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">Coin</span>&#123;</span><br><span class="line">    Penny,</span><br><span class="line">    Nickel,</span><br><span class="line">    Dime,</span><br><span class="line">    Quarter,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">v</span> = <span class="title function_ invoke__">value_in_cents</span>(Coin::Quarter);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;value_in_cents(coin) = &#123;&#125;&quot;</span>, v);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">value_in_cents</span>(coin: Coin) <span class="punctuation">-&gt;</span> <span class="type">u32</span> &#123;</span><br><span class="line">    <span class="keyword">match</span> coin &#123;</span><br><span class="line">        Coin::Penny =&gt; <span class="number">1</span>,</span><br><span class="line">        Coin::Nickel =&gt; <span class="number">5</span>,</span><br><span class="line">        Coin::Dime =&gt; <span class="number">10</span>,</span><br><span class="line">        Coin::Quarter =&gt; <span class="number">25</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -497,47 +525,6 @@
     <category term="InnoDB" scheme="https://rm-rf.ink/tags/InnoDB/"/>
     
     <category term="MyISAM" scheme="https://rm-rf.ink/tags/MyISAM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通用excel导入设计</title>
-    <link href="https://rm-rf.ink/*/7178be5f.html"/>
-    <id>https://rm-rf.ink/*/7178be5f.html</id>
-    <published>2023-04-12T01:44:54.000Z</published>
-    <updated>2024-01-10T12:52:56.409Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="业务场景"><a class="markdownIt-Anchor" href="#业务场景"></a> 业务场景:</h2><ol><li class="lvl-3">上传excel按需写入字段；</li><li class="lvl-3">覆盖更新数据；</li></ol><span id="more"></span><h2 id="设计方案"><a class="markdownIt-Anchor" href="#设计方案"></a> 设计方案</h2><pre class="mermaid">sequenceDiagramexcel ->> handler: 上传文件,传入对应excel的字段名称、类型、索引handler ->> execute: insert[插入]\ignore[忽略重复数据]\replace[替换重复数据]execute ->> insert: 写入数据库</pre><h2 id="mysql"><a class="markdownIt-Anchor" href="#mysql"></a> mysql</h2><ol><li class="lvl-3"><p>insert into  table ()  select ‘’ from dual where not exsits ()</p></li><li class="lvl-3"><p>insert ignore into id={IDGenerrate.gernxxx}</p></li><li class="lvl-3"><p>Insert into on dupli   update  xx=values()</p></li></ol><p>Sql:</p><ol><li class="lvl-3"><p>select id from table where dupKeys = ‘’</p></li><li class="lvl-3"><p>insert ignore into  values (id)</p></li><li class="lvl-3"><p>ignore :  insert into  table ()  select ‘xx’,‘x’,‘xx from dual where not exsits ( select id from table where dupKeys = ‘’’)</p></li><li class="lvl-3"><p>Insert into table ()  select ‘x’,‘id’ from dual  on dupli   update  xx=values()</p></li></ol><pre class="mermaid">classDiagramclass Field{Intger index 索引String name  字段名String type  字段类型Object value  字段值String exp 校验表达式}class Record{String tableName 表名List fields 字段}class ModeEnum{INSERT("insert") 写入IGNORE("ignore") 忽略重复数据REPLACE("replace") 更新重复数据}class ExcelUtil{+File file excel+List:String fields 字段  +String tableName 数据表名  +Integer skip 跳过行  +ModeEnum mode 写入方式  +List:String dupKeys 用于校验重复的字段  +RecordHandler recordHandler 数据行处理-static importExcel(file,tableName,fields,skip,mode,recordHandler) 导入-static exportExcel(response,tableName,fields,skip,mode,recordHandler) 导出}class RecordHandler{-read(Record) 读取行}ExcelUtil --> ModeEnumExcelUtil --> FieldExcelUtil --> RecordExcelUtil --> RecordHandler</pre>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;业务场景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#业务场景&quot;&gt;&lt;/a&gt; 业务场景:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li class=&quot;lvl-3&quot;&gt;上传excel按需写入字段；&lt;/li&gt;
-&lt;li class=&quot;lvl-3&quot;&gt;覆盖更新数据；&lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="mysql" scheme="https://rm-rf.ink/tags/mysql/"/>
-    
-    <category term="jdbc" scheme="https://rm-rf.ink/tags/jdbc/"/>
-    
-    <category term="easyexcel" scheme="https://rm-rf.ink/tags/easyexcel/"/>
-    
-    <category term="excel" scheme="https://rm-rf.ink/tags/excel/"/>
-    
-    <category term="import" scheme="https://rm-rf.ink/tags/import/"/>
-    
-    <category term="export" scheme="https://rm-rf.ink/tags/export/"/>
-    
-    <category term="replace" scheme="https://rm-rf.ink/tags/replace/"/>
-    
-    <category term="ignore" scheme="https://rm-rf.ink/tags/ignore/"/>
-    
-    <category term="insert" scheme="https://rm-rf.ink/tags/insert/"/>
     
   </entry>
   

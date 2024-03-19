@@ -2,9 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/eec35d0e.html</loc>
+    
+    <lastmod>2024-03-14T00:43:03.555Z</lastmod>
+    
+
+    <id>eec35d0e</id>
+    <date>1710376872000</date>
+    <title>rust-if-let简洁控制流 | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/7d69317e.html</loc>
     
-    <lastmod>2024-03-13T09:56:05.617Z</lastmod>
+    <lastmod>2024-03-14T00:41:38.964Z</lastmod>
     
 
     <id>7d69317e</id>
