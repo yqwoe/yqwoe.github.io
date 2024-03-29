@@ -2,9 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/8f0491a1.html</loc>
+    
+    <lastmod>2024-03-25T09:56:31.322Z</lastmod>
+    
+
+    <id>8f0491a1</id>
+    <date>1711360590000</date>
+    <title>redis主从-哨兵模式 | rm -rf /*</title>
+    
+    <desc>文章加密了，需要输入密码查看</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/eec35d0e.html</loc>
     
-    <lastmod>2024-03-14T00:43:03.555Z</lastmod>
+    <lastmod>2024-03-19T09:44:54.201Z</lastmod>
     
 
     <id>eec35d0e</id>
@@ -67,6 +80,19 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/*/3423146f.html</loc>
+    
+    <lastmod>2024-03-08T14:22:38.473Z</lastmod>
+    
+
+    <id>3423146f</id>
+    <date>1704956971000</date>
+    <title>前端定时器 | rm -rf /*</title>
+    
+    <desc>前端开发中，会经常接到定时器的需求，倒计时、计时器、动画效果。</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/149409992.html</loc>
     
     <lastmod>2024-03-08T14:21:57.201Z</lastmod>
@@ -108,7 +134,7 @@
   <url>
     <loc>https://rm-rf.ink/*/c88b93d0.html</loc>
     
-    <lastmod>2024-02-22T06:46:28.669Z</lastmod>
+    <lastmod>2024-02-22T07:52:55.056Z</lastmod>
     
 
     <id>c88b93d0</id>
@@ -160,7 +186,7 @@
   <url>
     <loc>https://rm-rf.ink/*/72bee84d.html</loc>
     
-    <lastmod>2024-02-05T08:07:35.374Z</lastmod>
+    <lastmod>2024-02-18T07:06:12.600Z</lastmod>
     
 
     <id>72bee84d</id>
@@ -509,19 +535,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/3423146f.html</loc>
-    
-    <lastmod>2024-01-15T03:34:01.469Z</lastmod>
-    
-
-    <id>3423146f</id>
-    <date>1704956971000</date>
-    <title>前端定时器 | rm -rf /*</title>
-    
-    <desc>前端开发中，会经常接到定时器的需求，倒计时、计时器、动画效果。</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/tags/index.html</loc>
     
     <lastmod>2024-01-11T09:44:52.365Z</lastmod>
@@ -622,7 +635,7 @@
     <date>1584802640000</date>
     <title>路 | rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-eXsjyPBm"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-UiuiuGln"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
