@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/about/index.html</loc>
+    
+    <lastmod>2024-05-07T08:59:15.210Z</lastmod>
+    
+
+    <id></id>
+    <date>1527609600000</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/8f0491a1.html</loc>
     
     <lastmod>2024-03-25T09:56:31.322Z</lastmod>
@@ -116,19 +129,6 @@
     <title>基于k8s、traefik、springboot的微服务实践 | rm -rf /*</title>
     
     <desc>基于k8s、traefik、springboot的微服务实践</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/about/index.html</loc>
-    
-    <lastmod>2024-03-08T14:12:56.315Z</lastmod>
-    
-
-    <id></id>
-    <date>1527609600000</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
   </url>
   
   <url>
