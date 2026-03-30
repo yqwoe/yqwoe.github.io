@@ -3,17 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: rm-rf.one
-subtitle: "To destroy be to create!"
-description: "To destroy be to create!"
-keywords: rm-rf,rm-rf /*
+title: Viva La Vida
+subtitle: "Viva La Vida"
+description: "生命万岁"
+keywords: 生命,生命万岁,Viva,Viva La Vida
 author: Yq Woe
-language: en
+language: zh-CN
 timezone: ""
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://rm-rf.one
+url: https://viva-la-vida.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -70,7 +76,7 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: YYYY/MM/DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
 use_date_for_updated: false
@@ -102,7 +108,7 @@ baidusitemap:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: ascent
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
