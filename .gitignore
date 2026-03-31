@@ -42,3 +42,9 @@ pnpm-debug.log*
 *-bak.*
 
 * - *.*
+
+talk-auto-init.js
+gitalk-init-cache.json
+gitalk-init-error.json
+gitalk-init-success.json
+gitalk-init-error.json
