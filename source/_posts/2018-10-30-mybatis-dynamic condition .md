@@ -1,12 +1,13 @@
 ---
 title: mybatis动态查询实现
-date: 2018-10-30
-description: "mybatis动态查询实现"
+description: mybatis动态查询实现
 category: mybatis
 tags:
   - mybatis
   - mysql
   - api
+abbrlink: b6474c33
+date: 2018-10-30 00:00:00
 ---
 
 model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 >、>=、<、<=、like 、order by 等常用的查询、排序。

@@ -1,13 +1,14 @@
 ---
 title: 阿里云mysql外网访问
-date: 2018-06-05
-description: "阿里云 ecs 上安装了 mysql 但是外网访问不了"
+description: 阿里云 ecs 上安装了 mysql 但是外网访问不了
 category: 服务器
 tags:
   - aliyun
   - 阿里云
   - mysql
   - ubuntu 14.04
+abbrlink: b4b628e2
+date: 2018-06-05 00:00:00
 ---
 
 转载原文评论: [阿里云 ecs 上安装了 mysql 但是外网访问不了](https://segmentfault.com/q/1010000009603559?sort=created)

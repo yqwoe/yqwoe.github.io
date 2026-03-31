@@ -1,7 +1,6 @@
 ---
 title: nginx支持ssl+acme.sh定时更新证书
-date: 2018-06-04
-description: "acme.sh 、nginx、https"
+description: acme.sh 、nginx、https
 category: nginx
 tags:
   - aliyun
@@ -10,6 +9,8 @@ tags:
   - ssl
   - acme.sh
   - ubuntu 14.04
+abbrlink: 41a22a4b
+date: 2018-06-04 00:00:00
 ---
 
 不废话，直接进入实战。

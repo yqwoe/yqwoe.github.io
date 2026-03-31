@@ -1,13 +1,14 @@
 ---
 title: Cas Server 本地部署
-date: 2018-10-31
-description: "Cas Server 本地部署"
+description: Cas Server 本地部署
 category: Cas
 tags:
   - spring boot
   - cas client
   - cas server
   - sso
+abbrlink: 6e8cb24c
+date: 2018-10-31 00:00:00
 ---
 
 # Cas
