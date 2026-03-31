@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/about/index.html</loc>
+    
+    <lastmod>2026-03-31T06:03:38.941Z</lastmod>
+    
+
+    <id></id>
+    <date>1527609600000</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/8b6d76da.html</loc>
     
     <lastmod>2026-03-30T09:10:57.965Z</lastmod>
@@ -23,19 +36,6 @@
     <id></id>
     <date>1774861663000</date>
     <title>Openclaw 0 | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/about/index.html</loc>
-    
-    <lastmod>2025-09-29T11:08:48.381Z</lastmod>
-    
-
-    <id></id>
-    <date>1527609600000</date>
-    <title> | rm -rf /*</title>
     
     <desc></desc>
   </url>
@@ -661,7 +661,7 @@
     <date>1584802640000</date>
     <title>路 | rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-SVaGXBIl"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-klzsqMMy"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>

@@ -17,6 +17,18 @@ date: 2018-05-30 00:00:00
 
 # 个人简介
 
+Hi, I'm **Wu** !
+
+
+```ruby
+class Live
+  class << self
+    def work;end
+    def sleep;end
+    def play;end
+  end
+end
+```
 
 ## 工作经历
 
@@ -48,20 +60,20 @@ date: 2018-05-30 00:00:00
 
 
 ## GitHub
-![](https://github-readme-stats.vercel.app/api?username=yqwoe&amp;show_icons=true&amp;theme=light)
+![](https://camo.githubusercontent.com/508048f872c9a11a196d920d5b10e8e105a4f8785e5cc15b4f3963eb3f67ed16/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170693f757365726e616d653d7971776f652673686f775f69636f6e733d74727565267468656d653d6461726b)
 
 
 
 ## 参与贡献的开源项目
 
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=yqwoe&repo=datart-vite&amp;show_icons=true&amp;theme=dark)
+![Readme Card](https://camo.githubusercontent.com/038e59175772bc36d564c858865ded154d93d1111b794d2d9a7d2235daa5b78e/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d7971776f65267265706f3d6461746172742d766974652673686f775f69636f6e733d74727565267468656d653d6461726b)
 
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DataLinkDC&repo=dinky&amp;show_icons=true&amp;theme=dark)
+![Readme Card](https://camo.githubusercontent.com/c6677ca688f9de6f5ba19ad7959da88c91f68d1ef64bf3195d92ce5d37c72695/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d446174614c696e6b4443267265706f3d64696e6b792673686f775f69636f6e733d74727565267468656d653d6461726b)
 
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=running-elephant&repo=datart&amp;show_icons=true&amp;theme=dark)
+![Readme Card](https://camo.githubusercontent.com/8b2bf02e68f55c3fb5dc94b990002434e3a5034fb1afdb27c47620649144aa2f/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d72756e6e696e672d656c657068616e74267265706f3d6461746172742673686f775f69636f6e733d74727565267468656d653d6461726b)
 
 
 

@@ -467,9 +467,9 @@
     <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="vue" scheme="https://rm-rf.ink/tags/vue/"/>
-    
     <category term="react" scheme="https://rm-rf.ink/tags/react/"/>
+    
+    <category term="vue" scheme="https://rm-rf.ink/tags/vue/"/>
     
     <category term="javascript" scheme="https://rm-rf.ink/tags/javascript/"/>
     
