@@ -15,6 +15,10 @@ author: Yq Woe
 language: zh-CN
 timezone: ""
 
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
 all_minifier: true
 
