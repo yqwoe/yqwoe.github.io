@@ -1,0 +1,12 @@
+onlyBuiltDependencies:
+  - core-js
+  - ejs
+  - fsevents
+  - gifsicle
+  - hexo-util
+  - highlight.js
+  - jpegtran-bin
+  - mozjpeg
+  - optipng-bin
+  - pngquant-bin
+  - puppeteer

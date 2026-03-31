@@ -3,29 +3,42 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Viva La Vida
-subtitle: "Viva La Vida"
-description: "生命万岁"
-keywords: 生命,生命万岁,Viva,Viva La Vida
+# title: Viva La Vida
+# subtitle: "Viva La Vida"
+# description: "生命万岁"
+# keywords: 生命,生命万岁,Viva,Viva La Vida
+title: rm -rf /*
+subtitle: "rm -rf /*"
+description: "rm -rf /*"
+keywords: 生命,生命万岁,Viva,Viva La Vida,rm,-rf,/*
 author: Yq Woe
 language: zh-CN
 timezone: ""
 
+
+all_minifier: true
+
 search:
+  enable: true
   path: search.xml
   field: post
-  content: true
   format: html
+  limit: 10000
+  content: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://viva-la-vida.cn
+url: https://rm-rf.ink
 root: /
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-pretty_urls:
-  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: false # Set to false to remove trailing '.html' from permalinks
+# permalink: posts/:year/:month/:day/:title/
+permalink: /*/:abbrlink.html
+abbrlink:
+  alg: crc32 #算法： crc16(default) and crc32
+  rep: hex #进制： dec(default) and hex
+# permalink_defaults:
+# pretty_urls:
+#   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+#   trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -50,14 +63,19 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ""
+  eauto_detect: false
+  line_number: false
+  line_threshold: 0
+  tab_replace: ''
   wrap: true
   hljs: false
-
+prismjs:
+  preprocess: true
+  line_number: false
+  line_threshold: 0
+  tab_replace: ''
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -76,16 +94,16 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY/MM/DD
+date_format: YYYY.MM.DD  HH:mm A
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+use_date_for_updated: true
 
 # Pagination
 ## Set per_page to 0 to disable pagination
 index_generator:
   path: ""
-  per_page: 5
+  per_page: 10
   order_by: -date
 
 archive_generator:
@@ -102,8 +120,13 @@ aplayer:
   meting: true
 sitemap:
   path: sitemap.xml
+  template: ./sitemap_template.xml
+  prettyURLs:
+    trailingSlash: false
 baidusitemap:
   path: baidusitemap.xml
+  prettyURLs:
+    trailingSlash: false
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -113,7 +136,248 @@ theme: ascent
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo:
-    github: https://github.com/yqwoe/yqwoe.github.io.git
-  branch: master
+  - type: git
+    repo: git@github.com:yqwoe/yqwoe.github.io.git
+    branch: main
+  - type: git
+    repo: git@gitee.com:yqwoe/yqwoe.git
+    branch: main
+
+favicon:
+  small: /images/favicon.ico
+  medium: /images/favicon.ico
+  apple_touch_icon: /images/favicon.ico
+  safari_pinned_tab: /images/favicon.ico
+# mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  # options:
+  #   theme: dark
+    # light: light
+    # dark:  default
+    # forest:  forest
+    # neutral:  neutral
+  # version: "8.13.8" # default v7.1.2
+  # options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
+pwa:
+  manifest:
+  #   path: /manifest.json
+  #   body:
+  #     name: 生命万岁
+  #     short_name: 生命万岁
+  #     theme_color: white
+  #     background_color: white
+  #     display: standalone
+  #     orientation: portrait
+  #     scope: /
+  #     start_url: /
+  #     icons:
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 48x48
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 96x96
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 128x128
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 144x144
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 180x180
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 192x192
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 512x512
+  #       - src: /images/favicon.ico
+  #         type: image/png
+  #         sizes: 180x180
+  # serviceWorker:
+  #   path: /sw.js
+  #   preload:
+  #     urls:
+  #       - /
+  #     posts: 12
+  #   opts:
+  #     networkTimeoutSeconds: 30
+  #   routes:
+  #     - pattern: !!js/regexp /hm.baidu.com/
+  #       strategy: networkOnly
+  #     - pattern: !!js/regexp /www.google-analytics.com/
+  #       strategy: networkOnly
+  #     - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
+  #       strategy: cacheFirst
+  #     - pattern: !!js/regexp /\//
+  #       strategy: networkFirst
+  # priority: 5
+markdown_it_plus:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - plugin:
+        name: markdown-it-deflist
+        enable: true
+    - plugin:
+        name: markdown-it-abbr
+        enable: true
+    - plugin:
+        name: markdown-it-emoji
+        enable: true
+    - plugin:
+        name: markdown-it-footnote
+        enable: true
+    - plugin:
+        name: markdown-it-ins
+        enable: true
+    - plugin:
+        name: markdown-it-mark
+        enable: true
+    - plugin:
+        name: markdown-it-sub
+        enable: true
+    - plugin:
+        name: markdown-it-sup
+        enable: true
+    - plugin:
+        name: markdown-it-checkbox
+        enable: true
+    - plugin:
+        name: markdown-it-imsize
+        enable: true
+    - plugin:
+        name: markdown-it-container
+        enable: true
+        options: tips
+    - plugin:
+        name: markdown-it-container
+        enable: true
+        options: success
+    - plugin:
+        name: markdown-it-container
+        enable: true
+        options: danger
+    - plugin:
+        name: markdown-it-container
+        enable: true
+        options: warning
+    - plugin:
+        name: markdown-it-container
+        enable: true
+        options: spoiler
+    - plugin:
+        name: markdown-it-expandable
+        enable: true
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSide: 'left'
+    permalinkSymbol: ¶
+pjax: true
+encrypt:
+  enable: true
+  abstract: 文章加密了，需要输入密码查看
+  message: 输入密码查看内容
+  theme: wave
+  tags:
+  - {name: tagName, password: 密码A}
+  - {name: tagName, password: 密码B}
+  template: <div id="hexo-blog-encrypt" data-wpm="{{hbeWrongPassMessage}}" data-whm="{{hbeWrongHashMessage}}"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="{{hbeMessage}}" /><label>{{hbeMessage}}</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="{{hbeHmacDigest}}">{{hbeEncryptedData}}</script></div>
+  wrong_pass_message: 糟糕！密码错误了.
+  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+
+
+reveal:
+  plugins:
+    - RevealHighlight
+    - RevealMarkdown
+    - RevealSearch
+    - RevealNotes
+    - RevealZoom
+    - RevealMath
+    - RevealMath.KaTeX
+    - RevealMermaid
+    - RevealChalkboard
+    - RevealCustomControls
+    # - RevealAnimate
+  css_urls:
+    -  /reveal.js-plugins/customcontrols/style.css
+    -  /reveal.js-plugins/chalkboard/style.css
+  config:
+    hash: true
+    help: false
+    transition: linear
+    overview: false
+    history: true
+    autoAnimateEasing: ease-out
+    autoSlide: 5000
+    loop: true
+    chalkboard:
+      boardmarkerWidth: 3
+      chalkWidth: 7
+      chalkEffect: 1
+      storage: null
+      src: null
+      transition: 800
+      theme: chalkboard
+      background:
+        - 'rgba(127,127,127,.1)'
+        - /reveal.js-plugins/chalkboard/img/blackboard.png
+      grid:
+        color: 'rgb(50,50,10,0.5)'
+        distance: 80
+        width: 2
+      eraser:
+        src: /reveal.js-plugins/chalkboard/img/sponge.png
+        radius: 20
+      boardmarkers:
+        - color: 'rgba(100,100,100,1)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/boardmarker-black.png), auto'
+          opacity: 0
+        - color: 'rgba(30,144,255, 1)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/boardmarker-blue.png), auto'
+        - color: 'rgba(220,20,60,1)'
+          cursor: 'url(1img/boardmarker-red.png), auto'
+        - color: 'rgba(50,205,50,1)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/boardmarker-green.png), auto'
+        - color: 'rgba(255,140,0,1)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/boardmarker-orange.png), auto'
+        - color: 'rgba(150,0,20150,1)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/boardmarker-purple.png), auto'
+        - color: 'rgba(255,220,0,1)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/boardmarker-yellow.png), auto'
+      chalks:
+        - color: 'rgba(255,255,255,0.5)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/chalk-white.png), auto'
+        - color: 'rgba(96, 154, 244, 0.5)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/chalk-blue.png), auto'
+        - color: 'rgba(237, 20, 28, 0.5)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/chalk-red.png), auto'
+        - color: 'rgba(20, 237, 28, 0.5)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/chalk-green.png), auto'
+        - color: 'rgba(220, 133, 41, 0.5)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/chalk-orange.png), auto'
+        - color: 'rgba(220,0,220,0.5)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/chalk-purple.png), auto'
+        - color: 'rgba(255,220,0,0.5)'
+          cursor: 'url(/reveal.js-plugins/chalkboard/img/chalk-yellow.png), auto'
+    # customcontrols:
+    #   controls:
+    #     - icon: <i class="fa fa-pen-square"></i>
+    #       title: "Pdf Export"
+    #       action: "window.location.href = window.location.href+'?print-pdf'"
+    showNotes: true
+    dependencies:
+      - src: '/revealjs-animated/dist/revealjs-animated.js'
+        async: true
