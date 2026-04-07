@@ -47,7 +47,7 @@ abbrlink:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
+# tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
@@ -137,10 +137,10 @@ theme: ascent
 deploy:
   - type: git
     repo: git@github.com:yqwoe/yqwoe.github.io.git
-    branch: main
+    branch: master
   - type: git
     repo: git@gitee.com:yqwoe/yqwoe.git
-    branch: main
+    branch: master
 
 favicon:
   small: /images/favicon.ico
