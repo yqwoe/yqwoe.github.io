@@ -1,0 +1,239 @@
+<h1 id="animate"><a class="markdownIt-Anchor" href="#animate"></a> Animate</h1>
+<p>A plugin for <a href="https://github.com/hakimel/reveal.js">Reveal.js</a> allowing to add animations using <a href="https://svgjs.dev">SVG.js</a>.</p>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/?topic=animate">Check out the demo</a></p>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Load content plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/loadcontent/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Animate plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/animate/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+  <span class="hljs-attr">animate</span>: {
+    <span class="hljs-attr">autoplay</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// default is false</span>
+  },
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealLoadContent, RevealAnimate ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<p>By default animations only play when using the <a href="https://revealjs.com/auto-slide/">Auto-Slide</a> feature or when playing (or recording) an <a href="https://github.com/rajgoel/reveal.js-plugins/tree/master/audio-slideshow">Audio-Slideshow</a>. In order to always play an animation when moving to a slide, the plugin can be configured by setting the <code>autoplay</code> parameter to <code>true</code>.</p>
+<p>The <code>loadcontent</code> plugin is only required when svg are loaded from an external file using the <code>data-load=&quot;...&quot;</code> attributes (see examples below). It is important that <code>RevealLoadContent</code> is listed before <code>RevealAnimate</code>.</p>
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> Usage</h2>
+<p>An animation can be included in a slide by adding an element with the <code>data-animate</code> attribute. If the <code>loadcontent</code> plugin is used, the filename of an SVG to be loaded can be provided by an attribute <code>data-load=&quot;drawing.svg&quot;</code>. Alternatively, an <code>svg</code> element can be manually placed within the element. The animation is provided by a comment with a JSON-string as follows:</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-animate</span> <span class="hljs-attr">data-load</span>=<span class="hljs-string">"drawing.svg"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--
+{
+"setup": [
+...
+],
+"animation": [
+...]
+}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>The <code>setup</code> object is used to manipulate the SVG after loading. The <code>animation</code> object is used to create an SVG animation. Both objects are optional and specified by an array including individual changes to the SVG. Each item in the array has the following properties:</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>element</code> (optional): The selector for any element(s) within the SVG on which the <code>modifier</code> is executed with the given <code>parameters</code>. If multiple elements match the selector, the modifier is executed in a sequential fashion to all elements matched. If no <code>element</code> is provided, the <code>modifier</code> is executed on the SVG element.</p>
+</li>
+<li class="lvl-2">
+<p><code>modifier</code>: Any function that can be used to <a href="https://svgjs.dev/docs/3.0/manipulating/">manipulate SVG elements</a>. Within the <code>setup</code> object, the modifier can be any user defined function manipulating the selected elements. Within the <code>animation</code> object, no user defined functions are allowed.</p>
+</li>
+<li class="lvl-2">
+<p><code>parameters</code>: An array of parameters for the chosen <code>modifier</code>.</p>
+</li>
+</ul>
+<p>For animation items the parameters  <code>duration</code>, <code>delay</code>, and <code>when</code> for the <a href="https://svgjs.dev/docs/3.0/animating/#animate"><code>animate()</code></a> function may be provided. If they are not provided the defaults are taken according to the documentation of SVG.js.</p>
+<p>If a slide has fragments, the <code>animation</code> object can be provided as an array of an array. The first item of the array is an array of animations applied to the main slide, the following items are arrays of animations applied to the fragments.</p>
+<p>The animate plugin is designed to work with the <a href="https://github.com/rajgoel/reveal.js-plugins/tree/master/audio-slideshow"><code>audio-slideshow</code> plugin</a> such that the timeline of the audio is synched with the timeline of the animation and that the animation is controlled with the audio controls. Alternatively, the animations can be controlled via the functions <code>play()</code>, <code>pause()</code>, and <code>seek(timstamp)</code>.</p>
+<h2 id="examples"><a class="markdownIt-Anchor" href="#examples"></a> Examples</h2>
+<p>The <a href="https://rajgoel.github.io/reveal.js-demos/animate-demo.html">demo</a> includes various animations showcasing different ways of using the plugin. Please have a look at the the <a href="https://github.com/rajgoel/reveal.js-demos/blob/master/animate-demo.html">source code</a>.</p>
+<h3 id="example-heartbeat"><a class="markdownIt-Anchor" href="#example-heartbeat"></a> Example: Heartbeat</h3>
+<p>The following example loads a heart and creates a heartbeat animation.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-animate</span> <span class="hljs-attr">data-load</span>=<span class="hljs-string">"animate/heart.svg"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--
+{
+"setup": [
+{
+"element": "#heart",
+"modifier": "function() { this.animate(1500).ease('&lt;&gt;').scale(.9).loop(true,true);}"
+}
+]
+}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 id="example-fragments"><a class="markdownIt-Anchor" href="#example-fragments"></a> Example: Fragments</h3>
+<p>The following example loads a SVG file and makes selected elements of the svg appear as fragments.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-animate</span> <span class="hljs-attr">data-load</span>=<span class="hljs-string">"animate/decisiontree.svg"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--
+{ "setup": [
+{ "element": "#Price", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
+{ "element": "#Host1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#Choice11", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+{ "element": "#Choice12", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#Host2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },
+{ "element": "#Choice2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "5"} ] },
+{ "element": "#Host3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "6"} ] },
+{ "element": "#Choice3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "7"} ] }
+]}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+</code></pre>
+<h3 id="example-adding-svg-elements"><a class="markdownIt-Anchor" href="#example-adding-svg-elements"></a> Example: Adding SVG elements</h3>
+<p>The following example loads a SVG file and adds additional SVG elements to it upon loading. When advancing through the fragments, these elements are shown.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-animate</span> <span class="hljs-attr">data-load</span>=<span class="hljs-string">"animate/linear_program.svg"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--
+{
+"setup": [
+{
+"element": "text:not([id])",
+"modifier": "opacity",
+"parameters": [ 0 ]
+},
+{
+"modifier": "path",
+"parameters": [ { "id": "objective", "d": "M 0,60 L 800,540",  "stroke": "firebrick", "stroke-width": 5 } ]
+},
+{
+"modifier": "text",
+"parameters": [ "3x+5y = 15", { "id": "sum_3x_5y_is_15", "opacity": "1", "x": "20", "y": "575", "font-size": "50", "font-family": "Times New Roman", "font-style": "italic", "fill": "firebrick" } ]
+},
+{
+"modifier": "text",
+"parameters": [ "3x+5y = 0", { "id": "sum_3x_5y_is_0", "opacity": "0", "x": "20", "y": "575", "font-size": "50", "font-family": "Times New Roman", "font-style": "italic", "fill": "firebrick" } ]
+},
+{
+"modifier": "text",
+"parameters": [ "3x+5y = 40", { "id": "sum_3x_5y_is_40", "opacity": "0", "x": "20", "y": "575", "font-size": "50", "font-family": "Times New Roman", "font-style": "italic", "fill": "firebrick" } ]
+},
+{
+"modifier": "text",
+"parameters": [ "3x+5y = 36", { "id": "sum_3x_5y_is_36", "opacity": "0", "x": "20", "y": "575", "font-size": "50", "font-family": "Times New Roman", "font-style": "italic", "fill": "firebrick" } ]
+},
+{
+"modifier": "circle",
+"parameters": [ { "id": "solution", "opacity": "0", "cx": 500, "cy": 150, "r": 10, "fill": "firebrick"} ]
+}],
+"animation": [
+[],
+[
+{
+"element": "#sum_3x_5y_is_15",
+"modifier": "opacity",
+"parameters": [ 0 ]
+},
+{
+"element": "#objective",
+"modifier": "attr",
+"duration": 1500,
+"parameters": [ { "d": "M 0,210 L 800,690" } ]
+},
+{
+"element": "#sum_3x_5y_is_0",
+"modifier": "opacity",
+"parameters": [ 1 ]
+}
+],
+[{
+"element": "#sum_3x_5y_is_0",
+"modifier": "opacity",
+"parameters": [ 0 ]
+},
+{
+"element": "#objective",
+"modifier": "attr",
+"duration": 4000,
+"parameters": [ { "d": "M 0,-190 L 800,290" } ]
+},
+{
+"element": "#sum_3x_5y_is_40",
+"modifier": "opacity",
+"parameters": [ 1 ]
+}
+],
+[{
+"element": "#sum_3x_5y_is_40",
+"modifier": "opacity",
+"parameters": [ 0 ]
+},
+{
+"element": "#objective",
+"mo
+"duration": 400,
+"parameters": [ { "d": "M 0,-150 L 800,330" } ]
+},
+{
+"element": "#sum_3x_5y_is_36",
+"modifier": "opacity",
+"parameters": [ 1 ]
+}
+],
+[{
+"element": "#solution",
+"modifier": "opacity",
+"parameters": [ 1 ]
+}]
+]
+}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 id="example-sequential-animations"><a class="markdownIt-Anchor" href="#example-sequential-animations"></a> Example: Sequential animations</h3>
+<p>The following example loads an SVG file, clones elements of the SVG, and manipulates them. Then, the cloned elements are displayed sequentially.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-animate</span> <span class="hljs-attr">data-load</span>=<span class="hljs-string">"animate/integer_program.svg"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--
+{
+"setup": [
+{
+"element": "#objective",
+"modifier": "opacity",
+"parameters": [ 0 ]
+},
+{
+"element": "#feasible",
+"modifier": "opacity",
+"parameters": [ 0 ]
+},
+{
+"modifier": "function() {var clone = this.findOne('#points').clone(); clone.attr({'id': 'enumeration'}); clone.addTo(this);}"
+},
+{
+"element": "#enumeration &gt; circle",
+"modifier": "attr",
+"parameters": [ { "opacity": 0, "r": 7.5, "fill": "black"} ]
+}
+],
+"animation": [
+[{
+"element": "#enumeration &gt; circle",
+"modifier": "opacity",
+"parameters": [ 1 ]
+}]
+]
+}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>

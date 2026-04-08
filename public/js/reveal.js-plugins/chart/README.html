@@ -1,0 +1,100 @@
+<h1 id="chart"><a class="markdownIt-Anchor" href="#chart"></a> Chart</h1>
+<p>A plugin for <a href="https://github.com/hakimel/reveal.js">Reveal.js</a> allowing to easily add charts using <a href="http://www.chartjs.org/">Chart.js</a>.</p>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/?topic=chart">Check out the demo</a></p>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Chart plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+  <span class="hljs-attr">chart</span>: {
+    <span class="hljs-comment">// add configuration here</span>
+  },
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealChart ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="configuration"><a class="markdownIt-Anchor" href="#configuration"></a> Configuration</h2>
+<p>The plugin has several parameters that you can set for your presentation by providing an <code>chart</code> option in the reveal.js initialization options. Note that all configuration parameters are optional and the defaults of Chart.js will be used for parameters that are not specified.</p>
+<pre class="highlight"><code class="javascript">Reveal.initialize({
+	<span class="hljs-comment">// ...</span>
+	<span class="hljs-attr">chart</span>: {
+		<span class="hljs-attr">defaults</span>: {
+			<span class="hljs-attr">color</span>: <span class="hljs-string">'lightgray'</span>, <span class="hljs-comment">// color of labels</span>
+			<span class="hljs-attr">scale</span>: {
+				<span class="hljs-attr">beginAtZero</span>: <span class="hljs-literal">true</span>,
+				<span class="hljs-attr">ticks</span>: { <span class="hljs-attr">stepSize</span>: <span class="hljs-number">1</span> },
+				<span class="hljs-attr">grid</span>: { <span class="hljs-attr">color</span>: <span class="hljs-string">"lightgray"</span> } , <span class="hljs-comment">// color of grid lines</span>
+			},
+		},
+		<span class="hljs-attr">line</span>: { <span class="hljs-attr">borderColor</span>: [ <span class="hljs-string">"rgba(20,220,220,.8)"</span> , <span class="hljs-string">"rgba(220,120,120,.8)"</span>, <span class="hljs-string">"rgba(20,120,220,.8)"</span> ], <span class="hljs-string">"borderDash"</span>: [ [<span class="hljs-number">5</span>,<span class="hljs-number">10</span>], [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>] ] },
+		<span class="hljs-attr">bar</span>: { <span class="hljs-attr">backgroundColor</span>: [ <span class="hljs-string">"rgba(20,220,220,.8)"</span> , <span class="hljs-string">"rgba(220,120,120,.8)"</span>, <span class="hljs-string">"rgba(20,120,220,.8)"</span> ]},
+		<span class="hljs-attr">pie</span>: { <span class="hljs-attr">backgroundColor</span>: [ [<span class="hljs-string">"rgba(0,0,0,.8)"</span> , <span class="hljs-string">"rgba(220,20,20,.8)"</span>, <span class="hljs-string">"rgba(20,220,20,.8)"</span>, <span class="hljs-string">"rgba(220,220,20,.8)"</span>, <span class="hljs-string">"rgba(20,20,220,.8)"</span>] ]},
+	},
+        <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<p>The <code>defaults</code> parameter  will overwrite <code>Chart.defaults</code>. Furthermore, for any chart type, e.g. line, bar, etc., the parameters for the individual datasets can be specified. Where Chart.js allows to specify a single parameter for a particular dataset, the plugin allows to specify an array of values for this parameter, which will automatically be assigned to the different datasets. Note that if there are more datasets than elements in the array, the plugin will start again with the first value in the array.</p>
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> Usage</h2>
+<p>A chart can be included in a slide by adding a <code>canvas</code> element with the <code>data-chart</code> attribute set to the desired chart type.</p>
+<p>The chart can be configured within the canvas body by a JSON string embedded into an HTML comment.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">data-chart</span>=<span class="hljs-string">"line"</span> &gt;</span>
+<span class="hljs-comment">&lt;!--
+{
+ "data": {
+  "labels": ["January"," February"," March"," April"," May"," June"," July"],
+  "datasets":[
+   {
+    "data":[65,59,80,81,56,55,40],
+    "label":"My first dataset","backgroundColor":"rgba(20,220,220,.8)"
+   },
+   {
+    "data":[28,48,40,19,86,27,90],
+    "label":"My second dataset","backgroundColor":"rgba(220,120,120,.8)"
+   }
+  ]
+ }
+}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+</code></pre>
+<p>It is possible to provide the chart data by comma separated values and use the JSON string within the HTML comment to configure the chart layout.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stretch"</span> <span class="hljs-attr">data-chart</span>=<span class="hljs-string">"line"</span>&gt;</span>
+My first dataset, 65, 59, 80, 81, 56, 55, 40
+<span class="hljs-comment">&lt;!-- This is a comment that will be ignored --&gt;</span>
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+<span class="hljs-comment">&lt;!--
+{
+ "data" : {
+  "labels" : ["Enero", "Febrero", "Marzo", "Avril", "Mayo", "Junio", "Julio"],
+  "datasets" : [{ "borderColor": "#0f0", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+ }
+}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+</code></pre>
+<p>The layout configuration provided in <code>chart</code> parameter (see Configuration) will be used by default and only those parameters that are specified in a JSON string are used to overwrite the default values. If no JSON string is provided to configure the chart layout the default configuration is used. Note, that if no labels for the data points are provided by a JSON string, the plugin expects that the first row provides table headers.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">data-chart</span>=<span class="hljs-string">"line"</span>&gt;</span>
+Month, January, February, March, April, May, June, July
+My first dataset, 65, 59, 80, 81, 56, 55, 40
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+<span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+</code></pre>
+<p>The chart data can also be provided in an external CSV file. To include external data, the filename must be specified using the <code>data-chart-src</code> attribute of the <code>canvas</code> element. The CSV file is expected to only contain data values, whereas options for drawing the chart can be given as described above.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">data-chart</span>=<span class="hljs-string">"bar"</span> <span class="hljs-attr">data-chart-src</span>=<span class="hljs-string">"chart/data.csv"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--
+{
+"data" : {
+"datasets" : [{ "backgroundColor": "#0f0" }, { "backgroundColor": "#0ff" } ]
+},
+"options": { "scales": { "x": { "stacked": true }, "y": { "stacked": true } } }
+}
+--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+</code></pre>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>

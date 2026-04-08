@@ -1,0 +1,71 @@
+<h1 id="anything"><a class="markdownIt-Anchor" href="#anything"></a> Anything</h1>
+<p>A plugin for <a href="https://github.com/hakimel/reveal.js">Reveal.js</a> allowing to add anything inside an HTML object using a JSON string and a javascript function.<br />
+The plugin allows you to define a class for which the content of all HTML object of this class will be modified by a given javascript function.<br />
+Inside the HTML object you can provide a comment containing a JSON string that will be used by function to customise the content.</p>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/?topic=anything">Check out the demo</a></p>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Anything plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/anything/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+  <span class="hljs-attr">anything</span>: {
+    <span class="hljs-comment">// add configuration here</span>
+  },
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealAnything ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="configuration"><a class="markdownIt-Anchor" href="#configuration"></a> Configuration</h2>
+<p>The plugin can be configured by providing an <code>anything</code> option containing an array of <code>className</code>, <code>defaults</code>, and <code>f</code> within the reveal.js initialization options.</p>
+<pre class="highlight"><code class="javascript">Reveal.initialize({
+	<span class="hljs-comment">// ...</span>
+	<span class="hljs-attr">anything</span>: [
+	 {
+	  <span class="hljs-attr">className</span>: <span class="hljs-string">"random"</span>,
+	  <span class="hljs-attr">defaults</span>: {<span class="hljs-attr">min</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">9</span>},
+	  <span class="hljs-attr">initialize</span>: (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">container, options</span>)</span>{
+	    container.innerHTML = <span class="hljs-built_in">Math</span>.trunc( options.min + <span class="hljs-built_in">Math</span>.random()*(options.max-options.min + <span class="hljs-number">1</span>) );
+	    })
+	 },
+	 <span class="hljs-comment">// ...</span>
+	],
+}
+</code></pre>
+<p>With the above configuration the plugin searches for all HTML object with class <code>random</code>.<br />
+For each of the HTML objects it checks whether there is a JSON string within a comment inside the HTML object.<br />
+Then, it calls the function <code>function(container, options)</code> where <code>container</code> is the HTML object and <code>options</code> is the JSON string.<br />
+It is possible to specify the <code>defaults</code> parameter to be used if no JSON string is provided or not all values required by the function are given in the JSON string.</p>
+<p>The code</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+	Today's winning 3 digit number is :
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>,
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>,
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>produces the output</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+	Today's winning 3 digit number is :
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>,
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>,
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>The code</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+	Today's roll of a die is:
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span><span class="hljs-comment">&lt;!-- { "min": 1, "max": 6 } --&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>produces the output</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+	Today's roll of a die is:
+	<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"random"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>

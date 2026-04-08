@@ -1,0 +1,45 @@
+<h1 id="questions-plugin"><a class="markdownIt-Anchor" href="#questions-plugin"></a> Questions plugin</h1>
+<blockquote>
+<p>Section under construction</p>
+</blockquote>
+<p>The questions plugin provides the capability to collect questions from the audience for a Q&amp;A session. It uses the <a href="https://github.com/rajgoel/reveal.js-plugins/tree/master/seminar"><code>seminar</code> plugin</a>.</p>
+<p>A host can open a seminar room and share a link with the room name to anyone else. Everyone with the link can follow the hosted presentation ask questions. Other participants can upvote questions and hosts can close questions.</p>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/?topic=seminar">Check out the demo</a></p>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Font awesome is used by several plugins --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Custom controls plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css"</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Seminar plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/seminar/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Questions plugin requires seminar plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/questions/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/questions/style.css"</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+  <span class="hljs-attr">customcontrols</span>: {
+    <span class="hljs-attr">controls</span>: [
+      {
+        <span class="hljs-attr">id</span>: <span class="hljs-string">'toggle-questions'</span>,
+        <span class="hljs-attr">title</span>: <span class="hljs-string">'Toggle Q&amp;A dashboard (Q)'</span>,
+        <span class="hljs-attr">icon</span>: <span class="hljs-string">'&lt;span class="fa-stack" style="margin: -24px -12px;padding:0;"&gt;&lt;span class="fa-solid fa-comment fa-stack-1x"&gt;&lt;/span&gt;&lt;strong class="fa-stack-1x fa-inverse qna question-counter" style="font-size:0.5em;"&gt;&lt;/strong&gt;&lt;/span&gt;'</span>,
+        <span class="hljs-attr">action</span>: <span class="hljs-string">'RevealQnA.toggleQnA();'</span>
+      }
+    ]
+  },
+	<span class="hljs-attr">seminar</span>: {
+    <span class="hljs-comment">// add configuration here</span>
+  },
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealSeminar, RevealQnA ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>

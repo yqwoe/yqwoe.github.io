@@ -1,0 +1,4 @@
+import AnimationFactory from"./animation-factory";import"web-animations-js";let RevealJsAnimation=window.RevealJsAnimation||(()=>{var e;"undefined"!=typeof Reveal&&((e=document.createElement("style")).type="text/css",e.innerHTML=`.reveal .slides section .fragment.animated {
+                opacity: 1;
+                visibility: visible;
+            }`,document.getElementsByTagName("head")[0].appendChild(e),Reveal.addEventListener("fragmenthidden",function(e){e=e.fragment;AnimationFactory.buildAnimation(e,!0)}),Reveal.addEventListener("fragmentshown",function(e){e=e.fragment;AnimationFactory.buildAnimation(e)}))})();export default RevealJsAnimation;

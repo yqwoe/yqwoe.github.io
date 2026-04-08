@@ -1,30 +1,166 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).
+@media print {
+	html:not(.print-pdf) {
+		overflow: visible;
+		width: auto;
+		height: auto;
 
-The framework comes with a powerful feature set including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX typesetting](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and an [extensive API](https://revealjs.com/api/).
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: visible;
+		}
+	}
 
----
+	html:not(.print-pdf) .reveal {
+		background: #fff;
+		font-size: 20pt;
 
-Want to create reveal.js presentation in a graphical editor? Try <https://slides.com>. It's made by the same people behind reveal.js.
+		.controls,
+		.state-background,
+		.progress,
+		.backgrounds,
+		.slide-number {
+			display: none !important;
+		}
 
----
+		p, td, li {
+			font-size: 20pt!important;
+			color: #000;
+		}
 
-### Getting started
-- 🚀 [Install reveal.js](https://revealjs.com/installation)
-- 👀 [View the demo presentation](https://revealjs.com/demo)
-- 📖 [Read the documentation](https://revealjs.com/markup/)
-- 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
-- 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
+		h1,h2,h3,h4,h5,h6 {
+			color: #000!important;
+			height: auto;
+			line-height: normal;
+			text-align: left;
+			letter-spacing: normal;
+		}
 
---- 
-<div align="center">
-  MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
-</div>
+		h1 { font-size: 28pt !important; }
+		h2 { font-size: 24pt !important; }
+		h3 { font-size: 22pt !important; }
+		h4 { font-size: 22pt !important; font-variant: small-caps; }
+		h5 { font-size: 21pt !important; }
+		h6 { font-size: 20pt !important; font-style: italic; }
+
+		a:link,
+		a:visited {
+			color: #000 !important;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		ul, ol, div, p {
+			visibility: visible;
+			position: static;
+			width: auto;
+			height: auto;
+			display: block;
+			overflow: visible;
+			margin: 0;
+			text-align: left !important;
+		}
+		pre,
+		table {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		pre code {
+			padding: 20px;
+		}
+		blockquote {
+			margin: 20px 0;
+		}
+
+		.slides {
+			position: static !important;
+			width: auto !important;
+			height: auto !important;
+
+			left: 0 !important;
+			top: 0 !important;
+			margin-left: 0 !important;
+			margin-top: 0 !important;
+			padding: 0 !important;
+			zoom: 1 !important;
+			transform: none !important;
+
+			overflow: visible !important;
+			display: block !important;
+
+			text-align: left !important;
+			perspective: none;
+
+			perspective-origin: 50% 50%;
+		}
+		.slides section {
+			visibility: visible !important;
+			position: static !important;
+			width: auto !important;
+			height: auto !important;
+			display: block !important;
+			overflow: visible !important;
+
+			left: 0 !important;
+			top: 0 !important;
+			margin-left: 0 !important;
+			margin-top: 0 !important;
+			padding: 60px 20px !important;
+			z-index: auto !important;
+
+			opacity: 1 !important;
+
+			page-break-after: always !important;
+
+			transform-style: flat !important;
+			transform: none !important;
+			transition: none !important;
+		}
+		.slides section.stack {
+			padding: 0 !important;
+		}
+		.slides section:last-of-type {
+			page-break-after: avoid !important;
+		}
+		.slides section .fragment {
+			opacity: 1 !important;
+			visibility: visible !important;
+
+			transform: none !important;
+		}
+
+		.r-fit-text {
+			white-space: normal !important;
+		}
+
+		section img {
+			display: block;
+			margin: 15px 0px;
+			background: rgba(255,255,255,1);
+			border: 1px solid #666;
+			box-shadow: none;
+		}
+
+		section small {
+			font-size: 0.8em;
+		}
+
+		.hljs {
+			max-height: 100%;
+			white-space: pre-wrap;
+			word-wrap: break-word;
+			word-break: break-word;
+			font-size: 15pt;
+		}
+
+		.hljs .hljs-ln-numbers {
+			white-space: nowrap;
+		}
+
+		.hljs td {
+			font-size: inherit !important;
+			color: inherit !important;
+		}
+	}
+}
