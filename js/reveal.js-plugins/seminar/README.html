@@ -1,0 +1,76 @@
+<h1 id="seminar-plugin"><a class="markdownIt-Anchor" href="#seminar-plugin"></a> Seminar plugin</h1>
+<p>The seminar plugin provides interaction capabilities with other hosts and participants. Multiple hosts can control the slides of the reveal.js presentation and the audience can follow the slides on their own phone, tablet or laptop as they are presented. As the hosts navigate the slides, all client presentations will update in real time. The seminar plugin supports bidirectional between hosts and participants and can be used with other plugins:</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard"><code>chalkboard</code> plugin</a>: chalkboard drawings are updated in real time on the screen of each participant</p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com/rajgoel/reveal.js-plugins/tree/master/poll"><code>poll</code> plugin</a>: presentations can include instant polls in which participants can select one of multiple choices and the overall results are shown, e.g., in a chart on another slide</p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com/rajgoel/reveal.js-plugins/tree/master/questions"><code>questions</code> plugin</a>: allows to collect questions for a Q&amp;A, participants can ask questions and upvote questions that they want to be answered first</p>
+</li>
+</ul>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/?topic=seminar">Check out the demo</a></p>
+<h2 id="seminar-server"><a class="markdownIt-Anchor" href="#seminar-server"></a> Seminar server</h2>
+<p>The <code>seminar</code> plugin requires a running <a href="http://socket.io">socket.io</a> server. The <a href="https://github.com/rajgoel/seminar"><code>seminar</code></a>-repository provides such a server.</p>
+<blockquote>
+<p>Section under construction</p>
+</blockquote>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Seminar plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/seminar/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+	<span class="hljs-attr">seminar</span>: {
+    <span class="hljs-comment">// add configuration here</span>
+  },
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealSeminar ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="configuration"><a class="markdownIt-Anchor" href="#configuration"></a> Configuration</h2>
+<p>Example configuration:</p>
+<pre class="highlight"><code class="javascript">Reveal.initialize({
+  <span class="hljs-comment">// ...</span>
+	<span class="hljs-attr">seminar</span>: {
+		<span class="hljs-attr">server</span>: <span class="hljs-string">'http://localhost:4433'</span>, <span class="hljs-comment">// change server as necessary</span>
+		<span class="hljs-attr">room</span>: <span class="hljs-string">'Some room name'</span>, <span class="hljs-comment">// put your room name here</span>
+		<span class="hljs-attr">hash</span>: <span class="hljs-string">'$2a$05$hhgakVn1DWBfgfSwMihABeYToIBEiQGJ.ONa.HWEiNGNI6mxFCy8S'</span>, <span class="hljs-comment">// a hash is required for every seminar room and can be generated on the URL of the socket.io server</span>
+		<span class="hljs-attr">autoJoin</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// set to true to auto,matically join the seminar room</span>
+	},
+  <span class="hljs-comment">// ...</span>
+	<span class="hljs-attr">plugins</span>: [ RevealSeminar ]
+	<span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="api"><a class="markdownIt-Anchor" href="#api"></a> API</h2>
+<p>The presentation can use the following API of the seminar plugin:</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>open_or_join_room( password, username )</code>: Open or join a room as host. The <code>password</code> is required and is validated against the <code>hash</code>. The <code>username</code> is optional.</p>
+</li>
+<li class="lvl-2">
+<p><code>close_room( password )</code>: Closes the seminar room and kicks out all participants. The <code>password</code> is required and is validated against the <code>hash</code>.</p>
+</li>
+<li class="lvl-2">
+<p><code>join_room( username )</code>: Join an existing room as a regular participant. The <code>username</code> is optional.</p>
+</li>
+<li class="lvl-2">
+<p><code>leave_room()</code>: Leave the seminar room. When the last host leaves the room the room is closed and all other participants are kicked out.<br />
+kicked out.</p>
+</li>
+</ul>
+<p>If <code>autoJoin</code> is set to true all participants will join the room once it is opened. To open a room as a host we can add a button with id <code>host</code> and an input field with id <code>password</code> and the following code to our presentations.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#host"</span>).addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+	e.preventDefault();
+	RevealSeminar.open_or_join_room(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'password'</span>).value);
+});
+</code></pre>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>

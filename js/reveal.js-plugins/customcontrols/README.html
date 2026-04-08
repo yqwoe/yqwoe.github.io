@@ -1,0 +1,44 @@
+<h1 id="custom-controls"><a class="markdownIt-Anchor" href="#custom-controls"></a> Custom controls</h1>
+<p>This plugin allows to add responsive custom controls to reveal.js which allow arbitrary positioning, layout, and behaviour of the controls.</p>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/">Check out the demo</a></p>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Font awesome is used by several plugins --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Custom controls plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css"</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+  <span class="hljs-attr">customcontrols</span>: {
+    <span class="hljs-comment">// add configuration here</span>
+  },
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealCustomControls ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="configuration"><a class="markdownIt-Anchor" href="#configuration"></a> Configuration</h2>
+<p>The plugin can be configured by adding custom controls and changing the layout of the slide number, e.g., by:</p>
+<pre class="highlight"><code class="javascript">Reveal.initialize({
+	<span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">customcontrols</span>: {
+    <span class="hljs-attr">controls</span>: [
+      {
+        <span class="hljs-attr">id</span>: <span class="hljs-string">'toggle-overview'</span>,
+        <span class="hljs-attr">title</span>: <span class="hljs-string">'Toggle overview (O)'</span>,
+        <span class="hljs-attr">icon</span>: <span class="hljs-string">'&lt;i class="fa fa-th"&gt;&lt;/i&gt;'</span>,
+        <span class="hljs-attr">action</span>: <span class="hljs-string">'Reveal.toggleOverview();'</span>
+      }
+    ]
+  },
+  <span class="hljs-comment">// ...</span>
+
+});
+</code></pre>
+<p>The <code>id</code> and <code>title</code> are optional. The configuration should be self explaining and any number of controls can be added. The style file can be altered to control the layout and responsiveness of the custom controls.</p>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>

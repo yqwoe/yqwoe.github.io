@@ -1,0 +1,24 @@
+<h1 id="load-content"><a class="markdownIt-Anchor" href="#load-content"></a> Load content</h1>
+<p>This plugin allows to load content of an HTML element from a file.</p>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/?topic=animate">Check out the demo</a></p>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Load content plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/loadcontent/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealLoadContent ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> Usage</h2>
+<p>Simply add a <code>data-load</code> attribute with the filename to a <code>&lt;div&gt;</code> element, to load the file and add the content into to the <code>&lt;div&gt;</code>.</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-load</span>=<span class="hljs-string">"graphics.svg"</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Content of graphics.svg will be added here --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>

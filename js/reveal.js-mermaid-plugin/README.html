@@ -1,0 +1,58 @@
+<p><a href="https://www.jsdelivr.com/package/npm/reveal.js-mermaid-plugin"><img src="https://data.jsdelivr.com/v1/package/npm/reveal.js-mermaid-plugin/badge" alt="jsdelivr" /></a><br />
+<a href="https://badge.fury.io/js/reveal.js-mermaid-plugin"><img src="https://badge.fury.io/js/reveal.js-mermaid-plugin.svg" alt="npm version" /></a></p>
+<h1 id="revealjs-mermaid-plugin"><a class="markdownIt-Anchor" href="#revealjs-mermaid-plugin"></a> <a href="https://zjffun.github.io/reveal.js-mermaid-plugin">reveal.js-mermaid-plugin</a></h1>
+<p>A <a href="https://mermaid.js.org/">Mermaid</a> plugin for reveal.js.</p>
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> Usage</h2>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span>
+  <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
+  <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reset.css"</span>
+/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span>
+  <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
+  <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css"</span>
+/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span>
+  <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
+  <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.css"</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">"theme"</span>
+/&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reveal"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slides"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Flowchart<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mermaid"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>
+          %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+          flowchart TD
+            A[Start] --&gt; B{Is it?};
+            B -- Yes --&gt; C[OK];
+            C --&gt; D[Rethink];
+            D --&gt; B;
+            B -- No ----&gt; E[End];
+        <span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+  Reveal.initialize({
+    controls: <span class="hljs-literal">true</span>,
+    progress: <span class="hljs-literal">true</span>,
+    center: <span class="hljs-literal">true</span>,
+    hash: <span class="hljs-literal">true</span>,
+
+    <span class="hljs-comment">// mermaid initialize config</span>
+    mermaid: {
+      <span class="hljs-comment">// flowchart: {</span>
+      <span class="hljs-comment">//   curve: 'linear',</span>
+      <span class="hljs-comment">// },</span>
+    },
+
+    plugins: [RevealMermaid],
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>

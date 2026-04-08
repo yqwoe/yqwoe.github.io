@@ -1,0 +1,173 @@
+<h1 id="revealjs-animated"><a class="markdownIt-Anchor" href="#revealjs-animated"></a> RevealJs-Animated</h1>
+<p>A revealjs plugin to facilitate the usage of animations inside your slides.</p>
+<p><a href="https://travis-ci.org/rogeralmeida/revealjs-animated"><img src="https://travis-ci.org/rogeralmeida/revealjs-animated.svg?branch=master" alt="Build Status" /></a></p>
+<p><a href="https://rogeralmeida.github.io/revealjs-animated-examples/">Check out the examples</a></p>
+<h2 id="how-to-install"><a class="markdownIt-Anchor" href="#how-to-install"></a> How to install</h2>
+<ol>
+<li class="lvl-3">
+<p>Install the plugin on your revealjs presentation folder</p>
+</li>
+</ol>
+<pre class="highlight"><code class="bash">    npm install revealjs-animated
+</code></pre>
+<ol start="2">
+<li class="lvl-3">
+<p>Import the plugin in your RevealJs initialisation</p>
+</li>
+</ol>
+<pre class="highlight"><code class="javascript">    <span class="hljs-comment">//index.html</span>
+    Reveal.initialize({
+        <span class="hljs-attr">dependencies</span>: [
+            <span class="hljs-comment">// Other plugins</span>
+            {<span class="hljs-attr">src</span>: <span class="hljs-string">'node_modules/revealjs-animated/dist/revealjs-animated.js'</span>, <span class="hljs-attr">async</span>: <span class="hljs-literal">true</span>}
+        ]
+    });
+</code></pre>
+<h2 id="how-does-it-work"><a class="markdownIt-Anchor" href="#how-does-it-work"></a> How does it work?</h2>
+<p>This plugin will look for specific CSS classes to define how to animated elements inside your RevealJs slides.<br />
+For now, it is meant to be used with revealjs <code>fragments</code>.<br />
+The CSS class <code>animated</code> is required to keep the element visible.</p>
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> Usage</h2>
+<h3 id="move-to-middle-top"><a class="markdownIt-Anchor" href="#move-to-middle-top"></a> Move to MIDDLE TOP</h3>
+<pre class="highlight"><code class="html">    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"titulo"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment animated move-to-middle-top"</span>&gt;</span>Middle Top<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<h4 id="attributes"><a class="markdownIt-Anchor" href="#attributes"></a> attributes</h4>
+<p>This animation doesn’t allow any attribute.</p>
+<h3 id="move-to-specific-position"><a class="markdownIt-Anchor" href="#move-to-specific-position"></a> Move to specific position</h3>
+<pre class="highlight"><code class="html">    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment animated move-to"</span>&gt;</span>Default Parameters<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<h4 id="attributes-2"><a class="markdownIt-Anchor" href="#attributes-2"></a> Attributes</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-move-to-left</td>
+<td>50px</td>
+<td>Distance that the animated object should move in the X axis</td>
+</tr>
+<tr>
+<td>data-animated-move-to-top</td>
+<td>25px</td>
+<td>Distance that the animated object should move in the Y axis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scale-up"><a class="markdownIt-Anchor" href="#scale-up"></a> Scale Up</h3>
+<pre class="highlight"><code class="html">    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment animated scale-up"</span>&gt;</span>Let me Grow!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<h4 id="attributes-3"><a class="markdownIt-Anchor" href="#attributes-3"></a> Attributes</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-scale-up-from</td>
+<td>1</td>
+<td>Transformation starting point</td>
+</tr>
+<tr>
+<td>data-animated-scale-up-to</td>
+<td>2</td>
+<td>Transformation ending position</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scale-down"><a class="markdownIt-Anchor" href="#scale-down"></a> Scale Down</h3>
+<pre class="highlight"><code class="html">    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment animated scale-down"</span>&gt;</span>Let me Shrink!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<h4 id="attributes-4"><a class="markdownIt-Anchor" href="#attributes-4"></a> Attributes</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-scale-down-from</td>
+<td>1</td>
+<td>Transformation starting point</td>
+</tr>
+<tr>
+<td>data-animated-scale-down-to</td>
+<td>0.5</td>
+<td>Transformation ending position</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rotate"><a class="markdownIt-Anchor" href="#rotate"></a> Rotate</h3>
+<pre class="highlight"><code class="html">    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment animated rotate"</span>&gt;</span>Rotate!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<h4 id="attributes-5"><a class="markdownIt-Anchor" href="#attributes-5"></a> Attributes</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-rotate-from</td>
+<td><code>0deg</code></td>
+<td>Transformation starting point</td>
+</tr>
+<tr>
+<td>data-animated-rotate-to</td>
+<td><code>180deg</code></td>
+<td>Transformation ending position</td>
+</tr>
+</tbody>
+</table>
+<h2 id="general-time-attributes"><a class="markdownIt-Anchor" href="#general-time-attributes"></a> General Time Attributes</h2>
+<p>The <code>duration</code>, <code>iteration</code> and <code>fill</code> animation’s properties can be controlled via the following attributes:</p>
+<h4 id="attributes-6"><a class="markdownIt-Anchor" href="#attributes-6"></a> attributes</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-animated-duration</td>
+<td>No</td>
+<td>1000</td>
+<td>Animation duration time in miliseconds</td>
+</tr>
+<tr>
+<td>data-animated-iterations</td>
+<td>No</td>
+<td>1</td>
+<td>How many iterations should the animation have</td>
+</tr>
+<tr>
+<td>data-animated-fill</td>
+<td>No</td>
+<td>forwards</td>
+<td>Final state of the animation. Possible values are <code>forwards</code>, <code>none</code>, <code>backwards</code>, <code>both</code>, <code>auto</code>. More details on <a href="https://developer.mozilla.org/en-US/docs/Web/API/EffectTiming/fill">MDN: EffectTiming.fill</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="combining-animations"><a class="markdownIt-Anchor" href="#combining-animations"></a> Combining animations</h1>
+<p>Starting from version 1.2.0 you can combine multiple animations to create sofisticated animations. To combine animations you just have to add multiple CSS classes to the same fragment</p>
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fragment animated move-to-middle-top rotate"</span>&gt;</span>Move to top and rotate<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Note that the <a href="#general-time-attributes">General Time Attributes</a> will applied to the animatino combo, not to each animation individually.</p>

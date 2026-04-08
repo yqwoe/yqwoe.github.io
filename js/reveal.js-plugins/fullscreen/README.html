@@ -1,0 +1,26 @@
+<h1 id="fullscreen"><a class="markdownIt-Anchor" href="#fullscreen"></a> Fullscreen</h1>
+<p>A plugin for <a href="https://github.com/hakimel/reveal.js">Reveal.js</a> allowing allowing to use the entire space available for slides.</p>
+<p><a href="https://rajgoel.github.io/reveal.js-demos/">Check out the demo</a></p>
+<h2 id="setup"><a class="markdownIt-Anchor" href="#setup"></a> Setup</h2>
+<p>To use the plugin include</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- Fullscreen plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/fullscreen/plugin.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>to the header of your presentation and configure reveal.js and the plugin by</p>
+<pre class="highlight"><code class="js">Reveal.initialize({
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-attr">plugins</span>: [ RevealFullscreen ],
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> Usage</h2>
+<p>In markdown you can set the <code>data-fullscreen</code> attribute for a slide and make an element stretch to the space available by</p>
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!-- .slide: data-fullscreen="true"  --&gt;</span>
+
+### Embedded online content
+
+<span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stretch"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/5xAgp6i9lUQ?rel=0"</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+</code></pre>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT licensed</p>
+<p>Copyright © 2023 Asvin Goel</p>
