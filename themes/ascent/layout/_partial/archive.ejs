@@ -1,0 +1,62 @@
+
+<% if (page.total > 1){ %>
+  <nav id="page-nav" class="page-nav">
+    <% var prev_text = "« " + __('prev');var next_text = __('next') + " »"%>
+    <%- paginator({
+      prev_text: '<',
+      next_text: '>'
+    }) %>
+  </nav>
+<% } %>
+<% if (pagination == 2){ %>
+  <div class="archive-body">
+    <% var last; %>
+  <% var i = 0; %>
+  <% page.posts.each(function(post, i){ %>
+    <% var date_obj = post.date; %>
+    <% var month = post.date.year(); %>
+    <% if (last != month){ %>
+      <% if (last != null){ %>
+        </div></div>
+      <% } %>
+      <% last = month; %>
+      <% i = i + 1 %>
+      <div>
+        <h3><%= date(date_obj, "YYYY") %></h3>
+        <div class="list-group">
+    <% } %>
+    <%- partial('archive-post', {class_name: 'list-group-item' ,post: post}) %>
+  <% }) %>
+  <% if (page.posts.length){ %>
+    </div></div>
+  <% } %>
+  </div>
+<% } else { %>
+  <div class="archive-wrapper">
+  <h2> <%= page.posts.length || 0 %> 文章</h2>
+  <div class="archive-body">
+    <% var last; %>
+  <% var i = 0; %>
+  <% page.posts.each(function(post, i){ %>
+    <% var date_obj = post.date; %>
+    <% var month = post.date.year(); %>
+    <% if (last != month){ %>
+      <% if (last != null){ %>
+        </div></section>
+      <% } %>
+      <% last = month; %>
+      <% i = i + 1 %>
+      <section class="archives-wrap">
+        <input class="hidden-input" type="checkbox" name="expand" id="<%= 'expand' + i %>">
+        <label class="month" for="<%= 'expand' + i %>"><%= date(date_obj, "YYYY") %></label>
+        <div class="archives hidden">
+    <% } %>
+    <%- partial('archive-post', {class_name: '' ,post: post}) %>
+  <% }) %>
+  <% if (page.posts.length){ %>
+    </div></section>
+  <% } %>
+  </div>
+
+</div>
+<% } %>

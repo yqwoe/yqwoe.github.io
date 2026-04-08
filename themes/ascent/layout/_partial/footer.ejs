@@ -1,0 +1,318 @@
+<% if (theme.intensedebate.enable && theme.intensedebate.acct){ %>
+<%- css('css/comments') %>
+<% } %>
+
+<% if (is_archive() || is_category() || is_tag()){ %>
+<script type="text/javascript">
+  let tgl = (s) => {
+    x = document.getElementsByName("expand");
+    for (let i = 0; i < x.length; i++) x[i].checked = s.checked;
+  }
+</script>
+<% } %>
+
+<% if (theme.settings){ %>
+<div id="settings-container">
+  <div id="dark-mode"></div>
+  <div id="sans-font"></div>
+</div>
+
+
+<span class="post-count"><%- totalcount(site) %></span>
+<!-- <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script>
+<script src="https://unpkg.com/mermaid@9.4.3/dist/mermaid.min.js"></script> -->
+<script type="text/javascript">
+
+
+  let d = document,
+    r = d.documentElement.style,
+    f = r.setProperty.bind(r),
+    l = localStorage,
+    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    n = l.getItem('n'),
+    m = d.getElementById("dark-mode"),
+    b = () => {
+      f('--bg-color', '#fafafa');
+      f('--code-bg-color', '#f4f4f4');
+      f('--text-color', '#212121');
+      f('--secondary-color', '#808080');
+      f('--tertiary-color', '#b0b0b0');
+      f('--link-color', '#b5c8cf');
+      f('--link-hover-color', '#618794');
+      f('--link-bg-color', '#dae4e7');
+      f('--selection-color', '#dae4e7');
+    },
+    c = () => {
+      f('--bg-color', '#212121');
+      f('--code-bg-color', '#292929');
+      f('--text-color', '#fff');
+      f('--secondary-color', '#c0c0c0');
+      f('--tertiary-color', '#6e6e6e');
+      f('--link-color', '#4d6b75');
+      f('--link-hover-color', '#96b1bb');
+      f('--link-bg-color', '#5d828e');
+      f('--selection-color', '#acc1c9');
+    },
+    o = d.getElementById("sans-font"),
+    e = () => {
+      f('--body-stack', '"Lora", "Georgia", "Times New Roman", serif');
+      // o.innerHTML = "<%- __('sans')%>"
+    },
+    g = () => {
+      f('--body-stack', '"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif');
+      // o.innerHTML = "<%- __('serif') %>"
+    };
+  m.onclick = function(){
+    if (s == 2) {
+      s = 1;
+      l.setItem('s', s);
+      c()
+    } else {
+      s = 2;
+      l.setItem('s', s);
+      b()
+    }
+  };
+  o.onclick =function(){
+    if (n == 2) {
+      n = 1;
+      l.setItem('n', n);
+      g()
+    } else {
+      n = 2;
+      l.setItem('n', n);
+      e()
+    }
+  };
+  if (s || s == '1') {
+      s = 1;
+      l.setItem('s', s);
+    c()
+  }
+
+  if (!s || s == '2') {
+      s = 2;
+      l.setItem('s', s);
+    b()
+  };
+  if (!n) {
+    n = 2;
+    l.setItem('n', 2)
+  };
+  if (n == '1') {
+    g();
+  };
+  if (n == '2') {
+    e();
+  };
+</script>
+<% } %>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9.4.3/+esm";
+  let theme = localStorage.getItem("s");
+  mermaid.initialize({
+      startOnLoad: true,
+      logLevel: 'debug',
+      theme: theme === '2' ? 'forest' : 'dark',
+    });
+  let mode = document.getElementById("dark-mode");
+   let arrayGraphs =  [];
+  let nodes = document.getElementsByClassName('mermaid')
+  for(let n of nodes){
+    console.log(n.innerHTML)
+    arrayGraphs.push(n.innerHTML);
+  }
+
+  mode.addEventListener("click",async ()=>{
+    theme = localStorage.getItem("s");
+    mermaid.initialize({
+      startOnLoad: true,
+      logLevel: 'debug',
+      theme: theme === '2' ? 'forest' : 'dark',
+    });
+  for(let i = 0;i< nodes.length;i++){
+      let n =  nodes[i]
+      // console.log(n.innerHTML)
+      let id = `mermaid-${i}`
+      n.removeAttribute("data-processed");
+      n.setAttribute("id",`mermaid-${i}`)
+      n.replaceChildren();
+      n.innerHTML = arrayGraphs[i]
+      mermaid.init(undefined,n)
+    }
+  },false);
+
+</script>
+
+<% if (theme.google_analytics.enable && theme.google_analytics.acct){ %>
+<script type="text/javascript">
+  // (function(i, s, o, g, r, a, m) {
+  //   i['GoogleAnalyticsObject'] = r;
+  //   i[r] = i[r] || function() {
+  //     (i[r].q = i[r].q || []).push(arguments)
+  //   }, i[r].l = 1 * new Date();
+  //   a = s.createElement(o),
+  //     m = s.getElementsByTagName(o)[0];
+  //   a.async = 1;
+  //   a.src = g;
+  //   m.parentNode.insertBefore(a, m)
+  // })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  // ga('create', '<%= theme.google_analytics.acct %>', 'auto');
+  // ga('send', 'pageview');
+
+</script>
+<% } %>
+
+<script src="<%= theme.cdn.jquery %>" defer ></script>
+<script src="<%= theme.cdn.qrcode %>" defer ></script>
+<script src="https://unpkg.com/reveal.js@5.0.4/dist/reveal.js" defer></script></script>
+<script src="https://unpkg.com/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.js" defer></script></script>
+<script src="https://unpkg.com/reveal.js@5.0.4/dist/reveal.js" defer></script></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js" defer></script> -->
+
+<script type="module">
+  import qrcodeInit from '/js/qrcode.js'
+  qrcodeInit();
+</script>
+<script type="module">
+/***
+ * 兼容不支持requestAnimationFrame的浏览器
+ ***/
+window.requestAnimationFrame = (function () {
+  return window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||/* Safari 和 Chrome */
+    window.mozRequestAnimationFrame ||/* Firefox */
+    window.oRequestAnimationFrame      ||/* Opera */
+    window.msRequestAnimationFrame     ||/* IE 9 */
+    function (callback) {
+      window.setTimeout(callback, 6000 / 60)
+    }
+})();
+window.cancelAnimationFrame = (function () {
+  return window.cancelAnimationFrame ||
+    window.webkitCancelAnimationFrame ||
+    window.mozCancelAnimationFrame ||
+    window.oCancelAnimationFrame ||
+    window.msCancelAnimationFrame || clearTimeout
+})();
+</script>
+<script type="module">
+  /*诗*/
+if ($("div").hasClass("poem-wrap")) {
+            get_poem('#poem', '#info')
+}
+function get_poem(poem_ele, info_ele) {
+    var poem = document.querySelector(poem_ele);
+    var info = document.querySelector(info_ele);
+    var xhr = new XMLHttpRequest();
+    xhr.open('get', 'https://v2.jinrishici.com/one.json?client=browser-sdk/1.2');
+    xhr.withCredentials = true;
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            poem.innerHTML = data.data.content;
+            info.innerHTML = '[' + data.data.origin.dynasty + '] ' + data.data.origin.author + '《' + data.data.origin.title + '》';
+        }
+    };
+    xhr.send();
+}
+
+function modifySubmitBtn(){
+  var btn = $('.hbe-button');
+  var password = $('#hbePass');
+  if(btn.length > 0){
+    btn.text('重新输入密码')
+  }
+  if(password.length > 0){
+    password.attr('autocomplete','false')
+  }
+}
+modifySubmitBtn();
+
+function layoutTagCloud(){
+  // var list = $('.tagcloud a');
+  // var size = Math.round(Math.random() * 20);
+
+  // for(let i = 0;i< list.length;i++){
+  //       if(i % even == 0 ){
+  //         list[i].classList = `${list[i].classList} deg_90`
+  //       }
+  // }
+}
+
+function loopHover(){
+  var list = $('.tagcloud a');
+  var hover = $('.tagcloud a[class="tag-hover"]')
+  var next = Math.round(Math.random() * (list.length  - 1))
+
+  if(next < 0){
+    next = 0
+  }
+
+  if(next > list.length){
+    next = list.length - 1
+  }
+  if(list.length){
+    if(hover.length){
+      for(let i = 0;i< hover.length;i++){
+        hover[i].classList = ''
+      }
+    }
+    list[next].classList = 'tag-hover'
+  }
+}
+// layoutTagCloud();
+
+
+/**
+ * 设置精度定时器
+ * @param {function} 回调函数
+ * @param {number}   延迟时间
+ * @return {number}  定时器ID
+ */
+ function setIntervalPrecision(callback, delay) {
+  // 生成并记录定时器ID
+  let obj = window.interValPrecisionObj || (window.interValPrecisionObj = { num: 0 })
+  obj.num++
+  obj['n' + obj.num] = true
+  var intervalId = obj.num
+  // 开始时间
+  var startTime = +new Date()
+  // 已执行次数
+  var count = 0
+  // 延迟时间
+  delay = delay || 0
+
+
+  ;(function loop() {
+    // 定时器被清除，则终止
+    if (!obj['n' + intervalId]) return
+
+    // 满足条件执行回调
+    if (+new Date() > startTime + delay * (count + 1)) {
+      count++
+      callback(count)
+    }
+
+    window.requestAnimationFrame(loop)
+  })()
+
+  return intervalId
+}
+
+/**
+ * 清除精度定时器
+ * @param {number} 定时器ID
+ */
+function clearIntervalPrecision(intervalId) {
+  if (window.interValPrecisionObj) {
+    window.cancelAnimationFrame('n' + intervalId)
+    delete window.interValPrecisionObj['n' + intervalId]
+  }
+}
+
+setIntervalPrecision(loopHover, 250)
+
+</script>

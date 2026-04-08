@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_partial/head') %>
+
+  <body>
+    <div id="new-wrapper">
+      <%- partial('_partial/sider') %>
+        <div id="content">
+          <%- body %>
+        </div>
+    </div>
+    <%- partial('_partial/footer') %>
+      <!-- <div class="bg-img">
+        <img id="bg-img" src="/images/911645692907_.pic.jpg" />
+      </div> -->
+  </body>
+  <!-- <script type="module">
+    const matches = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    if (matches) {
+      document.getElementById('bg-img').src = '/images/911645692907_.pic.jpg'
+    } else {
+      document.getElementById('bg-img').src = '/images/921645692907_.pic.jpg'
+    }
+  </script> -->
+
+</html>
