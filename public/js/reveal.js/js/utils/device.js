@@ -1,1 +1,0 @@
-let UA=navigator.userAgent,isMobile=/(iphone|ipod|ipad|android)/gi.test(UA)||"MacIntel"===navigator.platform&&1<navigator.maxTouchPoints,isChrome=/chrome/i.test(UA)&&!/edge/i.test(UA),isAndroid=/android/gi.test(UA);export{isMobile,isChrome,isAndroid};

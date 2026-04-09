@@ -110,7 +110,7 @@ const createHtml = (version, content, slideConfig, config, plugins) => {
 
           #notescanvas {
             -webkit-backdrop-filter: unset;
-            backdrop-filter: unset;hexo
+            backdrop-filter: unset;
           }
       </style>
 

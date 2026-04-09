@@ -19,8 +19,7 @@
 
 
 <span class="post-count"><%- totalcount(site) %></span>
-<!-- <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script>
-<script src="https://unpkg.com/mermaid@9.4.3/dist/mermaid.min.js"></script> -->
+<%# legacy mermaid script tags removed; use ESM import below %>
 <script type="text/javascript">
 
 
@@ -167,11 +166,9 @@
 
 <script src="<%= theme.cdn.jquery %>" defer ></script>
 <script src="<%= theme.cdn.qrcode %>" defer ></script>
-<script src="https://unpkg.com/reveal.js@5.0.4/dist/reveal.js" defer></script></script>
-<script src="https://unpkg.com/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.js" defer></script></script>
-<script src="https://unpkg.com/reveal.js@5.0.4/dist/reveal.js" defer></script></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js" defer></script> -->
-
+<script src="https://unpkg.com/reveal.js@5.0.4/dist/reveal.js" defer></script>
+<script src="https://unpkg.com/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.js" defer></script>
+<%# echarts defer script optional %>
 <script type="module">
   import qrcodeInit from '/js/qrcode.js'
   qrcodeInit();

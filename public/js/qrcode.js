@@ -1,1 +1,0 @@
-let qrcode=()=>{$("[data-qr]").each(function(){if(!0===this.qrcode)return!0;var d=$(this),t=d.data("qr"),a=d.data("width")||void 0,r=d.data("height")||void 0,e=d.data("background")||"#ffffff",o=d.data("foreground")||"#000000";d.qrcode({text:t,width:a,height:r,background:e,foreground:o}),this.qrcode=!0})};export default qrcode;

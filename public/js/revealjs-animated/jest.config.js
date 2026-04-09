@@ -1,1 +1,0 @@
-module.exports={clearMocks:!0,coverageDirectory:"coverage",preset:"jest-puppeteer"};
