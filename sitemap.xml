@@ -2,6 +2,292 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/js/revealjs-animated/test/scenarios/middle-top.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.976Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785976</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/revealjs-animated/package.json</loc>
+    
+    <lastmod>2026-04-08T10:06:25.975Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785975</date>
+    <title> | rm -rf /*</title>
+    
+    <desc>{"name":"revealjs-animated","version":"1.2.2","description":"RevealJs plugin to facilitate usage of animation inside slides","main":"webpack.config.js","repository":{"type":"git","url":"https://github</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/revealjs-animated/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.972Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785972</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/seminar/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.967Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785967</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/questions/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.966Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785966</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/minimal.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.965Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785965</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/package.json</loc>
+    
+    <lastmod>2026-04-08T10:06:25.965Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785965</date>
+    <title> | rm -rf /*</title>
+    
+    <desc>{"name":"reveal.js-plugins","version":"4.2.5","description":"A plugin collection for your reveal.js presentations","repository":{"type":"git","url":"https://github.com/rajgoel/reveal.js-plugins.git"},</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/poll/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.965Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785965</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/customcontrols/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.964Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785964</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.964Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785964</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/loadcontent/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.964Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785965</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/chart/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.963Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785963</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/chalkboard/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.959Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785959</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/anything/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.957Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785957</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/audio-slideshow/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.957Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785957</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.955Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785955</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/animate/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.955Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785955</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/CHANGELOG.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.954Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785954</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/CHANGELOG.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.939Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785939</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.939Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785939</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.939Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785939</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/package.json</loc>
+    
+    <lastmod>2026-04-08T10:06:25.939Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785939</date>
+    <title> | rm -rf /*</title>
+    
+    <desc>{"name":"reveal.js-mermaid-plugin","version":"2.2.0","description":"A mermaid plugin for reveal.js.","homepage":"https://zjffun.github.io/reveal.js-mermaid-plugin","main":"plugin/mermaid/mermaid.js","</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/b6474c33.html</loc>
     
     <lastmod>2026-03-31T10:41:05.413Z</lastmod>
@@ -310,7 +596,7 @@
     <date>1584802640000</date>
     <title>路 | rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-IclBhbkP"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-cuuMsWUl"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
@@ -1078,6 +1364,84 @@
     <title>一次gogs踩坑之路 | rm -rf /*</title>
     
     <desc>ubuntu 安装 gogs</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/README.html</loc>
+    
+    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
+    
+
+    <id></id>
+    <date>1775700537228</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/demo.html</loc>
+    
+    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
+    
+
+    <id></id>
+    <date>1775700537228</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/index.html</loc>
+    
+    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
+    
+
+    <id></id>
+    <date>1775700537223</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/package.json</loc>
+    
+    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
+    
+
+    <id></id>
+    <date>1775700537228</date>
+    <title> | rm -rf /*</title>
+    
+    <desc>{"name":"reveal.js","version":"5.2.1","description":"The HTML Presentation Framework","homepage":"https://revealjs.com","subdomain":"revealjs","main":"dist/reveal.js","module":"dist/reveal.esm.js","li</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/css/theme/README.html</loc>
+    
+    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
+    
+
+    <id></id>
+    <date>1775700537224</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/plugin/notes/speaker-view.html</loc>
+    
+    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
+    
+
+    <id></id>
+    <date>1775700537228</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
   </url>
   
 </urlset>
