@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
+    
+    <lastmod>2026-04-09T05:57:09.862Z</lastmod>
+    
+
+    <id></id>
+    <date>1775714229862</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/js/revealjs-animated/test/scenarios/middle-top.html</loc>
     
     <lastmod>2026-04-08T10:06:25.976Z</lastmod>
@@ -272,19 +285,6 @@
     <title> | rm -rf /*</title>
     
     <desc>{"name":"reveal.js-mermaid-plugin","version":"2.2.0","description":"A mermaid plugin for reveal.js.","homepage":"https://zjffun.github.io/reveal.js-mermaid-plugin","main":"plugin/mermaid/mermaid.js","</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
-    
-    <lastmod>2026-04-08T10:06:25.939Z</lastmod>
-    
-
-    <id></id>
-    <date>1775642785939</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
   </url>
   
   <url>
