@@ -2,9 +2,11 @@
 title: daily-news-2026-04-25
 password: 181622
 toc: false
-categories: ["daily news"]
-date: 2026-04-25 07:30:00
+categories:
+  - daily news
 tags: []
+abbrlink: f135226f
+date: 2026-04-25 07:30:00
 ---
 <!--more-->
 
