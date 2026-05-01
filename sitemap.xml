@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/5f9c1a2b.html</loc>
+    
+    <lastmod>2026-05-01T14:22:34.930Z</lastmod>
+    
+
+    <id>5f9c1a2b</id>
+    <date>1777645800000</date>
+    <title>从 OpenClaw 迁移到 Hermes：我的实战记录 | rm -rf /*</title>
+    
+    <desc>从 OpenClaw 换到 Hermes Agent，迁移过程中遇到的问题、解决方案，以及两个平台记忆系统的真实对比</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/38291047.html</loc>
     
     <lastmod>2026-05-01T10:31:33.220Z</lastmod>
