@@ -6,7 +6,7 @@
   <link href="https://rm-rf.ink/atom.xml" rel="self"/>
   
   <link href="https://rm-rf.ink/"/>
-  <updated>2026-04-27T15:38:59.157Z</updated>
+  <updated>2026-05-01T10:08:10.152Z</updated>
   <id>https://rm-rf.ink/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践</title>
+    <link href="https://rm-rf.ink/*/38291047.html"/>
+    <id>https://rm-rf.ink/*/38291047.html</id>
+    <published>2026-05-01T12:00:00.000Z</published>
+    <updated>2026-05-01T10:08:10.152Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="背景原来的记忆有什么问题"><a class="markdownIt-Anchor" href="#背景原来的记忆有什么问题"></a> 背景：原来的记忆有什么问题</h2><p>Hermes Agent 默认的记忆是个 key-value，写进去什么就读出来什么，读取逻辑基本等于字符串匹配。用了一阵子，问题就出来了：</p><ul class="lvl-0"><li class="lvl-2"><p>&quot;微信截图&quot;和&quot;截图工具&quot;说的是一回事，但搜不到</p></li><li class="lvl-2"><p>记忆一多，自己都不知道存哪了</p></li><li class="lvl-2"><p>换个 session，上下文全没了</p></li></ul><p>对偶尔用一次的人来说够用，但每天几十个任务、跨多个项目，这套机制撑不住。</p><h2 id="mempalace-是什么"><a class="markdownIt-Anchor" href="#mempalace-是什么"></a> MemPalace 是什么</h2><p>MemPalace 是本地语义记忆系统，数据存在 sqlite 里，不依赖任何云服务。组织结构很直接：</p><pre class="mermaid">graph LR    A[Wing<br>项目 / 领域] --> B[Room<br>维度]    B --> C[Drawer<br>记忆卡片]        C --> D[语义索引]    C --> E[时间线]    C --> F[知识图谱]</pre><p>核心功能四个：</p><ul class="lvl-0"><li class="lvl-2"><p><code>mempalace_search</code> — 语义搜索</p></li><li class="lvl-2"><p><code>mempalace_kg_query</code> — 知识图谱查询</p></li><li class="lvl-2"><p><code>mempalace_add_drawer</code> — 写入记忆</p></li><li class="lvl-2"><p><code>mempalace_diary_write</code> — 日记式记录</p></li></ul><p>支持时间线查询，自动归档，用了一阵子感觉比纯 key-value 稳。</p><h2 id="改造思路"><a class="markdownIt-Anchor" href="#改造思路"></a> 改造思路</h2><p>Hermes Agent 支持 MemoryProvider 插件机制，实现规定接口就能换掉默认记忆层。整体架构如下：</p><pre class="mermaid">graph TD    subgraph Hermes Agent        U[用户消息] --> M[MemoryProvider]        M -.->|语义搜索| P[MemPalace]        M -.->|知识图谱查询| P        M -.->|写入记忆| P    end        subgraph MemPalace        P --> S[sqlite]        S --> W1[Wing: 项目A]        S --> W2[Wing: 项目B]        S --> W3[Wing: 用户配置]        W1 --> R1[Room: general]        W1 --> R2[Room: diary]        W2 --> R3[Room: decisions]        R1 --> D1[Drawer]        R2 --> D2[Drawer]    end        subgraph 自动归档        CRON[cronjob 30min] --> ARCH[归档任务]        ARCH --> P    end</pre><p>原则就三条：</p><ol><li class="lvl-3"><p><strong>读取全走 MemPalace</strong> — 收到消息就按需搜，不再靠内置 memory 注入</p></li><li class="lvl-3"><p><strong>写入全走 MemPalace</strong> — 项目进展、bug、偏好全部写入，碰都不碰内置 memory</p></li><li class="lvl-3"><p><strong>cronjob 自动归档</strong> — 每 30 分钟自动归档 session 进展，不怕断电丢数据</p></li></ol><p>内置 memory 工具现在只留一个职责：存 MemPalace 的路径，其他一概不存。</p><h2 id="记忆读写流程"><a class="markdownIt-Anchor" href="#记忆读写流程"></a> 记忆读写流程</h2><p>一次完整的记忆读取过程：</p><pre class="mermaid">sequenceDiagram    participant U as 用户    participant H as Hermes    participant MP as MemPalace    participant KG as 知识图谱    participant DB as sqlite    U->>H: 发送消息    H->>MP: mempalace_search 语义搜索    MP->>DB: 查询相似记忆    DB-->>MP: 返回结果    MP-->>H: 相关记忆列表    H->>KG: mempalace_kg_query 关系查询    KG-->>H: 实体关系链    H->>H: 组装上下文    H-->>U: 携带记忆回复</pre><p>一次记忆写入过程：</p><pre class="mermaid">sequenceDiagram    participant H as Hermes    participant MP as MemPalace    participant DB as sqlite    participant CRON as cronjob    H->>H: 处理任务    H->>MP: mempalace_add_drawer 写入记忆    MP->>DB: 存储Drawer    DB-->>MP: 确认写入    MP-->>H: 完成    Note over CRON: 30分钟后    CRON->>MP: 自动归档session进展    MP->>DB: 更新diary room</pre><h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2><p><strong>1. goja 沙箱限制</strong></p><p>最初想在某个服务 JS Hook 里直接调 MemPalace，结果该服务使用的 JavaScript 引擎对内置对象做了严格限制，node.js 那套基本跑不了。最后改成外面用 Python 脚本中转，Hook 只负责触发。</p><p><strong>2. 某版本 listRule 实测跟文档不符</strong></p><p>官方文档写 <code>listRule: null</code> 代表公开读取，实测不是那回事。翻了半天 issue，正确写法是：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">listRule: &quot;@request.auth.id != &#x27;&#x27;&quot;</span><br></pre></td></tr></table></figure><p>有 <a href="http://auth.id">auth.id</a> 就代表已认证，没登录就没有读取权限。</p><p><strong>3. 开发服务器代理不转发 Authorization</strong></p><p>前端请求打到后端，开发服务器的代理默认不转发 Authorization header，所有认证接口都 401。临时绕法：前端直接请求后端地址，绕过代理。</p><h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p>现在每次启动，Agent 能记住：</p><ul class="lvl-0"><li class="lvl-2"><p>项目路径、测试账号、用的什么技术栈</p></li><li class="lvl-2"><p>上次做到哪、还有什么没搞完</p></li><li class="lvl-2"><p>用户的偏好</p></li></ul><p>换 session 不会从头来。搜&quot;微信截图&quot;能找到&quot;截图工具&quot;相关的内容，不同表述不影响。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><ul class="lvl-0"><li class="lvl-2"><p>MemPalace 是本地的，没有多设备同步，多台电脑用要自己处理同步</p></li><li class="lvl-2"><p>语义搜索质量依赖 embedding 模型，模型选得不好结果会很飘</p></li><li class="lvl-2"><p>写入太频繁 sqlite 会越来越肥，隔一阵子得清理一次</p></li></ul><h2 id="结论"><a class="markdownIt-Anchor" href="#结论"></a> 结论</h2><p>从&quot;存了但找不到&quot;变成&quot;语义相近就能找到&quot;。代价是多引入了一个依赖，但换来的是可查询性和可靠性，我觉得值。</p><p>如果你是从零做 Agent 记忆系统，建议一开始就想清楚走向量搜索还是纯 key-value，这两条路后面的扩展性差很多。</p>]]></content>
+    
+    
+    <summary type="html">把 Agent 的记忆从简陋的 key-value 改成语义搜索驱动的 MemPalace，记录架构思路和踩坑过程</summary>
+    
+    
+    
+    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    
+    <category term="Hermes Agent" scheme="https://rm-rf.ink/tags/Hermes-Agent/"/>
+    
+    <category term="MemPalace" scheme="https://rm-rf.ink/tags/MemPalace/"/>
+    
+    <category term="记忆系统" scheme="https://rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践</title>
+    <link href="https://rm-rf.ink/*/38291047.html"/>
+    <id>https://rm-rf.ink/*/38291047.html</id>
+    <published>2026-05-01T12:00:00.000Z</published>
+    <updated>2026-05-01T10:05:10.389Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="背景原来的记忆有什么问题"><a class="markdownIt-Anchor" href="#背景原来的记忆有什么问题"></a> 背景：原来的记忆有什么问题</h2><p>Hermes Agent 默认的记忆是个 key-value，写进去什么就读出来什么，读取逻辑基本等于字符串匹配。用了一阵子，问题就出来了：</p><ul class="lvl-0"><li class="lvl-2"><p>&quot;微信截图&quot;和&quot;截图工具&quot;说的是一回事，但搜不到</p></li><li class="lvl-2"><p>记忆一多，自己都不知道存哪了</p></li><li class="lvl-2"><p>换个 session，上下文全没了</p></li></ul><p>对偶尔用一次的人来说够用，但我的场景是每天几十个任务、跨多个项目，这套机制撑不住。</p><h2 id="mempalace-是什么"><a class="markdownIt-Anchor" href="#mempalace-是什么"></a> MemPalace 是什么</h2><p>MemPalace 是本地语义记忆系统，数据存在 sqlite 里，不依赖任何云服务。组织结构很直接：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Wings → Rooms → Drawers</span><br></pre></td></tr></table></figure><ul class="lvl-0"><li class="lvl-2"><p><strong>Wing</strong>：项目或领域，比如 <code>hermes-agent</code>、<code>念念</code></p></li><li class="lvl-2"><p><strong>Room</strong>：维度，比如 <code>general</code>、<code>diary</code>、<code>decisions</code></p></li><li class="lvl-2"><p><strong>Drawer</strong>：具体的一张记忆卡片，支持语义索引</p></li></ul><p>核心功能四个：</p><ul class="lvl-0"><li class="lvl-2"><p><code>mempalace_search</code> — 语义搜索</p></li><li class="lvl-2"><p><code>mempalace_kg_query</code> — 知识图谱查询</p></li><li class="lvl-2"><p><code>mempalace_add_drawer</code> — 写入记忆</p></li><li class="lvl-2"><p><code>mempalace_diary_write</code> — 日记式记录</p></li></ul><p>支持时间线查询，自动归档，用了一阵子感觉比纯 key-value 稳。</p><h2 id="改造思路"><a class="markdownIt-Anchor" href="#改造思路"></a> 改造思路</h2><p>Hermes Agent 支持 MemoryProvider 插件机制，实现规定接口就能换掉默认记忆层。我写了个 MemPalace Provider，把四个核心工具注册进去，把原来内置的 memory 工具替换掉。</p><p>原则就三条：</p><ol><li class="lvl-3"><p><strong>读取全走 MemPalace</strong> — 收到消息就按需搜，不再靠内置 memory 注入</p></li><li class="lvl-3"><p><strong>写入全走 MemPalace</strong> — 项目进展、bug、偏好全部写入，碰都不碰内置 memory</p></li><li class="lvl-3"><p><strong>cronjob 自动归档</strong> — 每 30 分钟自动归档 session 进展，不怕断电丢数据</p></li></ol><p>内置 memory 工具现在只留一个职责：存 MemPalace 的路径，其他一概不存。</p><h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2><p><strong>1. goja 沙箱限制</strong></p><p>最初想在 PocketBase JS Hook 里直接调 MemPalace，结果 PocketBase 0.35+ 用的 goja 对内置对象做了严格限制，node.js 那套基本跑不了。最后改成外面用 Python 脚本中转，Hook 只负责触发。</p><p><strong>2. PB 0.37.4 listRule 实测跟文档不符</strong></p><p>官方文档写 <code>listRule: null</code> 代表公开读取，实测不是那回事。翻了半天 issue，正确写法是：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">listRule: &quot;@request.auth.id != &#x27;&#x27;&quot;</span><br></pre></td></tr></table></figure><p>有 <a href="http://auth.id">auth.id</a> 就代表已认证，没登录就没有读取权限。</p><p><strong>3. webpack dev server 代理不转发 Authorization</strong></p><p>H5 请求打到 PB 后端，webpack dev server 默认不转发 Authorization header，所有认证接口都 401。临时绕法：前端直接请求 PB 地址，绕过代理。</p><h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p>现在每次启动，Agent 能记住：</p><ul class="lvl-0"><li class="lvl-2"><p>项目路径、测试账号、用的什么技术栈</p></li><li class="lvl-2"><p>上次做到哪、还有什么没搞完</p></li><li class="lvl-2"><p>你的偏好，比如截图要整屏不要只截二维码</p></li></ul><p>换 session 不会从头来。搜&quot;微信截图&quot;能找到&quot;截图工具&quot;相关的内容，不同表述不影响。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><ul class="lvl-0"><li class="lvl-2"><p>MemPalace 是本地的，没有多设备同步，多台电脑用要自己处理同步</p></li><li class="lvl-2"><p>语义搜索质量依赖 embedding 模型，模型选得不好结果会很飘</p></li><li class="lvl-2"><p>写入太频繁 sqlite 会越来越肥，隔一阵子得清理一次</p></li></ul><h2 id="结论"><a class="markdownIt-Anchor" href="#结论"></a> 结论</h2><p>从&quot;存了但找不到&quot;变成&quot;语义相近就能找到&quot;。代价是多引入了一个依赖，但换来的是可查询性和可靠性，我觉得值。</p><p>如果你是从零做 Agent 记忆系统，建议一开始就想清楚走向量搜索还是纯 key-value，这两条路后面的扩展性差很多。</p><hr><p><em>念念 H5 + PocketBase 还在继续开发，记忆系统只是基础设施之一。后续有新坑再更新。</em></p>]]></content>
+    
+    
+    <summary type="html">把 Hermes Agent 的记忆从简陋的 key-value 改成语义搜索驱动的 MemPalace，记录踩坑和思考</summary>
+    
+    
+    
+    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    
+    <category term="Hermes Agent" scheme="https://rm-rf.ink/tags/Hermes-Agent/"/>
+    
+    <category term="MemPalace" scheme="https://rm-rf.ink/tags/MemPalace/"/>
+    
+    <category term="记忆系统" scheme="https://rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello Hermes Agent</title>
@@ -438,54 +492,6 @@
     
     
     <category term="reveal.js" scheme="https://rm-rf.ink/tags/reveal-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大盘鸡🐔</title>
-    <link href="https://rm-rf.ink/*/c43e7c0d.html"/>
-    <id>https://rm-rf.ink/*/c43e7c0d.html</id>
-    <published>2024-01-16T02:06:47.000Z</published>
-    <updated>2026-04-27T15:33:00.104Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p><span id="more"></span><h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1><ul class="lvl-0"><li class="lvl-2"><p>鸡肉</p></li><li class="lvl-2"><p>梅花肉</p></li><li class="lvl-2"><p>土豆</p></li><li class="lvl-2"><p>洋葱</p></li><li class="lvl-2"><p>青椒</p></li><li class="lvl-2"><p>大葱</p></li><li class="lvl-2"><p>姜</p></li><li class="lvl-2"><p>蒜</p></li><li class="lvl-2"><p>八角</p></li><li class="lvl-2"><p>花椒</p></li><li class="lvl-2"><p>干辣椒</p></li><li class="lvl-2"><p>啤酒</p></li></ul><h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1><ul class="lvl-0"><li class="lvl-2"><p>花生油 20ml</p></li><li class="lvl-2"><p>郫县豆瓣酱 10ml</p></li><li class="lvl-2"><p>盐 5g</p></li><li class="lvl-2"><p>鸡精 5g</p></li><li class="lvl-2"><p>味精 5g</p></li><li class="lvl-2"><p>生抽 5g</p></li><li class="lvl-2"><p>蚝油5ml</p></li></ul><h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1><ul class="lvl-0"><li class="lvl-2"><p>起锅烧油，放入梅花肉打底炒出油；</p></li><li class="lvl-2"><p>放入豆瓣炒出红油，放入八角、花椒、干辣椒；</p></li><li class="lvl-2"><p>放入洗干净的鸡肉，炒至肉质紧实；</p></li><li class="lvl-2"><p>放入大葱，盐、鸡精、生抽、蚝油；</p></li><li class="lvl-2"><p>翻炒2分钟，加入两罐啤酒，炖15分钟；</p></li><li class="lvl-2"><p>最后放入土豆、青椒、洋葱，再炖5分钟；</p></li><li class="lvl-2"><p>放入味精，搅拌均匀后出锅；</p></li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;吃鸡最痛快的吃法之一，一定有大盘鸡。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="菜谱" scheme="https://rm-rf.ink/categories/%E8%8F%9C%E8%B0%B1/"/>
-    
-    
-    <category term="大盘鸡" scheme="https://rm-rf.ink/tags/%E5%A4%A7%E7%9B%98%E9%B8%A1/"/>
-    
-    <category term="美食" scheme="https://rm-rf.ink/tags/%E7%BE%8E%E9%A3%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>麻辣炒虾尾 🦞</title>
-    <link href="https://rm-rf.ink/*/9ddcf808.html"/>
-    <id>https://rm-rf.ink/*/9ddcf808.html</id>
-    <published>2024-01-15T06:27:41.000Z</published>
-    <updated>2026-04-27T15:33:00.104Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p><span id="more"></span><h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1><ul class="lvl-0"><li class="lvl-2"><p>小龙虾（冻虾尾）</p></li><li class="lvl-2"><p>大葱</p></li><li class="lvl-2"><p>姜</p></li><li class="lvl-2"><p>蒜</p></li><li class="lvl-2"><p>八角</p></li><li class="lvl-2"><p>花椒</p></li><li class="lvl-2"><p>干辣椒</p></li><li class="lvl-2"><p>啤酒</p></li></ul><h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1><ul class="lvl-0"><li class="lvl-2"><p>花生油 30ml</p></li><li class="lvl-2"><p>郫县豆瓣酱 10ml</p></li><li class="lvl-2"><p>盐 5g</p></li><li class="lvl-2"><p>味精 5g</p></li><li class="lvl-2"><p>鸡精 5g</p></li><li class="lvl-2"><p>生抽 5g</p></li><li class="lvl-2"><p>蚝油 5ml</p></li></ul><h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1><ul class="lvl-0"><li class="lvl-2"><p>清水清洗小龙虾（冻虾尾），起锅烧油炸4分钟；</p></li><li class="lvl-2"><p>放入蒜末翻炒，再放入大葱、姜片、豆瓣酱；</p></li><li class="lvl-2"><p>放入八角、花椒、干辣椒，继续翻炒；</p></li><li class="lvl-2"><p>放入盐、味精、鸡精、生抽、蚝油调味；</p></li><li class="lvl-2"><p>炒香后加入2罐啤酒，煮20分钟；</p></li><li class="lvl-2"><p>最后收汁后即可盛出食用；</p></li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;我媳妇、儿子最喜欢的菜之一&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="菜谱" scheme="https://rm-rf.ink/categories/%E8%8F%9C%E8%B0%B1/"/>
-    
-    
-    <category term="美食" scheme="https://rm-rf.ink/tags/%E7%BE%8E%E9%A3%9F/"/>
-    
-    <category term="虾尾" scheme="https://rm-rf.ink/tags/%E8%99%BE%E5%B0%BE/"/>
-    
-    <category term="麻辣" scheme="https://rm-rf.ink/tags/%E9%BA%BB%E8%BE%A3/"/>
     
   </entry>
   
