@@ -119,15 +119,15 @@
 <link rel="stylesheet" href="/css/highlight.css">
 
   
-  <meta name="description" content="把 Agent 的记忆从简陋的 key-value 改成语义搜索驱动的 MemPalace，记录架构思路和踩坑过程">
+  <meta name="description" content="围绕 Hermes Agent 内置记忆的局限性，讲解如何用 MemPalace 语义记忆层替换改造">
 <meta property="og:type" content="article">
 <meta property="og:title" content="改造 Hermes Agent 记忆系统：基于 MemPalace 的实践">
 <meta property="og:url" content="https://rm-rf.ink/*/38291047.html">
 <meta property="og:site_name" content="rm -rf &#x2F;*">
-<meta property="og:description" content="把 Agent 的记忆从简陋的 key-value 改成语义搜索驱动的 MemPalace，记录架构思路和踩坑过程">
+<meta property="og:description" content="围绕 Hermes Agent 内置记忆的局限性，讲解如何用 MemPalace 语义记忆层替换改造">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-05-01T12:00:00.000Z">
-<meta property="article:modified_time" content="2026-05-01T10:08:10.152Z">
+<meta property="article:modified_time" content="2026-05-01T10:25:55.868Z">
 <meta property="article:author" content="Yq Woe">
 <meta property="article:tag" content="AI">
 <meta property="article:tag" content="Hermes Agent">
@@ -167,160 +167,173 @@
       
           <div id="toc" class="toc-article">
     <div class="toc-title">目录</div>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%8E%9F%E6%9D%A5%E7%9A%84%E8%AE%B0%E5%BF%86%E6%9C%89%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98"><span class="toc-text"> 背景：原来的记忆有什么问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mempalace-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text"> MemPalace 是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E9%80%A0%E6%80%9D%E8%B7%AF"><span class="toc-text"> 改造思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%B0%E5%BF%86%E8%AF%BB%E5%86%99%E6%B5%81%E7%A8%8B"><span class="toc-text"> 记忆读写流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91"><span class="toc-text"> 踩过的坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%88%E6%9E%9C"><span class="toc-text"> 效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text"> 注意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-text"> 结论</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AFhermes-%E5%86%85%E7%BD%AE%E8%AE%B0%E5%BF%86%E6%9C%89%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98"><span class="toc-text"> 背景：Hermes 内置记忆有什么问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E9%80%A0%E6%80%9D%E8%B7%AF"><span class="toc-text"> 改造思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%88%99"><span class="toc-text"> 原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91"><span class="toc-text"> 踩过的坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%88%E6%9E%9C"><span class="toc-text"> 效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text"> 注意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E9%80%A0%E5%89%8D%E5%90%8E%E5%AF%B9%E6%AF%94"><span class="toc-text"> 改造前后对比</span></a></li></ol>
 </div>
 
       
-        <h2 id="背景原来的记忆有什么问题"><a class="markdownIt-Anchor" href="#背景原来的记忆有什么问题"></a> 背景：原来的记忆有什么问题</h2>
-<p>Hermes Agent 默认的记忆是个 key-value，写进去什么就读出来什么，读取逻辑基本等于字符串匹配。用了一阵子，问题就出来了：</p>
+        <h2 id="背景hermes-内置记忆有什么问题"><a class="markdownIt-Anchor" href="#背景hermes-内置记忆有什么问题"></a> 背景：Hermes 内置记忆有什么问题</h2>
+<p>Hermes Agent 有一套内置的记忆系统，基于简单 key-value 存储。每次写入时指定一个 key，读取时用同样的 key 把它取出来。</p>
+<p>实际用下来，问题很具体：</p>
 <ul class="lvl-0">
 <li class="lvl-2">
-<p>&quot;微信截图&quot;和&quot;截图工具&quot;说的是一回事，但搜不到</p>
+<p><strong>表达一变就找不到</strong>：上次记住的是&quot;截图工具&quot;，用户说&quot;微信截图&quot;就匹配不上</p>
 </li>
 <li class="lvl-2">
-<p>记忆一多，自己都不知道存哪了</p>
+<p><strong>key 不一致导致重复存储</strong>：同一个信息有人用 <code>project-path</code> 做 key，有人用 <code>paths</code> 做 key，查的时候不知道用哪个</p>
 </li>
 <li class="lvl-2">
-<p>换个 session，上下文全没了</p>
+<p><strong>没有语义理解</strong>：搜&quot;认证失败&quot;搜不到&quot;401错误&quot;，因为字符串上完全不相关</p>
+</li>
+<li class="lvl-2">
+<p><strong>session 结束后基本清零</strong>：换一个 session，上下文全没了，除非手动迁移 memory 内容</p>
 </li>
 </ul>
-<p>对偶尔用一次的人来说够用，但每天几十个任务、跨多个项目，这套机制撑不住。</p>
-<h2 id="mempalace-是什么"><a class="markdownIt-Anchor" href="#mempalace-是什么"></a> MemPalace 是什么</h2>
-<p>MemPalace 是本地语义记忆系统，数据存在 sqlite 里，不依赖任何云服务。组织结构很直接：</p>
-<pre class="mermaid">graph LR
-    A[Wing<br>项目 / 领域] --> B[Room<br>维度]
-    B --> C[Drawer<br>记忆卡片]
-    
-    C --> D[语义索引]
-    C --> E[时间线]
-    C --> F[知识图谱]</pre>
-<p>核心功能四个：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>mempalace_search</code> — 语义搜索</p>
-</li>
-<li class="lvl-2">
-<p><code>mempalace_kg_query</code> — 知识图谱查询</p>
-</li>
-<li class="lvl-2">
-<p><code>mempalace_add_drawer</code> — 写入记忆</p>
-</li>
-<li class="lvl-2">
-<p><code>mempalace_diary_write</code> — 日记式记录</p>
-</li>
-</ul>
-<p>支持时间线查询，自动归档，用了一阵子感觉比纯 key-value 稳。</p>
+<p>核心问题是：<strong>读取依赖精确匹配，而自然语言本身就是模糊的。</strong></p>
 <h2 id="改造思路"><a class="markdownIt-Anchor" href="#改造思路"></a> 改造思路</h2>
-<p>Hermes Agent 支持 MemoryProvider 插件机制，实现规定接口就能换掉默认记忆层。整体架构如下：</p>
+<p>Hermes Agent 支持 MemoryProvider 插件接口，外部可以接入不同的记忆后端。目标是接一个支持语义搜索的记忆系统——写入时按原样存，读取时按意思搜。</p>
+<p>选的是 MemPalace，本地语义记忆库，ChromaDB 做向量索引，SQLite 做知识图谱和结构化存储。架构上分三层：</p>
 <pre class="mermaid">graph TD
-    subgraph Hermes Agent
-        U[用户消息] --> M[MemoryProvider]
-        M -.->|语义搜索| P[MemPalace]
-        M -.->|知识图谱查询| P
-        M -.->|写入记忆| P
+    subgraph 存储层
+        C[ChromaDB<br>语义向量索引]
+        G[SQLite<br>知识图谱 + 结构化]
     end
     
-    subgraph MemPalace
-        P --> S[sqlite]
-        S --> W1[Wing: 项目A]
-        S --> W2[Wing: 项目B]
-        S --> W3[Wing: 用户配置]
-        W1 --> R1[Room: general]
-        W1 --> R2[Room: diary]
-        W2 --> R3[Room: decisions]
-        R1 --> D1[Drawer]
-        R2 --> D2[Drawer]
+    subgraph 组织层
+        W[Wing<br>项目 / 领域]
+        R[Room<br>general / diary / decisions]
+        D[Drawer<br>具体记忆卡片]
     end
     
-    subgraph 自动归档
-        CRON[cronjob 30min] --> ARCH[归档任务]
-        ARCH --> P
-    end</pre>
-<p>原则就三条：</p>
-<ol>
-<li class="lvl-3">
-<p><strong>读取全走 MemPalace</strong> — 收到消息就按需搜，不再靠内置 memory 注入</p>
-</li>
-<li class="lvl-3">
-<p><strong>写入全走 MemPalace</strong> — 项目进展、bug、偏好全部写入，碰都不碰内置 memory</p>
-</li>
-<li class="lvl-3">
-<p><strong>cronjob 自动归档</strong> — 每 30 分钟自动归档 session 进展，不怕断电丢数据</p>
-</li>
-</ol>
-<p>内置 memory 工具现在只留一个职责：存 MemPalace 的路径，其他一概不存。</p>
-<h2 id="记忆读写流程"><a class="markdownIt-Anchor" href="#记忆读写流程"></a> 记忆读写流程</h2>
-<p>一次完整的记忆读取过程：</p>
+    subgraph 接口层
+        S[mempalace_search<br>语义搜索]
+        K[mempalace_kg_query<br>知识图谱查询]
+        A[mempalace_add_drawer<br>写入记忆]
+        W2[mempalace_diary_write<br>日记记录]
+    end
+    
+    C --> S
+    C --> D
+    G --> K
+    G --> W
+    W --> R
+    R --> D
+    A --> D
+    W2 --> R</pre>
+<p>接入 Hermes 之后，记忆读写流程变成了：</p>
 <pre class="mermaid">sequenceDiagram
     participant U as 用户
     participant H as Hermes
     participant MP as MemPalace
-    participant KG as 知识图谱
-    participant DB as sqlite
+    participant DB as ChromaDB + SQLite
 
     U->>H: 发送消息
     H->>MP: mempalace_search 语义搜索
-    MP->>DB: 查询相似记忆
-    DB-->>MP: 返回结果
-    MP-->>H: 相关记忆列表
-    H->>KG: mempalace_kg_query 关系查询
-    KG-->>H: 实体关系链
+    MP->>DB: 向量相似度查询
+    DB-->>MP: 候选记忆列表
+    MP-->>H: 按相关度排序
+    H->>MP: mempalace_kg_query 实体关系查询
+    DB-->>H: 关联事实链
     H->>H: 组装上下文
-    H-->>U: 携带记忆回复</pre>
-<p>一次记忆写入过程：</p>
-<pre class="mermaid">sequenceDiagram
-    participant H as Hermes
-    participant MP as MemPalace
-    participant DB as sqlite
-    participant CRON as cronjob
+    H-->>U: 携带记忆回复
 
-    H->>H: 处理任务
-    H->>MP: mempalace_add_drawer 写入记忆
-    MP->>DB: 存储Drawer
+    Note over H,U: 后续写入
+
+    H->>MP: mempalace_add_drawer 新记忆
+    MP->>DB: 存入向量库 + 图数据库
     DB-->>MP: 确认写入
-    MP-->>H: 完成
-
-    Note over CRON: 30分钟后
-    CRON->>MP: 自动归档session进展
-    MP->>DB: 更新diary room</pre>
+    MP-->>H: 完成</pre>
+<h2 id="原则"><a class="markdownIt-Anchor" href="#原则"></a> 原则</h2>
+<p>改造后 Hermes 的记忆规则：</p>
+<ol>
+<li class="lvl-3">
+<p><strong>读取全走 MemPalace</strong> — 每次收到消息，先搜索相关记忆，不依赖内置 key-value</p>
+</li>
+<li class="lvl-3">
+<p><strong>写入全走 MemPalace</strong> — 项目信息、用户偏好、待办事项，统统写入 MemPalace</p>
+</li>
+<li class="lvl-3">
+<p><strong>cronjob 自动归档</strong> — 每 30 分钟自动把 session 进展写入 diary room，防止断电丢失</p>
+</li>
+</ol>
+<p>内置 memory 工具仅保留一项职责：存储 MemPalace 的路径配置。</p>
 <h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2>
-<p><strong>1. goja 沙箱限制</strong></p>
-<p>最初想在某个服务 JS Hook 里直接调 MemPalace，结果该服务使用的 JavaScript 引擎对内置对象做了严格限制，node.js 那套基本跑不了。最后改成外面用 Python 脚本中转，Hook 只负责触发。</p>
-<p><strong>2. 某版本 listRule 实测跟文档不符</strong></p>
-<p>官方文档写 <code>listRule: null</code> 代表公开读取，实测不是那回事。翻了半天 issue，正确写法是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">listRule: &quot;@request.auth.id != &#x27;&#x27;&quot;</span><br></pre></td></tr></table></figure>
-<p>有 <a target="_blank" rel="noopener" href="http://auth.id">auth.id</a> 就代表已认证，没登录就没有读取权限。</p>
-<p><strong>3. 开发服务器代理不转发 Authorization</strong></p>
-<p>前端请求打到后端，开发服务器的代理默认不转发 Authorization header，所有认证接口都 401。临时绕法：前端直接请求后端地址，绕过代理。</p>
+<p><strong>1. 内置 memory 和 MemPalace 并存时的优先级</strong></p>
+<p>刚接进去时，两者都在，导致同一个信息存了两份，读取时有时候命中内置 memory，有时候命中 MemPalace，结果不稳定。解决办法是彻底禁用内置 memory 的写入通道，只保留读取用于兼容旧逻辑。</p>
+<p><strong>2. embedding 模型选择影响搜索质量</strong></p>
+<p>MemPalace 的搜索质量依赖 embedding 模型。最早用的模型对中文语义理解偏弱，&quot;登录失败&quot;和&quot;认证异常&quot;这类近义表述匹配不上。换了支持中文的 embedding 模型之后，召回率明显提升。</p>
+<p><strong>3. 知识图谱和向量搜索的分工</strong></p>
+<p>最初想把所有关系都塞进知识图谱，结果图数据膨胀得很快，查询延迟也上来了。后来把频繁更新、时序敏感的（如 session 进度）放在向量库，把稳定事实（项目路径、技术栈、用户偏好）放在知识图谱，分开查询再合并结果。</p>
+<p><strong>4. session 边界和记忆持久化的平衡</strong></p>
+<p>每次 session 结束，Hermes 内部状态会清理，但 MemPalace 是持久化的。最早没做 session 隔离，同一个 Wing 下的记忆被多个 session 交叉污染。后来每个 session 的进展单独写进 diary room，稳定的项目信息写进 general room，泾渭分明。</p>
 <h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2>
-<p>现在每次启动，Agent 能记住：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>项目路径、测试账号、用的什么技术栈</p>
-</li>
-<li class="lvl-2">
-<p>上次做到哪、还有什么没搞完</p>
-</li>
-<li class="lvl-2">
-<p>用户的偏好</p>
-</li>
-</ul>
-<p>换 session 不会从头来。搜&quot;微信截图&quot;能找到&quot;截图工具&quot;相关的内容，不同表述不影响。</p>
+<p>换 session 之后，上下文还在。&quot;之前做到哪&quot;能答上来，&quot;那个 401 错误怎么处理的&quot;能找出来，&quot;用户偏好截图要整屏不要只截二维码&quot;不会被忘掉。</p>
+<p>搜&quot;认证失败&quot;，能找到&quot;登录异常&quot;、“401”、&quot;token 过期&quot;相关内容，不用猜 key 是什么。</p>
 <h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2>
 <ul class="lvl-0">
 <li class="lvl-2">
-<p>MemPalace 是本地的，没有多设备同步，多台电脑用要自己处理同步</p>
+<p>MemPalace 是本地存储，多设备使用需要自己处理同步</p>
 </li>
 <li class="lvl-2">
-<p>语义搜索质量依赖 embedding 模型，模型选得不好结果会很飘</p>
+<p>embedding 模型决定搜索上限，选型要结合自己的语料</p>
 </li>
 <li class="lvl-2">
-<p>写入太频繁 sqlite 会越来越肥，隔一阵子得清理一次</p>
+<p>长期运行后 sqlite 会膨胀，需要定期归档清理</p>
 </li>
 </ul>
-<h2 id="结论"><a class="markdownIt-Anchor" href="#结论"></a> 结论</h2>
-<p>从&quot;存了但找不到&quot;变成&quot;语义相近就能找到&quot;。代价是多引入了一个依赖，但换来的是可查询性和可靠性，我觉得值。</p>
-<p>如果你是从零做 Agent 记忆系统，建议一开始就想清楚走向量搜索还是纯 key-value，这两条路后面的扩展性差很多。</p>
+<h2 id="改造前后对比"><a class="markdownIt-Anchor" href="#改造前后对比"></a> 改造前后对比</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>内置 key-value 记忆</th>
+<th>MemPalace 语义记忆</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>读取方式</strong></td>
+<td>精确 key 匹配</td>
+<td>语义向量相似度</td>
+</tr>
+<tr>
+<td><strong>检索能力</strong></td>
+<td>必须知道当初用什么 key</td>
+<td>描述需求即可，意思对就能找到</td>
+</tr>
+<tr>
+<td><strong>跨 session</strong></td>
+<td>完全丢失</td>
+<td>持久化，换 session 上下文延续</td>
+</tr>
+<tr>
+<td><strong>中文语义</strong></td>
+<td>不支持</td>
+<td>支持中文 embedding</td>
+</tr>
+<tr>
+<td><strong>知识关联</strong></td>
+<td>无</td>
+<td>知识图谱支持实体关系查询</td>
+</tr>
+<tr>
+<td><strong>存储结构</strong></td>
+<td>扁平的 key-value</td>
+<td>Wings → Rooms → Drawers 分层</td>
+</tr>
+<tr>
+<td><strong>外部依赖</strong></td>
+<td>无</td>
+<td>引入 MemPalace + ChromaDB</td>
+</tr>
+<tr>
+<td><strong>运维成本</strong></td>
+<td>无</td>
+<td>需维护本地 sqlite 和向量库</td>
+</tr>
+</tbody>
+</table>
+<p>结论：代价是多引入一个本地依赖，换来的是检索可靠性、跨 session 记忆延续、中文语义理解。值不值看场景——偶尔用一次的 agent，key-value 够用；每天几十个任务、跨多项目的，语义记忆是刚需。</p>
+<p>如果你的 Agent 也面临同样问题，可以从 MemoryProvider 接口入手，接入任意支持向量检索的后端都行，不一定是 MemPalace。</p>
 
       
     </div>
@@ -437,7 +450,7 @@ gitalk.render('gitalk-container')
 </div>
 
 
-<span class="post-count">38k</span>
+<span class="post-count">38.3k</span>
 
 <script type="text/javascript">
 

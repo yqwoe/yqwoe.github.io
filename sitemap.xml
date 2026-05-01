@@ -4,14 +4,14 @@
   <url>
     <loc>https://rm-rf.ink/*/38291047.html</loc>
     
-    <lastmod>2026-05-01T10:08:10.152Z</lastmod>
+    <lastmod>2026-05-01T10:25:55.868Z</lastmod>
     
 
     <id>38291047</id>
     <date>1777636800000</date>
     <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践 | rm -rf /*</title>
     
-    <desc>把 Agent 的记忆从简陋的 key-value 改成语义搜索驱动的 MemPalace，记录架构思路和踩坑过程</desc>
+    <desc>围绕 Hermes Agent 内置记忆的局限性，讲解如何用 MemPalace 语义记忆层替换改造</desc>
   </url>
   
   <url>
@@ -804,7 +804,7 @@
     <date>1584802640000</date>
     <title>路 | rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-wIEyKYqh"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-VJHTZllX"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
@@ -1250,19 +1250,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/2050102104.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
-    
-
-    <id>2050102104</id>
-    <date>1679971236000</date>
-    <title>gitlab & OKR 进行项目管理  | rm -rf /*</title>
-    
-    <desc>本文章围绕gitlab 和 OKR，使用gitlab已有功能，进行项目管理、问题追踪和开发流程规范。</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/*/1406322052.html</loc>
     
     <lastmod>2026-04-27T15:33:00.100Z</lastmod>
@@ -1273,6 +1260,19 @@
     <title>搭建maven私库 | rm -rf /*</title>
     
     <desc>java</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/2050102104.html</loc>
+    
+    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    
+
+    <id>2050102104</id>
+    <date>1679971236000</date>
+    <title>gitlab & OKR 进行项目管理  | rm -rf /*</title>
+    
+    <desc>本文章围绕gitlab 和 OKR，使用gitlab已有功能，进行项目管理、问题追踪和开发流程规范。</desc>
   </url>
   
   <url>
