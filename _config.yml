@@ -20,7 +20,7 @@ default_category: uncategorized
 category_map:
 tag_map:
 
-all_minifier: true
+all_minifier: false
 
 search:
   enable: true
