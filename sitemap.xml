@@ -4,11 +4,11 @@
   <url>
     <loc>https://rm-rf.ink/*/38291047.html</loc>
     
-    <lastmod>2026-05-01T10:25:55.868Z</lastmod>
+    <lastmod>2026-05-01T10:31:33.220Z</lastmod>
     
 
     <id>38291047</id>
-    <date>1777636800000</date>
+    <date>1777631460000</date>
     <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践 | rm -rf /*</title>
     
     <desc>围绕 Hermes Agent 内置记忆的局限性，讲解如何用 MemPalace 语义记忆层替换改造</desc>
