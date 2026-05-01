@@ -15,19 +15,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/38291047.html</loc>
-    
-    <lastmod>2026-05-01T10:05:10.389Z</lastmod>
-    
-
-    <id>38291047</id>
-    <date>1777636800000</date>
-    <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践 | rm -rf /*</title>
-    
-    <desc>把 Hermes Agent 的记忆从简陋的 key-value 改成语义搜索驱动的 MemPalace，记录踩坑和思考</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/*/96208538.html</loc>
     
     <lastmod>2026-04-27T15:38:59.157Z</lastmod>
