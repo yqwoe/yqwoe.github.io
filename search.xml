@@ -760,41 +760,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Cas Server 本地部署</title>
-    <url>//*/6e8cb24c.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
-<blockquote>
-<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-</blockquote>
-<span id="more"></span>
-<blockquote>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
-</blockquote>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
-<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
-]]></content>
-      <categories>
-        <category>Cas</category>
-      </categories>
-      <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nginx 负载均衡</title>
     <url>//*/59cc1bd2.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
@@ -842,6 +807,41 @@
         <tag>poll</tag>
         <tag>linux</tag>
         <tag>unix like os</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cas Server 本地部署</title>
+    <url>//*/6e8cb24c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
+<blockquote>
+<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+</blockquote>
+<span id="more"></span>
+<blockquote>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
+<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>Cas</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
       </tags>
   </entry>
   <entry>
@@ -1112,6 +1112,228 @@
       </tags>
   </entry>
   <entry>
+    <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记</title>
+    <url>//*/46499b7b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="从零构建-hermes-agent-记忆系统"><a class="markdownIt-Anchor" href="#从零构建-hermes-agent-记忆系统"></a> 从零构建 Hermes Agent 记忆系统</h1>
+<h2 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h2>
+<p>在做 Hermes Agent 的记忆系统时，遇到了一个核心问题：</p>
+<blockquote>
+<p><strong>MemPalace 当时是「对话录像机」——什么都记，95% 的抽屉从未被检索，凭证还泄露进向量数据库。</strong></p>
+</blockquote>
+<p>这不是一个工程问题，是一个<strong>架构问题</strong>。</p>
+<hr>
+<h2 id="第一性原理记忆系统的两个正交通道"><a class="markdownIt-Anchor" href="#第一性原理记忆系统的两个正交通道"></a> 第一性原理：记忆系统的两个正交通道</h2>
+<p>解决这个问题的关键，是把「记忆」这个模糊概念拆解到最底层。</p>
+<p><strong>记忆系统有两个完全正交的维度：</strong></p>
+<table>
+<thead>
+<tr>
+<th>通道</th>
+<th>作用</th>
+<th>触发时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Write（提取）</strong></td>
+<td>把当前对话中的重要信息写入长期存储</td>
+<td>Turn 结束时</td>
+</tr>
+<tr>
+<td><strong>Recall（召回）</strong></td>
+<td>把过去记住的信息注入当前上下文</td>
+<td>Turn 开始前</td>
+</tr>
+</tbody>
+</table>
+<p>这两个通道<strong>不能相互替代</strong>：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>没有 Write，记忆永远不持久化</p>
+</li>
+<li class="lvl-2">
+<p>没有 Recall，agent 无法「记得」之前说过什么</p>
+</li>
+</ul>
+<p>大多数记忆系统的失败，都源于混淆了这两个通道——要么只管写不管读，要么只管读不管写。</p>
+<hr>
+<h2 id="迭代路径"><a class="markdownIt-Anchor" href="#迭代路径"></a> 迭代路径</h2>
+<h3 id="第一阶段从论文出发选择-mempalace"><a class="markdownIt-Anchor" href="#第一阶段从论文出发选择-mempalace"></a> 第一阶段：从论文出发，选择 MemPalace</h3>
+<p>参考 Hindsight is 20/20 论文（arXiv:2512.12818, Dec 2025），设计了一套完整的记忆架构。</p>
+<p><strong>为什么选 MemPalace？</strong></p>
+<p>在开始选型之前，我首先分析了当时的现状：赫妹🤡的记忆系统依赖 Hermes Agent 内置的 MemPalace，它是我（吴）为 Hermes Agent 专门开发的记忆存储系统，已经深度嵌入 Hermes 的生命周期。</p>
+<p>MemPalace 当时的架构是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">MemPalace (ChromaDB + SQLite)</span><br><span class="line">├── wings/</span><br><span class="line">│   ├── wing_hermes/              # Agent 自我知识</span><br><span class="line">│   │   ├── memory/               # 结构化事实</span><br><span class="line">│   │   ├── profile/              # Agent 配置</span><br><span class="line">│   │   └── diary/               # AAAK 格式 session 归档</span><br><span class="line">│   └── wing_user_&#123;user_id&#125;/      # 用户记忆（per-user）</span><br><span class="line">│       ├── memory/               # 项目事实、工具习惯</span><br><span class="line">│       ├── profile/             # 用户偏好</span><br><span class="line">│       └── diary/               # session 观察</span><br><span class="line">├── knowledge_graph.sqlite3       # 实体关系图</span><br><span class="line">└── palace/</span><br><span class="line">    └── mempalace.sqlite3        # 元数据（wing/room/drawer 索引）</span><br></pre></td></tr></table></figure>
+<p><strong>它已经是赫妹🤡记忆系统的基础设施</strong>。换掉它意味着重写大量已稳定的代码。直接在其上构建，而不是推倒重来，是最务实的选择。</p>
+<p>更重要的是，MemPalace 的核心设计——<strong>wing / room / drawer 三级嵌套 + ChromaDB 向量存储 + SQLite 关系图</strong>——这三层存储正交且互补：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>ChromaDB</strong>：语义检索，高维向量相似度搜索</p>
+</li>
+<li class="lvl-2">
+<p><strong>SQLite 元数据</strong>：wing/room/drawer 的索引，快速精确查询</p>
+</li>
+<li class="lvl-2">
+<p><strong>knowledge_graph.sqlite3</strong>：实体共指关系，因果链追溯</p>
+</li>
+</ul>
+<p>这个组合能够支撑 Hindsight 的 Recall Pipeline（四路检索 + RRF），不需要引入额外的外部依赖。</p>
+<p><strong>Phase 1 的目标：</strong> 引入 Hindsight 的 Layer1-4 四层过滤 + Four-Network 存储，在 MemPalace 现有数据结构上增量实现认知架构。</p>
+<p><strong>Phase 1 设计的架构：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对话输入</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L0 Security Filter  ← 凭证/密码/Token 正则过滤</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L1 Pattern Extract   ← 双语正则提取 decision/preference/milestone/emotional</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L2 LLM Semantic     ← MiniMax/Qwen 判断是否保留</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L3 ChromaDB Dedup   ← 向量相似度去重，阈值 0.78</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">Four-Network Route  ← ContentRouter 分发到 W/B/O/S 四个网络</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/world_facts</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/experience</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/opinion  [新增]</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/entity    [新增]</span><br></pre></td></tr></table></figure>
+<p><strong>这个设计是纸上谈兵。</strong></p>
+<h3 id="第二阶段撞墙"><a class="markdownIt-Anchor" href="#第二阶段撞墙"></a> 第二阶段：撞墙</h3>
+<p>实现到一半，发现了四个架构性缺陷，每一个都足以让系统失效：</p>
+<p><strong>问题1：两条互不相交的写入路径</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">路径A: FiltrationLayer → ContentRouter → Four-Network</span><br><span class="line">路径B: FiltrationLayer → writer → memories_*</span><br></pre></td></tr></table></figure>
+<p>两条路径互不干扰，写入位置完全不同，数据永远散落在两处。</p>
+<p><strong>问题2：ChromaDB Client 不共享</strong></p>
+<p>每个 Network 在 <code>write()</code> 内部各自创建独立的 <code>chromadb.PersistentClient()</code> 实例。写入操作作用在<strong>进程私有句柄</strong>上，数据实际落在内存里，没有持久化到磁盘。</p>
+<p>测试验证：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Router: [(&#x27;experience&#x27;, 2)]</span><br><span class="line">WORLD_FACT → ChromaDB: 0 条  ← 写了个寂寞</span><br><span class="line">EXPERIENCE → ChromaDB: 0 条   ← 同上</span><br></pre></td></tr></table></figure>
+<p><strong>问题3：ContentRouter 分类逻辑偏离论文</strong></p>
+<p>论文定义 WORLD_FACT 是「外部客观事实」，但实现把所有包含「决定/偏好/意图」的内容全扔进 EXPERIENCE。导致 world_facts 永远为空，opinion 分支是空代码 <code>pass</code>。</p>
+<p><strong>问题4：Opinion Write Path 是空的</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">elif</span> content_type == ContentType.OPINION:</span><br><span class="line">    <span class="keyword">pass</span>  <span class="comment"># ← 空实现</span></span><br></pre></td></tr></table></figure>
+<p>OpinionNetwork 类存在，代码在，但从来没调用过。</p>
+<h3 id="第三阶段phase-0-修复"><a class="markdownIt-Anchor" href="#第三阶段phase-0-修复"></a> 第三阶段：Phase 0 修复</h3>
+<p>针对 Phase 0 问题逐一修复，这是整个重构的基础：</p>
+<p><strong>1. ChromaDB Client 单例化</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">_client: <span class="type">Optional</span>[PersistentClient] = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_chroma_client</span>() -&gt; PersistentClient:</span><br><span class="line">    <span class="keyword">global</span> _client</span><br><span class="line">    <span class="keyword">if</span> _client <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        _client = chromadb.PersistentClient(path=palace_path)</span><br><span class="line">    <span class="keyword">return</span> _client</span><br></pre></td></tr></table></figure>
+<p>替换所有 Network 中的独立 client 创建，所有写入现在落在同一个文件句柄上。</p>
+<p><strong>2. ContentRouter 分类规则修正</strong></p>
+<p>不再依赖 LLM 自由分类，用规则快速路由：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ROUTE_MAP = &#123;</span><br><span class="line">    <span class="string">&quot;decision&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;milestone&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;problem&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;emotional&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;action&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;preference&quot;</span>: ContentType.OPINION,</span><br><span class="line">    <span class="string">&quot;constraint&quot;</span>: ContentType.WORLD_FACT,</span><br><span class="line">    <span class="string">&quot;setup&quot;</span>: ContentType.WORLD_FACT,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>3. Opinion Write Path 补全</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">elif</span> content_type == ContentType.OPINION:</span><br><span class="line">    opinion_record = <span class="variable language_">self</span>._opinion_network.write(</span><br><span class="line">        text=chunk.content,</span><br><span class="line">        confidence=<span class="number">0.5</span>,  <span class="comment"># 论文定义：初始置信度 0.5</span></span><br><span class="line">        evidence=[<span class="string">f&quot;source: <span class="subst">&#123;chunk.source&#125;</span>&quot;</span>],</span><br><span class="line">    )</span><br></pre></td></tr></table></figure>
+<h3 id="第四阶段over-engineering-发现"><a class="markdownIt-Anchor" href="#第四阶段over-engineering-发现"></a> 第四阶段：Over-engineering 发现</h3>
+<p>修完 Phase 0 后，看清了 Four-Network 本身的问题：</p>
+<p><strong>理由：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>Experience / World / Opinion / Entity 四个 Collection，实际使用中 95% 的查询都是向量相似度搜索</p>
+</li>
+<li class="lvl-2">
+<p>四路分类的价值在于「不同类型用不同召回策略」，但实现复杂度远超收益</p>
+</li>
+<li class="lvl-2">
+<p>ChromaDB 的 collection 不是关系型数据库，多类型混写在一个 collection 里完全可行</p>
+</li>
+<li class="lvl-2">
+<p>每次 Recall 都要从四个 collection 拉数据再合并，延迟翻倍</p>
+</li>
+</ul>
+<p><strong>决策：简化为统一 collection</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">memories_&#123;user_id&#125;_&#123;project&#125;  ← 所有类型的记忆写入同一个 collection</span><br></pre></td></tr></table></figure>
+<p>用 <code>memory_type</code> 字段标记类型，查询时用向量相似度 + metadata 过滤。Wing/Room 维度保留在 MemPalace 三层结构中，不侵入 ChromaDB collection 命名。</p>
+<h3 id="第五阶段layer2-llm-也被干掉了"><a class="markdownIt-Anchor" href="#第五阶段layer2-llm-也被干掉了"></a> 第五阶段：Layer2 LLM 也被干掉了</h3>
+<p>Layer2 原来是 LLM 判断「这条记忆是否值得保留」。</p>
+<p>但实测发现：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>LLM 判断和正则规则的结果高度重合</p>
+</li>
+<li class="lvl-2">
+<p>多一次 LLM 调用 = 多一次延迟 + 多一次 Token 消耗</p>
+</li>
+<li class="lvl-2">
+<p>简单置信度阈值过滤效果一样好</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 改动前</span></span><br><span class="line">result = llm_classify(content)  <span class="comment"># API 调用</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 改动后</span></span><br><span class="line">confidence = <span class="built_in">sum</span>(keyword_score <span class="keyword">for</span> keyword <span class="keyword">in</span> PATTERNS <span class="keyword">if</span> keyword <span class="keyword">in</span> content)</span><br><span class="line"><span class="keyword">if</span> confidence &gt;= THRESHOLD:</span><br><span class="line">    keep()</span><br></pre></td></tr></table></figure>
+<p>Layer2 现在是纯正则，不再调用任何 LLM。</p>
+<h3 id="最终架构"><a class="markdownIt-Anchor" href="#最终架构"></a> 最终架构</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Turn 结束 → sync_turn()</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L0 Security    ← 凭证正则过滤（never call LLM）</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L1 Pattern     ← 双语正则，提取 decision/preference/problem/milestone/emotional/action/constraint</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L2 Threshold   ← 置信度阈值过滤（已 bypass LLM）</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L3 Dedup       ← ChromaDB cosine 去重</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">Writer         ← 写入 memories_&#123;user&#125;_&#123;project&#125; + KG triple</span><br></pre></td></tr></table></figure>
+<p><strong>召回链路：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Turn 开始 → on_turn_start()</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">queue_prefetch()  ← 后台预热</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">prefetch()        ← 返回 recall cache</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">system_prompt_block()  ← recall 结果注入 system prompt</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="关键教训"><a class="markdownIt-Anchor" href="#关键教训"></a> 关键教训</h2>
+<h3 id="1-两条正交通道不能合并"><a class="markdownIt-Anchor" href="#1-两条正交通道不能合并"></a> 1. 两条正交通道，不能合并</h3>
+<p>Write（提取）和 Recall（召回）是完全独立的功能，compaction 只管理 context window 大小，<strong>不负责记忆持久化</strong>。试图用 compaction 替代记忆写入，是架构错误。</p>
+<h3 id="2-chromadb-单例是基础中的基础"><a class="markdownIt-Anchor" href="#2-chromadb-单例是基础中的基础"></a> 2. ChromaDB 单例是基础中的基础</h3>
+<p>所有涉及持久化的模块，必须共享同一个 ChromaDB client。进程隔离 + 文件系统写入，看起来能工作，实际是未定义行为。</p>
+<h3 id="3-删除比添加更难"><a class="markdownIt-Anchor" href="#3-删除比添加更难"></a> 3. 删除比添加更难</h3>
+<p>最终交付的架构比最初设计少了：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>NarrativeFusion（合并收益低于成本）</p>
+</li>
+<li class="lvl-2">
+<p>ContentRouter（规则路由替代 LLM 路由）</p>
+</li>
+<li class="lvl-2">
+<p>OpinionManager（Knowledge Graph predicate override 足够）</p>
+</li>
+<li class="lvl-2">
+<p>Layer2 LLM（正则阈值效果一样）</p>
+</li>
+</ul>
+<p>删除这些之后，测试从 50 个变成了 141 个，覆盖率反而更高。</p>
+<h3 id="4-prompt-要润色"><a class="markdownIt-Anchor" href="#4-prompt-要润色"></a> 4. Prompt 要润色</h3>
+<p>机械腔的 prompt 会导致模型角色疲劳。润色原则：</p>
+<table>
+<thead>
+<tr>
+<th>原则</th>
+<th>错误示例</th>
+<th>润色后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>去机械感</td>
+<td>“请基于以上事实给出反思”</td>
+<td>“结合我们之前聊过的内容，你怎么看？”</td>
+</tr>
+<tr>
+<td>口语化</td>
+<td>“Output only the category name”</td>
+<td>“Which bucket fits best?”</td>
+</tr>
+<tr>
+<td>上下文连贯</td>
+<td>“Facts:\n{facts}\nYour response:”</td>
+<td>“Here’s what I recall:\n{recalled_facts_str}\nWhat do I make of this?”</td>
+</tr>
+</tbody>
+</table>
+<p>中英文 prompt 都需要润色，不是只有中文才润色。</p>
+<hr>
+<h2 id="当前状态"><a class="markdownIt-Anchor" href="#当前状态"></a> 当前状态</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Pytest: 141 passed ✅</span><br><span class="line">Metrics: sync_turn 24次, accepted 6次 (25%)</span><br><span class="line">Behavior: 短对话不提取（正常，内容不够）</span><br><span class="line">         长对话(&gt;400 tokens)提取率显著提高</span><br></pre></td></tr></table></figure>
+<p>25% 的 extraction rate 不是「75%失败」——而是对话中大多数内容（简单确认、闲聊、礼貌性回复）本来就不值得记住。</p>
+<hr>
+<h2 id="引用"><a class="markdownIt-Anchor" href="#引用"></a> 引用</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://arxiv.org/abs/2512.12818v1">Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects</a> — arXiv:2512.12818v1, December 2025</p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com">MemPalace</a> — Hermes Agent 记忆存储基础设施</p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com/stitionai/humanizer">Humanizer</a> — Prompt 润色工具</p>
+</li>
+<li class="lvl-2">
+<p><a href="ssh://gitlab.ha-guoli.cn:2222/yqwoe/mem-palace-provider.git">memory-filtration-layer 项目地址</a></p>
+</li>
+</ul>
+<hr>
+<p><em>作者：nil 的助手 [赫妹🤡]</em></p>
+]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Agent</tag>
+        <tag>Memory</tag>
+        <tag>Hermes</tag>
+        <tag>Python</tag>
+        <tag>MemPalace</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>29岁,再见！</title>
     <url>//*/1873749776.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -1330,37 +1552,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建maven私库</title>
-    <url>//*/1406322052.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
-<span id="more"></span>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
-<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
-修改密码后 admin.password自动删除</p>
-<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
-<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
-<p>develop =&gt; nx-all</p>
-<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
-<p>developer =&gt; develop</p>
-<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
-<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>docker</tag>
-        <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>gitlab &amp; OKR 进行项目管理 </title>
     <url>//*/2050102104.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -1546,6 +1737,37 @@ section 运维阶段
         <tag>gitlab</tag>
         <tag>okr</tag>
         <tag>项目管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建maven私库</title>
+    <url>//*/1406322052.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-docker-搭建maven私库"><a class="markdownIt-Anchor" href="#1-docker-搭建maven私库"></a> 1. docker 搭建maven私库</h1>
+<span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -d --name nexus -p 8081:8081 -d --restart always -u root --privileged=true -v ~/opt/nexus-data:/nexus-data sonatype/nexus3</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">docker exec -it nexus //进入容器</span><br><span class="line">cd /nexus-data</span><br><span class="line">cat admin.password //复制密码</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://ip:8081">http://ip:8081</a><br>
+修改密码后 admin.password自动删除</p>
+<h1 id="2-配置maven私库"><a class="markdownIt-Anchor" href="#2-配置maven私库"></a> 2. 配置maven私库</h1>
+<h4 id="21添加-role"><a class="markdownIt-Anchor" href="#21添加-role"></a> 2.1添加 role</h4>
+<p>develop =&gt; nx-all</p>
+<h5 id="22-添加-user"><a class="markdownIt-Anchor" href="#22-添加-user"></a> 2.2 添加 user</h5>
+<p>developer =&gt; develop</p>
+<h1 id="3-插件开发环境配置"><a class="markdownIt-Anchor" href="#3-插件开发环境配置"></a> 3. 插件开发环境配置</h1>
+<h4 id="31-mavensettingxml配置"><a class="markdownIt-Anchor" href="#31-mavensettingxml配置"></a> 3.1 maven/setting.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml的id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  <span class="comment">&lt;!--对应pom.xml的id=maven-releases-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-snapshots-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">username</span>&gt;</span>developer<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">password</span>&gt;</span>Glrj@1234<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirror</span>&gt;</span> <span class="comment">&lt;!--对应pom.xml中id=maven-public-gl的仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>GZ Repository Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="32-插件项目pomxml配置"><a class="markdownIt-Anchor" href="#32-插件项目pomxml配置"></a> 3.2 插件项目pom.xml配置</h4>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    &lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>low-code<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>低代码开放平台<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	&lt;...&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-releases-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-snapshots-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-snapshots/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="33-项目依赖pomxml"><a class="markdownIt-Anchor" href="#33-项目依赖pomxml"></a> 3.3 项目依赖pom.xml</h5>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>maven-public-gl<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://nexus.corebrew.net/repository/maven-public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>docker</tag>
+        <tag>maven</tag>
       </tags>
   </entry>
   <entry>
@@ -2300,6 +2522,29 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>读《小王子》</title>
+    <url>//*/2855774435.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
+<span id="more"></span>
+<p>  《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>  旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>  小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>小王子</tag>
+        <tag>儿子</tag>
+        <tag>书</tag>
+        <tag>星球旅行</tag>
+        <tag>点灯的人</tag>
+        <tag>狐狸</tag>
+        <tag>独一无二</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -2385,29 +2630,6 @@ section 运维阶段
         <tag>docker</tag>
         <tag>容器技术</tag>
         <tag>traefik2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>读《小王子》</title>
-    <url>//*/2855774435.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
-<span id="more"></span>
-<p>  《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>  旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>  小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>小王子</tag>
-        <tag>儿子</tag>
-        <tag>书</tag>
-        <tag>星球旅行</tag>
-        <tag>点灯的人</tag>
-        <tag>狐狸</tag>
-        <tag>独一无二</tag>
       </tags>
   </entry>
   <entry>
@@ -3148,6 +3370,115 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
+    <url>//*/5f9c1a2b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="为什么要换"><a class="markdownIt-Anchor" href="#为什么要换"></a> 为什么要换</h2>
+<p>用 OpenClaw 一段时间后，有几个问题实在忍不了。</p>
+<p>任务一多，换个 session 上下文就没了。调试时想找之前的思路，找不到；换个方式问同样的问题，AI 给的答案和上次完全不一样。记忆管理基本靠手功——key 命名看心情，同一条信息被存三五份是常事。</p>
+<p>换 Hermes 的原因就一个：<strong>它真的能记住上下文，跨 session 不会断。</strong></p>
+<h2 id="迁移了什么"><a class="markdownIt-Anchor" href="#迁移了什么"></a> 迁移了什么</h2>
+<h3 id="记忆文件"><a class="markdownIt-Anchor" href="#记忆文件"></a> 记忆文件</h3>
+<p>OpenClaw workspace 里有几个核心文件：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>SOUL.md</code> — 人设/性格设定</p>
+</li>
+<li class="lvl-2">
+<p><code>AGENTS.md</code> — 工作指令集</p>
+</li>
+<li class="lvl-2">
+<p><code>MEMORY.md</code> — 长期记忆</p>
+</li>
+<li class="lvl-2">
+<p><code>USER.md</code> — 用户信息</p>
+</li>
+</ul>
+<p>迁移之后分散到了不同位置：<code>SOUL.md</code> 进了 <code>~/.hermes/SOUL.md</code>，<code>AGENTS.md</code> 要手动指定目标路径，<code>MEMORY.md</code> 和 <code>USER.md</code> 解析后写入了 <code>~/.hermes/memories/</code>。</p>
+<p><code>hermes claw migrate</code> 可以自动迁移，但默认是 <code>--dry-run</code> 只预览不执行，别漏了这个参数。</p>
+<h3 id="skill"><a class="markdownIt-Anchor" href="#skill"></a> Skill</h3>
+<p>OpenClaw 的 skill 和 Hermes 不完全兼容。迁移之后要重装，部分自定义 skill 要么重新写，要么直接放弃。</p>
+<h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3>
+<p>OpenClaw 的 <code>openclaw.json</code> 里存储了 API keys 和各种配置项。迁移时这些配置默认会保留，但建议迁移完之后仔细核对一遍，特别是 API 相关的配置。</p>
+<h2 id="hermes-的记忆系统是什么样的"><a class="markdownIt-Anchor" href="#hermes-的记忆系统是什么样的"></a> Hermes 的记忆系统是什么样的</h2>
+<p>Hermes 内置记忆分三层：</p>
+<p><strong>短期记忆</strong> 通过 system prompt 注入，受 token 限制，大概 2200 字符。<strong>用户 Profile</strong> 存在 <code>~/.hermes/memories/USER.md</code>，以 <code>§</code> 分隔条目。<strong>长期记忆</strong>是内置记忆的主力，key-value 读写，支持跨 session 持久化。</p>
+<p>比 OpenClaw 强不少，但还有问题：读取依赖精确 key，自然语言描述一变就匹配不上。所以我又接了 MemPalace 做语义记忆层，专门解决这个问题。</p>
+<h2 id="迁移后遇到的问题"><a class="markdownIt-Anchor" href="#迁移后遇到的问题"></a> 迁移后遇到的问题</h2>
+<p><strong>记忆丢失</strong>是第一个坎。新系统对之前的项目上下文一无所知，要手动把 <a href="http://MEMORY.md">MEMORY.md</a> 迁移过来，重新建立记忆规范。这个工作量不小，之前积累的那些碎片知识大部分要重新喂一遍。</p>
+<p><strong>Skill 兼容性</strong>是第二个。有些在 OpenClaw 上跑得好好的自定义 skill，Hermes 上面直接废掉了。不是语法问题，是整个运行环境不一样。</p>
+<p><strong>配置不一致</strong>是第三个。迁移工具保留了大部分配置，但路径相关的设置还是要自己过一遍。</p>
+<h2 id="两个平台的记忆系统对比"><a class="markdownIt-Anchor" href="#两个平台的记忆系统对比"></a> 两个平台的记忆系统对比</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>OpenClaw</th>
+<th>Hermes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>记忆持久化</td>
+<td>文件为主，session 之间不共享</td>
+<td>key-value，支持跨 session</td>
+</tr>
+<tr>
+<td>语义搜索</td>
+<td>无</td>
+<td>无（需借助外部插件）</td>
+</tr>
+<tr>
+<td>记忆容量</td>
+<td>受文件大小限制</td>
+<td>受 token 限制，约 2200 字符</td>
+</tr>
+<tr>
+<td>迁移工具</td>
+<td><code>hermes claw migrate</code></td>
+<td>内置，支持预览</td>
+</tr>
+<tr>
+<td>Skill 生态</td>
+<td>独立体系</td>
+<td>Hermes 专属</td>
+</tr>
+</tbody>
+</table>
+<h2 id="迁移流程图"><a class="markdownIt-Anchor" href="#迁移流程图"></a> 迁移流程图</h2>
+<pre class="mermaid">graph LR
+    A[OpenClaw workspace] --> B{hermes claw migrate --dry-run}
+    B -->|预览| C[确认文件清单]
+    C --> D[执行迁移]
+    D --> E[SOUL.md<br>~/.hermes/SOUL.md]
+    D --> F[AGENTS.md<br>指定目标路径]
+    D --> G[MEMORY.md + USER.md<br>~/.hermes/memories/]
+    D --> H[openclaw.json<br>API keys 保留]
+    E --> I[核对配置]
+    F --> I
+    G --> I
+    H --> I
+    I --> J[接 MemPalace<br>语义记忆层]
+    J --> K[完成]</pre>
+<h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2>
+<p><strong>坑一：<a href="http://AGENTS.md">AGENTS.md</a> 没指定路径就被跳过了。</strong> 第一次跑迁移命令，没加 <code>--workspace-target</code>，<a href="http://AGENTS.md">AGENTS.md</a> 直接被跳过。直到发现 Agent 行为和之前不一样，才发现指令集根本没迁移过来。</p>
+<p><strong>坑二：Skill 迁移完之后路径全变了。</strong> OpenClaw 的 skill 放在 <code>~/.openclaw/skills/</code>，Hermes 在 <code>~/.hermes/skills/</code>。脚本不负责迁移 skill，重新安装花了不少时间。</p>
+<p><strong>坑三：Session 切换后记忆恢复慢。</strong> Hermes 虽然支持跨 session 记忆，但刚迁移完 Agent 对老项目完全没上下文。需要主动把之前 <a href="http://MEMORY.md">MEMORY.md</a> 的内容通过 MemPalace 重建一遍，不是自动的。</p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>从 OpenClaw 到 Hermes，最大的收获是记忆持久化和 session 管理。对需要长期跟踪任务、跨会话保持上下文的人来说，这步迁移值。但 Hermes 内置记忆仍有语义匹配的短板，建议配合 MemPalace 使用。</p>
+<p>迁移本身不算复杂，<code>hermes claw migrate</code> 能处理大部分文件迁移工作，主要工作量在 skill 重装和配置核对。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Hermes Agent</tag>
+        <tag>OpenClaw</tag>
+        <tag>迁移</tag>
+        <tag>记忆系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一次ios网页样式问题排查心路历程</title>
     <url>//*/149409992.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</p>
@@ -3820,8 +4151,8 @@ section 运维阶段
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>Hermes Agent</tag>
         <tag>MemPalace</tag>
+        <tag>Hermes Agent</tag>
         <tag>记忆系统</tag>
       </tags>
   </entry>
@@ -4345,12 +4676,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-VJHTZllX" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-YaAajFOZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-VJHTZllX"),
+            element: document.getElementById("aplayer-YaAajFOZ"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -4993,115 +5324,6 @@ ExcelUtil --> RecordHandler</pre>
         <tag>美食</tag>
         <tag>虾尾</tag>
         <tag>麻辣</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
-    <url>//*/5f9c1a2b.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="为什么要换"><a class="markdownIt-Anchor" href="#为什么要换"></a> 为什么要换</h2>
-<p>用 OpenClaw 一段时间后，有几个问题实在忍不了。</p>
-<p>任务一多，换个 session 上下文就没了。调试时想找之前的思路，找不到；换个方式问同样的问题，AI 给的答案和上次完全不一样。记忆管理基本靠手功——key 命名看心情，同一条信息被存三五份是常事。</p>
-<p>换 Hermes 的原因就一个：<strong>它真的能记住上下文，跨 session 不会断。</strong></p>
-<h2 id="迁移了什么"><a class="markdownIt-Anchor" href="#迁移了什么"></a> 迁移了什么</h2>
-<h3 id="记忆文件"><a class="markdownIt-Anchor" href="#记忆文件"></a> 记忆文件</h3>
-<p>OpenClaw workspace 里有几个核心文件：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>SOUL.md</code> — 人设/性格设定</p>
-</li>
-<li class="lvl-2">
-<p><code>AGENTS.md</code> — 工作指令集</p>
-</li>
-<li class="lvl-2">
-<p><code>MEMORY.md</code> — 长期记忆</p>
-</li>
-<li class="lvl-2">
-<p><code>USER.md</code> — 用户信息</p>
-</li>
-</ul>
-<p>迁移之后分散到了不同位置：<code>SOUL.md</code> 进了 <code>~/.hermes/SOUL.md</code>，<code>AGENTS.md</code> 要手动指定目标路径，<code>MEMORY.md</code> 和 <code>USER.md</code> 解析后写入了 <code>~/.hermes/memories/</code>。</p>
-<p><code>hermes claw migrate</code> 可以自动迁移，但默认是 <code>--dry-run</code> 只预览不执行，别漏了这个参数。</p>
-<h3 id="skill"><a class="markdownIt-Anchor" href="#skill"></a> Skill</h3>
-<p>OpenClaw 的 skill 和 Hermes 不完全兼容。迁移之后要重装，部分自定义 skill 要么重新写，要么直接放弃。</p>
-<h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3>
-<p>OpenClaw 的 <code>openclaw.json</code> 里存储了 API keys 和各种配置项。迁移时这些配置默认会保留，但建议迁移完之后仔细核对一遍，特别是 API 相关的配置。</p>
-<h2 id="hermes-的记忆系统是什么样的"><a class="markdownIt-Anchor" href="#hermes-的记忆系统是什么样的"></a> Hermes 的记忆系统是什么样的</h2>
-<p>Hermes 内置记忆分三层：</p>
-<p><strong>短期记忆</strong> 通过 system prompt 注入，受 token 限制，大概 2200 字符。<strong>用户 Profile</strong> 存在 <code>~/.hermes/memories/USER.md</code>，以 <code>§</code> 分隔条目。<strong>长期记忆</strong>是内置记忆的主力，key-value 读写，支持跨 session 持久化。</p>
-<p>比 OpenClaw 强不少，但还有问题：读取依赖精确 key，自然语言描述一变就匹配不上。所以我又接了 MemPalace 做语义记忆层，专门解决这个问题。</p>
-<h2 id="迁移后遇到的问题"><a class="markdownIt-Anchor" href="#迁移后遇到的问题"></a> 迁移后遇到的问题</h2>
-<p><strong>记忆丢失</strong>是第一个坎。新系统对之前的项目上下文一无所知，要手动把 <a href="http://MEMORY.md">MEMORY.md</a> 迁移过来，重新建立记忆规范。这个工作量不小，之前积累的那些碎片知识大部分要重新喂一遍。</p>
-<p><strong>Skill 兼容性</strong>是第二个。有些在 OpenClaw 上跑得好好的自定义 skill，Hermes 上面直接废掉了。不是语法问题，是整个运行环境不一样。</p>
-<p><strong>配置不一致</strong>是第三个。迁移工具保留了大部分配置，但路径相关的设置还是要自己过一遍。</p>
-<h2 id="两个平台的记忆系统对比"><a class="markdownIt-Anchor" href="#两个平台的记忆系统对比"></a> 两个平台的记忆系统对比</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>OpenClaw</th>
-<th>Hermes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>记忆持久化</td>
-<td>文件为主，session 之间不共享</td>
-<td>key-value，支持跨 session</td>
-</tr>
-<tr>
-<td>语义搜索</td>
-<td>无</td>
-<td>无（需借助外部插件）</td>
-</tr>
-<tr>
-<td>记忆容量</td>
-<td>受文件大小限制</td>
-<td>受 token 限制，约 2200 字符</td>
-</tr>
-<tr>
-<td>迁移工具</td>
-<td><code>hermes claw migrate</code></td>
-<td>内置，支持预览</td>
-</tr>
-<tr>
-<td>Skill 生态</td>
-<td>独立体系</td>
-<td>Hermes 专属</td>
-</tr>
-</tbody>
-</table>
-<h2 id="迁移流程图"><a class="markdownIt-Anchor" href="#迁移流程图"></a> 迁移流程图</h2>
-<pre class="mermaid">graph LR
-    A[OpenClaw workspace] --> B{hermes claw migrate --dry-run}
-    B -->|预览| C[确认文件清单]
-    C --> D[执行迁移]
-    D --> E[SOUL.md<br>~/.hermes/SOUL.md]
-    D --> F[AGENTS.md<br>指定目标路径]
-    D --> G[MEMORY.md + USER.md<br>~/.hermes/memories/]
-    D --> H[openclaw.json<br>API keys 保留]
-    E --> I[核对配置]
-    F --> I
-    G --> I
-    H --> I
-    I --> J[接 MemPalace<br>语义记忆层]
-    J --> K[完成]</pre>
-<h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2>
-<p><strong>坑一：<a href="http://AGENTS.md">AGENTS.md</a> 没指定路径就被跳过了。</strong> 第一次跑迁移命令，没加 <code>--workspace-target</code>，<a href="http://AGENTS.md">AGENTS.md</a> 直接被跳过。直到发现 Agent 行为和之前不一样，才发现指令集根本没迁移过来。</p>
-<p><strong>坑二：Skill 迁移完之后路径全变了。</strong> OpenClaw 的 skill 放在 <code>~/.openclaw/skills/</code>，Hermes 在 <code>~/.hermes/skills/</code>。脚本不负责迁移 skill，重新安装花了不少时间。</p>
-<p><strong>坑三：Session 切换后记忆恢复慢。</strong> Hermes 虽然支持跨 session 记忆，但刚迁移完 Agent 对老项目完全没上下文。需要主动把之前 <a href="http://MEMORY.md">MEMORY.md</a> 的内容通过 MemPalace 重建一遍，不是自动的。</p>
-<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
-<p>从 OpenClaw 到 Hermes，最大的收获是记忆持久化和 session 管理。对需要长期跟踪任务、跨会话保持上下文的人来说，这步迁移值。但 Hermes 内置记忆仍有语义匹配的短板，建议配合 MemPalace 使用。</p>
-<p>迁移本身不算复杂，<code>hermes claw migrate</code> 能处理大部分文件迁移工作，主要工作量在 skill 重装和配置核对。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>Hermes Agent</tag>
-        <tag>记忆系统</tag>
-        <tag>OpenClaw</tag>
-        <tag>迁移</tag>
       </tags>
   </entry>
 </search>

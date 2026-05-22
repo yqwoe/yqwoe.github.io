@@ -2,40 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://rm-rf.ink/*/5f9c1a2b.html</loc>
+    <loc>https://rm-rf.ink/*/46499b7b.html</loc>
     
-    <lastmod>2026-05-01T14:22:34.930Z</lastmod>
-    
-
-    <id>5f9c1a2b</id>
-    <date>1777645800000</date>
-    <title>从 OpenClaw 迁移到 Hermes：我的实战记录 | rm -rf /*</title>
-    
-    <desc>从 OpenClaw 换到 Hermes Agent，迁移过程中遇到的问题、解决方案，以及两个平台记忆系统的真实对比</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/38291047.html</loc>
-    
-    <lastmod>2026-05-01T10:31:33.220Z</lastmod>
+    <lastmod>2026-05-22T04:21:49.478Z</lastmod>
     
 
-    <id>38291047</id>
-    <date>1777631460000</date>
-    <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践 | rm -rf /*</title>
-    
-    <desc>围绕 Hermes Agent 内置记忆的局限性，讲解如何用 MemPalace 语义记忆层替换改造</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/96208538.html</loc>
-    
-    <lastmod>2026-04-27T15:38:59.157Z</lastmod>
-    
-
-    <id>96208538</id>
-    <date>1777303920000</date>
-    <title>Hello Hermes Agent | rm -rf /*</title>
+    <id>46499b7b</id>
+    <date>1779379200000</date>
+    <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记 | rm -rf /*</title>
     
     <desc></desc>
   </url>
@@ -43,11 +17,11 @@
   <url>
     <loc>https://rm-rf.ink/tags/index.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.372Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.474Z</lastmod>
     
 
     <id></id>
-    <date>1777303980372</date>
+    <date>1779421845474</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -56,11 +30,11 @@
   <url>
     <loc>https://rm-rf.ink/js/revealjs-animated/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.360Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.467Z</lastmod>
     
 
     <id></id>
-    <date>1777303980360</date>
+    <date>1779421845467</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -69,37 +43,37 @@
   <url>
     <loc>https://rm-rf.ink/js/revealjs-animated/package.json</loc>
     
-    <lastmod>2026-04-27T15:33:00.360Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.467Z</lastmod>
     
 
     <id></id>
-    <date>1777303980360</date>
+    <date>1779421845467</date>
     <title> | rm -rf /*</title>
     
     <desc>{"name":"revealjs-animated","version":"1.2.2","description":"RevealJs plugin to facilitate usage of animation inside slides","main":"webpack.config.js","repository":{"type":"git","url":"https://github</desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js/plugin/notes/speaker-view.html</loc>
+    <loc>https://rm-rf.ink/js/revealjs-animated/test/scenarios/middle-top.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.360Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.467Z</lastmod>
     
 
     <id></id>
-    <date>1777303980360</date>
+    <date>1779421845467</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/revealjs-animated/test/scenarios/middle-top.html</loc>
+    <loc>https://rm-rf.ink/js/reveal.js/plugin/notes/speaker-view.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.360Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.466Z</lastmod>
     
 
     <id></id>
-    <date>1777303980360</date>
+    <date>1779421845466</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -108,37 +82,24 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js/package.json</loc>
     
-    <lastmod>2026-04-27T15:33:00.352Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.459Z</lastmod>
     
 
     <id></id>
-    <date>1777303980352</date>
+    <date>1779421845459</date>
     <title> | rm -rf /*</title>
     
     <desc>{"name":"reveal.js","version":"5.2.1","description":"The HTML Presentation Framework","homepage":"https://revealjs.com","subdomain":"revealjs","main":"dist/reveal.js","module":"dist/reveal.esm.js","li</desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js/README.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980348</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/js/reveal.js/demo.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.457Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845457</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -147,11 +108,24 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js/index.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.457Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845457</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/README.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -160,11 +134,11 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/minimal.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -173,63 +147,24 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/package.json</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc>{"name":"reveal.js-plugins","version":"4.2.5","description":"A plugin collection for your reveal.js presentations","repository":{"type":"git","url":"https://github.com/rajgoel/reveal.js-plugins.git"},</desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/chart/README.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980348</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/customcontrols/README.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980348</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980348</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/loadcontent/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -238,11 +173,11 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/poll/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -251,11 +186,11 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/questions/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -264,11 +199,11 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/seminar/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -277,76 +212,50 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js/css/theme/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.348Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.456Z</lastmod>
     
 
     <id></id>
-    <date>1777303980348</date>
+    <date>1779421845456</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/CHANGELOG.html</loc>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/chart/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.344Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.455Z</lastmod>
     
 
     <id></id>
-    <date>1777303980344</date>
+    <date>1779421845455</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/README.html</loc>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/customcontrols/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.344Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.455Z</lastmod>
     
 
     <id></id>
-    <date>1777303980344</date>
+    <date>1779421845455</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/animate/README.html</loc>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.344Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980344</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/anything/README.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.344Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.455Z</lastmod>
     
 
     <id></id>
-    <date>1777303980344</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/audio-slideshow/README.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.344Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980344</date>
+    <date>1779421845455</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -355,11 +264,76 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/chalkboard/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.344Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.454Z</lastmod>
     
 
     <id></id>
-    <date>1777303980344</date>
+    <date>1779421845454</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/README.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.453Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845453</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/animate/README.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.453Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845453</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/anything/README.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.453Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845453</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/audio-slideshow/README.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.453Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845453</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/CHANGELOG.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.451Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845451</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -368,11 +342,11 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/CHANGELOG.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.316Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.429Z</lastmod>
     
 
     <id></id>
-    <date>1777303980316</date>
+    <date>1779421845429</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -381,24 +355,11 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/README.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.316Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.429Z</lastmod>
     
 
     <id></id>
-    <date>1777303980316</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.316Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980316</date>
+    <date>1779421845429</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -407,24 +368,50 @@
   <url>
     <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/package.json</loc>
     
-    <lastmod>2026-04-27T15:33:00.316Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.429Z</lastmod>
     
 
     <id></id>
-    <date>1777303980316</date>
+    <date>1779421845429</date>
     <title> | rm -rf /*</title>
     
     <desc>{"name":"reveal.js-mermaid-plugin","version":"2.2.0","description":"A mermaid plugin for reveal.js.","homepage":"https://zjffun.github.io/reveal.js-mermaid-plugin","main":"plugin/mermaid/mermaid.js","</desc>
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/baidu_verify_codeva-O2ay1lLTce.html</loc>
+    <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.128Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.429Z</lastmod>
     
 
     <id></id>
-    <date>1777303980128</date>
+    <date>1779421845429</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/baidu_verify_codeva-O2ay1lLTce.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.273Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845273</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/categories/index.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.273Z</lastmod>
+    
+
+    <id></id>
+    <date>1779421845273</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -433,7 +420,7 @@
   <url>
     <loc>https://rm-rf.ink/about/index.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.128Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.272Z</lastmod>
     
 
     <id></id>
@@ -444,217 +431,9 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/categories/index.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.128Z</lastmod>
-    
-
-    <id></id>
-    <date>1777303980128</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/2855774435.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>2855774435</id>
-    <date>1584288000000</date>
-    <title>读《小王子》 | rm -rf /*</title>
-    
-    <desc>旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/752254673.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>752254673</id>
-    <date>1538755200000</date>
-    <title>笔记0-《程序员数学-1》 | rm -rf /*</title>
-    
-    <desc>程序员数学1</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/965849311.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>965849311</id>
-    <date>1585538415000</date>
-    <title>笔记1-《程序员数学 1》 | rm -rf /*</title>
-    
-    <desc>程序员数学-进制计数法</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/1634039770.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>1634039770</id>
-    <date>1585621918000</date>
-    <title>笔记2-《程序员数学-1》 | rm -rf /*</title>
-    
-    <desc>程序员数学1-逻辑</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/375539532.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>375539532</id>
-    <date>1585727334000</date>
-    <title>笔记3-《程序员数学-1》 | rm -rf /*</title>
-    
-    <desc>程序员数学1 - 余数</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/c88b93d0.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>c88b93d0</id>
-    <date>1708304867000</date>
-    <title>笔记4-《程序员数学-1》 | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/848869235.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>848869235</id>
-    <date>1605110400000</date>
-    <title>一年要赚多少钱才能支撑一个三口之家？ | rm -rf /*</title>
-    
-    <desc>一年要赚多少钱才能支撑一个三口之家？</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/149409992.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>149409992</id>
-    <date>1527868800000</date>
-    <title>一次ios网页样式问题排查心路历程 | rm -rf /*</title>
-    
-    <desc>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/3423146f.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>3423146f</id>
-    <date>1704956971000</date>
-    <title>前端定时器 | rm -rf /*</title>
-    
-    <desc>前端开发中，会经常接到定时器的需求，倒计时、计时器、动画效果。</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/3382022550.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>3382022550</id>
-    <date>1606200364000</date>
-    <title>基于k8s、traefik、springboot的微服务实践 | rm -rf /*</title>
-    
-    <desc>基于k8s、traefik、springboot的微服务实践</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/c43e7c0d.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>c43e7c0d</id>
-    <date>1705370807000</date>
-    <title>大盘鸡🐔 | rm -rf /*</title>
-    
-    <desc>吃鸡最痛快的吃法之一，一定有大盘鸡。</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/2afb063d.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>2afb063d</id>
-    <date>1706148551000</date>
-    <title>奇怪的梦 | rm -rf /*</title>
-    
-    <desc>文章加密了，需要输入密码查看</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/2576489939.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>2576489939</id>
-    <date>1597714380000</date>
-    <title>安全风险评估 | rm -rf /*</title>
-    
-    <desc>安全风险在工业中的应用</desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/73b21f0a.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>73b21f0a</id>
-    <date>1708239620000</date>
-    <title>开年大吉，工作顺利！ | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/*/fb428c48.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
-    
-
-    <id>fb428c48</id>
-    <date>1706166594000</date>
-    <title>成本核算 | rm -rf /*</title>
-    
-    <desc>文章加密了，需要输入密码查看</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/*/340466787.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>340466787</id>
@@ -667,7 +446,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1000976984.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>1000976984</id>
@@ -680,7 +459,7 @@
   <url>
     <loc>https://rm-rf.ink/*/762727420.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>762727420</id>
@@ -691,9 +470,22 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/*/38291047.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
+    
+
+    <id>38291047</id>
+    <date>1777631460000</date>
+    <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践 | rm -rf /*</title>
+    
+    <desc>围绕 Hermes Agent 内置记忆的局限性，讲解如何用 MemPalace 语义记忆层替换改造</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/b2113df8.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>b2113df8</id>
@@ -706,7 +498,7 @@
   <url>
     <loc>https://rm-rf.ink/*/4278564287.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>4278564287</id>
@@ -719,7 +511,7 @@
   <url>
     <loc>https://rm-rf.ink/*/2784064196.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>2784064196</id>
@@ -732,7 +524,7 @@
   <url>
     <loc>https://rm-rf.ink/*/465957431.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>465957431</id>
@@ -745,7 +537,7 @@
   <url>
     <loc>https://rm-rf.ink/*/72bee84d.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>72bee84d</id>
@@ -758,7 +550,7 @@
   <url>
     <loc>https://rm-rf.ink/*/ae0adc94.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>ae0adc94</id>
@@ -771,7 +563,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1d180e51.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>1d180e51</id>
@@ -784,7 +576,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1061411954.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>1061411954</id>
@@ -797,7 +589,7 @@
   <url>
     <loc>https://rm-rf.ink/*/74a10861.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>74a10861</id>
@@ -810,20 +602,20 @@
   <url>
     <loc>https://rm-rf.ink/*/3042827788.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>3042827788</id>
     <date>1584802640000</date>
     <title>路 | rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-VJHTZllX"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-YaAajFOZ"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
     <loc>https://rm-rf.ink/*/751843018.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>751843018</id>
@@ -836,7 +628,7 @@
   <url>
     <loc>https://rm-rf.ink/*/7178be5f.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>7178be5f</id>
@@ -849,7 +641,7 @@
   <url>
     <loc>https://rm-rf.ink/*/4074971168.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>4074971168</id>
@@ -862,7 +654,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1156593666.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>1156593666</id>
@@ -875,7 +667,7 @@
   <url>
     <loc>https://rm-rf.ink/*/2375039249.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>2375039249</id>
@@ -888,7 +680,7 @@
   <url>
     <loc>https://rm-rf.ink/*/9ddcf808.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.104Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.253Z</lastmod>
     
 
     <id>9ddcf808</id>
@@ -901,7 +693,7 @@
   <url>
     <loc>https://rm-rf.ink/*/725797460.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>725797460</id>
@@ -914,7 +706,7 @@
   <url>
     <loc>https://rm-rf.ink/*/2967963195.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>2967963195</id>
@@ -927,7 +719,7 @@
   <url>
     <loc>https://rm-rf.ink/*/4278564287.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>4278564287</id>
@@ -940,7 +732,7 @@
   <url>
     <loc>https://rm-rf.ink/*/2d764bfc.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>2d764bfc</id>
@@ -953,7 +745,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1bc5f237.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>1bc5f237</id>
@@ -966,7 +758,7 @@
   <url>
     <loc>https://rm-rf.ink/*/8e7d0c8.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>8e7d0c8</id>
@@ -979,7 +771,7 @@
   <url>
     <loc>https://rm-rf.ink/*/53577de6.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>53577de6</id>
@@ -992,7 +784,7 @@
   <url>
     <loc>https://rm-rf.ink/*/41a22a4b.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>41a22a4b</id>
@@ -1005,7 +797,7 @@
   <url>
     <loc>https://rm-rf.ink/*/b4b628e2.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>b4b628e2</id>
@@ -1018,7 +810,7 @@
   <url>
     <loc>https://rm-rf.ink/*/a5f172c4.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>a5f172c4</id>
@@ -1031,7 +823,7 @@
   <url>
     <loc>https://rm-rf.ink/*/2cd67ed1.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>2cd67ed1</id>
@@ -1044,7 +836,7 @@
   <url>
     <loc>https://rm-rf.ink/*/3f43dc72.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>3f43dc72</id>
@@ -1057,7 +849,7 @@
   <url>
     <loc>https://rm-rf.ink/*/71e8d967.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>71e8d967</id>
@@ -1070,7 +862,7 @@
   <url>
     <loc>https://rm-rf.ink/*/b6474c33.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>b6474c33</id>
@@ -1081,22 +873,9 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/6e8cb24c.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
-    
-
-    <id>6e8cb24c</id>
-    <date>1540915200000</date>
-    <title>Cas Server 本地部署 | rm -rf /*</title>
-    
-    <desc>Cas Server 本地部署</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/*/59cc1bd2.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>59cc1bd2</id>
@@ -1107,9 +886,22 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/*/6e8cb24c.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>6e8cb24c</id>
+    <date>1540915200000</date>
+    <title>Cas Server 本地部署 | rm -rf /*</title>
+    
+    <desc>Cas Server 本地部署</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/f2e32020.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>f2e32020</id>
@@ -1122,7 +914,7 @@
   <url>
     <loc>https://rm-rf.ink/*/aa37a8e3.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>aa37a8e3</id>
@@ -1135,7 +927,7 @@
   <url>
     <loc>https://rm-rf.ink/*/3298b773.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>3298b773</id>
@@ -1148,7 +940,7 @@
   <url>
     <loc>https://rm-rf.ink/*/ddfed903.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>ddfed903</id>
@@ -1161,7 +953,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1873749776.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>1873749776</id>
@@ -1174,7 +966,7 @@
   <url>
     <loc>https://rm-rf.ink/*/c2cb16de.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>c2cb16de</id>
@@ -1185,9 +977,22 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/*/96208538.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>96208538</id>
+    <date>1777303920000</date>
+    <title>Hello Hermes Agent | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/8b6d76da.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>8b6d76da</id>
@@ -1200,7 +1005,7 @@
   <url>
     <loc>https://rm-rf.ink/*/6befbd07.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>6befbd07</id>
@@ -1213,7 +1018,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1854714444.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>1854714444</id>
@@ -1226,7 +1031,7 @@
   <url>
     <loc>https://rm-rf.ink/*/e4b8a22b.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>e4b8a22b</id>
@@ -1239,7 +1044,7 @@
   <url>
     <loc>https://rm-rf.ink/*/f135226f.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>f135226f</id>
@@ -1252,7 +1057,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1398242790.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>1398242790</id>
@@ -1263,22 +1068,9 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/1406322052.html</loc>
-    
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
-    
-
-    <id>1406322052</id>
-    <date>1661928364000</date>
-    <title>搭建maven私库 | rm -rf /*</title>
-    
-    <desc>java</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/*/2050102104.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>2050102104</id>
@@ -1289,9 +1081,22 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/*/1406322052.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>1406322052</id>
+    <date>1661928364000</date>
+    <title>搭建maven私库 | rm -rf /*</title>
+    
+    <desc>java</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/3058125875.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>3058125875</id>
@@ -1304,7 +1109,7 @@
   <url>
     <loc>https://rm-rf.ink/*/202678719.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>202678719</id>
@@ -1317,7 +1122,7 @@
   <url>
     <loc>https://rm-rf.ink/*/9f600c63.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>9f600c63</id>
@@ -1330,7 +1135,7 @@
   <url>
     <loc>https://rm-rf.ink/*/3031836898.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>3031836898</id>
@@ -1343,7 +1148,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1101146699.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>1101146699</id>
@@ -1356,7 +1161,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1506548690.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>1506548690</id>
@@ -1369,7 +1174,7 @@
   <url>
     <loc>https://rm-rf.ink/*/8f0491a1.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>8f0491a1</id>
@@ -1382,7 +1187,7 @@
   <url>
     <loc>https://rm-rf.ink/*/8212ba91.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>8212ba91</id>
@@ -1395,7 +1200,7 @@
   <url>
     <loc>https://rm-rf.ink/*/1911085415.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>1911085415</id>
@@ -1408,7 +1213,7 @@
   <url>
     <loc>https://rm-rf.ink/*/eec35d0e.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>eec35d0e</id>
@@ -1421,7 +1226,7 @@
   <url>
     <loc>https://rm-rf.ink/*/d1274d86.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>d1274d86</id>
@@ -1434,7 +1239,7 @@
   <url>
     <loc>https://rm-rf.ink/*/7d69317e.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>7d69317e</id>
@@ -1447,7 +1252,7 @@
   <url>
     <loc>https://rm-rf.ink/*/e0d5ed17.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>e0d5ed17</id>
@@ -1460,7 +1265,7 @@
   <url>
     <loc>https://rm-rf.ink/*/94fe59ce.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>94fe59ce</id>
@@ -1471,9 +1276,22 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/*/2855774435.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>2855774435</id>
+    <date>1584288000000</date>
+    <title>读《小王子》 | rm -rf /*</title>
+    
+    <desc>旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/3724466435.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
     
 
     <id>3724466435</id>
@@ -1484,9 +1302,204 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/*/752254673.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>752254673</id>
+    <date>1538755200000</date>
+    <title>笔记0-《程序员数学-1》 | rm -rf /*</title>
+    
+    <desc>程序员数学1</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/965849311.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>965849311</id>
+    <date>1585538415000</date>
+    <title>笔记1-《程序员数学 1》 | rm -rf /*</title>
+    
+    <desc>程序员数学-进制计数法</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/1634039770.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>1634039770</id>
+    <date>1585621918000</date>
+    <title>笔记2-《程序员数学-1》 | rm -rf /*</title>
+    
+    <desc>程序员数学1-逻辑</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/375539532.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>375539532</id>
+    <date>1585727334000</date>
+    <title>笔记3-《程序员数学-1》 | rm -rf /*</title>
+    
+    <desc>程序员数学1 - 余数</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/c88b93d0.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>c88b93d0</id>
+    <date>1708304867000</date>
+    <title>笔记4-《程序员数学-1》 | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/848869235.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>848869235</id>
+    <date>1605110400000</date>
+    <title>一年要赚多少钱才能支撑一个三口之家？ | rm -rf /*</title>
+    
+    <desc>一年要赚多少钱才能支撑一个三口之家？</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/5f9c1a2b.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>5f9c1a2b</id>
+    <date>1777645800000</date>
+    <title>从 OpenClaw 迁移到 Hermes：我的实战记录 | rm -rf /*</title>
+    
+    <desc>从 OpenClaw 换到 Hermes Agent，迁移过程中遇到的问题、解决方案，以及两个平台记忆系统的真实对比</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/149409992.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>149409992</id>
+    <date>1527868800000</date>
+    <title>一次ios网页样式问题排查心路历程 | rm -rf /*</title>
+    
+    <desc>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/3423146f.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>3423146f</id>
+    <date>1704956971000</date>
+    <title>前端定时器 | rm -rf /*</title>
+    
+    <desc>前端开发中，会经常接到定时器的需求，倒计时、计时器、动画效果。</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/3382022550.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>3382022550</id>
+    <date>1606200364000</date>
+    <title>基于k8s、traefik、springboot的微服务实践 | rm -rf /*</title>
+    
+    <desc>基于k8s、traefik、springboot的微服务实践</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/c43e7c0d.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>c43e7c0d</id>
+    <date>1705370807000</date>
+    <title>大盘鸡🐔 | rm -rf /*</title>
+    
+    <desc>吃鸡最痛快的吃法之一，一定有大盘鸡。</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/2afb063d.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>2afb063d</id>
+    <date>1706148551000</date>
+    <title>奇怪的梦 | rm -rf /*</title>
+    
+    <desc>文章加密了，需要输入密码查看</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/2576489939.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>2576489939</id>
+    <date>1597714380000</date>
+    <title>安全风险评估 | rm -rf /*</title>
+    
+    <desc>安全风险在工业中的应用</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/73b21f0a.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>73b21f0a</id>
+    <date>1708239620000</date>
+    <title>开年大吉，工作顺利！ | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/fb428c48.html</loc>
+    
+    <lastmod>2026-05-22T03:50:45.252Z</lastmod>
+    
+
+    <id>fb428c48</id>
+    <date>1706166594000</date>
+    <title>成本核算 | rm -rf /*</title>
+    
+    <desc>文章加密了，需要输入密码查看</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/Openclaw-0/index.html</loc>
     
-    <lastmod>2026-04-27T15:33:00.100Z</lastmod>
+    <lastmod>2026-05-22T03:50:45.251Z</lastmod>
     
 
     <id></id>
