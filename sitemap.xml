@@ -2,9 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/474c79ed.html</loc>
+    
+    <lastmod>2026-05-31T16:54:21.770Z</lastmod>
+    
+
+    <id>474c79ed</id>
+    <date>1780372800000</date>
+    <title>改造 Hermes Memory Provider 的曲折历程 | rm -rf /*</title>
+    
+    <desc>从 MemPalace 到 Filtration Layer 再到 mem-md，一次关于记忆系统本质的回归</desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/*/46499b7b.html</loc>
     
-    <lastmod>2026-05-22T04:21:49.478Z</lastmod>
+    <lastmod>2026-05-22T04:24:17.307Z</lastmod>
     
 
     <id>46499b7b</id>
