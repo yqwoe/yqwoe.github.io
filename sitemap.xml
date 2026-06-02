@@ -4,7 +4,7 @@
   <url>
     <loc>https://rm-rf.ink/*/474c79ed.html</loc>
     
-    <lastmod>2026-05-31T16:55:43.880Z</lastmod>
+    <lastmod>2026-06-02T15:04:24.421Z</lastmod>
     
 
     <id>474c79ed</id>
@@ -12,6 +12,19 @@
     <title>改造 Hermes Memory Provider 的曲折历程 | rm -rf /*</title>
     
     <desc>从 MemPalace 到 Filtration Layer 再到 mem-md，一次关于记忆系统本质的回归</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/mem-md-opensource.html</loc>
+    
+    <lastmod>2026-06-02T15:04:13.800Z</lastmod>
+    
+
+    <id>mem-md-opensource</id>
+    <date>1780410600000</date>
+    <title>mem-md 开源：一个反向量库的 Agent 记忆系统 | rm -rf /*</title>
+    
+    <desc>从 5.2 万行 MemPalace 到 0.1.0 mem-md，把记忆系统退回到第一性原理</desc>
   </url>
   
   <url>
