@@ -5529,7 +5529,7 @@ ExcelUtil --> RecordHandler</pre>
 </ul>
 <p>下一步是接入 Hermes Agent 作为 Memory Provider，让记忆真正进入赫妹的工作流。</p>
 <hr>
-<p><strong>续篇</strong>：<a href="/2026/06/02/mem-md-opensource/">《mem-md 开源：一个反向量库的 Agent 记忆系统》</a></p>
+<p><strong>续篇</strong>：<a href="/mem-md-opensource.html">《mem-md 开源：一个反向量库的 Agent 记忆系统》</a></p>
 <p><em>文章使用 humanizer 润色，移除了 AI 写作的典型模式，保留个人思考痕迹。</em></p>
 ]]></content>
       <tags>
