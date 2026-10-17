@@ -1,0 +1,20 @@
+<% if (post.link){ %>
+  <h3 class="<%= class_name %>" itemprop="name">
+    <a href="<%- url_for(post.link) %>" target="_blank" itemprop="url"><span><%= post.title %> <%= post.password ? '🔐' : '' %></span></a>
+  </h3>
+<% } else if (post.title){ %>
+  <% if (index){ %>
+    <h3 class="<%= class_name %>" itemprop="name">
+      <a href="<%- url_for(post.path) %>"><span><%= post.title %> &nbsp;&nbsp;<%= post.password ? '🔐' : '' %></span></a>
+      <% if (theme.word_count){ %>
+        <% if (is_archive()){ %>
+          <span class="archive-article-word-count"><%= wordcount(post.content) %> words</span>
+        <% } %>
+      <% } %>
+    </h3>
+  <% } else { %>
+    <h3 class="<%= class_name %>" itemprop="headline name">
+      <%= post.title %>&nbsp;&nbsp;<%= post.password ? '🔐' : '' %>
+    </h3>
+  <% } %>
+<% } %>

@@ -1,0 +1,98 @@
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://github.com" />
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <% if (theme.rss){ %>
+    <%- feed_tag(theme.rss, { type: 'rss' }) %>
+  <% } %>
+  <% if (theme.favicon.apple_touch_icon){ %>
+    <link rel="apple-touch-icon" sizes="180x180" href="<%- theme.favicon.apple_touch_icon%>">
+  <% } %>
+
+  <% if (theme.favicon.medium){ %>
+    <link rel="icon" type="image/png" sizes="32x32" href="<%- theme.favicon.medium%>">
+    <% } %>
+
+  <% if (theme.favicon.small){ %>
+    <link rel="icon" type="image/png" sizes="32x32" href="<%- theme.favicon.small%>">
+    <% } %>
+
+  <% if (theme.favicon.safari_pinned_tab){ %>
+    <link rel="mask-icon" href="{{ url_for(theme.favicon.safari_pinned_tab) }}" color="{{ theme.android_chrome_color }}">
+    <% } %>
+
+  <%- css('css/style') %>
+  <%- css('css/search') %>
+  <%- css('css/katex.min') %>
+  <%- css('css/googleapis') %>
+  <% if (theme.highlight){ %>
+    <%- css('css/highlight') %>
+  <% } %>
+  <%- open_graph() -%>
+  <%# Twitter Card %>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yqwoe" />
+  <meta name="twitter:creator" content="@yqwoe" />
+  <%# Canonical URL %>
+  <link rel="canonical" href="<%= config.url %><%= page.path %>" />
+  <%# JSON-LD Structured Data %>
+  <% if (page.layout === 'post') { %>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "<%= page.title %>",
+    "datePublished": "<%= page.date.toISOString() %>",
+    "dateModified": "<%= page.updated ? page.updated.toISOString() : page.date.toISOString() %>",
+    "author": {
+      "@type": "Person",
+      "name": "<%= config.author %>",
+      "url": "<%= config.url %>"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "<%= config.title %>",
+      "url": "<%= config.url %>"
+    },
+    "description": "<%= page.description || config.description %>",
+    "url": "<%= config.url %><%= page.path %>"
+  }
+  </script>
+  <% } else { %>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "<%= config.title %>",
+    "description": "<%= config.description %>",
+    "url": "<%= config.url %>",
+    "author": {
+      "@type": "Person",
+      "name": "<%= config.author %>"
+    }
+  }
+  </script>
+  <% } %>
+  <%- css('css/reveal') %>
+</head>
