@@ -1,1 +1,73 @@
-window.RevealCustomControls=window.RevealCustomControls||{id:"RevealCustomControls",init:function(o){initCustomControls(o)}};let initCustomControls=function(o){var t=o.getConfig().customcontrols||{};if(!o.isSpeakerNotes()||"false"!=new URLSearchParams(location.search).get("controls")){if(t?.controls?.length){for(var o=t.collapseIcon||'<i class="fa fa-chevron-down"></i>',e=t.expandIcon||'<i class="fa fa-chevron-up"></i>',n=t.tooltip||"Show/hide controls",l=document.createElement("div"),s=(l.id="customcontrols",document.createElement("button")),c=(s.title=n,s.innerHTML='<span id="collapse-customcontrols">'+o+'</span><span id="expand-customcontrols">'+e+"</span>",s.addEventListener("click",function(o){var t=document.querySelector("div#customcontrols");t.classList.contains("collapsed")?t.classList.remove("collapsed"):t.classList.add("collapsed"),s.blur()}),l.appendChild(s),document.createElement("ul")),i=0;i<t.controls.length;i++){var r=document.createElement("li");t.controls[i].id&&(r.id=t.controls[i].id),r.innerHTML="<button "+(t.controls[i].title?'title="'+t.controls[i].title+'" ':"")+'onclick="'+t.controls[i].action+'">'+t.controls[i].icon+"</button>",c.appendChild(r)}l.appendChild(c),document.querySelector(".reveal").appendChild(l),document.addEventListener("resize",function(o){var t=document.querySelector("div#customcontrols.collapsed");t&&t.classList.remove("collapsed")})}return this}};
+/*****************************************************************
+** Author: Asvin Goel, goel@telematique.eu
+**
+** A plugin replacing the default controls by custom controls.
+**
+** Version: 2.0.1
+** 
+** License: MIT license (see LICENSE.md)
+**
+******************************************************************/
+window.RevealCustomControls = window.RevealCustomControls || {
+    id: 'RevealCustomControls',
+    init: function(deck) {
+        initCustomControls(deck);
+    }
+};
+
+const initCustomControls = function(Reveal){
+	var config = Reveal.getConfig().customcontrols || {};
+
+	if (Reveal.isSpeakerNotes() && new URLSearchParams(location.search).get('controls') == 'false') return;
+	if (!config?.controls?.length) return this;
+
+	var collapseIcon = config.collapseIcon || '<i class="fa fa-chevron-down"></i>';
+	var expandIcon = config.expandIcon || '<i class="fa fa-chevron-up"></i>';
+	var tooltip = config.tooltip || 'Show/hide controls';
+
+	var div = document.createElement( 'div' );
+	div.id = 'customcontrols';
+
+	var toggleButton = document.createElement( 'button' );
+	toggleButton.title = tooltip;
+	toggleButton.innerHTML = '<span id="collapse-customcontrols">' + collapseIcon + '</span>' + '<span id="expand-customcontrols">' + expandIcon + '</span>';
+
+	toggleButton.addEventListener('click', function( event ) {
+		var div = document.querySelector("div#customcontrols");
+		if ( div.classList.contains('collapsed') ) {
+			div.classList.remove('collapsed');
+		}
+		else {
+			div.classList.add('collapsed');
+		}
+		toggleButton.blur(); // unfocus button
+	});
+
+	div.appendChild(toggleButton);
+
+	var controls = document.createElement( 'ul' );
+	for (var i = 0; i < config.controls.length; i++ ) {
+		var control = document.createElement( 'li' );
+		if ( config.controls[i].id ) {
+			control.id = config.controls[i].id;
+		}
+		control.innerHTML = '<button ' + ( config.controls[i].title ? 'title="' + config.controls[i].title + '" ': '' ) + 'onclick="' + config.controls[i].action + '">' + config.controls[i].icon + '</button>';
+		controls.appendChild( control );
+	}
+	div.appendChild( controls );
+
+
+	document.querySelector(".reveal").appendChild( div );
+
+	document.addEventListener( 'resize', function( event ) {
+		// expand controls to make sure they are visible
+		var div = document.querySelector("div#customcontrols.collapsed");
+		if ( div ) {
+			div.classList.remove('collapsed');
+		}
+	} );
+
+	return this;
+
+};
+

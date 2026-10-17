@@ -1,1 +1,923 @@
-import{HORIZONTAL_SLIDES_SELECTOR,HORIZONTAL_BACKGROUNDS_SELECTOR}from"../utils/constants.js";import{queryAll}from"../utils/util.js";let HIDE_SCROLLBAR_TIMEOUT=500,MAX_PROGRESS_SPACING=4,MIN_PROGRESS_SEGMENT_HEIGHT=6,MIN_PLAYHEAD_HEIGHT=8;export default class ScrollView{constructor(e){this.Reveal=e,this.active=!1,this.activatedCallbacks=[],this.onScroll=this.onScroll.bind(this)}activate(){if(!this.active){var e=this.Reveal.getState(),r=(this.active=!0,this.slideHTMLBeforeActivation=this.Reveal.getSlidesElement().innerHTML,queryAll(this.Reveal.getRevealElement(),HORIZONTAL_SLIDES_SELECTOR));let a=queryAll(this.Reveal.getRevealElement(),HORIZONTAL_BACKGROUNDS_SELECTOR);this.viewportElement.classList.add("loading-scroll-mode","reveal-scroll");let o;var i=window.getComputedStyle(this.viewportElement);i&&i.background&&(o=i.background);let g=[],t=r[0].parentNode,n,s=(e,t,r,s)=>{let i;var l;(n&&this.Reveal.shouldAutoAnimateBetween(n,e)?((i=document.createElement("div")).className="scroll-page-content scroll-auto-animate-page",i.style.display="none",n.closest(".scroll-page-content").parentNode):((l=document.createElement("div")).className="scroll-page",g.push(l),s&&a.length>t&&(s=a[t],s=window.getComputedStyle(s))&&s.background?l.style.background=s.background:o&&(l.style.background=o),(s=document.createElement("div")).className="scroll-page-sticky",l.appendChild(s),(i=document.createElement("div")).className="scroll-page-content",s)).appendChild(i),i.appendChild(e),e.classList.remove("past","future"),e.setAttribute("data-index-h",t),e.setAttribute("data-index-v",r),e.slideBackgroundElement&&(e.slideBackgroundElement.remove("past","future"),i.insertBefore(e.slideBackgroundElement,e)),n=e};r.forEach((e,r)=>{this.Reveal.isVerticalStack(e)?e.querySelectorAll("section").forEach((e,t)=>{s(e,r,t,!0)}):s(e,r,0)},this),this.createProgressBar(),queryAll(this.Reveal.getRevealElement(),".stack").forEach(e=>e.remove()),g.forEach(e=>t.appendChild(e)),this.Reveal.slideContent.layout(this.Reveal.getSlidesElement()),this.Reveal.layout(),this.Reveal.setState(e),this.activatedCallbacks.forEach(e=>e()),this.activatedCallbacks=[],this.restoreScrollPosition(),this.viewportElement.classList.remove("loading-scroll-mode"),this.viewportElement.addEventListener("scroll",this.onScroll,{passive:!0})}}deactivate(){var e;this.active&&(e=this.Reveal.getState(),this.active=!1,this.viewportElement.removeEventListener("scroll",this.onScroll),this.viewportElement.classList.remove("reveal-scroll"),this.removeProgressBar(),this.Reveal.getSlidesElement().innerHTML=this.slideHTMLBeforeActivation,this.Reveal.sync(),this.Reveal.setState(e),this.slideHTMLBeforeActivation=null)}toggle(e){"boolean"==typeof e?e?this.activate():this.deactivate():this.isActive()?this.deactivate():this.activate()}isActive(){return this.active}createProgressBar(){this.progressBar=document.createElement("div"),this.progressBar.className="scrollbar",this.progressBarInner=document.createElement("div"),this.progressBarInner.className="scrollbar-inner",this.progressBar.appendChild(this.progressBarInner),this.progressBarPlayhead=document.createElement("div"),this.progressBarPlayhead.className="scrollbar-playhead",this.progressBarInner.appendChild(this.progressBarPlayhead),this.viewportElement.insertBefore(this.progressBar,this.viewportElement.firstChild);let t=e=>{e=(e.clientY-this.progressBarInner.getBoundingClientRect().top)/this.progressBarHeight,e=Math.max(Math.min(e,1),0);this.viewportElement.scrollTop=e*(this.viewportElement.scrollHeight-this.viewportElement.offsetHeight)},r=e=>{this.draggingProgressBar=!1,this.showProgressBar(),document.removeEventListener("mousemove",t),document.removeEventListener("mouseup",r)};this.progressBarInner.addEventListener("mousedown",e=>{e.preventDefault(),this.draggingProgressBar=!0,document.addEventListener("mousemove",t),document.addEventListener("mouseup",r),t(e)})}removeProgressBar(){this.progressBar&&(this.progressBar.remove(),this.progressBar=null)}layout(){this.isActive()&&(this.syncPages(),this.syncScrollPosition())}syncPages(){let i=this.Reveal.getConfig(),l=this.Reveal.getComputedSlideSize(window.innerWidth,window.innerHeight);var e=this.Reveal.getScale();let a="compact"===i.scrollLayout,o=this.viewportElement.offsetHeight;e=l.height*e;let g=a?e:o;this.scrollTriggerHeight=a?e:o,this.viewportElement.style.setProperty("--page-height",g+"px"),this.viewportElement.style.scrollSnapType="string"==typeof i.scrollSnap?"y "+i.scrollSnap:"",this.slideTriggers=[];e=Array.from(this.Reveal.getRevealElement().querySelectorAll(".scroll-page"));this.pages=e.map(e=>{let t=this.createPage({pageElement:e,slideElement:e.querySelector("section"),stickyElement:e.querySelector(".scroll-page-sticky"),contentElement:e.querySelector(".scroll-page-content"),backgroundElement:e.querySelector(".slide-background"),autoAnimateElements:e.querySelectorAll(".scroll-auto-animate-page"),autoAnimatePages:[]});t.pageElement.style.setProperty("--slide-height",!0===i.center?"auto":l.height+"px"),this.slideTriggers.push({page:t,activate:()=>this.activatePage(t),deactivate:()=>this.deactivatePage(t)}),this.createFragmentTriggersForPage(t),0<t.autoAnimateElements.length&&this.createAutoAnimateTriggersForPage(t);var r=Math.max(t.scrollTriggers.length-1,0);r+=t.autoAnimatePages.reduce((e,t)=>e+Math.max(t.scrollTriggers.length-1,0),t.autoAnimatePages.length),t.pageElement.querySelectorAll(".scroll-snap-point").forEach(e=>e.remove());for(let e=0;e<r+1;e++){var s=document.createElement("div");s.className="scroll-snap-point",s.style.height=this.scrollTriggerHeight+"px",s.style.scrollSnapAlign=a?"center":"start",t.pageElement.appendChild(s),0===e&&(s.style.marginTop=-this.scrollTriggerHeight+"px")}return a&&0<t.scrollTriggers.length?(t.pageHeight=o,t.pageElement.style.setProperty("--page-height",o+"px")):(t.pageHeight=g,t.pageElement.style.removeProperty("--page-height")),t.scrollPadding=this.scrollTriggerHeight*r,t.totalHeight=t.pageHeight+t.scrollPadding,t.pageElement.style.setProperty("--page-scroll-padding",t.scrollPadding+"px"),0<r?(t.stickyElement.style.position="sticky",t.stickyElement.style.top=Math.max((o-t.pageHeight)/2,0)+"px"):(t.stickyElement.style.position="relative",t.pageElement.style.scrollSnapAlign=t.pageHeight<o?"center":"start"),t}),this.setTriggerRanges(),this.viewportElement.setAttribute("data-scrollbar",i.scrollProgress),i.scrollProgress&&1<this.totalScrollTriggerCount?(this.progressBar||this.createProgressBar(),this.syncProgressBar()):this.removeProgressBar()}setTriggerRanges(){this.totalScrollTriggerCount=this.slideTriggers.reduce((e,t)=>e+Math.max(t.page.scrollTriggers.length,1),0);let s=0;this.slideTriggers.forEach((e,t)=>{e.range=[s,s+Math.max(e.page.scrollTriggers.length,1)/this.totalScrollTriggerCount];let r=(e.range[1]-e.range[0])/e.page.scrollTriggers.length;e.page.scrollTriggers.forEach((e,t)=>{e.range=[s+t*r,s+(t+1)*r]}),s=e.range[1]}),this.slideTriggers[this.slideTriggers.length-1].range[1]=1}createFragmentTriggersForPage(r,s){s=s||r.slideElement;var e=this.Reveal.fragments.sort(s.querySelectorAll(".fragment"),!0);return e.length&&(r.fragments=this.Reveal.fragments.sort(s.querySelectorAll(".fragment:not(.disabled)")),r.scrollTriggers.push({activate:()=>{this.Reveal.fragments.update(-1,r.fragments,s)}}),e.forEach((e,t)=>{r.scrollTriggers.push({activate:()=>{this.Reveal.fragments.update(t,r.fragments,s)}})})),r.scrollTriggers.length}createAutoAnimateTriggersForPage(s){0<s.autoAnimateElements.length&&this.slideTriggers.push(...Array.from(s.autoAnimateElements).map((e,t)=>{let r=this.createPage({slideElement:e.querySelector("section"),contentElement:e,backgroundElement:e.querySelector(".slide-background")});return this.createFragmentTriggersForPage(r,r.slideElement),s.autoAnimatePages.push(r),{page:r,activate:()=>this.activatePage(r),deactivate:()=>this.deactivatePage(r)}}))}createPage(e){return e.scrollTriggers=[],e.indexh=parseInt(e.slideElement.getAttribute("data-index-h"),10),e.indexv=parseInt(e.slideElement.getAttribute("data-index-v"),10),e}syncProgressBar(){this.progressBarInner.querySelectorAll(".scrollbar-slide").forEach(e=>e.remove());var e=this.viewportElement.scrollHeight,t=this.viewportElement.offsetHeight,r=t/e,r=(this.progressBarHeight=this.progressBarInner.offsetHeight,this.playheadHeight=Math.max(r*this.progressBarHeight,MIN_PLAYHEAD_HEIGHT),this.progressBarScrollableHeight=this.progressBarHeight-this.playheadHeight,t/e*this.progressBarHeight);let l=Math.min(r/8,MAX_PROGRESS_SPACING);this.progressBarPlayhead.style.height=this.playheadHeight-l+"px",r>MIN_PROGRESS_SEGMENT_HEIGHT?this.slideTriggers.forEach(s=>{let i=s.page;i.progressBarSlide=document.createElement("div"),i.progressBarSlide.className="scrollbar-slide",i.progressBarSlide.style.top=s.range[0]*this.progressBarHeight+"px",i.progressBarSlide.style.height=(s.range[1]-s.range[0])*this.progressBarHeight-l+"px",i.progressBarSlide.classList.toggle("has-triggers",0<i.scrollTriggers.length),this.progressBarInner.appendChild(i.progressBarSlide),i.scrollTriggerElements=i.scrollTriggers.map((e,t)=>{var r=document.createElement("div");return r.className="scrollbar-trigger",r.style.top=(e.range[0]-s.range[0])*this.progressBarHeight+"px",r.style.height=(e.range[1]-e.range[0])*this.progressBarHeight-l+"px",i.progressBarSlide.appendChild(r),0===t&&(r.style.display="none"),r})}):this.pages.forEach(e=>e.progressBarSlide=null)}syncScrollPosition(){var e=this.viewportElement.offsetHeight;let r=e/this.viewportElement.scrollHeight;var t=this.viewportElement.scrollTop,s=this.viewportElement.scrollHeight-e;let i=Math.max(Math.min(t/s,1),0),l=Math.max(Math.min((t+e/2)/this.viewportElement.scrollHeight,1),0),a;this.slideTriggers.forEach(e=>{var t=e.page;i>=e.range[0]-2*r&&i<=e.range[1]+2*r&&!t.loaded?(t.loaded=!0,this.Reveal.slideContent.load(t.slideElement)):t.loaded&&(t.loaded=!1,this.Reveal.slideContent.unload(t.slideElement)),i>=e.range[0]&&i<=e.range[1]?(this.activateTrigger(e),a=e.page):e.active&&this.deactivateTrigger(e)}),a&&a.scrollTriggers.forEach(e=>{l>=e.range[0]&&l<=e.range[1]?this.activateTrigger(e):e.active&&this.deactivateTrigger(e)}),this.setProgressBarValue(t/(this.viewportElement.scrollHeight-e))}setProgressBarValue(e){this.progressBar&&(this.progressBarPlayhead.style.transform=`translateY(${e*this.progressBarScrollableHeight}px)`,this.getAllPages().filter(e=>e.progressBarSlide).forEach(r=>{r.progressBarSlide.classList.toggle("active",!0===r.active),r.scrollTriggers.forEach((e,t)=>{r.scrollTriggerElements[t].classList.toggle("active",!0===r.active&&!0===e.active)})}),this.showProgressBar())}showProgressBar(){this.progressBar.classList.add("visible"),clearTimeout(this.hideProgressBarTimeout),"auto"!==this.Reveal.getConfig().scrollProgress||this.draggingProgressBar||(this.hideProgressBarTimeout=setTimeout(()=>{this.progressBar&&this.progressBar.classList.remove("visible")},HIDE_SCROLLBAR_TIMEOUT))}prev(){this.viewportElement.scrollTop-=this.scrollTriggerHeight}next(){this.viewportElement.scrollTop+=this.scrollTriggerHeight}scrollToSlide(e){var t;this.active?(t=this.getScrollTriggerBySlide(e))&&(this.viewportElement.scrollTop=t.range[0]*(this.viewportElement.scrollHeight-this.viewportElement.offsetHeight)):this.activatedCallbacks.push(()=>this.scrollToSlide(e))}storeScrollPosition(){clearTimeout(this.storeScrollPositionTimeout),this.storeScrollPositionTimeout=setTimeout(()=>{sessionStorage.setItem("reveal-scroll-top",this.viewportElement.scrollTop),sessionStorage.setItem("reveal-scroll-origin",location.origin+location.pathname),this.storeScrollPositionTimeout=null},50)}restoreScrollPosition(){var e=sessionStorage.getItem("reveal-scroll-top"),t=sessionStorage.getItem("reveal-scroll-origin");e&&t===location.origin+location.pathname&&(this.viewportElement.scrollTop=parseInt(e,10))}activatePage(l){if(!l.active){l.active=!0;let{slideElement:e,backgroundElement:t,contentElement:r,indexh:s,indexv:i}=l;r.style.display="block",e.classList.add("present"),t&&t.classList.add("present"),this.Reveal.setCurrentScrollPage(e,s,i),this.Reveal.backgrounds.bubbleSlideContrastClassToElement(e,this.viewportElement),Array.from(r.parentNode.querySelectorAll(".scroll-page-content")).forEach(e=>{e!==r&&(e.style.display="none")})}}deactivatePage(e){e.active&&(e.active=!1,e.slideElement&&e.slideElement.classList.remove("present"),e.backgroundElement)&&e.backgroundElement.classList.remove("present")}activateTrigger(e){e.active||(e.active=!0,e.activate())}deactivateTrigger(e){e.active&&(e.active=!1,e.deactivate)&&e.deactivate()}getSlideByIndices(t,r){var e=this.getAllPages().find(e=>e.indexh===t&&e.indexv===r);return e?e.slideElement:null}getScrollTriggerBySlide(t){return this.slideTriggers.find(e=>e.page.slideElement===t)}getAllPages(){return this.pages.flatMap(e=>[e,...e.autoAnimatePages||[]])}onScroll(){this.syncScrollPosition(),this.storeScrollPosition()}get viewportElement(){return this.Reveal.getViewportElement()}}
+import { HORIZONTAL_SLIDES_SELECTOR, HORIZONTAL_BACKGROUNDS_SELECTOR } from '../utils/constants.js'
+import { queryAll } from '../utils/util.js'
+
+const HIDE_SCROLLBAR_TIMEOUT = 500;
+const MAX_PROGRESS_SPACING = 4;
+const MIN_PROGRESS_SEGMENT_HEIGHT = 6;
+const MIN_PLAYHEAD_HEIGHT = 8;
+
+/**
+ * The scroll view lets you read a reveal.js presentation
+ * as a linear scrollable page.
+ */
+export default class ScrollView {
+
+	constructor( Reveal ) {
+
+		this.Reveal = Reveal;
+
+		this.active = false;
+		this.activatedCallbacks = [];
+
+		this.onScroll = this.onScroll.bind( this );
+
+	}
+
+	/**
+	 * Activates the scroll view. This rearranges the presentation DOM
+	 * by—among other things—wrapping each slide in a page element.
+	 */
+	activate() {
+
+		if( this.active ) return;
+
+		const stateBeforeActivation = this.Reveal.getState();
+
+		this.active = true;
+
+		// Store the full presentation HTML so that we can restore it
+		// when/if the scroll view is deactivated
+		this.slideHTMLBeforeActivation = this.Reveal.getSlidesElement().innerHTML;
+
+		const horizontalSlides = queryAll( this.Reveal.getRevealElement(), HORIZONTAL_SLIDES_SELECTOR );
+		const horizontalBackgrounds = queryAll( this.Reveal.getRevealElement(), HORIZONTAL_BACKGROUNDS_SELECTOR );
+
+		this.viewportElement.classList.add( 'loading-scroll-mode', 'reveal-scroll' );
+
+		let presentationBackground;
+
+		const viewportStyles = window.getComputedStyle( this.viewportElement );
+		if( viewportStyles && viewportStyles.background ) {
+			presentationBackground = viewportStyles.background;
+		}
+
+		const pageElements = [];
+		const pageContainer = horizontalSlides[0].parentNode;
+
+		let previousSlide;
+
+		// Creates a new page element and appends the given slide/bg
+		// to it.
+		const createPageElement = ( slide, h, v, isVertical ) => {
+
+			let contentContainer;
+
+			// If this slide is part of an auto-animation sequence, we
+			// group it under the same page element as the previous slide
+			if( previousSlide && this.Reveal.shouldAutoAnimateBetween( previousSlide, slide ) ) {
+				contentContainer = document.createElement( 'div' );
+				contentContainer.className = 'scroll-page-content scroll-auto-animate-page';
+				contentContainer.style.display = 'none';
+				previousSlide.closest( '.scroll-page-content' ).parentNode.appendChild( contentContainer );
+			}
+			else {
+				// Wrap the slide in a page element and hide its overflow
+				// so that no page ever flows onto another
+				const page = document.createElement( 'div' );
+				page.className = 'scroll-page';
+				pageElements.push( page );
+
+				// This transfers over the background of the vertical stack containing
+				// the slide if it exists. Otherwise, it uses the presentation-wide
+				// background.
+				if( isVertical && horizontalBackgrounds.length > h ) {
+					const slideBackground = horizontalBackgrounds[h];
+					const pageBackground = window.getComputedStyle( slideBackground );
+
+					if( pageBackground && pageBackground.background ) {
+						page.style.background = pageBackground.background;
+					}
+					else if( presentationBackground ) {
+						page.style.background = presentationBackground;
+					}
+				} else if( presentationBackground ) {
+					page.style.background = presentationBackground;
+				}
+
+				const stickyContainer = document.createElement( 'div' );
+				stickyContainer.className = 'scroll-page-sticky';
+				page.appendChild( stickyContainer );
+
+				contentContainer = document.createElement( 'div' );
+				contentContainer.className = 'scroll-page-content';
+				stickyContainer.appendChild( contentContainer );
+			}
+
+			contentContainer.appendChild( slide );
+
+			slide.classList.remove( 'past', 'future' );
+			slide.setAttribute( 'data-index-h', h );
+			slide.setAttribute( 'data-index-v', v );
+
+			if( slide.slideBackgroundElement ) {
+				slide.slideBackgroundElement.remove( 'past', 'future' );
+				contentContainer.insertBefore( slide.slideBackgroundElement, slide );
+			}
+
+			previousSlide = slide;
+
+		}
+
+		// Slide and slide background layout
+		horizontalSlides.forEach( ( horizontalSlide, h ) => {
+
+			if( this.Reveal.isVerticalStack( horizontalSlide ) ) {
+				horizontalSlide.querySelectorAll( 'section' ).forEach( ( verticalSlide, v ) => {
+					createPageElement( verticalSlide, h, v, true );
+				});
+			}
+			else {
+				createPageElement( horizontalSlide, h, 0 );
+			}
+
+		}, this );
+
+		this.createProgressBar();
+
+		// Remove leftover stacks
+		queryAll( this.Reveal.getRevealElement(), '.stack' ).forEach( stack => stack.remove() );
+
+		// Add our newly created pages to the DOM
+		pageElements.forEach( page => pageContainer.appendChild( page ) );
+
+		// Re-run JS-based content layout after the slide is added to page DOM
+		this.Reveal.slideContent.layout( this.Reveal.getSlidesElement() );
+
+		this.Reveal.layout();
+		this.Reveal.setState( stateBeforeActivation );
+
+		this.activatedCallbacks.forEach( callback => callback() );
+		this.activatedCallbacks = [];
+
+		this.restoreScrollPosition();
+
+		this.viewportElement.classList.remove( 'loading-scroll-mode' );
+		this.viewportElement.addEventListener( 'scroll', this.onScroll, { passive: true } );
+
+	}
+
+	/**
+	 * Deactivates the scroll view and restores the standard slide-based
+	 * presentation.
+	 */
+	deactivate() {
+
+		if( !this.active ) return;
+
+		const stateBeforeDeactivation = this.Reveal.getState();
+
+		this.active = false;
+
+		this.viewportElement.removeEventListener( 'scroll', this.onScroll );
+		this.viewportElement.classList.remove( 'reveal-scroll' );
+
+		this.removeProgressBar();
+
+		this.Reveal.getSlidesElement().innerHTML = this.slideHTMLBeforeActivation;
+		this.Reveal.sync();
+		this.Reveal.setState( stateBeforeDeactivation );
+
+		this.slideHTMLBeforeActivation = null;
+
+	}
+
+	toggle( override ) {
+
+		if( typeof override === 'boolean' ) {
+			override ? this.activate() : this.deactivate();
+		}
+		else {
+			this.isActive() ? this.deactivate() : this.activate();
+		}
+
+	}
+
+	/**
+	 * Checks if the scroll view is currently active.
+	 */
+	isActive() {
+
+		return this.active;
+
+	}
+
+	/**
+	 * Renders the progress bar component.
+	 */
+	createProgressBar() {
+
+		this.progressBar = document.createElement( 'div' );
+		this.progressBar.className = 'scrollbar';
+
+		this.progressBarInner = document.createElement( 'div' );
+		this.progressBarInner.className = 'scrollbar-inner';
+		this.progressBar.appendChild( this.progressBarInner );
+
+		this.progressBarPlayhead = document.createElement( 'div' );
+		this.progressBarPlayhead.className = 'scrollbar-playhead';
+		this.progressBarInner.appendChild( this.progressBarPlayhead );
+
+		this.viewportElement.insertBefore( this.progressBar, this.viewportElement.firstChild );
+
+		const handleDocumentMouseMove	= ( event ) => {
+
+			let progress = ( event.clientY - this.progressBarInner.getBoundingClientRect().top ) / this.progressBarHeight;
+			progress = Math.max( Math.min( progress, 1 ), 0 );
+
+			this.viewportElement.scrollTop = progress * ( this.viewportElement.scrollHeight - this.viewportElement.offsetHeight );
+
+		};
+
+		const handleDocumentMouseUp = ( event ) => {
+
+			this.draggingProgressBar = false;
+			this.showProgressBar();
+
+			document.removeEventListener( 'mousemove', handleDocumentMouseMove );
+			document.removeEventListener( 'mouseup', handleDocumentMouseUp );
+
+		};
+
+		const handleMouseDown = ( event ) => {
+
+			event.preventDefault();
+
+			this.draggingProgressBar = true;
+
+			document.addEventListener( 'mousemove', handleDocumentMouseMove );
+			document.addEventListener( 'mouseup', handleDocumentMouseUp );
+
+			handleDocumentMouseMove( event );
+
+		};
+
+		this.progressBarInner.addEventListener( 'mousedown', handleMouseDown );
+
+	}
+
+	removeProgressBar() {
+
+		if( this.progressBar ) {
+			this.progressBar.remove();
+			this.progressBar = null;
+		}
+
+	}
+
+	layout() {
+
+		if( this.isActive() ) {
+			this.syncPages();
+			this.syncScrollPosition();
+		}
+
+	}
+
+	/**
+	 * Updates our pages to match the latest configuration and
+	 * presentation size.
+	 */
+	syncPages() {
+
+		const config = this.Reveal.getConfig();
+
+		const slideSize = this.Reveal.getComputedSlideSize( window.innerWidth, window.innerHeight );
+		const scale = this.Reveal.getScale();
+		const useCompactLayout = config.scrollLayout === 'compact';
+
+		const viewportHeight = this.viewportElement.offsetHeight;
+		const compactHeight = slideSize.height * scale;
+		const pageHeight = useCompactLayout ? compactHeight : viewportHeight;
+
+		// The height that needs to be scrolled between scroll triggers
+		this.scrollTriggerHeight = useCompactLayout ? compactHeight : viewportHeight;
+
+		this.viewportElement.style.setProperty( '--page-height', pageHeight + 'px' );
+		this.viewportElement.style.scrollSnapType = typeof config.scrollSnap === 'string' ? `y ${config.scrollSnap}` : '';
+
+		// This will hold all scroll triggers used to show/hide slides
+		this.slideTriggers = [];
+
+		const pageElements = Array.from( this.Reveal.getRevealElement().querySelectorAll( '.scroll-page' ) );
+
+		this.pages = pageElements.map( pageElement => {
+			const page = this.createPage({
+				pageElement,
+				slideElement: pageElement.querySelector( 'section' ),
+				stickyElement: pageElement.querySelector( '.scroll-page-sticky' ),
+				contentElement: pageElement.querySelector( '.scroll-page-content' ),
+				backgroundElement: pageElement.querySelector( '.slide-background' ),
+				autoAnimateElements: pageElement.querySelectorAll( '.scroll-auto-animate-page' ),
+				autoAnimatePages: []
+			});
+
+			page.pageElement.style.setProperty( '--slide-height', config.center === true ? 'auto' : slideSize.height + 'px' );
+
+			this.slideTriggers.push({
+				page: page,
+				activate: () => this.activatePage( page ),
+				deactivate: () => this.deactivatePage( page )
+			});
+
+			// Create scroll triggers that show/hide fragments
+			this.createFragmentTriggersForPage( page );
+
+			// Create scroll triggers for triggering auto-animate steps
+			if( page.autoAnimateElements.length > 0 ) {
+				this.createAutoAnimateTriggersForPage( page );
+			}
+
+			let totalScrollTriggerCount = Math.max( page.scrollTriggers.length - 1, 0 );
+
+			// Each auto-animate step may include its own scroll triggers
+			// for fragments, ensure we count those as well
+			totalScrollTriggerCount += page.autoAnimatePages.reduce( ( total, page ) => {
+				return total + Math.max( page.scrollTriggers.length - 1, 0 );
+			}, page.autoAnimatePages.length );
+
+			// Clean up from previous renders
+			page.pageElement.querySelectorAll( '.scroll-snap-point' ).forEach( el => el.remove() );
+
+			// Create snap points for all scroll triggers
+			// - Can't be absolute in FF
+			// - Can't be 0-height in Safari
+			// - Can't use snap-align on parent in Safari because then
+			//   inner triggers won't work
+			for( let i = 0; i < totalScrollTriggerCount + 1; i++ ) {
+				const triggerStick = document.createElement( 'div' );
+				triggerStick.className = 'scroll-snap-point';
+				triggerStick.style.height = this.scrollTriggerHeight + 'px';
+				triggerStick.style.scrollSnapAlign = useCompactLayout ? 'center' : 'start';
+				page.pageElement.appendChild( triggerStick );
+
+				if( i === 0 ) {
+					triggerStick.style.marginTop = -this.scrollTriggerHeight + 'px';
+				}
+			}
+
+			// In the compact layout, only slides with scroll triggers cover the
+			// full viewport height. This helps avoid empty gaps before or after
+			// a sticky slide.
+			if( useCompactLayout && page.scrollTriggers.length > 0 ) {
+				page.pageHeight = viewportHeight;
+				page.pageElement.style.setProperty( '--page-height', viewportHeight + 'px' );
+			}
+			else {
+				page.pageHeight = pageHeight;
+				page.pageElement.style.removeProperty( '--page-height' );
+			}
+
+			// Add scroll padding based on how many scroll triggers we have
+			page.scrollPadding = this.scrollTriggerHeight * totalScrollTriggerCount;
+
+			// The total height including scrollable space
+			page.totalHeight = page.pageHeight + page.scrollPadding;
+
+			// This is used to pad the height of our page in CSS
+			page.pageElement.style.setProperty( '--page-scroll-padding', page.scrollPadding + 'px' );
+
+			// If this is a sticky page, stick it to the vertical center
+			if( totalScrollTriggerCount > 0 ) {
+				page.stickyElement.style.position = 'sticky';
+				page.stickyElement.style.top = Math.max( ( viewportHeight - page.pageHeight ) / 2, 0 ) + 'px';
+			}
+			else {
+				page.stickyElement.style.position = 'relative';
+				page.pageElement.style.scrollSnapAlign = page.pageHeight < viewportHeight ? 'center' : 'start';
+			}
+
+			return page;
+		} );
+
+		this.setTriggerRanges();
+
+		/*
+		console.log(this.slideTriggers.map( t => {
+			return {
+				range: `${t.range[0].toFixed(2)}-${t.range[1].toFixed(2)}`,
+				triggers: t.page.scrollTriggers.map( t => {
+					return `${t.range[0].toFixed(2)}-${t.range[1].toFixed(2)}`
+				}).join( ', ' ),
+			}
+		}))
+		*/
+
+		this.viewportElement.setAttribute( 'data-scrollbar', config.scrollProgress );
+
+		if( config.scrollProgress && this.totalScrollTriggerCount > 1 ) {
+			// Create the progress bar if it doesn't already exist
+			if( !this.progressBar ) this.createProgressBar();
+
+			this.syncProgressBar();
+		}
+		else {
+			this.removeProgressBar();
+		}
+
+	}
+
+	/**
+	 * Calculates and sets the scroll range for all of our scroll
+	 * triggers.
+	 */
+	setTriggerRanges() {
+
+		// Calculate the total number of scroll triggers
+		this.totalScrollTriggerCount = this.slideTriggers.reduce( ( total, trigger ) => {
+			return total + Math.max( trigger.page.scrollTriggers.length, 1 );
+		}, 0 );
+
+		let rangeStart = 0;
+
+		// Calculate the scroll range of each scroll trigger on a scale
+		// of 0-1
+		this.slideTriggers.forEach( ( trigger, i ) => {
+			trigger.range = [
+				rangeStart,
+				rangeStart + Math.max( trigger.page.scrollTriggers.length, 1 ) / this.totalScrollTriggerCount
+			];
+
+			const scrollTriggerSegmentSize = ( trigger.range[1] - trigger.range[0] ) / trigger.page.scrollTriggers.length;
+			// Set the range for each inner scroll trigger
+			trigger.page.scrollTriggers.forEach( ( scrollTrigger, i ) => {
+				scrollTrigger.range = [
+					rangeStart + i * scrollTriggerSegmentSize,
+					rangeStart + ( i + 1 ) * scrollTriggerSegmentSize
+				];
+			} );
+
+			rangeStart = trigger.range[1];
+		} );
+
+		// Ensure the last trigger extends to the end of the page, otherwise
+		// rounding errors can cause the last trigger to end at 0.999999...
+		this.slideTriggers[this.slideTriggers.length - 1].range[1] = 1;
+
+	}
+
+	/**
+	 * Creates one scroll trigger for each fragments in the given page.
+	 *
+	 * @param {*} page
+	 */
+	createFragmentTriggersForPage( page, slideElement ) {
+
+		slideElement = slideElement || page.slideElement;
+
+		// Each fragment 'group' is an array containing one or more
+		// fragments. Multiple fragments that appear at the same time
+		// are part of the same group.
+		const fragmentGroups = this.Reveal.fragments.sort( slideElement.querySelectorAll( '.fragment' ), true );
+
+		// Create scroll triggers that show/hide fragments
+		if( fragmentGroups.length ) {
+			page.fragments = this.Reveal.fragments.sort( slideElement.querySelectorAll( '.fragment:not(.disabled)' ) );
+			page.scrollTriggers.push(
+				// Trigger for the initial state with no fragments visible
+				{
+					activate: () => {
+						this.Reveal.fragments.update( -1, page.fragments, slideElement );
+					}
+				}
+			);
+
+			// Triggers for each fragment group
+			fragmentGroups.forEach( ( fragments, i ) => {
+				page.scrollTriggers.push({
+					activate: () => {
+						this.Reveal.fragments.update( i, page.fragments, slideElement );
+					}
+				});
+			} );
+		}
+
+
+		return page.scrollTriggers.length;
+
+	}
+
+	/**
+	 * Creates scroll triggers for the auto-animate steps in the
+	 * given page.
+	 *
+	 * @param {*} page
+	 */
+	createAutoAnimateTriggersForPage( page ) {
+
+		if( page.autoAnimateElements.length > 0 ) {
+
+			// Triggers for each subsequent auto-animate slide
+			this.slideTriggers.push( ...Array.from( page.autoAnimateElements ).map( ( autoAnimateElement, i ) => {
+				let autoAnimatePage = this.createPage({
+					slideElement: autoAnimateElement.querySelector( 'section' ),
+					contentElement: autoAnimateElement,
+					backgroundElement: autoAnimateElement.querySelector( '.slide-background' )
+				});
+
+				// Create fragment scroll triggers for the auto-animate slide
+				this.createFragmentTriggersForPage( autoAnimatePage, autoAnimatePage.slideElement );
+
+				page.autoAnimatePages.push( autoAnimatePage );
+
+				// Return our slide trigger
+				return {
+					page: autoAnimatePage,
+					activate: () => this.activatePage( autoAnimatePage ),
+					deactivate: () => this.deactivatePage( autoAnimatePage )
+				};
+			}));
+		}
+
+	}
+
+	/**
+	 * Helper method for creating a page definition and adding
+	 * required fields. A "page" is a slide or auto-animate step.
+	 */
+	createPage( page ) {
+
+		page.scrollTriggers = [];
+		page.indexh = parseInt( page.slideElement.getAttribute( 'data-index-h' ), 10 );
+		page.indexv = parseInt( page.slideElement.getAttribute( 'data-index-v' ), 10 );
+
+		return page;
+
+	}
+
+	/**
+	 * Rerenders progress bar segments so that they match the current
+	 * reveal.js config and size.
+	 */
+	syncProgressBar() {
+
+		this.progressBarInner.querySelectorAll( '.scrollbar-slide' ).forEach( slide => slide.remove() );
+
+		const scrollHeight = this.viewportElement.scrollHeight;
+		const viewportHeight = this.viewportElement.offsetHeight;
+		const viewportHeightFactor = viewportHeight / scrollHeight;
+
+		this.progressBarHeight = this.progressBarInner.offsetHeight;
+		this.playheadHeight = Math.max( viewportHeightFactor * this.progressBarHeight, MIN_PLAYHEAD_HEIGHT );
+		this.progressBarScrollableHeight = this.progressBarHeight - this.playheadHeight;
+
+		const progressSegmentHeight = viewportHeight / scrollHeight * this.progressBarHeight;
+		const spacing = Math.min( progressSegmentHeight / 8, MAX_PROGRESS_SPACING );
+
+		this.progressBarPlayhead.style.height = this.playheadHeight - spacing + 'px';
+
+		// Don't show individual segments if they're too small
+		if( progressSegmentHeight > MIN_PROGRESS_SEGMENT_HEIGHT ) {
+
+			this.slideTriggers.forEach( slideTrigger => {
+
+				const { page } = slideTrigger;
+
+				// Visual representation of a slide
+				page.progressBarSlide = document.createElement( 'div' );
+				page.progressBarSlide.className = 'scrollbar-slide';
+				page.progressBarSlide.style.top = slideTrigger.range[0] * this.progressBarHeight + 'px';
+				page.progressBarSlide.style.height = ( slideTrigger.range[1] - slideTrigger.range[0] ) * this.progressBarHeight - spacing + 'px';
+				page.progressBarSlide.classList.toggle( 'has-triggers', page.scrollTriggers.length > 0 );
+				this.progressBarInner.appendChild( page.progressBarSlide );
+
+				// Visual representations of each scroll trigger
+				page.scrollTriggerElements = page.scrollTriggers.map( ( trigger, i ) => {
+
+					const triggerElement = document.createElement( 'div' );
+					triggerElement.className = 'scrollbar-trigger';
+					triggerElement.style.top = ( trigger.range[0] - slideTrigger.range[0] ) * this.progressBarHeight + 'px';
+					triggerElement.style.height = ( trigger.range[1] - trigger.range[0] ) * this.progressBarHeight - spacing + 'px';
+					page.progressBarSlide.appendChild( triggerElement );
+
+					if( i === 0 ) triggerElement.style.display = 'none';
+
+					return triggerElement;
+
+				} );
+
+			} );
+
+		}
+		else {
+
+			this.pages.forEach( page => page.progressBarSlide = null );
+
+		}
+
+	}
+
+	/**
+	 * Reads the current scroll position and updates our active
+	 * trigger states accordingly.
+	 */
+	syncScrollPosition() {
+
+		const viewportHeight = this.viewportElement.offsetHeight;
+		const viewportHeightFactor = viewportHeight / this.viewportElement.scrollHeight;
+
+		const scrollTop = this.viewportElement.scrollTop;
+		const scrollHeight = this.viewportElement.scrollHeight - viewportHeight
+		const scrollProgress = Math.max( Math.min( scrollTop / scrollHeight, 1 ), 0 );
+		const scrollProgressMid = Math.max( Math.min( ( scrollTop + viewportHeight / 2 ) / this.viewportElement.scrollHeight, 1 ), 0 );
+
+		let activePage;
+
+		this.slideTriggers.forEach( ( trigger ) => {
+			const { page } = trigger;
+
+			const shouldPreload = scrollProgress >= trigger.range[0] - viewportHeightFactor*2 &&
+														scrollProgress <= trigger.range[1] + viewportHeightFactor*2;
+
+			// Load slides that are within the preload range
+			if( shouldPreload && !page.loaded ) {
+				page.loaded = true;
+				this.Reveal.slideContent.load( page.slideElement );
+			}
+			else if( page.loaded ) {
+				page.loaded = false;
+				this.Reveal.slideContent.unload( page.slideElement );
+			}
+
+			// If we're within this trigger range, activate it
+			if( scrollProgress >= trigger.range[0] && scrollProgress <= trigger.range[1] ) {
+				this.activateTrigger( trigger );
+				activePage = trigger.page;
+			}
+			// .. otherwise deactivate
+			else if( trigger.active ) {
+				this.deactivateTrigger( trigger );
+			}
+		} );
+
+		// Each page can have its own scroll triggers, check if any of those
+		// need to be activated/deactivated
+		if( activePage ) {
+			activePage.scrollTriggers.forEach( ( trigger ) => {
+				if( scrollProgressMid >= trigger.range[0] && scrollProgressMid <= trigger.range[1] ) {
+					this.activateTrigger( trigger );
+				}
+				else if( trigger.active ) {
+					this.deactivateTrigger( trigger );
+				}
+			} );
+		}
+
+		// Update our visual progress indication
+		this.setProgressBarValue( scrollTop / ( this.viewportElement.scrollHeight - viewportHeight ) );
+
+	}
+
+	/**
+	 * Moves the progress bar playhead to the specified position.
+	 *
+	 * @param {number} progress 0-1
+	 */
+	setProgressBarValue( progress ) {
+
+		if( this.progressBar ) {
+
+			this.progressBarPlayhead.style.transform = `translateY(${progress * this.progressBarScrollableHeight}px)`;
+
+			this.getAllPages()
+				.filter( page => page.progressBarSlide )
+				.forEach( ( page ) => {
+					page.progressBarSlide.classList.toggle( 'active', page.active === true );
+
+					page.scrollTriggers.forEach( ( trigger, i ) => {
+						page.scrollTriggerElements[i].classList.toggle( 'active', page.active === true && trigger.active === true );
+					} );
+				} );
+
+			this.showProgressBar();
+
+		}
+
+	}
+
+	/**
+	 * Show the progress bar and, if configured, automatically hide
+	 * it after a delay.
+	 */
+	showProgressBar() {
+
+		this.progressBar.classList.add( 'visible' );
+
+		clearTimeout( this.hideProgressBarTimeout );
+
+		if( this.Reveal.getConfig().scrollProgress === 'auto' && !this.draggingProgressBar ) {
+
+			this.hideProgressBarTimeout = setTimeout( () => {
+				if( this.progressBar ) {
+					this.progressBar.classList.remove( 'visible' );
+				}
+			}, HIDE_SCROLLBAR_TIMEOUT );
+
+		}
+
+	}
+
+	/**
+	 * Scroll to the previous page.
+	 */
+	prev() {
+
+		this.viewportElement.scrollTop -= this.scrollTriggerHeight;
+
+	}
+
+	/**
+	 * Scroll to the next page.
+	 */
+	next() {
+
+		this.viewportElement.scrollTop += this.scrollTriggerHeight;
+
+	}
+
+	/**
+	 * Scrolls the given slide element into view.
+	 *
+	 * @param {HTMLElement} slideElement
+	 */
+	scrollToSlide( slideElement ) {
+
+		// If the scroll view isn't active yet, queue this action
+		if( !this.active ) {
+			this.activatedCallbacks.push( () => this.scrollToSlide( slideElement ) );
+		}
+		else {
+			// Find the trigger for this slide
+			const trigger = this.getScrollTriggerBySlide( slideElement );
+
+			if( trigger ) {
+				// Use the trigger's range to calculate the scroll position
+				this.viewportElement.scrollTop = trigger.range[0] * ( this.viewportElement.scrollHeight - this.viewportElement.offsetHeight );
+			}
+		}
+
+	}
+
+	/**
+	 * Persists the current scroll position to session storage
+	 * so that it can be restored.
+	 */
+	storeScrollPosition() {
+
+		clearTimeout( this.storeScrollPositionTimeout );
+
+		this.storeScrollPositionTimeout = setTimeout( () => {
+			sessionStorage.setItem( 'reveal-scroll-top', this.viewportElement.scrollTop );
+			sessionStorage.setItem( 'reveal-scroll-origin', location.origin + location.pathname );
+
+			this.storeScrollPositionTimeout = null;
+		}, 50 );
+
+	}
+
+	/**
+	 * Restores the scroll position when a deck is reloader.
+	 */
+	restoreScrollPosition() {
+
+		const scrollPosition = sessionStorage.getItem( 'reveal-scroll-top' );
+		const scrollOrigin = sessionStorage.getItem( 'reveal-scroll-origin' );
+
+		if( scrollPosition && scrollOrigin === location.origin + location.pathname ) {
+			this.viewportElement.scrollTop = parseInt( scrollPosition, 10 );
+		}
+
+	}
+
+	/**
+	 * Activates the given page and starts its embedded content
+	 * if there is any.
+	 *
+	 * @param {object} page
+	 */
+	activatePage( page ) {
+
+		if( !page.active ) {
+
+			page.active = true;
+
+			const { slideElement, backgroundElement, contentElement, indexh, indexv } = page;
+
+			contentElement.style.display = 'block';
+
+			slideElement.classList.add( 'present' );
+
+			if( backgroundElement ) {
+				backgroundElement.classList.add( 'present' );
+			}
+
+			this.Reveal.setCurrentScrollPage( slideElement, indexh, indexv );
+			this.Reveal.backgrounds.bubbleSlideContrastClassToElement( slideElement, this.viewportElement );
+
+			// If this page is part of an auto-animation there will be one
+			// content element per auto-animated page. We need to show the
+			// current page and hide all others.
+			Array.from( contentElement.parentNode.querySelectorAll( '.scroll-page-content' ) ).forEach( sibling => {
+				if( sibling !== contentElement ) {
+					sibling.style.display = 'none';
+				}
+			});
+
+		}
+
+	}
+
+	/**
+	 * Deactivates the page after it has been visible.
+	 *
+	 * @param {object} page
+	 */
+	deactivatePage( page ) {
+
+		if( page.active ) {
+
+			page.active = false;
+			if( page.slideElement ) page.slideElement.classList.remove( 'present' );
+			if( page.backgroundElement ) page.backgroundElement.classList.remove( 'present' );
+
+		}
+
+	}
+
+	activateTrigger( trigger ) {
+
+		if( !trigger.active ) {
+			trigger.active = true;
+			trigger.activate();
+		}
+
+	}
+
+	deactivateTrigger( trigger ) {
+
+		if( trigger.active ) {
+			trigger.active = false;
+
+			if( trigger.deactivate ) {
+				trigger.deactivate();
+			}
+		}
+
+	}
+
+	/**
+	 * Retrieve a slide by its original h/v index (i.e. the indices the
+	 * slide had before being linearized).
+	 *
+	 * @param {number} h
+	 * @param {number} v
+	 * @returns {HTMLElement}
+	 */
+	getSlideByIndices( h, v ) {
+
+		const page = this.getAllPages().find( page => {
+			return page.indexh === h && page.indexv === v;
+		} );
+
+		return page ? page.slideElement : null;
+
+	}
+
+	/**
+	 * Retrieve a list of all scroll triggers for the given slide
+	 * DOM element.
+	 *
+	 * @param {HTMLElement} slide
+	 * @returns {Array}
+	 */
+	getScrollTriggerBySlide( slide ) {
+
+		return this.slideTriggers.find( trigger => trigger.page.slideElement === slide );
+
+	}
+
+	/**
+	 * Get a list of all pages in the scroll view. This includes
+	 * both top-level slides and auto-animate steps.
+	 *
+	 * @returns {Array}
+	 */
+	getAllPages() {
+
+		return this.pages.flatMap( page => [page, ...(page.autoAnimatePages || [])] );
+
+	}
+
+	onScroll() {
+
+		this.syncScrollPosition();
+		this.storeScrollPosition();
+
+	}
+
+	get viewportElement() {
+
+		return this.Reveal.getViewportElement();
+
+	}
+
+}

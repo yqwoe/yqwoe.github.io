@@ -1,1 +1,313 @@
-let extend=(e,t)=>{for(var r in t)e[r]=t[r];return e},queryAll=(e,t)=>Array.from(e.querySelectorAll(t)),toggleClass=(e,t,r)=>{r?e.classList.add(t):e.classList.remove(t)},deserialize=e=>{if("string"==typeof e){if("null"===e)return null;if("true"===e)return!0;if("false"===e)return!1;if(e.match(/^-?[\d\.]+$/))return parseFloat(e)}return e},distanceBetween=(e,t)=>{var r=e.x-t.x,e=e.y-t.y;return Math.sqrt(r*r+e*e)},transformElement=(e,t)=>{e.style.transform=t},matches=(e,t)=>{var r=e.matches||e.matchesSelector||e.msMatchesSelector;return!(!r||!r.call(e,t))},closest=(e,t)=>{if("function"==typeof e.closest)return e.closest(t);for(;e;){if(matches(e,t))return e;e=e.parentNode}return null},enterFullscreen=e=>{var t=(e=e||document.documentElement).requestFullscreen||e.webkitRequestFullscreen||e.webkitRequestFullScreen||e.mozRequestFullScreen||e.msRequestFullscreen;t&&t.apply(e)},createSingletonNode=(t,e,r,l="")=>{var n=t.querySelectorAll("."+r);for(let e=0;e<n.length;e++){var s=n[e];if(s.parentNode===t)return s}e=document.createElement(e);return e.className=r,e.innerHTML=l,t.appendChild(e),e},createStyleSheet=e=>{var t=document.createElement("style");return t.type="text/css",e&&0<e.length&&(t.styleSheet?t.styleSheet.cssText=e:t.appendChild(document.createTextNode(e))),document.head.appendChild(t),t},getQueryHash=()=>{let t={};for(var e in location.search.replace(/[A-Z0-9]+?=([\w\.%-]*)/gi,e=>{t[e.split("=").shift()]=e.split("=").pop()}),t){var r=t[e];t[e]=deserialize(unescape(r))}return void 0!==t.dependencies&&delete t.dependencies,t},getRemainingHeight=(e,t=0)=>{var r,l;return e?(l=e.style.height,e.style.height="0px",e.parentNode.style.height="auto",r=t-e.parentNode.offsetHeight,e.style.height=l+"px",e.parentNode.style.removeProperty("height"),r):t},fileExtensionToMimeMap={mp4:"video/mp4",m4a:"video/mp4",ogv:"video/ogg",mpeg:"video/mpeg",webm:"video/webm"},getMimeTypeFromFile=(e="")=>fileExtensionToMimeMap[e.split(".").pop()],encodeRFC3986URI=(e="")=>encodeURI(e).replace(/%5B/g,"[").replace(/%5D/g,"]").replace(/[!'()*]/g,e=>"%"+e.charCodeAt(0).toString(16).toUpperCase());export{extend,queryAll,toggleClass,deserialize,distanceBetween,transformElement,matches,closest,enterFullscreen,createSingletonNode,createStyleSheet,getQueryHash,getRemainingHeight,getMimeTypeFromFile,encodeRFC3986URI};
+/**
+ * Extend object a with the properties of object b.
+ * If there's a conflict, object b takes precedence.
+ *
+ * @param {object} a
+ * @param {object} b
+ */
+export const extend = ( a, b ) => {
+
+	for( let i in b ) {
+		a[ i ] = b[ i ];
+	}
+
+	return a;
+
+}
+
+/**
+ * querySelectorAll but returns an Array.
+ */
+export const queryAll = ( el, selector ) => {
+
+	return Array.from( el.querySelectorAll( selector ) );
+
+}
+
+/**
+ * classList.toggle() with cross browser support
+ */
+export const toggleClass = ( el, className, value ) => {
+	if( value ) {
+		el.classList.add( className );
+	}
+	else {
+		el.classList.remove( className );
+	}
+}
+
+/**
+ * Utility for deserializing a value.
+ *
+ * @param {*} value
+ * @return {*}
+ */
+export const deserialize = ( value ) => {
+
+	if( typeof value === 'string' ) {
+		if( value === 'null' ) return null;
+		else if( value === 'true' ) return true;
+		else if( value === 'false' ) return false;
+		else if( value.match( /^-?[\d\.]+$/ ) ) return parseFloat( value );
+	}
+
+	return value;
+
+}
+
+/**
+ * Measures the distance in pixels between point a
+ * and point b.
+ *
+ * @param {object} a point with x/y properties
+ * @param {object} b point with x/y properties
+ *
+ * @return {number}
+ */
+export const distanceBetween = ( a, b ) => {
+
+	let dx = a.x - b.x,
+		dy = a.y - b.y;
+
+	return Math.sqrt( dx*dx + dy*dy );
+
+}
+
+/**
+ * Applies a CSS transform to the target element.
+ *
+ * @param {HTMLElement} element
+ * @param {string} transform
+ */
+export const transformElement = ( element, transform ) => {
+
+	element.style.transform = transform;
+
+}
+
+/**
+ * Element.matches with IE support.
+ *
+ * @param {HTMLElement} target The element to match
+ * @param {String} selector The CSS selector to match
+ * the element against
+ *
+ * @return {Boolean}
+ */
+export const matches = ( target, selector ) => {
+
+	let matchesMethod = target.matches || target.matchesSelector || target.msMatchesSelector;
+
+	return !!( matchesMethod && matchesMethod.call( target, selector ) );
+
+}
+
+/**
+ * Find the closest parent that matches the given
+ * selector.
+ *
+ * @param {HTMLElement} target The child element
+ * @param {String} selector The CSS selector to match
+ * the parents against
+ *
+ * @return {HTMLElement} The matched parent or null
+ * if no matching parent was found
+ */
+export const closest = ( target, selector ) => {
+
+	// Native Element.closest
+	if( typeof target.closest === 'function' ) {
+		return target.closest( selector );
+	}
+
+	// Polyfill
+	while( target ) {
+		if( matches( target, selector ) ) {
+			return target;
+		}
+
+		// Keep searching
+		target = target.parentNode;
+	}
+
+	return null;
+
+}
+
+/**
+ * Handling the fullscreen functionality via the fullscreen API
+ *
+ * @see http://fullscreen.spec.whatwg.org/
+ * @see https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode
+ */
+export const enterFullscreen = element => {
+
+	element = element || document.documentElement;
+
+	// Check which implementation is available
+	let requestMethod = element.requestFullscreen ||
+						element.webkitRequestFullscreen ||
+						element.webkitRequestFullScreen ||
+						element.mozRequestFullScreen ||
+						element.msRequestFullscreen;
+
+	if( requestMethod ) {
+		requestMethod.apply( element );
+	}
+
+}
+
+/**
+ * Creates an HTML element and returns a reference to it.
+ * If the element already exists the existing instance will
+ * be returned.
+ *
+ * @param {HTMLElement} container
+ * @param {string} tagname
+ * @param {string} classname
+ * @param {string} innerHTML
+ *
+ * @return {HTMLElement}
+ */
+export const createSingletonNode = ( container, tagname, classname, innerHTML='' ) => {
+
+	// Find all nodes matching the description
+	let nodes = container.querySelectorAll( '.' + classname );
+
+	// Check all matches to find one which is a direct child of
+	// the specified container
+	for( let i = 0; i < nodes.length; i++ ) {
+		let testNode = nodes[i];
+		if( testNode.parentNode === container ) {
+			return testNode;
+		}
+	}
+
+	// If no node was found, create it now
+	let node = document.createElement( tagname );
+	node.className = classname;
+	node.innerHTML = innerHTML;
+	container.appendChild( node );
+
+	return node;
+
+}
+
+/**
+ * Injects the given CSS styles into the DOM.
+ *
+ * @param {string} value
+ */
+export const createStyleSheet = ( value ) => {
+
+	let tag = document.createElement( 'style' );
+	tag.type = 'text/css';
+
+	if( value && value.length > 0 ) {
+		if( tag.styleSheet ) {
+			tag.styleSheet.cssText = value;
+		}
+		else {
+			tag.appendChild( document.createTextNode( value ) );
+		}
+	}
+
+	document.head.appendChild( tag );
+
+	return tag;
+
+}
+
+/**
+ * Returns a key:value hash of all query params.
+ */
+export const getQueryHash = () => {
+
+	let query = {};
+
+	location.search.replace( /[A-Z0-9]+?=([\w\.%-]*)/gi, a => {
+		query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+	} );
+
+	// Basic deserialization
+	for( let i in query ) {
+		let value = query[ i ];
+
+		query[ i ] = deserialize( unescape( value ) );
+	}
+
+	// Do not accept new dependencies via query config to avoid
+	// the potential of malicious script injection
+	if( typeof query['dependencies'] !== 'undefined' ) delete query['dependencies'];
+
+	return query;
+
+}
+
+/**
+ * Returns the remaining height within the parent of the
+ * target element.
+ *
+ * remaining height = [ configured parent height ] - [ current parent height ]
+ *
+ * @param {HTMLElement} element
+ * @param {number} [height]
+ */
+export const getRemainingHeight = ( element, height = 0 ) => {
+
+	if( element ) {
+		let newHeight, oldHeight = element.style.height;
+
+		// Change the .stretch element height to 0 in order find the height of all
+		// the other elements
+		element.style.height = '0px';
+
+		// In Overview mode, the parent (.slide) height is set of 700px.
+		// Restore it temporarily to its natural height.
+		element.parentNode.style.height = 'auto';
+
+		newHeight = height - element.parentNode.offsetHeight;
+
+		// Restore the old height, just in case
+		element.style.height = oldHeight + 'px';
+
+		// Clear the parent (.slide) height. .removeProperty works in IE9+
+		element.parentNode.style.removeProperty('height');
+
+		return newHeight;
+	}
+
+	return height;
+
+}
+
+const fileExtensionToMimeMap = {
+	'mp4': 'video/mp4',
+	'm4a': 'video/mp4',
+	'ogv': 'video/ogg',
+	'mpeg': 'video/mpeg',
+	'webm': 'video/webm'
+}
+
+/**
+ * Guess the MIME type for common file formats.
+ */
+export const getMimeTypeFromFile = ( filename='' ) => {
+	return fileExtensionToMimeMap[filename.split('.').pop()]
+}
+
+/**
+ * Encodes a string for RFC3986-compliant URL format.
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI#encoding_for_rfc3986
+ *
+ * @param {string} url
+ */
+export const encodeRFC3986URI = ( url='' ) => {
+	return encodeURI(url)
+	  .replace(/%5B/g, "[")
+	  .replace(/%5D/g, "]")
+	  .replace(
+		/[!'()*]/g,
+		(c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`
+	  );
+}

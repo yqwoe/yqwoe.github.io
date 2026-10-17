@@ -1,1 +1,271 @@
-import speakerViewHTML from"./speaker-view.html";import{marked}from"marked";let Plugin=()=>{let r,i=null,s;function t(){if(i&&!i.closed)i.focus();else if((i=window.open("about:blank","reveal.js - Notes","width=1100,height=700")).marked=marked,i.document.write(speakerViewHTML),i){let e=s.getConfig().url,t="string"==typeof e?e:window.location.protocol+"//"+window.location.host+window.location.pathname+window.location.search;r=setInterval(function(){i.postMessage(JSON.stringify({namespace:"reveal-notes",type:"connect",state:s.getState(),url:t}),"*")},500),window.addEventListener("message",n)}else alert("Speaker view popup failed to open. Please make sure popups are allowed and reopen the speaker view.")}function e(e){let t=s.getCurrentSlide(),n=t.querySelectorAll("aside.notes"),a=t.querySelector(".current-fragment");var o,r={namespace:"reveal-notes",type:"state",notes:"",markdown:!1,whitespace:"normal",state:s.getState()};t.hasAttribute("data-notes")&&(r.notes=t.getAttribute("data-notes"),r.whitespace="pre-wrap"),a&&((o=a.querySelector("aside.notes"))?(r.notes=o.innerHTML,r.markdown="string"==typeof o.getAttribute("data-markdown"),n=null):a.hasAttribute("data-notes")&&(r.notes=a.getAttribute("data-notes"),r.whitespace="pre-wrap",n=null)),n&&n.length&&(n=Array.from(n).filter(e=>null===e.closest(".fragment")),r.notes=n.map(e=>e.innerHTML).join("\n"),r.markdown=n[0]&&"string"==typeof n[0].getAttribute("data-markdown")),i.postMessage(JSON.stringify(r),"*")}function n(e){if((e=>{try{return window.location.origin===e.source.location.origin}catch(e){}})(e))try{var t=JSON.parse(e.data);t&&"reveal-notes"===t.namespace&&"connected"===t.type?(clearInterval(r),l()):t&&"reveal-notes"===t.namespace&&"call"===t.type&&(n=t.methodName,a=t.arguments,o=t.callId,n=s[n].apply(s,a),i.postMessage(JSON.stringify({namespace:"reveal-notes",type:"return",result:n,callId:o}),"*"))}catch(e){}var n,a,o}function l(){s.on("slidechanged",e),s.on("fragmentshown",e),s.on("fragmenthidden",e),s.on("overviewhidden",e),s.on("overviewshown",e),s.on("paused",e),s.on("resumed",e),s.on("previewiframe",e),s.on("previewimage",e),s.on("previewvideo",e),s.on("closeoverlay",e),e()}return{id:"notes",init:function(e){s=e,/receiver/i.test(window.location.search)||(null!==window.location.search.match(/(\?|\&)notes/gi)?t():window.addEventListener("message",t=>{if(!i&&"string"==typeof t.data){let e;try{e=JSON.parse(t.data)}catch(e){}e&&"reveal-notes"===e.namespace&&"heartbeat"===e.type&&(t=t.source,i&&!i.closed?i.focus():(i=t,window.addEventListener("message",n),l()))}}),s.addKeyBinding({keyCode:83,key:"S",description:"Speaker notes view"},function(){t()}))},open:t}};export default Plugin;
+import speakerViewHTML from './speaker-view.html'
+
+import { marked } from 'marked';
+
+/**
+ * Handles opening of and synchronization with the reveal.js
+ * notes window.
+ *
+ * Handshake process:
+ * 1. This window posts 'connect' to notes window
+ *    - Includes URL of presentation to show
+ * 2. Notes window responds with 'connected' when it is available
+ * 3. This window proceeds to send the current presentation state
+ *    to the notes window
+ */
+const Plugin = () => {
+
+	let connectInterval;
+	let speakerWindow = null;
+	let deck;
+
+	/**
+	 * Opens a new speaker view window.
+	 */
+	function openSpeakerWindow() {
+
+		// If a window is already open, focus it
+		if( speakerWindow && !speakerWindow.closed ) {
+			speakerWindow.focus();
+		}
+		else {
+			speakerWindow = window.open( 'about:blank', 'reveal.js - Notes', 'width=1100,height=700' );
+			speakerWindow.marked = marked;
+			speakerWindow.document.write( speakerViewHTML );
+
+			if( !speakerWindow ) {
+				alert( 'Speaker view popup failed to open. Please make sure popups are allowed and reopen the speaker view.' );
+				return;
+			}
+
+			connect();
+		}
+
+	}
+
+	/**
+	 * Reconnect with an existing speaker view window.
+	 */
+	function reconnectSpeakerWindow( reconnectWindow ) {
+
+		if( speakerWindow && !speakerWindow.closed ) {
+			speakerWindow.focus();
+		}
+		else {
+			speakerWindow = reconnectWindow;
+			window.addEventListener( 'message', onPostMessage );
+			onConnected();
+		}
+
+	}
+
+	/**
+		* Connect to the notes window through a postmessage handshake.
+		* Using postmessage enables us to work in situations where the
+		* origins differ, such as a presentation being opened from the
+		* file system.
+		*/
+	function connect() {
+
+		const presentationURL = deck.getConfig().url;
+
+		const url = typeof presentationURL === 'string' ? presentationURL :
+								window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search;
+
+		// Keep trying to connect until we get a 'connected' message back
+		connectInterval = setInterval( function() {
+			speakerWindow.postMessage( JSON.stringify( {
+				namespace: 'reveal-notes',
+				type: 'connect',
+				state: deck.getState(),
+				url
+			} ), '*' );
+		}, 500 );
+
+		window.addEventListener( 'message', onPostMessage );
+
+	}
+
+	/**
+	 * Calls the specified Reveal.js method with the provided argument
+	 * and then pushes the result to the notes frame.
+	 */
+	function callRevealApi( methodName, methodArguments, callId ) {
+
+		let result = deck[methodName].apply( deck, methodArguments );
+		speakerWindow.postMessage( JSON.stringify( {
+			namespace: 'reveal-notes',
+			type: 'return',
+			result,
+			callId
+		} ), '*' );
+
+	}
+
+	/**
+	 * Posts the current slide data to the notes window.
+	 */
+	function post( event ) {
+
+		let slideElement = deck.getCurrentSlide(),
+			notesElements = slideElement.querySelectorAll( 'aside.notes' ),
+			fragmentElement = slideElement.querySelector( '.current-fragment' );
+
+		let messageData = {
+			namespace: 'reveal-notes',
+			type: 'state',
+			notes: '',
+			markdown: false,
+			whitespace: 'normal',
+			state: deck.getState()
+		};
+
+		// Look for notes defined in a slide attribute
+		if( slideElement.hasAttribute( 'data-notes' ) ) {
+			messageData.notes = slideElement.getAttribute( 'data-notes' );
+			messageData.whitespace = 'pre-wrap';
+		}
+
+		// Look for notes defined in a fragment
+		if( fragmentElement ) {
+			let fragmentNotes = fragmentElement.querySelector( 'aside.notes' );
+			if( fragmentNotes ) {
+				messageData.notes = fragmentNotes.innerHTML;
+				messageData.markdown = typeof fragmentNotes.getAttribute( 'data-markdown' ) === 'string';
+
+				// Ignore other slide notes
+				notesElements = null;
+			}
+			else if( fragmentElement.hasAttribute( 'data-notes' ) ) {
+				messageData.notes = fragmentElement.getAttribute( 'data-notes' );
+				messageData.whitespace = 'pre-wrap';
+
+				// In case there are slide notes
+				notesElements = null;
+			}
+		}
+
+		// Look for notes defined in an aside element
+		if( notesElements && notesElements.length ) {
+			// Ignore notes inside of fragments since those are shown
+			// individually when stepping through fragments
+			notesElements = Array.from( notesElements ).filter( notesElement => notesElement.closest( '.fragment' ) === null );
+
+			messageData.notes = notesElements.map( notesElement => notesElement.innerHTML ).join( '\n' );
+			messageData.markdown = notesElements[0] && typeof notesElements[0].getAttribute( 'data-markdown' ) === 'string';
+		}
+
+		speakerWindow.postMessage( JSON.stringify( messageData ), '*' );
+
+	}
+
+	/**
+	 * Check if the given event is from the same origin as the
+	 * current window.
+	 */
+	function isSameOriginEvent( event ) {
+
+		try {
+			return window.location.origin === event.source.location.origin;
+		}
+		catch ( error ) {
+			return false;
+		}
+
+	}
+
+	function onPostMessage( event ) {
+
+		// Only allow same-origin messages
+		// (added 12/5/22 as a XSS safeguard)
+		if( isSameOriginEvent( event ) ) {
+
+			try {
+				let data = JSON.parse( event.data );
+				if( data && data.namespace === 'reveal-notes' && data.type === 'connected' ) {
+					clearInterval( connectInterval );
+					onConnected();
+				}
+				else if( data && data.namespace === 'reveal-notes' && data.type === 'call' ) {
+					callRevealApi( data.methodName, data.arguments, data.callId );
+				}
+		  } catch (e) {}
+
+		}
+
+	}
+
+	/**
+	 * Called once we have established a connection to the notes
+	 * window.
+	 */
+	function onConnected() {
+
+		// Monitor events that trigger a change in state
+		deck.on( 'slidechanged', post );
+		deck.on( 'fragmentshown', post );
+		deck.on( 'fragmenthidden', post );
+		deck.on( 'overviewhidden', post );
+		deck.on( 'overviewshown', post );
+		deck.on( 'paused', post );
+		deck.on( 'resumed', post );
+		deck.on( 'previewiframe', post );
+		deck.on( 'previewimage', post );
+		deck.on( 'previewvideo', post );
+		deck.on( 'closeoverlay', post );
+
+		// Post the initial state
+		post();
+
+	}
+
+	return {
+		id: 'notes',
+
+		init: function( reveal ) {
+
+			deck = reveal;
+
+			if( !/receiver/i.test( window.location.search ) ) {
+
+				// If the there's a 'notes' query set, open directly
+				if( window.location.search.match( /(\?|\&)notes/gi ) !== null ) {
+					openSpeakerWindow();
+				}
+				else {
+					// Keep listening for speaker view heartbeats. If we receive a
+					// heartbeat from an orphaned window, reconnect it. This ensures
+					// that we remain connected to the notes even if the presentation
+					// is reloaded.
+					window.addEventListener( 'message', event => {
+
+						if( !speakerWindow && typeof event.data === 'string' ) {
+							let data;
+
+							try {
+								data = JSON.parse( event.data );
+							}
+							catch( error ) {}
+
+							if( data && data.namespace === 'reveal-notes' && data.type === 'heartbeat' ) {
+								reconnectSpeakerWindow( event.source );
+							}
+						}
+					});
+				}
+
+				// Open the notes when the 's' key is hit
+				deck.addKeyBinding({keyCode: 83, key: 'S', description: 'Speaker notes view'}, function() {
+					openSpeakerWindow();
+				} );
+
+			}
+
+		},
+
+		open: openSpeakerWindow
+	};
+
+};
+
+export default Plugin;

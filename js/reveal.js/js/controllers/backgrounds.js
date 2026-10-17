@@ -1,1 +1,470 @@
-import{queryAll}from"../utils/util.js";import{colorToRgb,colorBrightness}from"../utils/color.js";export default class Backgrounds{constructor(e){this.Reveal=e}render(){this.element=document.createElement("div"),this.element.className="backgrounds",this.Reveal.getRevealElement().appendChild(this.element)}create(){this.element.innerHTML="",this.element.classList.add("no-transition"),this.Reveal.getHorizontalSlides().forEach(e=>{let t=this.createBackground(e,this.element);queryAll(e,"section").forEach(e=>{this.createBackground(e,t),t.classList.add("stack")})}),this.Reveal.getConfig().parallaxBackgroundImage?(this.element.style.backgroundImage='url("'+this.Reveal.getConfig().parallaxBackgroundImage+'")',this.element.style.backgroundSize=this.Reveal.getConfig().parallaxBackgroundSize,this.element.style.backgroundRepeat=this.Reveal.getConfig().parallaxBackgroundRepeat,this.element.style.backgroundPosition=this.Reveal.getConfig().parallaxBackgroundPosition,setTimeout(()=>{this.Reveal.getRevealElement().classList.add("has-parallax-background")},1)):(this.element.style.backgroundImage="",this.Reveal.getRevealElement().classList.remove("has-parallax-background"))}createBackground(e,t){var a=document.createElement("div"),r=(a.className="slide-background "+e.className.replace(/present|past|future/,""),document.createElement("div"));return r.className="slide-background-content",a.appendChild(r),t.appendChild(a),e.slideBackgroundElement=a,e.slideBackgroundContentElement=r,this.sync(e),a}sync(e){var t=e.slideBackgroundElement,a=e.slideBackgroundContentElement,r={background:e.getAttribute("data-background"),backgroundSize:e.getAttribute("data-background-size"),backgroundImage:e.getAttribute("data-background-image"),backgroundVideo:e.getAttribute("data-background-video"),backgroundIframe:e.getAttribute("data-background-iframe"),backgroundColor:e.getAttribute("data-background-color"),backgroundGradient:e.getAttribute("data-background-gradient"),backgroundRepeat:e.getAttribute("data-background-repeat"),backgroundPosition:e.getAttribute("data-background-position"),backgroundTransition:e.getAttribute("data-background-transition"),backgroundOpacity:e.getAttribute("data-background-opacity")},o=e.hasAttribute("data-preload"),o=(e.classList.remove("has-dark-background"),e.classList.remove("has-light-background"),t.removeAttribute("data-loaded"),t.removeAttribute("data-background-hash"),t.removeAttribute("data-background-size"),t.removeAttribute("data-background-transition"),t.style.backgroundColor="",a.style.backgroundSize="",a.style.backgroundRepeat="",a.style.backgroundPosition="",a.style.backgroundImage="",a.style.opacity="",a.innerHTML="",r.background&&(/^(http|file|\/\/)/gi.test(r.background)||/\.(svg|png|jpg|jpeg|gif|bmp|webp)([?#\s]|$)/gi.test(r.background)?e.setAttribute("data-background-image",r.background):t.style.background=r.background),(r.background||r.backgroundColor||r.backgroundGradient||r.backgroundImage||r.backgroundVideo||r.backgroundIframe)&&t.setAttribute("data-background-hash",r.background+r.backgroundSize+r.backgroundImage+r.backgroundVideo+r.backgroundIframe+r.backgroundColor+r.backgroundGradient+r.backgroundRepeat+r.backgroundPosition+r.backgroundTransition+r.backgroundOpacity),r.backgroundSize&&t.setAttribute("data-background-size",r.backgroundSize),r.backgroundColor&&(t.style.backgroundColor=r.backgroundColor),r.backgroundGradient&&(t.style.backgroundImage=r.backgroundGradient),r.backgroundTransition&&t.setAttribute("data-background-transition",r.backgroundTransition),o&&t.setAttribute("data-preload",""),r.backgroundSize&&(a.style.backgroundSize=r.backgroundSize),r.backgroundRepeat&&(a.style.backgroundRepeat=r.backgroundRepeat),r.backgroundPosition&&(a.style.backgroundPosition=r.backgroundPosition),r.backgroundOpacity&&(a.style.opacity=r.backgroundOpacity),this.getContrastClass(e));"string"==typeof o&&e.classList.add(o)}getContrastClass(e){var t=e.slideBackgroundElement;let a=e.getAttribute("data-background-color");if(a&&colorToRgb(a)||(e=window.getComputedStyle(t))&&e.backgroundColor&&(a=e.backgroundColor),a){t=colorToRgb(a);if(t&&0!==t.a)return colorBrightness(a)<128?"has-dark-background":"has-light-background"}return null}bubbleSlideContrastClassToElement(t,a){["has-light-background","has-dark-background"].forEach(e=>{t.classList.contains(e)?a.classList.add(e):a.classList.remove(e)},this)}update(t=!1){var e=this.Reveal.getConfig(),a=this.Reveal.getCurrentSlide();let o=this.Reveal.getIndices(),n=null,s=e.rtl?"future":"past",i=e.rtl?"past":"future";Array.from(this.element.childNodes).forEach((e,r)=>{e.classList.remove("past","present","future"),r<o.h?e.classList.add(s):r>o.h?e.classList.add(i):(e.classList.add("present"),n=e),!t&&r!==o.h||queryAll(e,".slide-background").forEach((e,t)=>{e.classList.remove("past","present","future");var a="number"==typeof o.v?o.v:0;t<a?e.classList.add("past"):a<t?e.classList.add("future"):(e.classList.add("present"),r===o.h&&(n=e))})}),this.previousBackground&&!this.previousBackground.closest("body")&&(this.previousBackground=null),n&&this.previousBackground&&(e=this.previousBackground.getAttribute("data-background-hash"),d=n.getAttribute("data-background-hash"))&&d===e&&n!==this.previousBackground&&(this.element.classList.add("no-transition"),d=n.querySelector("video"),e=this.previousBackground.querySelector("video"),d)&&e&&(r=d.parentNode,e.parentNode.appendChild(d),r.appendChild(e));var r,d=n!==this.previousBackground;d&&this.previousBackground&&this.Reveal.slideContent.stopEmbeddedContent(this.previousBackground,{unloadIframes:!this.Reveal.slideContent.shouldPreload(this.previousBackground)}),d&&n&&(this.Reveal.slideContent.startEmbeddedContent(n),(r=n.querySelector(".slide-background-content"))&&(e=r.style.backgroundImage||"",/\.gif/i.test(e))&&(r.style.backgroundImage="",window.getComputedStyle(r).opacity,r.style.backgroundImage=e),this.previousBackground=n),a&&this.bubbleSlideContrastClassToElement(a,this.Reveal.getRevealElement()),setTimeout(()=>{this.element.classList.remove("no-transition")},10)}updateParallax(){var u=this.Reveal.getIndices();if(this.Reveal.getConfig().parallaxBackgroundImage){var c=this.Reveal.getHorizontalSlides(),b=this.Reveal.getVerticalSlides();let e=this.element.style.backgroundSize.split(" "),t,a,r=(1===e.length?t=a=parseInt(e[0],10):(t=parseInt(e[0],10),a=parseInt(e[1],10)),this.element.offsetWidth),o=c.length,n,s,i=(s=(n="number"==typeof this.Reveal.getConfig().parallaxBackgroundHorizontal?this.Reveal.getConfig().parallaxBackgroundHorizontal:1<o?(t-r)/(o-1):0)*u.h*-1,this.element.offsetHeight),d=b.length,l,g;l="number"==typeof this.Reveal.getConfig().parallaxBackgroundVertical?this.Reveal.getConfig().parallaxBackgroundVertical:(a-i)/(d-1),g=0<d?l*u.v:0,this.element.style.backgroundPosition=s+"px "+-g+"px"}}destroy(){this.element.remove()}}
+import { queryAll } from '../utils/util.js'
+import { colorToRgb, colorBrightness } from '../utils/color.js'
+
+/**
+ * Creates and updates slide backgrounds.
+ */
+export default class Backgrounds {
+
+	constructor( Reveal ) {
+
+		this.Reveal = Reveal;
+
+	}
+
+	render() {
+
+		this.element = document.createElement( 'div' );
+		this.element.className = 'backgrounds';
+		this.Reveal.getRevealElement().appendChild( this.element );
+
+	}
+
+	/**
+	 * Creates the slide background elements and appends them
+	 * to the background container. One element is created per
+	 * slide no matter if the given slide has visible background.
+	 */
+	create() {
+
+		// Clear prior backgrounds
+		this.element.innerHTML = '';
+		this.element.classList.add( 'no-transition' );
+
+		// Iterate over all horizontal slides
+		this.Reveal.getHorizontalSlides().forEach( slideh => {
+
+			let backgroundStack = this.createBackground( slideh, this.element );
+
+			// Iterate over all vertical slides
+			queryAll( slideh, 'section' ).forEach( slidev => {
+
+				this.createBackground( slidev, backgroundStack );
+
+				backgroundStack.classList.add( 'stack' );
+
+			} );
+
+		} );
+
+		// Add parallax background if specified
+		if( this.Reveal.getConfig().parallaxBackgroundImage ) {
+
+			this.element.style.backgroundImage = 'url("' + this.Reveal.getConfig().parallaxBackgroundImage + '")';
+			this.element.style.backgroundSize = this.Reveal.getConfig().parallaxBackgroundSize;
+			this.element.style.backgroundRepeat = this.Reveal.getConfig().parallaxBackgroundRepeat;
+			this.element.style.backgroundPosition = this.Reveal.getConfig().parallaxBackgroundPosition;
+
+			// Make sure the below properties are set on the element - these properties are
+			// needed for proper transitions to be set on the element via CSS. To remove
+			// annoying background slide-in effect when the presentation starts, apply
+			// these properties after short time delay
+			setTimeout( () => {
+				this.Reveal.getRevealElement().classList.add( 'has-parallax-background' );
+			}, 1 );
+
+		}
+		else {
+
+			this.element.style.backgroundImage = '';
+			this.Reveal.getRevealElement().classList.remove( 'has-parallax-background' );
+
+		}
+
+	}
+
+	/**
+	 * Creates a background for the given slide.
+	 *
+	 * @param {HTMLElement} slide
+	 * @param {HTMLElement} container The element that the background
+	 * should be appended to
+	 * @return {HTMLElement} New background div
+	 */
+	createBackground( slide, container ) {
+
+		// Main slide background element
+		let element = document.createElement( 'div' );
+		element.className = 'slide-background ' + slide.className.replace( /present|past|future/, '' );
+
+		// Inner background element that wraps images/videos/iframes
+		let contentElement = document.createElement( 'div' );
+		contentElement.className = 'slide-background-content';
+
+		element.appendChild( contentElement );
+		container.appendChild( element );
+
+		slide.slideBackgroundElement = element;
+		slide.slideBackgroundContentElement = contentElement;
+
+		// Syncs the background to reflect all current background settings
+		this.sync( slide );
+
+		return element;
+
+	}
+
+	/**
+	 * Renders all of the visual properties of a slide background
+	 * based on the various background attributes.
+	 *
+	 * @param {HTMLElement} slide
+	 */
+	sync( slide ) {
+
+		const element = slide.slideBackgroundElement,
+			contentElement = slide.slideBackgroundContentElement;
+
+		const data = {
+			background: slide.getAttribute( 'data-background' ),
+			backgroundSize: slide.getAttribute( 'data-background-size' ),
+			backgroundImage: slide.getAttribute( 'data-background-image' ),
+			backgroundVideo: slide.getAttribute( 'data-background-video' ),
+			backgroundIframe: slide.getAttribute( 'data-background-iframe' ),
+			backgroundColor: slide.getAttribute( 'data-background-color' ),
+			backgroundGradient: slide.getAttribute( 'data-background-gradient' ),
+			backgroundRepeat: slide.getAttribute( 'data-background-repeat' ),
+			backgroundPosition: slide.getAttribute( 'data-background-position' ),
+			backgroundTransition: slide.getAttribute( 'data-background-transition' ),
+			backgroundOpacity: slide.getAttribute( 'data-background-opacity' ),
+		};
+
+		const dataPreload = slide.hasAttribute( 'data-preload' );
+
+		// Reset the prior background state in case this is not the
+		// initial sync
+		slide.classList.remove( 'has-dark-background' );
+		slide.classList.remove( 'has-light-background' );
+
+		element.removeAttribute( 'data-loaded' );
+		element.removeAttribute( 'data-background-hash' );
+		element.removeAttribute( 'data-background-size' );
+		element.removeAttribute( 'data-background-transition' );
+		element.style.backgroundColor = '';
+
+		contentElement.style.backgroundSize = '';
+		contentElement.style.backgroundRepeat = '';
+		contentElement.style.backgroundPosition = '';
+		contentElement.style.backgroundImage = '';
+		contentElement.style.opacity = '';
+		contentElement.innerHTML = '';
+
+		if( data.background ) {
+			// Auto-wrap image urls in url(...)
+			if( /^(http|file|\/\/)/gi.test( data.background ) || /\.(svg|png|jpg|jpeg|gif|bmp|webp)([?#\s]|$)/gi.test( data.background ) ) {
+				slide.setAttribute( 'data-background-image', data.background );
+			}
+			else {
+				element.style.background = data.background;
+			}
+		}
+
+		// Create a hash for this combination of background settings.
+		// This is used to determine when two slide backgrounds are
+		// the same.
+		if( data.background || data.backgroundColor || data.backgroundGradient || data.backgroundImage || data.backgroundVideo || data.backgroundIframe ) {
+			element.setAttribute( 'data-background-hash', data.background +
+															data.backgroundSize +
+															data.backgroundImage +
+															data.backgroundVideo +
+															data.backgroundIframe +
+															data.backgroundColor +
+															data.backgroundGradient +
+															data.backgroundRepeat +
+															data.backgroundPosition +
+															data.backgroundTransition +
+															data.backgroundOpacity );
+		}
+
+		// Additional and optional background properties
+		if( data.backgroundSize ) element.setAttribute( 'data-background-size', data.backgroundSize );
+		if( data.backgroundColor ) element.style.backgroundColor = data.backgroundColor;
+		if( data.backgroundGradient ) element.style.backgroundImage = data.backgroundGradient;
+		if( data.backgroundTransition ) element.setAttribute( 'data-background-transition', data.backgroundTransition );
+
+		if( dataPreload ) element.setAttribute( 'data-preload', '' );
+
+		// Background image options are set on the content wrapper
+		if( data.backgroundSize ) contentElement.style.backgroundSize = data.backgroundSize;
+		if( data.backgroundRepeat ) contentElement.style.backgroundRepeat = data.backgroundRepeat;
+		if( data.backgroundPosition ) contentElement.style.backgroundPosition = data.backgroundPosition;
+		if( data.backgroundOpacity ) contentElement.style.opacity = data.backgroundOpacity;
+
+		const contrastClass = this.getContrastClass( slide );
+
+		if( typeof contrastClass === 'string' ) {
+			slide.classList.add( contrastClass );
+		}
+
+	}
+
+	/**
+	 * Returns a class name that can be applied to a slide to indicate
+	 * if it has a light or dark background.
+	 *
+	 * @param {*} slide
+	 *
+	 * @returns {string|null}
+	 */
+	getContrastClass( slide ) {
+
+		const element = slide.slideBackgroundElement;
+
+		// If this slide has a background color, we add a class that
+		// signals if it is light or dark. If the slide has no background
+		// color, no class will be added
+		let contrastColor = slide.getAttribute( 'data-background-color' );
+
+		// If no bg color was found, or it cannot be converted by colorToRgb, check the computed background
+		if( !contrastColor || !colorToRgb( contrastColor ) ) {
+			let computedBackgroundStyle = window.getComputedStyle( element );
+			if( computedBackgroundStyle && computedBackgroundStyle.backgroundColor ) {
+				contrastColor = computedBackgroundStyle.backgroundColor;
+			}
+		}
+
+		if( contrastColor ) {
+			const rgb = colorToRgb( contrastColor );
+
+			// Ignore fully transparent backgrounds. Some browsers return
+			// rgba(0,0,0,0) when reading the computed background color of
+			// an element with no background
+			if( rgb && rgb.a !== 0 ) {
+				if( colorBrightness( contrastColor ) < 128 ) {
+					return 'has-dark-background';
+				}
+				else {
+					return 'has-light-background';
+				}
+			}
+		}
+
+		return null;
+
+	}
+
+	/**
+	 * Bubble the 'has-light-background'/'has-dark-background' classes.
+	 */
+	bubbleSlideContrastClassToElement( slide, target ) {
+
+		[ 'has-light-background', 'has-dark-background' ].forEach( classToBubble => {
+			if( slide.classList.contains( classToBubble ) ) {
+				target.classList.add( classToBubble );
+			}
+			else {
+				target.classList.remove( classToBubble );
+			}
+		}, this );
+
+	}
+
+	/**
+	 * Updates the background elements to reflect the current
+	 * slide.
+	 *
+	 * @param {boolean} includeAll If true, the backgrounds of
+	 * all vertical slides (not just the present) will be updated.
+	 */
+	update( includeAll = false ) {
+
+		let config = this.Reveal.getConfig();
+		let currentSlide = this.Reveal.getCurrentSlide();
+		let indices = this.Reveal.getIndices();
+
+		let currentBackground = null;
+
+		// Reverse past/future classes when in RTL mode
+		let horizontalPast = config.rtl ? 'future' : 'past',
+			horizontalFuture = config.rtl ? 'past' : 'future';
+
+		// Update the classes of all backgrounds to match the
+		// states of their slides (past/present/future)
+		Array.from( this.element.childNodes ).forEach( ( backgroundh, h ) => {
+
+			backgroundh.classList.remove( 'past', 'present', 'future' );
+
+			if( h < indices.h ) {
+				backgroundh.classList.add( horizontalPast );
+			}
+			else if ( h > indices.h ) {
+				backgroundh.classList.add( horizontalFuture );
+			}
+			else {
+				backgroundh.classList.add( 'present' );
+
+				// Store a reference to the current background element
+				currentBackground = backgroundh;
+			}
+
+			if( includeAll || h === indices.h ) {
+				queryAll( backgroundh, '.slide-background' ).forEach( ( backgroundv, v ) => {
+
+					backgroundv.classList.remove( 'past', 'present', 'future' );
+
+					const indexv = typeof indices.v === 'number' ? indices.v : 0;
+
+					if( v < indexv ) {
+						backgroundv.classList.add( 'past' );
+					}
+					else if ( v > indexv ) {
+						backgroundv.classList.add( 'future' );
+					}
+					else {
+						backgroundv.classList.add( 'present' );
+
+						// Only if this is the present horizontal and vertical slide
+						if( h === indices.h ) currentBackground = backgroundv;
+					}
+
+				} );
+			}
+
+		} );
+
+		// The previous background may refer to a DOM element that has
+		// been removed after a presentation is synced & bgs are recreated
+		if( this.previousBackground && !this.previousBackground.closest( 'body' ) ) {
+			this.previousBackground = null;
+		}
+
+		if( currentBackground && this.previousBackground ) {
+
+			// Don't transition between identical backgrounds. This
+			// prevents unwanted flicker.
+			let previousBackgroundHash = this.previousBackground.getAttribute( 'data-background-hash' );
+			let currentBackgroundHash = currentBackground.getAttribute( 'data-background-hash' );
+
+			if( currentBackgroundHash && currentBackgroundHash === previousBackgroundHash && currentBackground !== this.previousBackground ) {
+				this.element.classList.add( 'no-transition' );
+
+				// If multiple slides have the same background video, carry
+				// the <video> element forward so that it plays continuously
+				// across multiple slides
+				const currentVideo = currentBackground.querySelector( 'video' );
+				const previousVideo = this.previousBackground.querySelector( 'video' );
+
+				if( currentVideo && previousVideo ) {
+
+					const currentVideoParent = currentVideo.parentNode;
+					const previousVideoParent = previousVideo.parentNode;
+
+					// Swap the two videos
+					previousVideoParent.appendChild( currentVideo );
+					currentVideoParent.appendChild( previousVideo );
+
+				}
+			}
+
+		}
+
+		const backgroundChanged = currentBackground !== this.previousBackground;
+
+		// Stop content inside of previous backgrounds
+		if( backgroundChanged && this.previousBackground ) {
+
+			this.Reveal.slideContent.stopEmbeddedContent( this.previousBackground, { unloadIframes: !this.Reveal.slideContent.shouldPreload( this.previousBackground ) } );
+
+		}
+
+		// Start content in the current background
+		if( backgroundChanged && currentBackground ) {
+
+			this.Reveal.slideContent.startEmbeddedContent( currentBackground );
+
+			let currentBackgroundContent = currentBackground.querySelector( '.slide-background-content' );
+			if( currentBackgroundContent ) {
+
+				let backgroundImageURL = currentBackgroundContent.style.backgroundImage || '';
+
+				// Restart GIFs (doesn't work in Firefox)
+				if( /\.gif/i.test( backgroundImageURL ) ) {
+					currentBackgroundContent.style.backgroundImage = '';
+					window.getComputedStyle( currentBackgroundContent ).opacity;
+					currentBackgroundContent.style.backgroundImage = backgroundImageURL;
+				}
+
+			}
+
+			this.previousBackground = currentBackground;
+
+		}
+
+		// If there's a background brightness flag for this slide,
+		// bubble it to the .reveal container
+		if( currentSlide ) {
+			this.bubbleSlideContrastClassToElement( currentSlide, this.Reveal.getRevealElement() );
+		}
+
+		// Allow the first background to apply without transition
+		setTimeout( () => {
+			this.element.classList.remove( 'no-transition' );
+		}, 10 );
+
+	}
+
+	/**
+	 * Updates the position of the parallax background based
+	 * on the current slide index.
+	 */
+	updateParallax() {
+
+		let indices = this.Reveal.getIndices();
+
+		if( this.Reveal.getConfig().parallaxBackgroundImage ) {
+
+			let horizontalSlides = this.Reveal.getHorizontalSlides(),
+				verticalSlides = this.Reveal.getVerticalSlides();
+
+			let backgroundSize = this.element.style.backgroundSize.split( ' ' ),
+				backgroundWidth, backgroundHeight;
+
+			if( backgroundSize.length === 1 ) {
+				backgroundWidth = backgroundHeight = parseInt( backgroundSize[0], 10 );
+			}
+			else {
+				backgroundWidth = parseInt( backgroundSize[0], 10 );
+				backgroundHeight = parseInt( backgroundSize[1], 10 );
+			}
+
+			let slideWidth = this.element.offsetWidth,
+				horizontalSlideCount = horizontalSlides.length,
+				horizontalOffsetMultiplier,
+				horizontalOffset;
+
+			if( typeof this.Reveal.getConfig().parallaxBackgroundHorizontal === 'number' ) {
+				horizontalOffsetMultiplier = this.Reveal.getConfig().parallaxBackgroundHorizontal;
+			}
+			else {
+				horizontalOffsetMultiplier = horizontalSlideCount > 1 ? ( backgroundWidth - slideWidth ) / ( horizontalSlideCount-1 ) : 0;
+			}
+
+			horizontalOffset = horizontalOffsetMultiplier * indices.h * -1;
+
+			let slideHeight = this.element.offsetHeight,
+				verticalSlideCount = verticalSlides.length,
+				verticalOffsetMultiplier,
+				verticalOffset;
+
+			if( typeof this.Reveal.getConfig().parallaxBackgroundVertical === 'number' ) {
+				verticalOffsetMultiplier = this.Reveal.getConfig().parallaxBackgroundVertical;
+			}
+			else {
+				verticalOffsetMultiplier = ( backgroundHeight - slideHeight ) / ( verticalSlideCount-1 );
+			}
+
+			verticalOffset = verticalSlideCount > 0 ?  verticalOffsetMultiplier * indices.v : 0;
+
+			this.element.style.backgroundPosition = horizontalOffset + 'px ' + -verticalOffset + 'px';
+
+		}
+
+	}
+
+	destroy() {
+
+		this.element.remove();
+
+	}
+
+}

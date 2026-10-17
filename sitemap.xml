@@ -2,6 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rm-rf.ink/*/38291047.html</loc>
+    
+    <lastmod>2026-10-17T12:33:41.401Z</lastmod>
+    
+
+    <id>38291047</id>
+    <date>1777631460000</date>
+    <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践 | rm -rf /*</title>
+    
+    <desc>围绕 Hermes Agent 内置记忆的局限性，讲解如何用 MemPalace 语义记忆层替换改造</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/96208538.html</loc>
+    
+    <lastmod>2026-10-17T12:33:41.400Z</lastmod>
+    
+
+    <id>96208538</id>
+    <date>1777303920000</date>
+    <title>Hello Hermes Agent | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/f135226f.html</loc>
+    
+    <lastmod>2026-10-17T12:33:41.400Z</lastmod>
+    
+
+    <id>f135226f</id>
+    <date>1777073400000</date>
+    <title>daily-news-2026-04-25 | rm -rf /*</title>
+    
+    <desc>文章加密了，需要输入密码查看</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/5f9c1a2b.html</loc>
+    
+    <lastmod>2026-10-17T12:33:41.400Z</lastmod>
+    
+
+    <id>5f9c1a2b</id>
+    <date>1777645800000</date>
+    <title>从 OpenClaw 迁移到 Hermes：我的实战记录 | rm -rf /*</title>
+    
+    <desc>从 OpenClaw 换到 Hermes Agent，迁移过程中遇到的问题、解决方案，以及两个平台记忆系统的真实对比</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/46499b7b.html</loc>
+    
+    <lastmod>2026-10-17T12:33:41.399Z</lastmod>
+    
+
+    <id>46499b7b</id>
+    <date>1779379200000</date>
+    <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记 | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
     
     <lastmod>2026-04-09T05:57:09.862Z</lastmod>
@@ -119,19 +184,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
-    
-    <lastmod>2026-04-08T10:06:25.964Z</lastmod>
-    
-
-    <id></id>
-    <date>1775642785964</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/customcontrols/README.html</loc>
     
     <lastmod>2026-04-08T10:06:25.964Z</lastmod>
@@ -152,6 +204,19 @@
 
     <id></id>
     <date>1775642785965</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.964Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785964</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -392,19 +457,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/59cc1bd2.html</loc>
-    
-    <lastmod>2026-03-31T10:41:05.412Z</lastmod>
-    
-
-    <id>59cc1bd2</id>
-    <date>1542384000000</date>
-    <title>nginx 负载均衡 | rm -rf /*</title>
-    
-    <desc>nginx 负载均衡</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/*/6e8cb24c.html</loc>
     
     <lastmod>2026-03-31T10:41:05.412Z</lastmod>
@@ -415,6 +467,19 @@
     <title>Cas Server 本地部署 | rm -rf /*</title>
     
     <desc>Cas Server 本地部署</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/59cc1bd2.html</loc>
+    
+    <lastmod>2026-03-31T10:41:05.412Z</lastmod>
+    
+
+    <id>59cc1bd2</id>
+    <date>1542384000000</date>
+    <title>nginx 负载均衡 | rm -rf /*</title>
+    
+    <desc>nginx 负载均衡</desc>
   </url>
   
   <url>
@@ -596,7 +661,7 @@
     <date>1584802640000</date>
     <title>路 | rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-QRgeaSvo"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-OKVytyMo"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>

@@ -1,1 +1,8 @@
-let UA=navigator.userAgent,isMobile=/(iphone|ipod|ipad|android)/gi.test(UA)||"MacIntel"===navigator.platform&&1<navigator.maxTouchPoints,isChrome=/chrome/i.test(UA)&&!/edge/i.test(UA),isAndroid=/android/gi.test(UA);export{isMobile,isChrome,isAndroid};
+const UA = navigator.userAgent;
+
+export const isMobile = /(iphone|ipod|ipad|android)/gi.test( UA ) ||
+						( navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1 ); // iPadOS
+
+export const isChrome = /chrome/i.test( UA ) && !/edge/i.test( UA );
+
+export const isAndroid = /android/gi.test( UA );

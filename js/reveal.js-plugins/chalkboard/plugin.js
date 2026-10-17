@@ -1,1 +1,1973 @@
-function scriptPath(){var e,t;return document.currentScript?e=document.currentScript.src:(t=document.querySelector('script[src$="/chalkboard/plugin.js"]'))&&(e=t.src),void 0===e?"":e.slice(0,e.lastIndexOf("/")+1)}window.RevealChalkboard=window.RevealChalkboard||{id:"RevealChalkboard",init:function(e){initChalkboard.call(this,e)},configure:function(e){configure(e)},toggleNotesCanvas:function(){toggleNotesCanvas()},toggleChalkboard:function(){toggleChalkboard()},colorIndex:function(){colorIndex()},colorNext:function(){colorNext()},colorPrev:function(){colorPrev()},clear:function(){clear()},reset:function(){reset()},resetAll:function(){resetAll()},updateStorage:function(){updateStorage()},getData:function(){return getData()},download:function(){download()}};var path=scriptPath();let initChalkboard=function(h){var o,r,u,B=!1;try{window.addEventListener("test",null,Object.defineProperty({},"passive",{get:function(){B=!0}}))}catch(e){}var g=!1,W=3,R=7,X=1,Y=[!0,!1],f={src:path+"img/sponge.png",radius:20},i=[{color:"rgba(100,100,100,1)",cursor:"url("+path+"img/boardmarker-black.png), auto"},{color:"rgba(30,144,255, 1)",cursor:"url("+path+"img/boardmarker-blue.png), auto"},{color:"rgba(220,20,60,1)",cursor:"url("+path+"img/boardmarker-red.png), auto"},{color:"rgba(50,205,50,1)",cursor:"url("+path+"img/boardmarker-green.png), auto"},{color:"rgba(255,140,0,1)",cursor:"url("+path+"img/boardmarker-orange.png), auto"},{color:"rgba(150,0,20150,1)",cursor:"url("+path+"img/boardmarker-purple.png), auto"},{color:"rgba(255,220,0,1)",cursor:"url("+path+"img/boardmarker-yellow.png), auto"}],H=[{color:"rgba(255,255,255,0.5)",cursor:"url("+path+"img/chalk-white.png), auto"},{color:"rgba(96, 154, 244, 0.5)",cursor:"url("+path+"img/chalk-blue.png), auto"},{color:"rgba(237, 20, 28, 0.5)",cursor:"url("+path+"img/chalk-red.png), auto"},{color:"rgba(20, 237, 28, 0.5)",cursor:"url("+path+"img/chalk-green.png), auto"},{color:"rgba(220, 133, 41, 0.5)",cursor:"url("+path+"img/chalk-orange.png), auto"},{color:"rgba(220,0,220,0.5)",cursor:"url("+path+"img/chalk-purple.png), auto"},{color:"rgba(255,220,0,0.5)",cursor:"url("+path+"img/chalk-yellow.png), auto"}],j={cursor:"url("+path+"img/sponge.png), auto"},z={toggleNotesCanvas:{keyCode:67,key:"C",description:"Toggle notes canvas"},toggleChalkboard:{keyCode:66,key:"B",description:"Toggle chalkboard"},clear:{keyCode:46,key:"DEL",description:"Clear drawings on slide"},resetAll:{keyCode:8,key:"BACKSPACE",description:"Reset all drawings"},colorNext:{keyCode:88,key:"X",description:"Next color"},colorPrev:{keyCode:89,key:"Y",description:"Previous color"},download:{keyCode:68,key:"D",description:"Download drawings"}},J="chalkboard",p=[0,0],d=!0,F=!0,K=800,s=!1,l="broadcast",c=U(h.getConfig().chalkboard||{});if(c.keyBindings)for(var e in c.keyBindings)z[e]=c.keyBindings[e];function U(e){return(e.boardmarkerWidth||e.penWidth)&&(W=e.boardmarkerWidth||e.penWidth),e.chalkWidth&&(R=e.chalkWidth),e.chalkEffect&&(X=e.chalkEffect),e.rememberColor&&(Y=e.rememberColor),e.eraser&&(f=e.eraser),e.boardmarkers&&(i=e.boardmarkers),e.chalks&&(H=e.chalks),e.theme&&(J=e.theme),g="whiteboard"===J?(o=["rgba(127,127,127,.1)",path+"img/whiteboard.png"],u=[he,he],r=[i,i],{color:"rgb(127,127,255,0.1)",distance:40,width:2}):(o=["rgba(127,127,127,.1)",path+"img/blackboard.png"],u=[he,ue],r=[i,H],{color:"rgb(50,50,10,0.5)",distance:80,width:2}),e.background&&(o=e.background),null!=e.grid&&(g=e.grid),null!=e.toggleChalkboardButton&&e.toggleChalkboardButton,null!=e.toggleNotesButton&&e.toggleNotesButton,null!=e.colorButtons&&(d=e.colorButtons),null!=e.boardHandle&&(F=e.boardHandle),e.transition&&(K=e.transition),null!=e.readOnly&&(s=e.readOnly),e.messageType&&(l=e.messageType),m&&(e.theme||e.background||e.grid)&&(document.getElementById(m[1].id).style.background='url("'+o[1]+'") repeat',I(1),fe()),e}function $(e){document.querySelector("section[data-markdown]:not([data-markdown-parsed])")||document.querySelector("[data-load]:not([data-loaded])")||document.querySelector('code[data-line-numbers*="|"]')?(console.log("Wait for external sources to be loaded and code to be highlighted"),setTimeout($,500,e)):e()}function G(e){null!==t?e():(console.log("Wait for drawings to be loaded"),setTimeout(G,500,e))}var m=[{id:"notescanvas"},{id:"chalkboard"}],v=(ne(0),ne(1),0),b=0,y=0,w=0,k=null,E=null,C=!1,Q=!1,x=Date.now(),S={h:0,v:0},V=[[],[]],Z=null,_=null,O=!1;function D(e,t){e.style.cursor=t.cursor;e=document.querySelector('.palette[data-mode="'+v+'"]');e&&(e.style.cursor=t.cursor)}function ee(e,t){(!0===t||t>e.length)&&(t=e.length);for(var n=document.createElement("div"),a=(n.classList.add("palette"),document.createElement("ul")),o=0;o<t;o++){var r=document.createElement("li");r.setAttribute("data-color",o),r.innerHTML='<i class="fa fa-square"></i>',r.style.color=e[o].color,r.addEventListener("click",function(e){for(var t=e.target;!t.hasAttribute("data-color");)t=t.parentElement;Te(parseInt(t.getAttribute("data-color")))}),r.addEventListener("touchstart",function(e){for(var t=e.target;!t.hasAttribute("data-color");)t=t.parentElement;Te(parseInt(t.getAttribute("data-color")))}),a.appendChild(r)}var i=document.createElement("li"),d=(i.setAttribute("data-eraser","true"),document.createElement("img"));return d.src=f.src,d.height="24",d.width="24",d.style.marginTop="10px",d.style.marginRight="0",d.style.marginBottom="0",d.style.marginLeft="0",i.appendChild(d),i.addEventListener("click",function(e){Te(-1)}),i.addEventListener("touchstart",function(e){Te(-1)}),a.appendChild(i),n.appendChild(a),n}function te(e){me(e,!0);e=new CustomEvent(l);e.content={sender:"chalkboard-plugin",type:"selectboard",timestamp:Date.now()-x,mode:v,board:b},document.dispatchEvent(e)}function ne(e){var t,n=document.createElement("div"),a=(n.id=m[e].id,n.classList.add("overlay"),n.setAttribute("data-prevent-swipe","true"),n.oncontextmenu=function(){return!1},D(n,r[e][p[e]]),m[e].width=window.innerWidth,m[e].height=window.innerHeight,m[e].scale=1,m[e].xOffset=0,m[e].yOffset=0,"0"==e?(n.style.background="rgba(0,0,0,0)",n.style.zIndex=24,n.style.opacity=1,n.style.visibility="visible",n.style.pointerEvents="none",document.querySelector(".slides"),t=h.getConfig().width/h.getConfig().height,m[e].width>m[e].height*t?m[e].xOffset=(m[e].width-m[e].height*t)/2:m[e].height>m[e].width/t&&(m[e].yOffset=(m[e].height-m[e].width/t)/2),d&&((a=ee(i,d)).dataset.mode=e,a.style.visibility="hidden",n.appendChild(a))):(n.style.background='url("'+o[e]+'") repeat',n.style.zIndex=26,n.style.opacity=0,n.style.visibility="hidden",d&&((a=ee(H,d)).dataset.mode=e,n.appendChild(a)),F&&((t=document.createElement("div")).classList.add("boardhandle"),t.innerHTML='<ul><li><a id="previousboard" href="#" title="Previous board"><i class="fas fa-chevron-up"></i></a></li><li><a id="nextboard" href="#" title="Next board"><i class="fas fa-chevron-down"></i></a></li></ul>',t.querySelector("#previousboard").addEventListener("click",function(e){e.preventDefault(),te(b-1)}),t.querySelector("#nextboard").addEventListener("click",function(e){e.preventDefault(),te(b+1)}),t.querySelector("#previousboard").addEventListener("touchstart",function(e){e.preventDefault(),te(b-1)}),t.querySelector("#nextboard").addEventListener("touchstart",function(e){e.preventDefault(),te(b+1)}),n.appendChild(t))),document.createElement("canvas"));a.width=m[e].width,a.height=m[e].height,a.setAttribute("data-chalkboard",e),D(a,r[e][p[e]]),n.appendChild(a),m[e].canvas=a,m[e].context=a.getContext("2d"),(t=n).addEventListener("touchstart",function(e){var t,n,a;e.preventDefault(),s||e.target.getAttribute("data-chalkboard")!=v||(t=m[v].scale,n=m[v].xOffset,a=m[v].yOffset,e=e.touches[0],y=e.pageX,w=e.pageY,(p[v]<0?ke:xe)((y-n)/t,(w-a)/t))},!!B&&{passive:!1}),t.addEventListener("touchmove",function(e){var t,n,a,o;e.preventDefault(),(C||Q)&&(t=m[v].scale,n=m[v].xOffset,a=m[v].yOffset,e=e.touches[0],y=e.pageX,w=e.pageY,C?(Se((k-n)/t,(E-a)/t,(y-n)/t,(w-a)/t,p[v]),(o=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"draw",timestamp:Date.now()-x,mode:v,board:b,fromX:(k-n)/t,fromY:(E-a)/t,toX:(y-n)/t,toY:(w-a)/t,color:p[v]},document.dispatchEvent(o),k=y,E=w):(Ee((y-n)/t,(w-a)/t),(o=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"erase",timestamp:Date.now()-x,mode:v,board:b,x:(y-n)/t,y:(w-a)/t},document.dispatchEvent(o)))},!1),t.addEventListener("touchend",function(e){e.preventDefault(),Oe(),Ce()},!1),t.addEventListener("mousedown",function(e){var t,n,a;e.preventDefault(),s||e.target.getAttribute("data-chalkboard")!=v||(t=m[v].scale,n=m[v].xOffset,a=m[v].yOffset,y=e.pageX,w=e.pageY,p[v]<0||2==e.button||1==e.button?(0<=p[v]&&D(m[v].canvas,j),ke((y-n)/t,(w-a)/t),(e=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"erase",timestamp:Date.now()-x,mode:v,board:b,x:(y-n)/t,y:(w-a)/t},document.dispatchEvent(e)):xe((y-n)/t,(w-a)/t))}),t.addEventListener("mousemove",function(e){e.preventDefault();var t,n=m[v].scale,a=m[v].xOffset,o=m[v].yOffset;y=e.pageX,w=e.pageY,(C||Q)&&(n=m[v].scale,a=m[v].xOffset,o=m[v].yOffset,y=e.pageX,w=e.pageY,C?(Se((k-a)/n,(E-o)/n,(y-a)/n,(w-o)/n,p[v]),(t=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"draw",timestamp:Date.now()-x,mode:v,board:b,fromX:(k-a)/n,fromY:(E-o)/n,toX:(y-a)/n,toY:(w-o)/n,color:p[v]},document.dispatchEvent(t),k=y,E=w):(Ee((y-a)/n,(w-o)/n),(t=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"erase",timestamp:Date.now()-x,mode:v,board:b,x:(y-a)/n,y:(w-o)/n},document.dispatchEvent(t)))}),t.addEventListener("mouseup",function(e){e.preventDefault(),0<=p[v]&&D(m[v].canvas,r[v][p[v]]),(C||Q)&&(Oe(),Ce())}),document.querySelector(".reveal").appendChild(n),m[e].container=n}var L=[{width:h.getConfig().width,height:h.getConfig().height,data:[]},{width:h.getConfig().width,height:h.getConfig().height,data:[]}],t=null;if(!(t=c.storage?oe(sessionStorage.getItem(c.storage)):t)&&null!=c.src){var ae=c.src,n=new XMLHttpRequest;n.onload=function(){4===n.readyState&&404!=n.status?(t=oe(n.responseText),a(),console.log("Drawings loaded from file")):(c.readOnly=void 0,s=void 0,console.warn("Failed to get file "+ae+". ReadyState: "+n.readyState+", Status: "+n.status),t=!1)},n.open("GET",ae,!0);try{n.send()}catch(e){c.readOnly=void 0,s=void 0,console.warn("Failed to get file "+ae+". Make sure that the presentation and the file are served by a HTTP server and the file can be found there. "+e),t=!1}}function oe(e){var t=!1;try{for(var n=JSON.parse(e),a=0;a<n.length;a++)m[a].width==n[a].width&&m[a].height==n[a].height||(m[a].scale=Math.min(m[a].width/n[a].width,m[a].height/n[a].height),m[a].xOffset=(m[a].width-n[a].width*m[a].scale)/2,m[a].yOffset=(m[a].height-n[a].height*m[a].scale)/2),c.readOnly&&(m[a].container.style.cursor="default",m[a].canvas.style.cursor="default");t=!0,L=n}catch(e){console.warn("Cannot initialise storage!")}return t}function re(e){_=e?(a(),null):(_&&clearTimeout(_),setTimeout(re,1e3,!0))}function a(){var e=JSON.stringify(L);return c.storage&&sessionStorage.setItem(c.storage,e),e}function M(e){e.time=Date.now()-x,1==v&&(e.board=b);for(var t=T(),n=t.events.length;0<n&&e.time<t.events[n-1].time;)n--;t.events.splice(n,0,e),t.duration=Math.max(t.duration,Date.now()-x)+1,re()}function ie(){for(var e=0;e<2;e++)for(var t=L[e].data.length-1;0<=t;t--)0==L[e].data[t].events.length&&L[e].data.splice(t,1);return a()}function T(e,t){null==t&&(t=v),e=e||S;for(var n=0;n<L[t].data.length;n++)if(L[t].data[n].slide.h===e.h&&L[t].data[n].slide.v===e.v&&L[t].data[n].slide.f===e.f)return L[t].data[n];var a=Number(h.getCurrentSlide().getAttribute("data-pdf-page-number"));return L[t].data.push({slide:e,page:a,events:[],duration:0}),L[t].data[L[t].data.length-1]}function A(e){e=e||S;for(var t=0,n=0;n<2;n++)for(var a=0;a<L[n].data.length;a++)if(L[n].data[a].slide.h===e.h&&L[n].data[a].slide.v===e.v&&L[n].data[a].slide.f===e.f){t=Math.max(t,L[n].data[a].duration);break}return t}var de=/print-pdf/gi.test(window.location.search);function se(){for(var e=h.getSlides(),t=0,n=0;n<e.length;n++){e[n].setAttribute("data-pdf-page-number",t.toString());for(var a=e[n].querySelectorAll(".fragment:not([data-fragment-index])").length,o=e[n].querySelectorAll(".fragment[data-fragment-index]"),r=0;r<o.length;r++)Number(o[r].getAttribute("data-fragment-index"))+1>a&&(a=Number(o[r].getAttribute("data-fragment-index"))+1);t+=a+1}}function le(){var l;0!=L[1].data.length&&(console.log("Create printout(s) for "+L[1].data.length+" slides"),m[0].container.style.opacity=0,m[0].container.style.visibility="hidden",(l=new Image).onload=function(){for(var e=h.getSlides(),t=L[1].data.length-1;0<=t;t--){console.log("Create printout for slide "+L[1].data[t].slide.h+"."+L[1].data[t].slide.v);for(var n=((e,t)=>{var n=h.getConfig().width,a=h.getConfig().height,o=1,r=0,i=0,d=(n==L[1].width&&a==L[1].height||(o=Math.min(n/L[1].width,a/L[1].height),r=(n-L[1].width*o)/2,i=(a-L[1].height*o)/2),v=1,b=0,[]),s=document.createElement("canvas"),l=(s.width=n,s.height=a,s.getContext("2d"));l.fillStyle=l.createPattern(t,"repeat"),l.rect(0,0,n,a),l.fill();for(var c=0;c<e.events.length;c++)switch(e.events[c].type){case"draw":u[1](ce(s,d,b).getContext("2d"),r+e.events[c].x1*o,i+e.events[c].y1*o,r+e.events[c].x2*o,i+e.events[c].y2*o,i+e.events[c].color);break;case"erase":ge(ce(s,d,b).getContext("2d"),r+e.events[c].x*o,i+e.events[c].y*o);break;case"selectboard":me(e.events[c].board);break;case"clear":ce(s,d,b).getContext("2d").clearRect(0,0,n,a),ce(s,d,b).getContext("2d").fill()}return d=d.sort((e,t)=>e.board>t.board?1:-1),v=0,d})(T(L[1].data[t].slide,1),l),a=(s=d=i=r=o=a=void 0,e[L[1].data[t].page]),o=n,r=a.parentElement.parentElement,i=a.parentElement.nextElementSibling,d=0;d<o.length;d++){var s=document.createElement("div");s.classList.add("pdf-page"),s.style.height=h.getConfig().height,s.append(o[d].canvas),null!=i?r.insertBefore(s,i):r.append(s)}}},l.src=o[1])}function ce(e,t,n){var a,o,r=t.findIndex(e=>e.board===n);return-1===r&&(e=e,a=document.createElement("canvas"),o=a.getContext("2d"),a.width=e.width,a.height=e.height,o.drawImage(e,0,0),o=a,t.length?n<t[0].board?(r=0,t.unshift({board:n,canvas:o})):n>t[t.length-1].board&&(r=t.length,t.push({board:n,canvas:o})):(r=0,t.push({board:n,canvas:o}))),t[r].canvas}function he(e,t,n,a,o,r){null==r&&(r=p[v]),e.lineWidth=W,e.lineCap="round",e.strokeStyle=i[r].color,e.beginPath(),e.moveTo(t,n),e.lineTo(a,o),e.stroke()}function ue(e,t,n,a,o,r){null==r&&(r=p[v]);for(var i,d,s=R,l=(e.lineWidth=s,e.lineCap="round",e.fillStyle=H[r].color,e.strokeStyle=H[r].color,e.strokeStyle=e.strokeStyle.replace(/[\d\.]+\)$/g,"1)"),e.beginPath(),e.moveTo(t,n),e.lineTo(a,o),e.stroke(),Math.round(Math.sqrt(Math.pow(a-t,2)+Math.pow(o-n,2))/(5/s))),c=(a-t)/l,h=(o-n)/l,u=0;u<l;u++)X>.9*Math.random()&&(d=n+u*h,i=t+u*c+(Math.random()-.5)*s*1.2,d=d+(Math.random()-.5)*s*1.2,e.clearRect(i,d,2*Math.random()+2,Math.random()+1))}function ge(e,t,n){if(e.save(),e.beginPath(),e.arc(t+f.radius,n+f.radius,f.radius,0,2*Math.PI,!1),e.clip(),e.clearRect(t-1,n-1,2*f.radius+2,2*f.radius+2),e.restore(),1==v&&g){for(var a=t+f.radius,o=n+f.radius,r=f.radius,i=m[1].context,d=(m[1].scale=Math.min(m[1].width/L[1].width,m[1].height/L[1].height),m[1].xOffset=(m[1].width-L[1].width*m[1].scale)/2,m[1].yOffset=(m[1].height-L[1].height*m[1].scale)/2,m[1].scale),s=(m[1].xOffset,m[1].yOffset,g.distance*d),l=m[1].width/2-s/2-Math.floor((m[1].width-s)/2/s)*s,c=l+s*Math.ceil((a-r-l)/s);c<=l+s*Math.floor((a+r-l)/s);c+=s)i.beginPath(),i.lineWidth=g.width*d,i.lineCap="round",i.fillStyle=g.color,i.strokeStyle=g.color,i.moveTo(c,o-Math.sqrt(r*r-(a-c)*(a-c))),i.lineTo(c,o+Math.sqrt(r*r-(a-c)*(a-c))),i.stroke();for(var h=m[1].height/2-s/2-Math.floor((m[1].height-s)/2/s)*s,u=h+s*Math.ceil((o-r-h)/s);u<=h+s*Math.floor((o+r-h)/s);u+=s)i.beginPath(),i.lineWidth=g.width*d,i.lineCap="round",i.fillStyle=g.color,i.strokeStyle=g.color,i.moveTo(a-Math.sqrt(r*r-(o-u)*(o-u)),u),i.lineTo(a+Math.sqrt(r*r-(o-u)*(o-u)),u),i.stroke()}}function q(){m[1].container.style.opacity=1,m[1].container.style.visibility="visible",v=1}function P(){m[1].container.style.opacity=0,m[1].container.style.visibility="hidden",E=k=null,v=0}function I(e){0==e&&clearTimeout(Z),m[e].context.clearRect(0,0,m[e].width,m[e].height),1==e&&g&&fe()}function fe(){for(var e=m[1].context,t=(m[1].scale=Math.min(m[1].width/L[1].width,m[1].height/L[1].height),m[1].xOffset=(m[1].width-L[1].width*m[1].scale)/2,m[1].yOffset=(m[1].height-L[1].height*m[1].scale)/2,m[1].scale),n=(m[1].xOffset,m[1].yOffset,g.distance*t),a=m[1].width/2-n/2-Math.floor((m[1].width-n)/2/n)*n;a<m[1].width;a+=n)e.beginPath(),e.lineWidth=g.width*t,e.lineCap="round",e.fillStyle=g.color,e.strokeStyle=g.color,e.moveTo(a,0),e.lineTo(a,m[1].height),e.stroke();for(var o=m[1].height/2-n/2-Math.floor((m[1].height-n)/2/n)*n;o<m[1].height;o+=n)e.beginPath(),e.lineWidth=g.width*t,e.lineCap="round",e.fillStyle=g.color,e.strokeStyle=g.color,e.moveTo(0,o),e.lineTo(m[1].width,o),e.stroke()}function pe(e){e>=r[v].length&&(e=0),p[v]=e,p[v]<0?D(m[v].canvas,j):D(m[v].canvas,r[v][p[v]])}function me(e,t){b!=e&&(ve(b=e),t)&&M({type:"selectboard"})}function ve(e){I(1);for(var t=T(S,1),n=0;n<t.events.length&&t.events[n].time<Date.now()-x;)e==t.events[n].board&&we(1,t.events[n],Date.now()-x),n++}var be=[];function N(e,t){x=Date.now()-e,P();for(var n=b=v=0;n<2;n++){I(n);for(var a=T(S,n),o=0;o<a.events.length&&a.events[o].time<Date.now()-x;)we(n,a.events[o],e),o++;for(;O&&o<a.events.length;)V[n].push(setTimeout(we,a.events[o].time-(Date.now()-x),n,a.events[o],e)),o++}1==(v=null!=t?t:v)&&q()}function ye(){for(var e=0;e<2;e++){for(var t=0;t<V[e].length;t++)clearTimeout(V[e][t]);V[e]=[]}}function we(e,t,n){switch(t.type){case"open":n<=t.time?q():v=1;break;case"close":n<t.time?P():v=0;break;case"clear":I(e);break;case"selectboard":me(t.board);break;case"draw":a=m[e].context,o=m[e].scale,r=m[e].xOffset,i=m[e].yOffset,u[e](a,r+t.x1*o,i+t.y1*o,r+t.x2*o,i+t.y2*o,t.color);break;case"erase":r=m[a=e].context,i=m[e].scale,o=m[e].xOffset,a=m[e].yOffset,ge(r,o+t.x*i,a+t.y*i)}var a,o,r,i}function ke(e,t){Q=!(C=!1),Ee(e,t)}function Ee(e,t){var n=m[v].context,a=m[v].scale,o=m[v].xOffset,r=m[v].yOffset;M({type:"erase",x:e,y:t}),0<e*a+o&&0<t*a+r&&e*a+o<m[v].width&&t*a+r<m[v].height&&ge(n,e*a+o,t*a+r)}function Ce(){Q=!1}function xe(e,t){C=!0;m[v].context;var n=m[v].scale,a=m[v].xOffset,o=m[v].yOffset;k=e*n+a,E=t*n+o}function Se(e,t,n,a,o){var r=m[v].context,i=m[v].scale,d=m[v].xOffset,s=m[v].yOffset;M({type:"draw",color:o,x1:e,y1:t,x2:n,y2:a}),0<e*i+d&&0<t*i+s&&e*i+d<m[v].width&&t*i+s<m[v].height&&0<n*i+d&&0<a*i+s&&n*i+d<m[v].width&&a*i+s<m[v].height&&u[v](r,e*i+d,t*i+s,n*i+d,a*i+s,o)}function Oe(){C=!1}function De(){var e=Date.now()-x;O||(e=A());for(var t=0;t<2;t++)m[t].width=window.innerWidth,m[t].height=window.innerHeight,m[t].canvas.width=m[t].width,m[t].canvas.height=m[t].height,m[t].context.canvas.width=m[t].width,m[t].context.canvas.height=m[t].height,m[t].scale=Math.min(m[t].width/L[t].width,m[t].height/L[t].height),m[t].xOffset=(m[t].width-L[t].width*m[t].scale)/2,m[t].yOffset=(m[t].height-L[t].height*m[t].scale)/2;N(e,v)}function Le(){var e;1==v?(s||M({type:"close"}),P(),(e=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"closeChalkboard",timestamp:Date.now()-x,mode:0,board:b},document.dispatchEvent(e)):(q(),s||(M({type:"open"}),(e=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"showChalkboard",timestamp:Date.now()-x,mode:1,board:b},document.dispatchEvent(e),e=0,pe(e=Y[v]?p[v]:e)))}function Me(){M({type:"clear"}),I(v)}function Te(e){s||pe(e)}function Ae(){x=Date.now(),P(),I(0),I(1),v=1;var e=T();e.duration=0,e.events=[],v=0,(e=T()).duration=0,e.events=[],a()}function qe(e){(e||confirm("Please confirm to delete chalkboard drawings on this slide!"))&&(ye(),Ae(),(e=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"resetSlide",timestamp:Date.now()-x,mode:v,board:b},document.dispatchEvent(e))}for(e in document.addEventListener("received",function(e){e.content&&"chalkboard-plugin"==e.content.sender&&(be.push(e),console.log(JSON.stringify(e))),1==be.length&&function e(){var t=be.shift();x=Date.now()-t.content.timestamp;v<t.content.mode?q():v>t.content.mode&&P();b!=t.content.board&&ve(b=t.content.board);switch(t.content.type){case"showChalkboard":q();break;case"closeChalkboard":P();break;case"erase":Ee(t.content.x,t.content.y);break;case"draw":Se(t.content.fromX,t.content.fromY,t.content.toX,t.content.toY,t.content.color);break;case"clear":Me();break;case"selectboard":me(t.content.board,!0);break;case"resetSlide":Ae();break;case"init":L=t.content.storage;for(var n=0;n<2;n++)m[n].scale=Math.min(m[n].width/L[n].width,m[n].height/L[n].height),m[n].xOffset=(m[n].width-L[n].width*m[n].scale)/2,m[n].yOffset=(m[n].height-L[n].height*m[n].scale)/2;I(0),I(1),O||(Z=setTimeout(N,K,A(),0)),1==v&&0==t.content.mode&&setTimeout(P,K+50),0==v&&1==t.content.mode&&setTimeout(q,K+50),v=t.content.mode,b=t.content.board}(0<be.length?e:re)()}()}),document.addEventListener("welcome",function(e){var t=new CustomEvent(l);t.content={sender:"chalkboard-plugin",recipient:e.id,type:"init",timestamp:Date.now()-x,storage:L,mode:v,board:b},document.dispatchEvent(t)}),document.addEventListener("seekplayback",function(e){ye(),O&&0!=e.timestamp||N(e.timestamp)}),document.addEventListener("startplayback",function(e){ye(),O=!0,N(e.timestamp)}),document.addEventListener("stopplayback",function(e){O=!1,ye()}),document.addEventListener("startrecording",function(e){qe(!0),x=Date.now()}),h.addEventListener("pdf-ready",function(e){G(le)}),h.addEventListener("ready",function(e){var t;de||(window.addEventListener("resize",De),x=Date.now()-A(),S=h.getIndices(),O||N(A(),0),h.isAutoSliding()&&((t=new CustomEvent("startplayback")).timestamp=0,document.dispatchEvent(t)),a(),$(se))}),h.addEventListener("slidechanged",function(e){var t;de||(x=Date.now()-A(),S=h.getIndices(),P(),I(b=0),I(1),O||(Z=setTimeout(N,K,A(),0)),h.isAutoSliding()&&((t=new CustomEvent("startplayback")).timestamp=0,document.dispatchEvent(t)))}),h.addEventListener("fragmentshown",function(e){var t;de||(x=Date.now()-A(),S=h.getIndices(),P(),I(b=0),I(1),h.isAutoSliding()?((t=new CustomEvent("startplayback")).timestamp=0,document.dispatchEvent(t)):O||N(A(),0))}),h.addEventListener("fragmenthidden",function(e){de||(x=Date.now()-A(),S=h.getIndices(),P(),I(b=0),I(1),h.isAutoSliding()?document.dispatchEvent(new CustomEvent("stopplayback")):O||(N(A()),P()))}),h.addEventListener("autoslideresumed",function(e){var t=new CustomEvent("startplayback");t.timestamp=0,document.dispatchEvent(t)}),h.addEventListener("autoslidepaused",function(e){document.dispatchEvent(new CustomEvent("stopplayback")),N(A(),0)}),this.toggleNotesCanvas=function(){var e;s||(1==v?(Le(),notescanvas.style.background=o[0],notescanvas.style.pointerEvents="auto"):"none"!=notescanvas.style.pointerEvents?(d&&(notescanvas.querySelector(".palette").style.visibility="hidden"),notescanvas.style.background="rgba(0,0,0,0)",notescanvas.style.pointerEvents="none"):(d&&(notescanvas.querySelector(".palette").style.visibility="visible"),notescanvas.style.background=o[0],notescanvas.style.pointerEvents="auto",e=0,pe(e=p[v]?p[v]:e)))},this.toggleChalkboard=Le,this.colorIndex=Te,this.colorNext=function(){s||(p[v]=(p[v]+1)%r[v].length,pe(p[v]))},this.colorPrev=function(){s||(p[v]=(p[v]+(r[v].length-1))%r[v].length,pe(p[v]))},this.clear=function(){var e;s||(Me(),(e=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"clear",timestamp:Date.now()-x,mode:v,board:b},document.dispatchEvent(e))},this.reset=qe,this.resetAll=function(e){(e||confirm("Please confirm to delete all chalkboard drawings!"))&&(ye(),x=Date.now(),I(0),I(1),1==v&&P(),L=[{width:h.getConfig().width,height:h.getConfig().height,data:[]},{width:h.getConfig().width,height:h.getConfig().height,data:[]}],c.storage&&sessionStorage.setItem(c.storage,null),(e=new CustomEvent(l)).content={sender:"chalkboard-plugin",type:"init",timestamp:Date.now()-x,storage:L,mode:v,board:b},document.dispatchEvent(e))},this.download=function(){var t=document.createElement("a");document.body.appendChild(t);try{t.download="chalkboard.json";var e=new Blob([ie()],{type:"application/json"});t.href=window.URL.createObjectURL(e)}catch(e){e=String(e).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;"),t.innerHTML+=" ("+e+")"}t.click(),document.body.removeChild(t)},this.updateStorage=a,this.getData=ie,this.configure=U,z)z[e]&&h.addKeyBinding(z[e],RevealChalkboard[e]);return this};
+/*****************************************************************
+ ** Author: Asvin Goel, goel@telematique.eu
+ **
+ ** A plugin for reveal.js adding a chalkboard.
+ **
+ ** Version: 2.3.3
+ **
+ ** License: MIT license (see LICENSE.md)
+ **
+ ** Credits:
+ ** Chalkboard effect by Mohamed Moustafa https://github.com/mmoustafa/Chalkboard
+ ** Multi color support initially added by Kurt Rinnert https://github.com/rinnert
+ ** Compatibility with reveal.js v4 by Hakim El Hattab https://github.com/hakimel
+ ******************************************************************/
+
+"use strict";
+
+window.RevealChalkboard = window.RevealChalkboard || {
+	id: 'RevealChalkboard',
+	init: function ( deck ) {
+		initChalkboard.call(this, deck );
+	},
+	configure: function ( config ) {
+		configure( config );
+	},
+	toggleNotesCanvas: function () {
+		toggleNotesCanvas();
+	},
+	toggleChalkboard: function () {
+		toggleChalkboard();
+	},
+	colorIndex: function () {
+		colorIndex();
+	},
+	colorNext: function () {
+		colorNext();
+	},
+	colorPrev: function () {
+		colorPrev();
+	},
+	clear: function () {
+		clear();
+	},
+	reset: function () {
+		reset();
+	},
+	resetAll: function () {
+		resetAll();
+	},
+	updateStorage: function () {
+		updateStorage();
+	},
+	getData: function () {
+		return getData();
+	},
+	download: function () {
+		download();
+	},
+};
+
+function scriptPath() {
+	// obtain plugin path from the script element
+	var src;
+	if ( document.currentScript ) {
+		src = document.currentScript.src;
+	} else {
+		var sel = document.querySelector( 'script[src$="/chalkboard/plugin.js"]' )
+		if ( sel ) {
+			src = sel.src;
+		}
+	}
+	var path = ( src === undefined ) ? "" : src.slice( 0, src.lastIndexOf( "/" ) + 1 );
+//console.log("Path: " + path);
+	return path;
+}
+var path = scriptPath();
+
+const initChalkboard = function ( Reveal ) {
+//console.warn(path);
+	/* Feature detection for passive event handling*/
+	var passiveSupported = false;
+
+	try {
+		window.addEventListener( 'test', null, Object.defineProperty( {}, 'passive', {
+			get: function () {
+				passiveSupported = true;
+			}
+		} ) );
+	} catch ( err ) {}
+
+
+/*****************************************************************
+ ** Configuration
+ ******************************************************************/
+	var background, pens, draw, color;
+	var grid = false;
+	var boardmarkerWidth = 3;
+	var chalkWidth = 7;
+	var chalkEffect = 1.0;
+	var rememberColor = [ true, false ];
+	var eraser = {
+		src: path + 'img/sponge.png',
+		radius: 20
+	};
+	var boardmarkers = [ {
+			color: 'rgba(100,100,100,1)',
+			cursor: 'url(' + path + 'img/boardmarker-black.png), auto'
+		},
+		{
+			color: 'rgba(30,144,255, 1)',
+			cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'
+		},
+		{
+			color: 'rgba(220,20,60,1)',
+			cursor: 'url(' + path + 'img/boardmarker-red.png), auto'
+		},
+		{
+			color: 'rgba(50,205,50,1)',
+			cursor: 'url(' + path + 'img/boardmarker-green.png), auto'
+		},
+		{
+			color: 'rgba(255,140,0,1)',
+			cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'
+		},
+		{
+			color: 'rgba(150,0,20150,1)',
+			cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'
+		},
+		{
+			color: 'rgba(255,220,0,1)',
+			cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'
+		}
+	];
+	var chalks = [ {
+			color: 'rgba(255,255,255,0.5)',
+			cursor: 'url(' + path + 'img/chalk-white.png), auto'
+		},
+		{
+			color: 'rgba(96, 154, 244, 0.5)',
+			cursor: 'url(' + path + 'img/chalk-blue.png), auto'
+		},
+		{
+			color: 'rgba(237, 20, 28, 0.5)',
+			cursor: 'url(' + path + 'img/chalk-red.png), auto'
+		},
+		{
+			color: 'rgba(20, 237, 28, 0.5)',
+			cursor: 'url(' + path + 'img/chalk-green.png), auto'
+		},
+		{
+			color: 'rgba(220, 133, 41, 0.5)',
+			cursor: 'url(' + path + 'img/chalk-orange.png), auto'
+		},
+		{
+			color: 'rgba(220,0,220,0.5)',
+			cursor: 'url(' + path + 'img/chalk-purple.png), auto'
+		},
+		{
+			color: 'rgba(255,220,0,0.5)',
+			cursor: 'url(' + path + 'img/chalk-yellow.png), auto'
+		}
+	];
+
+  var sponge = 		{
+		cursor: 'url(' + path + 'img/sponge.png), auto'
+	}
+
+
+	var keyBindings = {
+		toggleNotesCanvas: {
+			keyCode: 67,
+			key: 'C',
+			description: 'Toggle notes canvas'
+		},
+		toggleChalkboard: {
+			keyCode: 66,
+			key: 'B',
+			description: 'Toggle chalkboard'
+		},
+		clear: {
+			keyCode: 46,
+			key: 'DEL',
+			description: 'Clear drawings on slide'
+		},
+/*
+		reset: {
+			keyCode: 173,
+			key: '-',
+			description: 'Reset drawings on slide'
+		},
+*/
+		resetAll: {
+			keyCode: 8,
+			key: 'BACKSPACE',
+			description: 'Reset all drawings'
+		},
+		colorNext: {
+			keyCode: 88,
+			key: 'X',
+			description: 'Next color'
+		},
+		colorPrev: {
+			keyCode: 89,
+			key: 'Y',
+			description: 'Previous color'
+		},
+		download: {
+			keyCode: 68,
+			key: 'D',
+			description: 'Download drawings'
+		}
+	};
+
+
+	var theme = 'chalkboard';
+	var color = [ 0, 0 ];
+	var toggleChalkboardButton = false;
+	var toggleNotesButton = false;
+	var colorButtons = true;
+	var boardHandle = true;
+	var transition = 800;
+
+	var readOnly = false;
+	var messageType = 'broadcast';
+
+	var config = configure( Reveal.getConfig().chalkboard || {} );
+	if ( config.keyBindings ) {
+		for ( var key in config.keyBindings ) {
+			keyBindings[ key ] = config.keyBindings[ key ];
+		};
+	}
+
+	function configure( config ) {
+
+		if ( config.boardmarkerWidth || config.penWidth ) boardmarkerWidth = config.boardmarkerWidth || config.penWidth;
+		if ( config.chalkWidth ) chalkWidth = config.chalkWidth;
+		if ( config.chalkEffect ) chalkEffect = config.chalkEffect;
+		if ( config.rememberColor ) rememberColor = config.rememberColor;
+		if ( config.eraser ) eraser = config.eraser;
+		if ( config.boardmarkers ) boardmarkers = config.boardmarkers;
+		if ( config.chalks ) chalks = config.chalks;
+
+		if ( config.theme ) theme = config.theme;
+		switch ( theme ) {
+		case 'whiteboard':
+			background = [ 'rgba(127,127,127,.1)', path + 'img/whiteboard.png' ];
+			draw = [ drawWithBoardmarker, drawWithBoardmarker ];
+			pens = [ boardmarkers, boardmarkers ];
+			grid = {
+				color: 'rgb(127,127,255,0.1)',
+				distance: 40,
+				width: 2
+			};
+			break;
+		case 'chalkboard':
+		default:
+			background = [ 'rgba(127,127,127,.1)', path + 'img/blackboard.png' ];
+			draw = [ drawWithBoardmarker, drawWithChalk ];
+			pens = [ boardmarkers, chalks ];
+			grid = {
+				color: 'rgb(50,50,10,0.5)',
+				distance: 80,
+				width: 2
+			};
+		}
+
+		if ( config.background ) background = config.background;
+		if ( config.grid != undefined ) grid = config.grid;
+
+		if ( config.toggleChalkboardButton != undefined ) toggleChalkboardButton = config.toggleChalkboardButton;
+		if ( config.toggleNotesButton != undefined ) toggleNotesButton = config.toggleNotesButton;
+		if ( config.colorButtons != undefined ) colorButtons = config.colorButtons;
+		if ( config.boardHandle != undefined ) boardHandle = config.boardHandle;
+		if ( config.transition ) transition = config.transition;
+
+		if ( config.readOnly != undefined ) readOnly = config.readOnly;
+		if ( config.messageType ) messageType = config.messageType;
+
+		if ( drawingCanvas && ( config.theme || config.background || config.grid ) ) {
+			var canvas = document.getElementById( drawingCanvas[ 1 ].id );
+			canvas.style.background = 'url("' + background[ 1 ] + '") repeat';
+			clearCanvas( 1 );
+			drawGrid();
+		}
+
+		return config;
+	}
+/*****************************************************************
+ ** Setup
+ ******************************************************************/
+
+	function whenReady( callback ) {
+		// wait for markdown to be parsed and code to be highlighted
+		if ( !document.querySelector( 'section[data-markdown]:not([data-markdown-parsed])' ) 
+			   && !document.querySelector( '[data-load]:not([data-loaded])') 
+		     && !document.querySelector( 'code[data-line-numbers*="|"]') 	
+		) {
+			callback();
+		} else {
+			console.log( "Wait for external sources to be loaded and code to be highlighted" );
+			setTimeout( whenReady, 500, callback )
+		}
+	}
+
+	function whenLoaded( callback ) {
+		// wait for drawings to be loaded and markdown to be parsed
+		if ( loaded !== null ) {
+			callback();
+		} else {
+			console.log( "Wait for drawings to be loaded" );
+			setTimeout( whenLoaded, 500, callback )
+		}
+	}
+
+	var drawingCanvas = [ {
+		id: 'notescanvas'
+	}, {
+		id: 'chalkboard'
+	} ];
+	setupDrawingCanvas( 0 );
+	setupDrawingCanvas( 1 );
+
+	var mode = 0; // 0: notes canvas, 1: chalkboard
+	var board = 0; // board index (only for chalkboard)
+
+	var mouseX = 0;
+	var mouseY = 0;
+	var lastX = null;
+	var lastY = null;
+
+	var drawing = false;
+	var erasing = false;
+
+	var slideStart = Date.now();
+	var slideIndices = {
+		h: 0,
+		v: 0
+	};
+
+	var timeouts = [
+		[],
+		[]
+	];
+	var slidechangeTimeout = null;
+	var updateStorageTimeout = null;
+	var playback = false;
+
+  function changeCursor( element, tool ) {
+    element.style.cursor = tool.cursor;
+    var palette = document.querySelector('.palette[data-mode="' + mode + '"]');
+    if ( palette ) {
+      palette.style.cursor = tool.cursor;
+    }
+  }
+
+	function createPalette( colors, length ) {
+		if ( length === true || length > colors.length ) {
+			length = colors.length;
+		}
+		var palette = document.createElement( 'div' );
+		palette.classList.add( 'palette' );
+		var list = document.createElement( 'ul' );
+		// color pickers
+		for ( var i = 0; i < length; i++ ) {
+			var colorButton = document.createElement( 'li' );
+			colorButton.setAttribute( 'data-color', i );
+			colorButton.innerHTML = '<i class="fa fa-square"></i>';
+			colorButton.style.color = colors[ i ].color;
+			colorButton.addEventListener( 'click', function ( e ) {
+				var element = e.target;
+				while ( !element.hasAttribute( 'data-color' ) ) {
+					element = element.parentElement;
+				}
+				colorIndex( parseInt( element.getAttribute( 'data-color' ) ) );
+			} );
+			colorButton.addEventListener( 'touchstart', function ( e ) {
+				var element = e.target;
+				while ( !element.hasAttribute( 'data-color' ) ) {
+					element = element.parentElement;
+				}
+				colorIndex( parseInt( element.getAttribute( 'data-color' ) ) );
+			} );
+			list.appendChild( colorButton );
+		}
+    // eraser
+    var eraserButton = document.createElement( 'li' );
+		eraserButton.setAttribute( 'data-eraser', 'true' );
+		var spongeImg = document.createElement( 'img' );
+		spongeImg.src = eraser.src;
+    spongeImg.height = "24";
+    spongeImg.width = "24";
+    spongeImg.style.marginTop = '10px';
+    spongeImg.style.marginRight = '0';
+    spongeImg.style.marginBottom = '0';
+    spongeImg.style.marginLeft = '0';
+		eraserButton.appendChild(spongeImg);
+		eraserButton.addEventListener( 'click', function ( e ) {
+			colorIndex( -1 );
+		} );
+		eraserButton.addEventListener( 'touchstart', function ( e ) {
+			colorIndex( -1 );
+		} );
+		list.appendChild( eraserButton );
+
+		palette.appendChild( list );
+		return palette;
+	};
+
+	function switchBoard( boardIdx ) {
+		selectBoard( boardIdx, true );
+		// broadcast
+		var message = new CustomEvent( messageType );
+			message.content = {
+			sender: 'chalkboard-plugin',
+			type: 'selectboard',
+			timestamp: Date.now() - slideStart,
+			mode,
+			board
+		};
+		document.dispatchEvent( message );	
+	}
+
+	function setupDrawingCanvas( id ) {
+		var container = document.createElement( 'div' );
+		container.id = drawingCanvas[ id ].id;
+		container.classList.add( 'overlay' );
+		container.setAttribute( 'data-prevent-swipe', 'true' );
+		container.oncontextmenu = function () {
+			return false;
+		}
+
+    changeCursor( container, pens[ id ][ color[ id ] ] );
+
+		drawingCanvas[ id ].width = window.innerWidth;
+		drawingCanvas[ id ].height = window.innerHeight;
+		drawingCanvas[ id ].scale = 1;
+		drawingCanvas[ id ].xOffset = 0;
+		drawingCanvas[ id ].yOffset = 0;
+
+		if ( id == "0" ) {
+			container.style.background = 'rgba(0,0,0,0)';
+			container.style.zIndex = 24;
+			container.style.opacity = 1;
+			container.style.visibility = 'visible';
+			container.style.pointerEvents = 'none';
+
+			var slides = document.querySelector( '.slides' );
+			var aspectRatio = Reveal.getConfig().width / Reveal.getConfig().height;
+			if ( drawingCanvas[ id ].width > drawingCanvas[ id ].height * aspectRatio ) {
+				drawingCanvas[ id ].xOffset = ( drawingCanvas[ id ].width - drawingCanvas[ id ].height * aspectRatio ) / 2;
+			} else if ( drawingCanvas[ id ].height > drawingCanvas[ id ].width / aspectRatio ) {
+				drawingCanvas[ id ].yOffset = ( drawingCanvas[ id ].height - drawingCanvas[ id ].width / aspectRatio ) / 2;
+			}
+
+			if ( colorButtons ) {
+				var palette = createPalette( boardmarkers, colorButtons );
+        palette.dataset.mode = id;
+				palette.style.visibility = 'hidden'; // only show palette in drawing mode
+				container.appendChild( palette );
+			}
+		} else {
+			container.style.background = 'url("' + background[ id ] + '") repeat';
+			container.style.zIndex = 26;
+			container.style.opacity = 0;
+			container.style.visibility = 'hidden';
+
+			if ( colorButtons ) {
+				var palette = createPalette( chalks, colorButtons );
+        palette.dataset.mode = id;
+				container.appendChild( palette );
+			}
+			if ( boardHandle ) {
+				var handle = document.createElement( 'div' );
+				handle.classList.add( 'boardhandle' );
+				handle.innerHTML = '<ul><li><a id="previousboard" href="#" title="Previous board"><i class="fas fa-chevron-up"></i></a></li><li><a id="nextboard" href="#" title="Next board"><i class="fas fa-chevron-down"></i></a></li></ul>';
+				handle.querySelector( '#previousboard' ).addEventListener( 'click', function ( e ) {
+					e.preventDefault();
+					switchBoard( board - 1 );
+				} );
+				handle.querySelector( '#nextboard' ).addEventListener( 'click', function ( e ) {
+					e.preventDefault();
+					switchBoard( board + 1 );
+				} );
+				handle.querySelector( '#previousboard' ).addEventListener( 'touchstart', function ( e ) {
+					e.preventDefault();
+					switchBoard( board - 1 );
+				} );
+				handle.querySelector( '#nextboard' ).addEventListener( 'touchstart', function ( e ) {
+					e.preventDefault();
+					switchBoard( board + 1 );
+				} );
+
+				container.appendChild( handle );
+			}
+		}
+
+		var canvas = document.createElement( 'canvas' );
+		canvas.width = drawingCanvas[ id ].width;
+		canvas.height = drawingCanvas[ id ].height;
+		canvas.setAttribute( 'data-chalkboard', id );
+    changeCursor( canvas, pens[ id ][ color[ id ] ] );
+		container.appendChild( canvas );
+		drawingCanvas[ id ].canvas = canvas;
+
+		drawingCanvas[ id ].context = canvas.getContext( '2d' );
+
+		setupCanvasEvents( container );
+
+		document.querySelector( '.reveal' ).appendChild( container );
+		drawingCanvas[ id ].container = container;
+	}
+
+
+/*****************************************************************
+ ** Storage
+ ******************************************************************/
+
+	var storage = [ {
+			width: Reveal.getConfig().width,
+			height: Reveal.getConfig().height,
+			data: []
+		},
+		{
+			width: Reveal.getConfig().width,
+			height: Reveal.getConfig().height,
+			data: []
+		}
+	];
+
+	var loaded = null;
+
+	if ( config.storage ) {
+		// Get chalkboard drawings from session storage
+		loaded = initStorage( sessionStorage.getItem( config.storage ) );
+	}
+
+	if ( !loaded && config.src != null ) {
+		// Get chalkboard drawings from the given file
+		loadData( config.src );
+	}
+
+	/**
+	 * Initialize storage.
+	 */
+	function initStorage( json ) {
+		var success = false;
+		try {
+			var data = JSON.parse( json );
+			for ( var id = 0; id < data.length; id++ ) {
+				if ( drawingCanvas[ id ].width != data[ id ].width || drawingCanvas[ id ].height != data[ id ].height ) {
+					drawingCanvas[ id ].scale = Math.min( drawingCanvas[ id ].width / data[ id ].width, drawingCanvas[ id ].height / data[ id ].height );
+					drawingCanvas[ id ].xOffset = ( drawingCanvas[ id ].width - data[ id ].width * drawingCanvas[ id ].scale ) / 2;
+					drawingCanvas[ id ].yOffset = ( drawingCanvas[ id ].height - data[ id ].height * drawingCanvas[ id ].scale ) / 2;
+				}
+				if ( config.readOnly ) {
+					drawingCanvas[ id ].container.style.cursor = 'default';
+					drawingCanvas[ id ].canvas.style.cursor = 'default';
+				}
+			}
+			success = true;
+			storage = data;
+		} catch ( err ) {
+			console.warn( "Cannot initialise storage!" );
+		}
+		return success;
+	}
+
+
+	/**
+	 * Load data.
+	 */
+	function loadData( filename ) {
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function () {
+			if ( xhr.readyState === 4 && xhr.status != 404 ) {
+				loaded = initStorage( xhr.responseText );
+				updateStorage();
+				console.log( "Drawings loaded from file" );
+			} else {
+				config.readOnly = undefined;
+				readOnly = undefined;
+				console.warn( 'Failed to get file ' + filename + '. ReadyState: ' + xhr.readyState + ', Status: ' + xhr.status );
+				loaded = false;
+			}
+		};
+
+		xhr.open( 'GET', filename, true );
+		try {
+			xhr.send();
+		} catch ( error ) {
+			config.readOnly = undefined;
+			readOnly = undefined;
+			console.warn( 'Failed to get file ' + filename + '. Make sure that the presentation and the file are served by a HTTP server and the file can be found there. ' + error );
+			loaded = false;
+		}
+	}
+
+
+	function storageChanged( now ) {
+		if ( !now ) {
+			// create or update timer
+			if ( updateStorageTimeout ) {
+				clearTimeout( updateStorageTimeout );
+			}
+			updateStorageTimeout = setTimeout( storageChanged, 1000, true);
+		}
+		else {
+// console.log("Update storage", updateStorageTimeout,  Date.now());
+			updateStorage();
+			updateStorageTimeout = null;
+		}
+	}
+
+	function updateStorage() {
+		var json = JSON.stringify( storage )
+		if ( config.storage ) {
+			sessionStorage.setItem( config.storage, json )
+		}
+		return json;
+	}
+
+	function recordEvent( event ) {
+//console.log(event);
+		event.time = Date.now() - slideStart;
+		if ( mode == 1 ) event.board = board;
+		var slideData = getSlideData();
+		var i = slideData.events.length;
+		while ( i > 0 && event.time < slideData.events[ i - 1 ].time ) {
+			i--;
+		}
+		slideData.events.splice( i, 0, event );
+		slideData.duration = Math.max( slideData.duration, Date.now() - slideStart ) + 1;
+
+		storageChanged();
+	}
+
+	/**
+	 * Get data as json string.
+	 */
+	function getData() {
+		// cleanup slide data without events
+		for ( var id = 0; id < 2; id++ ) {
+			for ( var i = storage[ id ].data.length - 1; i >= 0; i-- ) {
+				if ( storage[ id ].data[ i ].events.length == 0 ) {
+					storage[ id ].data.splice( i, 1 );
+				}
+			}
+		}
+
+		return updateStorage();
+	}
+
+	/**
+	 * Download data.
+	 */
+	function downloadData() {
+		var a = document.createElement( 'a' );
+		document.body.appendChild( a );
+		try {
+			a.download = 'chalkboard.json';
+			var blob = new Blob( [ getData() ], {
+				type: 'application/json'
+			} );
+			a.href = window.URL.createObjectURL( blob );
+		} catch ( error ) {
+			// https://stackoverflow.com/a/6234804
+			// escape data for proper handling of quotes and line breaks
+			// in case malicious user gets a chance to craft the exception message
+			error = String(error)
+					.replace(/&/g, "&amp;")
+					.replace(/</g, "&lt;")
+					.replace(/>/g, "&gt;")
+					.replace(/"/g, "&quot;")
+					.replace(/'/g, "&#039;");
+			a.innerHTML += ' (' + error + ')';
+		}
+		a.click();
+		document.body.removeChild( a );
+	}
+
+	/**
+	 * Returns data object for the slide with the given indices.
+	 */
+	function getSlideData( indices, id ) {
+		if ( id == undefined ) id = mode;
+		if ( !indices ) indices = slideIndices;
+		var data;
+		for ( var i = 0; i < storage[ id ].data.length; i++ ) {
+			if ( storage[ id ].data[ i ].slide.h === indices.h && storage[ id ].data[ i ].slide.v === indices.v && storage[ id ].data[ i ].slide.f === indices.f ) {
+				data = storage[ id ].data[ i ];
+				return data;
+			}
+		}
+		var page = Number( Reveal.getCurrentSlide().getAttribute('data-pdf-page-number') ); 
+//console.log( indices, Reveal.getCurrentSlide() );
+		storage[ id ].data.push( {
+			slide: indices,
+			page,
+			events: [],
+			duration: 0
+		} );
+		data = storage[ id ].data[ storage[ id ].data.length - 1 ];
+		return data;
+	}
+
+	/**
+	 * Returns maximum duration of slide playback for both modes
+	 */
+	function getSlideDuration( indices ) {
+		if ( !indices ) indices = slideIndices;
+		var duration = 0;
+		for ( var id = 0; id < 2; id++ ) {
+			for ( var i = 0; i < storage[ id ].data.length; i++ ) {
+				if ( storage[ id ].data[ i ].slide.h === indices.h && storage[ id ].data[ i ].slide.v === indices.v && storage[ id ].data[ i ].slide.f === indices.f ) {
+					duration = Math.max( duration, storage[ id ].data[ i ].duration );
+					break;
+				}
+			}
+		}
+//console.log( duration );
+		return duration;
+	}
+
+/*****************************************************************
+ ** Print
+ ******************************************************************/
+	var printMode = ( /print-pdf/gi ).test( window.location.search );
+//console.log("createPrintout" + printMode)
+
+	function addPageNumbers() {
+		// determine page number for printouts with fragments serialised
+		var slides = Reveal.getSlides();
+		var page = 0;
+		for ( var i=0; i < slides.length; i++) {
+			slides[i].setAttribute('data-pdf-page-number',page.toString());
+			// add number of fragments without fragment indices
+			var count = slides[i].querySelectorAll('.fragment:not([data-fragment-index])').length;
+			var fragments = slides[i].querySelectorAll('.fragment[data-fragment-index]');
+			for ( var j=0; j < fragments.length; j++) {
+				// increasenumber of fragments by highest fragment index (which start at 0)
+				if ( Number(fragments[j].getAttribute('data-fragment-index')) + 1 > count ) {
+					count = Number(fragments[j].getAttribute('data-fragment-index')) + 1;
+				}
+			}
+			page += count + 1;
+		}
+	}
+
+	function createPrintout() {
+		//console.warn(Reveal.getTotalSlides(),Reveal.getSlidesElement());
+		if ( storage[ 1 ].data.length == 0 ) return;
+		console.log( 'Create printout(s) for ' + storage[ 1 ].data.length + " slides" );
+		drawingCanvas[ 0 ].container.style.opacity = 0; // do not print notes canvas
+		drawingCanvas[ 0 ].container.style.visibility = 'hidden';
+
+		var patImg = new Image();
+		patImg.onload = function () {
+			var slides = Reveal.getSlides();
+//console.log(slides);
+			for ( var i = storage[ 1 ].data.length - 1; i >= 0; i-- ) {
+				console.log( 'Create printout for slide ' + storage[ 1 ].data[ i ].slide.h + '.' + storage[ 1 ].data[ i ].slide.v );
+				var slideData = getSlideData( storage[ 1 ].data[ i ].slide, 1 );
+				var drawings = createDrawings( slideData, patImg );
+				addDrawings( slides[storage[ 1 ].data[ i ].page], drawings );
+
+			}
+//			Reveal.sync();
+		};
+		patImg.src = background[ 1 ];
+	}
+
+
+	function cloneCanvas( oldCanvas ) {
+		//create a new canvas
+		var newCanvas = document.createElement( 'canvas' );
+		var context = newCanvas.getContext( '2d' );
+		//set dimensions
+		newCanvas.width = oldCanvas.width;
+		newCanvas.height = oldCanvas.height;
+		//apply the old canvas to the new one
+		context.drawImage( oldCanvas, 0, 0 );
+		//return the new canvas
+		return newCanvas;
+	}
+
+	function getCanvas( template, container, board ) {
+		var idx = container.findIndex( element => element.board === board );
+		if ( idx === -1 ) {
+			var canvas = cloneCanvas( template );
+			if ( !container.length ) {
+				idx = 0;
+				container.push( {
+					board,
+					canvas
+				} );
+			} else if ( board < container[ 0 ].board ) {
+				idx = 0;
+				container.unshift( {
+					board,
+					canvas
+				} );
+			} else if ( board > container[ container.length - 1 ].board ) {
+				idx = container.length;
+				container.push( {
+					board,
+					canvas
+				} );
+			}
+		}
+
+		return container[ idx ].canvas;
+	}
+
+	function createDrawings( slideData, patImg ) {
+		var width = Reveal.getConfig().width;
+		var height = Reveal.getConfig().height;
+		var scale = 1;
+		var xOffset = 0;
+		var yOffset = 0;
+		if ( width != storage[ 1 ].width || height != storage[ 1 ].height ) {
+			scale = Math.min( width / storage[ 1 ].width, height / storage[ 1 ].height );
+			xOffset = ( width - storage[ 1 ].width * scale ) / 2;
+			yOffset = ( height - storage[ 1 ].height * scale ) / 2;
+		}
+		mode = 1;
+		board = 0;
+//		console.log( 'Create printout(s) for slide ', slideData );
+
+		var drawings = [];
+		var template = document.createElement( 'canvas' );
+		template.width = width;
+		template.height = height;
+
+		var imgCtx = template.getContext( '2d' );
+		imgCtx.fillStyle = imgCtx.createPattern( patImg, 'repeat' );
+		imgCtx.rect( 0, 0, width, height );
+		imgCtx.fill();
+
+		for ( var j = 0; j < slideData.events.length; j++ ) {
+			switch ( slideData.events[ j ].type ) {
+			case 'draw':
+				draw[ 1 ]( getCanvas( template, drawings, board ).getContext( '2d' ),
+					xOffset + slideData.events[ j ].x1 * scale,
+					yOffset + slideData.events[ j ].y1 * scale,
+					xOffset + slideData.events[ j ].x2 * scale,
+					yOffset + slideData.events[ j ].y2 * scale,
+					yOffset + slideData.events[ j ].color
+				);
+				break;
+			case 'erase':
+				eraseWithSponge( getCanvas( template, drawings, board ).getContext( '2d' ),
+					xOffset + slideData.events[ j ].x * scale,
+					yOffset + slideData.events[ j ].y * scale
+				);
+				break;
+			case 'selectboard':
+				selectBoard( slideData.events[ j ].board );
+				break;
+			case 'clear':
+				getCanvas( template, drawings, board ).getContext( '2d' ).clearRect( 0, 0, width, height );
+				getCanvas( template, drawings, board ).getContext( '2d' ).fill();
+				break;
+			default:
+				break;
+			}
+		}
+
+		drawings = drawings.sort( ( a, b ) => a.board > b.board && 1 || -1 );
+
+		mode = 0;
+
+		return drawings;
+	}
+
+	function addDrawings( slide, drawings ) {
+		var parent = slide.parentElement.parentElement;
+		var nextSlide = slide.parentElement.nextElementSibling;
+
+		for ( var i = 0; i < drawings.length; i++ ) {
+			var newPDFPage = document.createElement( 'div' );
+			newPDFPage.classList.add( 'pdf-page' );
+			newPDFPage.style.height = Reveal.getConfig().height;
+			newPDFPage.append( drawings[ i ].canvas );
+//console.log("Add drawing", newPDFPage);
+			if ( nextSlide != null ) {
+				parent.insertBefore( newPDFPage, nextSlide );
+			} else {
+				parent.append( newPDFPage );
+			}
+		}
+	}
+
+	/*****************************************************************
+	 ** Drawings
+	 ******************************************************************/
+
+	function drawWithBoardmarker( context, fromX, fromY, toX, toY, colorIdx ) {
+		if ( colorIdx == undefined ) colorIdx = color[ mode ];
+		context.lineWidth = boardmarkerWidth;
+		context.lineCap = 'round';
+		context.strokeStyle = boardmarkers[ colorIdx ].color;
+		context.beginPath();
+		context.moveTo( fromX, fromY );
+		context.lineTo( toX, toY );
+		context.stroke();
+	}
+
+	function drawWithChalk( context, fromX, fromY, toX, toY, colorIdx ) {
+		if ( colorIdx == undefined ) colorIdx = color[ mode ];
+		var brushDiameter = chalkWidth;
+		context.lineWidth = brushDiameter;
+		context.lineCap = 'round';
+		context.fillStyle = chalks[ colorIdx ].color; // 'rgba(255,255,255,0.5)';
+		context.strokeStyle = chalks[ colorIdx ].color;
+
+		var opacity = 1.0;
+		context.strokeStyle = context.strokeStyle.replace( /[\d\.]+\)$/g, opacity + ')' );
+		context.beginPath();
+		context.moveTo( fromX, fromY );
+		context.lineTo( toX, toY );
+		context.stroke();
+		// Chalk Effect
+		var length = Math.round( Math.sqrt( Math.pow( toX - fromX, 2 ) + Math.pow( toY - fromY, 2 ) ) / ( 5 / brushDiameter ) );
+		var xUnit = ( toX - fromX ) / length;
+		var yUnit = ( toY - fromY ) / length;
+		for ( var i = 0; i < length; i++ ) {
+			if ( chalkEffect > ( Math.random() * 0.9 ) ) {
+				var xCurrent = fromX + ( i * xUnit );
+				var yCurrent = fromY + ( i * yUnit );
+				var xRandom = xCurrent + ( Math.random() - 0.5 ) * brushDiameter * 1.2;
+				var yRandom = yCurrent + ( Math.random() - 0.5 ) * brushDiameter * 1.2;
+				context.clearRect( xRandom, yRandom, Math.random() * 2 + 2, Math.random() + 1 );
+			}
+		}
+	}
+ 
+	function eraseWithSponge( context, x, y ) {
+		context.save();
+		context.beginPath();
+		context.arc( x + eraser.radius, y + eraser.radius, eraser.radius, 0, 2 * Math.PI, false );
+		context.clip();
+		context.clearRect( x - 1, y - 1, eraser.radius * 2 + 2, eraser.radius * 2 + 2 );
+		context.restore();
+		if ( mode == 1 && grid ) {
+			redrawGrid( x + eraser.radius, y + eraser.radius, eraser.radius );
+		}
+	}
+
+
+	/**
+	 * Show an overlay for the chalkboard.
+	 */
+	function showChalkboard() {
+//console.log("showChalkboard");
+		drawingCanvas[ 1 ].container.style.opacity = 1;
+		drawingCanvas[ 1 ].container.style.visibility = 'visible';
+		mode = 1;
+	}
+
+
+	/**
+	 * Closes open chalkboard.
+	 */
+	function closeChalkboard() {
+		drawingCanvas[ 1 ].container.style.opacity = 0;
+		drawingCanvas[ 1 ].container.style.visibility = 'hidden';
+		lastX = null;
+		lastY = null;
+		mode = 0;
+	}
+
+	/**
+	 * Clear current canvas.
+	 */
+	function clearCanvas( id ) {
+		if ( id == 0 ) clearTimeout( slidechangeTimeout );
+		drawingCanvas[ id ].context.clearRect( 0, 0, drawingCanvas[ id ].width, drawingCanvas[ id ].height );
+		if ( id == 1 && grid ) drawGrid();
+	}
+
+	/**
+	 * Draw grid on background
+	 */
+	function drawGrid() {
+		var context = drawingCanvas[ 1 ].context;
+
+		drawingCanvas[ 1 ].scale = Math.min( drawingCanvas[ 1 ].width / storage[ 1 ].width, drawingCanvas[ 1 ].height / storage[ 1 ].height );
+		drawingCanvas[ 1 ].xOffset = ( drawingCanvas[ 1 ].width - storage[ 1 ].width * drawingCanvas[ 1 ].scale ) / 2;
+		drawingCanvas[ 1 ].yOffset = ( drawingCanvas[ 1 ].height - storage[ 1 ].height * drawingCanvas[ 1 ].scale ) / 2;
+
+		var scale = drawingCanvas[ 1 ].scale;
+		var xOffset = drawingCanvas[ 1 ].xOffset;
+		var yOffset = drawingCanvas[ 1 ].yOffset;
+
+		var distance = grid.distance * scale;
+
+		var fromX = drawingCanvas[ 1 ].width / 2 - distance / 2 - Math.floor( ( drawingCanvas[ 1 ].width - distance ) / 2 / distance ) * distance;
+		for ( var x = fromX; x < drawingCanvas[ 1 ].width; x += distance ) {
+			context.beginPath();
+			context.lineWidth = grid.width * scale;
+			context.lineCap = 'round';
+			context.fillStyle = grid.color;
+			context.strokeStyle = grid.color;
+			context.moveTo( x, 0 );
+			context.lineTo( x, drawingCanvas[ 1 ].height );
+			context.stroke();
+		}
+		var fromY = drawingCanvas[ 1 ].height / 2 - distance / 2 - Math.floor( ( drawingCanvas[ 1 ].height - distance ) / 2 / distance ) * distance;
+
+		for ( var y = fromY; y < drawingCanvas[ 1 ].height; y += distance ) {
+			context.beginPath();
+			context.lineWidth = grid.width * scale;
+			context.lineCap = 'round';
+			context.fillStyle = grid.color;
+			context.strokeStyle = grid.color;
+			context.moveTo( 0, y );
+			context.lineTo( drawingCanvas[ 1 ].width, y );
+			context.stroke();
+		}
+	}
+
+	function redrawGrid( centerX, centerY, diameter ) {
+		var context = drawingCanvas[ 1 ].context;
+
+		drawingCanvas[ 1 ].scale = Math.min( drawingCanvas[ 1 ].width / storage[ 1 ].width, drawingCanvas[ 1 ].height / storage[ 1 ].height );
+		drawingCanvas[ 1 ].xOffset = ( drawingCanvas[ 1 ].width - storage[ 1 ].width * drawingCanvas[ 1 ].scale ) / 2;
+		drawingCanvas[ 1 ].yOffset = ( drawingCanvas[ 1 ].height - storage[ 1 ].height * drawingCanvas[ 1 ].scale ) / 2;
+
+		var scale = drawingCanvas[ 1 ].scale;
+		var xOffset = drawingCanvas[ 1 ].xOffset;
+		var yOffset = drawingCanvas[ 1 ].yOffset;
+
+		var distance = grid.distance * scale;
+
+		var fromX = drawingCanvas[ 1 ].width / 2 - distance / 2 - Math.floor( ( drawingCanvas[ 1 ].width - distance ) / 2 / distance ) * distance;
+
+		for ( var x = fromX + distance * Math.ceil( ( centerX - diameter - fromX ) / distance ); x <= fromX + distance * Math.floor( ( centerX + diameter - fromX ) / distance ); x += distance ) {
+			context.beginPath();
+			context.lineWidth = grid.width * scale;
+			context.lineCap = 'round';
+			context.fillStyle = grid.color;
+			context.strokeStyle = grid.color;
+			context.moveTo( x, centerY - Math.sqrt( diameter * diameter - ( centerX - x ) * ( centerX - x ) ) );
+			context.lineTo( x, centerY + Math.sqrt( diameter * diameter - ( centerX - x ) * ( centerX - x ) ) );
+			context.stroke();
+		}
+		var fromY = drawingCanvas[ 1 ].height / 2 - distance / 2 - Math.floor( ( drawingCanvas[ 1 ].height - distance ) / 2 / distance ) * distance;
+		for ( var y = fromY + distance * Math.ceil( ( centerY - diameter - fromY ) / distance ); y <= fromY + distance * Math.floor( ( centerY + diameter - fromY ) / distance ); y += distance ) {
+			context.beginPath();
+			context.lineWidth = grid.width * scale;
+			context.lineCap = 'round';
+			context.fillStyle = grid.color;
+			context.strokeStyle = grid.color;
+			context.moveTo( centerX - Math.sqrt( diameter * diameter - ( centerY - y ) * ( centerY - y ) ), y );
+			context.lineTo( centerX + Math.sqrt( diameter * diameter - ( centerY - y ) * ( centerY - y ) ), y );
+			context.stroke();
+		}
+	}
+
+	/**
+	 * Set the  color
+	 */
+	function setColor( index, record ) {    
+ 		// protect against out of bounds (this could happen when
+  	// replaying events recorded with different color settings).
+    if ( index >= pens[ mode ].length ) index = 0;
+
+	  color[ mode ] = index;
+
+    if ( color[ mode ] < 0 ) {
+      // use eraser
+      changeCursor( drawingCanvas[ mode ].canvas, sponge );
+    }
+    else {
+      changeCursor( drawingCanvas[ mode ].canvas, pens[ mode ][ color[ mode ] ] );
+    }
+	}
+
+	/**
+	 * Set the  board
+	 */
+	function selectBoard( boardIdx, record ) {
+//console.log("Set board",boardIdx);
+		if ( board == boardIdx ) return;
+
+		board = boardIdx;
+		redrawChalkboard( boardIdx );
+		if ( record ) {
+			recordEvent( { type: 'selectboard' } );
+		}
+	}
+
+	function redrawChalkboard( boardIdx ) {
+		clearCanvas( 1 );
+		var slideData = getSlideData( slideIndices, 1 );
+		var index = 0;
+		var play = ( boardIdx == 0 );
+		while ( index < slideData.events.length && slideData.events[ index ].time < Date.now() - slideStart ) {
+			if ( boardIdx == slideData.events[ index ].board ) {
+				playEvent( 1, slideData.events[ index ], Date.now() - slideStart );
+			}
+
+			index++;
+		}
+	}
+
+
+	/**
+	 * Forward cycle color
+	 */
+	function cycleColorNext() {
+		color[ mode ] = ( color[ mode ] + 1 ) % pens[ mode ].length;
+		return color[ mode ];
+	}
+
+	/**
+	 * Backward cycle color
+	 */
+	function cycleColorPrev() {
+		color[ mode ] = ( color[ mode ] + ( pens[ mode ].length - 1 ) ) % pens[ mode ].length;
+		return color[ mode ];
+	}
+
+/*****************************************************************
+ ** Broadcast
+ ******************************************************************/
+
+	var eventQueue = [];
+
+	document.addEventListener( 'received', function ( message ) {
+		if ( message.content && message.content.sender == 'chalkboard-plugin' ) {
+			// add message to queue
+			eventQueue.push( message );
+			console.log( JSON.stringify( message ) );
+		}
+		if ( eventQueue.length == 1 ) processQueue();
+	} );
+
+	function processQueue() {
+		// take first message from queue
+		var message = eventQueue.shift();
+
+		// synchronize time with seminar host
+		slideStart = Date.now() - message.content.timestamp;
+		// set status
+		if ( mode < message.content.mode ) {
+			// open chalkboard
+			showChalkboard();
+		} else if ( mode > message.content.mode ) {
+			// close chalkboard
+			closeChalkboard();
+		}
+		if ( board != message.content.board ) {
+			board = message.content.board;
+			redrawChalkboard( board );
+		};
+
+		switch ( message.content.type ) {
+		case 'showChalkboard':
+			showChalkboard();
+			break;
+		case 'closeChalkboard':
+			closeChalkboard();
+			break;
+		case 'erase':
+			erasePoint( message.content.x, message.content.y );
+			break;
+		case 'draw':
+			drawSegment( message.content.fromX, message.content.fromY, message.content.toX, message.content.toY, message.content.color );
+			break;
+		case 'clear':
+			clearSlide();
+			break;
+		case 'selectboard':
+			selectBoard( message.content.board, true );
+			break;
+		case 'resetSlide':
+			resetSlideDrawings();
+			break;
+		case 'init':
+			storage = message.content.storage;
+			for ( var id = 0; id < 2; id++ ) {
+				drawingCanvas[ id ].scale = Math.min( drawingCanvas[ id ].width / storage[ id ].width, drawingCanvas[ id ].height / storage[ id ].height );
+				drawingCanvas[ id ].xOffset = ( drawingCanvas[ id ].width - storage[ id ].width * drawingCanvas[ id ].scale ) / 2;
+				drawingCanvas[ id ].yOffset = ( drawingCanvas[ id ].height - storage[ id ].height * drawingCanvas[ id ].scale ) / 2;
+			}
+			clearCanvas( 0 );
+			clearCanvas( 1 );
+			if ( !playback ) {
+				slidechangeTimeout = setTimeout( startPlayback, transition, getSlideDuration(), 0 );
+			}
+			if ( mode == 1 && message.content.mode == 0 ) {
+				setTimeout( closeChalkboard, transition + 50 );
+			}
+			if ( mode == 0 && message.content.mode == 1 ) {
+				setTimeout( showChalkboard, transition + 50 );
+			}
+			mode = message.content.mode;
+			board = message.content.board;
+			break;
+		default:
+			break;
+		}
+
+		// continue with next message if queued
+		if ( eventQueue.length > 0 ) {
+			processQueue();
+		} else {
+			storageChanged();
+		}
+	}
+
+	document.addEventListener( 'welcome', function ( user ) {
+		// broadcast storage
+		var message = new CustomEvent( messageType );
+		message.content = {
+			sender: 'chalkboard-plugin',
+			recipient: user.id,
+			type: 'init',
+			timestamp: Date.now() - slideStart,
+			storage: storage,
+			mode,
+			board
+		};
+		document.dispatchEvent( message );
+	} );
+
+	/*****************************************************************
+	 ** Playback
+	 ******************************************************************/
+
+	document.addEventListener( 'seekplayback', function ( event ) {
+//console.log('event seekplayback ' + event.timestamp);
+		stopPlayback();
+		if ( !playback || event.timestamp == 0 ) {
+			// in other cases startplayback fires after seeked
+			startPlayback( event.timestamp );
+		}
+		//console.log('seeked');
+	} );
+
+
+	document.addEventListener( 'startplayback', function ( event ) {
+//console.log('event startplayback ' + event.timestamp);
+		stopPlayback();
+		playback = true;
+		startPlayback( event.timestamp );
+	} );
+
+	document.addEventListener( 'stopplayback', function ( event ) {
+//console.log('event stopplayback ' + (Date.now() - slideStart) );
+		playback = false;
+		stopPlayback();
+	} );
+
+	document.addEventListener( 'startrecording', function ( event ) {
+//console.log('event startrecording ' + event.timestamp);
+		startRecording();
+	} );
+
+
+	function startRecording() {
+		resetSlide( true );
+		slideStart = Date.now();
+	}
+
+	function startPlayback( timestamp, finalMode ) {
+//console.log("playback " + timestamp );
+		slideStart = Date.now() - timestamp;
+		closeChalkboard();
+		mode = 0;
+		board = 0;
+		for ( var id = 0; id < 2; id++ ) {
+			clearCanvas( id );
+			var slideData = getSlideData( slideIndices, id );
+//console.log( timestamp +" / " + JSON.stringify(slideData));
+			var index = 0;
+			while ( index < slideData.events.length && slideData.events[ index ].time < ( Date.now() - slideStart ) ) {
+				playEvent( id, slideData.events[ index ], timestamp );
+				index++;
+			}
+
+			while ( playback && index < slideData.events.length ) {
+				timeouts[ id ].push( setTimeout( playEvent, slideData.events[ index ].time - ( Date.now() - slideStart ), id, slideData.events[ index ], timestamp ) );
+				index++;
+			}
+		}
+//console.log("Mode: " + finalMode + "/" + mode );
+		if ( finalMode != undefined ) {
+			mode = finalMode;
+		}
+		if ( mode == 1 ) showChalkboard();
+//console.log("playback (ok)");
+
+	};
+
+	function stopPlayback() {
+//console.log("stopPlayback");
+//console.log("Timeouts: " + timeouts[0].length + "/"+ timeouts[1].length);
+		for ( var id = 0; id < 2; id++ ) {
+			for ( var i = 0; i < timeouts[ id ].length; i++ ) {
+				clearTimeout( timeouts[ id ][ i ] );
+			}
+			timeouts[ id ] = [];
+		}
+	};
+
+	function playEvent( id, event, timestamp ) {
+//console.log( timestamp +" / " + JSON.stringify(event));
+//console.log( id + ": " + timestamp +" / " +  event.time +" / " + event.type +" / " + mode );
+		switch ( event.type ) {
+		case 'open':
+			if ( timestamp <= event.time ) {
+				showChalkboard();
+			} else {
+				mode = 1;
+			}
+
+			break;
+		case 'close':
+			if ( timestamp < event.time ) {
+				closeChalkboard();
+			} else {
+				mode = 0;
+			}
+			break;
+		case 'clear':
+			clearCanvas( id );
+			break;
+		case 'selectboard':
+			selectBoard( event.board );
+			break;
+		case 'draw':
+			drawLine( id, event, timestamp );
+			break;
+		case 'erase':
+			eraseCircle( id, event, timestamp );
+			break;
+		}
+	};
+
+	function drawLine( id, event, timestamp ) {
+		var ctx = drawingCanvas[ id ].context;
+		var scale = drawingCanvas[ id ].scale;
+		var xOffset = drawingCanvas[ id ].xOffset;
+		var yOffset = drawingCanvas[ id ].yOffset;
+		draw[ id ]( ctx, xOffset + event.x1 * scale, yOffset + event.y1 * scale, xOffset + event.x2 * scale, yOffset + event.y2 * scale, event.color );
+	};
+
+	function eraseCircle( id, event, timestamp ) {
+		var ctx = drawingCanvas[ id ].context;
+		var scale = drawingCanvas[ id ].scale;
+		var xOffset = drawingCanvas[ id ].xOffset;
+		var yOffset = drawingCanvas[ id ].yOffset;
+
+		eraseWithSponge( ctx, xOffset + event.x * scale, yOffset + event.y * scale );
+	};
+
+	function startErasing( x, y ) {
+		drawing = false;
+		erasing = true;
+		erasePoint( x, y );
+	}
+
+	function erasePoint( x, y ) {
+		var ctx = drawingCanvas[ mode ].context;
+		var scale = drawingCanvas[ mode ].scale;
+		var xOffset = drawingCanvas[ mode ].xOffset;
+		var yOffset = drawingCanvas[ mode ].yOffset;
+
+		recordEvent( {
+			type: 'erase',
+			x,
+			y
+		} );
+
+		if (
+			x * scale + xOffset > 0 &&
+			y * scale + yOffset > 0 &&
+			x * scale + xOffset < drawingCanvas[ mode ].width &&
+			y * scale + yOffset < drawingCanvas[ mode ].height
+		) {
+			eraseWithSponge( ctx, x * scale + xOffset, y * scale + yOffset );
+		}
+	}
+
+	function stopErasing() {
+		erasing = false;
+	}
+
+	function startDrawing( x, y ) {
+		drawing = true;
+
+		var ctx = drawingCanvas[ mode ].context;
+		var scale = drawingCanvas[ mode ].scale;
+		var xOffset = drawingCanvas[ mode ].xOffset;
+		var yOffset = drawingCanvas[ mode ].yOffset;
+		lastX = x * scale + xOffset;
+		lastY = y * scale + yOffset;
+	}
+
+	function drawSegment( fromX, fromY, toX, toY, colorIdx ) {
+		var ctx = drawingCanvas[ mode ].context;
+		var scale = drawingCanvas[ mode ].scale;
+		var xOffset = drawingCanvas[ mode ].xOffset;
+		var yOffset = drawingCanvas[ mode ].yOffset;
+
+		recordEvent( {
+			type: 'draw',
+			color: colorIdx,
+			x1: fromX,
+			y1: fromY,
+			x2: toX,
+			y2: toY
+		} );
+
+		if (
+			fromX * scale + xOffset > 0 &&
+			fromY * scale + yOffset > 0 &&
+			fromX * scale + xOffset < drawingCanvas[ mode ].width &&
+			fromY * scale + yOffset < drawingCanvas[ mode ].height &&
+			toX * scale + xOffset > 0 &&
+			toY * scale + yOffset > 0 &&
+			toX * scale + xOffset < drawingCanvas[ mode ].width &&
+			toY * scale + yOffset < drawingCanvas[ mode ].height
+		) {
+			draw[ mode ]( ctx, fromX * scale + xOffset, fromY * scale + yOffset, toX * scale + xOffset, toY * scale + yOffset, colorIdx );
+		}
+	}
+
+	function stopDrawing() {
+		drawing = false;
+	}
+
+
+/*****************************************************************
+ ** User interface
+ ******************************************************************/
+
+	function setupCanvasEvents( canvas ) {
+// TODO: check all touchevents
+		canvas.addEventListener( 'touchstart', function ( evt ) {
+			evt.preventDefault();
+//console.log("Touch start");
+			if ( !readOnly && evt.target.getAttribute( 'data-chalkboard' ) == mode ) {
+				var scale = drawingCanvas[ mode ].scale;
+				var xOffset = drawingCanvas[ mode ].xOffset;
+				var yOffset = drawingCanvas[ mode ].yOffset;
+
+				var touch = evt.touches[ 0 ];
+				mouseX = touch.pageX;
+				mouseY = touch.pageY;
+        if ( color[ mode ]  < 0 ) {
+          startErasing( ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale);
+        }
+        else {
+  				startDrawing( ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale );
+        }
+			}
+		}, passiveSupported ? {
+			passive: false
+		} : false );
+
+		canvas.addEventListener( 'touchmove', function ( evt ) {
+			evt.preventDefault();
+//console.log("Touch move");
+			if ( drawing || erasing ) {
+				var scale = drawingCanvas[ mode ].scale;
+				var xOffset = drawingCanvas[ mode ].xOffset;
+				var yOffset = drawingCanvas[ mode ].yOffset;
+
+				var touch = evt.touches[ 0 ];
+				mouseX = touch.pageX;
+				mouseY = touch.pageY;
+
+				if ( drawing ) {
+					drawSegment( ( lastX - xOffset ) / scale, ( lastY - yOffset ) / scale, ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale, color[ mode ] );
+					// broadcast
+					var message = new CustomEvent( messageType );
+					message.content = {
+						sender: 'chalkboard-plugin',
+						type: 'draw',
+						timestamp: Date.now() - slideStart,
+						mode,
+						board,
+						fromX: ( lastX - xOffset ) / scale,
+						fromY: ( lastY - yOffset ) / scale,
+						toX: ( mouseX - xOffset ) / scale,
+						toY: ( mouseY - yOffset ) / scale,
+						color: color[ mode ]
+					};
+					document.dispatchEvent( message );
+
+					lastX = mouseX;
+					lastY = mouseY;
+				} else {
+					erasePoint( ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale );
+					// broadcast
+					var message = new CustomEvent( messageType );
+					message.content = {
+						sender: 'chalkboard-plugin',
+						type: 'erase',
+						timestamp: Date.now() - slideStart,
+						mode,
+						board,
+						x: ( mouseX - xOffset ) / scale,
+						y: ( mouseY - yOffset ) / scale
+					};
+					document.dispatchEvent( message );
+				}
+
+			}
+		}, false );
+
+
+		canvas.addEventListener( 'touchend', function ( evt ) {
+			evt.preventDefault();
+			stopDrawing();
+			stopErasing();
+		}, false );
+
+		canvas.addEventListener( 'mousedown', function ( evt ) {
+			evt.preventDefault();
+			if ( !readOnly && evt.target.getAttribute( 'data-chalkboard' ) == mode ) {
+//console.log( "mousedown: " + evt.button );
+				var scale = drawingCanvas[ mode ].scale;
+				var xOffset = drawingCanvas[ mode ].xOffset;
+				var yOffset = drawingCanvas[ mode ].yOffset;
+
+				mouseX = evt.pageX;
+				mouseY = evt.pageY;
+
+				if ( color[ mode ]  < 0 || evt.button == 2 || evt.button == 1 ) {
+          if ( color[ mode ]  >= 0 ) {
+            // show sponge
+            changeCursor( drawingCanvas[ mode ].canvas, sponge );
+          }
+					startErasing( ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale );
+					// broadcast
+					var message = new CustomEvent( messageType );
+					message.content = {
+						sender: 'chalkboard-plugin',
+						type: 'erase',
+						timestamp: Date.now() - slideStart,
+						mode,
+						board,
+						x: ( mouseX - xOffset ) / scale,
+						y: ( mouseY - yOffset ) / scale
+					};
+					document.dispatchEvent( message );
+				} else {
+					startDrawing( ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale );
+				}
+			}
+		} );
+
+		canvas.addEventListener( 'mousemove', function ( evt ) {
+			evt.preventDefault();
+//console.log("Mouse move");
+
+			var scale = drawingCanvas[ mode ].scale;
+			var xOffset = drawingCanvas[ mode ].xOffset;
+			var yOffset = drawingCanvas[ mode ].yOffset;
+
+			mouseX = evt.pageX;
+			mouseY = evt.pageY;
+
+			if ( drawing || erasing ) {
+				var scale = drawingCanvas[ mode ].scale;
+				var xOffset = drawingCanvas[ mode ].xOffset;
+				var yOffset = drawingCanvas[ mode ].yOffset;
+
+				mouseX = evt.pageX;
+				mouseY = evt.pageY;
+
+				if ( drawing ) {
+					drawSegment( ( lastX - xOffset ) / scale, ( lastY - yOffset ) / scale, ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale, color[ mode ] );
+					// broadcast
+					var message = new CustomEvent( messageType );
+					message.content = {
+						sender: 'chalkboard-plugin',
+						type: 'draw',
+						timestamp: Date.now() - slideStart,
+						mode,
+						board,
+						fromX: ( lastX - xOffset ) / scale,
+						fromY: ( lastY - yOffset ) / scale,
+						toX: ( mouseX - xOffset ) / scale,
+						toY: ( mouseY - yOffset ) / scale,
+						color: color[ mode ]
+					};
+					document.dispatchEvent( message );
+
+					lastX = mouseX;
+					lastY = mouseY;
+				} else {
+					erasePoint( ( mouseX - xOffset ) / scale, ( mouseY - yOffset ) / scale );
+					// broadcast
+					var message = new CustomEvent( messageType );
+					message.content = {
+						sender: 'chalkboard-plugin',
+						type: 'erase',
+						timestamp: Date.now() - slideStart,
+						mode,
+						board,
+						x: ( mouseX - xOffset ) / scale,
+						y: ( mouseY - yOffset ) / scale
+					};
+					document.dispatchEvent( message );
+				}
+
+			}
+		} );
+
+
+		canvas.addEventListener( 'mouseup', function ( evt ) {
+			evt.preventDefault();
+      if ( color[ mode ] >= 0 ) {
+        changeCursor( drawingCanvas[ mode ].canvas, pens[ mode ][ color[ mode ] ] );
+      }
+			if ( drawing || erasing ) {
+				stopDrawing();
+				stopErasing();
+			}
+		} );
+	}
+
+	function resize() {
+//console.log("resize");
+		// Resize the canvas and draw everything again
+		var timestamp = Date.now() - slideStart;
+		if ( !playback ) {
+			timestamp = getSlideDuration();
+		}
+
+//console.log( drawingCanvas[0].scale + "/" + drawingCanvas[0].xOffset + "/" +drawingCanvas[0].yOffset );
+		for ( var id = 0; id < 2; id++ ) {
+			drawingCanvas[ id ].width = window.innerWidth;
+			drawingCanvas[ id ].height = window.innerHeight;
+			drawingCanvas[ id ].canvas.width = drawingCanvas[ id ].width;
+			drawingCanvas[ id ].canvas.height = drawingCanvas[ id ].height;
+			drawingCanvas[ id ].context.canvas.width = drawingCanvas[ id ].width;
+			drawingCanvas[ id ].context.canvas.height = drawingCanvas[ id ].height;
+
+			drawingCanvas[ id ].scale = Math.min( drawingCanvas[ id ].width / storage[ id ].width, drawingCanvas[ id ].height / storage[ id ].height );
+			drawingCanvas[ id ].xOffset = ( drawingCanvas[ id ].width - storage[ id ].width * drawingCanvas[ id ].scale ) / 2;
+			drawingCanvas[ id ].yOffset = ( drawingCanvas[ id ].height - storage[ id ].height * drawingCanvas[ id ].scale ) / 2;
+//console.log( drawingCanvas[id].scale + "/" + drawingCanvas[id].xOffset + "/" +drawingCanvas[id].yOffset );
+		}
+//console.log( window.innerWidth + "/" + window.innerHeight);
+		startPlayback( timestamp, mode, true );
+	}
+
+	Reveal.addEventListener( 'pdf-ready', function ( evt ) {
+//		console.log( "Create printouts when ready" );
+		whenLoaded( createPrintout );
+	});
+
+	Reveal.addEventListener( 'ready', function ( evt ) {
+//console.log('ready');
+		if ( !printMode ) {
+			window.addEventListener( 'resize', resize );
+
+			slideStart = Date.now() - getSlideDuration();
+			slideIndices = Reveal.getIndices();
+			if ( !playback ) {
+				startPlayback( getSlideDuration(), 0 );
+			}
+			if ( Reveal.isAutoSliding() ) {
+				var event = new CustomEvent( 'startplayback' );
+				event.timestamp = 0;
+				document.dispatchEvent( event );
+			}
+			updateStorage();
+			whenReady( addPageNumbers );
+		}
+	} );
+	Reveal.addEventListener( 'slidechanged', function ( evt ) {
+//		clearTimeout( slidechangeTimeout );
+//console.log('slidechanged');
+		if ( !printMode ) {
+			slideStart = Date.now() - getSlideDuration();
+			slideIndices = Reveal.getIndices();
+			closeChalkboard();
+			board = 0;
+			clearCanvas( 0 );
+			clearCanvas( 1 );
+			if ( !playback ) {
+				slidechangeTimeout = setTimeout( startPlayback, transition, getSlideDuration(), 0 );
+			}
+			if ( Reveal.isAutoSliding() ) {
+				var event = new CustomEvent( 'startplayback' );
+				event.timestamp = 0;
+				document.dispatchEvent( event );
+			}
+		}
+	} );
+	Reveal.addEventListener( 'fragmentshown', function ( evt ) {
+//		clearTimeout( slidechangeTimeout );
+//console.log('fragmentshown');
+		if ( !printMode ) {
+			slideStart = Date.now() - getSlideDuration();
+			slideIndices = Reveal.getIndices();
+			closeChalkboard();
+			board = 0;
+			clearCanvas( 0 );
+			clearCanvas( 1 );
+			if ( Reveal.isAutoSliding() ) {
+				var event = new CustomEvent( 'startplayback' );
+				event.timestamp = 0;
+				document.dispatchEvent( event );
+			} else if ( !playback ) {
+				startPlayback( getSlideDuration(), 0 );
+//				closeChalkboard();
+			}
+		}
+	} );
+	Reveal.addEventListener( 'fragmenthidden', function ( evt ) {
+//		clearTimeout( slidechangeTimeout );
+//console.log('fragmenthidden');
+		if ( !printMode ) {
+			slideStart = Date.now() - getSlideDuration();
+			slideIndices = Reveal.getIndices();
+			closeChalkboard();
+			board = 0;
+			clearCanvas( 0 );
+			clearCanvas( 1 );
+			if ( Reveal.isAutoSliding() ) {
+				document.dispatchEvent( new CustomEvent( 'stopplayback' ) );
+			} else if ( !playback ) {
+				startPlayback( getSlideDuration() );
+				closeChalkboard();
+			}
+		}
+	} );
+
+	Reveal.addEventListener( 'autoslideresumed', function ( evt ) {
+//console.log('autoslideresumed');
+		var event = new CustomEvent( 'startplayback' );
+		event.timestamp = 0;
+		document.dispatchEvent( event );
+	} );
+	Reveal.addEventListener( 'autoslidepaused', function ( evt ) {
+//console.log('autoslidepaused');
+		document.dispatchEvent( new CustomEvent( 'stopplayback' ) );
+
+		// advance to end of slide
+//		closeChalkboard();
+		startPlayback( getSlideDuration(), 0 );
+	} );
+
+	function toggleNotesCanvas() {
+		if ( !readOnly ) {
+			if ( mode == 1 ) {
+				toggleChalkboard();
+				notescanvas.style.background = background[ 0 ]; //'rgba(255,0,0,0.5)';
+				notescanvas.style.pointerEvents = 'auto';
+			}
+			else {
+				if ( notescanvas.style.pointerEvents != 'none' ) {
+					// hide notes canvas
+					if ( colorButtons ) {
+						notescanvas.querySelector( '.palette' ).style.visibility = 'hidden';
+					}
+					notescanvas.style.background = 'rgba(0,0,0,0)';
+					notescanvas.style.pointerEvents = 'none';
+				}
+				else {
+					// show notes canvas
+					if ( colorButtons ) {
+						notescanvas.querySelector( '.palette' ).style.visibility = 'visible';
+					}
+					notescanvas.style.background = background[ 0 ]; //'rgba(255,0,0,0.5)';
+					notescanvas.style.pointerEvents = 'auto';
+
+					var idx = 0;
+					if ( color[ mode ] ) {
+						idx = color[ mode ];
+					}
+
+					setColor( idx, true );
+				}
+			}
+		}
+	};
+
+	function toggleChalkboard() {
+//console.log("toggleChalkboard " + mode);
+		if ( mode == 1 ) {
+			if ( !readOnly ) {
+				recordEvent( { type: 'close' } );
+			}
+			closeChalkboard();
+
+			// broadcast
+			var message = new CustomEvent( messageType );
+			message.content = {
+				sender: 'chalkboard-plugin',
+				type: 'closeChalkboard',
+				timestamp: Date.now() - slideStart,
+				mode: 0,
+				board
+			};
+			document.dispatchEvent( message );
+
+
+		} else {
+			showChalkboard();
+			if ( !readOnly ) {
+				recordEvent( { type: 'open' } );
+				// broadcast
+				var message = new CustomEvent( messageType );
+				message.content = {
+					sender: 'chalkboard-plugin',
+					type: 'showChalkboard',
+					timestamp: Date.now() - slideStart,
+					mode: 1,
+					board
+				};
+				document.dispatchEvent( message );
+
+				var idx = 0;
+
+				if ( rememberColor[ mode ] ) {
+					idx = color[ mode ];
+				}
+
+				setColor( idx, true );
+			}
+		}
+	};
+
+	function clearSlide() {
+		recordEvent( { type: 'clear' } );
+		clearCanvas( mode );
+	}
+
+	function clear() {
+		if ( !readOnly ) {
+			clearSlide();
+			// broadcast
+			var message = new CustomEvent( messageType );
+			message.content = {
+				sender: 'chalkboard-plugin',
+				type: 'clear',
+				timestamp: Date.now() - slideStart,
+				mode,
+				board
+			};
+			document.dispatchEvent( message );
+		}
+	};
+
+	function colorIndex( idx ) {
+		if ( !readOnly ) {
+			setColor( idx, true );
+		}
+	}
+
+	function colorNext() {
+		if ( !readOnly ) {
+			let idx = cycleColorNext();
+			setColor( idx, true );
+		}
+	}
+
+	function colorPrev() {
+		if ( !readOnly ) {
+			let idx = cycleColorPrev();
+			setColor( idx, true );
+		}
+	}
+
+	function resetSlideDrawings() {
+		slideStart = Date.now();
+		closeChalkboard();
+
+		clearCanvas( 0 );
+		clearCanvas( 1 );
+
+		mode = 1;
+		var slideData = getSlideData();
+		slideData.duration = 0;
+		slideData.events = [];
+		mode = 0;
+		var slideData = getSlideData();
+		slideData.duration = 0;
+		slideData.events = [];
+
+		updateStorage();
+	}
+
+	function resetSlide( force ) {
+		var ok = force || confirm( "Please confirm to delete chalkboard drawings on this slide!" );
+		if ( ok ) {
+//console.log("resetSlide ");
+			stopPlayback();
+			resetSlideDrawings();
+			// broadcast
+			var message = new CustomEvent( messageType );
+			message.content = {
+				sender: 'chalkboard-plugin',
+				type: 'resetSlide',
+				timestamp: Date.now() - slideStart,
+				mode,
+				board
+			};
+			document.dispatchEvent( message );
+		}
+	};
+
+	function resetStorage( force ) {
+		var ok = force || confirm( "Please confirm to delete all chalkboard drawings!" );
+		if ( ok ) {
+			stopPlayback();
+			slideStart = Date.now();
+			clearCanvas( 0 );
+			clearCanvas( 1 );
+			if ( mode == 1 ) {
+				closeChalkboard();
+			}
+
+			storage = [ {
+					width: Reveal.getConfig().width,
+					height: Reveal.getConfig().height,
+					data: []
+				},
+				{
+					width: Reveal.getConfig().width,
+					height: Reveal.getConfig().height,
+					data: []
+				}
+			];
+
+			if ( config.storage ) {
+				sessionStorage.setItem( config.storage, null )
+			}
+			// broadcast
+			var message = new CustomEvent( messageType );
+			message.content = {
+				sender: 'chalkboard-plugin',
+				type: 'init',
+				timestamp: Date.now() - slideStart,
+				storage,
+				mode,
+				board
+			};
+			document.dispatchEvent( message );
+		}
+	};
+
+	this.toggleNotesCanvas = toggleNotesCanvas;
+	this.toggleChalkboard = toggleChalkboard;
+	this.colorIndex = colorIndex;
+	this.colorNext = colorNext;
+	this.colorPrev = colorPrev;
+	this.clear = clear;
+	this.reset = resetSlide;
+	this.resetAll = resetStorage;
+	this.download = downloadData;
+	this.updateStorage = updateStorage;
+	this.getData = getData;
+	this.configure = configure;
+
+
+	for ( var key in keyBindings ) {
+		if ( keyBindings[ key ] ) {
+			Reveal.addKeyBinding( keyBindings[ key ], RevealChalkboard[ key ] );
+		}
+	};
+
+	return this;
+};

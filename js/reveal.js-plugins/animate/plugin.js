@@ -1,1 +1,430 @@
-window.RevealAnimate=window.RevealAnimate||{id:"RevealAnimate",init:function(e){initAnimate.call(this,e)},play:function(){play()},pause:function(){pause()},seek:function(e){seek(e)}};let initAnimate=function(h){var t,n,a,r,v,i;if(!document.querySelector("section[data-markdown]:not([data-markdown-parsed])")&&!document.querySelector("[data-load]:not([data-loaded])"))return t=(h.getConfig().animate||{}).autoplay,a=n=!1,r=null,v=[],i=/print-pdf/gi.test(window.location.search),h.addEventListener("pdf-ready",function(e){m();for(var t=document.querySelectorAll(".pdf-page"),n=0;n<t.length;n++){for(var a=-1,i=t[n].querySelectorAll(".current-fragment"),r=0;r<i.length;r++)Number(i[r].getAttribute("data-fragment-index"))>a&&(a=Number(i[r].getAttribute("data-fragment-index")));a+=1;for(var o=t[n].querySelectorAll("[data-animate]"),r=0;r<o.length;r++){for(var d=o[r].getAttribute("data-animation-index"),l=o[r].querySelectorAll("svg [data-fragment-index]"),u=0;u<l.length;u++)l[u].getAttribute("data-fragment-index")<a&&l[u].classList.add("visible");v[d].animation&&v[d].animationSchedule&&v[d].animationSchedule[a]&&v[d].animation.time(v[d].animationSchedule[a].end),o[r].innerHTML=o[r].innerHTML.replace(/<\!--.*?-->/g,"")}}},{once:!0}),i||h.addEventListener("ready",function(e){m(),h.addEventListener("slidechanged",function(){y(0)}),h.addEventListener("overviewshown",function(e){d()}),h.addEventListener("paused",function(e){d()}),h.addEventListener("fragmentshown",function(e){y(0)}),h.addEventListener("fragmenthidden",function(e){y(0)})}),document.addEventListener("seekplayback",function(e){y(e.timestamp)}),document.addEventListener("startplayback",function(e){n=!0,y(e.timestamp)}),document.addEventListener("stopplayback",function(e){n=!1,y()}),document.addEventListener("startrecording",function(e){a=!0,y(0)}),document.addEventListener("stoprecording",function(e){a=!1,y()}),this.play=o,this.pause=d,this.seek=u,this;function p(e){var t={},n=e.innerHTML.trim().match(/<!--[\s\S]*?-->/g);if(null!==n)for(var a=0;a<n.length;a++)if(n[a]=n[a].replace(/<!--/,""),n[a]=n[a].replace(/-->/,""),(t=(e=>{var t;e=e.replace(/(\r\n|\n|\r|\t)/gm,"");try{t=JSON.parse(e,function(e,t){return t&&"string"==typeof t&&0===t.indexOf("function")?new Function("return "+t)():t})}catch(e){return null}return t})(n[a]))&&"object"==typeof t){t.animation&&Array.isArray(t.animation)&&t.animation.length&&!Array.isArray(t.animation[0])&&(t.animation=[t.animation]);break}return t}function m(){for(var e=document.querySelectorAll("[data-animate]"),t=0;t<e.length;t++){e[t].hasAttribute("data-src")&&console.error("Animations no longer support 'data-src'! Use 'loadcontent' plugin instead.");var n=p(e[t]),a=(g=f=c=m=u=l=s=d=o=r=i=a=void 0,t),i=e[t],r=n;if(i.setAttribute("data-animation-index",a),v.push({svg:SVG(i.querySelector("svg"))}),r){var o=r.setup;if(o)for(var d=0;d<o.length;d++)try{if(o[d].element){(s=v[a].svg.find(o[d].element)).length||console.warn("Cannot find element to set up with selector: "+o[d].element+"!");for(var l=0;l<s.length;l++)("function"==typeof o[d].modifier?o[d].modifier:s[l][o[d].modifier]).apply(s[l],o[d].parameters)}else("function"==typeof o[d].modifier?o[d].modifier:v[a].svg[o[d].modifier]).apply(v[a].svg,o[d].parameters)}catch(e){console.error("Error '"+e+"' setting up element "+JSON.stringify(o[d]))}v[a].animation=(new SVG.Timeline).persist(!0),v[a].animationSchedule=[];var u=r.animation;if(u){v[a].animationSchedule.length=u.length;for(var m=0,c=0;c<u.length;c++){v[a].animationSchedule[c]={},v[a].animationSchedule[c].begin=m;for(var s,d=0;d<u[c].length;d++)try{(s=v[a].svg.find(u[c][d].element)).length||console.warn("Cannot find element to animate with selector: "+u[c][d].element+"!");for(l=0;l<s.length;l++){s[l].timeline(v[a].animation);var f=s[l].animate(u[c][d].duration,u[c][d].delay,u[c][d].when);f[u[c][d].modifier].apply(f,u[c][d].parameters)}m=f.duration()}catch(e){console.error("Error '"+e+"' setting up animation "+JSON.stringify(u[c][d]))}var g=v[a].animation.schedule();g.length&&(m=g[g.length-1].end),v[a].animationSchedule[c].end=m}v[a].animation.stop()}h.getCurrentSlide().contains(i)&&(h.layout(),y(0))}}}function o(){for(var e=h.getCurrentSlide().querySelectorAll("[data-animate]"),t=0;t<e.length;t++){var n=e[t].getAttribute("data-animation-index");v[n].animation&&v[n].animation.play()}l()}function d(){r&&(clearTimeout(r),r=null);for(var e=h.getCurrentSlide().querySelectorAll("[data-animate]"),t=0;t<e.length;t++){var n=e[t].getAttribute("data-animation-index");v[n].animation&&v[n].animation.pause()}}function l(){r&&(clearTimeout(r),r=null);for(var e=h.getIndices().f+1||0,t=h.getCurrentSlide().querySelectorAll("[data-animate]"),n=0;n<t.length;n++){var a=t[n].getAttribute("data-animation-index");v[a].animation&&v[a].animationSchedule[e]&&(a=v[a].animationSchedule[e].end-v[a].animation.time(),r=setTimeout(d,a))}}function u(e){for(var t=h.getCurrentSlide().querySelectorAll("[data-animate]"),n=h.getIndices().f+1||0,a=0;a<t.length;a++){var i=t[a].getAttribute("data-animation-index");v[i].animation&&v[i].animationSchedule[n]&&v[i].animation.time(v[i].animationSchedule[n].begin+(e||0))}r&&l()}function y(e){i||(void 0!==e&&u(e),(h.isAutoSliding()||t||n||a?o:d)())}setTimeout(initAnimate,100,h)};
+/*****************************************************************
+** Author: Asvin Goel, goel@telematique.eu
+**
+** A plugin for animating slide content.
+**
+** Version: 0.2.0
+**
+** License: MIT license (see LICENSE.md)
+**
+******************************************************************/
+
+"use strict";
+
+window.RevealAnimate = window.RevealAnimate || {
+    id: 'RevealAnimate',
+    init: function(deck) {
+        initAnimate.call(this,deck);
+    },
+    play: function() { play(); },
+    pause: function() { pause(); },
+    seek: function(timestamp) { seek(timestamp); },
+};
+
+const initAnimate = function(Reveal){
+	if ( document.querySelector('section[data-markdown]:not([data-markdown-parsed])')
+		   || document.querySelector('[data-load]:not([data-loaded])')
+	) {
+		// wait for other plugins to parse markdown and load external content
+		setTimeout(initAnimate, 100,Reveal);
+		return;
+	}
+
+	var config = Reveal.getConfig().animate || {};
+	var autoplay = config.autoplay;
+
+	var playback = false;
+	var isRecording = false;
+	var timer = null;
+	var animatedSVGs = [];
+
+	var printMode = ( /print-pdf/gi ).test( window.location.search );
+
+	function parseJSON(str) {
+	    str = str.replace(/(\r\n|\n|\r|\t)/gm,""); // remove line breaks and tabs
+	    var json;
+	    try {
+				json = JSON.parse(str, function (key, value) {
+					if (value && (typeof value === 'string') && value.indexOf("function") === 0) {
+						// we can only pass a function as string in JSON ==> doing a real function
+//			        eval("var jsFunc = " + value);
+						var jsFunc = new Function('return ' + value)();
+						return jsFunc;
+					}
+					return value;
+				});
+	    } catch (e) {
+				return null;
+			}
+			return json;
+	}
+
+	function parseComments( element ) {
+		var config = {};
+		var comments = element.innerHTML.trim().match(/<!--[\s\S]*?-->/g);
+//console.log(comments)
+		if ( comments !== null ) for (var k = 0; k < comments.length; k++ ){
+			comments[k] = comments[k].replace(/<!--/,'');
+			comments[k] = comments[k].replace(/-->/,'');
+			var config = parseJSON(comments[k]);
+//console.warn(comments[k], config);
+
+			if ( config && typeof config === 'object' ) {
+				if ( config.animation && Array.isArray(config.animation) && config.animation.length && !Array.isArray(config.animation[0]) ) {
+					// without fragments, the animation can be specified as a single array (animation steps)
+					config.animation = [ config.animation ];
+				}
+				break;
+			}
+		}
+
+//console.warn(element, config);
+		return config;
+	}
+
+
+/*****************************************************************
+** Set up animations
+******************************************************************/
+	function setupAnimations( index, container, config ) {
+//console.warn("setupAnimations",container,config);
+		container.setAttribute("data-animation-index",index);
+		animatedSVGs.push({ svg: SVG( container.querySelector('svg') ) });
+//console.log(animatedSVGs);
+		if ( !config ) return;
+		
+//		container.svg = SVG( container.querySelector('svg') );
+		// pre-animation setup
+		var setup = config.setup;
+//console.log(animatedSVGs[index].svg,setup);
+		if ( setup ) {
+			for (var i = 0; i < setup.length; i++ ){
+				try {
+					if ( setup[i].element ) {
+//console.log(setup[i].element,setup[i].modifier,setup[i].parameters);
+						var elements = animatedSVGs[index].svg.find(setup[i].element);
+						if ( !elements.length ) {
+							console.warn("Cannot find element to set up with selector: " + setup[i].element + "!");
+						}
+
+						for (var j = 0; j < elements.length; j++ ){
+							if ( typeof setup[i].modifier === "function" ) {
+								// if modifier is function execute it
+								setup[i].modifier.apply(elements[j],setup[i].parameters);
+							}
+							else {
+								// apply modifier to element
+								elements[j][setup[i].modifier].apply(elements[j],setup[i].parameters);
+							}
+						}
+
+					}
+					else {
+						// no element is provided
+						if ( typeof setup[i].modifier === "function" ) {
+							// if modifier is function execute it
+							setup[i].modifier.apply(animatedSVGs[index].svg,setup[i].parameters);
+						} 
+						else {
+							// apply modifier to root
+							animatedSVGs[index].svg[setup[i].modifier].apply(animatedSVGs[index].svg,setup[i].parameters);
+						}
+					}				
+				} 
+				catch( error ) {
+					console.error("Error '" + error + "' setting up element " + JSON.stringify(setup[i]));
+				}
+			}
+//console.warn(animatedSVGs[index].svg.node.getAttribute("style"));
+		}
+
+		animatedSVGs[index].animation = new SVG.Timeline().persist(true);
+		animatedSVGs[index].animationSchedule = []; // completion time of each fragment animation
+
+		// setup animation
+		var animations = config.animation;
+		if ( animations ) {
+
+			animatedSVGs[index].animationSchedule.length = animations.length;
+			var timestamp = 0;
+			for (var fragment = 0; fragment < animations.length; fragment++ ){
+				animatedSVGs[index].animationSchedule[fragment] = {};
+				animatedSVGs[index].animationSchedule[fragment].begin = timestamp;
+				for (var i = 0; i < animations[fragment].length; i++ ){
+					try {
+						// add each animation step
+						var elements = animatedSVGs[index].svg.find(animations[fragment][i].element);
+//console.log("element(" + animations[fragment][i].element + ")." + animations[fragment][i].modifier + "(" + animations[fragment][i].parameters + ")");
+						if ( !elements.length ) {
+							console.warn("Cannot find element to animate with selector: " + animations[fragment][i].element + "!");
+						}
+						for (var j = 0; j < elements.length; j++ ){
+							elements[j].timeline( animatedSVGs[index].animation );
+							var anim = elements[j].animate(animations[fragment][i].duration,animations[fragment][i].delay,animations[fragment][i].when)
+							anim[animations[fragment][i].modifier].apply(anim,animations[fragment][i].parameters);
+						}
+
+//console.log("Duration:", anim.duration());
+						timestamp = anim.duration();
+					} 
+					catch( error ) {
+						console.error("Error '" + error + "' setting up animation " + JSON.stringify(animations[fragment][i]));
+					}
+				}
+				// set animationSchedule for each fragment animation
+				var schedule = animatedSVGs[index].animation.schedule();
+				if ( schedule.length ) {
+					timestamp = schedule[schedule.length-1].end;
+				}
+				animatedSVGs[index].animationSchedule[fragment].end = timestamp;
+			}
+			animatedSVGs[index].animation.stop();
+		}
+
+		// setup current slide
+		if ( Reveal.getCurrentSlide().contains( container ) ) {
+			Reveal.layout(); // Update layout to account for svg size
+			animateSlide(0);
+		}
+	}
+
+	function initialize() {
+//console.log("Initialize animations");
+		// Get all animations
+		var elements = document.querySelectorAll("[data-animate]");
+		for (var i = 0; i < elements.length; i++ ){
+			if ( elements[i].hasAttribute("data-src") ) {
+				console.error("Animations no longer support 'data-src'! Use 'loadcontent' plugin instead.");
+			}
+			var config = parseComments( elements[i] );
+			setupAnimations( i, elements[i], config );
+		}
+	}
+
+
+	function play() {
+//console.log("Play",Reveal.getCurrentSlide());
+		var elements = Reveal.getCurrentSlide().querySelectorAll("[data-animate]");
+		for (var i = 0; i < elements.length; i++ ){
+//console.warn("Play",elements[i]);
+			const index = elements[i].getAttribute("data-animation-index");
+			if ( animatedSVGs[index].animation ) {
+				animatedSVGs[index].animation.play();
+			}
+		}
+		autoPause();
+	}
+
+	function pause() {
+//console.log("Pause");
+		if ( timer ) { clearTimeout( timer ); timer = null; }
+
+		var elements = Reveal.getCurrentSlide().querySelectorAll("[data-animate]");
+		for (var i = 0; i < elements.length; i++ ){
+			const index = elements[i].getAttribute("data-animation-index");
+			if ( animatedSVGs[index].animation ) {
+				animatedSVGs[index].animation.pause();
+			}
+		}
+	}
+
+	function autoPause() {
+
+		if ( timer ) { clearTimeout( timer ); timer = null; }
+		var fragment = Reveal.getIndices().f + 1 || 0; // in reveal.js fragments start with index 0, here with index 1
+
+
+
+		var elements = Reveal.getCurrentSlide().querySelectorAll("[data-animate]");
+
+		for (var i = 0; i < elements.length; i++ ){
+			const index = elements[i].getAttribute("data-animation-index");
+			if ( animatedSVGs[index].animation
+			     && animatedSVGs[index].animationSchedule[fragment] 
+			) {
+//console.log( animatedSVGs[index].animationSchedule[fragment].end, animatedSVGs[index].animation.time());
+				var timeout = animatedSVGs[index].animationSchedule[fragment].end - animatedSVGs[index].animation.time();
+				timer = setTimeout(pause,timeout);
+			}
+//console.log("Auto pause",animatedSVGs[index], timeout);
+		}
+
+	}
+
+	function seek( timestamp ) {
+//console.log("Seek", timestamp);
+		var elements = Reveal.getCurrentSlide().querySelectorAll("[data-animate]");
+		var fragment = Reveal.getIndices().f + 1 || 0; // in reveal.js fragments start with index 0, here with index 1
+		for (var i = 0; i < elements.length; i++ ){
+			const index = elements[i].getAttribute("data-animation-index");
+//console.log("Seek",timestamp,animatedSVGs[index].animationSchedule[fragment].begin + (timestamp || 0) );
+			if ( animatedSVGs[index].animation
+				   && animatedSVGs[index].animationSchedule[fragment] 
+			) {
+				animatedSVGs[index].animation.time( animatedSVGs[index].animationSchedule[fragment].begin + (timestamp || 0) );
+			}
+		}
+		if ( timer ) { 
+			// update time if animation is running
+			autoPause();
+		}
+	}
+
+	
+	// Control animation
+	function animateSlide( timestamp ) {
+		if ( printMode ) return;
+
+//		pause();
+//console.log("Animate slide", timestamp);
+		if ( timestamp !== undefined ) {
+			seek( timestamp);
+		}
+		if ( Reveal.isAutoSliding() || autoplay || playback || isRecording ) {
+//console.log("Start animation");
+			play();
+		}
+		else {
+			pause();
+		}
+//console.log("Done");
+	}
+	
+/*****************************************************************
+** Print
+******************************************************************/
+//console.log("createPrintout" + printMode)
+
+	function setupPrintout( ) {
+		var pages = document.querySelectorAll(".pdf-page");
+		for ( var i = 0; i < pages.length; i++ ) {
+			var fragment = -1;
+			var current = pages[i].querySelectorAll(".current-fragment");
+			for ( var j = 0; j < current.length; j++ ) {
+				if ( Number(current[j].getAttribute("data-fragment-index")) > fragment ) {
+					fragment = Number(current[j].getAttribute("data-fragment-index") );				
+				}
+			}
+			fragment += 1;
+			var elements = pages[i].querySelectorAll("[data-animate]");
+			for ( var j = 0; j < elements.length; j++ ) {
+				const index = elements[j].getAttribute("data-animation-index");
+//console.log(pages[i],fragment, elements[j]);
+
+				// set visibility for fragments
+				var fragments = elements[j].querySelectorAll("svg [data-fragment-index]");
+//console.log(i,fragment, elements[j], fragments);
+				for ( var k = 0; k < fragments.length; k++ ) {
+					if ( fragments[k].getAttribute("data-fragment-index") < fragment ) {
+						fragments[k].classList.add("visible");
+					}
+				}
+
+				// set animation timestamp
+				if ( animatedSVGs[index].animation 
+				     && animatedSVGs[index].animationSchedule 
+				     && animatedSVGs[index].animationSchedule[fragment] 
+				) {
+//console.log(i,fragment, elements[j].animationSchedule[fragment].begin);
+					animatedSVGs[index].animation.time( animatedSVGs[index].animationSchedule[fragment].end );
+				}
+
+				// remove HTML comments to fix problems with printing in Chrome
+				elements[j].innerHTML = elements[j].innerHTML.replace(/<\!--.*?-->/g, "");
+			}			
+		}
+	}
+/*****************************************************************
+** Event listeners
+******************************************************************/
+	Reveal.addEventListener( 'pdf-ready', function( event ) {
+//console.log('pdf-ready ',event);
+		initialize();
+		setupPrintout();
+  }, { once: true });
+
+	if ( !printMode ) {
+		Reveal.addEventListener( 'ready', function( event ) {
+//console.log('ready ');
+			initialize();
+
+			Reveal.addEventListener('slidechanged', function(){
+//console.log('slidechanged',Reveal.getIndices());
+				animateSlide(0);
+			});
+	
+			Reveal.addEventListener( 'overviewshown', function( event ) {
+				// pause animation
+				pause();
+			} );
+
+/*
+			Reveal.addEventListener( 'overviewhidden', function( event ) {
+			} );
+*/
+			Reveal.addEventListener( 'paused', function( event ) {
+//console.log('paused ');
+				// pause animation
+				pause();
+			} );
+/*
+			Reveal.addEventListener( 'resumed', function( event ) {
+console.log('resumed ');
+				// resume animation
+		} );
+*/
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+//console.log("fragmentshown",event);
+				animateSlide(0);
+			} );
+
+			Reveal.addEventListener( 'fragmenthidden', function( event ) {
+//console.log("fragmentshown",event);
+				animateSlide(0);
+			} );
+		} );
+	}
+
+/*****************************************************************
+** Playback
+******************************************************************/
+
+	document.addEventListener('seekplayback', function( event ) {
+//console.log('event seekplayback ' + event.timestamp);
+		// set animation to event.timestamp
+		animateSlide(event.timestamp);
+	});
+
+
+	document.addEventListener('startplayback', function( event ) {
+//console.log('event startplayback ' + event.timestamp);
+		playback = true;
+		animateSlide(event.timestamp);
+	});
+
+	document.addEventListener('stopplayback', function( event ) {
+//console.log('event stopplayback ', event);
+		playback = false;
+		animateSlide();
+	});
+
+	document.addEventListener('startrecording', function( event ) {
+//console.log('event startrecording ' + event.timestamp);
+		isRecording = true;
+		animateSlide(0);
+	});
+
+	document.addEventListener('stoprecording', function( event ) {
+//console.log('event stoprecording ' + event.timestamp);
+		isRecording = false;
+		animateSlide();
+	});
+
+	this.play = play; 
+	this.pause = pause; 
+	this.seek = seek; 
+	return this;
+};
+
+
+

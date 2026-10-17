@@ -1,7 +1,139 @@
-import{SLIDE_NUMBER_FORMAT_CURRENT,SLIDE_NUMBER_FORMAT_CURRENT_SLASH_TOTAL,SLIDE_NUMBER_FORMAT_HORIZONTAL_DOT_VERTICAL,SLIDE_NUMBER_FORMAT_HORIZONTAL_SLASH_VERTICAL}from"../utils/constants";export default class SlideNumber{constructor(e){this.Reveal=e}render(){this.element=document.createElement("div"),this.element.className="slide-number",this.Reveal.getRevealElement().appendChild(this.element)}configure(e,t){let s="none";e.slideNumber&&!this.Reveal.isPrintView()&&("all"===e.showSlideNumber||"speaker"===e.showSlideNumber&&this.Reveal.isSpeakerNotes())&&(s="block"),this.element.style.display=s}update(){this.Reveal.getConfig().slideNumber&&this.element&&(this.element.innerHTML=this.getSlideNumber())}getSlideNumber(e=this.Reveal.getCurrentSlide()){var t=this.Reveal.getConfig();let s,i=SLIDE_NUMBER_FORMAT_HORIZONTAL_DOT_VERTICAL;if("function"==typeof t.slideNumber)s=t.slideNumber(e);else{"string"==typeof t.slideNumber&&(i=t.slideNumber),/c/.test(i)||1!==this.Reveal.getHorizontalSlides().length||(i=SLIDE_NUMBER_FORMAT_CURRENT);var l=e&&"uncounted"===e.dataset.visibility?0:1;switch(s=[],i){case SLIDE_NUMBER_FORMAT_CURRENT:s.push(this.Reveal.getSlidePastCount(e)+l);break;case SLIDE_NUMBER_FORMAT_CURRENT_SLASH_TOTAL:s.push(this.Reveal.getSlidePastCount(e)+l,"/",this.Reveal.getTotalSlides());break;default:var a=this.Reveal.getIndices(e),r=(s.push(a.h+l),i===SLIDE_NUMBER_FORMAT_HORIZONTAL_SLASH_VERTICAL?"/":".");this.Reveal.isVerticalSlide(e)&&s.push(r,a.v+1)}}t="#"+this.Reveal.location.getHash(e);return this.formatNumber(s[0],s[1],s[2],t)}formatNumber(e,t,s,i="#"+this.Reveal.location.getHash()){return"number"!=typeof s||isNaN(s)?`<a href="${i}">
-					<span class="slide-number-a">${e}</span>
-					</a>`:`<a href="${i}">
-					<span class="slide-number-a">${e}</span>
-					<span class="slide-number-delimiter">${t}</span>
-					<span class="slide-number-b">${s}</span>
-					</a>`}destroy(){this.element.remove()}}
+import {
+	SLIDE_NUMBER_FORMAT_CURRENT,
+	SLIDE_NUMBER_FORMAT_CURRENT_SLASH_TOTAL,
+	SLIDE_NUMBER_FORMAT_HORIZONTAL_DOT_VERTICAL,
+	SLIDE_NUMBER_FORMAT_HORIZONTAL_SLASH_VERTICAL
+} from "../utils/constants";
+
+/**
+ * Handles the display of reveal.js' optional slide number.
+ */
+export default class SlideNumber {
+
+	constructor( Reveal ) {
+
+		this.Reveal = Reveal;
+
+	}
+
+	render() {
+
+		this.element = document.createElement( 'div' );
+		this.element.className = 'slide-number';
+		this.Reveal.getRevealElement().appendChild( this.element );
+
+	}
+
+	/**
+	 * Called when the reveal.js config is updated.
+	 */
+	configure( config, oldConfig ) {
+
+		let slideNumberDisplay = 'none';
+		if( config.slideNumber && !this.Reveal.isPrintView() ) {
+			if( config.showSlideNumber === 'all' ) {
+				slideNumberDisplay = 'block';
+			}
+			else if( config.showSlideNumber === 'speaker' && this.Reveal.isSpeakerNotes() ) {
+				slideNumberDisplay = 'block';
+			}
+		}
+
+		this.element.style.display = slideNumberDisplay;
+
+	}
+
+	/**
+	 * Updates the slide number to match the current slide.
+	 */
+	update() {
+
+		// Update slide number if enabled
+		if( this.Reveal.getConfig().slideNumber && this.element ) {
+			this.element.innerHTML = this.getSlideNumber();
+		}
+
+	}
+
+	/**
+	 * Returns the HTML string corresponding to the current slide
+	 * number, including formatting.
+	 */
+	getSlideNumber( slide = this.Reveal.getCurrentSlide() ) {
+
+		let config = this.Reveal.getConfig();
+		let value;
+		let format = SLIDE_NUMBER_FORMAT_HORIZONTAL_DOT_VERTICAL;
+
+		if ( typeof config.slideNumber === 'function' ) {
+			value = config.slideNumber( slide );
+		} else {
+			// Check if a custom number format is available
+			if( typeof config.slideNumber === 'string' ) {
+				format = config.slideNumber;
+			}
+
+			// If there are ONLY vertical slides in this deck, always use
+			// a flattened slide number
+			if( !/c/.test( format ) && this.Reveal.getHorizontalSlides().length === 1 ) {
+				format = SLIDE_NUMBER_FORMAT_CURRENT;
+			}
+
+			// Offset the current slide number by 1 to make it 1-indexed
+			let horizontalOffset = slide && slide.dataset.visibility === 'uncounted' ? 0 : 1;
+
+			value = [];
+			switch( format ) {
+				case SLIDE_NUMBER_FORMAT_CURRENT:
+					value.push( this.Reveal.getSlidePastCount( slide ) + horizontalOffset );
+					break;
+				case SLIDE_NUMBER_FORMAT_CURRENT_SLASH_TOTAL:
+					value.push( this.Reveal.getSlidePastCount( slide ) + horizontalOffset, '/', this.Reveal.getTotalSlides() );
+					break;
+				default:
+					let indices = this.Reveal.getIndices( slide );
+					value.push( indices.h + horizontalOffset );
+					let sep = format === SLIDE_NUMBER_FORMAT_HORIZONTAL_SLASH_VERTICAL ? '/' : '.';
+					if( this.Reveal.isVerticalSlide( slide ) ) value.push( sep, indices.v + 1 );
+			}
+		}
+
+		let url = '#' + this.Reveal.location.getHash( slide );
+		return this.formatNumber( value[0], value[1], value[2], url );
+
+	}
+
+	/**
+	 * Applies HTML formatting to a slide number before it's
+	 * written to the DOM.
+	 *
+	 * @param {number} a Current slide
+	 * @param {string} delimiter Character to separate slide numbers
+	 * @param {(number|*)} b Total slides
+	 * @param {HTMLElement} [url='#'+locationHash()] The url to link to
+	 * @return {string} HTML string fragment
+	 */
+	formatNumber( a, delimiter, b, url = '#' + this.Reveal.location.getHash() ) {
+
+		if( typeof b === 'number' && !isNaN( b ) ) {
+			return  `<a href="${url}">
+					<span class="slide-number-a">${a}</span>
+					<span class="slide-number-delimiter">${delimiter}</span>
+					<span class="slide-number-b">${b}</span>
+					</a>`;
+		}
+		else {
+			return `<a href="${url}">
+					<span class="slide-number-a">${a}</span>
+					</a>`;
+		}
+
+	}
+
+	destroy() {
+
+		this.element.remove();
+
+	}
+
+}

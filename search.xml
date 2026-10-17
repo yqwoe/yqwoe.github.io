@@ -760,6 +760,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Cas Server 本地部署</title>
+    <url>//*/6e8cb24c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
+<blockquote>
+<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+</blockquote>
+<span id="more"></span>
+<blockquote>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
+<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>Cas</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nginx 负载均衡</title>
     <url>//*/59cc1bd2.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
@@ -807,41 +842,6 @@
         <tag>poll</tag>
         <tag>linux</tag>
         <tag>unix like os</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cas Server 本地部署</title>
-    <url>//*/6e8cb24c.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
-<blockquote>
-<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-</blockquote>
-<span id="more"></span>
-<blockquote>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
-</blockquote>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
-<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
-]]></content>
-      <categories>
-        <category>Cas</category>
-      </categories>
-      <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
       </tags>
   </entry>
   <entry>
@@ -1112,6 +1112,228 @@
       </tags>
   </entry>
   <entry>
+    <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记</title>
+    <url>//*/46499b7b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="从零构建-hermes-agent-记忆系统"><a class="markdownIt-Anchor" href="#从零构建-hermes-agent-记忆系统"></a> 从零构建 Hermes Agent 记忆系统</h1>
+<h2 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h2>
+<p>在做 Hermes Agent 的记忆系统时，遇到了一个核心问题：</p>
+<blockquote>
+<p><strong>MemPalace 当时是「对话录像机」——什么都记，95% 的抽屉从未被检索，凭证还泄露进向量数据库。</strong></p>
+</blockquote>
+<p>这不是一个工程问题，是一个<strong>架构问题</strong>。</p>
+<hr>
+<h2 id="第一性原理记忆系统的两个正交通道"><a class="markdownIt-Anchor" href="#第一性原理记忆系统的两个正交通道"></a> 第一性原理：记忆系统的两个正交通道</h2>
+<p>解决这个问题的关键，是把「记忆」这个模糊概念拆解到最底层。</p>
+<p><strong>记忆系统有两个完全正交的维度：</strong></p>
+<table>
+<thead>
+<tr>
+<th>通道</th>
+<th>作用</th>
+<th>触发时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Write（提取）</strong></td>
+<td>把当前对话中的重要信息写入长期存储</td>
+<td>Turn 结束时</td>
+</tr>
+<tr>
+<td><strong>Recall（召回）</strong></td>
+<td>把过去记住的信息注入当前上下文</td>
+<td>Turn 开始前</td>
+</tr>
+</tbody>
+</table>
+<p>这两个通道<strong>不能相互替代</strong>：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>没有 Write，记忆永远不持久化</p>
+</li>
+<li class="lvl-2">
+<p>没有 Recall，agent 无法「记得」之前说过什么</p>
+</li>
+</ul>
+<p>大多数记忆系统的失败，都源于混淆了这两个通道——要么只管写不管读，要么只管读不管写。</p>
+<hr>
+<h2 id="迭代路径"><a class="markdownIt-Anchor" href="#迭代路径"></a> 迭代路径</h2>
+<h3 id="第一阶段从论文出发选择-mempalace"><a class="markdownIt-Anchor" href="#第一阶段从论文出发选择-mempalace"></a> 第一阶段：从论文出发，选择 MemPalace</h3>
+<p>参考 Hindsight is 20/20 论文（arXiv:2512.12818, Dec 2025），设计了一套完整的记忆架构。</p>
+<p><strong>为什么选 MemPalace？</strong></p>
+<p>在开始选型之前，我首先分析了当时的现状：赫妹🤡的记忆系统依赖 Hermes Agent 内置的 MemPalace，它是我（吴）为 Hermes Agent 专门开发的记忆存储系统，已经深度嵌入 Hermes 的生命周期。</p>
+<p>MemPalace 当时的架构是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">MemPalace (ChromaDB + SQLite)</span><br><span class="line">├── wings/</span><br><span class="line">│   ├── wing_hermes/              # Agent 自我知识</span><br><span class="line">│   │   ├── memory/               # 结构化事实</span><br><span class="line">│   │   ├── profile/              # Agent 配置</span><br><span class="line">│   │   └── diary/               # AAAK 格式 session 归档</span><br><span class="line">│   └── wing_user_&#123;user_id&#125;/      # 用户记忆（per-user）</span><br><span class="line">│       ├── memory/               # 项目事实、工具习惯</span><br><span class="line">│       ├── profile/             # 用户偏好</span><br><span class="line">│       └── diary/               # session 观察</span><br><span class="line">├── knowledge_graph.sqlite3       # 实体关系图</span><br><span class="line">└── palace/</span><br><span class="line">    └── mempalace.sqlite3        # 元数据（wing/room/drawer 索引）</span><br></pre></td></tr></table></figure>
+<p><strong>它已经是赫妹🤡记忆系统的基础设施</strong>。换掉它意味着重写大量已稳定的代码。直接在其上构建，而不是推倒重来，是最务实的选择。</p>
+<p>更重要的是，MemPalace 的核心设计——<strong>wing / room / drawer 三级嵌套 + ChromaDB 向量存储 + SQLite 关系图</strong>——这三层存储正交且互补：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>ChromaDB</strong>：语义检索，高维向量相似度搜索</p>
+</li>
+<li class="lvl-2">
+<p><strong>SQLite 元数据</strong>：wing/room/drawer 的索引，快速精确查询</p>
+</li>
+<li class="lvl-2">
+<p><strong>knowledge_graph.sqlite3</strong>：实体共指关系，因果链追溯</p>
+</li>
+</ul>
+<p>这个组合能够支撑 Hindsight 的 Recall Pipeline（四路检索 + RRF），不需要引入额外的外部依赖。</p>
+<p><strong>Phase 1 的目标：</strong> 引入 Hindsight 的 Layer1-4 四层过滤 + Four-Network 存储，在 MemPalace 现有数据结构上增量实现认知架构。</p>
+<p><strong>Phase 1 设计的架构：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对话输入</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L0 Security Filter  ← 凭证/密码/Token 正则过滤</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L1 Pattern Extract   ← 双语正则提取 decision/preference/milestone/emotional</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L2 LLM Semantic     ← MiniMax/Qwen 判断是否保留</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L3 ChromaDB Dedup   ← 向量相似度去重，阈值 0.78</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">Four-Network Route  ← ContentRouter 分发到 W/B/O/S 四个网络</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/world_facts</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/experience</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/opinion  [新增]</span><br><span class="line">                      → wing_user_&#123;user_id&#125;/entity    [新增]</span><br></pre></td></tr></table></figure>
+<p><strong>这个设计是纸上谈兵。</strong></p>
+<h3 id="第二阶段撞墙"><a class="markdownIt-Anchor" href="#第二阶段撞墙"></a> 第二阶段：撞墙</h3>
+<p>实现到一半，发现了四个架构性缺陷，每一个都足以让系统失效：</p>
+<p><strong>问题1：两条互不相交的写入路径</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">路径A: FiltrationLayer → ContentRouter → Four-Network</span><br><span class="line">路径B: FiltrationLayer → writer → memories_*</span><br></pre></td></tr></table></figure>
+<p>两条路径互不干扰，写入位置完全不同，数据永远散落在两处。</p>
+<p><strong>问题2：ChromaDB Client 不共享</strong></p>
+<p>每个 Network 在 <code>write()</code> 内部各自创建独立的 <code>chromadb.PersistentClient()</code> 实例。写入操作作用在<strong>进程私有句柄</strong>上，数据实际落在内存里，没有持久化到磁盘。</p>
+<p>测试验证：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Router: [(&#x27;experience&#x27;, 2)]</span><br><span class="line">WORLD_FACT → ChromaDB: 0 条  ← 写了个寂寞</span><br><span class="line">EXPERIENCE → ChromaDB: 0 条   ← 同上</span><br></pre></td></tr></table></figure>
+<p><strong>问题3：ContentRouter 分类逻辑偏离论文</strong></p>
+<p>论文定义 WORLD_FACT 是「外部客观事实」，但实现把所有包含「决定/偏好/意图」的内容全扔进 EXPERIENCE。导致 world_facts 永远为空，opinion 分支是空代码 <code>pass</code>。</p>
+<p><strong>问题4：Opinion Write Path 是空的</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">elif</span> content_type == ContentType.OPINION:</span><br><span class="line">    <span class="keyword">pass</span>  <span class="comment"># ← 空实现</span></span><br></pre></td></tr></table></figure>
+<p>OpinionNetwork 类存在，代码在，但从来没调用过。</p>
+<h3 id="第三阶段phase-0-修复"><a class="markdownIt-Anchor" href="#第三阶段phase-0-修复"></a> 第三阶段：Phase 0 修复</h3>
+<p>针对 Phase 0 问题逐一修复，这是整个重构的基础：</p>
+<p><strong>1. ChromaDB Client 单例化</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">_client: <span class="type">Optional</span>[PersistentClient] = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_chroma_client</span>() -&gt; PersistentClient:</span><br><span class="line">    <span class="keyword">global</span> _client</span><br><span class="line">    <span class="keyword">if</span> _client <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        _client = chromadb.PersistentClient(path=palace_path)</span><br><span class="line">    <span class="keyword">return</span> _client</span><br></pre></td></tr></table></figure>
+<p>替换所有 Network 中的独立 client 创建，所有写入现在落在同一个文件句柄上。</p>
+<p><strong>2. ContentRouter 分类规则修正</strong></p>
+<p>不再依赖 LLM 自由分类，用规则快速路由：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ROUTE_MAP = &#123;</span><br><span class="line">    <span class="string">&quot;decision&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;milestone&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;problem&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;emotional&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;action&quot;</span>: ContentType.EXPERIENCE,</span><br><span class="line">    <span class="string">&quot;preference&quot;</span>: ContentType.OPINION,</span><br><span class="line">    <span class="string">&quot;constraint&quot;</span>: ContentType.WORLD_FACT,</span><br><span class="line">    <span class="string">&quot;setup&quot;</span>: ContentType.WORLD_FACT,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>3. Opinion Write Path 补全</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">elif</span> content_type == ContentType.OPINION:</span><br><span class="line">    opinion_record = <span class="variable language_">self</span>._opinion_network.write(</span><br><span class="line">        text=chunk.content,</span><br><span class="line">        confidence=<span class="number">0.5</span>,  <span class="comment"># 论文定义：初始置信度 0.5</span></span><br><span class="line">        evidence=[<span class="string">f&quot;source: <span class="subst">&#123;chunk.source&#125;</span>&quot;</span>],</span><br><span class="line">    )</span><br></pre></td></tr></table></figure>
+<h3 id="第四阶段over-engineering-发现"><a class="markdownIt-Anchor" href="#第四阶段over-engineering-发现"></a> 第四阶段：Over-engineering 发现</h3>
+<p>修完 Phase 0 后，看清了 Four-Network 本身的问题：</p>
+<p><strong>理由：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>Experience / World / Opinion / Entity 四个 Collection，实际使用中 95% 的查询都是向量相似度搜索</p>
+</li>
+<li class="lvl-2">
+<p>四路分类的价值在于「不同类型用不同召回策略」，但实现复杂度远超收益</p>
+</li>
+<li class="lvl-2">
+<p>ChromaDB 的 collection 不是关系型数据库，多类型混写在一个 collection 里完全可行</p>
+</li>
+<li class="lvl-2">
+<p>每次 Recall 都要从四个 collection 拉数据再合并，延迟翻倍</p>
+</li>
+</ul>
+<p><strong>决策：简化为统一 collection</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">memories_&#123;user_id&#125;_&#123;project&#125;  ← 所有类型的记忆写入同一个 collection</span><br></pre></td></tr></table></figure>
+<p>用 <code>memory_type</code> 字段标记类型，查询时用向量相似度 + metadata 过滤。Wing/Room 维度保留在 MemPalace 三层结构中，不侵入 ChromaDB collection 命名。</p>
+<h3 id="第五阶段layer2-llm-也被干掉了"><a class="markdownIt-Anchor" href="#第五阶段layer2-llm-也被干掉了"></a> 第五阶段：Layer2 LLM 也被干掉了</h3>
+<p>Layer2 原来是 LLM 判断「这条记忆是否值得保留」。</p>
+<p>但实测发现：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>LLM 判断和正则规则的结果高度重合</p>
+</li>
+<li class="lvl-2">
+<p>多一次 LLM 调用 = 多一次延迟 + 多一次 Token 消耗</p>
+</li>
+<li class="lvl-2">
+<p>简单置信度阈值过滤效果一样好</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 改动前</span></span><br><span class="line">result = llm_classify(content)  <span class="comment"># API 调用</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 改动后</span></span><br><span class="line">confidence = <span class="built_in">sum</span>(keyword_score <span class="keyword">for</span> keyword <span class="keyword">in</span> PATTERNS <span class="keyword">if</span> keyword <span class="keyword">in</span> content)</span><br><span class="line"><span class="keyword">if</span> confidence &gt;= THRESHOLD:</span><br><span class="line">    keep()</span><br></pre></td></tr></table></figure>
+<p>Layer2 现在是纯正则，不再调用任何 LLM。</p>
+<h3 id="最终架构"><a class="markdownIt-Anchor" href="#最终架构"></a> 最终架构</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Turn 结束 → sync_turn()</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L0 Security    ← 凭证正则过滤（never call LLM）</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L1 Pattern     ← 双语正则，提取 decision/preference/problem/milestone/emotional/action/constraint</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L2 Threshold   ← 置信度阈值过滤（已 bypass LLM）</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">L3 Dedup       ← ChromaDB cosine 去重</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">Writer         ← 写入 memories_&#123;user&#125;_&#123;project&#125; + KG triple</span><br></pre></td></tr></table></figure>
+<p><strong>召回链路：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Turn 开始 → on_turn_start()</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">queue_prefetch()  ← 后台预热</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">prefetch()        ← 返回 recall cache</span><br><span class="line">    │</span><br><span class="line">    ▼</span><br><span class="line">system_prompt_block()  ← recall 结果注入 system prompt</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="关键教训"><a class="markdownIt-Anchor" href="#关键教训"></a> 关键教训</h2>
+<h3 id="1-两条正交通道不能合并"><a class="markdownIt-Anchor" href="#1-两条正交通道不能合并"></a> 1. 两条正交通道，不能合并</h3>
+<p>Write（提取）和 Recall（召回）是完全独立的功能，compaction 只管理 context window 大小，<strong>不负责记忆持久化</strong>。试图用 compaction 替代记忆写入，是架构错误。</p>
+<h3 id="2-chromadb-单例是基础中的基础"><a class="markdownIt-Anchor" href="#2-chromadb-单例是基础中的基础"></a> 2. ChromaDB 单例是基础中的基础</h3>
+<p>所有涉及持久化的模块，必须共享同一个 ChromaDB client。进程隔离 + 文件系统写入，看起来能工作，实际是未定义行为。</p>
+<h3 id="3-删除比添加更难"><a class="markdownIt-Anchor" href="#3-删除比添加更难"></a> 3. 删除比添加更难</h3>
+<p>最终交付的架构比最初设计少了：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>NarrativeFusion（合并收益低于成本）</p>
+</li>
+<li class="lvl-2">
+<p>ContentRouter（规则路由替代 LLM 路由）</p>
+</li>
+<li class="lvl-2">
+<p>OpinionManager（Knowledge Graph predicate override 足够）</p>
+</li>
+<li class="lvl-2">
+<p>Layer2 LLM（正则阈值效果一样）</p>
+</li>
+</ul>
+<p>删除这些之后，测试从 50 个变成了 141 个，覆盖率反而更高。</p>
+<h3 id="4-prompt-要润色"><a class="markdownIt-Anchor" href="#4-prompt-要润色"></a> 4. Prompt 要润色</h3>
+<p>机械腔的 prompt 会导致模型角色疲劳。润色原则：</p>
+<table>
+<thead>
+<tr>
+<th>原则</th>
+<th>错误示例</th>
+<th>润色后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>去机械感</td>
+<td>“请基于以上事实给出反思”</td>
+<td>“结合我们之前聊过的内容，你怎么看？”</td>
+</tr>
+<tr>
+<td>口语化</td>
+<td>“Output only the category name”</td>
+<td>“Which bucket fits best?”</td>
+</tr>
+<tr>
+<td>上下文连贯</td>
+<td>“Facts:\n{facts}\nYour response:”</td>
+<td>“Here’s what I recall:\n{recalled_facts_str}\nWhat do I make of this?”</td>
+</tr>
+</tbody>
+</table>
+<p>中英文 prompt 都需要润色，不是只有中文才润色。</p>
+<hr>
+<h2 id="当前状态"><a class="markdownIt-Anchor" href="#当前状态"></a> 当前状态</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Pytest: 141 passed ✅</span><br><span class="line">Metrics: sync_turn 24次, accepted 6次 (25%)</span><br><span class="line">Behavior: 短对话不提取（正常，内容不够）</span><br><span class="line">         长对话(&gt;400 tokens)提取率显著提高</span><br></pre></td></tr></table></figure>
+<p>25% 的 extraction rate 不是「75%失败」——而是对话中大多数内容（简单确认、闲聊、礼貌性回复）本来就不值得记住。</p>
+<hr>
+<h2 id="引用"><a class="markdownIt-Anchor" href="#引用"></a> 引用</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://arxiv.org/abs/2512.12818v1">Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects</a> — arXiv:2512.12818v1, December 2025</p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com">MemPalace</a> — Hermes Agent 记忆存储基础设施</p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com/stitionai/humanizer">Humanizer</a> — Prompt 润色工具</p>
+</li>
+<li class="lvl-2">
+<p><a href="ssh://gitlab.ha-guoli.cn:2222/yqwoe/mem-palace-provider.git">memory-filtration-layer 项目地址</a></p>
+</li>
+</ul>
+<hr>
+<p><em>作者：nil 的助手 [赫妹🤡]</em></p>
+]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Agent</tag>
+        <tag>Memory</tag>
+        <tag>Hermes</tag>
+        <tag>Python</tag>
+        <tag>MemPalace</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>29岁,再见！</title>
     <url>//*/1873749776.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -1152,6 +1374,12 @@
         <tag>wbs</tag>
         <tag>项目一览</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello Hermes Agent</title>
+    <url>//*/96208538.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Hello Hermes Agent</p>
+]]></content>
   </entry>
   <entry>
     <title>OpenClaw 0</title>
@@ -1267,6 +1495,28 @@
         <tag>text2sql</tag>
         <tag>机器学习</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>daily-news-2026-04-25</title>
+    <url>//*/f135226f.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="5cbd9de4dc0c3501b2c91719eb87349341d43e4d1058063888063c43432101c6">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1b9aba2fcb7975969cbd89e81d1d660e0713c098d776731fd8d15b54c7876ea503cbfbcad334fe1843e2dc94440380ae84d95a5d6f8f470f5e5e38194a5722d941a5695be5e02cf91f1b464206a372a3bf7f85681439a7be1f348cad1c7a59b72575f459e5575173933c978e1f9468637801cd2ecc88c542c3bf74f7984ed052a7e1f858719ef375ded80fdb608963fccdfdf35b5b73e174248cdea419fe4af29bf42779957ee2676458b45f6d32e46f2ae02af8a9b7cd41264e3e029dd6897628424041b07500c135840024eae37e0c2137e3a5155437364ae308c5c39140e36b2afc04c9eec03c2f97b2d91c83cf959582f8399ef4ce810df706ff7b7aa4770e22fc8b4f97fa8eab5778c4aa64fd17399d02f8f14a387d3224e0899380a27cc32933e90ac9e76e468edc8586648c2bf2f2b7e49d885122c2578a8050fc5e7ac431d6aca41092537ee2c815266ff093c737cc81cfff7252fcb4671951a05f157469629df74013c4aae3ffc9676927fac7e0cc157c22af97916efccdfea8b1f9e8129277b6a16f8a8801e305ac01b78bfe5a9f3be076ac15e47f8bf070e774537d3467e06ece04f3bcd9cabdc9f2d7e5986f886ccbad9ca116569270165cfa18d262130aa9395b06a07fa005a2241c9971c6d17b2e38fca144ad59842017ab13f64dffa53f424afccfa78e155f09f74572f34149df53be7a468706a899c91ed3f6894126137086d87882685683e6604cc231b359d28af2ce6b68b23e50b5d547d0ddb2cc0ef4a579d48a5749ef2cb71b3e2684e84da175a45bd2f070756e88ea5d2819716ca60ac6259ed3ae6f742beea2985f7ec0abc003e55484eb82e0f029fb43613a204f1df283cd88c29829fb3286f5f760c503656a982f469d829b57c7331f8615ccf2421f6d69e362559ab0ab9c26e0db9fdc5b60169f4603f89f3368464b214b2626fbc6c10068c7cf658288e680007f5cd3fa57205a4da44a6db51a7d10b1877c4c18cec4b0e1c80a1b88e3bb75ccee12f4fd580b27a0fd35ebe3d146b6cd2c840f861cf1079f6fda348e6f67e594a3788c924509d39cafcac830e701bb2b9dea32fe14c428e4f021dfd27bdfa216c4f99ba7cbacb42fc79156262a1de0f295ad09574e898bb20939969eb1c55c9921e93d0c5360a23c33a5d0cfbfae3d7610b1964936aa4a71017b7e84ee7c8486640b5deb468ee796da94689a1790e436c767cfe6dda78529cdd95388887adb6c60b71eb19cfce44c294c25167b36bb9e538872aeda496ed09920aceb9c02e6ae6ebcdd327b1eb21da43460f4da18e3eecf8ee9ed5239f039c5aea889fc5bbf0de5d8bcb781b2ebaaebb045a9727048f47d4aa42859f4888221f2bb6c7a57074d28f8c1ee9f709fc251a7992e9b2178b0f10b9df6d3c8146efcc6b1e2008f6a68531bad4d1f23e4c2c9d525cad82c2f786106926a0e7b3be3241b752cb55e38f007287781694a0d72fcf93eb93d481a501956729ba49c866b1ed193411e990566bd85d1548789122f0272a8ff6ed42ba90f8234fb3a572f4181530b4ff94bca091d02361a87ba62c3e7895afe68b983fc67d8884d8a5ee82ff5d599bf5e05f84b15959f1d82a47b49a43142a985dce74631ea4789a24dcf8530b9187be4dd8edcf7a1db4fc994134e972e0e3967ae8b1f187f6af6f87fa8f3d4f06d0ec588bbcb6dd26859105286f71db88bea24ec7791c42e4d17903b72b0b311c5631cff64616a90c1724285b76d61ee3e91638e9fed7e96efc6d352f8e13027296fbf99fb6a82bae3853d169fb8dc774300882da9c8b2f906adce800c0e27f787a5ebda05df3245ea768571b7f4c27170189604026ed50f34f365b6e7307c82521aa866051fffd33bbfa445b807b77da387370216c6783b76e7646fab9735cb78491d5549b3930ecb8c584b11b705741a87557e54d655c5030604f748e6096c510f376f95e7d6344b45de6cf998b00b2f5d57a5387145033d6a70aa280634feaa22551f2f40d2a0e522bad8e280acdc96f4bb34a9c7e384ead0d21137aa781b48f8d90bb99f8137a6743402c50d377b0c851445a4beab3e9c99d57a04da91710afd8f6eec0906d90b79009fd92d322d01e76da1c84d8afff216c6c89f2189347b323524967a112e9a23f321eab7a2cd81c5e0c9b9a6b83a2568b17086a1fdafa2a2f3caf7b37d216fc400144268d876e0cb7123af8715d4409d7edb059da1c4c4f5d5daf3e41a80fe0cdddf90d10dfd1ec641d85e2040e5c0adbbaf547b6c1dc2877a2c4968f550c0fd2cbeaf80c9a9253a2d43d07fd28d38bc455c25e99b770e1281099e43bc89dc2bad9f9dce72c9b9e06c7781556a61d0d0d63dcb8cc245dca2e5ec47cd48e91a0298dcf1ca5646cbe6c5ca06c92f4ce14de7ac0ede021ca7f9424f9b5da817930745e6357f35e8c41e2818e88c4be9c28e48cd9f4706e374adda6b7dfa8887138fb891a50f27bb2ab2f5204cae1bcfac4428dec9aeaf95fff7c52e4339b56d97f3f74332b9458bbd175f06cb61262501fa91fa1cb4c69f19c5acfae0d98f00eebe486f07404fba9e39c9b7e4a53493f676ac90e4d736660586ee7ec5a91ddb494576baf7d45bb2379379fb8e45c8dab8cb7c9a44f354e2d936d5511285b5372acd6ce43c3cbfb53fb10fe5be5a9860da4564b0f2b093c598f8826da28412b0f2f0e97b5c3a6233120708df5f7cf5a5d5d7b33054db860bcd27906301ddcd69aa7d16b389fc5565d39acdb2019435789558aad57d5fd8d97fe0ca1472c8e1bb4ceab4adc83f6372ef8e4fd7852b2d4bc6e8076620f77e7c37ca999031171a22577126c9cb628e658d9899254c45f496aa857436c49d0ded5654b36ea5a104b38fc59d5d884a3d0cc3b964d6bd646cd5cdcd78d52778ad927ad46c492c7277974caaa3b91dcfd03831f27aa621bf7b18add4d5b2ce603ed8f8c31a48fc7df64a203fce5ba5bad032943a32bb33e1dc2bc8744e1a9b7626a210a9df0c730fd07d2fd4516bba29b23ef07773d3b51f75ca95ee829dc8cc3852ae56968f8c82f9a65a9bb0eb67113c8d6c1a083ae0debb3d8d6e43b9aaede694ec2dba5248fd07b5989e61ab793e1ad549bfef018de1cba7951337014131f52bf1148cbd5fe5f6b38eeda956b7a94eb46ca7080aa509b326d89b6f4385469ee1c2be98a34aa5073a317e253f607a6f8d88c3e0261e609db0cd12b1ee41728e7a8313035c14dec7172a690a7dc2c7d2f04be1c052b1277bf5d6bdcc2f2f5cd44767140bff774ada618021a06bad294c809cc4a5c77c334d4b760dd0b79c93b13e7277d11fb007abd09091ab79f552185f7959a02aa6cbbcf221495b80cc10d54aa0106f6a0ae199a2e8e08956c7fc04df5123e43ae2008297a8da333311fc287270e475413ced86d9d380e1eb0dd7621bdee201a420d081f270fe43212fa09a288abab2f1a69c0bf4e23237f59f5e01e8aa8b17bdd4b3d97d3571e0b723237c5c6dd54e3b3e1809068e50c16539a34f8c2c60272c2cf6124c56d1a007877b272afb4edce093fa2eba940f02ac4daa9e694b90849dde72e23f0c5ed8dbeb310bda64c0d26b54e16b626639cb643fccba406792c2121bc83e0db0fda513714ca7e6feec366d5204945724a9549bb89d0aea64df80bc4c680ae8f43a68bace0d4f4a1de22629ddc8a1e16fb3fce853551902e737f383f4a53638b89d17c64283075cf01ea15fe18598cddfafb819e89348d8f69c17df657a0313cca1e009e6c2f62690ab014e716f1d689d753ae0bae8ba723815b17a797c74b0b108462a29dc81788e6f2496e9e3326cf8c335d286786742f4392d378234da067e439c648821f8ba08b6f9a57a30f72c87d39bce94e84320f757617358de936d5dbb39293ff8e89e96447e9442a6ea4398131e91bcf07ceebe0028fd26f4189dc907a7cf9b941b0cb099b16479803db82098f8dc66e81676683ea8bf113db3433bbe349dd9ad81261fb801b25df310f1e74af0634822bf5ced7e6fa499534a96605edcb2df947b61527cc4d976dd5c6aac8f5ec809eb80d6405ac878c14936d715fe31a977c67a5a4048ce8f880ce7548aa0fe3c4ad41c0f074562d64ece95e6aec0d2b2e2ee192754f6c5800e48c394fe10d7565d7763abac265bc324201917c4cfcc8bb123f98d9c578e9efdec8f748d9d448ffb1c645534fbb6f1c7e42d5af7f3187daa6fc0a094fe929d4356af4ace6e5f98cba494944db7b863ceeec0af51ca83d17bbc01bdb349830a58a7e019ef419f72523bf4b9947ac90d9bf220808bb94158888adf69194a736f6c92528f4a49986999d4a9906aafaa9</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>daily news</category>
+      </categories>
   </entry>
   <entry>
     <title>一次gogs踩坑之路</title>
@@ -1651,55 +1901,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>nginx 负载均衡</title>
-    <url>//*/1506548690.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
-<span id="more"></span>
-<blockquote>
-<p>Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人 Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个 IMAP/POP3/SMTP 代理服务器；也就是说，Nginx 本身就可以托管网站，进行 HTTP 服务处理，也可以作为反向代理服务器使用。</p>
-</blockquote>
-<h1 id="nginx-特点"><a class="markdownIt-Anchor" href="#nginx-特点"></a> nginx 特点</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>跨平台：Nginx 可以在大多数 Unix like OS 编译运行，而且也有 Windows 的移植版本。</p>
-</li>
-<li class="lvl-2">
-<p>配置异常简单：非常容易上手。配置风格跟程序开发一样，神一般的配置</p>
-</li>
-<li class="lvl-2">
-<p>非阻塞、高并发连接：数据复制时，磁盘 I/O 的第一阶段是非阻塞的。官方测试能够支撑 5 万并发连接，在实际生产环境中跑到 2 ～ 3 万并发连接数.(这得益于 Nginx 使用了最新的 epoll 模型)</p>
-</li>
-<li class="lvl-2">
-<p>事件驱动：通信机制采用 epoll 模型，支持更大的并发连接。</p>
-</li>
-</ul>
-<h1 id="nginx-特性"><a class="markdownIt-Anchor" href="#nginx-特性"></a> nginx 特性</h1>
-<p><strong>master/worker 结构：</strong> 一个 master 进程，生成一个或多个 worker 进程</p>
-<p><strong>内存消耗小：</strong>  处理大并发的请求内存消耗非常小。在 3 万并发连接下，开启的 10 个 Nginx 进程才消耗 150M 内存（15M*10=150M）</p>
-<p><strong>成本低廉：</strong> Nginx 为开源软件，可以免费使用。而购买 F5 BIG-IP、NetScaler 等硬件负载均衡交换机则需要十多万至几十万人民币</p>
-<p><strong>内置的健康检查功能：</strong> 如果 Nginx Proxy 后端的某台 Web 服务器宕机了，不会影响前端访问。</p>
-<p><strong>节省带宽：</strong> 支持 GZIP 压缩，可以添加浏览器本地缓存的 Header 头。</p>
-<p><strong>稳定性高：</strong> 用于反向代理，宕机的概率微乎其微</p>
-<p>1、nginx 代理和后端 web 服务器间无需长连接；</p>
-<p>2、接收用户请求是异步的，即先将用户请求全部接收下来，再一次性发送后后端 web 服务器，极大的减轻后端 web 服务器的压力</p>
-<p>3、发送响应报文时，是边接收来自后端 web 服务器的数据，边发送给客户端的</p>
-<p>4、网络依赖型低。NGINX 对网络的依赖程度非常低，理论上讲，只要能够 ping 通就可以实施负载均衡，而且可以有效区分内网和外网流量</p>
-<p>5、支持服务器检测。NGINX 能够根据应用服务器处理页面返回的状态码、超时信息等检测服务器是否出现故障，并及时返回错误的请求重新提交到其它节点上</p>
-<h1 id="nginx-配置"><a class="markdownIt-Anchor" href="#nginx-配置"></a> nginx 配置</h1>
-<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">upstream</span> www.blog.com &#123;</span><br><span class="line">    <span class="comment">#upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。</span></span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.121:80</span> weight=<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.122:80</span> weight=<span class="number">2</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.123:80</span> weight=<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>nginx</tag>
-        <tag>epoll</tag>
-        <tag>poll</tag>
-        <tag>linux</tag>
-        <tag>unix like os</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nginx支持ssl+acme.sh定时更新证书</title>
     <url>//*/1101146699.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>不废话，直接进入实战。</p>
@@ -1758,54 +1959,52 @@ section 运维阶段
       </categories>
   </entry>
   <entry>
-    <title>ruby 爬虫 一</title>
-    <url>//*/1911085415.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
+    <title>nginx 负载均衡</title>
+    <url>//*/1506548690.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
 <span id="more"></span>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Time</span>.now.to_s =&gt; <span class="string">&quot;2018-10-30 20:29:36 +0800&quot;</span></span><br></pre></td></tr></table></figure>
-<p>​ 印象中，大多数人做爬虫第一个想到的肯定是 python，“python 解决方案多，代码简洁，容易上手…”,blah…blah</p>
-<p>​ 事实上我也写 python，但是强制缩进这点让我很伤脑筋，没用 ruby 之前，我觉得 python 可能是我做 java 以来最优雅的语言。直到我用 ruby。</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="number">10</span>.times <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">	puts <span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">=&gt;</span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br></pre></td></tr></table></figure>
-<p>​ 废话不多说。</p>
-<p>​ 为什么选择用 ruby，而不用 python 呢？</p>
-<p>​ 不为别的，就是顺手而已。</p>
-<h1 id="kimurai"><a class="markdownIt-Anchor" href="#kimurai"></a> kimurai</h1>
 <blockquote>
-<p>Kimurai 是一个用 Ruby 实现的现代网络爬虫框架，和 <strong>Headless Chromium</strong> / <strong>Firefox</strong> 、<strong>PhantomJS</strong> 一样开箱即用，并且能够模拟**“用户”**访问抓取 javascript 交互的网站。</p>
-<p>Kimurai 基于 <strong><a href="https://github.com/teamcapybara/capybara">Capybara</a></strong> 和 <strong><a href="https://github.com/sparklemotion/nokogiri">Nokogir</a></strong> gems，所以你不必学习新的东西。</p>
+<p>Nginx：Nginx (“engine x”) ，Nginx (“engine x”) 是俄罗斯人 Igor Sysoev(塞索耶夫)编写的一款高性能的 HTTP 和反向代理服务器。也是一个 IMAP/POP3/SMTP 代理服务器；也就是说，Nginx 本身就可以托管网站，进行 HTTP 服务处理，也可以作为反向代理服务器使用。</p>
 </blockquote>
-<h2 id="实操"><a class="markdownIt-Anchor" href="#实操"></a> 实操</h2>
-<h4 id="1安装"><a class="markdownIt-Anchor" href="#1安装"></a> 1.安装</h4>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gem install kimurai</span><br></pre></td></tr></table></figure>
-<p>使用<a href="http://npm.taobao.org/mirrors/chromedriver/">chromiumdriver</a> 或<a href="https://github.com/ariya/phantomjs">phantomJS</a>需另外安装。</p>
-<h4 id="2创建项目-demo"><a class="markdownIt-Anchor" href="#2创建项目-demo"></a> 2.创建项目 demo</h4>
-<p>kimurai 提供了像 rails new project 这样的命令式创建项目。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kimurai generate project demo</span><br></pre></td></tr></table></figure>
-<p>等待命令执行完成会生成如下结构</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">|demo</span><br><span class="line">	|config  #用于存放全局配置</span><br><span class="line">		|application.rb #全局配置</span><br><span class="line">		|automaiton.yml #用于配置浏览器和部署</span><br><span class="line">		|schedule.rb #支持定时任务</span><br><span class="line">	|db #数据库文件？</span><br><span class="line">	|helpers #辅助方法</span><br><span class="line">	|lib #插件</span><br><span class="line">	|log #日志</span><br><span class="line">	|pipelines</span><br><span class="line">	|spiders #爬虫存放目录</span><br><span class="line">	|tmp #缓存文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="3创建-spider"><a class="markdownIt-Anchor" href="#3创建-spider"></a> 3.创建 spider</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">kimurai generate spider test_spider</span><br><span class="line"></span><br><span class="line"><span class="comment">#demo/spiders/test_spider.rb</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = []</span><br><span class="line">  <span class="variable">@config</span> = &#123;&#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="4修改-spider"><a class="markdownIt-Anchor" href="#4修改-spider"></a> 4.修改 spider</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = [<span class="string">&quot;https://baike.pcbaby.com.cn&quot;</span>]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">    items = &#123;&#125;</span><br><span class="line">    items[<span class="symbol">:links</span>] = []</span><br><span class="line">    response.xpath(<span class="string">&quot;//div[@class=&#x27;baike-th main&#x27;]&quot;</span>).each <span class="keyword">do</span> |<span class="params">row</span>|</span><br><span class="line">      logger.info row.to_s</span><br><span class="line">      items[<span class="symbol">:links</span>] &lt;&lt; &#123;</span><br><span class="line">          <span class="symbol">title:</span> row.css(<span class="string">&quot;/a&quot;</span>).text.squish,</span><br><span class="line">          <span class="symbol">url:</span> <span class="string">&quot;https:<span class="subst">#&#123;row.css(<span class="string">&quot;/a&quot;</span>).first[<span class="string">&quot;href&quot;</span>]&#125;</span>&quot;</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">    save_to <span class="string">&quot;results.json&quot;</span>, items, <span class="symbol">format:</span> <span class="symbol">:pretty_json</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<h5 id="resultsjson"><a class="markdownIt-Anchor" href="#resultsjson"></a> results.json</h5>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;links&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;备孕百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;孕期百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;分娩百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/fenmian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;月子百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yuezi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;新生儿百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xinshenger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0-1岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yinger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1-3岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/youer.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3-6岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xuelingqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;用品百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yongpin.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;美食百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/meishi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;生活百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/shenghuo.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;position&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
-<h4 id="5application_spiderrb"><a class="markdownIt-Anchor" href="#5application_spiderrb"></a> 5.application_spider.rb</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ApplicationSpider is a default base spider class. You can set here</span></span><br><span class="line"><span class="comment"># default settings for all spiders inherited from ApplicationSpider.</span></span><br><span class="line"><span class="comment"># To generate a new spider, run: `$ kimurai generate spider spider_name`</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;net/http&#x27;</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;kimurai&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ApplicationSpider</span> &lt; <span class="title class_ inherited__">Kimurai::Base</span></span><br><span class="line">  <span class="keyword">include</span> <span class="title class_">ApplicationHelper</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@engine</span> = <span class="symbol">:selenium_chrome</span></span><br><span class="line">  <span class="variable constant_">USER_AGENTS</span> = []</span><br><span class="line"></span><br><span class="line">  <span class="comment"># PROXIES = [&quot;127.0.0.1:1086:socks5&quot;]</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@config</span> = &#123;</span><br><span class="line">    <span class="symbol">user_agent:</span> <span class="string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&quot;</span>,</span><br><span class="line">    <span class="symbol">skip_request_errors:</span> [&#123; <span class="symbol">error:</span> <span class="title class_">RuntimeError</span>, <span class="symbol">message:</span> <span class="string">&quot;404 =&gt; Net::HTTPNotFound&quot;</span> &#125;],</span><br><span class="line">	<span class="symbol">retry_request_errors:</span> [<span class="title class_">Net</span><span class="symbol">:</span><span class="symbol">:ReadTimeout</span>],</span><br><span class="line">    <span class="symbol">restart_if:</span> &#123;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="symbol">before_request:</span> &#123;</span><br><span class="line">        <span class="symbol">delay:</span> <span class="number">4</span>..<span class="number">7</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="6运行"><a class="markdownIt-Anchor" href="#6运行"></a> 6.运行</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">bundle exec kimurai runner -j <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<p>可以依次运行多个爬虫。</p>
-<p>按照以上步骤可以运行示例中的代码。</p>
-<p>更多细节配置可以查看 <a href="https://github.com/vifreefly/kimuraframework#installation">kimurai</a></p>
+<h1 id="nginx-特点"><a class="markdownIt-Anchor" href="#nginx-特点"></a> nginx 特点</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>跨平台：Nginx 可以在大多数 Unix like OS 编译运行，而且也有 Windows 的移植版本。</p>
+</li>
+<li class="lvl-2">
+<p>配置异常简单：非常容易上手。配置风格跟程序开发一样，神一般的配置</p>
+</li>
+<li class="lvl-2">
+<p>非阻塞、高并发连接：数据复制时，磁盘 I/O 的第一阶段是非阻塞的。官方测试能够支撑 5 万并发连接，在实际生产环境中跑到 2 ～ 3 万并发连接数.(这得益于 Nginx 使用了最新的 epoll 模型)</p>
+</li>
+<li class="lvl-2">
+<p>事件驱动：通信机制采用 epoll 模型，支持更大的并发连接。</p>
+</li>
+</ul>
+<h1 id="nginx-特性"><a class="markdownIt-Anchor" href="#nginx-特性"></a> nginx 特性</h1>
+<p><strong>master/worker 结构：</strong> 一个 master 进程，生成一个或多个 worker 进程</p>
+<p><strong>内存消耗小：</strong>  处理大并发的请求内存消耗非常小。在 3 万并发连接下，开启的 10 个 Nginx 进程才消耗 150M 内存（15M*10=150M）</p>
+<p><strong>成本低廉：</strong> Nginx 为开源软件，可以免费使用。而购买 F5 BIG-IP、NetScaler 等硬件负载均衡交换机则需要十多万至几十万人民币</p>
+<p><strong>内置的健康检查功能：</strong> 如果 Nginx Proxy 后端的某台 Web 服务器宕机了，不会影响前端访问。</p>
+<p><strong>节省带宽：</strong> 支持 GZIP 压缩，可以添加浏览器本地缓存的 Header 头。</p>
+<p><strong>稳定性高：</strong> 用于反向代理，宕机的概率微乎其微</p>
+<p>1、nginx 代理和后端 web 服务器间无需长连接；</p>
+<p>2、接收用户请求是异步的，即先将用户请求全部接收下来，再一次性发送后后端 web 服务器，极大的减轻后端 web 服务器的压力</p>
+<p>3、发送响应报文时，是边接收来自后端 web 服务器的数据，边发送给客户端的</p>
+<p>4、网络依赖型低。NGINX 对网络的依赖程度非常低，理论上讲，只要能够 ping 通就可以实施负载均衡，而且可以有效区分内网和外网流量</p>
+<p>5、支持服务器检测。NGINX 能够根据应用服务器处理页面返回的状态码、超时信息等检测服务器是否出现故障，并及时返回错误的请求重新提交到其它节点上</p>
+<h1 id="nginx-配置"><a class="markdownIt-Anchor" href="#nginx-配置"></a> nginx 配置</h1>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">upstream</span> www.blog.com &#123;</span><br><span class="line">    <span class="comment">#upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。</span></span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.121:80</span> weight=<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.122:80</span> weight=<span class="number">2</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.80.123:80</span> weight=<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>ruby</tag>
-        <tag>爬虫</tag>
-        <tag>python</tag>
-        <tag>java</tag>
-        <tag>kimurai</tag>
+        <tag>nginx</tag>
+        <tag>epoll</tag>
+        <tag>poll</tag>
+        <tag>linux</tag>
+        <tag>unix like os</tag>
       </tags>
   </entry>
   <entry>
@@ -1975,6 +2174,57 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>ruby 爬虫 一</title>
+    <url>//*/1911085415.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
+<span id="more"></span>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Time</span>.now.to_s =&gt; <span class="string">&quot;2018-10-30 20:29:36 +0800&quot;</span></span><br></pre></td></tr></table></figure>
+<p>​ 印象中，大多数人做爬虫第一个想到的肯定是 python，“python 解决方案多，代码简洁，容易上手…”,blah…blah</p>
+<p>​ 事实上我也写 python，但是强制缩进这点让我很伤脑筋，没用 ruby 之前，我觉得 python 可能是我做 java 以来最优雅的语言。直到我用 ruby。</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="number">10</span>.times <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">	puts <span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">=&gt;</span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br></pre></td></tr></table></figure>
+<p>​ 废话不多说。</p>
+<p>​ 为什么选择用 ruby，而不用 python 呢？</p>
+<p>​ 不为别的，就是顺手而已。</p>
+<h1 id="kimurai"><a class="markdownIt-Anchor" href="#kimurai"></a> kimurai</h1>
+<blockquote>
+<p>Kimurai 是一个用 Ruby 实现的现代网络爬虫框架，和 <strong>Headless Chromium</strong> / <strong>Firefox</strong> 、<strong>PhantomJS</strong> 一样开箱即用，并且能够模拟**“用户”**访问抓取 javascript 交互的网站。</p>
+<p>Kimurai 基于 <strong><a href="https://github.com/teamcapybara/capybara">Capybara</a></strong> 和 <strong><a href="https://github.com/sparklemotion/nokogiri">Nokogir</a></strong> gems，所以你不必学习新的东西。</p>
+</blockquote>
+<h2 id="实操"><a class="markdownIt-Anchor" href="#实操"></a> 实操</h2>
+<h4 id="1安装"><a class="markdownIt-Anchor" href="#1安装"></a> 1.安装</h4>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gem install kimurai</span><br></pre></td></tr></table></figure>
+<p>使用<a href="http://npm.taobao.org/mirrors/chromedriver/">chromiumdriver</a> 或<a href="https://github.com/ariya/phantomjs">phantomJS</a>需另外安装。</p>
+<h4 id="2创建项目-demo"><a class="markdownIt-Anchor" href="#2创建项目-demo"></a> 2.创建项目 demo</h4>
+<p>kimurai 提供了像 rails new project 这样的命令式创建项目。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kimurai generate project demo</span><br></pre></td></tr></table></figure>
+<p>等待命令执行完成会生成如下结构</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">|demo</span><br><span class="line">	|config  #用于存放全局配置</span><br><span class="line">		|application.rb #全局配置</span><br><span class="line">		|automaiton.yml #用于配置浏览器和部署</span><br><span class="line">		|schedule.rb #支持定时任务</span><br><span class="line">	|db #数据库文件？</span><br><span class="line">	|helpers #辅助方法</span><br><span class="line">	|lib #插件</span><br><span class="line">	|log #日志</span><br><span class="line">	|pipelines</span><br><span class="line">	|spiders #爬虫存放目录</span><br><span class="line">	|tmp #缓存文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="3创建-spider"><a class="markdownIt-Anchor" href="#3创建-spider"></a> 3.创建 spider</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">kimurai generate spider test_spider</span><br><span class="line"></span><br><span class="line"><span class="comment">#demo/spiders/test_spider.rb</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = []</span><br><span class="line">  <span class="variable">@config</span> = &#123;&#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="4修改-spider"><a class="markdownIt-Anchor" href="#4修改-spider"></a> 4.修改 spider</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = [<span class="string">&quot;https://baike.pcbaby.com.cn&quot;</span>]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">    items = &#123;&#125;</span><br><span class="line">    items[<span class="symbol">:links</span>] = []</span><br><span class="line">    response.xpath(<span class="string">&quot;//div[@class=&#x27;baike-th main&#x27;]&quot;</span>).each <span class="keyword">do</span> |<span class="params">row</span>|</span><br><span class="line">      logger.info row.to_s</span><br><span class="line">      items[<span class="symbol">:links</span>] &lt;&lt; &#123;</span><br><span class="line">          <span class="symbol">title:</span> row.css(<span class="string">&quot;/a&quot;</span>).text.squish,</span><br><span class="line">          <span class="symbol">url:</span> <span class="string">&quot;https:<span class="subst">#&#123;row.css(<span class="string">&quot;/a&quot;</span>).first[<span class="string">&quot;href&quot;</span>]&#125;</span>&quot;</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">    save_to <span class="string">&quot;results.json&quot;</span>, items, <span class="symbol">format:</span> <span class="symbol">:pretty_json</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h5 id="resultsjson"><a class="markdownIt-Anchor" href="#resultsjson"></a> results.json</h5>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;links&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;备孕百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;孕期百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;分娩百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/fenmian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;月子百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yuezi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;新生儿百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xinshenger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0-1岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yinger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1-3岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/youer.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3-6岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xuelingqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;用品百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yongpin.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;美食百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/meishi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;生活百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/shenghuo.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;position&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h4 id="5application_spiderrb"><a class="markdownIt-Anchor" href="#5application_spiderrb"></a> 5.application_spider.rb</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ApplicationSpider is a default base spider class. You can set here</span></span><br><span class="line"><span class="comment"># default settings for all spiders inherited from ApplicationSpider.</span></span><br><span class="line"><span class="comment"># To generate a new spider, run: `$ kimurai generate spider spider_name`</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;net/http&#x27;</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;kimurai&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ApplicationSpider</span> &lt; <span class="title class_ inherited__">Kimurai::Base</span></span><br><span class="line">  <span class="keyword">include</span> <span class="title class_">ApplicationHelper</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@engine</span> = <span class="symbol">:selenium_chrome</span></span><br><span class="line">  <span class="variable constant_">USER_AGENTS</span> = []</span><br><span class="line"></span><br><span class="line">  <span class="comment"># PROXIES = [&quot;127.0.0.1:1086:socks5&quot;]</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@config</span> = &#123;</span><br><span class="line">    <span class="symbol">user_agent:</span> <span class="string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&quot;</span>,</span><br><span class="line">    <span class="symbol">skip_request_errors:</span> [&#123; <span class="symbol">error:</span> <span class="title class_">RuntimeError</span>, <span class="symbol">message:</span> <span class="string">&quot;404 =&gt; Net::HTTPNotFound&quot;</span> &#125;],</span><br><span class="line">	<span class="symbol">retry_request_errors:</span> [<span class="title class_">Net</span><span class="symbol">:</span><span class="symbol">:ReadTimeout</span>],</span><br><span class="line">    <span class="symbol">restart_if:</span> &#123;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="symbol">before_request:</span> &#123;</span><br><span class="line">        <span class="symbol">delay:</span> <span class="number">4</span>..<span class="number">7</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="6运行"><a class="markdownIt-Anchor" href="#6运行"></a> 6.运行</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">bundle exec kimurai runner -j <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>可以依次运行多个爬虫。</p>
+<p>按照以上步骤可以运行示例中的代码。</p>
+<p>更多细节配置可以查看 <a href="https://github.com/vifreefly/kimuraframework#installation">kimurai</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>ruby</tag>
+        <tag>爬虫</tag>
+        <tag>python</tag>
+        <tag>java</tag>
+        <tag>kimurai</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>rust-if-let简洁控制流</title>
     <url>//*/eec35d0e.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="if-let-控制流"><a class="markdownIt-Anchor" href="#if-let-控制流"></a> if let 控制流</h1>
@@ -2029,6 +2279,35 @@ section 运维阶段
       <tags>
         <tag>rust</tag>
         <tag>enum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>rust-结构定义和实例化</title>
+    <url>//*/e0d5ed17.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="结构定义"><a class="markdownIt-Anchor" href="#结构定义"></a> 结构定义</h1>
+<blockquote>
+<p>定义结构体，需要使用 <code>struct</code> 关键字并为整个结构体提供一个名字。结构体的名字需要描述它所组合的数据的意义。接着，在大括号中，定义每一部分数据的名字和类型，我们称为 <strong>字段</strong>（<em>field</em>）。</p>
+</blockquote>
+<p>以下演示了结构定义、打印对象、debug打印对象；</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>可以定义有字段和无字段结构，包括类似<code>Tuple</code>（元组）的方式定义；</p>
+</li>
+<li class="lvl-2">
+<p><code>println!</code>和<code>dbg!</code>打印对象需要在结构上添加外部属性 <code>#[derive(Debug)]</code>；</p>
+</li>
+<li class="lvl-2">
+<p><code>dbg!</code>宏打印需要注意值引用；</p>
+</li>
+</ul>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    active: <span class="type">bool</span>,</span><br><span class="line">    username: <span class="type">String</span>,</span><br><span class="line">    email: <span class="type">String</span>,</span><br><span class="line">    sign_in_count: <span class="type">u64</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Color</span>(<span class="type">i32</span>,<span class="type">i32</span>,<span class="type">i32</span>);</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Point</span>(<span class="type">i32</span>,<span class="type">i32</span>, <span class="type">i32</span>);</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">AlwaysEqual</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Square</span>(<span class="type">u32</span>,<span class="type">u32</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user</span> =  <span class="title function_ invoke__">build_user</span>(<span class="string">&quot;dong33@163.com&quot;</span>,<span class="string">&quot;dong33&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;user is &#123;:?&#125;&quot;</span>,user);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user1</span> = User&#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        username: user.username,</span><br><span class="line">        email: user.email,</span><br><span class="line">        sign_in_count: <span class="number">1</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;user1 is &#123;:?&#125;&quot;</span>,user1);</span><br><span class="line">    dbg!(user1);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">black</span> = <span class="title function_ invoke__">Color</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;black is &#123;:?&#125;&quot;</span>,black);</span><br><span class="line">    dbg!(black);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">origin</span> = <span class="title function_ invoke__">Point</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;origin is &#123;:?&#125;&quot;</span>,origin);</span><br><span class="line">    dbg!(origin);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">subject</span> = AlwaysEqual;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;subject is &#123;:?&#125;&quot;</span>,subject);</span><br><span class="line">    dbg!(subject);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">width</span> = <span class="number">30</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">height</span> = <span class="number">50</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot; area is &#123;&#125;&quot;</span>,<span class="title function_ invoke__">area</span>(width, height));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect</span> = <span class="title function_ invoke__">Square</span>(<span class="number">30</span>,<span class="number">50</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;rect is &#123;:?&#125;&quot;</span>,rect);</span><br><span class="line">    dbg!(&amp;rect);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;square area is &#123;&#125;&quot;</span>,<span class="title function_ invoke__">area_square</span>(&amp;rect));</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">build_user</span>(email: &amp;<span class="type">str</span>,username: &amp;<span class="type">str</span>) <span class="punctuation">-&gt;</span> User &#123;</span><br><span class="line">    User &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        username: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(username),</span><br><span class="line">        email: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(email),</span><br><span class="line">        sign_in_count: <span class="number">1</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">area</span>(width: <span class="type">u32</span>,height: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="type">u32</span>&#123;</span><br><span class="line">    width * height</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">area_square</span>(square: &amp;Square) <span class="punctuation">-&gt;</span> <span class="type">u32</span>&#123;</span><br><span class="line">    square.<span class="number">0</span> * square.<span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>rust</tag>
+        <tag>struct</tag>
       </tags>
   </entry>
   <entry>
@@ -2243,35 +2522,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>rust-结构定义和实例化</title>
-    <url>//*/e0d5ed17.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="结构定义"><a class="markdownIt-Anchor" href="#结构定义"></a> 结构定义</h1>
-<blockquote>
-<p>定义结构体，需要使用 <code>struct</code> 关键字并为整个结构体提供一个名字。结构体的名字需要描述它所组合的数据的意义。接着，在大括号中，定义每一部分数据的名字和类型，我们称为 <strong>字段</strong>（<em>field</em>）。</p>
-</blockquote>
-<p>以下演示了结构定义、打印对象、debug打印对象；</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>可以定义有字段和无字段结构，包括类似<code>Tuple</code>（元组）的方式定义；</p>
-</li>
-<li class="lvl-2">
-<p><code>println!</code>和<code>dbg!</code>打印对象需要在结构上添加外部属性 <code>#[derive(Debug)]</code>；</p>
-</li>
-<li class="lvl-2">
-<p><code>dbg!</code>宏打印需要注意值引用；</p>
-</li>
-</ul>
-<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    active: <span class="type">bool</span>,</span><br><span class="line">    username: <span class="type">String</span>,</span><br><span class="line">    email: <span class="type">String</span>,</span><br><span class="line">    sign_in_count: <span class="type">u64</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Color</span>(<span class="type">i32</span>,<span class="type">i32</span>,<span class="type">i32</span>);</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Point</span>(<span class="type">i32</span>,<span class="type">i32</span>, <span class="type">i32</span>);</span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">AlwaysEqual</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Square</span>(<span class="type">u32</span>,<span class="type">u32</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user</span> =  <span class="title function_ invoke__">build_user</span>(<span class="string">&quot;dong33@163.com&quot;</span>,<span class="string">&quot;dong33&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;user is &#123;:?&#125;&quot;</span>,user);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user1</span> = User&#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        username: user.username,</span><br><span class="line">        email: user.email,</span><br><span class="line">        sign_in_count: <span class="number">1</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;user1 is &#123;:?&#125;&quot;</span>,user1);</span><br><span class="line">    dbg!(user1);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">black</span> = <span class="title function_ invoke__">Color</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;black is &#123;:?&#125;&quot;</span>,black);</span><br><span class="line">    dbg!(black);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">origin</span> = <span class="title function_ invoke__">Point</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;origin is &#123;:?&#125;&quot;</span>,origin);</span><br><span class="line">    dbg!(origin);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">subject</span> = AlwaysEqual;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;subject is &#123;:?&#125;&quot;</span>,subject);</span><br><span class="line">    dbg!(subject);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">width</span> = <span class="number">30</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">height</span> = <span class="number">50</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot; area is &#123;&#125;&quot;</span>,<span class="title function_ invoke__">area</span>(width, height));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect</span> = <span class="title function_ invoke__">Square</span>(<span class="number">30</span>,<span class="number">50</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;rect is &#123;:?&#125;&quot;</span>,rect);</span><br><span class="line">    dbg!(&amp;rect);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;square area is &#123;&#125;&quot;</span>,<span class="title function_ invoke__">area_square</span>(&amp;rect));</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">build_user</span>(email: &amp;<span class="type">str</span>,username: &amp;<span class="type">str</span>) <span class="punctuation">-&gt;</span> User &#123;</span><br><span class="line">    User &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        username: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(username),</span><br><span class="line">        email: <span class="type">String</span>::<span class="title function_ invoke__">from</span>(email),</span><br><span class="line">        sign_in_count: <span class="number">1</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">area</span>(width: <span class="type">u32</span>,height: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="type">u32</span>&#123;</span><br><span class="line">    width * height</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">area_square</span>(square: &amp;Square) <span class="punctuation">-&gt;</span> <span class="type">u32</span>&#123;</span><br><span class="line">    square.<span class="number">0</span> * square.<span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>rust</tag>
-        <tag>struct</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -2409,6 +2659,132 @@ section 运维阶段
         <tag>进制</tag>
         <tag>指数</tag>
         <tag>指数法则</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>笔记1-《程序员数学 1》</title>
+    <url>//*/965849311.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1>
+<h2 id="10-进制计数法"><a class="markdownIt-Anchor" href="#10-进制计数法"></a> 10 进制计数法</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>什么是 10 进制计数法</p>
+<ul class="lvl-2">
+<li class="lvl-4">数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
+<li class="lvl-4">数位:从右往左数表示 个、十、百、千、万…位。</li>
+</ul>
+</li>
+<li class="lvl-2">
+<p>分解</p>
+<ul class="lvl-2">
+<li class="lvl-4">2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+<h2 id="2-进制计数法"><a class="markdownIt-Anchor" href="#2-进制计数法"></a> 2 进制计数法</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>什么是 2 进制计数法</p>
+<ul class="lvl-2">
+<li class="lvl-4">数字有 2 种，0、1.</li>
+<li class="lvl-4">从右往左分别表示 1 位、2 位、4 位、8 位</li>
+</ul>
+</li>
+<li class="lvl-2">
+<p>分解</p>
+<ul class="lvl-2">
+<li class="lvl-4">1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
+</ul>
+</li>
+<li class="lvl-2">
+<p>基数转换</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*/</span><br><span class="line">12 / 2 = 6  余数 0</span><br><span class="line">6  / 2 = 3  余数 0</span><br><span class="line">3  / 2 = 1  余数 1</span><br><span class="line">1  / 2 = 0  余数 1</span><br><span class="line">/**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*/</span><br><span class="line">1000 / 2 = 500 余数 0</span><br><span class="line">500  / 2 = 250 余数 0</span><br><span class="line">250  / 2 = 125 余数 0</span><br><span class="line">125  / 2 = 62  余数 1</span><br><span class="line">62   / 2 = 31  余数 0</span><br><span class="line">31   / 2 = 15  余数 1</span><br><span class="line">15   / 2 = 7   余数 1</span><br><span class="line">7    / 2 = 3   余数 1</span><br><span class="line">3    / 2 = 1   余数 1</span><br><span class="line">1    / 2 = 0   余数 1</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-2">
+<p>计算机中为什么采用 2 进制计数法</p>
+<ul class="lvl-2">
+<li class="lvl-4">在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
+<li class="lvl-4">在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="按位计数法"><a class="markdownIt-Anchor" href="#按位计数法"></a> 按位计数法</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>什么是按位计数法</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p>
+</li>
+<li class="lvl-4">
+<p>N 进制计数法:</p>
+<ul class="lvl-4">
+<li class="lvl-6">使用数字有 0、1、2、3…、N-1,共 N 种</li>
+<li class="lvl-6">从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li>
+<li class="lvl-6">例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="lvl-2">
+<p>不按位计数法的罗马数字</p>
+<ul class="lvl-2">
+<li class="lvl-4">没有数位，只表示数字本身</li>
+<li class="lvl-4">没有 0</li>
+<li class="lvl-4">使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li>
+<li class="lvl-4">并排的数字加起来，就是所表示的数</li>
+<li class="lvl-4">III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li>
+<li class="lvl-4">IV(4) 减法规则表示 5 - 1 = 4</li>
+</ul>
+</li>
+</ul>
+<p>##指数法则</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>10 的 0 次方是什么？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10³ = 1000</span><br><span class="line">10² = 100</span><br><span class="line">10¹ = 10</span><br><span class="line">10º = ？</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-2">
+<p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p>
+</li>
+<li class="lvl-2">
+<p>规则的扩展</p>
+<ul class="lvl-2">
+<li class="lvl-4">指数法则表达式: N ** a + N ** b = N ** (a + b)</li>
+</ul>
+</li>
+</ul>
+<h2 id="0-所起的作用"><a class="markdownIt-Anchor" href="#0-所起的作用"></a> 0 所起的作用</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>0 的作用: 占位</p>
+<ul class="lvl-2">
+<li class="lvl-4">2503 如果没有了 0 就变成了 253</li>
+</ul>
+</li>
+</ul>
+<h2 id="人类的极限和构造的发现"><a class="markdownIt-Anchor" href="#人类的极限和构造的发现"></a> 人类的极限和构造的发现</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>重温历史进程</p>
+<ul class="lvl-2">
+<li class="lvl-4"><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li>
+<li class="lvl-4"><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li>
+<li class="lvl-4"><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li>
+<li class="lvl-4"><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li>
+<li class="lvl-4"><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li>
+<li class="lvl-4"><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>进制</tag>
+        <tag>计数法</tag>
       </tags>
   </entry>
   <entry>
@@ -2832,132 +3208,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>笔记1-《程序员数学 1》</title>
-    <url>//*/965849311.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第一章-0-的故事无即是有"><a class="markdownIt-Anchor" href="#第一章-0-的故事无即是有"></a> 第一章 0 的故事–无即是有</h1>
-<h2 id="10-进制计数法"><a class="markdownIt-Anchor" href="#10-进制计数法"></a> 10 进制计数法</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>什么是 10 进制计数法</p>
-<ul class="lvl-2">
-<li class="lvl-4">数字有 10 种，0、1、2、3、4、5、6、7、8、9.</li>
-<li class="lvl-4">数位:从右往左数表示 个、十、百、千、万…位。</li>
-</ul>
-</li>
-<li class="lvl-2">
-<p>分解</p>
-<ul class="lvl-2">
-<li class="lvl-4">2503 = (2 x 10 ** 3 )+ (5 x 10 ** 2) + (0 x 10 ** 1) + (3 x 10 ** 0)</li>
-</ul>
-</li>
-</ul>
-<span id="more"></span>
-<h2 id="2-进制计数法"><a class="markdownIt-Anchor" href="#2-进制计数法"></a> 2 进制计数法</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>什么是 2 进制计数法</p>
-<ul class="lvl-2">
-<li class="lvl-4">数字有 2 种，0、1.</li>
-<li class="lvl-4">从右往左分别表示 1 位、2 位、4 位、8 位</li>
-</ul>
-</li>
-<li class="lvl-2">
-<p>分解</p>
-<ul class="lvl-2">
-<li class="lvl-4">1100 = (1 x 2 ** 3) + (1 x 2 ** 2) + (0 x 2 ** 1) + (0 x 2 ** 0)</li>
-</ul>
-</li>
-<li class="lvl-2">
-<p>基数转换</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">* 逆向排序 1100</span><br><span class="line">*/</span><br><span class="line">12 / 2 = 6  余数 0</span><br><span class="line">6  / 2 = 3  余数 0</span><br><span class="line">3  / 2 = 1  余数 1</span><br><span class="line">1  / 2 = 0  余数 1</span><br><span class="line">/**</span><br><span class="line">* 1000 转换 二进制 逆向 1111101000</span><br><span class="line">*/</span><br><span class="line">1000 / 2 = 500 余数 0</span><br><span class="line">500  / 2 = 250 余数 0</span><br><span class="line">250  / 2 = 125 余数 0</span><br><span class="line">125  / 2 = 62  余数 1</span><br><span class="line">62   / 2 = 31  余数 0</span><br><span class="line">31   / 2 = 15  余数 1</span><br><span class="line">15   / 2 = 7   余数 1</span><br><span class="line">7    / 2 = 3   余数 1</span><br><span class="line">3    / 2 = 1   余数 1</span><br><span class="line">1    / 2 = 0   余数 1</span><br></pre></td></tr></table></figure>
-</li>
-<li class="lvl-2">
-<p>计算机中为什么采用 2 进制计数法</p>
-<ul class="lvl-2">
-<li class="lvl-4">在十进制计数法中，位数少，但是数字种类多。 对人类来说，这种比较易用。</li>
-<li class="lvl-4">在 2 进制计数法中，数字的种类少，但是位数多。对计算机来说，这种比较易用。</li>
-</ul>
-</li>
-</ul>
-<h2 id="按位计数法"><a class="markdownIt-Anchor" href="#按位计数法"></a> 按位计数法</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>什么是按位计数法</p>
-<ul class="lvl-2">
-<li class="lvl-4">
-<p>16、10、8、2、N 进制计数法都被称作为 <strong>按位计数法</strong></p>
-</li>
-<li class="lvl-4">
-<p>N 进制计数法:</p>
-<ul class="lvl-4">
-<li class="lvl-6">使用数字有 0、1、2、3…、N-1,共 N 种</li>
-<li class="lvl-6">从右往左分别为 Nº 的位、N¹ 的位…(基数是 N)</li>
-<li class="lvl-6">例如: 4 位数的 N 进制 a₃a₂a₁a₀ = a₃ x N³ + a₂ x N² + a₁ x N¹ + a₀ x Nº</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="lvl-2">
-<p>不按位计数法的罗马数字</p>
-<ul class="lvl-2">
-<li class="lvl-4">没有数位，只表示数字本身</li>
-<li class="lvl-4">没有 0</li>
-<li class="lvl-4">使用 I(1)、V(5)、X(10)、L(50)、C(100)、D(500)、M(1000)来计数</li>
-<li class="lvl-4">并排的数字加起来，就是所表示的数</li>
-<li class="lvl-4">III(3)、VI(6)、VIII(8)、CXXIII(123)、LXXVIII(78)</li>
-<li class="lvl-4">IV(4) 减法规则表示 5 - 1 = 4</li>
-</ul>
-</li>
-</ul>
-<p>##指数法则</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>10 的 0 次方是什么？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10³ = 1000</span><br><span class="line">10² = 100</span><br><span class="line">10¹ = 10</span><br><span class="line">10º = ？</span><br></pre></td></tr></table></figure>
-</li>
-<li class="lvl-2">
-<p>10 右上角的 数字（指数）减 1，数字就变为原本的 10 分之 1.</p>
-</li>
-<li class="lvl-2">
-<p>规则的扩展</p>
-<ul class="lvl-2">
-<li class="lvl-4">指数法则表达式: N ** a + N ** b = N ** (a + b)</li>
-</ul>
-</li>
-</ul>
-<h2 id="0-所起的作用"><a class="markdownIt-Anchor" href="#0-所起的作用"></a> 0 所起的作用</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>0 的作用: 占位</p>
-<ul class="lvl-2">
-<li class="lvl-4">2503 如果没有了 0 就变成了 253</li>
-</ul>
-</li>
-</ul>
-<h2 id="人类的极限和构造的发现"><a class="markdownIt-Anchor" href="#人类的极限和构造的发现"></a> 人类的极限和构造的发现</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>重温历史进程</p>
-<ul class="lvl-2">
-<li class="lvl-4"><strong>古埃及人</strong>使用 5 进制和 10 进制混合的计数法</li>
-<li class="lvl-4"><strong>巴比伦人</strong>使用 1 和 10 两种菱形来表示 1 - 59，并通过几号的所在位置表示 60 ** N 的数位。现在的 1 小时 60 分钟、1 分钟 60 秒换算源于巴比伦的 60 进制计数法。</li>
-<li class="lvl-4"><strong>古希腊人</strong>数字不仅是运算工具，还注入哲学真理。他们将图形、宇宙、音乐和数字相关联</li>
-<li class="lvl-4"><strong>玛雅人</strong>使用 20 进制计数法，从 0 开始。</li>
-<li class="lvl-4"><strong>罗马人</strong> 使用 5 进制和 10 进制混用。</li>
-<li class="lvl-4"><strong>印度人</strong>引进巴比伦的按位计数法，采用的是 10 进制计数法，被称为<strong>阿拉伯数字</strong>而不是<strong>印度数字</strong></li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>进制</tag>
-        <tag>计数法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>笔记3-《程序员数学-1》</title>
     <url>//*/375539532.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
@@ -2999,6 +3249,123 @@ section 运维阶段
       <tags>
         <tag>余数</tag>
         <tag>分组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>笔记4-《程序员数学-1》</title>
+    <url>//*/c88b93d0.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
+    <url>//*/5f9c1a2b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="为什么要换"><a class="markdownIt-Anchor" href="#为什么要换"></a> 为什么要换</h2>
+<p>用 OpenClaw 一段时间后，有几个问题实在忍不了。</p>
+<p>任务一多，换个 session 上下文就没了。调试时想找之前的思路，找不到；换个方式问同样的问题，AI 给的答案和上次完全不一样。记忆管理基本靠手功——key 命名看心情，同一条信息被存三五份是常事。</p>
+<p>换 Hermes 的原因就一个：<strong>它真的能记住上下文，跨 session 不会断。</strong></p>
+<h2 id="迁移了什么"><a class="markdownIt-Anchor" href="#迁移了什么"></a> 迁移了什么</h2>
+<h3 id="记忆文件"><a class="markdownIt-Anchor" href="#记忆文件"></a> 记忆文件</h3>
+<p>OpenClaw workspace 里有几个核心文件：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>SOUL.md</code> — 人设/性格设定</p>
+</li>
+<li class="lvl-2">
+<p><code>AGENTS.md</code> — 工作指令集</p>
+</li>
+<li class="lvl-2">
+<p><code>MEMORY.md</code> — 长期记忆</p>
+</li>
+<li class="lvl-2">
+<p><code>USER.md</code> — 用户信息</p>
+</li>
+</ul>
+<p>迁移之后分散到了不同位置：<code>SOUL.md</code> 进了 <code>~/.hermes/SOUL.md</code>，<code>AGENTS.md</code> 要手动指定目标路径，<code>MEMORY.md</code> 和 <code>USER.md</code> 解析后写入了 <code>~/.hermes/memories/</code>。</p>
+<p><code>hermes claw migrate</code> 可以自动迁移，但默认是 <code>--dry-run</code> 只预览不执行，别漏了这个参数。</p>
+<h3 id="skill"><a class="markdownIt-Anchor" href="#skill"></a> Skill</h3>
+<p>OpenClaw 的 skill 和 Hermes 不完全兼容。迁移之后要重装，部分自定义 skill 要么重新写，要么直接放弃。</p>
+<h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3>
+<p>OpenClaw 的 <code>openclaw.json</code> 里存储了 API keys 和各种配置项。迁移时这些配置默认会保留，但建议迁移完之后仔细核对一遍，特别是 API 相关的配置。</p>
+<h2 id="hermes-的记忆系统是什么样的"><a class="markdownIt-Anchor" href="#hermes-的记忆系统是什么样的"></a> Hermes 的记忆系统是什么样的</h2>
+<p>Hermes 内置记忆分三层：</p>
+<p><strong>短期记忆</strong> 通过 system prompt 注入，受 token 限制，大概 2200 字符。<strong>用户 Profile</strong> 存在 <code>~/.hermes/memories/USER.md</code>，以 <code>§</code> 分隔条目。<strong>长期记忆</strong>是内置记忆的主力，key-value 读写，支持跨 session 持久化。</p>
+<p>比 OpenClaw 强不少，但还有问题：读取依赖精确 key，自然语言描述一变就匹配不上。所以我又接了 MemPalace 做语义记忆层，专门解决这个问题。</p>
+<h2 id="迁移后遇到的问题"><a class="markdownIt-Anchor" href="#迁移后遇到的问题"></a> 迁移后遇到的问题</h2>
+<p><strong>记忆丢失</strong>是第一个坎。新系统对之前的项目上下文一无所知，要手动把 <a href="http://MEMORY.md">MEMORY.md</a> 迁移过来，重新建立记忆规范。这个工作量不小，之前积累的那些碎片知识大部分要重新喂一遍。</p>
+<p><strong>Skill 兼容性</strong>是第二个。有些在 OpenClaw 上跑得好好的自定义 skill，Hermes 上面直接废掉了。不是语法问题，是整个运行环境不一样。</p>
+<p><strong>配置不一致</strong>是第三个。迁移工具保留了大部分配置，但路径相关的设置还是要自己过一遍。</p>
+<h2 id="两个平台的记忆系统对比"><a class="markdownIt-Anchor" href="#两个平台的记忆系统对比"></a> 两个平台的记忆系统对比</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>OpenClaw</th>
+<th>Hermes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>记忆持久化</td>
+<td>文件为主，session 之间不共享</td>
+<td>key-value，支持跨 session</td>
+</tr>
+<tr>
+<td>语义搜索</td>
+<td>无</td>
+<td>无（需借助外部插件）</td>
+</tr>
+<tr>
+<td>记忆容量</td>
+<td>受文件大小限制</td>
+<td>受 token 限制，约 2200 字符</td>
+</tr>
+<tr>
+<td>迁移工具</td>
+<td><code>hermes claw migrate</code></td>
+<td>内置，支持预览</td>
+</tr>
+<tr>
+<td>Skill 生态</td>
+<td>独立体系</td>
+<td>Hermes 专属</td>
+</tr>
+</tbody>
+</table>
+<h2 id="迁移流程图"><a class="markdownIt-Anchor" href="#迁移流程图"></a> 迁移流程图</h2>
+<pre class="mermaid">graph LR
+    A[OpenClaw workspace] --> B{hermes claw migrate --dry-run}
+    B -->|预览| C[确认文件清单]
+    C --> D[执行迁移]
+    D --> E[SOUL.md<br>~/.hermes/SOUL.md]
+    D --> F[AGENTS.md<br>指定目标路径]
+    D --> G[MEMORY.md + USER.md<br>~/.hermes/memories/]
+    D --> H[openclaw.json<br>API keys 保留]
+    E --> I[核对配置]
+    F --> I
+    G --> I
+    H --> I
+    I --> J[接 MemPalace<br>语义记忆层]
+    J --> K[完成]</pre>
+<h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2>
+<p><strong>坑一：<a href="http://AGENTS.md">AGENTS.md</a> 没指定路径就被跳过了。</strong> 第一次跑迁移命令，没加 <code>--workspace-target</code>，<a href="http://AGENTS.md">AGENTS.md</a> 直接被跳过。直到发现 Agent 行为和之前不一样，才发现指令集根本没迁移过来。</p>
+<p><strong>坑二：Skill 迁移完之后路径全变了。</strong> OpenClaw 的 skill 放在 <code>~/.openclaw/skills/</code>，Hermes 在 <code>~/.hermes/skills/</code>。脚本不负责迁移 skill，重新安装花了不少时间。</p>
+<p><strong>坑三：Session 切换后记忆恢复慢。</strong> Hermes 虽然支持跨 session 记忆，但刚迁移完 Agent 对老项目完全没上下文。需要主动把之前 <a href="http://MEMORY.md">MEMORY.md</a> 的内容通过 MemPalace 重建一遍，不是自动的。</p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>从 OpenClaw 到 Hermes，最大的收获是记忆持久化和 session 管理。对需要长期跟踪任务、跨会话保持上下文的人来说，这步迁移值。但 Hermes 内置记忆仍有语义匹配的短板，建议配合 MemPalace 使用。</p>
+<p>迁移本身不算复杂，<code>hermes claw migrate</code> 能处理大部分文件迁移工作，主要工作量在 skill 重装和配置核对。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Hermes Agent</tag>
+        <tag>OpenClaw</tag>
+        <tag>迁移</tag>
+        <tag>记忆系统</tag>
       </tags>
   </entry>
   <entry>
@@ -3168,14 +3535,6 @@ section 运维阶段
         <tag>vue</tag>
         <tag>mbp</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>笔记4-《程序员数学-1》</title>
-    <url>//*/c88b93d0.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
   </entry>
   <entry>
     <title>前端定时器</title>
@@ -3502,6 +3861,24 @@ section 运维阶段
       </categories>
   </entry>
   <entry>
+    <title>我们不像诗歌</title>
+    <url>//*/340466787.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p> --才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打造自己的产品 1</title>
     <url>//*/1000976984.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -3603,21 +3980,180 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>我们不像诗歌</title>
-    <url>//*/340466787.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p> --才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
+    <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践</title>
+    <url>//*/38291047.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="背景hermes-内置记忆有什么问题"><a class="markdownIt-Anchor" href="#背景hermes-内置记忆有什么问题"></a> 背景：Hermes 内置记忆有什么问题</h2>
+<p>Hermes Agent 有一套内置的记忆系统，基于简单 key-value 存储。每次写入时指定一个 key，读取时用同样的 key 把它取出来。</p>
+<p>实际用下来，问题很具体：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>表达一变就找不到</strong>：上次记住的是&quot;截图工具&quot;，用户说&quot;微信截图&quot;就匹配不上</p>
+</li>
+<li class="lvl-2">
+<p><strong>key 不一致导致重复存储</strong>：同一个信息有人用 <code>project-path</code> 做 key，有人用 <code>paths</code> 做 key，查的时候不知道用哪个</p>
+</li>
+<li class="lvl-2">
+<p><strong>没有语义理解</strong>：搜&quot;认证失败&quot;搜不到&quot;401错误&quot;，因为字符串上完全不相关</p>
+</li>
+<li class="lvl-2">
+<p><strong>session 结束后基本清零</strong>：换一个 session，上下文全没了，除非手动迁移 memory 内容</p>
+</li>
+</ul>
+<p>核心问题是：<strong>读取依赖精确匹配，而自然语言本身就是模糊的。</strong></p>
+<h2 id="改造思路"><a class="markdownIt-Anchor" href="#改造思路"></a> 改造思路</h2>
+<p>Hermes Agent 支持 MemoryProvider 插件接口，外部可以接入不同的记忆后端。目标是接一个支持语义搜索的记忆系统——写入时按原样存，读取时按意思搜。</p>
+<p>选的是 MemPalace，本地语义记忆库，ChromaDB 做向量索引，SQLite 做知识图谱和结构化存储。架构上分三层：</p>
+<pre class="mermaid">graph TD
+    subgraph 存储层
+        C[ChromaDB<br>语义向量索引]
+        G[SQLite<br>知识图谱 + 结构化]
+    end
+    
+    subgraph 组织层
+        W[Wing<br>项目 / 领域]
+        R[Room<br>general / diary / decisions]
+        D[Drawer<br>具体记忆卡片]
+    end
+    
+    subgraph 接口层
+        S[mempalace_search<br>语义搜索]
+        K[mempalace_kg_query<br>知识图谱查询]
+        A[mempalace_add_drawer<br>写入记忆]
+        W2[mempalace_diary_write<br>日记记录]
+    end
+    
+    C --> S
+    C --> D
+    G --> K
+    G --> W
+    W --> R
+    R --> D
+    A --> D
+    W2 --> R</pre>
+<p>接入 Hermes 之后，记忆读写流程变成了：</p>
+<pre class="mermaid">sequenceDiagram
+    participant U as 用户
+    participant H as Hermes
+    participant MP as MemPalace
+    participant DB as ChromaDB + SQLite
+
+    U->>H: 发送消息
+    H->>MP: mempalace_search 语义搜索
+    MP->>DB: 向量相似度查询
+    DB-->>MP: 候选记忆列表
+    MP-->>H: 按相关度排序
+    H->>MP: mempalace_kg_query 实体关系查询
+    DB-->>H: 关联事实链
+    H->>H: 组装上下文
+    H-->>U: 携带记忆回复
+
+    Note over H,U: 后续写入
+
+    H->>MP: mempalace_add_drawer 新记忆
+    MP->>DB: 存入向量库 + 图数据库
+    DB-->>MP: 确认写入
+    MP-->>H: 完成</pre>
+<h2 id="原则"><a class="markdownIt-Anchor" href="#原则"></a> 原则</h2>
+<p>改造后 Hermes 的记忆规则：</p>
+<ol>
+<li class="lvl-3">
+<p><strong>读取全走 MemPalace</strong> — 每次收到消息，先搜索相关记忆，不依赖内置 key-value</p>
+</li>
+<li class="lvl-3">
+<p><strong>写入全走 MemPalace</strong> — 项目信息、用户偏好、待办事项，统统写入 MemPalace</p>
+</li>
+<li class="lvl-3">
+<p><strong>cronjob 自动归档</strong> — 每 30 分钟自动把 session 进展写入 diary room，防止断电丢失</p>
+</li>
+</ol>
+<p>内置 memory 工具仅保留一项职责：存储 MemPalace 的路径配置。</p>
+<h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2>
+<p><strong>1. 内置 memory 和 MemPalace 并存时的优先级</strong></p>
+<p>刚接进去时，两者都在，导致同一个信息存了两份，读取时有时候命中内置 memory，有时候命中 MemPalace，结果不稳定。解决办法是彻底禁用内置 memory 的写入通道，只保留读取用于兼容旧逻辑。</p>
+<p><strong>2. embedding 模型选择影响搜索质量</strong></p>
+<p>MemPalace 的搜索质量依赖 embedding 模型。最早用的模型对中文语义理解偏弱，&quot;登录失败&quot;和&quot;认证异常&quot;这类近义表述匹配不上。换了支持中文的 embedding 模型之后，召回率明显提升。</p>
+<p><strong>3. 知识图谱和向量搜索的分工</strong></p>
+<p>最初想把所有关系都塞进知识图谱，结果图数据膨胀得很快，查询延迟也上来了。后来把频繁更新、时序敏感的（如 session 进度）放在向量库，把稳定事实（项目路径、技术栈、用户偏好）放在知识图谱，分开查询再合并结果。</p>
+<p><strong>4. session 边界和记忆持久化的平衡</strong></p>
+<p>每次 session 结束，Hermes 内部状态会清理，但 MemPalace 是持久化的。最早没做 session 隔离，同一个 Wing 下的记忆被多个 session 交叉污染。后来每个 session 的进展单独写进 diary room，稳定的项目信息写进 general room，泾渭分明。</p>
+<h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2>
+<p>换 session 之后，上下文还在。&quot;之前做到哪&quot;能答上来，&quot;那个 401 错误怎么处理的&quot;能找出来，&quot;用户偏好截图要整屏不要只截二维码&quot;不会被忘掉。</p>
+<p>搜&quot;认证失败&quot;，能找到&quot;登录异常&quot;、“401”、&quot;token 过期&quot;相关内容，不用猜 key 是什么。</p>
+<h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>MemPalace 是本地存储，多设备使用需要自己处理同步</p>
+</li>
+<li class="lvl-2">
+<p>embedding 模型决定搜索上限，选型要结合自己的语料</p>
+</li>
+<li class="lvl-2">
+<p>长期运行后 sqlite 会膨胀，需要定期归档清理</p>
+</li>
+</ul>
+<h2 id="改造前后对比"><a class="markdownIt-Anchor" href="#改造前后对比"></a> 改造前后对比</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>内置 key-value 记忆</th>
+<th>MemPalace 语义记忆</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>读取方式</strong></td>
+<td>精确 key 匹配</td>
+<td>语义向量相似度</td>
+</tr>
+<tr>
+<td><strong>检索能力</strong></td>
+<td>必须知道当初用什么 key</td>
+<td>描述需求即可，意思对就能找到</td>
+</tr>
+<tr>
+<td><strong>跨 session</strong></td>
+<td>完全丢失</td>
+<td>持久化，换 session 上下文延续</td>
+</tr>
+<tr>
+<td><strong>中文语义</strong></td>
+<td>不支持</td>
+<td>支持中文 embedding</td>
+</tr>
+<tr>
+<td><strong>知识关联</strong></td>
+<td>无</td>
+<td>知识图谱支持实体关系查询</td>
+</tr>
+<tr>
+<td><strong>存储结构</strong></td>
+<td>扁平的 key-value</td>
+<td>Wings → Rooms → Drawers 分层</td>
+</tr>
+<tr>
+<td><strong>外部依赖</strong></td>
+<td>无</td>
+<td>引入 MemPalace + ChromaDB</td>
+</tr>
+<tr>
+<td><strong>运维成本</strong></td>
+<td>无</td>
+<td>需维护本地 sqlite 和向量库</td>
+</tr>
+</tbody>
+</table>
+<p>结论：代价是多引入一个本地依赖，换来的是检索可靠性、跨 session 记忆延续、中文语义理解。值不值看场景——偶尔用一次的 agent，key-value 够用；每天几十个任务、跨多项目的，语义记忆是刚需。</p>
+<p>如果你的 Agent 也面临同样问题，可以从 MemoryProvider 接口入手，接入任意支持向量检索的后端都行，不一定是 MemPalace。</p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
+        <tag>AI</tag>
+        <tag>MemPalace</tag>
+        <tag>Hermes Agent</tag>
+        <tag>记忆系统</tag>
       </tags>
   </entry>
   <entry>
@@ -4110,15 +4646,42 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>表单中心功能清单</title>
+    <url>//*/74a10861.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d4fdaf5f778ad2b7f7839b20408f063600471c71adaf758c95e523234574a9d6">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb004455057809151ad7f7ca7b6b37b48037dfaf87a9f1e3fd2e3e9fbcddefded0a9ffe4050860aaf8120a12909a51025f739ff300c37edce140a5b599c11a069c8d6716e7a198692712ae072cb0833533e07f38919c92312fb2f264239dc7ee606385a6f34772835d1e53de7cab5f35053a3c24486db2f6f061efb91dd54dbb6f7b7acb00bb2002d390eee61b94c5e4bcc9b0317177adb53e6fc797830898cc53c48bbcce3f80100cbcd489454ce64ecdd98984531a7dc6f0ef02d73406eda7728fd6</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>表单</tag>
+        <tag>formily</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-QRgeaSvo" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-OKVytyMo" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-QRgeaSvo"),
+            element: document.getElementById("aplayer-OKVytyMo"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -4161,33 +4724,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>表单中心功能清单</title>
-    <url>//*/74a10861.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d4fdaf5f778ad2b7f7839b20408f063600471c71adaf758c95e523234574a9d6">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb004455057809151ad7f7ca7b6b37b48037dfaf87a9f1e3fd2e3e9fbcddefded0a9ffe4050860aaf8120a12909a51025f739ff300c37edce140a5b599c11a069c8d6716e7a198692712ae072cb0833533e07f38919c92312fb2f264239dc7ee606385a6f34772835d1e53de7cab5f35053a3c24486db2f6f061efb91dd54dbb6f7b7acb00bb2002d390eee61b94c5e4bcc9b0317177adb53e6fc797830898cc53c48bbcce3f80100cbcd489454ce64ecdd98984531a7dc6f0ef02d73406eda7728fd6</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-        <tag>表单</tag>
-        <tag>formily</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>边缘计算 1</title>
     <url>//*/751843018.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
@@ -4209,47 +4745,6 @@ section 运维阶段
         <tag>云计算</tag>
         <tag>雾计算</tag>
         <tag>边缘计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集群、负载均衡、分布式</title>
-    <url>//*/4074971168.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
-<span id="more"></span>
-<h2 id="1集群"><a class="markdownIt-Anchor" href="#1集群"></a> 1.集群</h2>
-<p>集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
-<p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
-<h2 id="2负载均衡"><a class="markdownIt-Anchor" href="#2负载均衡"></a> 2.负载均衡</h2>
-<p>至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
-<h2 id="3分布式"><a class="markdownIt-Anchor" href="#3分布式"></a> 3.分布式</h2>
-<p>分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
-<p><strong>今天看到个通俗的例子，大家可以借鉴下：</strong></p>
-<p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
-<blockquote>
-<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。</p>
-</blockquote>
-<h3 id="1负载均衡集群lbload-balancing"><a class="markdownIt-Anchor" href="#1负载均衡集群lbload-balancing"></a> 1）负载均衡集群（LB:load balancing）</h3>
-<p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
-<h3 id="2高可用性集群hahigh-availability"><a class="markdownIt-Anchor" href="#2高可用性集群hahigh-availability"></a> 2）高可用性集群（HA:High Availability）</h3>
-<p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
-<p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
-<h3 id="3高性能集群hphigh-performance"><a class="markdownIt-Anchor" href="#3高性能集群hphigh-performance"></a> 3）高性能集群（HP:High Performance）</h3>
-<p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
-<p>作者：普 if 加的帕<br>
-来源：CSDN<br>
-原文：<a href="https://blog.csdn.net/qq_34896887/article/details/78616209">https://blog.csdn.net/qq_34896887/article/details/78616209</a><br>
-版权声明：本文为博主原创文章，转载请附上博文链接！</p>
-<p><a href="http://server.51cto.com/News-557053.htm">http://server.51cto.com/News-557053.htm</a></p>
-<p><a href="https://www.cnblogs.com/xzwblog/p/7255364.html">https://www.cnblogs.com/xzwblog/p/7255364.html</a></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>nginx</tag>
-        <tag>集群</tag>
-        <tag>负载均衡</tag>
-        <tag>分布式</tag>
       </tags>
   </entry>
   <entry>
@@ -4347,6 +4842,47 @@ ExcelUtil --> RecordHandler</pre>
         <tag>replace</tag>
         <tag>ignore</tag>
         <tag>insert</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集群、负载均衡、分布式</title>
+    <url>//*/4074971168.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
+<span id="more"></span>
+<h2 id="1集群"><a class="markdownIt-Anchor" href="#1集群"></a> 1.集群</h2>
+<p>集群是个物理概念，是指同一个系统，部署在多台服务器上，将很多服务器集中起来一起进行同一种服务，在客户端看来就像是只有一个服务器。集群可以利用多个计算机进行并行计算从而获得很高的计算速度，也可以用多个计算机做备份，从而使得任何一个机器坏了整个系统还是能正常运行。</p>
+<p>就比如新浪网，访问的人多了，他可以做一个集群，前面放一个响应服务器，后面几台服务器完成同一种业务。如果有业务访问的时候，响应服务器看哪台服务器的负载不是很重，就将给哪一台去完成。 一台服务器垮了，其它的服务器可以顶上来。</p>
+<h2 id="2负载均衡"><a class="markdownIt-Anchor" href="#2负载均衡"></a> 2.负载均衡</h2>
+<p>至于集群服务器之间如何分工，需要引入负载均衡的概念了，负载均衡是指将请求分摊到多个操作单元也就是分开部署的服务器上，nginx 是常用的反向代理服务器，可以用来做负载均衡。集群与负载均衡之间有紧密联系，可以结合理解。</p>
+<h2 id="3分布式"><a class="markdownIt-Anchor" href="#3分布式"></a> 3.分布式</h2>
+<p>分布式侧重将一个系统拆分成多个业务单元，例如一个门户网站里面可能有登录、视频、图片等，每一个都可以拆分出来独立部署，而且每一个都可以弄成集群，视频服务集群，图片服务集群，主系统可以对这些子系统进行调用，子系统之间可以有调用关系也可以没有，看实际业务情况。</p>
+<p><strong>今天看到个通俗的例子，大家可以借鉴下：</strong></p>
+<p>小饭店原来只有一个厨师，切菜洗菜备料炒菜全干。后来客人多了，厨房一个厨师忙不过来，又请了个厨师，两个厨师都能炒一样的菜，这两个厨师的关系是集群。为了让厨师专心炒菜，把菜做到极致，又请了个配菜师负责切菜，备菜，备料，厨师和配菜师的关系是分布式，一个配菜师也忙不过来了，又请了个配菜师，两个配菜师关系是集群。</p>
+<blockquote>
+<p>补充：最常见的三种集群类型：负载均衡集群、高可用性集群、高性能也就科学集群。</p>
+</blockquote>
+<h3 id="1负载均衡集群lbload-balancing"><a class="markdownIt-Anchor" href="#1负载均衡集群lbload-balancing"></a> 1）负载均衡集群（LB:load balancing）</h3>
+<p>负载均衡集群为企业需求提供了更实用的系统。如名称所暗示的，该系统使负载可以在计算机集群中尽可能平均地分摊处理。该负载可能是需要均衡的应用程序处理负载或网络流量负载。这样的系统非常适合于运行同一组应用程序的大量用户。每个节点都可以处理一部分负载，并且可以在节点之间动态分配负载，以实现平衡。对于网络流量也是如此。通常，网络服务器应用程序接受了太多入网流量，以致无法迅速处理，这就需要将流量发送给在其它节点上运行的网络服务器应用。还可以根据每个节点上不同的可用资源或网络的特殊环境来进行优化</p>
+<h3 id="2高可用性集群hahigh-availability"><a class="markdownIt-Anchor" href="#2高可用性集群hahigh-availability"></a> 2）高可用性集群（HA:High Availability）</h3>
+<p>高可用性集群的出现是为了使集群的整体服务尽可能可用，以便考虑计算硬件和软件的易错性。如果高可用性集群中的主节点发生了故障，那么这段时间内将由次节点代替它。次节点通常是主节点的镜像，所以当它代替主节点时，它可以完全接管其身份，并且因此使系统环境对于用户是一致的。</p>
+<p>在集群的这三种基本类型之间，经常会发生混合与交杂。于是，可以发现高可用性集群也可以在其节点之间均衡用户负载，同时仍试图维持高可用性程度。同样，可以从要编入应用程序的集群中找到一个并行集群，它可以在节点之间执行负载均衡。尽管集群系统本身独立于它在使用的软件或硬件，但要有效运行系统时，硬件连接将起关键作用。</p>
+<h3 id="3高性能集群hphigh-performance"><a class="markdownIt-Anchor" href="#3高性能集群hphigh-performance"></a> 3）高性能集群（HP:High Performance）</h3>
+<p>通常，第一种涉及为集群开发并行编程应用程序，以解决复杂的科学问题。这是并行计算的基础，尽管它不使用专门的并行超级计算机，这种超级计算机内部由十至上万个独立处理器组成。但它却使用商业系统，如通过高速连接来链接的一组单处理器或双处理器 PC，并且在公共消息传递层上进行通信以运行并行应用程序。因此，您会常常听说又有一种便宜的 Linux 超级计算机问世了。但它实际是一个计算机集群，其处理能力与真的超级计算机相等，通常一套象样的集群配置开销要超过 $100,000。这对一般人来说似乎是太贵了，但与价值上百万美元的专用超级计算机相比还算是便宜的。</p>
+<p>作者：普 if 加的帕<br>
+来源：CSDN<br>
+原文：<a href="https://blog.csdn.net/qq_34896887/article/details/78616209">https://blog.csdn.net/qq_34896887/article/details/78616209</a><br>
+版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+<p><a href="http://server.51cto.com/News-557053.htm">http://server.51cto.com/News-557053.htm</a></p>
+<p><a href="https://www.cnblogs.com/xzwblog/p/7255364.html">https://www.cnblogs.com/xzwblog/p/7255364.html</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+        <tag>集群</tag>
+        <tag>负载均衡</tag>
+        <tag>分布式</tag>
       </tags>
   </entry>
   <entry>
