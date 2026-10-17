@@ -122,7 +122,7 @@
   <meta name="description" content="rm -rf &#x2F;*">
 <meta property="og:type" content="website">
 <meta property="og:title" content="rm -rf &#x2F;*">
-<meta property="og:url" content="https://rm-rf.ink/tags/Python/index.html">
+<meta property="og:url" content="https://sudo.rm-rf.ink/tags/Python/index.html">
 <meta property="og:site_name" content="rm -rf &#x2F;*">
 <meta property="og:description" content="rm -rf &#x2F;*">
 <meta property="og:locale" content="zh_CN">
@@ -482,6 +482,24 @@ function loopHover(){
 
 /**
  * 清除精度定时器
+ * @param {number} 定时器ID
+ */
+function clearIntervalPrecision(intervalId) {
+  if (window.interValPrecisionObj) {
+    window.cancelAnimationFrame('n' + intervalId)
+    delete window.interValPrecisionObj['n' + intervalId]
+  }
+}
+
+setIntervalPrecision(loopHover, 250)
+
+</script>
+
+  
+  </body>
+
+</html>
+�定时器
  * @param {number} 定时器ID
  */
 function clearIntervalPrecision(intervalId) {

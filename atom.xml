@@ -3,11 +3,11 @@
   <title>rm -rf /*</title>
   
   <subtitle>rm -rf /*</subtitle>
-  <link href="https://rm-rf.ink/atom.xml" rel="self"/>
+  <link href="https://sudo.rm-rf.ink/atom.xml" rel="self"/>
   
-  <link href="https://rm-rf.ink/"/>
+  <link href="https://sudo.rm-rf.ink/"/>
   <updated>2026-10-17T12:33:41.399Z</updated>
-  <id>https://rm-rf.ink/</id>
+  <id>https://sudo.rm-rf.ink/</id>
   
   <author>
     <name>Yq Woe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记</title>
-    <link href="https://rm-rf.ink/*/46499b7b.html"/>
-    <id>https://rm-rf.ink/*/46499b7b.html</id>
+    <link href="https://sudo.rm-rf.ink/*/46499b7b.html"/>
+    <id>https://sudo.rm-rf.ink/*/46499b7b.html</id>
     <published>2026-05-21T16:00:00.000Z</published>
     <updated>2026-10-17T12:33:41.399Z</updated>
     
@@ -33,27 +33,27 @@
     
     
     
-    <category term="AI" scheme="https://rm-rf.ink/categories/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/categories/AI/"/>
     
     
-    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/tags/AI/"/>
     
-    <category term="Agent" scheme="https://rm-rf.ink/tags/Agent/"/>
+    <category term="Agent" scheme="https://sudo.rm-rf.ink/tags/Agent/"/>
     
-    <category term="Memory" scheme="https://rm-rf.ink/tags/Memory/"/>
+    <category term="Memory" scheme="https://sudo.rm-rf.ink/tags/Memory/"/>
     
-    <category term="Hermes" scheme="https://rm-rf.ink/tags/Hermes/"/>
+    <category term="Hermes" scheme="https://sudo.rm-rf.ink/tags/Hermes/"/>
     
-    <category term="Python" scheme="https://rm-rf.ink/tags/Python/"/>
+    <category term="Python" scheme="https://sudo.rm-rf.ink/tags/Python/"/>
     
-    <category term="MemPalace" scheme="https://rm-rf.ink/tags/MemPalace/"/>
+    <category term="MemPalace" scheme="https://sudo.rm-rf.ink/tags/MemPalace/"/>
     
   </entry>
   
   <entry>
     <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
-    <link href="https://rm-rf.ink/*/5f9c1a2b.html"/>
-    <id>https://rm-rf.ink/*/5f9c1a2b.html</id>
+    <link href="https://sudo.rm-rf.ink/*/5f9c1a2b.html"/>
+    <id>https://sudo.rm-rf.ink/*/5f9c1a2b.html</id>
     <published>2026-05-01T14:30:00.000Z</published>
     <updated>2026-10-17T12:33:41.400Z</updated>
     
@@ -64,25 +64,25 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/tags/AI/"/>
     
-    <category term="Hermes Agent" scheme="https://rm-rf.ink/tags/Hermes-Agent/"/>
+    <category term="Hermes Agent" scheme="https://sudo.rm-rf.ink/tags/Hermes-Agent/"/>
     
-    <category term="OpenClaw" scheme="https://rm-rf.ink/tags/OpenClaw/"/>
+    <category term="OpenClaw" scheme="https://sudo.rm-rf.ink/tags/OpenClaw/"/>
     
-    <category term="迁移" scheme="https://rm-rf.ink/tags/%E8%BF%81%E7%A7%BB/"/>
+    <category term="迁移" scheme="https://sudo.rm-rf.ink/tags/%E8%BF%81%E7%A7%BB/"/>
     
-    <category term="记忆系统" scheme="https://rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
+    <category term="记忆系统" scheme="https://sudo.rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践</title>
-    <link href="https://rm-rf.ink/*/38291047.html"/>
-    <id>https://rm-rf.ink/*/38291047.html</id>
+    <link href="https://sudo.rm-rf.ink/*/38291047.html"/>
+    <id>https://sudo.rm-rf.ink/*/38291047.html</id>
     <published>2026-05-01T10:31:00.000Z</published>
     <updated>2026-10-17T12:33:41.401Z</updated>
     
@@ -93,23 +93,23 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/tags/AI/"/>
     
-    <category term="MemPalace" scheme="https://rm-rf.ink/tags/MemPalace/"/>
+    <category term="MemPalace" scheme="https://sudo.rm-rf.ink/tags/MemPalace/"/>
     
-    <category term="Hermes Agent" scheme="https://rm-rf.ink/tags/Hermes-Agent/"/>
+    <category term="Hermes Agent" scheme="https://sudo.rm-rf.ink/tags/Hermes-Agent/"/>
     
-    <category term="记忆系统" scheme="https://rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
+    <category term="记忆系统" scheme="https://sudo.rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>Hello Hermes Agent</title>
-    <link href="https://rm-rf.ink/*/96208538.html"/>
-    <id>https://rm-rf.ink/*/96208538.html</id>
+    <link href="https://sudo.rm-rf.ink/*/96208538.html"/>
+    <id>https://sudo.rm-rf.ink/*/96208538.html</id>
     <published>2026-04-27T15:32:00.000Z</published>
     <updated>2026-10-17T12:33:41.400Z</updated>
     
@@ -128,8 +128,8 @@
   
   <entry>
     <title>daily-news-2026-04-25</title>
-    <link href="https://rm-rf.ink/*/f135226f.html"/>
-    <id>https://rm-rf.ink/*/f135226f.html</id>
+    <link href="https://sudo.rm-rf.ink/*/f135226f.html"/>
+    <id>https://sudo.rm-rf.ink/*/f135226f.html</id>
     <published>2026-04-24T23:30:00.000Z</published>
     <updated>2026-10-17T12:33:41.400Z</updated>
     
@@ -140,15 +140,15 @@
     
     
     
-    <category term="daily news" scheme="https://rm-rf.ink/categories/daily-news/"/>
+    <category term="daily news" scheme="https://sudo.rm-rf.ink/categories/daily-news/"/>
     
     
   </entry>
   
   <entry>
     <title>OpenClaw 0</title>
-    <link href="https://rm-rf.ink/*/8b6d76da.html"/>
-    <id>https://rm-rf.ink/*/8b6d76da.html</id>
+    <link href="https://sudo.rm-rf.ink/*/8b6d76da.html"/>
+    <id>https://sudo.rm-rf.ink/*/8b6d76da.html</id>
     <published>2026-03-30T09:10:57.000Z</published>
     <updated>2026-03-30T09:10:57.965Z</updated>
     
@@ -159,15 +159,15 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>redis主从-哨兵模式</title>
-    <link href="https://rm-rf.ink/*/8f0491a1.html"/>
-    <id>https://rm-rf.ink/*/8f0491a1.html</id>
+    <link href="https://sudo.rm-rf.ink/*/8f0491a1.html"/>
+    <id>https://sudo.rm-rf.ink/*/8f0491a1.html</id>
     <published>2024-03-25T09:56:30.000Z</published>
     <updated>2024-03-25T09:56:31.322Z</updated>
     
@@ -178,15 +178,15 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>rust-if-let简洁控制流</title>
-    <link href="https://rm-rf.ink/*/eec35d0e.html"/>
-    <id>https://rm-rf.ink/*/eec35d0e.html</id>
+    <link href="https://sudo.rm-rf.ink/*/eec35d0e.html"/>
+    <id>https://sudo.rm-rf.ink/*/eec35d0e.html</id>
     <published>2024-03-14T00:41:12.000Z</published>
     <updated>2024-03-19T09:44:54.201Z</updated>
     
@@ -200,21 +200,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="if" scheme="https://rm-rf.ink/tags/if/"/>
+    <category term="if" scheme="https://sudo.rm-rf.ink/tags/if/"/>
     
-    <category term="let" scheme="https://rm-rf.ink/tags/let/"/>
+    <category term="let" scheme="https://sudo.rm-rf.ink/tags/let/"/>
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
   </entry>
   
   <entry>
     <title>rust-枚举与模式匹配</title>
-    <link href="https://rm-rf.ink/*/7d69317e.html"/>
-    <id>https://rm-rf.ink/*/7d69317e.html</id>
+    <link href="https://sudo.rm-rf.ink/*/7d69317e.html"/>
+    <id>https://sudo.rm-rf.ink/*/7d69317e.html</id>
     <published>2024-03-13T09:35:29.000Z</published>
     <updated>2024-03-14T00:41:38.964Z</updated>
     
@@ -228,19 +228,19 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
-    <category term="enum" scheme="https://rm-rf.ink/tags/enum/"/>
+    <category term="enum" scheme="https://sudo.rm-rf.ink/tags/enum/"/>
     
   </entry>
   
   <entry>
     <title>rust-方法语法</title>
-    <link href="https://rm-rf.ink/*/d1274d86.html"/>
-    <id>https://rm-rf.ink/*/d1274d86.html</id>
+    <link href="https://sudo.rm-rf.ink/*/d1274d86.html"/>
+    <id>https://sudo.rm-rf.ink/*/d1274d86.html</id>
     <published>2024-03-13T09:18:32.000Z</published>
     <updated>2024-03-13T09:35:30.501Z</updated>
     
@@ -254,21 +254,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
-    <category term="method" scheme="https://rm-rf.ink/tags/method/"/>
+    <category term="method" scheme="https://sudo.rm-rf.ink/tags/method/"/>
     
-    <category term="syntax" scheme="https://rm-rf.ink/tags/syntax/"/>
+    <category term="syntax" scheme="https://sudo.rm-rf.ink/tags/syntax/"/>
     
   </entry>
   
   <entry>
     <title>rust-结构定义和实例化</title>
-    <link href="https://rm-rf.ink/*/e0d5ed17.html"/>
-    <id>https://rm-rf.ink/*/e0d5ed17.html</id>
+    <link href="https://sudo.rm-rf.ink/*/e0d5ed17.html"/>
+    <id>https://sudo.rm-rf.ink/*/e0d5ed17.html</id>
     <published>2024-03-13T08:53:22.000Z</published>
     <updated>2024-03-13T09:23:11.291Z</updated>
     
@@ -282,19 +282,19 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
-    <category term="struct" scheme="https://rm-rf.ink/tags/struct/"/>
+    <category term="struct" scheme="https://sudo.rm-rf.ink/tags/struct/"/>
     
   </entry>
   
   <entry>
     <title>rust入门</title>
-    <link href="https://rm-rf.ink/*/94fe59ce.html"/>
-    <id>https://rm-rf.ink/*/94fe59ce.html</id>
+    <link href="https://sudo.rm-rf.ink/*/94fe59ce.html"/>
+    <id>https://sudo.rm-rf.ink/*/94fe59ce.html</id>
     <published>2024-03-11T01:30:48.000Z</published>
     <updated>2024-03-13T08:53:31.213Z</updated>
     
@@ -308,21 +308,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="cargo" scheme="https://rm-rf.ink/tags/cargo/"/>
+    <category term="cargo" scheme="https://sudo.rm-rf.ink/tags/cargo/"/>
     
-    <category term="rustc" scheme="https://rm-rf.ink/tags/rustc/"/>
+    <category term="rustc" scheme="https://sudo.rm-rf.ink/tags/rustc/"/>
     
-    <category term="rustup" scheme="https://rm-rf.ink/tags/rustup/"/>
+    <category term="rustup" scheme="https://sudo.rm-rf.ink/tags/rustup/"/>
     
   </entry>
   
   <entry>
     <title>Transformer模型</title>
-    <link href="https://rm-rf.ink/*/e4b8a22b.html"/>
-    <id>https://rm-rf.ink/*/e4b8a22b.html</id>
+    <link href="https://sudo.rm-rf.ink/*/e4b8a22b.html"/>
+    <id>https://sudo.rm-rf.ink/*/e4b8a22b.html</id>
     <published>2024-02-22T03:01:14.000Z</published>
     <updated>2024-02-22T03:30:25.314Z</updated>
     
@@ -336,21 +336,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="机器学习" scheme="https://rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://sudo.rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="NLP" scheme="https://rm-rf.ink/tags/NLP/"/>
+    <category term="NLP" scheme="https://sudo.rm-rf.ink/tags/NLP/"/>
     
-    <category term="text2sql" scheme="https://rm-rf.ink/tags/text2sql/"/>
+    <category term="text2sql" scheme="https://sudo.rm-rf.ink/tags/text2sql/"/>
     
   </entry>
   
   <entry>
     <title>笔记4-《程序员数学-1》</title>
-    <link href="https://rm-rf.ink/*/c88b93d0.html"/>
-    <id>https://rm-rf.ink/*/c88b93d0.html</id>
+    <link href="https://sudo.rm-rf.ink/*/c88b93d0.html"/>
+    <id>https://sudo.rm-rf.ink/*/c88b93d0.html</id>
     <published>2024-02-19T01:07:47.000Z</published>
     <updated>2024-02-22T07:52:55.056Z</updated>
     
@@ -364,15 +364,15 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>开年大吉，工作顺利！</title>
-    <link href="https://rm-rf.ink/*/73b21f0a.html"/>
-    <id>https://rm-rf.ink/*/73b21f0a.html</id>
+    <link href="https://sudo.rm-rf.ink/*/73b21f0a.html"/>
+    <id>https://sudo.rm-rf.ink/*/73b21f0a.html</id>
     <published>2024-02-18T07:00:20.000Z</published>
     <updated>2024-02-18T07:15:06.086Z</updated>
     
@@ -386,15 +386,15 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>研发年终总结</title>
-    <link href="https://rm-rf.ink/*/72bee84d.html"/>
-    <id>https://rm-rf.ink/*/72bee84d.html</id>
+    <link href="https://sudo.rm-rf.ink/*/72bee84d.html"/>
+    <id>https://sudo.rm-rf.ink/*/72bee84d.html</id>
     <published>2024-02-05T02:52:56.000Z</published>
     <updated>2024-02-18T07:06:12.600Z</updated>
     
@@ -405,15 +405,15 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>表单中心功能清单</title>
-    <link href="https://rm-rf.ink/*/74a10861.html"/>
-    <id>https://rm-rf.ink/*/74a10861.html</id>
+    <link href="https://sudo.rm-rf.ink/*/74a10861.html"/>
+    <id>https://sudo.rm-rf.ink/*/74a10861.html</id>
     <published>2024-01-30T00:58:31.000Z</published>
     <updated>2024-02-05T07:50:45.258Z</updated>
     
@@ -424,21 +424,21 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="vue" scheme="https://rm-rf.ink/tags/vue/"/>
+    <category term="vue" scheme="https://sudo.rm-rf.ink/tags/vue/"/>
     
-    <category term="表单" scheme="https://rm-rf.ink/tags/%E8%A1%A8%E5%8D%95/"/>
+    <category term="表单" scheme="https://sudo.rm-rf.ink/tags/%E8%A1%A8%E5%8D%95/"/>
     
-    <category term="formily" scheme="https://rm-rf.ink/tags/formily/"/>
+    <category term="formily" scheme="https://sudo.rm-rf.ink/tags/formily/"/>
     
   </entry>
   
   <entry>
     <title>成本核算</title>
-    <link href="https://rm-rf.ink/*/fb428c48.html"/>
-    <id>https://rm-rf.ink/*/fb428c48.html</id>
+    <link href="https://sudo.rm-rf.ink/*/fb428c48.html"/>
+    <id>https://sudo.rm-rf.ink/*/fb428c48.html</id>
     <published>2024-01-25T07:09:54.000Z</published>
     <updated>2024-01-25T09:51:10.596Z</updated>
     
@@ -449,15 +449,15 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>奇怪的梦</title>
-    <link href="https://rm-rf.ink/*/2afb063d.html"/>
-    <id>https://rm-rf.ink/*/2afb063d.html</id>
+    <link href="https://sudo.rm-rf.ink/*/2afb063d.html"/>
+    <id>https://sudo.rm-rf.ink/*/2afb063d.html</id>
     <published>2024-01-25T02:09:11.000Z</published>
     <updated>2024-02-05T07:53:52.538Z</updated>
     
@@ -468,19 +468,19 @@
     
     
     
-    <category term="生活" scheme="https://rm-rf.ink/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://sudo.rm-rf.ink/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="奇怪" scheme="https://rm-rf.ink/tags/%E5%A5%87%E6%80%AA/"/>
+    <category term="奇怪" scheme="https://sudo.rm-rf.ink/tags/%E5%A5%87%E6%80%AA/"/>
     
-    <category term="梦" scheme="https://rm-rf.ink/tags/%E6%A2%A6/"/>
+    <category term="梦" scheme="https://sudo.rm-rf.ink/tags/%E6%A2%A6/"/>
     
   </entry>
   
   <entry>
     <title>revealjs-animated动画文档</title>
-    <link href="https://rm-rf.ink/*/8212ba91.html"/>
-    <id>https://rm-rf.ink/*/8212ba91.html</id>
+    <link href="https://sudo.rm-rf.ink/*/8212ba91.html"/>
+    <id>https://sudo.rm-rf.ink/*/8212ba91.html</id>
     <published>2024-01-24T10:00:16.000Z</published>
     <updated>2024-01-25T01:53:21.591Z</updated>
     
@@ -494,16 +494,16 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="reveal.js" scheme="https://rm-rf.ink/tags/reveal-js/"/>
+    <category term="reveal.js" scheme="https://sudo.rm-rf.ink/tags/reveal-js/"/>
     
-    <category term="animate" scheme="https://rm-rf.ink/tags/animate/"/>
+    <category term="animate" scheme="https://sudo.rm-rf.ink/tags/animate/"/>
     
-    <category term="css动画" scheme="https://rm-rf.ink/tags/css%E5%8A%A8%E7%94%BB/"/>
+    <category term="css动画" scheme="https://sudo.rm-rf.ink/tags/css%E5%8A%A8%E7%94%BB/"/>
     
-    <category term="css" scheme="https://rm-rf.ink/tags/css/"/>
+    <category term="css" scheme="https://sudo.rm-rf.ink/tags/css/"/>
     
   </entry>
   
