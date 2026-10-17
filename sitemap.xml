@@ -184,6 +184,19 @@
   </url>
   
   <url>
+    <loc>https://rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
+    
+    <lastmod>2026-04-08T10:06:25.964Z</lastmod>
+    
+
+    <id></id>
+    <date>1775642785964</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://rm-rf.ink/js/reveal.js-plugins/customcontrols/README.html</loc>
     
     <lastmod>2026-04-08T10:06:25.964Z</lastmod>
@@ -204,19 +217,6 @@
 
     <id></id>
     <date>1775642785965</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
-    
-    <lastmod>2026-04-08T10:06:25.964Z</lastmod>
-    
-
-    <id></id>
-    <date>1775642785964</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -483,19 +483,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/f2e32020.html</loc>
-    
-    <lastmod>2026-03-31T10:41:05.412Z</lastmod>
-    
-
-    <id>f2e32020</id>
-    <date>1542384000000</date>
-    <title>集群、负载均衡、分布式 | rm -rf /*</title>
-    
-    <desc>集群、负载均衡、分布式 三者的区别</desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/*/aa37a8e3.html</loc>
     
     <lastmod>2026-03-31T10:41:05.412Z</lastmod>
@@ -509,16 +496,16 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/*/1bc5f237.html</loc>
+    <loc>https://rm-rf.ink/*/f2e32020.html</loc>
     
-    <lastmod>2026-03-31T10:41:05.411Z</lastmod>
+    <lastmod>2026-03-31T10:41:05.412Z</lastmod>
     
 
-    <id>1bc5f237</id>
-    <date>1527782400000</date>
-    <title>过六一的"儿童"们 | rm -rf /*</title>
+    <id>f2e32020</id>
+    <date>1542384000000</date>
+    <title>集群、负载均衡、分布式 | rm -rf /*</title>
     
-    <desc>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</desc>
+    <desc>集群、负载均衡、分布式 三者的区别</desc>
   </url>
   
   <url>
@@ -571,6 +558,19 @@
     <title>程序员数学1 | rm -rf /*</title>
     
     <desc>程序员数学1</desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/*/1bc5f237.html</loc>
+    
+    <lastmod>2026-03-31T10:41:05.411Z</lastmod>
+    
+
+    <id>1bc5f237</id>
+    <date>1527782400000</date>
+    <title>过六一的"儿童"们 | rm -rf /*</title>
+    
+    <desc>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</desc>
   </url>
   
   <url>
@@ -661,7 +661,7 @@
     <date>1584802640000</date>
     <title>路 | rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-OKVytyMo"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-KPJxxDdi"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
@@ -1445,19 +1445,6 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js/demo.html</loc>
-    
-    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
-    
-
-    <id></id>
-    <date>1775700537228</date>
-    <title> | rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>https://rm-rf.ink/js/reveal.js/index.html</loc>
     
     <lastmod>1985-10-26T08:15:00.000Z</lastmod>
@@ -1484,13 +1471,13 @@
   </url>
   
   <url>
-    <loc>https://rm-rf.ink/js/reveal.js/css/theme/README.html</loc>
+    <loc>https://rm-rf.ink/js/reveal.js/demo.html</loc>
     
     <lastmod>1985-10-26T08:15:00.000Z</lastmod>
     
 
     <id></id>
-    <date>1775700537224</date>
+    <date>1775700537228</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>
@@ -1504,6 +1491,19 @@
 
     <id></id>
     <date>1775700537228</date>
+    <title> | rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://rm-rf.ink/js/reveal.js/css/theme/README.html</loc>
+    
+    <lastmod>1985-10-26T08:15:00.000Z</lastmod>
+    
+
+    <id></id>
+    <date>1775700537224</date>
     <title> | rm -rf /*</title>
     
     <desc></desc>

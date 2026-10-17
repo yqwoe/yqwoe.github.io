@@ -1,196 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>0. 低代码</title>
-    <url>//*/725797460.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
-<blockquote>
-<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
-<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
-<ol>
-<li class="lvl-3">
-<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
-</li>
-<li class="lvl-3">
-<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
-</li>
-<li class="lvl-3">
-<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
-</li>
-<li class="lvl-3">
-<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
-</li>
-<li class="lvl-3">
-<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
-</li>
-<li class="lvl-3">
-<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
-</li>
-<li class="lvl-3">
-<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
-</li>
-<li class="lvl-3">
-<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
-</li>
-<li class="lvl-3">
-<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
-</li>
-<li class="lvl-4">
-<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
-</li>
-</ol>
-<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
-<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
-<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
-<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
-<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
-<p>####整体而言，IT技术人员具备以下特征：</p>
-<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
-​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
-​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
-<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
-<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
-<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
-<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
-​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
-​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
-<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
-<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
-​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
-<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
-<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
-<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1. 低代码</title>
-    <url>//*/2967963195.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
-<span id="more"></span>
-<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
-<table>
-<thead>
-<tr>
-<th>服务端</th>
-<th>前端</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java</td>
-<td>react</td>
-</tr>
-<tr>
-<td>springboot</td>
-<td>ant-design</td>
-</tr>
-<tr>
-<td>shenyu</td>
-<td>formily</td>
-</tr>
-<tr>
-<td>redis</td>
-<td>Form-render</td>
-</tr>
-<tr>
-<td>mysql</td>
-<td>Designable</td>
-</tr>
-<tr>
-<td>magic-api</td>
-<td></td>
-</tr>
-<tr>
-<td>dataway</td>
-<td></td>
-</tr>
-<tr>
-<td>es(全文检索)</td>
-<td></td>
-</tr>
-<tr>
-<td>flowable</td>
-<td></td>
-</tr>
-<tr>
-<td>Paddle</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>系统权限</td>
-<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
-</tr>
-<tr>
-<td>组织机构</td>
-<td>行政区域、机构、部门、职位、人员…</td>
-</tr>
-<tr>
-<td>流程引擎</td>
-<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
-</tr>
-<tr>
-<td>开发者工具</td>
-<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
-</tr>
-<tr>
-<td>页面设计器</td>
-<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
-<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
-<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
-<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
-<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
-<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
-<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
-<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
-<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
-<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
-<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
-<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
-<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>国立软件</tag>
-        <tag>低代码</tag>
-        <tag>权限管理</tag>
-        <tag>流程引擎</tag>
-        <tag>组织管理</tag>
-        <tag>flowable</tag>
-        <tag>bpmn</tag>
-        <tag>lowcode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第一篇博客</title>
     <url>//*/4278564287.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
@@ -375,43 +185,6 @@
         <tag>gitment</tag>
         <tag>git</tag>
         <tag>Jekyll</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>过六一的&quot;儿童&quot;们</title>
-    <url>//*/1bc5f237.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<h5 id="今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情"><a class="markdownIt-Anchor" href="#今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情"></a> <em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5>
-</blockquote>
-<span id="more"></span>
-<blockquote>
-<p>刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p>
-</blockquote>
-<p><img src="/images/WechatIMG80.jpeg" alt="WechatIMG80"></p>
-<blockquote>
-<p>我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>
-每次当我有&quot;我不是幸运的大多数&quot;这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p>
-</blockquote>
-<p><img src="/images/WechatIMG81.jpeg" alt="WechatIMG81"></p>
-<blockquote>
-<p>我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过&quot;<s>是冬冬毁掉了我的生活</s>&quot;这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>
-每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。<br>
-说话要小声，走路要小声，就连呼吸都要思考着呼吸，“这样呼吸对吗？我是不是不该这样呼吸？”</p>
-<h1 id="w-t-f"><a class="markdownIt-Anchor" href="#w-t-f"></a> <s><em>“W T F !!!”</em></s></h1>
-<h1 id="完了完了完了"><a class="markdownIt-Anchor" href="#完了完了完了"></a> <s><em>“完了完了完了！！！”</em></s></h1>
-<h1 id="我的生活是不是就这样了"><a class="markdownIt-Anchor" href="#我的生活是不是就这样了"></a> <s><em>“我的生活是不是就这样了？”</em></s></h1>
-<p>不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p>
-<p>如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<s>你们是对的！！！！</s> 你们还只是孩子。</p>
-<p>写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>六一</tag>
-        <tag>巨婴</tag>
-        <tag>孩子</tag>
       </tags>
   </entry>
   <entry>
@@ -678,6 +451,81 @@
       </tags>
   </entry>
   <entry>
+    <title>0. 低代码</title>
+    <url>//*/725797460.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0什么是低代码"><a class="markdownIt-Anchor" href="#0什么是低代码"></a> 0.什么是低代码？</h2>
+<blockquote>
+<p>低代码（Low Code）是一种可视化的应用开发方法，用较少的代码、以较快的速度来交付应用程序，将程序员不想开发的代码做到自动化，称之为低代码。</p>
+<p>低代码是一组数字技术工具平台，基于图形化拖拽、参数化配置等更为高效的方式，实现快速构建、数据编排、连接生态、中台服务。通过少量代码或不用代码实现数字化转型中的场景应用创新。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="1低代码的特点"><a class="markdownIt-Anchor" href="#1低代码的特点"></a> 1.低代码的特点</h2>
+<ol>
+<li class="lvl-3">
+<p>不能仅用于或主要应用构建特定行业的应用;不能仅限于在依赖其他解决方案或平台上运行；</p>
+</li>
+<li class="lvl-3">
+<p>需要能提供给IT技术人员使用，不能只给平民开发者使用；</p>
+</li>
+<li class="lvl-3">
+<p>全生命周期：覆盖应用和相关资源的开发、版本管理、测试、部署、执行、管制、监控和管理的全生命周期；</p>
+</li>
+<li class="lvl-3">
+<p>内建数据存储：内建数据存储机制，不能依赖其他的数据库等存储服务；</p>
+</li>
+<li class="lvl-3">
+<p>数据与逻辑设计：支持用来设计数据结构和应用逻辑；</p>
+</li>
+<li class="lvl-3">
+<p>完整的界面设计：支持创建完整的应用界面，不能仅支持创建表单或管理界面；</p>
+</li>
+<li class="lvl-3">
+<p>第三方集成：支持引入第三方API或事件驱动机制；</p>
+</li>
+<li class="lvl-3">
+<p>自动运维：提供自动化的应用升级和版本管理机制；</p>
+</li>
+<li class="lvl-3">
+<p>多环境部署：支持针对多环境的一键部署，包括开发环境、测试环境、验证环境和生产环境；</p>
+</li>
+<li class="lvl-4">
+<p>社区共享：提供可供访问的应用市场，用来共享组件、模块、连接器和模板；</p>
+</li>
+</ol>
+<h2 id="2谁在使用低代码"><a class="markdownIt-Anchor" href="#2谁在使用低代码"></a> 2.谁在使用低代码？</h2>
+<p>​		低代码技术显著降低了软件开发的技术门槛，让更多人可以参与到软件开发中，进一步扩大软件开发者的规模，加速信息化建设。都有谁适合使用低代码技术开发软件？</p>
+<p>​		从事低代码开发人员可以分成两类：服务于企业IT部门或软件的公司的IT技术人员（包含但不限于程序员、项目经理、实施顾问等）；以及来自业务部门，本职工作与IT无关但参与到软件开发中的业务开发者。</p>
+<h3 id="低代码赋能it技术人员"><a class="markdownIt-Anchor" href="#低代码赋能it技术人员"></a> 低代码赋能IT技术人员</h3>
+<p>​		这里的IT技术人员是与“业务开发者”相对的概念，包含但不限于程序员，特指在企业或信息化提供商中，本职工作为企业信息化相关的技术人员。IT技术人员主要集中在企业信息化部门和为企业提供信息化服务（如外包开发、系统集成等）的软件公司中，典型岗位有项目经理、架构师、程序员、测试人员、实施和运维人员、DevOps等。</p>
+<p>####整体而言，IT技术人员具备以下特征：</p>
+<p>​		具备技能：通常具有计算机相关的教育背景，或通过自学的方式掌握了一定的IT技能（如编程语言、数据库管理、配置管理、系统管理等）<br>
+​		考核指标：能否保质保量地满足本单位或客户的信息化需求是核心指标<br>
+​		学习意愿：需要紧跟技术发展趋势，跟随团队和企业技术决策，及时更新技术能力</p>
+<h2 id="3赋能业务人员"><a class="markdownIt-Anchor" href="#3赋能业务人员"></a> 3.赋能业务人员</h2>
+<p>​		在低代码技术被命名之前，国际知名的研究机构们就提出了“业务开发者/平民开发者”的概念。这两个概念与专业开发者对应，专指那些向业务部门汇报有开发能力来辅助业务发展的员工。这些人和向IT部门报告的专业开发者不同，他们的主要工作职责是业务发展，软件开发只是一个辅助性工作，通常不会有相关的考核指标，得到的资源也较为有限。在传统的编码开发时代，业务开发者较为少见，有能力从事辅助性软件开发的业务人员主要集中在数据分析师、软件公司的程序员（程序员的主要工作是开发软件产品或对外交付软件项目，而不是辅助性的软件工具）等具备编程能力的人群。而低代码技术的出现，让更多的业务人员可以成为业务开发者，比如构建订单管理应用的销售主管、人事档案系统的HR、库存盘点APP的库管人员等。</p>
+<h3 id="整体而言业务开发者具备以下特征"><a class="markdownIt-Anchor" href="#整体而言业务开发者具备以下特征"></a> 整体而言，业务开发者具备以下特征：</h3>
+<p>​		具备技能：通常没有计算机相关的教育背景，部分掌握Excel等办公软件的常用功能；<br>
+​		考核指标：能否完成业务目标是核心指标，通常不包含信息化建设相关内容；<br>
+​		学习意愿：不得不参与软件开发，通常没有主动学习IT相关技术的动力和投入；</p>
+<h2 id="4对业务开发者的价值"><a class="markdownIt-Anchor" href="#4对业务开发者的价值"></a> 4.对业务开发者的价值</h2>
+<p>​		与帮助IT技术人员提升软件开发效率不同，低代码对于大多数业务开发者而言，是解决了“能不能开发软件”的问题。这就意味着，业务人员可以根据自身的应用场景，快速构建起对应的软件应用，减少了与IT部门协调确认的沟通成本，在IT部门资源紧缺的背景下，尽快扫清信息化死角。<br>
+​		业务开发者构建的应用主要有以下几类，除数据报表应用的业务逻辑复杂度较高而且通常需要与第三方系统集成，对业务开发者有较高的学习能力要求外，其他应用场景相对简单，更适合业务开发者使用低代码构建。</p>
+<h2 id="5低代码的应用价值"><a class="markdownIt-Anchor" href="#5低代码的应用价值"></a> 5.低代码的应用价值</h2>
+<p>​		低代码开发平台可以显著提升软件开发的效率，可广泛应用于各行业数字化转型升级。具体而言，开发者可以使用低代码开发平台，更简单、更快速地构建个性化应用，打造数字化平台。</p>
+<p><img src="/images/e5b623cf911d4b69996bb63cce5b7927.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ruby 爬虫 一</title>
     <url>//*/71e8d967.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
@@ -729,37 +577,6 @@
       </tags>
   </entry>
   <entry>
-    <title>mybatis动态查询实现</title>
-    <url>//*/b6474c33.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
-<span id="more"></span>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
-<p>Where 条件中包含 字段名称、运算符、值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>mybatis 公共 xml 文件配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Product mapper.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ProductController</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
-]]></content>
-      <categories>
-        <category>mybatis</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-        <tag>mybatis</tag>
-        <tag>api</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cas Server 本地部署</title>
     <url>//*/6e8cb24c.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
@@ -792,6 +609,37 @@
         <tag>cas client</tag>
         <tag>cas server</tag>
         <tag>sso</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mybatis动态查询实现</title>
+    <url>//*/b6474c33.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>model Product，我们希望通过实现 service 的一个方法，并支持所有类型的查询，如 &gt;、&gt;=、&lt;、&lt;=、like 、order by 等常用的查询、排序。</p>
+<span id="more"></span>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Product</span> &#123;</span><br><span class="line">    <span class="type">long</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String category;</span><br><span class="line">    String price;</span><br><span class="line">    String ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="分析"><a class="markdownIt-Anchor" href="#分析"></a> 分析:</h2>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> product</span><br><span class="line"><span class="keyword">where</span> id <span class="operator">&gt;</span> <span class="number">1</span> <span class="keyword">or</span> price <span class="operator">&gt;</span> <span class="string">&#x27;100.00&#x27;</span> ...;</span><br></pre></td></tr></table></figure>
+<p>Where 条件中包含 字段名称、运算符、值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询类型</span></span><br><span class="line"><span class="comment">* lt 小于</span></span><br><span class="line"><span class="comment">* lte 小于等于</span></span><br><span class="line"><span class="comment">* gt 大于</span></span><br><span class="line"><span class="comment">* gte 大于等于</span></span><br><span class="line"><span class="comment">* slike &#x27;value%&#x27; start_with</span></span><br><span class="line"><span class="comment">* elike &#x27;%value&#x27; end_with</span></span><br><span class="line"><span class="comment">* like &#x27;%value%&#x27;</span></span><br><span class="line"><span class="comment">* in 1,2,3,4,5</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    String name; <span class="comment">//字段名称</span></span><br><span class="line">    String value; <span class="comment">//值</span></span><br><span class="line">    String itemType; <span class="comment">//查询类型</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">type</span> <span class="operator">=</span> <span class="string">&quot;and&quot;</span>; <span class="comment">// 逻辑运算 and or</span></span><br><span class="line">    String[] values; <span class="comment">//如果是in查询转换为字符串数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上是对查询条件的简单封装,如果我们需要满足多个条件的话。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">QueryParam</span>&#123;</span><br><span class="line">    List&lt;Item&gt; items = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>mybatis 公共 xml 文件配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;BaseMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;BaseQuery&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;items != null &quot;</span>&gt;</span></span><br><span class="line">            where 1 = 1</span><br><span class="line">            <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;items&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">separator</span>=<span class="string">&quot; &quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;eq&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125; $&#123;item.fieldName&#125; = #&#123;item.value&#125;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &lt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;lte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[ $&#123;item.type&#125;  $&#123;item.name&#125; &lt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gt&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt; #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;gte&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; &gt;= #&#123;item.value&#125; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;slike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.typeitemType == &#x27;elike&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  $&#123;item.type&#125;  $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;like&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    &lt;![CDATA[  AND $&#123;item.name&#125; like &#x27;%$&#123;item.value&#125;%&#x27; ]]&gt;</span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;item.itemType == &#x27;in&#x27; &quot;</span>&gt;</span></span><br><span class="line">                    $&#123;item.type&#125;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;item.values&quot;</span> <span class="attr">item</span>=<span class="string">&quot;value&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;OR&quot;</span>&gt;</span></span><br><span class="line">                        $&#123;item.name&#125; =  #&#123;value&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Product mapper.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yqwoe.codegenerator.dao.ProductMapper&quot;</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yqwoe.codegenerator.model.Product&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;u_id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uId&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span> /&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--省略 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span> &gt;</span></span><br><span class="line">    id, name, category, price ,.....</span><br><span class="line">  <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;com.yqwoe.model.param.QueryParam&quot;</span>&gt;</span></span><br><span class="line">    select</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span> /&gt;</span></span><br><span class="line">    from s_user</span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseQuery&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;BaseMapper.BaseOrder&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ProductController</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProductController</span>&#123;</span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/products&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Pageinfo <span class="title function_">index</span><span class="params">(QueryParam param)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> productService.selectAll(param);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="演示"><a class="markdownIt-Anchor" href="#演示"></a> 演示</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">api: http://localhost:8000/products?items[0].name=name&amp;items[0].value=nil?,超级管理员&amp;items[0].itemType=in</span><br><span class="line"></span><br><span class="line">sql: select * from product where 1 = 1 and (name = &#x27;nil?&#x27; OR name = &#x27;超级管理员&#x27;)</span><br><span class="line"></span><br><span class="line">//type 默认为 and</span><br><span class="line">response:</span><br><span class="line">&#123;</span><br><span class="line">    data:[</span><br><span class="line">        ....</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上为动态查询，照这样的思路，可以继续围绕 mapper 扩展排序或者更复杂的查询。</p>
+]]></content>
+      <categories>
+        <category>mybatis</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>mybatis</tag>
+        <tag>api</tag>
       </tags>
   </entry>
   <entry>
@@ -845,6 +693,31 @@
       </tags>
   </entry>
   <entry>
+    <title>《小王子》阅读</title>
+    <url>//*/aa37a8e3.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&amp;fm=15&amp;gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
+<span id="more"></span>
+<blockquote>
+<p>​ 《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>​ 旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>​ 小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>​ 小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>读书</category>
+      </categories>
+      <tags>
+        <tag>小王子</tag>
+        <tag>儿子</tag>
+        <tag>书</tag>
+        <tag>星球旅行</tag>
+        <tag>点灯的人</tag>
+        <tag>狐狸</tag>
+        <tag>独一无二</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>集群、负载均衡、分布式</title>
     <url>//*/f2e32020.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>下面就我的理解简单通俗的介绍下三者的区别：</p>
@@ -881,31 +754,6 @@
         <tag>集群</tag>
         <tag>负载均衡</tag>
         <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《小王子》阅读</title>
-    <url>//*/aa37a8e3.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/u=1374754966,3123717663&amp;fm=15&amp;gp=0.jpg" alt="u=1374754966,3123717663&amp;fm=15&amp;gp=0"></p>
-<span id="more"></span>
-<blockquote>
-<p>​ 《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>​ 旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>​ 小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>​ 小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>读书</category>
-      </categories>
-      <tags>
-        <tag>小王子</tag>
-        <tag>儿子</tag>
-        <tag>书</tag>
-        <tag>星球旅行</tag>
-        <tag>点灯的人</tag>
-        <tag>狐狸</tag>
-        <tag>独一无二</tag>
       </tags>
   </entry>
   <entry>
@@ -1334,22 +1182,6 @@
       </tags>
   </entry>
   <entry>
-    <title>29岁,再见！</title>
-    <url>//*/1873749776.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我：儿子，你再也没有29岁的爸爸了。<br>
-冬冬：因为你明天过生日了吗？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>29岁</tag>
-        <tag>30岁</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>4月份wbs</title>
     <url>//*/c2cb16de.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -1376,12 +1208,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello Hermes Agent</title>
-    <url>//*/96208538.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Hello Hermes Agent</p>
-]]></content>
-  </entry>
-  <entry>
     <title>OpenClaw 0</title>
     <url>//*/8b6d76da.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -1404,6 +1230,12 @@
       </categories>
   </entry>
   <entry>
+    <title>Hello Hermes Agent</title>
+    <url>//*/96208538.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Hello Hermes Agent</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Reveal.js使用</title>
     <url>//*/6befbd07.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
@@ -1418,6 +1250,121 @@
       </categories>
       <tags>
         <tag>reveal.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1. 低代码</title>
+    <url>//*/2967963195.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>代码技术路线，整体功能介绍。</p>
+<span id="more"></span>
+<h2 id="0技术路线"><a class="markdownIt-Anchor" href="#0技术路线"></a> 0.技术路线</h2>
+<table>
+<thead>
+<tr>
+<th>服务端</th>
+<th>前端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Java</td>
+<td>react</td>
+</tr>
+<tr>
+<td>springboot</td>
+<td>ant-design</td>
+</tr>
+<tr>
+<td>shenyu</td>
+<td>formily</td>
+</tr>
+<tr>
+<td>redis</td>
+<td>Form-render</td>
+</tr>
+<tr>
+<td>mysql</td>
+<td>Designable</td>
+</tr>
+<tr>
+<td>magic-api</td>
+<td></td>
+</tr>
+<tr>
+<td>dataway</td>
+<td></td>
+</tr>
+<tr>
+<td>es(全文检索)</td>
+<td></td>
+</tr>
+<tr>
+<td>flowable</td>
+<td></td>
+</tr>
+<tr>
+<td>Paddle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1功能"><a class="markdownIt-Anchor" href="#1功能"></a> 1.功能</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统权限</td>
+<td>用户管理、菜单管理、角色管理、权限管理、系统字典…</td>
+</tr>
+<tr>
+<td>组织机构</td>
+<td>行政区域、机构、部门、职位、人员…</td>
+</tr>
+<tr>
+<td>流程引擎</td>
+<td>流程设计器、表单、按钮、流程事务、流程监控、钉钉通知…</td>
+</tr>
+<tr>
+<td>开发者工具</td>
+<td>数据库维护、代码生成、数据源、模板管理、任务调度、git提交…</td>
+</tr>
+<tr>
+<td>页面设计器</td>
+<td>api接口维护、业务逻辑编辑、中后台页面拖拽设计…待开发（流程页面拖拽设计、小程序页面拖拽设计、前台页面拖拽设计）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2介绍"><a class="markdownIt-Anchor" href="#2介绍"></a> 2.介绍</h2>
+<h5 id="系统"><a class="markdownIt-Anchor" href="#系统"></a> 系统</h5>
+<p><img src="/images/image-20240109101551889.png" alt="image-20240109101551889"></p>
+<p><img src="/images/image-20240109101856167.png" alt="image-20240109101856167"></p>
+<h4 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h4>
+<p><img src="/images/image-20240109102001046.png" alt="image-20240109102001046"></p>
+<p><img src="/images/image-20240109102023589.png" alt="image-20240109102023589"></p>
+<h4 id="开发者"><a class="markdownIt-Anchor" href="#开发者"></a> 开发者</h4>
+<p><img src="/images/image-20240109102152348.png" alt="image-20240109102152348"></p>
+<h4 id="页面设计"><a class="markdownIt-Anchor" href="#页面设计"></a> 页面设计</h4>
+<p><img src="/images/image-20240109101322427.png" alt="image-20240109101322427"></p>
+<p><img src="/images/image-20240109101351478.png" alt="image-20240109101351478"></p>
+<p><img src="/images/image-20240109102332963.png" alt="image-20240109102332963"></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>国立软件</tag>
+        <tag>低代码</tag>
+        <tag>权限管理</tag>
+        <tag>流程引擎</tag>
+        <tag>组织管理</tag>
+        <tag>flowable</tag>
+        <tag>bpmn</tag>
+        <tag>lowcode</tag>
       </tags>
   </entry>
   <entry>
@@ -1454,46 +1401,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Transformer模型</title>
-    <url>//*/e4b8a22b.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  Transformer模型最早是由Google的研究团队在2017年提出的，并在论文《Attention is All You Need》<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 中进行了详细的介绍。这个模型是为了解决自然语言处理（NLP）任务中的一些问题而设计的，特别是为了克服传统循环神经网络（RNN）和长短期记忆网络（LSTM）在处理长序列时的局限性，如梯度消失或梯度爆炸问题。</p>
-<p>  Transformer模型的核心思想是使用自注意力机制（Self-Attention Mechanism）来捕捉输入序列中的依赖关系。这种机制允许模型在处理每个输入元素时，都能够关注到输入序列中的所有其他元素，从而能够捕捉到更长的依赖关系。此外，Transformer模型还采用了位置编码（Positional Encoding）来弥补模型本身不具备处理序列顺序的能力。</p>
-<p>  Transformer模型由两部分组成：编码器（Encoder）和解码器（Decoder）。编码器负责将输入序列转换为一系列向量表示，而解码器则负责根据这些向量表示生成输出序列。这两部分都由多个相同的层堆叠而成，每一层都包含一个多头自注意力子层和一个简单的全连接前馈神经网络。</p>
-<p>  由于Transformer模型不依赖RNN的顺序结构，因此它可以实现高效的并行化训练，这使得它在处理大规模数据集时具有显著的优势。此外，Transformer模型的强大表示能力和灵活性使得它在多个NLP任务上都取得了显著的效果，成为了自然语言处理领域的一种主流模型。</p>
-<p>  总的来说，Transformer模型是Google研究团队在2017年提出的一种基于自注意力机制的深度学习模型，它的出现为自然语言处理领域的发展带来了革命性的突破。</p>
-<p>引用:</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><a href="https://zhuanlan.zhihu.com/p/647249972">Text-to-SQL小白入门（一）</a></p>
-</li>
-<li class="lvl-2">
-<p><a href="https://zhuanlan.zhihu.com/p/650407036">Text-to-SQL小白入门（二）</a></p>
-</li>
-</ul>
-<p>原论文:</p>
-
-
-	<div class="row">
-    <embed src="/images/1706.03762.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>《Attention is All You Need》 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
+    <title>29岁,再见！</title>
+    <url>//*/1873749776.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我：儿子，你再也没有29岁的爸爸了。<br>
+冬冬：因为你明天过生日了吗？</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>NLP</tag>
-        <tag>text2sql</tag>
-        <tag>机器学习</tag>
+        <tag>29岁</tag>
+        <tag>30岁</tag>
       </tags>
   </entry>
   <entry>
@@ -1519,36 +1439,40 @@
       </categories>
   </entry>
   <entry>
-    <title>一次gogs踩坑之路</title>
-    <url>//*/1398242790.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+    <title>过六一的&quot;儿童&quot;们</title>
+    <url>//*/1bc5f237.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<h5 id="今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情"><a class="markdownIt-Anchor" href="#今天是六一儿童节早早的起床给儿子去打疫苗这对于小家伙来说应该是无比痛苦的吧-不过比起热更痛苦的应该是挨上一针和看着小家伙挨针的心情"></a> <em>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</em></h5>
+</blockquote>
 <span id="more"></span>
-<p>1.创建用户，一定要记住密码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
-<p>2.下载并解压安装包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
-<p>3.拷贝启动项到系统下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
-<p>4.安装 mysql</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
-<p>5.启动 gogs</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
-<p>6.nginx 配置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
-<p>8.你可能遇到的问题</p>
-<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
-<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
+<blockquote>
+<p>刚才我俩因为给孩子换尿不湿又拌了一次嘴，我想这大概和天气有关系，也和这个日子不太贴合，黄历上说：今天忌老成，得耍点小脾气。</p>
+</blockquote>
+<p><img src="/images/WechatIMG80.jpeg" alt="WechatIMG80"></p>
+<blockquote>
+<p>我们时常会羡慕别人，为什么自己不是幸运的大多数，偏偏自己就是最不幸的。可是往往我们忽略了，如果幸运降临的时候，你真的能接住吗？<br>
+每次当我有&quot;我不是幸运的大多数&quot;这种想法的时候，我就会怀疑一切。我大概活成了插图一样的命运。</p>
+</blockquote>
+<p><img src="/images/WechatIMG81.jpeg" alt="WechatIMG81"></p>
+<blockquote>
+<p>我的儿子叫冬冬，今天是五个月十天了。不瞒你们说，我和老婆都有过&quot;<s>是冬冬毁掉了我的生活</s>&quot;这样的想法。很长一段时间夜里没有好好睡过觉，做梦都是围绕着冬冬的情节，电影、美食、逛街…就是看个电视都是奢侈的。<br>
+每天要看着他拉的屎下饭，颜色不正会直接导致你吃不下饭，如果是拉稀你就别想着吃饭了。<br>
+说话要小声，走路要小声，就连呼吸都要思考着呼吸，“这样呼吸对吗？我是不是不该这样呼吸？”</p>
+<h1 id="w-t-f"><a class="markdownIt-Anchor" href="#w-t-f"></a> <s><em>“W T F !!!”</em></s></h1>
+<h1 id="完了完了完了"><a class="markdownIt-Anchor" href="#完了完了完了"></a> <s><em>“完了完了完了！！！”</em></s></h1>
+<h1 id="我的生活是不是就这样了"><a class="markdownIt-Anchor" href="#我的生活是不是就这样了"></a> <s><em>“我的生活是不是就这样了？”</em></s></h1>
+<p>不是的，其实也有快乐的部分，每天早晨冬冬会冲着我们笑，看到漂亮的小妹妹小姐姐会笑，像天使一样，给了我们生活下去的勇气,</p>
+<p>如果因此你更加坚定做一个丁克。如果因此你害怕要孩子，那我只能祝福你们，<s>你们是对的！！！！</s> 你们还只是孩子。</p>
+<p>写完我也准备开始一天的<em>工作</em> 了，六一节快乐！</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>工作</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>git</tag>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>gogs</tag>
-        <tag>ubuntu 14.04</tag>
+        <tag>六一</tag>
+        <tag>巨婴</tag>
+        <tag>孩子</tag>
       </tags>
   </entry>
   <entry>
@@ -1901,64 +1825,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>nginx支持ssl+acme.sh定时更新证书</title>
-    <url>//*/1101146699.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>不废话，直接进入实战。</p>
-<span id="more"></span>
-<p>1.安装 nginx</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install nginx</span><br></pre></td></tr></table></figure>
-<p>2.配置 nginx</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vi /etc/nginx/sites-enabled/default</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name example.com ;</span><br><span class="line">  return 301 https://example.com$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 443 ssl;</span><br><span class="line"></span><br><span class="line">  server_name example.com;</span><br><span class="line"></span><br><span class="line">  ssl on;</span><br><span class="line">  ssl_certificate         /var/www/ssl/example.com.cer;</span><br><span class="line">  ssl_certificate_key     /var/www/ssl/example.com.key;</span><br><span class="line">  ssl_dhparam             /var/www/ssl/dhparam.pem;</span><br><span class="line">  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">  ssl_prefer_server_ciphers on;</span><br><span class="line">  ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5; #加密算法(CloudFlare 推荐的加密套件组)</span><br><span class="line">  ssl_session_timeout 5m; #客户端会话缓存时间</span><br><span class="line">  ssl_session_cache builtin:1000 shared:SSL:10m; #SSL 会话缓存类型和大小</span><br><span class="line"></span><br><span class="line">  root /var/www/example/current/public;</span><br><span class="line">  access_log /var/www/example/current/log/nginx.access.log;</span><br><span class="line">  error_log /var/www/example/current/log/nginx.error.log info;</span><br><span class="line"></span><br><span class="line">  error_page 500 502 503 504 /500.html;</span><br><span class="line">  client_max_body_size 10M;</span><br><span class="line">  keepalive_timeout 10;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>3.安装 <a href="http://acme.sh">acme.sh</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl https://get.acme.sh | sh</span><br><span class="line">source ~/.bashrc</span><br><span class="line">备注:如果本地创建了.bash_profie建议把此命令加入</span><br></pre></td></tr></table></figure>
-<p>4.申请证书</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d example.com -w /var/www/example/current/public</span><br><span class="line">备注: 命令中的目录一定是通过nginx 80端口能够访问到的位置。命令执行成功后证书会存放在 ~/.acme.sh/example.com/</span><br></pre></td></tr></table></figure>
-<p>5.设置证书，并重启 nginx</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --installcert -d example.com \</span><br><span class="line">               --keypath       /var/www/ssl/example.com.key  \</span><br><span class="line">               --fullchainpath /var/www/ssl/example.com.cer \</span><br><span class="line">               --reloadcmd     &quot;nginx -s reload&quot;</span><br></pre></td></tr></table></figure>
-<p>6.生成 dhparam.pem 文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">openssl dhparam -out /var/www/ssl/dhparam.pem 2048</span><br><span class="line">备注：注意观察的话，证书和dhparam.pem的目录和nginx中是保持一致的。</span><br></pre></td></tr></table></figure>
-<p>7.查看定时更换任务</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ crontab -l</span><br><span class="line">0 0 * * * &quot;/home/ubuntu/.acme.sh&quot;/acme.sh --cron --home &quot;/home/ubuntu/.acme.sh&quot; &gt; /dev/null</span><br></pre></td></tr></table></figure>
-<p>8.验证 <a href="http://acme.sh">acme.sh</a> 定时更换任务</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --cron -f</span><br></pre></td></tr></table></figure>
-<p>9.你可能遇到的问题</p>
-<p><a href="https://ruby-china.org/topics/31983">使用 acme.sh 给 Nginx 安装 Let’ s Encrypt 提供的免费 SSL 证书</a></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>nginx</tag>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>redis主从-哨兵模式</title>
-    <url>//*/8f0491a1.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d3d974b29008aff606283f0e4978d7bf8e58543d1d3a787740a0ae1e7049f1ed">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1b9fde0d6c59e81ace0635b7e811b6eb4</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-  </entry>
-  <entry>
     <title>nginx 负载均衡</title>
     <url>//*/1506548690.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
@@ -2225,6 +2091,28 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>redis主从-哨兵模式</title>
+    <url>//*/8f0491a1.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d3d974b29008aff606283f0e4978d7bf8e58543d1d3a787740a0ae1e7049f1ed">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1b9fde0d6c59e81ace0635b7e811b6eb4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+  </entry>
+  <entry>
     <title>rust-if-let简洁控制流</title>
     <url>//*/eec35d0e.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="if-let-控制流"><a class="markdownIt-Anchor" href="#if-let-控制流"></a> if let 控制流</h1>
@@ -2236,26 +2124,6 @@ section 运维阶段
         <tag>if</tag>
         <tag>let</tag>
         <tag>rust</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>rust-方法语法</title>
-    <url>//*/d1274d86.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="方法语法"><a class="markdownIt-Anchor" href="#方法语法"></a> 方法语法</h1>
-<blockquote>
-<p><strong>方法</strong>（method）与函数类似：它们使用 <code>fn</code> 关键字和名称声明，可以拥有参数和返回值，同时包含在某处调用该方法时会执行的代码。不过方法与函数是不同的，因为它们在结构体的上下文中被定义（或者是枚举或 trait 对象的上下文，并且它们第一个参数总是 <code>self</code>，它代表调用该方法的结构体实例。</p>
-</blockquote>
-<h2 id="方法定义"><a class="markdownIt-Anchor" href="#方法定义"></a> 方法定义</h2>
-<p>使用<code>impl</code>块为结构定义方法；</p>
-<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Rectangle</span> &#123;</span><br><span class="line">    width: <span class="type">u32</span>,</span><br><span class="line">    height: <span class="type">u32</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Rectangle</span> &#123;</span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">area</span>(&amp;<span class="keyword">self</span>) <span class="punctuation">-&gt;</span> <span class="type">u32</span> &#123;</span><br><span class="line">        <span class="keyword">self</span>.width * <span class="keyword">self</span>.height</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="keyword">fn</span> <span class="title function_">can_hold</span>(&amp;<span class="keyword">self</span>,target: &amp;Rectangle ) <span class="punctuation">-&gt;</span> <span class="type">bool</span> &#123;</span><br><span class="line">      <span class="keyword">self</span>.width &gt; target.width &amp;&amp; <span class="keyword">self</span>.height &gt; target.height</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="comment">// 关联函数经常被用作返回一个结构体新实例的构造函数。</span></span><br><span class="line">  	<span class="comment">// 这些函数的名称通常为 new ，但 new 并不是一个关键字。</span></span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">square</span>(size: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="keyword">Self</span>&#123;</span><br><span class="line">        <span class="keyword">Self</span> &#123;</span><br><span class="line">            width: size,</span><br><span class="line">            height: size,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect</span> = Rectangle::<span class="title function_ invoke__">square</span>(<span class="number">30</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect1</span> = Rectangle &#123; width: <span class="number">10</span>, height: <span class="number">30</span> &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect2</span> = Rectangle &#123; width: <span class="number">60</span>, height: <span class="number">80</span> &#125;;</span><br><span class="line">    dbg!(&amp;rect);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;The area of the rectangle is &#123;&#125; square pixels.&quot;</span>, rect.<span class="title function_ invoke__">area</span>());</span><br><span class="line">  	<span class="built_in">println!</span>(<span class="string">&quot;Can rect hold rect1? &#123;&#125;&quot;</span>, rect.<span class="title function_ invoke__">can_hold</span>(&amp;rect1));</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Can rect hold rect2? &#123;&#125;&quot;</span>, rect.<span class="title function_ invoke__">can_hold</span>(&amp;rect2));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>rust</tag>
-        <tag>method</tag>
-        <tag>syntax</tag>
       </tags>
   </entry>
   <entry>
@@ -2610,6 +2478,42 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>nginx支持ssl+acme.sh定时更新证书</title>
+    <url>//*/1101146699.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>不废话，直接进入实战。</p>
+<span id="more"></span>
+<p>1.安装 nginx</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install nginx</span><br></pre></td></tr></table></figure>
+<p>2.配置 nginx</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vi /etc/nginx/sites-enabled/default</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name example.com ;</span><br><span class="line">  return 301 https://example.com$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 443 ssl;</span><br><span class="line"></span><br><span class="line">  server_name example.com;</span><br><span class="line"></span><br><span class="line">  ssl on;</span><br><span class="line">  ssl_certificate         /var/www/ssl/example.com.cer;</span><br><span class="line">  ssl_certificate_key     /var/www/ssl/example.com.key;</span><br><span class="line">  ssl_dhparam             /var/www/ssl/dhparam.pem;</span><br><span class="line">  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">  ssl_prefer_server_ciphers on;</span><br><span class="line">  ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5; #加密算法(CloudFlare 推荐的加密套件组)</span><br><span class="line">  ssl_session_timeout 5m; #客户端会话缓存时间</span><br><span class="line">  ssl_session_cache builtin:1000 shared:SSL:10m; #SSL 会话缓存类型和大小</span><br><span class="line"></span><br><span class="line">  root /var/www/example/current/public;</span><br><span class="line">  access_log /var/www/example/current/log/nginx.access.log;</span><br><span class="line">  error_log /var/www/example/current/log/nginx.error.log info;</span><br><span class="line"></span><br><span class="line">  error_page 500 502 503 504 /500.html;</span><br><span class="line">  client_max_body_size 10M;</span><br><span class="line">  keepalive_timeout 10;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>3.安装 <a href="http://acme.sh">acme.sh</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl https://get.acme.sh | sh</span><br><span class="line">source ~/.bashrc</span><br><span class="line">备注:如果本地创建了.bash_profie建议把此命令加入</span><br></pre></td></tr></table></figure>
+<p>4.申请证书</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d example.com -w /var/www/example/current/public</span><br><span class="line">备注: 命令中的目录一定是通过nginx 80端口能够访问到的位置。命令执行成功后证书会存放在 ~/.acme.sh/example.com/</span><br></pre></td></tr></table></figure>
+<p>5.设置证书，并重启 nginx</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --installcert -d example.com \</span><br><span class="line">               --keypath       /var/www/ssl/example.com.key  \</span><br><span class="line">               --fullchainpath /var/www/ssl/example.com.cer \</span><br><span class="line">               --reloadcmd     &quot;nginx -s reload&quot;</span><br></pre></td></tr></table></figure>
+<p>6.生成 dhparam.pem 文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">openssl dhparam -out /var/www/ssl/dhparam.pem 2048</span><br><span class="line">备注：注意观察的话，证书和dhparam.pem的目录和nginx中是保持一致的。</span><br></pre></td></tr></table></figure>
+<p>7.查看定时更换任务</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ crontab -l</span><br><span class="line">0 0 * * * &quot;/home/ubuntu/.acme.sh&quot;/acme.sh --cron --home &quot;/home/ubuntu/.acme.sh&quot; &gt; /dev/null</span><br></pre></td></tr></table></figure>
+<p>8.验证 <a href="http://acme.sh">acme.sh</a> 定时更换任务</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --cron -f</span><br></pre></td></tr></table></figure>
+<p>9.你可能遇到的问题</p>
+<p><a href="https://ruby-china.org/topics/31983">使用 acme.sh 给 Nginx 安装 Let’ s Encrypt 提供的免费 SSL 证书</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>nginx</tag>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>读《小王子》</title>
     <url>//*/2855774435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
@@ -2659,6 +2563,26 @@ section 运维阶段
         <tag>进制</tag>
         <tag>指数</tag>
         <tag>指数法则</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>rust-方法语法</title>
+    <url>//*/d1274d86.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="方法语法"><a class="markdownIt-Anchor" href="#方法语法"></a> 方法语法</h1>
+<blockquote>
+<p><strong>方法</strong>（method）与函数类似：它们使用 <code>fn</code> 关键字和名称声明，可以拥有参数和返回值，同时包含在某处调用该方法时会执行的代码。不过方法与函数是不同的，因为它们在结构体的上下文中被定义（或者是枚举或 trait 对象的上下文，并且它们第一个参数总是 <code>self</code>，它代表调用该方法的结构体实例。</p>
+</blockquote>
+<h2 id="方法定义"><a class="markdownIt-Anchor" href="#方法定义"></a> 方法定义</h2>
+<p>使用<code>impl</code>块为结构定义方法；</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Rectangle</span> &#123;</span><br><span class="line">    width: <span class="type">u32</span>,</span><br><span class="line">    height: <span class="type">u32</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Rectangle</span> &#123;</span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">area</span>(&amp;<span class="keyword">self</span>) <span class="punctuation">-&gt;</span> <span class="type">u32</span> &#123;</span><br><span class="line">        <span class="keyword">self</span>.width * <span class="keyword">self</span>.height</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="keyword">fn</span> <span class="title function_">can_hold</span>(&amp;<span class="keyword">self</span>,target: &amp;Rectangle ) <span class="punctuation">-&gt;</span> <span class="type">bool</span> &#123;</span><br><span class="line">      <span class="keyword">self</span>.width &gt; target.width &amp;&amp; <span class="keyword">self</span>.height &gt; target.height</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="comment">// 关联函数经常被用作返回一个结构体新实例的构造函数。</span></span><br><span class="line">  	<span class="comment">// 这些函数的名称通常为 new ，但 new 并不是一个关键字。</span></span><br><span class="line">    <span class="keyword">fn</span> <span class="title function_">square</span>(size: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="keyword">Self</span>&#123;</span><br><span class="line">        <span class="keyword">Self</span> &#123;</span><br><span class="line">            width: size,</span><br><span class="line">            height: size,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect</span> = Rectangle::<span class="title function_ invoke__">square</span>(<span class="number">30</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect1</span> = Rectangle &#123; width: <span class="number">10</span>, height: <span class="number">30</span> &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">rect2</span> = Rectangle &#123; width: <span class="number">60</span>, height: <span class="number">80</span> &#125;;</span><br><span class="line">    dbg!(&amp;rect);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;The area of the rectangle is &#123;&#125; square pixels.&quot;</span>, rect.<span class="title function_ invoke__">area</span>());</span><br><span class="line">  	<span class="built_in">println!</span>(<span class="string">&quot;Can rect hold rect1? &#123;&#125;&quot;</span>, rect.<span class="title function_ invoke__">can_hold</span>(&amp;rect1));</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;Can rect hold rect2? &#123;&#125;&quot;</span>, rect.<span class="title function_ invoke__">can_hold</span>(&amp;rect2));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>rust</tag>
+        <tag>method</tag>
+        <tag>syntax</tag>
       </tags>
   </entry>
   <entry>
@@ -2785,6 +2709,50 @@ section 运维阶段
       <tags>
         <tag>进制</tag>
         <tag>计数法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>笔记3-《程序员数学-1》</title>
+    <url>//*/375539532.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
+<span id="more"></span>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>什么是余数？</p>
+<ul class="lvl-2">
+<li class="lvl-4"><strong>余数</strong> 就是除法运算时剩下的数</li>
+</ul>
+</li>
+</ul>
+<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>今天是星期日,那么 100 天以后是星期几？</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line">  </span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line">  </span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>1234567 的 987654321 次方的个位数是多少？</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>—未完—</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>余数</tag>
+        <tag>分组</tag>
       </tags>
   </entry>
   <entry>
@@ -3208,56 +3176,62 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>笔记3-《程序员数学-1》</title>
-    <url>//*/375539532.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
+    <title>一次ios网页样式问题排查心路历程</title>
+    <url>//*/149409992.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</p>
 <span id="more"></span>
+<p>大概是这样：</p>
+<p><img src="../images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
+<p>选中的区域无法正常显示。</p>
+<h3 id="准备调试环境"><a class="markdownIt-Anchor" href="#准备调试环境"></a> 准备调试环境:</h3>
+<h4 id="1打开-sifari-的开发模式"><a class="markdownIt-Anchor" href="#1打开-sifari-的开发模式"></a> 1.打开 sifari 的开发模式。</h4>
+<p><img src="../images/1527947682461.jpg" alt="1527947682461"></p>
+<h4 id="2手机-sifari-打开调试模式"><a class="markdownIt-Anchor" href="#2手机-sifari-打开调试模式"></a> 2.手机 sifari 打开调试模式</h4>
+<p><img src="../images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
+<h4 id="3手机连接电脑"><a class="markdownIt-Anchor" href="#3手机连接电脑"></a> 3.手机连接电脑</h4>
+<p><img src="../images/1527947709241.jpg" alt="1527947709241"></p>
+<p>勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。</p>
+<p>正经话题，我是如何找到问题并解决的。</p>
+<p>调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。</p>
+<p><img src="../images/1527950086573.jpg" alt="1527950086573"></p>
+<h4 id="4最后锁定"><a class="markdownIt-Anchor" href="#4最后锁定"></a> 4.最后锁定</h4>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  -webkit-<span class="attribute">overflow</span>-scrolling: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id><a class="markdownIt-Anchor" href="#"></a> </h5>
+<p><strong>-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.</strong></p>
 <ul class="lvl-0">
 <li class="lvl-2">
-<p>什么是余数？</p>
-<ul class="lvl-2">
-<li class="lvl-4"><strong>余数</strong> 就是除法运算时剩下的数</li>
-</ul>
+<p>auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。</p>
+</li>
+<li class="lvl-2">
+<p>touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。</p>
 </li>
 </ul>
-<h2 id="星期数的思考题-1"><a class="markdownIt-Anchor" href="#星期数的思考题-1"></a> 星期数的思考题 1</h2>
+<p><strong>最常见的例子就是，</strong></p>
 <ul class="lvl-0">
 <li class="lvl-2">
-<p>今天是星期日,那么 100 天以后是星期几？</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = 100 % 7</span><br><span class="line">x = 2 //答案:星期二</span><br></pre></td></tr></table></figure>
+<p>在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。</p>
 </li>
-</ul>
-<h2 id="星期数的思考题-2"><a class="markdownIt-Anchor" href="#星期数的思考题-2"></a> 星期数的思考题 2</h2>
-<ul class="lvl-0">
 <li class="lvl-2">
-<p>今天是星期日,那么 10¹ºº 天以后是星期几？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    <span class="number">10</span> ** i % <span class="number">7</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">puts remainder_array</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6, 4, 5, 1, 3, 2, 6]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 1后边每增加6个0,就是 [1, 3, 2, 6, 4, 5] 的循环</span></span><br><span class="line">  </span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为6</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [1, 3, 2, 6, 4, 5]</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 从而得出规律，10的100次方天后就是 x[100 % 6] 得出那天是星期几</span></span><br><span class="line">  </span><br><span class="line">puts x[<span class="number">100</span> % <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 4 最后得出的答案是星期4</span></span><br></pre></td></tr></table></figure>
+<p>在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。</p>
 </li>
-</ul>
-<h2 id="乘方思考题"><a class="markdownIt-Anchor" href="#乘方思考题"></a> 乘方思考题</h2>
-<ul class="lvl-0">
 <li class="lvl-2">
-<p>1234567 的 987654321 次方的个位数是多少？</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">#ruby</span></span><br><span class="line"><span class="comment">#1234567取个位数7计算 7 º~7¹ºº的个位数</span></span><br><span class="line">remainder_array = <span class="number">100</span>.times.map <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">    (<span class="number">7</span> ** i).to_s.split(<span class="string">&quot;&quot;</span>).last <span class="comment"># 7的n次方结果拆分数组取最后个位数</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">x = remainder_array.uniq <span class="comment">#去重得出周期为4</span></span><br><span class="line">puts x</span><br><span class="line"><span class="comment"># [&quot;1&quot;, &quot;7&quot;, &quot;9&quot;, &quot;3&quot;]</span></span><br><span class="line">puts x[<span class="number">987654321</span> % <span class="number">4</span>]</span><br><span class="line">  <span class="comment"># 7 最后得出的答案是 7</span></span><br></pre></td></tr></table></figure>
+<p>通过动态添加内容撑开容器，结果根本不能滑动的 bug。</p>
+</li>
+<li class="lvl-2">
+<p>最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。</p>
 </li>
 </ul>
-<p>—未完—</p>
+<p>网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。<s>不过我不建议研究，一研究估计小半年就过去了，也没有答案</s></p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>余数</tag>
-        <tag>分组</tag>
+        <tag>mac</tag>
+        <tag>ios</tag>
+        <tag>vue</tag>
+        <tag>mbp</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>笔记4-《程序员数学-1》</title>
-    <url>//*/c88b93d0.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
   </entry>
   <entry>
     <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
@@ -3366,6 +3340,244 @@ section 运维阶段
         <tag>OpenClaw</tag>
         <tag>迁移</tag>
         <tag>记忆系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端定时器</title>
+    <url>//*/3423146f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
+<span id="more"></span>
+<p>  在<code>博客</code>- <a href="/tags">标签</a>页面中使用到了<code>定时器</code>来做<code>::hover</code>动画效果。接下来我会对比一下<code>setTimeout</code>、<code>setInterval</code>、<code>requestAnimationFrame</code>来实现定时器。</p>
+<div style="display:flex;justify-content: center;">
+    <div>
+      <video width="100%" height="auto" src="/images/video/tags-view.mp4" autoplay muted loop></video>
+      <div style="text-align: center;user-select: none;">视频：
+博客-标签
+</div>
+    </div>
+  </div>
+<h1 id="1定时器"><a class="markdownIt-Anchor" href="#1定时器"></a> 1.定时器</h1>
+<h2 id="11-settimeout"><a class="markdownIt-Anchor" href="#11-settimeout"></a> 1.1. setTimeout</h2>
+<p>  <strong>setTimeout是JavaScript中的一个函数，用于在指定的延迟时间后执行一段代码或函数。它的工作原理是在指定的延迟时间后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
+<p><strong>setTimeout的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>func|code</code>：要执行的函数或代码。</p>
+</li>
+<li class="lvl-2">
+<p><code>delay</code>：延迟时间，以毫秒为单位。</p>
+</li>
+<li class="lvl-2">
+<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
+</li>
+</ul>
+<p>  当使用setTimeout时，它将在指定的延迟时间后执行一次函数或代码，然后返回一个定时器ID，可以使用<code>clearTimeout()</code>方法来取消定时器的执行。</p>
+<p>  需要注意的是，setTimeout并不会立即执行函数或代码，而是在指定的延迟时间后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setTimeout中的函数或代码可能会在预期的时间之后才被执行。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setTimeout</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="title function_">cleatTimeout</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="12-setinterval"><a class="markdownIt-Anchor" href="#12-setinterval"></a> 1.2. setInterval</h2>
+<p>  <strong>setInterval是JavaScript中的一个函数，用于在指定的时间间隔后重复执行一段代码或函数。它的工作原理是在指定的时间间隔后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
+<p><strong>setInterval的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>func|code</code>：要执行的函数或代码。</p>
+</li>
+<li class="lvl-2">
+<p><code>delay</code>：时间间隔，以毫秒为单位。</p>
+</li>
+<li class="lvl-2">
+<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
+</li>
+</ul>
+<p>  当使用setInterval时，它将在指定的时间间隔后重复执行函数或代码，直到调用<code>clearInterval()</code>方法来停止执行。与setTimeout不同的是，setInterval会持续不断地重复执行函数或代码，直到被明确停止。</p>
+<p>  需要注意的是，setInterval并不会立即执行函数或代码，而是在指定的时间间隔后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setInterval中的函数或代码可能会在预期的时间之后才被执行。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setInterval</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setInterval</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">clearInterval</span>();</span><br></pre></td></tr></table></figure>
+<h2 id="13-requestanimationframe"><a class="markdownIt-Anchor" href="#13-requestanimationframe"></a> 1.3. requestAnimationFrame</h2>
+<p>  <strong>requestAnimationFrame是Web动画API的一部分，用于在浏览器下一次重绘之前调用指定的回调函数，从而实现平滑的动画效果。与setTimeout和setInterval相比，requestAnimationFrame具有更高的性能和更好的用户体验。</strong></p>
+<p><strong>requestAnimationFrame的语法如下：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">requestAnimationFrame</span>(callback);</span><br></pre></td></tr></table></figure>
+<p><strong>参数说明：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>callback</code>：要执行的回调函数。</p>
+</li>
+</ul>
+<p>  当使用requestAnimationFrame时，它会返回一个唯一的ID，可以使用这个ID来取消动画帧的调用。与setTimeout和setInterval不同的是，requestAnimationFrame的回调函数将在浏览器下一次重绘之前执行，而不是简单地等待指定的时间后执行。这样可以充分利用浏览器的重绘机制，实现更平滑的动画效果。</p>
+<p>  requestAnimationFrame的优势在于它能够根据浏览器的刷新率来同步动画，避免了由于不同的屏幕刷新率和硬件配置导致的动画卡顿和闪烁。同时，它也避免了在动画过程中不必要的重绘和计算，提高了动画的性能和响应性。</p>
+<p>  使用requestAnimationFrame时需要注意，它只会在浏览器处于激活状态时执行回调函数。如果浏览器处于最小化或隐藏状态，那么回调函数将不会被执行。因此，在使用requestAnimationFrame时，需要确保浏览器处于激活状态，或者在回调函数中添加适当的逻辑来处理浏览器不处于激活状态的情况。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">frame</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;frame&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">requestAnimationFrame</span>(frame);</span><br></pre></td></tr></table></figure>
+<h1 id="2-标签动画"><a class="markdownIt-Anchor" href="#2-标签动画"></a> 2. 标签动画</h1>
+<p>  使用 <code>requestAnimationFrame</code> 可以替代 <code>setInterval</code> 来实现定时任务，因为 <code>requestAnimationFrame</code> 更加高效，能够根据屏幕刷新率来同步动画，避免了不必要的重绘和计算。</p>
+<p>下面是使用 <code>requestAnimationFrame</code> 实现 <code>setInterval</code> 更新<code>博客</code>- <a href="/tags">标签</a>的示例代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * 兼容不支持requestAnimationFrame的浏览器</span></span><br><span class="line"><span class="comment"> ***/</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitRequestAnimationFrame</span> ||<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozRequestAnimationFrame</span> ||<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oRequestAnimationFrame</span>      ||<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msRequestAnimationFrame</span>     ||<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="keyword">function</span> (<span class="params">callback</span>) &#123;</span><br><span class="line">      <span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(callback, <span class="number">6000</span> / <span class="number">60</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msCancelAnimationFrame</span> || <span class="built_in">clearTimeout</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 设置精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">function</span>&#125; 回调函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125;   延迟时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;  定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="keyword">function</span> <span class="title function_">setIntervalPrecision</span>(<span class="params">callback, delay</span>) &#123;</span><br><span class="line">  <span class="comment">// 生成并记录定时器ID</span></span><br><span class="line">  <span class="keyword">let</span> obj = <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> || (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> = &#123; <span class="attr">num</span>: <span class="number">0</span> &#125;)</span><br><span class="line">  obj.<span class="property">num</span>++</span><br><span class="line">  obj[<span class="string">&#x27;n&#x27;</span> + obj.<span class="property">num</span>] = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">var</span> intervalId = obj.<span class="property">num</span></span><br><span class="line">  <span class="comment">// 开始时间</span></span><br><span class="line">  <span class="keyword">var</span> startTime = +<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">  <span class="comment">// 已执行次数</span></span><br><span class="line">  <span class="keyword">var</span> count = <span class="number">0</span></span><br><span class="line">  <span class="comment">// 延迟时间</span></span><br><span class="line">  delay = delay || <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ;(<span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 定时器被清除，则终止</span></span><br><span class="line">    <span class="keyword">if</span> (!obj[<span class="string">&#x27;n&#x27;</span> + intervalId]) <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 满足条件执行回调</span></span><br><span class="line">    <span class="keyword">if</span> (+<span class="keyword">new</span> <span class="title class_">Date</span>() &gt; startTime + delay * (count + <span class="number">1</span>)) &#123;</span><br><span class="line">      count++</span><br><span class="line">      <span class="title function_">callback</span>(count)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">requestAnimationFrame</span>(loop)</span><br><span class="line">  &#125;)()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> intervalId</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 清除精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; 定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clearIntervalPrecision</span>(<span class="params">intervalId</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">cancelAnimationFrame</span>(<span class="string">&#x27;n&#x27;</span> + intervalId)</span><br><span class="line">    <span class="keyword">delete</span> <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>[<span class="string">&#x27;n&#x27;</span> + intervalId]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//loopHover 自己的业务实现</span></span><br><span class="line"><span class="title function_">setIntervalPrecision</span>(loopHover, <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>react</tag>
+        <tag>javascript</tag>
+        <tag>typescript</tag>
+        <tag>setTimeout</tag>
+        <tag>setInterval</tag>
+        <tag>requestAnimationFrame</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于k8s、traefik、springboot的微服务实践</title>
+    <url>//*/3382022550.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>笔记4-《程序员数学-1》</title>
+    <url>//*/c88b93d0.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>奇怪的梦</title>
+    <url>//*/2afb063d.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="0a751ab2cab789f89ab563c1df7773ac753b4ac0f92147c2c3b943ed66d2bbde">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01101c2c8c781e0b1cd8c2268fc4efcf73eca9ec52ed737c3e4b1fc88ab5677a7f6b2a62a2e14f94a5baf9c3196a1aa8cb0da095c4d0a4032935d7df8bfad0a2f3b9b456191eff772b024a0d4a32d85d8f8524dec24a9148950127e2adbd9a26578ed16c252bf25c35426dd6517a40c5926e1c6cb8e8294e15ca5801107d94b580ec386c3f00be8540f1b49668ebacc077b6f3336c569dec0e085e833399f37688fd7b3c47f3e1e8de882e4b6d5cd64ac86338f967fc35d1d4eea06035b826eabe2263698ba13b225d97d2c771bb4de617fbafd3c0ffdae4e1e5d3ac1b8ff8491459ea01b954978e52bb44a32630d794663cfc88878f79a6bacc313b01a3e51978bf4e192b35648c90677ab09dfb00fc6d631338b2548542f4858da83e9228d11046a4a1c7726c45eb62eae142e6cb91a36b39470de9bdf2b4e3cd34c2bb3877418d5917305a89b60398ec3dc1e825a69c38ea2a836766665c449052b4c1a682e0f73f068cfbfc28df6cc44b83779e372403309ebbf7ed049e5737817025d9a295ffa9c27673cf2ecc30a20288465b51963d3d0a46d1142ae2a039664f06c2d95e9624899b2987d27754d20a494f7d36c0</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇怪</tag>
+        <tag>梦</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大盘鸡🐔</title>
+    <url>//*/c43e7c0d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p>
+<span id="more"></span>
+<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>鸡肉</p>
+</li>
+<li class="lvl-2">
+<p>梅花肉</p>
+</li>
+<li class="lvl-2">
+<p>土豆</p>
+</li>
+<li class="lvl-2">
+<p>洋葱</p>
+</li>
+<li class="lvl-2">
+<p>青椒</p>
+</li>
+<li class="lvl-2">
+<p>大葱</p>
+</li>
+<li class="lvl-2">
+<p>姜</p>
+</li>
+<li class="lvl-2">
+<p>蒜</p>
+</li>
+<li class="lvl-2">
+<p>八角</p>
+</li>
+<li class="lvl-2">
+<p>花椒</p>
+</li>
+<li class="lvl-2">
+<p>干辣椒</p>
+</li>
+<li class="lvl-2">
+<p>啤酒</p>
+</li>
+</ul>
+<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>花生油 20ml</p>
+</li>
+<li class="lvl-2">
+<p>郫县豆瓣酱 10ml</p>
+</li>
+<li class="lvl-2">
+<p>盐 5g</p>
+</li>
+<li class="lvl-2">
+<p>鸡精 5g</p>
+</li>
+<li class="lvl-2">
+<p>味精 5g</p>
+</li>
+<li class="lvl-2">
+<p>生抽 5g</p>
+</li>
+<li class="lvl-2">
+<p>蚝油5ml</p>
+</li>
+</ul>
+<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>起锅烧油，放入梅花肉打底炒出油；</p>
+</li>
+<li class="lvl-2">
+<p>放入豆瓣炒出红油，放入八角、花椒、干辣椒；</p>
+</li>
+<li class="lvl-2">
+<p>放入洗干净的鸡肉，炒至肉质紧实；</p>
+</li>
+<li class="lvl-2">
+<p>放入大葱，盐、鸡精、生抽、蚝油；</p>
+</li>
+<li class="lvl-2">
+<p>翻炒2分钟，加入两罐啤酒，炖15分钟；</p>
+</li>
+<li class="lvl-2">
+<p>最后放入土豆、青椒、洋葱，再炖5分钟；</p>
+</li>
+<li class="lvl-2">
+<p>放入味精，搅拌均匀后出锅；</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜谱</category>
+      </categories>
+      <tags>
+        <tag>大盘鸡</tag>
+        <tag>美食</tag>
       </tags>
   </entry>
   <entry>
@@ -3479,352 +3691,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>一次ios网页样式问题排查心路历程</title>
-    <url>//*/149409992.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我的开发环境：Macos 、iphone,手机端页面使用 vue、scss。本次出现的问题是一个 css 样式在 iphone 手机端无法正常显示。</p>
-<span id="more"></span>
-<p>大概是这样：</p>
-<p><img src="../images/WechatIMG86.jpeg" alt="WechatIMG86"></p>
-<p>选中的区域无法正常显示。</p>
-<h3 id="准备调试环境"><a class="markdownIt-Anchor" href="#准备调试环境"></a> 准备调试环境:</h3>
-<h4 id="1打开-sifari-的开发模式"><a class="markdownIt-Anchor" href="#1打开-sifari-的开发模式"></a> 1.打开 sifari 的开发模式。</h4>
-<p><img src="../images/1527947682461.jpg" alt="1527947682461"></p>
-<h4 id="2手机-sifari-打开调试模式"><a class="markdownIt-Anchor" href="#2手机-sifari-打开调试模式"></a> 2.手机 sifari 打开调试模式</h4>
-<p><img src="../images/WechatIMG87.jpeg" alt="WechatIMG87"></p>
-<h4 id="3手机连接电脑"><a class="markdownIt-Anchor" href="#3手机连接电脑"></a> 3.手机连接电脑</h4>
-<p><img src="../images/1527947709241.jpg" alt="1527947709241"></p>
-<p>勾选上图的 ip 地址自动会弹出开发者窗口。接下来你就可以尽情的撒野了。</p>
-<p>正经话题，我是如何找到问题并解决的。</p>
-<p>调试窗口大概长这样，找到你要排错的 div 选中，然后，一个个勾选右侧样式，看是否存在冲突或失效的样式。</p>
-<p><img src="../images/1527950086573.jpg" alt="1527950086573"></p>
-<h4 id="4最后锁定"><a class="markdownIt-Anchor" href="#4最后锁定"></a> 4.最后锁定</h4>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  -webkit-<span class="attribute">overflow</span>-scrolling: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id><a class="markdownIt-Anchor" href="#"></a> </h5>
-<p><strong>-webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。</p>
-</li>
-<li class="lvl-2">
-<p>touch: 使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。同时也会创建一个新的堆栈上下文。</p>
-</li>
-</ul>
-<p><strong>最常见的例子就是，</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>在 safari 上，使用了-webkit-overflow-scrolling:touch 之后，页面偶尔会卡住不动。</p>
-</li>
-<li class="lvl-2">
-<p>在 safari 上，点击其他区域，再在滚动区域滑动，滚动条无法滚动的 bug。</p>
-</li>
-<li class="lvl-2">
-<p>通过动态添加内容撑开容器，结果根本不能滑动的 bug。</p>
-</li>
-<li class="lvl-2">
-<p>最终无得解决方法是改成 auto，我还没有找到更完美解决的办法。</p>
-</li>
-</ul>
-<p>网上有很多关于 -webkit-overflow-scrolling + ios 的问题，有兴趣的可以研究一下。<s>不过我不建议研究，一研究估计小半年就过去了，也没有答案</s></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>mac</tag>
-        <tag>ios</tag>
-        <tag>vue</tag>
-        <tag>mbp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端定时器</title>
-    <url>//*/3423146f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  前端开发中，会经常接到<code>定时器</code>的需求，<code>倒计时</code>、<code>计时器</code>、<code>动画效果</code>。</p>
-<span id="more"></span>
-<p>  在<code>博客</code>- <a href="/tags">标签</a>页面中使用到了<code>定时器</code>来做<code>::hover</code>动画效果。接下来我会对比一下<code>setTimeout</code>、<code>setInterval</code>、<code>requestAnimationFrame</code>来实现定时器。</p>
-<div style="display:flex;justify-content: center;">
-    <div>
-      <video width="100%" height="auto" src="/images/video/tags-view.mp4" autoplay muted loop></video>
-      <div style="text-align: center;user-select: none;">视频：
-博客-标签
-</div>
-    </div>
-  </div>
-<h1 id="1定时器"><a class="markdownIt-Anchor" href="#1定时器"></a> 1.定时器</h1>
-<h2 id="11-settimeout"><a class="markdownIt-Anchor" href="#11-settimeout"></a> 1.1. setTimeout</h2>
-<p>  <strong>setTimeout是JavaScript中的一个函数，用于在指定的延迟时间后执行一段代码或函数。它的工作原理是在指定的延迟时间后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
-<p><strong>setTimeout的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>func|code</code>：要执行的函数或代码。</p>
-</li>
-<li class="lvl-2">
-<p><code>delay</code>：延迟时间，以毫秒为单位。</p>
-</li>
-<li class="lvl-2">
-<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
-</li>
-</ul>
-<p>  当使用setTimeout时，它将在指定的延迟时间后执行一次函数或代码，然后返回一个定时器ID，可以使用<code>clearTimeout()</code>方法来取消定时器的执行。</p>
-<p>  需要注意的是，setTimeout并不会立即执行函数或代码，而是在指定的延迟时间后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setTimeout中的函数或代码可能会在预期的时间之后才被执行。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setTimeout</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="title function_">cleatTimeout</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="12-setinterval"><a class="markdownIt-Anchor" href="#12-setinterval"></a> 1.2. setInterval</h2>
-<p>  <strong>setInterval是JavaScript中的一个函数，用于在指定的时间间隔后重复执行一段代码或函数。它的工作原理是在指定的时间间隔后，将代码或函数放入JavaScript的事件队列中，等待当前代码执行完毕后再执行。</strong></p>
-<p><strong>setInterval的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(<span class="function">()=&gt;</span>||<span class="string">&#x27;func()&#x27;</span>,delay,[args...])</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>func|code</code>：要执行的函数或代码。</p>
-</li>
-<li class="lvl-2">
-<p><code>delay</code>：时间间隔，以毫秒为单位。</p>
-</li>
-<li class="lvl-2">
-<p><code>arg1, arg2, ...</code>：可选参数，表示传递给函数的参数。</p>
-</li>
-</ul>
-<p>  当使用setInterval时，它将在指定的时间间隔后重复执行函数或代码，直到调用<code>clearInterval()</code>方法来停止执行。与setTimeout不同的是，setInterval会持续不断地重复执行函数或代码，直到被明确停止。</p>
-<p>  需要注意的是，setInterval并不会立即执行函数或代码，而是在指定的时间间隔后放入事件队列中等待执行。如果当前的代码执行时间较长，或者存在其他的延迟操作，那么setInterval中的函数或代码可能会在预期的时间之后才被执行。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">args</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(args)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">setInterval</span>(test,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">setInterval</span>(<span class="string">&#x27;test()&#x27;</span>,<span class="number">1000</span>,[<span class="string">&#x27;test&#x27;</span>,<span class="string">&#x27;test1&#x27;</span>]);</span><br><span class="line"><span class="built_in">clearInterval</span>();</span><br></pre></td></tr></table></figure>
-<h2 id="13-requestanimationframe"><a class="markdownIt-Anchor" href="#13-requestanimationframe"></a> 1.3. requestAnimationFrame</h2>
-<p>  <strong>requestAnimationFrame是Web动画API的一部分，用于在浏览器下一次重绘之前调用指定的回调函数，从而实现平滑的动画效果。与setTimeout和setInterval相比，requestAnimationFrame具有更高的性能和更好的用户体验。</strong></p>
-<p><strong>requestAnimationFrame的语法如下：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">requestAnimationFrame</span>(callback);</span><br></pre></td></tr></table></figure>
-<p><strong>参数说明：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>callback</code>：要执行的回调函数。</p>
-</li>
-</ul>
-<p>  当使用requestAnimationFrame时，它会返回一个唯一的ID，可以使用这个ID来取消动画帧的调用。与setTimeout和setInterval不同的是，requestAnimationFrame的回调函数将在浏览器下一次重绘之前执行，而不是简单地等待指定的时间后执行。这样可以充分利用浏览器的重绘机制，实现更平滑的动画效果。</p>
-<p>  requestAnimationFrame的优势在于它能够根据浏览器的刷新率来同步动画，避免了由于不同的屏幕刷新率和硬件配置导致的动画卡顿和闪烁。同时，它也避免了在动画过程中不必要的重绘和计算，提高了动画的性能和响应性。</p>
-<p>  使用requestAnimationFrame时需要注意，它只会在浏览器处于激活状态时执行回调函数。如果浏览器处于最小化或隐藏状态，那么回调函数将不会被执行。因此，在使用requestAnimationFrame时，需要确保浏览器处于激活状态，或者在回调函数中添加适当的逻辑来处理浏览器不处于激活状态的情况。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">frame</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;frame&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">requestAnimationFrame</span>(frame);</span><br></pre></td></tr></table></figure>
-<h1 id="2-标签动画"><a class="markdownIt-Anchor" href="#2-标签动画"></a> 2. 标签动画</h1>
-<p>  使用 <code>requestAnimationFrame</code> 可以替代 <code>setInterval</code> 来实现定时任务，因为 <code>requestAnimationFrame</code> 更加高效，能够根据屏幕刷新率来同步动画，避免了不必要的重绘和计算。</p>
-<p>下面是使用 <code>requestAnimationFrame</code> 实现 <code>setInterval</code> 更新<code>博客</code>- <a href="/tags">标签</a>的示例代码：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * 兼容不支持requestAnimationFrame的浏览器</span></span><br><span class="line"><span class="comment"> ***/</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">requestAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitRequestAnimationFrame</span> ||<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozRequestAnimationFrame</span> ||<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oRequestAnimationFrame</span>      ||<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msRequestAnimationFrame</span>     ||<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="keyword">function</span> (<span class="params">callback</span>) &#123;</span><br><span class="line">      <span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(callback, <span class="number">6000</span> / <span class="number">60</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> = (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">window</span>.<span class="property">cancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">webkitCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">mozCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">oCancelAnimationFrame</span> ||</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">msCancelAnimationFrame</span> || <span class="built_in">clearTimeout</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 设置精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">function</span>&#125; 回调函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125;   延迟时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;  定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="keyword">function</span> <span class="title function_">setIntervalPrecision</span>(<span class="params">callback, delay</span>) &#123;</span><br><span class="line">  <span class="comment">// 生成并记录定时器ID</span></span><br><span class="line">  <span class="keyword">let</span> obj = <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> || (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span> = &#123; <span class="attr">num</span>: <span class="number">0</span> &#125;)</span><br><span class="line">  obj.<span class="property">num</span>++</span><br><span class="line">  obj[<span class="string">&#x27;n&#x27;</span> + obj.<span class="property">num</span>] = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">var</span> intervalId = obj.<span class="property">num</span></span><br><span class="line">  <span class="comment">// 开始时间</span></span><br><span class="line">  <span class="keyword">var</span> startTime = +<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">  <span class="comment">// 已执行次数</span></span><br><span class="line">  <span class="keyword">var</span> count = <span class="number">0</span></span><br><span class="line">  <span class="comment">// 延迟时间</span></span><br><span class="line">  delay = delay || <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ;(<span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 定时器被清除，则终止</span></span><br><span class="line">    <span class="keyword">if</span> (!obj[<span class="string">&#x27;n&#x27;</span> + intervalId]) <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 满足条件执行回调</span></span><br><span class="line">    <span class="keyword">if</span> (+<span class="keyword">new</span> <span class="title class_">Date</span>() &gt; startTime + delay * (count + <span class="number">1</span>)) &#123;</span><br><span class="line">      count++</span><br><span class="line">      <span class="title function_">callback</span>(count)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">requestAnimationFrame</span>(loop)</span><br><span class="line">  &#125;)()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> intervalId</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 清除精度定时器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; 定时器ID</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clearIntervalPrecision</span>(<span class="params">intervalId</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">cancelAnimationFrame</span>(<span class="string">&#x27;n&#x27;</span> + intervalId)</span><br><span class="line">    <span class="keyword">delete</span> <span class="variable language_">window</span>.<span class="property">interValPrecisionObj</span>[<span class="string">&#x27;n&#x27;</span> + intervalId]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//loopHover 自己的业务实现</span></span><br><span class="line"><span class="title function_">setIntervalPrecision</span>(loopHover, <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-        <tag>react</tag>
-        <tag>javascript</tag>
-        <tag>typescript</tag>
-        <tag>setTimeout</tag>
-        <tag>setInterval</tag>
-        <tag>requestAnimationFrame</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于k8s、traefik、springboot的微服务实践</title>
-    <url>//*/3382022550.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大盘鸡🐔</title>
-    <url>//*/c43e7c0d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>吃鸡最痛快的吃法之一，一定有大盘鸡。</p>
-<span id="more"></span>
-<h1 id="食材"><a class="markdownIt-Anchor" href="#食材"></a> 食材</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>鸡肉</p>
-</li>
-<li class="lvl-2">
-<p>梅花肉</p>
-</li>
-<li class="lvl-2">
-<p>土豆</p>
-</li>
-<li class="lvl-2">
-<p>洋葱</p>
-</li>
-<li class="lvl-2">
-<p>青椒</p>
-</li>
-<li class="lvl-2">
-<p>大葱</p>
-</li>
-<li class="lvl-2">
-<p>姜</p>
-</li>
-<li class="lvl-2">
-<p>蒜</p>
-</li>
-<li class="lvl-2">
-<p>八角</p>
-</li>
-<li class="lvl-2">
-<p>花椒</p>
-</li>
-<li class="lvl-2">
-<p>干辣椒</p>
-</li>
-<li class="lvl-2">
-<p>啤酒</p>
-</li>
-</ul>
-<h1 id="调味料"><a class="markdownIt-Anchor" href="#调味料"></a> 调味料</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>花生油 20ml</p>
-</li>
-<li class="lvl-2">
-<p>郫县豆瓣酱 10ml</p>
-</li>
-<li class="lvl-2">
-<p>盐 5g</p>
-</li>
-<li class="lvl-2">
-<p>鸡精 5g</p>
-</li>
-<li class="lvl-2">
-<p>味精 5g</p>
-</li>
-<li class="lvl-2">
-<p>生抽 5g</p>
-</li>
-<li class="lvl-2">
-<p>蚝油5ml</p>
-</li>
-</ul>
-<h1 id="操作"><a class="markdownIt-Anchor" href="#操作"></a> 操作</h1>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>起锅烧油，放入梅花肉打底炒出油；</p>
-</li>
-<li class="lvl-2">
-<p>放入豆瓣炒出红油，放入八角、花椒、干辣椒；</p>
-</li>
-<li class="lvl-2">
-<p>放入洗干净的鸡肉，炒至肉质紧实；</p>
-</li>
-<li class="lvl-2">
-<p>放入大葱，盐、鸡精、生抽、蚝油；</p>
-</li>
-<li class="lvl-2">
-<p>翻炒2分钟，加入两罐啤酒，炖15分钟；</p>
-</li>
-<li class="lvl-2">
-<p>最后放入土豆、青椒、洋葱，再炖5分钟；</p>
-</li>
-<li class="lvl-2">
-<p>放入味精，搅拌均匀后出锅；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>菜谱</category>
-      </categories>
-      <tags>
-        <tag>大盘鸡</tag>
-        <tag>美食</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>奇怪的梦</title>
-    <url>//*/2afb063d.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="0a751ab2cab789f89ab563c1df7773ac753b4ac0f92147c2c3b943ed66d2bbde">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01101c2c8c781e0b1cd8c2268fc4efcf73eca9ec52ed737c3e4b1fc88ab5677a7f6b2a62a2e14f94a5baf9c3196a1aa8cb0da095c4d0a4032935d7df8bfad0a2f3b9b456191eff772b024a0d4a32d85d8f8524dec24a9148950127e2adbd9a26578ed16c252bf25c35426dd6517a40c5926e1c6cb8e8294e15ca5801107d94b580ec386c3f00be8540f1b49668ebacc077b6f3336c569dec0e085e833399f37688fd7b3c47f3e1e8de882e4b6d5cd64ac86338f967fc35d1d4eea06035b826eabe2263698ba13b225d97d2c771bb4de617fbafd3c0ffdae4e1e5d3ac1b8ff8491459ea01b954978e52bb44a32630d794663cfc88878f79a6bacc313b01a3e51978bf4e192b35648c90677ab09dfb00fc6d631338b2548542f4858da83e9228d11046a4a1c7726c45eb62eae142e6cb91a36b39470de9bdf2b4e3cd34c2bb3877418d5917305a89b60398ec3dc1e825a69c38ea2a836766665c449052b4c1a682e0f73f068cfbfc28df6cc44b83779e372403309ebbf7ed049e5737817025d9a295ffa9c27673cf2ecc30a20288465b51963d3d0a46d1142ae2a039664f06c2d95e9624899b2987d27754d20a494f7d36c0</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇怪</tag>
-        <tag>梦</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安全风险评估</title>
-    <url>//*/2576489939.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
-<span id="more"></span>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 工人、工厂、设施、设备。</p>
-<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
-<p>采集数据:</p>
-<ul class="lvl-2">
-<li class="lvl-4">
-<p>视频监控</p>
-</li>
-<li class="lvl-4">
-<p>机械设备状态</p>
-</li>
-<li class="lvl-4">
-<p>化学物质 （有害物质…）</p>
-</li>
-<li class="lvl-4">
-<p>厂区环境（温湿度）</p>
-</li>
-<li class="lvl-4">
-<p>工人 （行为）</p>
-</li>
-<li class="lvl-4">
-<p>等…系列影响安全风险的重要指标数据</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="检测"><a class="markdownIt-Anchor" href="#检测"></a> 检测</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 生产过程中的环节检测。</p>
-<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
-<p>…</p>
-</li>
-</ul>
-<h2 id="决策"><a class="markdownIt-Anchor" href="#决策"></a> 决策</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>适用范围: 辅助决策</p>
-<p>通过以上结果知道生产过程…</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>安全</tag>
-        <tag>检测</tag>
-        <tag>策略</tag>
-        <tag>预测</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>开年大吉，工作顺利！</title>
     <url>//*/73b21f0a.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div style="display:flex;justify-content: center;">
@@ -3859,24 +3725,6 @@ section 运维阶段
       <categories>
         <category>工作</category>
       </categories>
-  </entry>
-  <entry>
-    <title>我们不像诗歌</title>
-    <url>//*/340466787.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p>我们不像诗歌</p>
-<p> --才华横溢,</p>
-<p>我们拒绝押韵。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>少年</tag>
-        <tag>年轻</tag>
-        <tag>诗歌</tag>
-      </tags>
   </entry>
   <entry>
     <title>打造自己的产品 1</title>
@@ -3941,6 +3789,24 @@ section 运维阶段
         <tag>墨刀</tag>
         <tag>github</tag>
         <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我们不像诗歌</title>
+    <url>//*/340466787.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p>我们不像诗歌</p>
+<p> --才华横溢,</p>
+<p>我们拒绝押韵。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>少年</tag>
+        <tag>年轻</tag>
+        <tag>诗歌</tag>
       </tags>
   </entry>
   <entry>
@@ -4249,6 +4115,81 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>生活计划</title>
+    <url>//*/2784064196.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>
+所以，我深刻的意识到有一个健康的身体太重要了。</p>
+<span id="more"></span>
+<p>以下是我近期的生活计划</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>项目</th>
+<th>时长</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>06:00</td>
+<td>山地车</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>08:00</td>
+<td>早饭 、洗漱</td>
+<td>1h</td>
+</tr>
+<tr>
+<td>09:00</td>
+<td>工作时间</td>
+<td>3h</td>
+</tr>
+<tr>
+<td>12:00</td>
+<td>午饭、午休</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>14:00</td>
+<td>工作时间</td>
+<td>4h</td>
+</tr>
+<tr>
+<td>18:00</td>
+<td>遛娃、买菜、做饭</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>20:00</td>
+<td>孩子洗澡</td>
+<td>1h</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td>二人世界</td>
+<td>2h</td>
+</tr>
+<tr>
+<td>–</td>
+<td>结束</td>
+<td>14h</td>
+</tr>
+</tbody>
+</table>
+<p>饮食（待补充…）</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>山地车</tag>
+        <tag>篮球</tag>
+        <tag>羽毛球</tag>
+        <tag>带孩子</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一篇博客</title>
     <url>//*/4278564287.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <strong>今天是 2018 年 05 月 30 日，2015 年的昨天是我们第一次见面，今天是我们第一次看电影,我们的所有日子都记得，宝宝是 2017 年 12 月 22 日 早上 05:15 分 出生</strong>。</p>
@@ -4399,81 +4340,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>生活计划</title>
-    <url>//*/2784064196.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>有段没有更新博客了，最近身体状态堪忧，加上忙碌，孩子生病，我也支气管炎，怎么吃药都不见好。<br>
-所以，我深刻的意识到有一个健康的身体太重要了。</p>
-<span id="more"></span>
-<p>以下是我近期的生活计划</p>
-<table>
-<thead>
-<tr>
-<th>时间</th>
-<th>项目</th>
-<th>时长</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>06:00</td>
-<td>山地车</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>08:00</td>
-<td>早饭 、洗漱</td>
-<td>1h</td>
-</tr>
-<tr>
-<td>09:00</td>
-<td>工作时间</td>
-<td>3h</td>
-</tr>
-<tr>
-<td>12:00</td>
-<td>午饭、午休</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>14:00</td>
-<td>工作时间</td>
-<td>4h</td>
-</tr>
-<tr>
-<td>18:00</td>
-<td>遛娃、买菜、做饭</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>20:00</td>
-<td>孩子洗澡</td>
-<td>1h</td>
-</tr>
-<tr>
-<td>21:00</td>
-<td>二人世界</td>
-<td>2h</td>
-</tr>
-<tr>
-<td>–</td>
-<td>结束</td>
-<td>14h</td>
-</tr>
-</tbody>
-</table>
-<p>饮食（待补充…）</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>山地车</tag>
-        <tag>篮球</tag>
-        <tag>羽毛球</tag>
-        <tag>带孩子</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>//*/465957431.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <strong>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！_</strong></p>
@@ -4535,6 +4401,23 @@ section 运维阶段
 </li>
 </ol>
 ]]></content>
+  </entry>
+  <entry>
+    <title>英语学习</title>
+    <url>//*/1061411954.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
+<span id="more"></span>
+<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
+<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
+<p>待补充…</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>英语单词</tag>
+        <tag>入门</tag>
+      </tags>
   </entry>
   <entry>
     <title>芝麻叶糊涂面</title>
@@ -4629,23 +4512,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>英语学习</title>
-    <url>//*/1061411954.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>App: <code>duolinguo(多邻国)</code></p>
-<span id="more"></span>
-<p>你使用 Duolingo 的时候你不单单是在学外语，你还是个译者。Duolingo 里面还有一个 Strength（力量）的概念，所有学过的内容在一开始是满血状态的，但是随着时间流逝和你在其它相关练习犯错误，你的 strength 就会不断降低，这时候你就需要通过复习来保持满血状态，这就是我上面提到的，通过一个复习系统将学到的知识从短期记忆放到长期记忆里面，Duolingo 提供了一个非常科学有效的复习管理系统。</p>
-<p>语法手册《无敌英语语法终身学习版(最新修订)》</p>
-<p>待补充…</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>英语单词</tag>
-        <tag>入门</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>表单中心功能清单</title>
     <url>//*/74a10861.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -4673,15 +4539,39 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>边缘计算 1</title>
+    <url>//*/751843018.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
+<span id="more"></span>
+<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
+<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
+<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
+<blockquote>
+<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
+</blockquote>
+<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
+<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
+<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+        <tag>雾计算</tag>
+        <tag>边缘计算</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-OKVytyMo" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-KPJxxDdi" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-OKVytyMo"),
+            element: document.getElementById("aplayer-KPJxxDdi"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -4721,30 +4611,6 @@ section 运维阶段
         <tag>有趣</tag>
         <tag>人生</tag>
         <tag>春天</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>边缘计算 1</title>
-    <url>//*/751843018.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="0-云计算"><a class="markdownIt-Anchor" href="#0-云计算"></a> 0 云计算</h2>
-<span id="more"></span>
-<h2 id="1-雾计算"><a class="markdownIt-Anchor" href="#1-雾计算"></a> 1 雾计算</h2>
-<h2 id="2-边缘计算"><a class="markdownIt-Anchor" href="#2-边缘计算"></a> 2 边缘计算</h2>
-<h3 id="2-1-什么是边缘计算"><a class="markdownIt-Anchor" href="#2-1-什么是边缘计算"></a> 2-1 什么是边缘计算?</h3>
-<blockquote>
-<p><em>边缘计算是为应用开发者和服务提供商在网络的边缘侧提供云服务和IT环境服务；目标是在靠近数据输入或用户的地方提供计算、存储和网络带宽</em>   —  OpenStack 社区</p>
-</blockquote>
-<p>通俗地说：边缘计算本质上是一种服务，就类似于云计算、大数据服务，但这种服务非常靠近用户；为什么要这么近？目的是为了让用户感觉到刷什么内容都特别快。</p>
-<p>边缘计算着重要解决的问题，是传统云计算（或者说是中央计算）模式下存在的高延迟、网络不稳定和低带宽问题。举一个现实的例子，几乎所有人都遇到过手机APP 出现404错误的情况 ，这样的一些错误出现就和网络状况、云服务器带宽限制有关系。由于资源条件的限制，云计算服务不可避免收到高延迟、和网络不稳定带来的影响，但是通过将部分或者全部处理程序迁移至靠近用户或数据收集点，边缘计算能够大大减少在云中心模式站点下给应用程序所带来的影响。</p>
-<h3 id="2-2-为什么需要边缘计算"><a class="markdownIt-Anchor" href="#2-2-为什么需要边缘计算"></a> 2-2 为什么需要边缘计算？</h3>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-        <tag>雾计算</tag>
-        <tag>边缘计算</tag>
       </tags>
   </entry>
   <entry>
@@ -5224,22 +5090,6 @@ ExcelUtil --> RecordHandler</pre>
       </tags>
   </entry>
   <entry>
-    <title>鲁迅先生写道: 父母存在的意义</title>
-    <url>//*/2375039249.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
-<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
-父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>鲁迅先生</tag>
-        <tag>父母</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>麻辣炒虾尾 🦞</title>
     <url>//*/9ddcf808.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我媳妇、儿子最喜欢的菜之一</p>
@@ -5324,6 +5174,156 @@ ExcelUtil --> RecordHandler</pre>
         <tag>美食</tag>
         <tag>虾尾</tag>
         <tag>麻辣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅先生写道: 父母存在的意义</title>
+    <url>//*/2375039249.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+<p><strong>鲁迅先生写父母存在的意义是：</strong><br>
+父母存在的意义不是给予孩子舒适和富裕的生活，而是当你想到你的父母时你的内心就会充满力量，会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>鲁迅先生</tag>
+        <tag>父母</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安全风险评估</title>
+    <url>//*/2576489939.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="评估"><a class="markdownIt-Anchor" href="#评估"></a> 评估</h2>
+<span id="more"></span>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 工人、工厂、设施、设备。</p>
+<p>大数据采集输入各类数据，交由机器学习给出综合的数据指标，最后经过一系列的 <s>公式</s> 得出最终的评估结果。</p>
+<p>采集数据:</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>视频监控</p>
+</li>
+<li class="lvl-4">
+<p>机械设备状态</p>
+</li>
+<li class="lvl-4">
+<p>化学物质 （有害物质…）</p>
+</li>
+<li class="lvl-4">
+<p>厂区环境（温湿度）</p>
+</li>
+<li class="lvl-4">
+<p>工人 （行为）</p>
+</li>
+<li class="lvl-4">
+<p>等…系列影响安全风险的重要指标数据</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="检测"><a class="markdownIt-Anchor" href="#检测"></a> 检测</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 生产过程中的环节检测。</p>
+<p>大数据采集流水线各类数据，交由机器学习给出综合的数据指标。</p>
+<p>…</p>
+</li>
+</ul>
+<h2 id="决策"><a class="markdownIt-Anchor" href="#决策"></a> 决策</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>适用范围: 辅助决策</p>
+<p>通过以上结果知道生产过程…</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>安全</tag>
+        <tag>检测</tag>
+        <tag>策略</tag>
+        <tag>预测</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Transformer模型</title>
+    <url>//*/e4b8a22b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  Transformer模型最早是由Google的研究团队在2017年提出的，并在论文《Attention is All You Need》<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 中进行了详细的介绍。这个模型是为了解决自然语言处理（NLP）任务中的一些问题而设计的，特别是为了克服传统循环神经网络（RNN）和长短期记忆网络（LSTM）在处理长序列时的局限性，如梯度消失或梯度爆炸问题。</p>
+<p>  Transformer模型的核心思想是使用自注意力机制（Self-Attention Mechanism）来捕捉输入序列中的依赖关系。这种机制允许模型在处理每个输入元素时，都能够关注到输入序列中的所有其他元素，从而能够捕捉到更长的依赖关系。此外，Transformer模型还采用了位置编码（Positional Encoding）来弥补模型本身不具备处理序列顺序的能力。</p>
+<p>  Transformer模型由两部分组成：编码器（Encoder）和解码器（Decoder）。编码器负责将输入序列转换为一系列向量表示，而解码器则负责根据这些向量表示生成输出序列。这两部分都由多个相同的层堆叠而成，每一层都包含一个多头自注意力子层和一个简单的全连接前馈神经网络。</p>
+<p>  由于Transformer模型不依赖RNN的顺序结构，因此它可以实现高效的并行化训练，这使得它在处理大规模数据集时具有显著的优势。此外，Transformer模型的强大表示能力和灵活性使得它在多个NLP任务上都取得了显著的效果，成为了自然语言处理领域的一种主流模型。</p>
+<p>  总的来说，Transformer模型是Google研究团队在2017年提出的一种基于自注意力机制的深度学习模型，它的出现为自然语言处理领域的发展带来了革命性的突破。</p>
+<p>引用:</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://zhuanlan.zhihu.com/p/647249972">Text-to-SQL小白入门（一）</a></p>
+</li>
+<li class="lvl-2">
+<p><a href="https://zhuanlan.zhihu.com/p/650407036">Text-to-SQL小白入门（二）</a></p>
+</li>
+</ul>
+<p>原论文:</p>
+
+
+	<div class="row">
+    <embed src="/images/1706.03762.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>《Attention is All You Need》 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>NLP</tag>
+        <tag>text2sql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次gogs踩坑之路</title>
+    <url>//*/1398242790.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>一定要按照操作步骤走</p>
+<span id="more"></span>
+<p>1.创建用户，一定要记住密码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo adduser git</span><br><span class="line">su git</span><br><span class="line">cd ~</span><br></pre></td></tr></table></figure>
+<p>2.下载并解压安装包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip</span><br><span class="line">unzip gogs_0.11.43_linux_amd64.zip</span><br></pre></td></tr></table></figure>
+<p>3.拷贝启动项到系统下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp /home/xx/gogs/scripts/init/debian/gogs /etc/init.d/</span><br><span class="line">chmod +x /etc/init.d/gogs</span><br></pre></td></tr></table></figure>
+<p>4.安装 mysql</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install mysql-server</span><br><span class="line">mysql -u root -p &lt; /home/xx/gogs/scripts/mysql.sql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">&gt; # （输入密码）</span><br><span class="line">&gt; create user &#x27;gogs&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">&gt; grant all privileges on gogs.* to &#x27;gogs&#x27;@&#x27;localhost&#x27;;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; exit;</span><br></pre></td></tr></table></figure>
+<p>5.启动 gogs</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service gogs start</span><br><span class="line">curl -I http://localhost:3000  =&gt; HTTP OK 200</span><br></pre></td></tr></table></figure>
+<p>6.nginx 配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  www.example.com;</span><br><span class="line">      location / &#123;</span><br><span class="line">          proxy_pass http://localhost:3000/;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>7.访问 <a href="http://www.example.com/install">www.example.com/install</a> 进行初始化</p>
+<p>8.你可能遇到的问题</p>
+<p><a href="https://blog.csdn.net/u013710784/article/details/78778044">Gogs 与 Linux 主机共享 SSH22 端口</a></p>
+<p><a href="https://blog.csdn.net/bigsea622/article/details/53956786">装 Gogs 后 ssh 无法和远程登录同时使用的解决方案</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>gogs</tag>
+        <tag>ubuntu 14.04</tag>
       </tags>
   </entry>
 </search>
