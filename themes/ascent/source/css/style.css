@@ -111,6 +111,7 @@ body {
 
 .nav-link-first{
   font-size: 1.5em;
+  min-width: 240px;
 }
 
 .nav-link,
