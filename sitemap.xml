@@ -145,7 +145,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js/index.html</loc>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js/demo.html</loc>
     
     <lastmod>2026-10-17T14:19:03.910Z</lastmod>
     
@@ -158,7 +158,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js/demo.html</loc>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js/index.html</loc>
     
     <lastmod>2026-10-17T14:19:03.910Z</lastmod>
     
@@ -405,19 +405,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/package.json</loc>
-    
-    <lastmod>2026-10-17T14:19:03.886Z</lastmod>
-    
-
-    <id></id>
-    <date>1792246743886</date>
-    <title> | sudo rm -rf /*</title>
-    
-    <desc>{"name":"reveal.js-mermaid-plugin","version":"2.2.0","description":"A mermaid plugin for reveal.js.","homepage":"https://zjffun.github.io/reveal.js-mermaid-plugin","main":"plugin/mermaid/mermaid.js","</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
     
     <lastmod>2026-10-17T14:19:03.886Z</lastmod>
@@ -428,6 +415,19 @@
     <title> | sudo rm -rf /*</title>
     
     <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/package.json</loc>
+    
+    <lastmod>2026-10-17T14:19:03.886Z</lastmod>
+    
+
+    <id></id>
+    <date>1792246743886</date>
+    <title> | sudo rm -rf /*</title>
+    
+    <desc>{"name":"reveal.js-mermaid-plugin","version":"2.2.0","description":"A mermaid plugin for reveal.js.","homepage":"https://zjffun.github.io/reveal.js-mermaid-plugin","main":"plugin/mermaid/mermaid.js","</desc>
   </url>
   
   <url>
@@ -635,7 +635,7 @@
     <date>1584802640000</date>
     <title>路 | sudo rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-XkwdzvHl"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-MuTyBHxT"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
@@ -649,6 +649,19 @@
     <title>边缘计算 1 | sudo rm -rf /*</title>
     
     <desc>边缘计算、云计算、雾计算的区别</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/7178be5f.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
+    
+
+    <id>7178be5f</id>
+    <date>1681263894000</date>
+    <title>通用excel导入设计 | sudo rm -rf /*</title>
+    
+    <desc>业务场景: 上传excel按需写入字段； 覆盖更新数据；</desc>
   </url>
   
   <url>
@@ -704,19 +717,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/7178be5f.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
-    
-
-    <id>7178be5f</id>
-    <date>1681263894000</date>
-    <title>通用excel导入设计 | sudo rm -rf /*</title>
-    
-    <desc>业务场景: 上传excel按需写入字段； 覆盖更新数据；</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/1406322052.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -740,6 +740,19 @@
     <title>mybatis动态查询实现 | sudo rm -rf /*</title>
     
     <desc>mybatis动态查询实现</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/202678719.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>202678719</id>
+    <date>1665383881000</date>
+    <title>mysql 'No DataSource Set'解决办法 | sudo rm -rf /*</title>
+    
+    <desc></desc>
   </url>
   
   <url>
@@ -769,16 +782,16 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/202678719.html</loc>
+    <loc>https://sudo.rm-rf.ink/*/3031836898.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
 
-    <id>202678719</id>
-    <date>1665383881000</date>
-    <title>mysql 'No DataSource Set'解决办法 | sudo rm -rf /*</title>
+    <id>3031836898</id>
+    <date>1528128000000</date>
+    <title>阿里云mysql外网访问 | sudo rm -rf /*</title>
     
-    <desc></desc>
+    <desc>阿里云 ecs 上安装了 mysql 但是外网访问不了</desc>
   </url>
   
   <url>
@@ -938,19 +951,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/1634039770.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>1634039770</id>
-    <date>1585621918000</date>
-    <title>笔记2-《程序员数学-1》 | sudo rm -rf /*</title>
-    
-    <desc>程序员数学1-逻辑</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/965849311.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -964,6 +964,19 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/*/1634039770.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>1634039770</id>
+    <date>1585621918000</date>
+    <title>笔记2-《程序员数学-1》 | sudo rm -rf /*</title>
+    
+    <desc>程序员数学1-逻辑</desc>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/*/375539532.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -974,6 +987,19 @@
     <title>笔记3-《程序员数学-1》 | sudo rm -rf /*</title>
     
     <desc>程序员数学1 - 余数</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/c88b93d0.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>c88b93d0</id>
+    <date>1708304867000</date>
+    <title>笔记4-《程序员数学-1》 | sudo rm -rf /*</title>
+    
+    <desc></desc>
   </url>
   
   <url>
@@ -1055,19 +1081,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/2576489939.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>2576489939</id>
-    <date>1597714380000</date>
-    <title>安全风险评估 | sudo rm -rf /*</title>
-    
-    <desc>安全风险在工业中的应用</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/2afb063d.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -1081,6 +1094,19 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/*/2576489939.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>2576489939</id>
+    <date>1597714380000</date>
+    <title>安全风险评估 | sudo rm -rf /*</title>
+    
+    <desc>安全风险在工业中的应用</desc>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/*/73b21f0a.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -1089,19 +1115,6 @@
     <id>73b21f0a</id>
     <date>1708239620000</date>
     <title>开年大吉，工作顺利！ | sudo rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/*/340466787.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>340466787</id>
-    <date>1585293612000</date>
-    <title>我们不像诗歌 | sudo rm -rf /*</title>
     
     <desc></desc>
   </url>
@@ -1120,27 +1133,14 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/3031836898.html</loc>
+    <loc>https://sudo.rm-rf.ink/*/340466787.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
 
-    <id>3031836898</id>
-    <date>1528128000000</date>
-    <title>阿里云mysql外网访问 | sudo rm -rf /*</title>
-    
-    <desc>阿里云 ecs 上安装了 mysql 但是外网访问不了</desc>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/*/c88b93d0.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>c88b93d0</id>
-    <date>1708304867000</date>
-    <title>笔记4-《程序员数学-1》 | sudo rm -rf /*</title>
+    <id>340466787</id>
+    <date>1585293612000</date>
+    <title>我们不像诗歌 | sudo rm -rf /*</title>
     
     <desc></desc>
   </url>
@@ -1367,19 +1367,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/c2cb16de.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
-    
-
-    <id>c2cb16de</id>
-    <date>1680856509000</date>
-    <title>4月份wbs | sudo rm -rf /*</title>
-    
-    <desc>文章加密了，需要输入密码查看</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/96208538.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
@@ -1390,6 +1377,19 @@
     <title>Hello Hermes Agent | sudo rm -rf /*</title>
     
     <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/c2cb16de.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
+    
+
+    <id>c2cb16de</id>
+    <date>1680856509000</date>
+    <title>4月份wbs | sudo rm -rf /*</title>
+    
+    <desc>文章加密了，需要输入密码查看</desc>
   </url>
   
   <url>
