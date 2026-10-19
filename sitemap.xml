@@ -340,6 +340,19 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/CHANGELOG.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.906Z</lastmod>
+    
+
+    <id></id>
+    <date>1792246743906</date>
+    <title> | sudo rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/README.html</loc>
     
     <lastmod>2026-10-17T14:19:03.906Z</lastmod>
@@ -354,19 +367,6 @@
   
   <url>
     <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/animate/README.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.906Z</lastmod>
-    
-
-    <id></id>
-    <date>1792246743906</date>
-    <title> | sudo rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/CHANGELOG.html</loc>
     
     <lastmod>2026-10-17T14:19:03.906Z</lastmod>
     
@@ -405,19 +405,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.886Z</lastmod>
-    
-
-    <id></id>
-    <date>1792246743886</date>
-    <title> | sudo rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/package.json</loc>
     
     <lastmod>2026-10-17T14:19:03.886Z</lastmod>
@@ -428,6 +415,19 @@
     <title> | sudo rm -rf /*</title>
     
     <desc>{"name":"reveal.js-mermaid-plugin","version":"2.2.0","description":"A mermaid plugin for reveal.js.","homepage":"https://zjffun.github.io/reveal.js-mermaid-plugin","main":"plugin/mermaid/mermaid.js","</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.886Z</lastmod>
+    
+
+    <id></id>
+    <date>1792246743886</date>
+    <title> | sudo rm -rf /*</title>
+    
+    <desc></desc>
   </url>
   
   <url>
@@ -635,7 +635,7 @@
     <date>1584802640000</date>
     <title>路 | sudo rm -rf /*</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-gKvXZAzM"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-XkwdzvHl"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
@@ -649,19 +649,6 @@
     <title>边缘计算 1 | sudo rm -rf /*</title>
     
     <desc>边缘计算、云计算、雾计算的区别</desc>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/*/7178be5f.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
-    
-
-    <id>7178be5f</id>
-    <date>1681263894000</date>
-    <title>通用excel导入设计 | sudo rm -rf /*</title>
-    
-    <desc>业务场景: 上传excel按需写入字段； 覆盖更新数据；</desc>
   </url>
   
   <url>
@@ -717,6 +704,19 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/*/7178be5f.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
+    
+
+    <id>7178be5f</id>
+    <date>1681263894000</date>
+    <title>通用excel导入设计 | sudo rm -rf /*</title>
+    
+    <desc>业务场景: 上传excel按需写入字段； 覆盖更新数据；</desc>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/*/1406322052.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -743,19 +743,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/202678719.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>202678719</id>
-    <date>1665383881000</date>
-    <title>mysql 'No DataSource Set'解决办法 | sudo rm -rf /*</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/9f600c63.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -769,19 +756,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/3031836898.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>3031836898</id>
-    <date>1528128000000</date>
-    <title>阿里云mysql外网访问 | sudo rm -rf /*</title>
-    
-    <desc>阿里云 ecs 上安装了 mysql 但是外网访问不了</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/1101146699.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -792,6 +766,19 @@
     <title>nginx支持ssl+acme.sh定时更新证书 | sudo rm -rf /*</title>
     
     <desc>acme.sh 、nginx、https</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/202678719.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>202678719</id>
+    <date>1665383881000</date>
+    <title>mysql 'No DataSource Set'解决办法 | sudo rm -rf /*</title>
+    
+    <desc></desc>
   </url>
   
   <url>
@@ -951,19 +938,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/965849311.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>965849311</id>
-    <date>1585538415000</date>
-    <title>笔记1-《程序员数学 1》 | sudo rm -rf /*</title>
-    
-    <desc>程序员数学-进制计数法</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/1634039770.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -977,6 +951,19 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/*/965849311.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>965849311</id>
+    <date>1585538415000</date>
+    <title>笔记1-《程序员数学 1》 | sudo rm -rf /*</title>
+    
+    <desc>程序员数学-进制计数法</desc>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/*/375539532.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -987,19 +974,6 @@
     <title>笔记3-《程序员数学-1》 | sudo rm -rf /*</title>
     
     <desc>程序员数学1 - 余数</desc>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/*/c88b93d0.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>c88b93d0</id>
-    <date>1708304867000</date>
-    <title>笔记4-《程序员数学-1》 | sudo rm -rf /*</title>
-    
-    <desc></desc>
   </url>
   
   <url>
@@ -1081,19 +1055,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/2afb063d.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-
-    <id>2afb063d</id>
-    <date>1706148551000</date>
-    <title>奇怪的梦 | sudo rm -rf /*</title>
-    
-    <desc>文章加密了，需要输入密码查看</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/2576489939.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -1107,6 +1068,19 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/*/2afb063d.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>2afb063d</id>
+    <date>1706148551000</date>
+    <title>奇怪的梦 | sudo rm -rf /*</title>
+    
+    <desc>文章加密了，需要输入密码查看</desc>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/*/73b21f0a.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -1115,6 +1089,19 @@
     <id>73b21f0a</id>
     <date>1708239620000</date>
     <title>开年大吉，工作顺利！ | sudo rm -rf /*</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/340466787.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>340466787</id>
+    <date>1585293612000</date>
+    <title>我们不像诗歌 | sudo rm -rf /*</title>
     
     <desc></desc>
   </url>
@@ -1133,14 +1120,27 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/340466787.html</loc>
+    <loc>https://sudo.rm-rf.ink/*/3031836898.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
 
-    <id>340466787</id>
-    <date>1585293612000</date>
-    <title>我们不像诗歌 | sudo rm -rf /*</title>
+    <id>3031836898</id>
+    <date>1528128000000</date>
+    <title>阿里云mysql外网访问 | sudo rm -rf /*</title>
+    
+    <desc>阿里云 ecs 上安装了 mysql 但是外网访问不了</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/c88b93d0.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+
+    <id>c88b93d0</id>
+    <date>1708304867000</date>
+    <title>笔记4-《程序员数学-1》 | sudo rm -rf /*</title>
     
     <desc></desc>
   </url>
@@ -1208,6 +1208,19 @@
     <title>生活计划 | sudo rm -rf /*</title>
     
     <desc>有一个健康的身体太重要了</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/2cd67ed1.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
+    
+
+    <id>2cd67ed1</id>
+    <date>1538755200000</date>
+    <title>程序员数学1 | sudo rm -rf /*</title>
+    
+    <desc>程序员数学1</desc>
   </url>
   
   <url>
@@ -1338,19 +1351,6 @@
     <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记 | sudo rm -rf /*</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/*/2cd67ed1.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
-    
-
-    <id>2cd67ed1</id>
-    <date>1538755200000</date>
-    <title>程序员数学1 | sudo rm -rf /*</title>
-    
-    <desc>程序员数学1</desc>
   </url>
   
   <url>
