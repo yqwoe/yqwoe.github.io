@@ -8,12 +8,8 @@
     {% elif post.date %}
     <lastmod>{{ post.date.toISOString() }}</lastmod>
     {% endif %}
-
-    <id>{{ post.abbrlink }}</id>
-    <date>{{ post.date }}</date>
-    <title>{{ post.title + ' | ' + config.title }}</title>
-    {# nunjucks 模版语法 https://github.com/mozilla/nunjucks #}
-    <desc>{{ post.description | default(post.excerpt) | default(post.content) | default(config.description) | striptags | truncate(200, true, '') }}</desc>
+    <changefreq>monthly</changefreq>
+    <priority>{{ '0.8' if loop.index <= 10 else '0.6' }}</priority>
   </url>
   {% endfor %}
 </urlset>
