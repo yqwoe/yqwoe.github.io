@@ -4,7 +4,7 @@
   <url>
     <loc>https://sudo.rm-rf.ink/*/550cdc1d.html</loc>
     
-    <lastmod>2026-10-19T01:45:26.425Z</lastmod>
+    <lastmod>2026-10-19T02:13:03.439Z</lastmod>
     
 
     <id>550cdc1d</id>
@@ -17,7 +17,7 @@
   <url>
     <loc>https://sudo.rm-rf.ink/*/f1125d9e.html</loc>
     
-    <lastmod>2026-10-19T01:45:26.424Z</lastmod>
+    <lastmod>2026-10-19T02:12:54.814Z</lastmod>
     
 
     <id>f1125d9e</id>
@@ -30,7 +30,7 @@
   <url>
     <loc>https://sudo.rm-rf.ink/*/9d757751.html</loc>
     
-    <lastmod>2026-10-19T01:45:26.423Z</lastmod>
+    <lastmod>2026-10-19T02:12:45.886Z</lastmod>
     
 
     <id>9d757751</id>
@@ -622,7 +622,7 @@
     <date>1584802640000</date>
     <title>路 | Viva La Vida</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-HmpGUdVr"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-nVLGkwXl"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
@@ -1510,19 +1510,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/*/1bc5f237.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.718Z</lastmod>
-    
-
-    <id>1bc5f237</id>
-    <date>1527782400000</date>
-    <title>过六一的"儿童"们 | Viva La Vida</title>
-    
-    <desc>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</desc>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/*/2d764bfc.html</loc>
     
     <lastmod>2026-10-17T14:19:03.718Z</lastmod>
@@ -1533,6 +1520,19 @@
     <title>给博客增加评论功能 | Viva La Vida</title>
     
     <desc>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：[giment.js](yqwoe.space/yqwoe.github.io/static/js/gitment.js)</desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/1bc5f237.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.718Z</lastmod>
+    
+
+    <id>1bc5f237</id>
+    <date>1527782400000</date>
+    <title>过六一的"儿童"们 | Viva La Vida</title>
+    
+    <desc>今天是六一儿童节，早早的起床给儿子去打疫苗，这对于小家伙来说应该是无比痛苦的吧。不过，比起热更痛苦的应该是挨上一针，和看着小家伙挨针的心情！！！</desc>
   </url>
   
   <url>
