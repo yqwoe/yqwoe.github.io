@@ -41,13 +41,37 @@
   </entry>
   
   <entry>
+    <title>什么时候该写测试，什么时候不该</title>
+    <link href="https://sudo.rm-rf.ink/*/550cdc1d.html"/>
+    <id>https://sudo.rm-rf.ink/*/550cdc1d.html</id>
+    <published>2026-10-19T01:00:00.000Z</published>
+    <updated>2026-10-19T02:16:41.463Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>测试是程序员的护栏，但不是每段代码都需要护栏。<span class="hl">判断在哪里架设护栏，比一直架设更重要。</span></p><h2 id="何时该写测试"><a class="markdownIt-Anchor" href="#何时该写测试"></a> 何时该写测试</h2><h3 id="当代码复杂且需要保障稳定性时"><a class="markdownIt-Anchor" href="#当代码复杂且需要保障稳定性时"></a> 当代码复杂且需要保障稳定性时</h3><p>复杂的算法实现和核心业务逻辑必须测。<span class="hl">这类错误的特点是：发生概率低，但一旦发生损失大。</span></p><p>银行交易系统每秒处理上万笔转账，任何一笔的数字错误都可能造成资损。这种场景下，测试的收益是清晰的：写测试的成本 &lt;&lt; 不写测试的期望损失。</p><blockquote><p>测试的作用不是证明代码正确，而是<span class="hl">降低代码变更时的信心成本</span>。当你修改一段复杂逻辑时，有测试和没测试是完全不同的心理状态。</p></blockquote><h3 id="当代码需要被多人长期维护时"><a class="markdownIt-Anchor" href="#当代码需要被多人长期维护时"></a> 当代码需要被多人长期维护时</h3><p>团队成员水平参差不齐，代码被易手的频率高。测试是<span class="hl">跨越时间传递设计意图的介质</span>。</p><p>新来的开发者读不懂旧代码，但他能看懂测试。测试告诉你：这个函数的预期输出是什么，边界条件是什么，错误情况怎么处理。</p><h2 id="何时不该写测试"><a class="markdownIt-Anchor" href="#何时不该写测试"></a> 何时不该写测试</h2><h3 id="当项目初期需要快速迭代时"><a class="markdownIt-Anchor" href="#当项目初期需要快速迭代时"></a> 当项目初期需要快速迭代时</h3><p>验证想法阶段不需要测试。<span class="hl">这个阶段的代码大概率会被重写，测试是给不存在的东西交的税。</span></p><p>一个 MVP 上线前花两周写测试，结果发现方向错了，测试全部白写。这是创业初期最常见的浪费。</p><p>判断标准：<span class="hl">这段代码预计会被重写吗？预期生命周期有多长？</span>生命周期短的代码，不值得测试。</p><h3 id="当项目规模较小且功能单一时"><a class="markdownIt-Anchor" href="#当项目规模较小且功能单一时"></a> 当项目规模较小且功能单一时</h3><p>三个人天的项目，代码总量不超过五百行。这种情况下写测试的工作量和收益不成比例。</p><blockquote><p>不是不测，而是测得更有针对性。只测那些：逻辑复杂容易出错、错误难以发现、崩溃后果严重的部分。</p></blockquote><h2 id="开放性思考"><a class="markdownIt-Anchor" href="#开放性思考"></a> 开放性思考</h2><p>测试不是目的，<span class="hl">系统的可信性才是</span>。</p><p>测试只是一种建立可信性的手段。还有其他手段：Code Review、类型系统、形式化验证、监控报警。它们各有各的成本和适用范围。</p><p>在真实项目中，往往是多种手段组合使用。选择哪些组合，取决于：系统规模、团队组成、变更频率、容错要求。</p><p><span class="hl">一个优秀的工程师，不是写测试最多的那个，而是最清楚在什么地方不写测试的那个。</span></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="编程哲学" scheme="https://sudo.rm-rf.ink/categories/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/"/>
+    
+    
+    <category term="编程哲学" scheme="https://sudo.rm-rf.ink/tags/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>防御性编程是一种过度设计吗</title>
     <link href="https://sudo.rm-rf.ink/*/f1125d9e.html"/>
     <id>https://sudo.rm-rf.ink/*/f1125d9e.html</id>
     <published>2026-10-18T01:00:00.000Z</published>
-    <updated>2026-10-19T02:12:54.814Z</updated>
+    <updated>2026-10-19T02:16:26.705Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>防御性编程是一种在编程中非常重视的编程方式，它要求开发人员在编写代码时不仅仅关注实现的功能，还要考虑到在各种异常情况下代码的运行效果，为代码的执行添加额外的保护层，以防止代码因输入数据异常、外部调用失败、系统状态变化等情况下出现各种问题，让程序在极端状态下仍然能够保持稳定。</p><h2 id="防御性编程的必要性"><a class="markdownIt-Anchor" href="#防御性编程的必要性"></a> 防御性编程的必要性</h2><p>在我看 来，防御性编程并不是一种过度设计，而是一种在保证代码可维护性上的必要设计。它不仅仅帮助开发者降低代码的复杂度，也降低了后期的维护成本。</p><p>例如在处理文件读取操作时，常规的做法是打开文件进行读取操作，但防御性编程则会考虑文件不存在的情况，通过检查文件是否存在再进行读取，即使出现文件不存在的异常，也能够保证程序的正常运行。</p><h2 id="一次性能问题的教训"><a class="markdownIt-Anchor" href="#一次性能问题的教训"></a> 一次性能问题的教训</h2><p>我之前开发的一个系统，涉及到大量的文件读写操作，但是一直困扰我的是一次性能问题。经过详细排查，发现根本原因竟然是在读取文件时，代码在处理文件不存在的问题上不够充分。由于缺乏防御性编程的设计，导致在某些极端情况下，读取文件时程序会抛出异常，进一步导致整个操作链路中的其他环节受到影响。</p><p>问题暴露后，我花了大量的时间修复代码，最终发现防御性编程在这些场景中的重要性。之后，我开始在代码中增加更多的异常处理逻辑，使得代码更加健壮。</p><h2 id="防御性编程的适用边界"><a class="markdownIt-Anchor" href="#防御性编程的适用边界"></a> 防御性编程的适用边界</h2><p>然而，防御性编程并非只有在读文件时才显得重要。在编程中，无论是函数参数还是内部变量，都应该加入适当的异常处理和边界值的处理。</p><p>防御性编程要求开发者在程序中尽量减少外部依赖，尽量将外部依赖封装到内部方法中，这样就可以避免外部依赖的影响。这不仅可以提高代码的可读性和可维护性，而且有助于提高程序的稳定性和健壮性。</p><p>在防御性编程中，最重要的一点就是，开发者在编程时应始终考虑到程序在极端条件下的运行状况。这不仅需要开发者具备良好的编程技能，更需要他们具备良好的思维模式和逻辑思维能力。在开发过程中，如何在满足需求的同时保证代码的鲁棒性，这其实是一种对编程的深度理解和把握。</p><h2 id="适度才是关键"><a class="markdownIt-Anchor" href="#适度才是关键"></a> 适度才是关键</h2><p>防御性编程是否属于一种过度设计，这取决于我们如何看待代码。在某种程度上，它是对代码质量的一种追求，但这种追求是必要的，也是值得的。</p><p>然而，我们也应该清楚地认识到，过度的防御性编程可能会使代码变得更复杂，更难以理解和维护，因此，如何在确保代码质量的同时降低复杂度，仍然需要我们不断寻找更合适的解决方案。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>防御性编程要求开发者在编写代码时考虑各种异常情况，为程序添加额外的保护层。争议在于：这是<span class="hl">理性设计</span>，还是<span class="hl">过度设计</span>？</p><p>我的结论是：取决于你在哪个层面做防御。</p><h2 id="防御性编程的必要性"><a class="markdownIt-Anchor" href="#防御性编程的必要性"></a> 防御性编程的必要性</h2><p>防御性编程不是给代码打补丁，而是<span class="hl">降低系统整体的复杂度</span>。</p><p>以文件读取为例：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">普通写法：打开文件 → 读取</span><br><span class="line">防御写法：检查文件存在 → 检查权限 → 检查编码 → 打开 → 读取</span><br></pre></td></tr></table></figure><p>表面看，防御写法代码行数更多。但如果不防御，文件不存在时程序崩溃，后续所有依赖这个文件数据的操作全部失效。<span class="hl">单点故障通过异常传播污染整个系统</span>。</p><blockquote><p>防御性编程把运行时崩溃转变为可预期的错误处理。代价是代码更长，收益是系统边界更清晰。</p></blockquote><h2 id="一次性能问题的教训"><a class="markdownIt-Anchor" href="#一次性能问题的教训"></a> 一次性能问题的教训</h2><p>我曾花了两周排查一个文件读写系统的性能问题。</p><p>根因：文件不存在时程序抛异常，异常捕获后再重试，这个重试逻辑没有 timeout。<span class="hl">每次文件操作失败都会触发一次指数退避重试</span>，导致某些节点上的操作延迟增加了三倍。</p><p>修复方法很简单：加上 timeout 判断，提前结束无效等待。但这个问题的根源是最初没有做<span class="hl">边界条件防御</span>。</p><p>教训：<span class="hl">防御性编程省下来的，是未来排查问题的深夜</span>。</p><h2 id="防御性编程的适用边界"><a class="markdownIt-Anchor" href="#防御性编程的适用边界"></a> 防御性编程的适用边界</h2><p>过度的防御性编程确实存在。</p><p><strong>过度场景</strong>：在一个内部工具里给每一个函数参数做类型检查和范围验证，写了两百行 Guard Clause 来防住永远不会被触发的异常输入。</p><p>判断标准：<span class="hl">防御的成本是否低于不防御的期望损失</span>。</p><ul class="lvl-0"><li class="lvl-2"><p>公开 API 的输入：必须防御。攻击面未知。</p></li><li class="lvl-2"><p>内部函数的参数：信任调用方，过度防御是浪费。</p></li><li class="lvl-2"><p>IO 操作（文件、网络、数据库）：必须防御。外部环境永远不可控。</p></li></ul><h2 id="适度才是关键"><a class="markdownIt-Anchor" href="#适度才是关键"></a> 适度才是关键</h2><p>防御性编程是一把尺子。量得准，它是保险；量过头，它是债务。</p><p><span class="hl">好的防御性编程发生在系统边界，不发生在核心逻辑内部。</span>把防御层做薄，把业务逻辑做厚——这是值得追求的架构倾向。</p>]]></content>
     
     
       
@@ -69,9 +93,9 @@
     <link href="https://sudo.rm-rf.ink/*/9d757751.html"/>
     <id>https://sudo.rm-rf.ink/*/9d757751.html</id>
     <published>2026-10-17T01:00:00.000Z</published>
-    <updated>2026-10-19T02:12:45.886Z</updated>
+    <updated>2026-10-19T02:16:14.115Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我是一个独立开发者，常常在技术博客上分享我的经验和见解，这也使我拥有了不少忠实的读者。然而，鲜少在社交媒体上发言，这并非技术博客写作的无奈选择，而是经过深思熟虑的结果。</p><h2 id="技术博客的读者群体与社交媒体的读者群体"><a class="markdownIt-Anchor" href="#技术博客的读者群体与社交媒体的读者群体"></a> 技术博客的读者群体与社交媒体的读者群体</h2><p>技术博客的读者往往对技术有着浓厚的兴趣，对新技术的期待和追求往往与我有着共同的价值观。他们更愿意通过技术博客获取信息，这能为他们提供更深入和有价值的技术洞见。</p><p>与此不同，社交媒体的读者群体则更加多元，他们的兴趣和需求往往分散，这与技术博客的读者群体有所不同。我常常看到一些社交媒体的帖子，分享的内容往往没有技术博客文章那么深入，这有时会让人感到失望。而我更希望和具有共同技术价值观的读者建立更深入的联系。</p><h2 id="技术博客写作带给我的成就感"><a class="markdownIt-Anchor" href="#技术博客写作带给我的成就感"></a> 技术博客写作带给我的成就感</h2><p>技术博客写作是一份既充实又令人自豪的工作。每次在博客上发布文章，看到读者们积极的回应，这都是对我努力的一种肯定。这种成就感是我非常看重的，这让我愿意花更多的时间在技术博客上。</p><p>然而，在社交媒体上发言，往往需要花费大量的时间来撰写高质量的内容，并且面对各种评论、点赞和分享，这会耗费大量的时间。如果我选择在社交媒体上发言，我可能无法给予自己充足的时间来深入探讨技术问题，这将影响我作为一个独立开发者的技术视野。因此，我选择专注于技术博客，既能让我保持技术写作的习惯，又能保持对技术的敏感度。</p><h2 id="技术博客与社交媒体的内容差异化"><a class="markdownIt-Anchor" href="#技术博客与社交媒体的内容差异化"></a> 技术博客与社交媒体的内容差异化</h2><p>技术博客的内容往往更注重深度，注重对复杂技术问题的探讨和解释。而社交媒体的内容则更注重娱乐性和即时性，更注重传递信息的简洁和流畅。</p><p>我选择专注于技术博客，是因为我相信这种内容的传递方式能够更好地帮助读者成长，而社交媒体更适用于与朋友分享有趣和娱乐性的信息。</p><p>然而，这并不意味着技术博客和社交媒体之间存在不可逾越的鸿沟。我仍然在社交媒体上关注一些技术博主，他们也在尝试将技术和娱乐结合，以吸引更多的受众。或许在未来，我们能在社交媒体上看到更高质量的技术内容，这将使两者之间的界限更加模糊，但它们仍然可以保持各自的优势。</p><h2 id="开放性思考"><a class="markdownIt-Anchor" href="#开放性思考"></a> 开放性思考</h2><p>在未来的某一天，技术博客与社交媒体能否融合在一起，形成一个既注重技术深度又注重娱乐性的生态系统？这是值得我们思考和探索的问题。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我活跃在一个对技术内容有真实需求的社区，但我在社交媒体上几乎不说话。这个选择不是内向，而是<span class="hl">经过计算的输出策略</span>。</p><h2 id="技术博客的读者群体与社交媒体的读者群体"><a class="markdownIt-Anchor" href="#技术博客的读者群体与社交媒体的读者群体"></a> 技术博客的读者群体与社交媒体的读者群体</h2><p>技术博客的读者是主动找上门的人——他们有具体问题，有耐心读完三千字的文章。社交媒体的读者是滑过信息流的人——<span class="hl">注意力是稀缺的，内容必须立刻产生价值</span>。这两个生态对作者的要求截然不同。</p><blockquote><p>我在技术博客写一篇文章，平均需要四到六小时。在社交媒体发一条动态，平均需要二十分钟。前者的投入产出比，对我更有意义。</p></blockquote><p>技术博客能建立<span class="hl">深度信任</span>。读者记住的是你解决了什么具体问题，不是一句巧妙的语录。</p><h2 id="技术博客写作带给我的成就感"><a class="markdownIt-Anchor" href="#技术博客写作带给我的成就感"></a> 技术博客写作带给我的成就感</h2><p>写完一篇技术文章，看到读者说&quot;这个问题困扰了我两周，读完解决了&quot;——这种反馈是即时的，也是持久的。</p><p>社交媒体上的互动是<span class="hl">消耗型的</span>。点赞和转发不等于理解，更不等于认同。一条帖子发出去，热度最多持续两天，然后就沉下去了。</p><p>我需要的是能够<span class="hl">沉淀</span>的东西。博客文章五年后仍然能被搜索引擎找到，社交媒体的帖子两天后就已经没人记得。</p><h2 id="技术博客与社交媒体的内容差异化"><a class="markdownIt-Anchor" href="#技术博客与社交媒体的内容差异化"></a> 技术博客与社交媒体的内容差异化</h2><p>技术博客适合承载<span class="hl">完整的论证过程</span>。为什么选择这个方案？有哪些替代方案？权衡在哪里？这些需要篇幅，也需要读者停下来思考。</p><p>社交媒体只能传递结论，不能传递推理。没有人在 Twitter 上写&quot;首先，其次，最后，因此&quot;。</p><blockquote><p>内容形式的差异，本质上是受众心智模式的差异。前者培养思考者，后者培养消费者。</p></blockquote><p>我选择做一个<span class="hl">持续输出深度内容的作者</span>，而不是一个<span class="hl">频繁输出短内容的账号</span>。</p><h2 id="开放性思考"><a class="markdownIt-Anchor" href="#开放性思考"></a> 开放性思考</h2><p>两者能否融合？技术博主用社交媒体引流，把深度内容留在博客——这已经是成熟的模式。</p><p>但对于我，更重要的问题是：<span class="hl">我的时间应该投入在哪里，才能产生最长半衰期的价值？</span></p><p>答案是博客。不是因为社交媒体没有价值，而是因为我的核心竞争力在于<span class="hl">系统性思考和完整表达</span>，这是博客的形态，不是社交媒体的。</p>]]></content>
     
     
       
@@ -495,28 +519,6 @@
     <category term="text2sql" scheme="https://sudo.rm-rf.ink/tags/text2sql/"/>
     
     <category term="机器学习" scheme="https://sudo.rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>笔记4-《程序员数学-1》</title>
-    <link href="https://sudo.rm-rf.ink/*/c88b93d0.html"/>
-    <id>https://sudo.rm-rf.ink/*/c88b93d0.html</id>
-    <published>2024-02-19T01:07:47.000Z</published>
-    <updated>2026-10-17T14:19:03.720Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
     
   </entry>
   

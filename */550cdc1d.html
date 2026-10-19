@@ -43,15 +43,15 @@
 <link rel="stylesheet" href="/css/highlight.css">
 
   
-  <meta name="description" content="在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。  何时该写测试  当代码复杂且需要保障稳定性时 在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部">
+  <meta name="description" content="测试是程序员的护栏，但不是每段代码都需要护栏。判断在哪里架设护栏，比一直架设更重要。  何时该写测试  当代码复杂且需要保障稳定性时 复杂的算法实现和核心业务逻辑必须测。这类错误的特点是：发生概率低，但一旦发生损失大。 银行交易系统每秒处理上万笔转账，任何一笔的数字错误都可能造成资损。这种场景下，测试的收益是清晰的：写测试的成本 &lt;&lt; 不写测试的期望损失。  测试的作用不是证明代码正确">
 <meta property="og:type" content="article">
 <meta property="og:title" content="什么时候该写测试，什么时候不该">
 <meta property="og:url" content="https://sudo.rm-rf.ink/*/550cdc1d.html">
 <meta property="og:site_name" content="Viva La Vida">
-<meta property="og:description" content="在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。  何时该写测试  当代码复杂且需要保障稳定性时 在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部">
+<meta property="og:description" content="测试是程序员的护栏，但不是每段代码都需要护栏。判断在哪里架设护栏，比一直架设更重要。  何时该写测试  当代码复杂且需要保障稳定性时 复杂的算法实现和核心业务逻辑必须测。这类错误的特点是：发生概率低，但一旦发生损失大。 银行交易系统每秒处理上万笔转账，任何一笔的数字错误都可能造成资损。这种场景下，测试的收益是清晰的：写测试的成本 &lt;&lt; 不写测试的期望损失。  测试的作用不是证明代码正确">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-10-19T01:00:00.000Z">
-<meta property="article:modified_time" content="2026-10-19T02:13:03.439Z">
+<meta property="article:modified_time" content="2026-10-19T02:16:41.463Z">
 <meta property="article:author" content="Yq Woe">
 <meta property="article:tag" content="编程哲学">
 <meta name="twitter:card" content="summary">  
@@ -68,7 +68,7 @@
     "@type": "Article",
     "headline": "什么时候该写测试，什么时候不该",
     "datePublished": "2026-10-19T01:00:00.000Z",
-    "dateModified": "2026-10-19T02:13:03.439Z",
+    "dateModified": "2026-10-19T02:16:41.463Z",
     "author": {
       "@type": "Person",
       "name": "Yq Woe",
@@ -94,7 +94,7 @@
   <body>
     <div id="wrapper">
         <div id="content">
-          <article id="post-2026-10-19-什么时候该写测试-什么时候不该" class="article article-type-post" itemprop="blogPost" itemscope>
+          <article id="post-2026-10-19-什么时候该写测试，什么时候不该" class="article article-type-post" itemprop="blogPost" itemscope>
   <div class="article-inner">
     
       <header class="article-header">
@@ -118,27 +118,36 @@
       
           <div id="toc" class="toc-article">
     <div class="toc-title">目录</div>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%95%E6%97%B6%E8%AF%A5%E5%86%99%E6%B5%8B%E8%AF%95"><span class="toc-text"> 何时该写测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E4%BB%A3%E7%A0%81%E5%A4%8D%E6%9D%82%E4%B8%94%E9%9C%80%E8%A6%81%E4%BF%9D%E9%9A%9C%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%97%B6"><span class="toc-text"> 当代码复杂且需要保障稳定性时</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F%E4%B8%8D%E4%B8%80%E4%B8%94%E5%AE%B9%E6%98%93%E5%87%BA%E9%94%99%E6%97%B6"><span class="toc-text"> 当代码质量不一且容易出错时</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%95%E6%97%B6%E4%B8%8D%E8%AF%A5%E5%86%99%E6%B5%8B%E8%AF%95"><span class="toc-text"> 何时不该写测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E9%A1%B9%E7%9B%AE%E5%88%9D%E6%9C%9F%E9%9C%80%E8%A6%81%E5%BF%AB%E9%80%9F%E8%BF%AD%E4%BB%A3%E6%97%B6"><span class="toc-text"> 当项目初期需要快速迭代时</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E9%A1%B9%E7%9B%AE%E8%A7%84%E6%A8%A1%E8%BE%83%E5%B0%8F%E4%B8%94%E5%8A%9F%E8%83%BD%E5%8D%95%E4%B8%80%E6%97%B6"><span class="toc-text"> 当项目规模较小且功能单一时</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E6%94%BE%E6%80%A7%E6%80%9D%E8%80%83"><span class="toc-text"> 开放性思考</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%95%E6%97%B6%E8%AF%A5%E5%86%99%E6%B5%8B%E8%AF%95"><span class="toc-text"> 何时该写测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E4%BB%A3%E7%A0%81%E5%A4%8D%E6%9D%82%E4%B8%94%E9%9C%80%E8%A6%81%E4%BF%9D%E9%9A%9C%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%97%B6"><span class="toc-text"> 当代码复杂且需要保障稳定性时</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E4%BB%A3%E7%A0%81%E9%9C%80%E8%A6%81%E8%A2%AB%E5%A4%9A%E4%BA%BA%E9%95%BF%E6%9C%9F%E7%BB%B4%E6%8A%A4%E6%97%B6"><span class="toc-text"> 当代码需要被多人长期维护时</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%95%E6%97%B6%E4%B8%8D%E8%AF%A5%E5%86%99%E6%B5%8B%E8%AF%95"><span class="toc-text"> 何时不该写测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E9%A1%B9%E7%9B%AE%E5%88%9D%E6%9C%9F%E9%9C%80%E8%A6%81%E5%BF%AB%E9%80%9F%E8%BF%AD%E4%BB%A3%E6%97%B6"><span class="toc-text"> 当项目初期需要快速迭代时</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%E9%A1%B9%E7%9B%AE%E8%A7%84%E6%A8%A1%E8%BE%83%E5%B0%8F%E4%B8%94%E5%8A%9F%E8%83%BD%E5%8D%95%E4%B8%80%E6%97%B6"><span class="toc-text"> 当项目规模较小且功能单一时</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E6%94%BE%E6%80%A7%E6%80%9D%E8%80%83"><span class="toc-text"> 开放性思考</span></a></li></ol>
 </div>
 
       
-        <p>在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。</p>
+        <p>测试是程序员的护栏，但不是每段代码都需要护栏。<span class="hl">判断在哪里架设护栏，比一直架设更重要。</span></p>
 <h2 id="何时该写测试"><a class="markdownIt-Anchor" href="#何时该写测试"></a> 何时该写测试</h2>
 <h3 id="当代码复杂且需要保障稳定性时"><a class="markdownIt-Anchor" href="#当代码复杂且需要保障稳定性时"></a> 当代码复杂且需要保障稳定性时</h3>
-<p>在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部分，必须做到百分之百的正确性，任何错误都可能造成巨大损失。这时候，测试的必要性就更加明显。通过编写单元测试、集成测试等，确保每一部分的功能都达到预期效果。</p>
-<h3 id="当代码质量不一且容易出错时"><a class="markdownIt-Anchor" href="#当代码质量不一且容易出错时"></a> 当代码质量不一且容易出错时</h3>
-<p>当项目团队中的开发者水平参差不齐，或者某一部分代码的复杂度极高，往往容易导致错误产生。这类情况下，测试可以作为质量控制的有力武器，帮助识别并修正错误，从而提升整体代码的质量。</p>
-<p>比如一个新入职的开发人员加入了一个复杂的库开发项目，如果没有一套完善的测试体系，新老开发者之间知识的传递将变得异常困难。</p>
+<p>复杂的算法实现和核心业务逻辑必须测。<span class="hl">这类错误的特点是：发生概率低，但一旦发生损失大。</span></p>
+<p>银行交易系统每秒处理上万笔转账，任何一笔的数字错误都可能造成资损。这种场景下，测试的收益是清晰的：写测试的成本 &lt;&lt; 不写测试的期望损失。</p>
+<blockquote>
+<p>测试的作用不是证明代码正确，而是<span class="hl">降低代码变更时的信心成本</span>。当你修改一段复杂逻辑时，有测试和没测试是完全不同的心理状态。</p>
+</blockquote>
+<h3 id="当代码需要被多人长期维护时"><a class="markdownIt-Anchor" href="#当代码需要被多人长期维护时"></a> 当代码需要被多人长期维护时</h3>
+<p>团队成员水平参差不齐，代码被易手的频率高。测试是<span class="hl">跨越时间传递设计意图的介质</span>。</p>
+<p>新来的开发者读不懂旧代码，但他能看懂测试。测试告诉你：这个函数的预期输出是什么，边界条件是什么，错误情况怎么处理。</p>
 <h2 id="何时不该写测试"><a class="markdownIt-Anchor" href="#何时不该写测试"></a> 何时不该写测试</h2>
 <h3 id="当项目初期需要快速迭代时"><a class="markdownIt-Anchor" href="#当项目初期需要快速迭代时"></a> 当项目初期需要快速迭代时</h3>
-<p>在项目的启动阶段，首要任务是快速构建基础功能。此时，过度的测试工作不仅会大大增加开发成本，还可能会拖慢项目的进度。</p>
-<p>例如，一个刚上线的电子商务平台，最初阶段的焦点应放在用户界面的友好性、支付流程的顺畅性等关键功能上，而不是花费大量时间在繁杂的测试环节上。只有在基础功能稳定之后，再逐步引入更多复杂的功能。</p>
+<p>验证想法阶段不需要测试。<span class="hl">这个阶段的代码大概率会被重写，测试是给不存在的东西交的税。</span></p>
+<p>一个 MVP 上线前花两周写测试，结果发现方向错了，测试全部白写。这是创业初期最常见的浪费。</p>
+<p>判断标准：<span class="hl">这段代码预计会被重写吗？预期生命周期有多长？</span>生命周期短的代码，不值得测试。</p>
 <h3 id="当项目规模较小且功能单一时"><a class="markdownIt-Anchor" href="#当项目规模较小且功能单一时"></a> 当项目规模较小且功能单一时</h3>
-<p>对于一些小型项目而言，其规模和功能相对较小，代码量较轻，测试工作量相对较小，此时进行测试的工作量与收益不成比例。</p>
-<p>比如，一个小型的社区论坛项目，主要关注的是界面友好性和功能可用性，而不是对每一行代码都进行深入的测试。当然，这并不意味着无需测试，而是在测试的深度和广度上做相应的调整。</p>
+<p>三个人天的项目，代码总量不超过五百行。这种情况下写测试的工作量和收益不成比例。</p>
+<blockquote>
+<p>不是不测，而是测得更有针对性。只测那些：逻辑复杂容易出错、错误难以发现、崩溃后果严重的部分。</p>
+</blockquote>
 <h2 id="开放性思考"><a class="markdownIt-Anchor" href="#开放性思考"></a> 开放性思考</h2>
-<p>在项目中是否应该坚持写测试？这是一个需要根据项目实际需求灵活调整的问题。有时候，测试可以是项目成功的关键；而有时，测试反而会成为项目推进的障碍。因此，能否在测试与开发之间找到最佳的平衡点，是每一位开发者需要思考和实践的问题。</p>
-<p>在接下来的项目开发过程中，我们应该如何平衡测试的重要性呢？是遵循&quot;一切测试皆为王&quot;的原则，还是在某些特定情境下适当减少测试的比重？这需要我们在实践中不断地摸索和调整。</p>
+<p>测试不是目的，<span class="hl">系统的可信性才是</span>。</p>
+<p>测试只是一种建立可信性的手段。还有其他手段：Code Review、类型系统、形式化验证、监控报警。它们各有各的成本和适用范围。</p>
+<p>在真实项目中，往往是多种手段组合使用。选择哪些组合，取决于：系统规模、团队组成、变更频率、容错要求。</p>
+<p><span class="hl">一个优秀的工程师，不是写测试最多的那个，而是最清楚在什么地方不写测试的那个。</span></p>
 
       
     </div>
@@ -169,7 +178,14 @@
   
 <nav id="article-nav" class="article-nav">
   
-    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+    <a href="/*/550cdc1d.html" id="article-nav-newer" class="article-nav-link-wrap newer">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          什么时候该写测试，什么时候不该
+        
+      </div>
+    </a>
   
   
     <a href="/*/f1125d9e.html" id="article-nav-older" class="article-nav-link-wrap older">
@@ -255,7 +271,7 @@ gitalk.render('gitalk-container')
 </div>
 
 
-<span class="post-count">49.9k</span>
+<span class="post-count">50.1k</span>
 
 <script type="text/javascript">
 

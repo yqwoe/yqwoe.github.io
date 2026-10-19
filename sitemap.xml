@@ -4,7 +4,7 @@
   <url>
     <loc>https://sudo.rm-rf.ink/*/550cdc1d.html</loc>
     
-    <lastmod>2026-10-19T02:13:03.439Z</lastmod>
+    <lastmod>2026-10-19T02:16:41.463Z</lastmod>
     
 
     <id>550cdc1d</id>
@@ -17,7 +17,7 @@
   <url>
     <loc>https://sudo.rm-rf.ink/*/f1125d9e.html</loc>
     
-    <lastmod>2026-10-19T02:12:54.814Z</lastmod>
+    <lastmod>2026-10-19T02:16:26.705Z</lastmod>
     
 
     <id>f1125d9e</id>
@@ -30,12 +30,25 @@
   <url>
     <loc>https://sudo.rm-rf.ink/*/9d757751.html</loc>
     
-    <lastmod>2026-10-19T02:12:45.886Z</lastmod>
+    <lastmod>2026-10-19T02:16:14.115Z</lastmod>
     
 
     <id>9d757751</id>
     <date>1792198800000</date>
     <title>为什么我很少在社交媒体发言 | Viva La Vida</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/*/550cdc1d.html</loc>
+    
+    <lastmod>2026-10-19T02:13:03.439Z</lastmod>
+    
+
+    <id>550cdc1d</id>
+    <date>1792371600000</date>
+    <title>什么时候该写测试，什么时候不该 | Viva La Vida</title>
     
     <desc></desc>
   </url>
@@ -622,7 +635,7 @@
     <date>1584802640000</date>
     <title>路 | Viva La Vida</title>
     
-    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-nVLGkwXl"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
+    <desc>var ap = new APlayer({ element: document.getElementById("aplayer-ZiQOKvFi"), narrow: false, autoplay: true, showlrc: false, music: { title: "The Lion Sleeps Tonight", author: "The Tokens", url: "/musi</desc>
   </url>
   
   <url>
