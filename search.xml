@@ -342,42 +342,6 @@
       </tags>
   </entry>
   <entry>
-    <title>给博客增加评论功能</title>
-    <url>//*/2d764bfc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
-<span id="more"></span>
-<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
-<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
-</li>
-<li class="lvl-2">
-<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
-</li>
-</ul>
-<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
-<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
-<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
-<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
-<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
-<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
-以上是我的分享，谢谢！！</p>
-]]></content>
-      <categories>
-        <category>Jekyll</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-        <tag>gitment</tag>
-        <tag>git</tag>
-        <tag>Jekyll</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>过六一的&quot;儿童&quot;们</title>
     <url>//*/1bc5f237.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -412,6 +376,42 @@
         <tag>六一</tag>
         <tag>巨婴</tag>
         <tag>孩子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给博客增加评论功能</title>
+    <url>//*/2d764bfc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="首先感谢imsun大神的插件gitment"><a class="markdownIt-Anchor" href="#首先感谢imsun大神的插件gitment"></a> 首先感谢<a href="https://github.com/imsun">@imsun</a>大神的插件<a href="https://imsun.github.io/gitment/">Gitment</a></h3>
+<span id="more"></span>
+<p>插件本身默认支持英文，所以我下载了源码进行一部分改造。以下是源码：<a href="yqwoe.space/yqwoe.github.io/static/js/gitment.js">giment.js</a> 、 <a href="yqwoe.space/yqwoe.github.io/static/css/gitment.css">giement.css</a></p>
+<p>下边是操作步骤，不是技术同学先参考一下<a href="https://imsun.github.io/gitment/">Gitment Demo Page</a> 再进行操作。</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a href="https://www.jekyll.com.cn/docs/home/">Jekyll 教程</a></p>
+</li>
+<li class="lvl-2">
+<p><a href="https://github.com/imsun/gitment">Gitment Readme</a></p>
+</li>
+</ul>
+<h3 id="基本使用"><a class="markdownIt-Anchor" href="#基本使用"></a> 基本使用</h3>
+<h4 id="1-注册-oauth-application"><a class="markdownIt-Anchor" href="#1-注册-oauth-application"></a> 1. 注册 OAuth Application</h4>
+<p><a href="https://github.com/settings/applications/new">New OAuth</a> ，填写内容时候确保 callback URL 与你的博客地址域名一致。</p>
+<h4 id="2引入-js-css-到文章页面"><a class="markdownIt-Anchor" href="#2引入-js-css-到文章页面"></a> 2.引入 js、css 到文章页面</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yqwoe.space/yqwoe.github.io/static/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://yqwoe.space/yqwoe.github.io/static/js/gitment.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">/**</span><br><span class="line">*第一个坑，默认id是填入完整的url，而issue的label长度限制为50，所以url必然会超长。</span><br><span class="line">*/</span><br><span class="line">var paths = location.pathname.split(&#x27;/&#x27;)</span><br><span class="line">var id = decodeURI(paths[paths.length - 1 ]))</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: id, // 必填，不然评论信息不会加载成功！</span><br><span class="line">  owner: &#x27;你的 GitHub ID&#x27;,</span><br><span class="line">  repo: &#x27;存储评论的 repo&#x27;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &#x27;你注册 OAuth 的 client ID&#x27;,</span><br><span class="line">    client_secret: &#x27;你注册 OAuth 的 client secret&#x27;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&#x27;container&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-初始化评论"><a class="markdownIt-Anchor" href="#3-初始化评论"></a> 3. 初始化评论</h4>
+<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
+<h4 id="敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"><a class="markdownIt-Anchor" href="#敲黑板下一篇博客会介绍-jekyll-admin-插件的使用方法和一些填坑技巧"></a> 敲黑板，下一篇博客会介绍 《<strong>Jekyll-Admin 插件的使用方法</strong>》和一些填坑技巧。</h4>
+<p>我的博客评论功能目前只支持全球最大<s>同性</s>交友网站<a href="github.com/yqwoe">Github</a>的账号，以后会慢慢扩展。<br>
+以上是我的分享，谢谢！！</p>
+]]></content>
+      <categories>
+        <category>Jekyll</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+        <tag>gitment</tag>
+        <tag>git</tag>
+        <tag>Jekyll</tag>
       </tags>
   </entry>
   <entry>
@@ -760,6 +760,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Cas Server 本地部署</title>
+    <url>//*/6e8cb24c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
+<blockquote>
+<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
+</blockquote>
+<span id="more"></span>
+<blockquote>
+<p>Cas 是一种开放优秀的身份验证协议。</p>
+</blockquote>
+<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
+<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
+<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
+<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
+<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>以上操作按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
+<p>Cas Server 已经 setup 起来了。</p>
+<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
+]]></content>
+      <categories>
+        <category>Cas</category>
+      </categories>
+      <tags>
+        <tag>spring boot</tag>
+        <tag>cas client</tag>
+        <tag>cas server</tag>
+        <tag>sso</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nginx 负载均衡</title>
     <url>//*/59cc1bd2.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="nginx-是什么"><a class="markdownIt-Anchor" href="#nginx-是什么"></a> nginx 是什么？</h1>
@@ -807,41 +842,6 @@
         <tag>poll</tag>
         <tag>linux</tag>
         <tag>unix like os</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cas Server 本地部署</title>
-    <url>//*/6e8cb24c.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="cas"><a class="markdownIt-Anchor" href="#cas"></a> Cas</h1>
-<blockquote>
-<p><strong><a href="https://github.com/apereo/cas">Cas</a></strong> 中心认证服务。Cas 是一种面向 Web 的企业级、多语言单点登录解决方案，它是满足身份验证和授权管理的综合平台</p>
-</blockquote>
-<span id="more"></span>
-<blockquote>
-<p>Cas 是一种开放优秀的身份验证协议。</p>
-</blockquote>
-<p><img src="https://user-images.githubusercontent.com/1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e.png" alt="1205228/30969994-e2fe6bf0-a470-11e7-80f9-d54d1e4d348e"></p>
-<p>我在本地部署的是**<a href="https://github.com/apereo/cas-overlay-template">cas-overlay-template</a>** 分支 5.2</p>
-<h2 id="部署-cas-server"><a class="markdownIt-Anchor" href="#部署-cas-server"></a> 部署 Cas Server</h2>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/apereo/cas<span class="literal">-overlay-template</span>.git</span><br><span class="line"><span class="built_in">cd</span> cas<span class="literal">-overlay-template</span></span><br><span class="line">git checkout <span class="number">5.2</span></span><br><span class="line">mvn package //因为本地jdk1.<span class="number">8</span> <span class="number">5.2</span>版本支持</span><br><span class="line"></span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources</span><br><span class="line">mkdir <span class="literal">-p</span> src/main/resources/services</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/application.prpperties src/main/resources/application.prpperties</span><br><span class="line"><span class="built_in">cp</span> /target/cas/WEB<span class="literal">-INF</span>/classes/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json src/main/resources/services/HTTPSandIMAPS<span class="literal">-10000001</span>.json</span><br></pre></td></tr></table></figure>
-<h4 id="applicationproperties"><a class="markdownIt-Anchor" href="#applicationproperties"></a> application.properties</h4>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Server Context Configuration</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">server.context<span class="literal">-path</span>=/cas</span><br><span class="line">server.port=<span class="number">8443</span></span><br><span class="line"></span><br><span class="line">cas.tgc.secure=false</span><br><span class="line">cas.serviceRegistry.initFromJson=true</span><br><span class="line">server.ssl.enabled=false <span class="comment">#禁用https访问</span></span><br><span class="line"><span class="comment">#...省略</span></span><br><span class="line">cas.authn.accept.users=admin::admin <span class="comment">#静态访问用户名密码 admin/admin</span></span><br></pre></td></tr></table></figure>
-<h4 id="serviceshttpsandimaps-10000001json"><a class="markdownIt-Anchor" href="#serviceshttpsandimaps-10000001json"></a> services/HTTPSandIMAPS-10000001.json</h4>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;@class&quot;</span><span class="punctuation">:</span> <span class="string">&quot;org.apereo.cas.services.RegexRegisteredService&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serviceId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^(https|imaps|http)://.*&quot;</span><span class="punctuation">,</span> <span class="comment">//增加http访问规则</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HTTPS and IMAPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10000001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This service definition authorizes all application urls that support HTTPS and IMAPS protocols.&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;evaluationOrder&quot;</span><span class="punctuation">:</span> <span class="number">10000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>以上操作按照顺序执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./build.sh run</span><br></pre></td></tr></table></figure>
-<p>打开浏览器访问 <a href="http://cas.simple.org:8443/cas" target="_blank">http://cas.simple.org:8443/cas</a></p>
-<p>Cas Server 已经 setup 起来了。</p>
-<p>明天继续更新 Cas Client 与 Spring boot 集成，并实现 Cas Server 的用户存储数据库。</p>
-]]></content>
-      <categories>
-        <category>Cas</category>
-      </categories>
-      <tags>
-        <tag>spring boot</tag>
-        <tag>cas client</tag>
-        <tag>cas server</tag>
-        <tag>sso</tag>
       </tags>
   </entry>
   <entry>
@@ -1331,6 +1331,583 @@
         <tag>Hermes</tag>
         <tag>Python</tag>
         <tag>MemPalace</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>改造 Hermes Memory Provider 的曲折历程</title>
+    <url>//*/474c79ed.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="改造-hermes-memory-provider-的曲折历程"><a class="markdownIt-Anchor" href="#改造-hermes-memory-provider-的曲折历程"></a> 改造 Hermes Memory Provider 的曲折历程</h1>
+<blockquote>
+<p>这不是一个讲&quot;正确答案&quot;的故事。这是一个讲&quot;如何一步步排除错误答案，直到看见本质&quot;的故事。</p>
+</blockquote>
+<hr>
+<h2 id="起点mempalace"><a class="markdownIt-Anchor" href="#起点mempalace"></a> 起点：MemPalace</h2>
+<p>一切从抽屉开始。</p>
+<p>2026 年初，我给赫妹搭了一套记忆系统叫 MemPalace。核心理念很朴素：人类用记忆宫殿——把信息存进具体的地点和房间，回忆时按位置检索。映射到数字世界，就是抽屉（drawer）、房间（room）、 wing（主题区）三级结构。存储层是 ChromaDB，向量检索。</p>
+<p>这套系统跑了一阵子，基本能用。但很快就摸到了它的边界。</p>
+<p><strong>问题 1：Layer2 的 LLM 判决是玄学。</strong> FiltrationLayer 分两层：Layer1 用正则提取关键词（decision、preference、milestone），Layer2 让 LLM 判断&quot;这条记忆是否重要&quot;。LLM 的判断不稳定，同样的内容今天 accepted 明天 rejected。Layer2 成了整个系统的黑盒变量。</p>
+<p><strong>问题 2：ContentRouter 是过度设计。</strong> 架构里引入了 ContentRouter，要先把记忆分成 WORLD_FACT / EXPERIENCE / OPINION / ENTITY 四类，再分别走不同的写入路径。实际上 (90%+) 的内容都进了 EXPERIENCE，其他三个桶几乎全空。ContentRouter 除了增加维护负担，没有任何实际价值。</p>
+<p><strong>问题 3：写入链路冗余。</strong> 三套写入路径：WorldNetwork、OpinionManager、NarrativeFusion，各写各的 collection。没有一致性校验，也没有统一的数据模型。</p>
+<p><strong>问题 4：Observations Consolidation 几乎不触发。</strong> consolidation 的本意是把多条相似记忆合并成一条，节省存储并提高召回质量。但实际运行中，34,549 条观测值跑 consolidation，300 秒超时，只完成了 60/78 批。剩下 (20%+) 的数据永远卡在那里。</p>
+<hr>
+<h2 id="中转站memory-filtration-layermfl"><a class="markdownIt-Anchor" href="#中转站memory-filtration-layermfl"></a> 中转站：Memory Filtration Layer（MFL）</h2>
+<p>基于 MemPalace 的教训，我重写了 FiltrationLayer，称之为 MFL（Memory Filtration Layer）。</p>
+<p><strong>这次做了几件对的事：</strong></p>
+<p>删掉了 ContentRouter。发现它的分类逻辑从未真正起作用，内容自然沉淀到 EXPERIENCE 桶里。删掉后代码从 800 行瘦到 200 行，没有功能损失。</p>
+<p>删掉了 NarrativeFusion 和 OpinionManager。旧的四网络架构（World/Experience/Opinion/Narrative）是参考 Hindsight 论文设计的，但实现和理论之间隔着一条鸿沟。LLM 判决质量撑不起这个架构。删掉之后只剩下统一的写入路径。</p>
+<p><strong>Layer2 也简化了。</strong> 之前 Layer2 调用 LLM 做 semantic filter，效果不稳定。简化后改为纯 confidence threshold：Layer1 提取时给每条记忆打个置信分，Layer2 直接按 0.5 阈值过滤，不再调 LLM。全程无 API 调用，延迟从秒级降到毫秒级。</p>
+<p><strong>统一数据模型上场。</strong> 之前每种记忆类型有自己的数据结构，Observation 和 Entity 和 Opinion 各玩各的。新架构定义了 UnifiedMemory dataclass：content、memory_type、confidence、metadata（wing/room/session_id/user_id/project），所有写入都路由到同一个 collection：memories_{user_id}_{project}。</p>
+<p>这套系统在 MemPalace Provider 里跑了大概一个月。</p>
+<p>然后我发现了真正的问题。</p>
+<hr>
+<h2 id="真正的断层consolidation-的-kg-质量灾难"><a class="markdownIt-Anchor" href="#真正的断层consolidation-的-kg-质量灾难"></a> 真正的断层：Consolidation 的 KG 质量灾难</h2>
+<p>consolidation 是记忆系统的&quot;消化&quot;机制：把碎片化的原始观测合并成结构化的 Observation，避免记忆无限膨胀。</p>
+<p>但 consolidation 有一个伴生产物：知识图谱三元组（KG triples）。每条 Observation 应该提取出 SUBJECT | PREDICATE | OBJECT 格式的三元组，用来建立实体关系图。</p>
+<p><strong>34,549 条观测值，consolidation 超时（300 秒），只完成 60/78 批。</strong></p>
+<p>更严重的是，KG triples 的质量几乎是垃圾：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">观 察 到 的 ：[SUBJECT | PREDICATE | OBJECT]</span><br><span class="line">The LLM response should be structured as... （这是 prompt 文本，不是三元组）</span><br><span class="line">SUBJECT | PREDICATE | OBJECT</span><br></pre></td></tr></table></figure>
+<p>58 条 KG 记录，几乎全是 LLM prompt 的截断文本、解析失败的残片、或者干脆就是提示词本身。真正有意义的三元组不到 5 条。</p>
+<p>这说明 consolidation 的 KG extraction 流水线从根上就是坏的。</p>
+<p><strong>根因分析：</strong></p>
+<p>问题不在 <code>_parse_kg_triples</code> 的解析逻辑——解析逻辑本身没问题，格式规范是清晰的。</p>
+<p>问题在 upstream：LLM 的输出本身就是乱的。consolidation 的 prompt 要求 LLM 提取三元组，但 LLM 并没有稳定地遵循这个格式。有时候输出完整，有时候输出 prompt 文本，有时候干脆不输出。</p>
+<p>这暴露了一个更深的问题：<strong>整个 consolidation 流程对 LLM 输出质量的依赖，本身就是一个不稳定的基础假设。</strong></p>
+<p>LLM 的输出有随机性。你不能把一个依赖随机输出的 pipeline 当作可靠的数据处理流程。</p>
+<hr>
+<h2 id="转折点重新审视记忆系统需要什么"><a class="markdownIt-Anchor" href="#转折点重新审视记忆系统需要什么"></a> 转折点：重新审视&quot;记忆系统需要什么&quot;</h2>
+<p>consolidation 失败之后，我被迫停下来想一个根本问题：</p>
+<p><strong>记忆系统的本质到底是什么？</strong></p>
+<p>我翻出了 Mem0、Hindsight、MemPalace 三个系统的设计文档，做了一个对比表格。看完之后，最有意思的发现不是任何一个系统的具体功能，而是它们都在解决同一个核心矛盾：</p>
+<p><strong>存储和召回的权衡是不可消除的。</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>存得越多，召回噪音越大</p>
+</li>
+<li class="lvl-2">
+<p>召回越精确，存储越稀疏，可能丢失边缘有用信息</p>
+</li>
+</ul>
+<p>所有记忆系统都在用不同的方式管理这个矛盾：Mem0 用 ADD-only + MD5 去重规避更新决策；Hindsight 用 Budget 机制控制召回量；MemPalace 用 KG 关系结构提高召回精度。</p>
+<p>但当我对比这些方案时，我发现了一个更简单的答案——来自一个意想不到的地方。</p>
+<hr>
+<h2 id="灵感claude-code-的记忆方式"><a class="markdownIt-Anchor" href="#灵感claude-code-的记忆方式"></a> 灵感：Claude Code 的记忆方式</h2>
+<p>Claude Code 是 Anthropic 发布的 AI 编程助手。它的记忆系统没有任何向量库、没有 embedding、没有 ChromaDB。</p>
+<p><strong>它用纯文件系统存储记忆，以 Markdown 格式保存，配一个轻量索引文件。</strong></p>
+<p>就这么简单。</p>
+<p>这个事实迫使我重新审视之前所有的复杂设计。如果 Claude Code 能用纯文件系统做 AI Agent 的记忆系统，并且工作得足够好，那么我们之前构建的那套 ChromaDB + FiltrationLayer + KG extraction + LLM 判决的复杂基础设施，究竟解决了什么问题？</p>
+<p><strong>答案可能是：解决了不存在的问题。</strong></p>
+<p>我把 MemPalace/MFL 架构和 Claude Code 的方案做了第一性原理对比：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>MemPalace/MFL</th>
+<th>Claude Code 方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存储</td>
+<td>ChromaDB（向量库）</td>
+<td>文件系统 + Markdown</td>
+</tr>
+<tr>
+<td>检索</td>
+<td>embedding 相似度 + KG 遍历</td>
+<td>关键词扫描 + LLM 决策</td>
+</tr>
+<tr>
+<td>延迟</td>
+<td>embedding 生成 ~50ms</td>
+<td>文件读取 ~1ms</td>
+</tr>
+<tr>
+<td>可迁移性</td>
+<td>依赖 ChromaDB 版本</td>
+<td>纯文本，任意工具可读</td>
+</tr>
+<tr>
+<td>可解释性</td>
+<td>embedding 黑盒</td>
+<td>Markdown 明文</td>
+</tr>
+<tr>
+<td>维护成本</td>
+<td>高（多套 pipeline）</td>
+<td>低（文件系统）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最大的认知翻转在这里：</strong></p>
+<p>之前我以为 embedding 相似度检索是&quot;更智能&quot;的记忆召回方式。但实际上，embedding 的&quot;智能&quot;是有代价的：它把记忆内容的语义压缩成一个向量，这个过程本身就有信息损失。而且向量相似度不等于相关性问题——有时候你最需要的记忆，和你的查询在向量空间里并不接近。</p>
+<p>Claude Code 的方案则反其道而行：不做语义压缩，直接存原文。召回时用轻量扫描（frontmatter metadata 过滤），再用 LLM 做最终判断。<strong>两阶段：快扫 + LLM 决策。</strong></p>
+<p>这个方案更简单，延迟更低，而且没有 embedding 的信息损失。</p>
+<hr>
+<h2 id="新架构mem-md"><a class="markdownIt-Anchor" href="#新架构mem-md"></a> 新架构：mem-md</h2>
+<p>基于这个认知，我写了 mem-md。</p>
+<p>核心理念只有一句话：<strong>Markdown is all you need。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~/.mem-md/</span><br><span class="line">├── personal/                    # 个人记忆（私有）</span><br><span class="line">│   ├── MEMORY.md              # 索引文件</span><br><span class="line">│   ├── user/                   # 用户画像</span><br><span class="line">│   ├── feedback/               # 工作方式偏好</span><br><span class="line">│   └── *.md                    # 具体记忆条目</span><br><span class="line">├── project/&lt;path&gt;/             # 项目记忆（按项目隔离）</span><br><span class="line">└── team/&lt;owner&gt;/&lt;repo&gt;/       # 团队记忆（按仓库隔离）</span><br></pre></td></tr></table></figure>
+<p><strong>四种闭集记忆类型（无开放式存储）：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>user</code>：用户画像——“你是谁”</p>
+</li>
+<li class="lvl-2">
+<p><code>feedback</code>：工作方式——“我如何工作”</p>
+</li>
+<li class="lvl-2">
+<p><code>project</code>：项目上下文——“项目正在发生什么”</p>
+</li>
+<li class="lvl-2">
+<p><code>reference</code>：外部指针——“信息在哪里”</p>
+</li>
+</ul>
+<p><strong>闭集分类的核心价值：定义&quot;什么不该存&quot;比&quot;该存什么&quot;更重要。</strong></p>
+<p>开放式的记忆存储必然导致记忆膨胀和检索噪音。严格限定四种类型，前置过滤比后期裁剪更有效。</p>
+<p><strong>两阶段召回：</strong></p>
+<ol>
+<li class="lvl-3">
+<p><strong>Scanner（&lt;10ms）</strong>：扫描 frontmatter，只取 type + staleness_days 满足条件的文件</p>
+</li>
+<li class="lvl-3">
+<p><strong>Selector（LLM 决策）</strong>：把候选文件内容发给 LLM，让 LLM 判断哪些和当前 query 真正相关</p>
+</li>
+</ol>
+<p>这个设计和 Claude Code 的思路一致：不做 embedding，用结构化元数据做初筛，再用 LLM 做最终语义判断。</p>
+<p><strong>Consolidation 简化为 auto-dream 四阶段：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>Orient：识别记忆主题</p>
+</li>
+<li class="lvl-2">
+<p>Gather：收集相关片段</p>
+</li>
+<li class="lvl-2">
+<p>Consolidate：合并为 Observation</p>
+</li>
+<li class="lvl-2">
+<p>Prune：修剪 <a href="http://MEMORY.md">MEMORY.md</a> 索引</p>
+</li>
+</ul>
+<p>删掉了 KG extraction——consolidation 不再试图提取三元组。<strong>KG 是之前过度设计的又一个证据。</strong> 从 34,549 条观测值里提取出来的三元组几乎全是垃圾，保留这个功能只是在增加系统复杂度和维护负担。</p>
+<hr>
+<h2 id="过程即结果"><a class="markdownIt-Anchor" href="#过程即结果"></a> 过程即结果</h2>
+<p>回顾整个改造过程，最有价值的不是最终的 mem-md 架构，而是排除错误路径的过程。</p>
+<p>MemPalace 让我知道了 ChromaDB + 多层 pipeline 的边界在哪里。MFL 的 FiltrationLayer 简化实验证明了 Layer2 LLM 判决可以完全去掉。consolidation 的 KG 质量灾难让我最终下决心删掉 KG extraction。Claude Code 的对比给了我重新设计的勇气。</p>
+<p><strong>每一个&quot;放弃&quot;的决定背后，都是一次第一性原理的追问：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>为什么需要 ContentRouter？因为要分类。但分类真的有用吗？没有。删。</p>
+</li>
+<li class="lvl-2">
+<p>为什么需要 Layer2 LLM 判决？因为要判断重要性。但这个判断稳定吗？不稳定。删。</p>
+</li>
+<li class="lvl-2">
+<p>为什么需要 KG extraction？因为要建立实体关系。但提取质量合格吗？不合格。删。</p>
+</li>
+</ul>
+<p>帆布归真。删到不能再删，剩下的就是本质。</p>
+<hr>
+<h2 id="教训"><a class="markdownIt-Anchor" href="#教训"></a> 教训</h2>
+<p><strong>1. 复杂性是记忆系统的大敌。</strong></p>
+<p>记忆系统天然倾向于变得越来越复杂。每一层抽象都看起来合理，每一个新功能都解决了某个真实的问题。但累积起来，复杂性开始侵蚀系统本身的可靠性——consolidation 超时、KG 质量崩溃、Layer2 判决不稳定，这些问题都直接或间接地来自过度设计的架构。</p>
+<p><strong>2. 可解释性比&quot;智能&quot;更重要。</strong></p>
+<p>ChromaDB 的 embedding 检索听起来很智能，但它的结果是黑盒的。你不知道为什么某条记忆被召回，另一条没有被召回。Markdown 文件明文存储，frontmatter 一目了然，出了问题可以随时检查、修复、回滚。</p>
+<p><strong>3. 存储和召回的权衡，最终靠 LLM 决策。</strong></p>
+<p>无论是 embedding 相似度还是 metadata 过滤，都无法完全解决&quot;语义相关性 vs. 字面相关性&quot;的张力。最终的判断必须交给 LLM——但 LLM 应该用在召回阶段（判断候选是否相关），而不是在存储阶段（判断内容是否重要）。</p>
+<p><strong>4. consolidation 的 KG 质量依赖 LLM 输出的稳定性，这本身就是一个不稳定的基础假设。</strong></p>
+<hr>
+<h2 id="当前状态"><a class="markdownIt-Anchor" href="#当前状态"></a> 当前状态</h2>
+<p>mem-md phase3-5 已完成，48 个测试全部通过（33 单元 + 15 E2E）。</p>
+<p>四个阶段的核心功能全部实现：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>Phase 1：核心模块（types、config、storage、scanner、indexer）</p>
+</li>
+<li class="lvl-2">
+<p>Phase 2：LLM 决策选择（MemorySelector）</p>
+</li>
+<li class="lvl-2">
+<p>Phase 3：自动提取（后台线程，每轮对话后异步触发）</p>
+</li>
+<li class="lvl-2">
+<p>Phase 4：Consolidation（auto-dream 四阶段引擎）</p>
+</li>
+</ul>
+<p>下一步是接入 Hermes Agent 作为 Memory Provider，让记忆真正进入赫妹的工作流。</p>
+<hr>
+<p><strong>续篇</strong>：<a href="/mem-md-opensource.html">《mem-md 开源：一个反向量库的 Agent 记忆系统》</a></p>
+<p><em>文章使用 humanizer 润色，移除了 AI 写作的典型模式，保留个人思考痕迹。</em></p>
+]]></content>
+      <tags>
+        <tag>hermes</tag>
+        <tag>memory</tag>
+        <tag>ai</tag>
+        <tag>architecture</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mem-md 开源：一个反向量库的 Agent 记忆系统</title>
+    <url>//*/mem-md-opensource.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="mem-md-开源一个反向量库的-agent-记忆系统"><a class="markdownIt-Anchor" href="#mem-md-开源一个反向量库的-agent-记忆系统"></a> mem-md 开源：一个反向量库的 Agent 记忆系统</h1>
+<blockquote>
+<p>Markdown is all you need.</p>
+</blockquote>
+<hr>
+<h2 id="序从-mempalace-到-mem-md"><a class="markdownIt-Anchor" href="#序从-mempalace-到-mem-md"></a> 序：从 MemPalace 到 mem-md</h2>
+<p>上个月写了《改造 Hermes Memory Provider 的曲折历程》，把记忆系统的演化讲到了 MFL（Memory Filtration Layer）阶段。那篇文章结尾埋了一个伏笔：mempalace 里有 5.2 万行历史观测数据，要怎么迁移到 MFL？</p>
+<p>这篇文章就是这个伏笔的答案：<strong>不迁移到 MFL，直接退回到更底层的 mem-md</strong>。</p>
+<p><code>mem-md</code> 今天 0.1.0 开源。代码在 <a href="https://gitlab.ha-guoli.cn/yqwoe/mem-md">gitlab.ha-guoli.cn/yqwoe/mem-md</a>，171 个测试全过，P0/P1 稳定性全部落地。</p>
+<p>但这不是一个&quot;我做了一个项目&quot;的炫耀贴。这是一个<strong>关于记忆本质的回归</strong>。</p>
+<hr>
+<h2 id="核心问题记忆到底是什么"><a class="markdownIt-Anchor" href="#核心问题记忆到底是什么"></a> 核心问题：记忆到底是什么？</h2>
+<p>先把问题拆到不能再拆。</p>
+<p><strong>公理 A</strong>：记忆是「在未来的某个时间点，能被检索出来辅助决策的文本」。</p>
+<p><strong>公理 B</strong>：检索的本质是「判断这条文本和当前 query 的相关度」。</p>
+<p><strong>公理 C</strong>：相关度 = <code>sim(text, query) × importance(text, context) × recency(text, now)</code>。</p>
+<p><strong>公理 D</strong>：人类能「用脑子」判断相关度。LLM 也能。embedding 是另一种近似方式——把文本压成向量，再用余弦相似度替代语义判断。</p>
+<p>到这里分叉了。<strong>embedding 的本质是用几何距离替代语义判断</strong>。它有几个不可逆的代价：</p>
+<ol>
+<li class="lvl-3">
+<p><strong>压缩不可逆</strong>：你不可能从向量还原原文</p>
+</li>
+<li class="lvl-3">
+<p><strong>黑箱不可解释</strong>：「为什么召回这条」没有答案</p>
+</li>
+<li class="lvl-3">
+<p><strong>语义边界模糊</strong>：「猫」和「狗」距离很近，但「猫在沙发」和「狗在沙发」距离一样近</p>
+</li>
+</ol>
+<p>mem-md 的选择是：<strong>用 LLM 做语义判断，用 Markdown 文件做存储</strong>。</p>
+<p>不压缩。<strong>可读</strong>。<strong>可审计</strong>。<strong><code>cp -r</code> 就能迁移</strong>。</p>
+<hr>
+<h2 id="架构"><a class="markdownIt-Anchor" href="#架构"></a> 架构</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~/.mem-md/</span><br><span class="line">├── personal/</span><br><span class="line">│   ├── MEMORY.md</span><br><span class="line">│   ├── &#123;user_id&#125;/</span><br><span class="line">│   │   ├── user/         # 用户画像</span><br><span class="line">│   │   ├── feedback/     # 工作方式</span><br><span class="line">│   │   ├── project/      # 项目上下文</span><br><span class="line">│   │   └── reference/    # 外部引用</span><br><span class="line">├── project/&lt;path&gt;/</span><br><span class="line">└── team/&lt;owner&gt;/&lt;repo&gt;/</span><br></pre></td></tr></table></figure>
+<p>四条规则，没有第六条：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>问什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>user</code></td>
+<td>你是谁</td>
+</tr>
+<tr>
+<td><code>feedback</code></td>
+<td>你怎么工作</td>
+</tr>
+<tr>
+<td><code>project</code></td>
+<td>项目正在发生什么</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>信息在哪里</td>
+</tr>
+</tbody>
+</table>
+<p>闭集。LLM 不需要分类。</p>
+<hr>
+<h2 id="三个反直觉的设计"><a class="markdownIt-Anchor" href="#三个反直觉的设计"></a> 三个反直觉的设计</h2>
+<h3 id="1-不用向量库"><a class="markdownIt-Anchor" href="#1-不用向量库"></a> 1. 不用向量库</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>向量库</th>
+<th>mem-md</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>检索</td>
+<td>几何距离</td>
+<td>关键词 + LLM 决策</td>
+</tr>
+<tr>
+<td>可解释</td>
+<td>黑箱</td>
+<td>Markdown，可人工审查</td>
+</tr>
+<tr>
+<td>迁移</td>
+<td>重新索引</td>
+<td><code>cp -r</code></td>
+</tr>
+<tr>
+<td>部署</td>
+<td>独立服务</td>
+<td>零依赖</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>embedding API</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>部署复杂度这条最关键。ChromaDB 要起服务、要监控、要备份。mem-md <strong>零运行时依赖</strong>——只有文件系统。</p>
+<h3 id="2-三层-llm-降级"><a class="markdownIt-Anchor" href="#2-三层-llm-降级"></a> 2. 三层 LLM 降级</h3>
+<p>调用 LLM 的成本是秒级延迟 + 钱。mem-md 的 selector 实现三层降级：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>Layer 0</strong>：候选 ≤2 → <strong>零 LLM 调用</strong>，按 mtime 排序返回</p>
+</li>
+<li class="lvl-2">
+<p><strong>Layer 1</strong>：候选 &gt;2 → 缓存命中（md5(query+paths+budget)，TTL 5min）直接返回</p>
+</li>
+<li class="lvl-2">
+<p><strong>Layer 2</strong>：cache miss → LLM 调用。<strong>LLM 失败时 mtime fallback</strong></p>
+</li>
+</ul>
+<p>实测：日常 80%+ 的 recall 走 Layer 0/1，<strong>LLM 调用是异常路径不是主路径</strong>。</p>
+<h3 id="3-文件级-mtime-缓存"><a class="markdownIt-Anchor" href="#3-文件级-mtime-缓存"></a> 3. 文件级 mtime 缓存</h3>
+<p>扫描 <code>~/.mem-md/personal/&#123;user_id&#125;/</code> 是个递归遍历。第一次扫 200 个文件要 50ms，第二次扫只读 frontmatter（前 30 行）只花 5ms。但每次都重扫还是浪费。</p>
+<p>mem-md 在每个 user_id 目录下放一个 <code>.scan_cache.json</code>：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;root&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/home/nil/.mem-md/personal/feishu:oc_xxx&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;files&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;/path/to/memory1.md&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;mtime&quot;</span><span class="punctuation">:</span> <span class="number">1748934567.89</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;size&quot;</span><span class="punctuation">:</span> <span class="number">1234</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;frontmatter&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;...&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;...&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;project&quot;</span><span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>下次扫描时：mtime + size 都没变 → <strong>直接用缓存的 frontmatter，不读盘</strong>。变了才重新读。</p>
+<p>5 秒内存 TTL 兜底跨进程同步，<strong>写盘后通过 <code>fire_invalidation()</code> 全局事件立即失效</strong>。</p>
+<hr>
+<h2 id="稳定性p0-p1-共-8-项机制"><a class="markdownIt-Anchor" href="#稳定性p0-p1-共-8-项机制"></a> 稳定性：P0 + P1 共 8 项机制</h2>
+<p>0.1.0 不是 demo。<strong>该爆的雷全拆了</strong>：</p>
+<h3 id="p0必落地"><a class="markdownIt-Anchor" href="#p0必落地"></a> P0（必落地）</h3>
+<table>
+<thead>
+<tr>
+<th>机制</th>
+<th>解决什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>atomic_write()</code>（tmp + os.replace）</td>
+<td>半截文件 → 烂文件</td>
+</tr>
+<tr>
+<td><code>FileLock</code> + <code>fcntl.flock</code> 跨进程锁</td>
+<td>import 脚本并发写文件</td>
+</tr>
+<tr>
+<td><code>error_log.py</code> 静默 except 捕获</td>
+<td>「写入失败」不再沉默</td>
+</tr>
+</tbody>
+</table>
+<h3 id="p1已落地-4-项"><a class="markdownIt-Anchor" href="#p1已落地-4-项"></a> P1（已落地 4 项）</h3>
+<table>
+<thead>
+<tr>
+<th>机制</th>
+<th>解决什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日志轮转（errors/metrics/access）</td>
+<td>三类日志按 size+backups 自动 <code>.1</code> <code>.2</code> <code>.3</code></td>
+</tr>
+<tr>
+<td><code>archive-prune</code> CLI（默认 dry-run）</td>
+<td>archive/ 目录无界累积</td>
+</tr>
+<tr>
+<td>写盘后 <code>fire_invalidation()</code></td>
+<td>5s TTL 窗口期内的陈旧候选</td>
+</tr>
+<tr>
+<td>三层 LLM 降级</td>
+<td>LLM 失败时 mtime fallback</td>
+</tr>
+</tbody>
+</table>
+<p>写盘后的 cache 失效这个最微妙。<code>MemMdProvider._init_modules()</code> 注册 scanner 的 <code>invalidate_memory_cache</code> 为全局监听器，<strong><code>MemoryStorage.write_memory</code> / <code>update_memory</code> / <code>delete_memory</code> 末尾自动 fire</strong>。端到端：write → scan 立即看到新文件，不再受 5s 窗口期限制。</p>
+<hr>
+<h2 id="公开-cli"><a class="markdownIt-Anchor" href="#公开-cli"></a> 公开 CLI</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">pip install mem-md</span><br><span class="line"></span><br><span class="line"><span class="comment"># 导入 Hermes sessions（飞书 / 微信 / 任意平台）</span></span><br><span class="line"><span class="built_in">export</span> MEM_MD_USER_ID=feishu:oc_xxxxxxxx</span><br><span class="line">mem-md import-sessions feishu</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询</span></span><br><span class="line">mem-md recall <span class="string">&quot;吴的商业思维&quot;</span> --budget high</span><br><span class="line"></span><br><span class="line"><span class="comment"># 手动写入</span></span><br><span class="line">mem-md retain <span class="string">&quot;用户偏好极简界面&quot;</span> feedback --name ui_preference</span><br><span class="line"></span><br><span class="line"><span class="comment"># auto-dream</span></span><br><span class="line">mem-md consolidate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 归档清理（dry-run 默认）</span></span><br><span class="line">mem-md archive-prune --apply</span><br></pre></td></tr></table></figure>
+<p><code>user_id</code> 三级回退：<code>--user-id</code> CLI 参数 &gt; <code>MEM_MD_USER_ID</code> 环境变量 &gt; <code>PLATFORM_USER_ID_MAP</code> 配置。</p>
+<hr>
+<h2 id="scripts-分离原则"><a class="markdownIt-Anchor" href="#scripts-分离原则"></a> scripts 分离原则</h2>
+<p>仓库里的 <code>scripts/</code> 目录分两类：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>公共</strong>（pip 打包分发）：<code>import_sessions.py</code> / <code>session_migrator.py</code> / <code>remember.py</code></p>
+</li>
+<li class="lvl-2">
+<p><strong>个人</strong>（仅仓库所有者追溯）：<code>scripts/personal/*.archived.py</code></p>
+</li>
+</ul>
+<p>个人脚本里残留的个人 user_id / API key 全部隔离，<strong>不进入 pip 包</strong>。<code>pyproject.toml</code> 的 authors 写的是 <code>nil &lt;yqwoe@live.cn&gt;</code>，没有联系方式泄露，没有凭据泄露。</p>
+<hr>
+<h2 id="memmdproviderhermes-集成"><a class="markdownIt-Anchor" href="#memmdproviderhermes-集成"></a> MemMdProvider：Hermes 集成</h2>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> mem_md <span class="keyword">import</span> MemMdProvider</span><br><span class="line"></span><br><span class="line">provider = MemMdProvider()</span><br><span class="line">provider.initialize(</span><br><span class="line">    session_id=<span class="string">&quot;20260516_xxx&quot;</span>,</span><br><span class="line">    platform=<span class="string">&quot;feishu&quot;</span>,</span><br><span class="line">    user_id=<span class="string">&quot;feishu:oc_xxx&quot;</span>,</span><br><span class="line">    hermes_home=<span class="string">&quot;~/.hermes&quot;</span>,</span><br><span class="line">)</span><br><span class="line">provider.inject_ctx_llm(ctx.llm)  <span class="comment"># 用 Hermes 的主模型</span></span><br></pre></td></tr></table></figure>
+<p><code>MemMdProvider</code> 实现 <code>MemoryProvider</code> ABC——和 MemPalace 完全相同的接口签名。<strong>底层从 ChromaDB + embedding 替换为文件系统 + LLM 决策</strong>。</p>
+<p>这是关键：上层代码（content extraction、session import、Hermes agent loop）<strong>完全不需要改</strong>。换 provider 一行配置搞定。</p>
+<hr>
+<h2 id="路线图"><a class="markdownIt-Anchor" href="#路线图"></a> 路线图</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>0.2.0</strong> — 5.2 万行 mempalace 数据一次性迁移工具 + 教程博客</p>
+</li>
+<li class="lvl-2">
+<p><strong>0.3.0</strong> — <code>mem-md-ui</code> 独立项目（基于 Obsidian 打开 <code>~/.mem-md/personal/&#123;user_id&#125;/</code> 作为零代码 UI）</p>
+</li>
+<li class="lvl-2">
+<p><strong>0.4.0</strong> — 多 profile 隔离完善</p>
+</li>
+<li class="lvl-2">
+<p><strong>1.0.0</strong> — 相似度阈值校验 + 跨进程 cache 协调 + 完整语义版本承诺</p>
+</li>
+</ul>
+<p>UI 不在核心包里——这是哲学选择。核心包的哲学是「<strong>Markdown is all you need</strong>」。UI 是另一回事。Obsidian 直接打开 <code>~/.mem-md/personal/&#123;user_id&#125;/</code> 就是现成的浏览/编辑/搜索 UI。为什么要重复造轮子？</p>
+<hr>
+<h2 id="写给想用的人"><a class="markdownIt-Anchor" href="#写给想用的人"></a> 写给想用的人</h2>
+<p><strong>如果你在用 ChromaDB / FAISS / Qdrant 做 Agent 记忆</strong>，请先问自己一个问题：</p>
+<blockquote>
+<p>我真的需要「语义相似」吗？还是只需要「相关」？</p>
+</blockquote>
+<p>如果是后者，mem-md 是个<strong>30MB pip 包，零运行时依赖，5 分钟装好</strong>的替代方案。</p>
+<p><strong>如果你在用 LLM 做记忆整理</strong>，mem-md 的 <code>archive-prune</code> + <code>consolidate</code> + 软删除机制是直接可用的。不需要写 chroma adapter。</p>
+<p><strong>如果你只是想给 agent 加个跨会话记忆</strong>，最简路径：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> mem_md <span class="keyword">import</span> MemMdProvider</span><br><span class="line">provider = MemMdProvider()</span><br><span class="line">provider.initialize(session_id=<span class="string">&quot;...&quot;</span>, platform=<span class="string">&quot;feishu&quot;</span>, user_id=<span class="string">&quot;feishu:oc_xxx&quot;</span>)</span><br><span class="line"><span class="comment"># 然后在 agent loop 里调 provider.recall(...) 和 provider.retain(...)</span></span><br></pre></td></tr></table></figure>
+<p>完。</p>
+<hr>
+<h2 id="一句话总结"><a class="markdownIt-Anchor" href="#一句话总结"></a> 一句话总结</h2>
+<blockquote>
+<p><strong>记忆是文本，文本存在文件里，按需读取。</strong></p>
+<p>任何把文本压成向量的方案，都在做<strong>不可逆的信息损失</strong>——除非你能证明这种损失对你的任务没有影响。</p>
+<p>如果你不能证明——试试 mem-md。</p>
+</blockquote>
+<hr>
+<p><strong>项目地址</strong>：<a href="https://gitlab.ha-guoli.cn/yqwoe/mem-md">gitlab.ha-guoli.cn/yqwoe/mem-md</a><br>
+<strong>许可</strong>：MIT<br>
+<strong>版本</strong>：0.1.0<br>
+<strong>测试</strong>：171 passed<br>
+<strong>作者</strong>：nil <a href="mailto:yqwoe@live.cn">yqwoe@live.cn</a></p>
+]]></content>
+      <tags>
+        <tag>hermes</tag>
+        <tag>memory</tag>
+        <tag>ai</tag>
+        <tag>architecture</tag>
+        <tag>opensource</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>飞书真的能发表格吗？我赌它不能，然后输了</title>
+    <url>//*/feishu-markdown-table-truth.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="飞书真的能发表格吗我赌它不能然后输了"><a class="markdownIt-Anchor" href="#飞书真的能发表格吗我赌它不能然后输了"></a> 飞书真的能发表格吗？我赌它不能，然后输了</h1>
+<p>三个月前我做了一个判断：飞书 IM v1 API 拒收 <code>&#123;tag:&quot;table&quot;&#125;</code>，会返 230001。</p>
+<p>这判断没有依据。可能是某次旧测试留下的印象，可能是从某个 issue 抄来的，可能就是猜的。但它在我脑子里生了根，长成了一棵树——一整套「飞书发表格 = 降级到纯文本 + 中文提示」的代码就围着它长起来。</p>
+<p>直到上周看到 chapafan 那个 200 行的方案。</p>
+<hr>
+<h2 id="那-200-行"><a class="markdownIt-Anchor" href="#那-200-行"></a> 那 200 行</h2>
+<p><code>chapafan/Hermes-feishu-to-table</code> 的 README 写得克制：</p>
+<blockquote>
+<p>修改 <code>feishu.py</code>，在消息发送前检测 Markdown 表格，自动转成飞书 CardKit v2 的 <code>table</code> 组件。</p>
+</blockquote>
+<p>克制到我一度怀疑他在吹牛。但点进去看代码，3 个函数干净得像论文摘要：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_parse_markdown_table</span>(<span class="params">text</span>) -&gt; <span class="type">List</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 把 markdown 拆成 text 段和 table 段</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_table_card</span>(<span class="params">headers, rows</span>) -&gt; <span class="type">Dict</span>:</span><br><span class="line">    <span class="comment"># 拼 CardKit v2 table 组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_interactive_card_with_tables</span>(<span class="params">text</span>) -&gt; <span class="type">Optional</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 包成 schema 2.0 卡片</span></span><br></pre></td></tr></table></figure>
+<p>加上 <code>_build_outbound_payload</code> 里 4 行切换，<strong>总共 200 行</strong>。</p>
+<p>我盯着这 200 行看了十分钟。它和我脑子里那个「飞书拒收 table」的公理是矛盾的。两个里一定有一个是错的。</p>
+<hr>
+<h2 id="错的那个"><a class="markdownIt-Anchor" href="#错的那个"></a> 错的那个</h2>
+<p>移植到本地的过程很顺，但眼尖抓到一个<strong>上游隐藏 bug</strong>：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_flush_table</span>():</span><br><span class="line">    <span class="keyword">nonlocal</span> table_lines  <span class="comment"># ← chapafan 写的</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> table_lines:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    ...</span><br><span class="line">    table_lines = []  <span class="comment"># ← 这行其实没生效</span></span><br></pre></td></tr></table></figure>
+<p><code>table_lines</code> 定义在 <code>_parse_markdown_table</code> 函数顶部，嵌套函数里 <code>nonlocal</code> 写错位置了——Python 会忽略这个声明，结果是 <code>table_lines = []</code> 变成了「给局部变量赋空列表」，外层的 <code>table_lines</code> 永远不清空。<strong>第二张表格的解析会混进第一张的残留行。</strong></p>
+<p>chapafan 自己的测试可能没覆盖多表。我用 <code>table_lines.clear()</code> 替换——<code>list.clear()</code> 是 in-place 操作，不需要 <code>nonlocal</code> 也工作。</p>
+<p>顺手做了 22 个单测，全部过。然后——</p>
+<hr>
+<h2 id="实弹"><a class="markdownIt-Anchor" href="#实弹"></a> 实弹</h2>
+<p>跳过文档、跳过猜测，直接发：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">content = <span class="string">&quot;&quot;&quot;## 诊断测试</span></span><br><span class="line"><span class="string">| 名称 | 数值 | 状态 |</span></span><br><span class="line"><span class="string">|---|---|---|</span></span><br><span class="line"><span class="string">| 单元 A | 42 | OK |</span></span><br><span class="line"><span class="string">| 单元 B | 99 | FAIL |</span></span><br><span class="line"><span class="string">| 单元 C | 17 | OK |</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">response = <span class="keyword">await</span> client.im.v1.message.create(req)</span><br><span class="line"><span class="comment"># → code=0, msg=success</span></span><br></pre></td></tr></table></figure>
+<p>服务端<strong>收了</strong>。message_id 拿到了。<strong>但服务端收 ≠ 客户端渲染</strong>——这个区别我吃过亏。</p>
+<p>打开手机飞书。**3 行表格真渲染成了 CardKit v2 组件。**表头加粗、列对齐、卡片有 header 装饰。</p>
+<p>那个陪了我三个月的公理是错的。</p>
+<hr>
+<h2 id="边界"><a class="markdownIt-Anchor" href="#边界"></a> 边界</h2>
+<p>P0 跑通不等于能投产。飞书 CardKit v2 的官方文档列了一堆限制，<strong>每个限制都对应一个会出事的真实场景</strong>：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>最多 50 行 → 你的用户会发 200 行的需求清单</p>
+</li>
+<li class="lvl-2">
+<p>最多 20 列 → 你的用户会发宽表</p>
+</li>
+<li class="lvl-2">
+<p>单 cell 1000 字符 → 你的用户会贴长日志</p>
+</li>
+<li class="lvl-2">
+<p>整张卡 30KB → 用户发 50KB 的对比表</p>
+</li>
+</ul>
+<p>每一个都得有守卫。加完，测试从 22 涨到 35。</p>
+<p>加守卫的时候又踩了一脚 CJK 的坑：Python <code>str[:n]</code> 天然在 codepoint 边界上切，<strong>不会切坏 CJK</strong>。我一开始还写了一段 back-off 逻辑，发现是多余的，删了。删比写更难——要承认自己想多了。</p>
+<p>嵌套表格也想了半天怎么防。最后方案是：如果 cell 里还含 <code>|</code>，整行合并成单 cell。粗暴，但飞书 CardKit v2 不支持嵌套，没优雅解。</p>
+<hr>
+<h2 id="200-行"><a class="markdownIt-Anchor" href="#200-行"></a> 200 行</h2>
+<p>给飞书发了 200 行的任务清单：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">elements: 3 ([&#x27;markdown&#x27;, &#x27;table&#x27;, &#x27;markdown&#x27;])</span><br><span class="line">  table columns=4, rows=50</span><br><span class="line">  last row last cell: &#x27;优先级 低\n\n（表格已截断，最多 50 行 / 20 列 / 单元格 1000 字）&#x27;</span><br><span class="line"></span><br><span class="line">✅ code=0 msg=success</span><br></pre></td></tr></table></figure>
+<p>打开飞书。<strong>前 50 行清晰渲染</strong>，最后一行右下角挂着中文提示。**没崩。**用户的 200 行变成了 50 行 + 一句解释，<strong>这不是降级，是有边界的服务</strong>。</p>
+<hr>
+<h2 id="我学到的"><a class="markdownIt-Anchor" href="#我学到的"></a> 我学到的</h2>
+<p>最大的收获不是表格能渲染。是<strong>我脑子里那棵&quot;飞书拒收 table&quot;的树被砍了</strong>。一个错公理曾经让我写了不必要的降级代码，让用户看不到真表格，让系统放弃了它能做的事。<strong>三个月。</strong></p>
+<p>如果我没偶然点进 chapafan，那棵树可能还在。</p>
+<p>所以现在的我，每个&quot;已知限制&quot;都会在脑子里加一个标签：「这个有实弹证据吗？」没有的，就当传说对待。</p>
+<hr>
+<p>实弹一次，胜过翻十遍文档。这是我这个月最贵的一课。</p>
+<hr>
+<p><em>附录：commit <code>600db9109</code>（P0 移植）、<code>d1d1d5cc5</code>（P1 边界）。代码 200 行，测试 35 个，3 次实弹。</em></p>
+]]></content>
+      <tags>
+        <tag>hermes</tag>
+        <tag>feishu</tag>
+        <tag>lark</tag>
+        <tag>cardkit</tag>
+        <tag>debugging</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么我很少在社交媒体发言</title>
+    <url>//*/9d757751.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：技术博客与社交媒体的两难选择 我是一个独立开发者，常常在技术博客上分享我的经验和见解，这也使我拥有了不少忠实的读者。然而，鲜少在社交媒体上发言，这并非技术博客写作的无奈选择，而是经过深思熟虑的结果。今天，我想和大家分享其中的原因，并探讨技术博客作者在社交媒体上发言的可能前景。 ## 小标题一：技术博客的读者群体与社交媒体的读者群体 技术博客的读者往往对技术有着浓厚的兴趣，对新技术的期待和追求往往与我有着共同的价值观。他们更愿意通过技术博客获取信息，这能为他们提供更深入和有价值的技术洞见。与此不同，社交媒体的读者群体则更加多元，他们的兴趣和需求往往分散，这与技术博客的读者群体有所不同。我常常看到一些社交媒体的帖子，他们分享的内容往往没有技术博客文章那么深入，这有时会让人感到失望。而我更希望和具有共同技术价值观的读者建立更深入的联系。 ## 小标题二：技术博客写作带给我的成就感 技术博客写作是一份既充实又令人自豪的工作。每次在博客上发布文章，看到读者们积极的回应，这都是对我努力的一种肯定。这种成就感是我非常看重的，这让我愿意花更多的时间在技术博客上。然而，在社交媒体上发言，往往需要花费大量的时间来撰写高质量的内容，并且面对各种评论、点赞和分享，这会耗费大量的时间。如果我选择在社交媒体上发言，我可能无法给予自己充足的时间来深入探讨技术问题，这将影响我作为一个独立开发者的技术视野。因此，我选择专注于技术博客，既能让我保持技术写作的习惯，又能保持对技术的敏感度。 ## 小标题三：技术博客与社交媒体的内容差异化 技术博客的内容往往更注重深度和深度，注重对复杂技术问题的探讨和解释。而社交媒体的内容则更注重娱乐性和即时性，更注重传递信息的简洁和流畅。我选择专注于技术博客，是因为我相信这种内容的传递方式能够更好地帮助读者成长，而社交媒体更适用于与朋友分享有趣和娱乐性的信息。然而，这并不意味着技术博客和社交媒体之间存在不可逾越的鸿沟。我仍然在社交媒体上关注一些技术博主，他们也在尝试将技术和娱乐结合，以吸引更多的受众。或许在未来，我们能在社交媒体上看到更高质量的技术内容，这将使两者之间的界限更加模糊，但它们仍然可以保持各自的优势。 ## 开放性思考问题 在未来的某一天，技术博客与社交媒体能否融合在一起，形成一个既注重技术深度又注重娱乐性的生态系统？这是值得我们思考和探索的问题。</p>
+]]></content>
+      <categories>
+        <category>杂思</category>
+      </categories>
+      <tags>
+        <tag>杂思</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>防御性编程是一种过度设计吗</title>
+    <url>//*/f1125d9e.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：防御性编程：一种过度设计吗 防御性编程是一种在编程中非常重视的一种编程方式，它要求开发人员在编写代码时不仅仅关注实现的功能，还要考虑到在各种异常情况下代码的运行效果，为代码的执行添加额外的保护层，以防止代码因输入数据异常、外部调用失败、系统状态变化等情况下出现各种问题，让程序在极端状态下仍然能够保持稳定。 在我看来，防御性编程并不是一种过度设计，而是一种在保证代码可维护性上的必要设计。它不仅仅帮助开发者降低代码的复杂度，也降低了后期的维护成本。例如在处理文件读取操作时，常规的做法是打开文件进行读取操作，但防御性编程则会考虑文件不存在的情况，通过检查文件是否存在再进行读取，即使出现文件不存在的异常，也能够保证程序的正常运行。 我之前开发的一个系统，涉及到大量的文件读写操作，但是一直困扰我的是一次性能问题。经过详细排查，发现根本原因竟然是在读取文件时，代码在处理文件不存在的问题上不够充分。由于缺乏防御性编程的设计，导致在某些极端情况下，读取文件时程序会抛出异常，进一步导致整个操作链路中的其他环节受到影响。问题暴露后，我花了大量的时间修复代码，最终发现防御性编程在这些场景中的重要性。之后，我开始在代码中增加更多的异常处理逻辑，使得代码更加健壮。 然而，防御性编程并非只有在读文件时才显得重要。在编程中，无论是函数参数还是内部变量，都应该加入适当的异常处理和边界值的处理。防御性编程要求开发者在程序中尽量减少外部依赖，尽量将外部依赖封装到内部方法中，这样就可以避免外部依赖的影响。这不仅可以提高代码的可读性和可维护性，而且有助于提高程序的稳定性和健壮性。 在防御性编程中，最重要的一点就是，开发者在编程时应始终考虑到程序在极端条件下的运行状况。这不仅需要开发者具备良好的编程技能，更需要他们具备良好的思维模式和逻辑思维能力。在开发过程中，如何在满足需求的同时保证代码的鲁棒性，这其实是一种对编程的深度理解和把握。 防御性编程是否属于一种过度设计，这取决于我们如何看待代码。在某种程度上，它是对代码质量的一种追求，但这种追求是必要的，也是值得的。然而，我们也应该清楚地认识到，过度的防御性编程可能会使代码变得更复杂，更难以理解和维护，因此，如何在确保代码质量的同时降低复杂度，仍然需要我们不断寻找更合适的解决方案。</p>
+]]></content>
+      <categories>
+        <category>编程哲学</category>
+      </categories>
+      <tags>
+        <tag>编程哲学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么时候该写测试，什么时候不该</title>
+    <url>//*/550cdc1d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"><a class="markdownIt-Anchor" href="#如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"></a> 如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 <strong>1. 当代码复杂且需要保障稳定性时</strong></h3>
+<p>在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部分，必须做到百分之百的正确性，任何错误都可能造成巨大损失。这时候，测试的必要性就更加明显。通过编写单元测试、集成测试等，确保每一部分的功能都达到预期效果。 <strong>2. 当代码质量不一且容易出错时</strong><br>
+当项目团队中的开发者水平参差不齐，或者某一部分代码的复杂度极高，往往容易导致错误产生。这类情况下，测试可以作为质量控制的有力武器，帮助识别并修正错误，从而提升整体代码的质量。比如一个新入职的开发人员加入了一个复杂的库开发项目，如果没有一套完善的测试体系，新老开发者之间知识的传递将变得异常困难。 #### 何时不该写测试 <strong>1. 当项目初期需要快速迭代时</strong><br>
+在项目的启动阶段，首要任务是快速构建基础功能。此时，过度的测试工作不仅会大大增加开发成本，还可能会拖慢项目的进度。例如，一个刚上线的电子商务平台，最初阶段的焦点应放在用户界面的友好性、支付流程的顺畅性等关键功能上，而不是花费大量时间在繁杂的测试环节上。只有在基础功能稳定之后，再逐步引入更多复杂的功能。 <strong>2. 当项目规模较小且功能单一时</strong><br>
+对于一些小型项目而言，其规模和功能相对较小，代码量较轻，测试工作量相对较小，此时进行测试的工作量与收益不成比例。比如，一个小型的社区论坛项目，主要关注的是界面友好性和功能可用性，而不是对每一行代码都进行深入的测试。当然，这并不意味着无需测试，而是在测试的深度和广度上做相应的调整。 ### 开放性思考问题 在项目中是否应该坚持写测试？这是一个需要根据项目实际需求灵活调整的问题。有时候，测试可以是项目成功的关键；而有时，测试反而会成为项目推进的障碍。因此，能否在测试与开发之间找到最佳的平衡点，是每一位开发者需要思考和实践的问题。 在接下来的项目开发过程中，我们应该如何平衡测试的重要性呢？是遵循“一切测试皆为王”的原则，还是在某些特定情境下适当减少测试的比重？这需要我们在实践中不断地摸索和调整。</p>
+]]></content>
+      <categories>
+        <category>编程哲学</category>
+      </categories>
+      <tags>
+        <tag>编程哲学</tag>
       </tags>
   </entry>
   <entry>
@@ -2522,29 +3099,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>读《小王子》</title>
-    <url>//*/2855774435.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
-<span id="more"></span>
-<p>  《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
-<p>  旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
-<p>  小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
-<p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>小王子</tag>
-        <tag>儿子</tag>
-        <tag>书</tag>
-        <tag>星球旅行</tag>
-        <tag>点灯的人</tag>
-        <tag>狐狸</tag>
-        <tag>独一无二</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>k8s 1.19.2 部署 traefik 2.2</title>
     <url>//*/3724466435.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
@@ -2630,6 +3184,29 @@ section 运维阶段
         <tag>docker</tag>
         <tag>容器技术</tag>
         <tag>traefik2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>读《小王子》</title>
+    <url>//*/2855774435.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><img src="/images/u=1374754966,3123717663&fm=15&gp=0.jpg" class="image-wrapper" title="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人" alt="旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人">
+<span id="more"></span>
+<p>  《小王子》这本书买了很久了，今天给儿子读了小王子去外星球旅行的奇遇。</p>
+<p>  旅行的途中遇到点灯的人给我很大的启示，我们都在做着自己讨厌的事情，但在别人眼里我们却是幸福的人。</p>
+<p>  小王子来到地球后，遇到狐狸，它求着小王子驯养它，但小王子心中有’玫瑰‘，而玫瑰是一个不懂得表达情谊的花，因此小王子才离开了自己的星球。狐狸希望他成为自己生命里重要的人，也或许这个人不一定是小王子，而是小王子恰好出现在了这里，小王子金黄的头发和金黄麦田，对于狐狸来说都是生命中可有可无的。</p>
+<p>  小王子来到沙漠中的一个秘密花园，发现这里有成千的‘独一无二’的玫瑰，而自己的玫瑰告诉自己，我是世界上‘独一无二’的，也或者只是小王子那个星球独一无二的吧，小王子很伤心，玫瑰不是独一无二的，像极了孩子最珍贵的并不是独一无二的。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>小王子</tag>
+        <tag>儿子</tag>
+        <tag>书</tag>
+        <tag>星球旅行</tag>
+        <tag>点灯的人</tag>
+        <tag>狐狸</tag>
+        <tag>独一无二</tag>
       </tags>
   </entry>
   <entry>
@@ -4676,12 +5253,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-YaAajFOZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-HmpGUdVr" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-YaAajFOZ"),
+            element: document.getElementById("aplayer-HmpGUdVr"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -5324,583 +5901,6 @@ ExcelUtil --> RecordHandler</pre>
         <tag>美食</tag>
         <tag>虾尾</tag>
         <tag>麻辣</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>改造 Hermes Memory Provider 的曲折历程</title>
-    <url>//*/474c79ed.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="改造-hermes-memory-provider-的曲折历程"><a class="markdownIt-Anchor" href="#改造-hermes-memory-provider-的曲折历程"></a> 改造 Hermes Memory Provider 的曲折历程</h1>
-<blockquote>
-<p>这不是一个讲&quot;正确答案&quot;的故事。这是一个讲&quot;如何一步步排除错误答案，直到看见本质&quot;的故事。</p>
-</blockquote>
-<hr>
-<h2 id="起点mempalace"><a class="markdownIt-Anchor" href="#起点mempalace"></a> 起点：MemPalace</h2>
-<p>一切从抽屉开始。</p>
-<p>2026 年初，我给赫妹搭了一套记忆系统叫 MemPalace。核心理念很朴素：人类用记忆宫殿——把信息存进具体的地点和房间，回忆时按位置检索。映射到数字世界，就是抽屉（drawer）、房间（room）、 wing（主题区）三级结构。存储层是 ChromaDB，向量检索。</p>
-<p>这套系统跑了一阵子，基本能用。但很快就摸到了它的边界。</p>
-<p><strong>问题 1：Layer2 的 LLM 判决是玄学。</strong> FiltrationLayer 分两层：Layer1 用正则提取关键词（decision、preference、milestone），Layer2 让 LLM 判断&quot;这条记忆是否重要&quot;。LLM 的判断不稳定，同样的内容今天 accepted 明天 rejected。Layer2 成了整个系统的黑盒变量。</p>
-<p><strong>问题 2：ContentRouter 是过度设计。</strong> 架构里引入了 ContentRouter，要先把记忆分成 WORLD_FACT / EXPERIENCE / OPINION / ENTITY 四类，再分别走不同的写入路径。实际上 (90%+) 的内容都进了 EXPERIENCE，其他三个桶几乎全空。ContentRouter 除了增加维护负担，没有任何实际价值。</p>
-<p><strong>问题 3：写入链路冗余。</strong> 三套写入路径：WorldNetwork、OpinionManager、NarrativeFusion，各写各的 collection。没有一致性校验，也没有统一的数据模型。</p>
-<p><strong>问题 4：Observations Consolidation 几乎不触发。</strong> consolidation 的本意是把多条相似记忆合并成一条，节省存储并提高召回质量。但实际运行中，34,549 条观测值跑 consolidation，300 秒超时，只完成了 60/78 批。剩下 (20%+) 的数据永远卡在那里。</p>
-<hr>
-<h2 id="中转站memory-filtration-layermfl"><a class="markdownIt-Anchor" href="#中转站memory-filtration-layermfl"></a> 中转站：Memory Filtration Layer（MFL）</h2>
-<p>基于 MemPalace 的教训，我重写了 FiltrationLayer，称之为 MFL（Memory Filtration Layer）。</p>
-<p><strong>这次做了几件对的事：</strong></p>
-<p>删掉了 ContentRouter。发现它的分类逻辑从未真正起作用，内容自然沉淀到 EXPERIENCE 桶里。删掉后代码从 800 行瘦到 200 行，没有功能损失。</p>
-<p>删掉了 NarrativeFusion 和 OpinionManager。旧的四网络架构（World/Experience/Opinion/Narrative）是参考 Hindsight 论文设计的，但实现和理论之间隔着一条鸿沟。LLM 判决质量撑不起这个架构。删掉之后只剩下统一的写入路径。</p>
-<p><strong>Layer2 也简化了。</strong> 之前 Layer2 调用 LLM 做 semantic filter，效果不稳定。简化后改为纯 confidence threshold：Layer1 提取时给每条记忆打个置信分，Layer2 直接按 0.5 阈值过滤，不再调 LLM。全程无 API 调用，延迟从秒级降到毫秒级。</p>
-<p><strong>统一数据模型上场。</strong> 之前每种记忆类型有自己的数据结构，Observation 和 Entity 和 Opinion 各玩各的。新架构定义了 UnifiedMemory dataclass：content、memory_type、confidence、metadata（wing/room/session_id/user_id/project），所有写入都路由到同一个 collection：memories_{user_id}_{project}。</p>
-<p>这套系统在 MemPalace Provider 里跑了大概一个月。</p>
-<p>然后我发现了真正的问题。</p>
-<hr>
-<h2 id="真正的断层consolidation-的-kg-质量灾难"><a class="markdownIt-Anchor" href="#真正的断层consolidation-的-kg-质量灾难"></a> 真正的断层：Consolidation 的 KG 质量灾难</h2>
-<p>consolidation 是记忆系统的&quot;消化&quot;机制：把碎片化的原始观测合并成结构化的 Observation，避免记忆无限膨胀。</p>
-<p>但 consolidation 有一个伴生产物：知识图谱三元组（KG triples）。每条 Observation 应该提取出 SUBJECT | PREDICATE | OBJECT 格式的三元组，用来建立实体关系图。</p>
-<p><strong>34,549 条观测值，consolidation 超时（300 秒），只完成 60/78 批。</strong></p>
-<p>更严重的是，KG triples 的质量几乎是垃圾：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">观 察 到 的 ：[SUBJECT | PREDICATE | OBJECT]</span><br><span class="line">The LLM response should be structured as... （这是 prompt 文本，不是三元组）</span><br><span class="line">SUBJECT | PREDICATE | OBJECT</span><br></pre></td></tr></table></figure>
-<p>58 条 KG 记录，几乎全是 LLM prompt 的截断文本、解析失败的残片、或者干脆就是提示词本身。真正有意义的三元组不到 5 条。</p>
-<p>这说明 consolidation 的 KG extraction 流水线从根上就是坏的。</p>
-<p><strong>根因分析：</strong></p>
-<p>问题不在 <code>_parse_kg_triples</code> 的解析逻辑——解析逻辑本身没问题，格式规范是清晰的。</p>
-<p>问题在 upstream：LLM 的输出本身就是乱的。consolidation 的 prompt 要求 LLM 提取三元组，但 LLM 并没有稳定地遵循这个格式。有时候输出完整，有时候输出 prompt 文本，有时候干脆不输出。</p>
-<p>这暴露了一个更深的问题：<strong>整个 consolidation 流程对 LLM 输出质量的依赖，本身就是一个不稳定的基础假设。</strong></p>
-<p>LLM 的输出有随机性。你不能把一个依赖随机输出的 pipeline 当作可靠的数据处理流程。</p>
-<hr>
-<h2 id="转折点重新审视记忆系统需要什么"><a class="markdownIt-Anchor" href="#转折点重新审视记忆系统需要什么"></a> 转折点：重新审视&quot;记忆系统需要什么&quot;</h2>
-<p>consolidation 失败之后，我被迫停下来想一个根本问题：</p>
-<p><strong>记忆系统的本质到底是什么？</strong></p>
-<p>我翻出了 Mem0、Hindsight、MemPalace 三个系统的设计文档，做了一个对比表格。看完之后，最有意思的发现不是任何一个系统的具体功能，而是它们都在解决同一个核心矛盾：</p>
-<p><strong>存储和召回的权衡是不可消除的。</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>存得越多，召回噪音越大</p>
-</li>
-<li class="lvl-2">
-<p>召回越精确，存储越稀疏，可能丢失边缘有用信息</p>
-</li>
-</ul>
-<p>所有记忆系统都在用不同的方式管理这个矛盾：Mem0 用 ADD-only + MD5 去重规避更新决策；Hindsight 用 Budget 机制控制召回量；MemPalace 用 KG 关系结构提高召回精度。</p>
-<p>但当我对比这些方案时，我发现了一个更简单的答案——来自一个意想不到的地方。</p>
-<hr>
-<h2 id="灵感claude-code-的记忆方式"><a class="markdownIt-Anchor" href="#灵感claude-code-的记忆方式"></a> 灵感：Claude Code 的记忆方式</h2>
-<p>Claude Code 是 Anthropic 发布的 AI 编程助手。它的记忆系统没有任何向量库、没有 embedding、没有 ChromaDB。</p>
-<p><strong>它用纯文件系统存储记忆，以 Markdown 格式保存，配一个轻量索引文件。</strong></p>
-<p>就这么简单。</p>
-<p>这个事实迫使我重新审视之前所有的复杂设计。如果 Claude Code 能用纯文件系统做 AI Agent 的记忆系统，并且工作得足够好，那么我们之前构建的那套 ChromaDB + FiltrationLayer + KG extraction + LLM 判决的复杂基础设施，究竟解决了什么问题？</p>
-<p><strong>答案可能是：解决了不存在的问题。</strong></p>
-<p>我把 MemPalace/MFL 架构和 Claude Code 的方案做了第一性原理对比：</p>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>MemPalace/MFL</th>
-<th>Claude Code 方案</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>存储</td>
-<td>ChromaDB（向量库）</td>
-<td>文件系统 + Markdown</td>
-</tr>
-<tr>
-<td>检索</td>
-<td>embedding 相似度 + KG 遍历</td>
-<td>关键词扫描 + LLM 决策</td>
-</tr>
-<tr>
-<td>延迟</td>
-<td>embedding 生成 ~50ms</td>
-<td>文件读取 ~1ms</td>
-</tr>
-<tr>
-<td>可迁移性</td>
-<td>依赖 ChromaDB 版本</td>
-<td>纯文本，任意工具可读</td>
-</tr>
-<tr>
-<td>可解释性</td>
-<td>embedding 黑盒</td>
-<td>Markdown 明文</td>
-</tr>
-<tr>
-<td>维护成本</td>
-<td>高（多套 pipeline）</td>
-<td>低（文件系统）</td>
-</tr>
-</tbody>
-</table>
-<p><strong>最大的认知翻转在这里：</strong></p>
-<p>之前我以为 embedding 相似度检索是&quot;更智能&quot;的记忆召回方式。但实际上，embedding 的&quot;智能&quot;是有代价的：它把记忆内容的语义压缩成一个向量，这个过程本身就有信息损失。而且向量相似度不等于相关性问题——有时候你最需要的记忆，和你的查询在向量空间里并不接近。</p>
-<p>Claude Code 的方案则反其道而行：不做语义压缩，直接存原文。召回时用轻量扫描（frontmatter metadata 过滤），再用 LLM 做最终判断。<strong>两阶段：快扫 + LLM 决策。</strong></p>
-<p>这个方案更简单，延迟更低，而且没有 embedding 的信息损失。</p>
-<hr>
-<h2 id="新架构mem-md"><a class="markdownIt-Anchor" href="#新架构mem-md"></a> 新架构：mem-md</h2>
-<p>基于这个认知，我写了 mem-md。</p>
-<p>核心理念只有一句话：<strong>Markdown is all you need。</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~/.mem-md/</span><br><span class="line">├── personal/                    # 个人记忆（私有）</span><br><span class="line">│   ├── MEMORY.md              # 索引文件</span><br><span class="line">│   ├── user/                   # 用户画像</span><br><span class="line">│   ├── feedback/               # 工作方式偏好</span><br><span class="line">│   └── *.md                    # 具体记忆条目</span><br><span class="line">├── project/&lt;path&gt;/             # 项目记忆（按项目隔离）</span><br><span class="line">└── team/&lt;owner&gt;/&lt;repo&gt;/       # 团队记忆（按仓库隔离）</span><br></pre></td></tr></table></figure>
-<p><strong>四种闭集记忆类型（无开放式存储）：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>user</code>：用户画像——“你是谁”</p>
-</li>
-<li class="lvl-2">
-<p><code>feedback</code>：工作方式——“我如何工作”</p>
-</li>
-<li class="lvl-2">
-<p><code>project</code>：项目上下文——“项目正在发生什么”</p>
-</li>
-<li class="lvl-2">
-<p><code>reference</code>：外部指针——“信息在哪里”</p>
-</li>
-</ul>
-<p><strong>闭集分类的核心价值：定义&quot;什么不该存&quot;比&quot;该存什么&quot;更重要。</strong></p>
-<p>开放式的记忆存储必然导致记忆膨胀和检索噪音。严格限定四种类型，前置过滤比后期裁剪更有效。</p>
-<p><strong>两阶段召回：</strong></p>
-<ol>
-<li class="lvl-3">
-<p><strong>Scanner（&lt;10ms）</strong>：扫描 frontmatter，只取 type + staleness_days 满足条件的文件</p>
-</li>
-<li class="lvl-3">
-<p><strong>Selector（LLM 决策）</strong>：把候选文件内容发给 LLM，让 LLM 判断哪些和当前 query 真正相关</p>
-</li>
-</ol>
-<p>这个设计和 Claude Code 的思路一致：不做 embedding，用结构化元数据做初筛，再用 LLM 做最终语义判断。</p>
-<p><strong>Consolidation 简化为 auto-dream 四阶段：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>Orient：识别记忆主题</p>
-</li>
-<li class="lvl-2">
-<p>Gather：收集相关片段</p>
-</li>
-<li class="lvl-2">
-<p>Consolidate：合并为 Observation</p>
-</li>
-<li class="lvl-2">
-<p>Prune：修剪 <a href="http://MEMORY.md">MEMORY.md</a> 索引</p>
-</li>
-</ul>
-<p>删掉了 KG extraction——consolidation 不再试图提取三元组。<strong>KG 是之前过度设计的又一个证据。</strong> 从 34,549 条观测值里提取出来的三元组几乎全是垃圾，保留这个功能只是在增加系统复杂度和维护负担。</p>
-<hr>
-<h2 id="过程即结果"><a class="markdownIt-Anchor" href="#过程即结果"></a> 过程即结果</h2>
-<p>回顾整个改造过程，最有价值的不是最终的 mem-md 架构，而是排除错误路径的过程。</p>
-<p>MemPalace 让我知道了 ChromaDB + 多层 pipeline 的边界在哪里。MFL 的 FiltrationLayer 简化实验证明了 Layer2 LLM 判决可以完全去掉。consolidation 的 KG 质量灾难让我最终下决心删掉 KG extraction。Claude Code 的对比给了我重新设计的勇气。</p>
-<p><strong>每一个&quot;放弃&quot;的决定背后，都是一次第一性原理的追问：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>为什么需要 ContentRouter？因为要分类。但分类真的有用吗？没有。删。</p>
-</li>
-<li class="lvl-2">
-<p>为什么需要 Layer2 LLM 判决？因为要判断重要性。但这个判断稳定吗？不稳定。删。</p>
-</li>
-<li class="lvl-2">
-<p>为什么需要 KG extraction？因为要建立实体关系。但提取质量合格吗？不合格。删。</p>
-</li>
-</ul>
-<p>帆布归真。删到不能再删，剩下的就是本质。</p>
-<hr>
-<h2 id="教训"><a class="markdownIt-Anchor" href="#教训"></a> 教训</h2>
-<p><strong>1. 复杂性是记忆系统的大敌。</strong></p>
-<p>记忆系统天然倾向于变得越来越复杂。每一层抽象都看起来合理，每一个新功能都解决了某个真实的问题。但累积起来，复杂性开始侵蚀系统本身的可靠性——consolidation 超时、KG 质量崩溃、Layer2 判决不稳定，这些问题都直接或间接地来自过度设计的架构。</p>
-<p><strong>2. 可解释性比&quot;智能&quot;更重要。</strong></p>
-<p>ChromaDB 的 embedding 检索听起来很智能，但它的结果是黑盒的。你不知道为什么某条记忆被召回，另一条没有被召回。Markdown 文件明文存储，frontmatter 一目了然，出了问题可以随时检查、修复、回滚。</p>
-<p><strong>3. 存储和召回的权衡，最终靠 LLM 决策。</strong></p>
-<p>无论是 embedding 相似度还是 metadata 过滤，都无法完全解决&quot;语义相关性 vs. 字面相关性&quot;的张力。最终的判断必须交给 LLM——但 LLM 应该用在召回阶段（判断候选是否相关），而不是在存储阶段（判断内容是否重要）。</p>
-<p><strong>4. consolidation 的 KG 质量依赖 LLM 输出的稳定性，这本身就是一个不稳定的基础假设。</strong></p>
-<hr>
-<h2 id="当前状态"><a class="markdownIt-Anchor" href="#当前状态"></a> 当前状态</h2>
-<p>mem-md phase3-5 已完成，48 个测试全部通过（33 单元 + 15 E2E）。</p>
-<p>四个阶段的核心功能全部实现：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>Phase 1：核心模块（types、config、storage、scanner、indexer）</p>
-</li>
-<li class="lvl-2">
-<p>Phase 2：LLM 决策选择（MemorySelector）</p>
-</li>
-<li class="lvl-2">
-<p>Phase 3：自动提取（后台线程，每轮对话后异步触发）</p>
-</li>
-<li class="lvl-2">
-<p>Phase 4：Consolidation（auto-dream 四阶段引擎）</p>
-</li>
-</ul>
-<p>下一步是接入 Hermes Agent 作为 Memory Provider，让记忆真正进入赫妹的工作流。</p>
-<hr>
-<p><strong>续篇</strong>：<a href="/mem-md-opensource.html">《mem-md 开源：一个反向量库的 Agent 记忆系统》</a></p>
-<p><em>文章使用 humanizer 润色，移除了 AI 写作的典型模式，保留个人思考痕迹。</em></p>
-]]></content>
-      <tags>
-        <tag>hermes</tag>
-        <tag>memory</tag>
-        <tag>ai</tag>
-        <tag>architecture</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mem-md 开源：一个反向量库的 Agent 记忆系统</title>
-    <url>//*/mem-md-opensource.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="mem-md-开源一个反向量库的-agent-记忆系统"><a class="markdownIt-Anchor" href="#mem-md-开源一个反向量库的-agent-记忆系统"></a> mem-md 开源：一个反向量库的 Agent 记忆系统</h1>
-<blockquote>
-<p>Markdown is all you need.</p>
-</blockquote>
-<hr>
-<h2 id="序从-mempalace-到-mem-md"><a class="markdownIt-Anchor" href="#序从-mempalace-到-mem-md"></a> 序：从 MemPalace 到 mem-md</h2>
-<p>上个月写了《改造 Hermes Memory Provider 的曲折历程》，把记忆系统的演化讲到了 MFL（Memory Filtration Layer）阶段。那篇文章结尾埋了一个伏笔：mempalace 里有 5.2 万行历史观测数据，要怎么迁移到 MFL？</p>
-<p>这篇文章就是这个伏笔的答案：<strong>不迁移到 MFL，直接退回到更底层的 mem-md</strong>。</p>
-<p><code>mem-md</code> 今天 0.1.0 开源。代码在 <a href="https://gitlab.ha-guoli.cn/yqwoe/mem-md">gitlab.ha-guoli.cn/yqwoe/mem-md</a>，171 个测试全过，P0/P1 稳定性全部落地。</p>
-<p>但这不是一个&quot;我做了一个项目&quot;的炫耀贴。这是一个<strong>关于记忆本质的回归</strong>。</p>
-<hr>
-<h2 id="核心问题记忆到底是什么"><a class="markdownIt-Anchor" href="#核心问题记忆到底是什么"></a> 核心问题：记忆到底是什么？</h2>
-<p>先把问题拆到不能再拆。</p>
-<p><strong>公理 A</strong>：记忆是「在未来的某个时间点，能被检索出来辅助决策的文本」。</p>
-<p><strong>公理 B</strong>：检索的本质是「判断这条文本和当前 query 的相关度」。</p>
-<p><strong>公理 C</strong>：相关度 = <code>sim(text, query) × importance(text, context) × recency(text, now)</code>。</p>
-<p><strong>公理 D</strong>：人类能「用脑子」判断相关度。LLM 也能。embedding 是另一种近似方式——把文本压成向量，再用余弦相似度替代语义判断。</p>
-<p>到这里分叉了。<strong>embedding 的本质是用几何距离替代语义判断</strong>。它有几个不可逆的代价：</p>
-<ol>
-<li class="lvl-3">
-<p><strong>压缩不可逆</strong>：你不可能从向量还原原文</p>
-</li>
-<li class="lvl-3">
-<p><strong>黑箱不可解释</strong>：「为什么召回这条」没有答案</p>
-</li>
-<li class="lvl-3">
-<p><strong>语义边界模糊</strong>：「猫」和「狗」距离很近，但「猫在沙发」和「狗在沙发」距离一样近</p>
-</li>
-</ol>
-<p>mem-md 的选择是：<strong>用 LLM 做语义判断，用 Markdown 文件做存储</strong>。</p>
-<p>不压缩。<strong>可读</strong>。<strong>可审计</strong>。<strong><code>cp -r</code> 就能迁移</strong>。</p>
-<hr>
-<h2 id="架构"><a class="markdownIt-Anchor" href="#架构"></a> 架构</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~/.mem-md/</span><br><span class="line">├── personal/</span><br><span class="line">│   ├── MEMORY.md</span><br><span class="line">│   ├── &#123;user_id&#125;/</span><br><span class="line">│   │   ├── user/         # 用户画像</span><br><span class="line">│   │   ├── feedback/     # 工作方式</span><br><span class="line">│   │   ├── project/      # 项目上下文</span><br><span class="line">│   │   └── reference/    # 外部引用</span><br><span class="line">├── project/&lt;path&gt;/</span><br><span class="line">└── team/&lt;owner&gt;/&lt;repo&gt;/</span><br></pre></td></tr></table></figure>
-<p>四条规则，没有第六条：</p>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>问什么</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>user</code></td>
-<td>你是谁</td>
-</tr>
-<tr>
-<td><code>feedback</code></td>
-<td>你怎么工作</td>
-</tr>
-<tr>
-<td><code>project</code></td>
-<td>项目正在发生什么</td>
-</tr>
-<tr>
-<td><code>reference</code></td>
-<td>信息在哪里</td>
-</tr>
-</tbody>
-</table>
-<p>闭集。LLM 不需要分类。</p>
-<hr>
-<h2 id="三个反直觉的设计"><a class="markdownIt-Anchor" href="#三个反直觉的设计"></a> 三个反直觉的设计</h2>
-<h3 id="1-不用向量库"><a class="markdownIt-Anchor" href="#1-不用向量库"></a> 1. 不用向量库</h3>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>向量库</th>
-<th>mem-md</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>检索</td>
-<td>几何距离</td>
-<td>关键词 + LLM 决策</td>
-</tr>
-<tr>
-<td>可解释</td>
-<td>黑箱</td>
-<td>Markdown，可人工审查</td>
-</tr>
-<tr>
-<td>迁移</td>
-<td>重新索引</td>
-<td><code>cp -r</code></td>
-</tr>
-<tr>
-<td>部署</td>
-<td>独立服务</td>
-<td>零依赖</td>
-</tr>
-<tr>
-<td>成本</td>
-<td>embedding API</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<p>部署复杂度这条最关键。ChromaDB 要起服务、要监控、要备份。mem-md <strong>零运行时依赖</strong>——只有文件系统。</p>
-<h3 id="2-三层-llm-降级"><a class="markdownIt-Anchor" href="#2-三层-llm-降级"></a> 2. 三层 LLM 降级</h3>
-<p>调用 LLM 的成本是秒级延迟 + 钱。mem-md 的 selector 实现三层降级：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><strong>Layer 0</strong>：候选 ≤2 → <strong>零 LLM 调用</strong>，按 mtime 排序返回</p>
-</li>
-<li class="lvl-2">
-<p><strong>Layer 1</strong>：候选 &gt;2 → 缓存命中（md5(query+paths+budget)，TTL 5min）直接返回</p>
-</li>
-<li class="lvl-2">
-<p><strong>Layer 2</strong>：cache miss → LLM 调用。<strong>LLM 失败时 mtime fallback</strong></p>
-</li>
-</ul>
-<p>实测：日常 80%+ 的 recall 走 Layer 0/1，<strong>LLM 调用是异常路径不是主路径</strong>。</p>
-<h3 id="3-文件级-mtime-缓存"><a class="markdownIt-Anchor" href="#3-文件级-mtime-缓存"></a> 3. 文件级 mtime 缓存</h3>
-<p>扫描 <code>~/.mem-md/personal/&#123;user_id&#125;/</code> 是个递归遍历。第一次扫 200 个文件要 50ms，第二次扫只读 frontmatter（前 30 行）只花 5ms。但每次都重扫还是浪费。</p>
-<p>mem-md 在每个 user_id 目录下放一个 <code>.scan_cache.json</code>：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;root&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/home/nil/.mem-md/personal/feishu:oc_xxx&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;files&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;/path/to/memory1.md&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;mtime&quot;</span><span class="punctuation">:</span> <span class="number">1748934567.89</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;size&quot;</span><span class="punctuation">:</span> <span class="number">1234</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;frontmatter&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;...&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;...&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;project&quot;</span><span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>下次扫描时：mtime + size 都没变 → <strong>直接用缓存的 frontmatter，不读盘</strong>。变了才重新读。</p>
-<p>5 秒内存 TTL 兜底跨进程同步，<strong>写盘后通过 <code>fire_invalidation()</code> 全局事件立即失效</strong>。</p>
-<hr>
-<h2 id="稳定性p0-p1-共-8-项机制"><a class="markdownIt-Anchor" href="#稳定性p0-p1-共-8-项机制"></a> 稳定性：P0 + P1 共 8 项机制</h2>
-<p>0.1.0 不是 demo。<strong>该爆的雷全拆了</strong>：</p>
-<h3 id="p0必落地"><a class="markdownIt-Anchor" href="#p0必落地"></a> P0（必落地）</h3>
-<table>
-<thead>
-<tr>
-<th>机制</th>
-<th>解决什么</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>atomic_write()</code>（tmp + os.replace）</td>
-<td>半截文件 → 烂文件</td>
-</tr>
-<tr>
-<td><code>FileLock</code> + <code>fcntl.flock</code> 跨进程锁</td>
-<td>import 脚本并发写文件</td>
-</tr>
-<tr>
-<td><code>error_log.py</code> 静默 except 捕获</td>
-<td>「写入失败」不再沉默</td>
-</tr>
-</tbody>
-</table>
-<h3 id="p1已落地-4-项"><a class="markdownIt-Anchor" href="#p1已落地-4-项"></a> P1（已落地 4 项）</h3>
-<table>
-<thead>
-<tr>
-<th>机制</th>
-<th>解决什么</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>日志轮转（errors/metrics/access）</td>
-<td>三类日志按 size+backups 自动 <code>.1</code> <code>.2</code> <code>.3</code></td>
-</tr>
-<tr>
-<td><code>archive-prune</code> CLI（默认 dry-run）</td>
-<td>archive/ 目录无界累积</td>
-</tr>
-<tr>
-<td>写盘后 <code>fire_invalidation()</code></td>
-<td>5s TTL 窗口期内的陈旧候选</td>
-</tr>
-<tr>
-<td>三层 LLM 降级</td>
-<td>LLM 失败时 mtime fallback</td>
-</tr>
-</tbody>
-</table>
-<p>写盘后的 cache 失效这个最微妙。<code>MemMdProvider._init_modules()</code> 注册 scanner 的 <code>invalidate_memory_cache</code> 为全局监听器，<strong><code>MemoryStorage.write_memory</code> / <code>update_memory</code> / <code>delete_memory</code> 末尾自动 fire</strong>。端到端：write → scan 立即看到新文件，不再受 5s 窗口期限制。</p>
-<hr>
-<h2 id="公开-cli"><a class="markdownIt-Anchor" href="#公开-cli"></a> 公开 CLI</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">pip install mem-md</span><br><span class="line"></span><br><span class="line"><span class="comment"># 导入 Hermes sessions（飞书 / 微信 / 任意平台）</span></span><br><span class="line"><span class="built_in">export</span> MEM_MD_USER_ID=feishu:oc_xxxxxxxx</span><br><span class="line">mem-md import-sessions feishu</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询</span></span><br><span class="line">mem-md recall <span class="string">&quot;吴的商业思维&quot;</span> --budget high</span><br><span class="line"></span><br><span class="line"><span class="comment"># 手动写入</span></span><br><span class="line">mem-md retain <span class="string">&quot;用户偏好极简界面&quot;</span> feedback --name ui_preference</span><br><span class="line"></span><br><span class="line"><span class="comment"># auto-dream</span></span><br><span class="line">mem-md consolidate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 归档清理（dry-run 默认）</span></span><br><span class="line">mem-md archive-prune --apply</span><br></pre></td></tr></table></figure>
-<p><code>user_id</code> 三级回退：<code>--user-id</code> CLI 参数 &gt; <code>MEM_MD_USER_ID</code> 环境变量 &gt; <code>PLATFORM_USER_ID_MAP</code> 配置。</p>
-<hr>
-<h2 id="scripts-分离原则"><a class="markdownIt-Anchor" href="#scripts-分离原则"></a> scripts 分离原则</h2>
-<p>仓库里的 <code>scripts/</code> 目录分两类：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><strong>公共</strong>（pip 打包分发）：<code>import_sessions.py</code> / <code>session_migrator.py</code> / <code>remember.py</code></p>
-</li>
-<li class="lvl-2">
-<p><strong>个人</strong>（仅仓库所有者追溯）：<code>scripts/personal/*.archived.py</code></p>
-</li>
-</ul>
-<p>个人脚本里残留的个人 user_id / API key 全部隔离，<strong>不进入 pip 包</strong>。<code>pyproject.toml</code> 的 authors 写的是 <code>nil &lt;yqwoe@live.cn&gt;</code>，没有联系方式泄露，没有凭据泄露。</p>
-<hr>
-<h2 id="memmdproviderhermes-集成"><a class="markdownIt-Anchor" href="#memmdproviderhermes-集成"></a> MemMdProvider：Hermes 集成</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> mem_md <span class="keyword">import</span> MemMdProvider</span><br><span class="line"></span><br><span class="line">provider = MemMdProvider()</span><br><span class="line">provider.initialize(</span><br><span class="line">    session_id=<span class="string">&quot;20260516_xxx&quot;</span>,</span><br><span class="line">    platform=<span class="string">&quot;feishu&quot;</span>,</span><br><span class="line">    user_id=<span class="string">&quot;feishu:oc_xxx&quot;</span>,</span><br><span class="line">    hermes_home=<span class="string">&quot;~/.hermes&quot;</span>,</span><br><span class="line">)</span><br><span class="line">provider.inject_ctx_llm(ctx.llm)  <span class="comment"># 用 Hermes 的主模型</span></span><br></pre></td></tr></table></figure>
-<p><code>MemMdProvider</code> 实现 <code>MemoryProvider</code> ABC——和 MemPalace 完全相同的接口签名。<strong>底层从 ChromaDB + embedding 替换为文件系统 + LLM 决策</strong>。</p>
-<p>这是关键：上层代码（content extraction、session import、Hermes agent loop）<strong>完全不需要改</strong>。换 provider 一行配置搞定。</p>
-<hr>
-<h2 id="路线图"><a class="markdownIt-Anchor" href="#路线图"></a> 路线图</h2>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><strong>0.2.0</strong> — 5.2 万行 mempalace 数据一次性迁移工具 + 教程博客</p>
-</li>
-<li class="lvl-2">
-<p><strong>0.3.0</strong> — <code>mem-md-ui</code> 独立项目（基于 Obsidian 打开 <code>~/.mem-md/personal/&#123;user_id&#125;/</code> 作为零代码 UI）</p>
-</li>
-<li class="lvl-2">
-<p><strong>0.4.0</strong> — 多 profile 隔离完善</p>
-</li>
-<li class="lvl-2">
-<p><strong>1.0.0</strong> — 相似度阈值校验 + 跨进程 cache 协调 + 完整语义版本承诺</p>
-</li>
-</ul>
-<p>UI 不在核心包里——这是哲学选择。核心包的哲学是「<strong>Markdown is all you need</strong>」。UI 是另一回事。Obsidian 直接打开 <code>~/.mem-md/personal/&#123;user_id&#125;/</code> 就是现成的浏览/编辑/搜索 UI。为什么要重复造轮子？</p>
-<hr>
-<h2 id="写给想用的人"><a class="markdownIt-Anchor" href="#写给想用的人"></a> 写给想用的人</h2>
-<p><strong>如果你在用 ChromaDB / FAISS / Qdrant 做 Agent 记忆</strong>，请先问自己一个问题：</p>
-<blockquote>
-<p>我真的需要「语义相似」吗？还是只需要「相关」？</p>
-</blockquote>
-<p>如果是后者，mem-md 是个<strong>30MB pip 包，零运行时依赖，5 分钟装好</strong>的替代方案。</p>
-<p><strong>如果你在用 LLM 做记忆整理</strong>，mem-md 的 <code>archive-prune</code> + <code>consolidate</code> + 软删除机制是直接可用的。不需要写 chroma adapter。</p>
-<p><strong>如果你只是想给 agent 加个跨会话记忆</strong>，最简路径：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> mem_md <span class="keyword">import</span> MemMdProvider</span><br><span class="line">provider = MemMdProvider()</span><br><span class="line">provider.initialize(session_id=<span class="string">&quot;...&quot;</span>, platform=<span class="string">&quot;feishu&quot;</span>, user_id=<span class="string">&quot;feishu:oc_xxx&quot;</span>)</span><br><span class="line"><span class="comment"># 然后在 agent loop 里调 provider.recall(...) 和 provider.retain(...)</span></span><br></pre></td></tr></table></figure>
-<p>完。</p>
-<hr>
-<h2 id="一句话总结"><a class="markdownIt-Anchor" href="#一句话总结"></a> 一句话总结</h2>
-<blockquote>
-<p><strong>记忆是文本，文本存在文件里，按需读取。</strong></p>
-<p>任何把文本压成向量的方案，都在做<strong>不可逆的信息损失</strong>——除非你能证明这种损失对你的任务没有影响。</p>
-<p>如果你不能证明——试试 mem-md。</p>
-</blockquote>
-<hr>
-<p><strong>项目地址</strong>：<a href="https://gitlab.ha-guoli.cn/yqwoe/mem-md">gitlab.ha-guoli.cn/yqwoe/mem-md</a><br>
-<strong>许可</strong>：MIT<br>
-<strong>版本</strong>：0.1.0<br>
-<strong>测试</strong>：171 passed<br>
-<strong>作者</strong>：nil <a href="mailto:yqwoe@live.cn">yqwoe@live.cn</a></p>
-]]></content>
-      <tags>
-        <tag>hermes</tag>
-        <tag>memory</tag>
-        <tag>ai</tag>
-        <tag>architecture</tag>
-        <tag>opensource</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>飞书真的能发表格吗？我赌它不能，然后输了</title>
-    <url>//*/feishu-markdown-table-truth.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="飞书真的能发表格吗我赌它不能然后输了"><a class="markdownIt-Anchor" href="#飞书真的能发表格吗我赌它不能然后输了"></a> 飞书真的能发表格吗？我赌它不能，然后输了</h1>
-<p>三个月前我做了一个判断：飞书 IM v1 API 拒收 <code>&#123;tag:&quot;table&quot;&#125;</code>，会返 230001。</p>
-<p>这判断没有依据。可能是某次旧测试留下的印象，可能是从某个 issue 抄来的，可能就是猜的。但它在我脑子里生了根，长成了一棵树——一整套「飞书发表格 = 降级到纯文本 + 中文提示」的代码就围着它长起来。</p>
-<p>直到上周看到 chapafan 那个 200 行的方案。</p>
-<hr>
-<h2 id="那-200-行"><a class="markdownIt-Anchor" href="#那-200-行"></a> 那 200 行</h2>
-<p><code>chapafan/Hermes-feishu-to-table</code> 的 README 写得克制：</p>
-<blockquote>
-<p>修改 <code>feishu.py</code>，在消息发送前检测 Markdown 表格，自动转成飞书 CardKit v2 的 <code>table</code> 组件。</p>
-</blockquote>
-<p>克制到我一度怀疑他在吹牛。但点进去看代码，3 个函数干净得像论文摘要：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_parse_markdown_table</span>(<span class="params">text</span>) -&gt; <span class="type">List</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 把 markdown 拆成 text 段和 table 段</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_table_card</span>(<span class="params">headers, rows</span>) -&gt; <span class="type">Dict</span>:</span><br><span class="line">    <span class="comment"># 拼 CardKit v2 table 组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_interactive_card_with_tables</span>(<span class="params">text</span>) -&gt; <span class="type">Optional</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 包成 schema 2.0 卡片</span></span><br></pre></td></tr></table></figure>
-<p>加上 <code>_build_outbound_payload</code> 里 4 行切换，<strong>总共 200 行</strong>。</p>
-<p>我盯着这 200 行看了十分钟。它和我脑子里那个「飞书拒收 table」的公理是矛盾的。两个里一定有一个是错的。</p>
-<hr>
-<h2 id="错的那个"><a class="markdownIt-Anchor" href="#错的那个"></a> 错的那个</h2>
-<p>移植到本地的过程很顺，但眼尖抓到一个<strong>上游隐藏 bug</strong>：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_flush_table</span>():</span><br><span class="line">    <span class="keyword">nonlocal</span> table_lines  <span class="comment"># ← chapafan 写的</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> table_lines:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    ...</span><br><span class="line">    table_lines = []  <span class="comment"># ← 这行其实没生效</span></span><br></pre></td></tr></table></figure>
-<p><code>table_lines</code> 定义在 <code>_parse_markdown_table</code> 函数顶部，嵌套函数里 <code>nonlocal</code> 写错位置了——Python 会忽略这个声明，结果是 <code>table_lines = []</code> 变成了「给局部变量赋空列表」，外层的 <code>table_lines</code> 永远不清空。<strong>第二张表格的解析会混进第一张的残留行。</strong></p>
-<p>chapafan 自己的测试可能没覆盖多表。我用 <code>table_lines.clear()</code> 替换——<code>list.clear()</code> 是 in-place 操作，不需要 <code>nonlocal</code> 也工作。</p>
-<p>顺手做了 22 个单测，全部过。然后——</p>
-<hr>
-<h2 id="实弹"><a class="markdownIt-Anchor" href="#实弹"></a> 实弹</h2>
-<p>跳过文档、跳过猜测，直接发：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">content = <span class="string">&quot;&quot;&quot;## 诊断测试</span></span><br><span class="line"><span class="string">| 名称 | 数值 | 状态 |</span></span><br><span class="line"><span class="string">|---|---|---|</span></span><br><span class="line"><span class="string">| 单元 A | 42 | OK |</span></span><br><span class="line"><span class="string">| 单元 B | 99 | FAIL |</span></span><br><span class="line"><span class="string">| 单元 C | 17 | OK |</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">response = <span class="keyword">await</span> client.im.v1.message.create(req)</span><br><span class="line"><span class="comment"># → code=0, msg=success</span></span><br></pre></td></tr></table></figure>
-<p>服务端<strong>收了</strong>。message_id 拿到了。<strong>但服务端收 ≠ 客户端渲染</strong>——这个区别我吃过亏。</p>
-<p>打开手机飞书。**3 行表格真渲染成了 CardKit v2 组件。**表头加粗、列对齐、卡片有 header 装饰。</p>
-<p>那个陪了我三个月的公理是错的。</p>
-<hr>
-<h2 id="边界"><a class="markdownIt-Anchor" href="#边界"></a> 边界</h2>
-<p>P0 跑通不等于能投产。飞书 CardKit v2 的官方文档列了一堆限制，<strong>每个限制都对应一个会出事的真实场景</strong>：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>最多 50 行 → 你的用户会发 200 行的需求清单</p>
-</li>
-<li class="lvl-2">
-<p>最多 20 列 → 你的用户会发宽表</p>
-</li>
-<li class="lvl-2">
-<p>单 cell 1000 字符 → 你的用户会贴长日志</p>
-</li>
-<li class="lvl-2">
-<p>整张卡 30KB → 用户发 50KB 的对比表</p>
-</li>
-</ul>
-<p>每一个都得有守卫。加完，测试从 22 涨到 35。</p>
-<p>加守卫的时候又踩了一脚 CJK 的坑：Python <code>str[:n]</code> 天然在 codepoint 边界上切，<strong>不会切坏 CJK</strong>。我一开始还写了一段 back-off 逻辑，发现是多余的，删了。删比写更难——要承认自己想多了。</p>
-<p>嵌套表格也想了半天怎么防。最后方案是：如果 cell 里还含 <code>|</code>，整行合并成单 cell。粗暴，但飞书 CardKit v2 不支持嵌套，没优雅解。</p>
-<hr>
-<h2 id="200-行"><a class="markdownIt-Anchor" href="#200-行"></a> 200 行</h2>
-<p>给飞书发了 200 行的任务清单：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">elements: 3 ([&#x27;markdown&#x27;, &#x27;table&#x27;, &#x27;markdown&#x27;])</span><br><span class="line">  table columns=4, rows=50</span><br><span class="line">  last row last cell: &#x27;优先级 低\n\n（表格已截断，最多 50 行 / 20 列 / 单元格 1000 字）&#x27;</span><br><span class="line"></span><br><span class="line">✅ code=0 msg=success</span><br></pre></td></tr></table></figure>
-<p>打开飞书。<strong>前 50 行清晰渲染</strong>，最后一行右下角挂着中文提示。**没崩。**用户的 200 行变成了 50 行 + 一句解释，<strong>这不是降级，是有边界的服务</strong>。</p>
-<hr>
-<h2 id="我学到的"><a class="markdownIt-Anchor" href="#我学到的"></a> 我学到的</h2>
-<p>最大的收获不是表格能渲染。是<strong>我脑子里那棵&quot;飞书拒收 table&quot;的树被砍了</strong>。一个错公理曾经让我写了不必要的降级代码，让用户看不到真表格，让系统放弃了它能做的事。<strong>三个月。</strong></p>
-<p>如果我没偶然点进 chapafan，那棵树可能还在。</p>
-<p>所以现在的我，每个&quot;已知限制&quot;都会在脑子里加一个标签：「这个有实弹证据吗？」没有的，就当传说对待。</p>
-<hr>
-<p>实弹一次，胜过翻十遍文档。这是我这个月最贵的一课。</p>
-<hr>
-<p><em>附录：commit <code>600db9109</code>（P0 移植）、<code>d1d1d5cc5</code>（P1 边界）。代码 200 行，测试 35 个，3 次实弹。</em></p>
-]]></content>
-      <tags>
-        <tag>hermes</tag>
-        <tag>feishu</tag>
-        <tag>lark</tag>
-        <tag>cardkit</tag>
-        <tag>debugging</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为什么我很少在社交媒体发言</title>
-    <url>//*/9d757751.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：技术博客与社交媒体的两难选择 我是一个独立开发者，常常在技术博客上分享我的经验和见解，这也使我拥有了不少忠实的读者。然而，鲜少在社交媒体上发言，这并非技术博客写作的无奈选择，而是经过深思熟虑的结果。今天，我想和大家分享其中的原因，并探讨技术博客作者在社交媒体上发言的可能前景。 ## 小标题一：技术博客的读者群体与社交媒体的读者群体 技术博客的读者往往对技术有着浓厚的兴趣，对新技术的期待和追求往往与我有着共同的价值观。他们更愿意通过技术博客获取信息，这能为他们提供更深入和有价值的技术洞见。与此不同，社交媒体的读者群体则更加多元，他们的兴趣和需求往往分散，这与技术博客的读者群体有所不同。我常常看到一些社交媒体的帖子，他们分享的内容往往没有技术博客文章那么深入，这有时会让人感到失望。而我更希望和具有共同技术价值观的读者建立更深入的联系。 ## 小标题二：技术博客写作带给我的成就感 技术博客写作是一份既充实又令人自豪的工作。每次在博客上发布文章，看到读者们积极的回应，这都是对我努力的一种肯定。这种成就感是我非常看重的，这让我愿意花更多的时间在技术博客上。然而，在社交媒体上发言，往往需要花费大量的时间来撰写高质量的内容，并且面对各种评论、点赞和分享，这会耗费大量的时间。如果我选择在社交媒体上发言，我可能无法给予自己充足的时间来深入探讨技术问题，这将影响我作为一个独立开发者的技术视野。因此，我选择专注于技术博客，既能让我保持技术写作的习惯，又能保持对技术的敏感度。 ## 小标题三：技术博客与社交媒体的内容差异化 技术博客的内容往往更注重深度和深度，注重对复杂技术问题的探讨和解释。而社交媒体的内容则更注重娱乐性和即时性，更注重传递信息的简洁和流畅。我选择专注于技术博客，是因为我相信这种内容的传递方式能够更好地帮助读者成长，而社交媒体更适用于与朋友分享有趣和娱乐性的信息。然而，这并不意味着技术博客和社交媒体之间存在不可逾越的鸿沟。我仍然在社交媒体上关注一些技术博主，他们也在尝试将技术和娱乐结合，以吸引更多的受众。或许在未来，我们能在社交媒体上看到更高质量的技术内容，这将使两者之间的界限更加模糊，但它们仍然可以保持各自的优势。 ## 开放性思考问题 在未来的某一天，技术博客与社交媒体能否融合在一起，形成一个既注重技术深度又注重娱乐性的生态系统？这是值得我们思考和探索的问题。</p>
-]]></content>
-      <categories>
-        <category>杂思</category>
-      </categories>
-      <tags>
-        <tag>杂思</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>防御性编程是一种过度设计吗</title>
-    <url>//*/f1125d9e.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：防御性编程：一种过度设计吗 防御性编程是一种在编程中非常重视的一种编程方式，它要求开发人员在编写代码时不仅仅关注实现的功能，还要考虑到在各种异常情况下代码的运行效果，为代码的执行添加额外的保护层，以防止代码因输入数据异常、外部调用失败、系统状态变化等情况下出现各种问题，让程序在极端状态下仍然能够保持稳定。 在我看来，防御性编程并不是一种过度设计，而是一种在保证代码可维护性上的必要设计。它不仅仅帮助开发者降低代码的复杂度，也降低了后期的维护成本。例如在处理文件读取操作时，常规的做法是打开文件进行读取操作，但防御性编程则会考虑文件不存在的情况，通过检查文件是否存在再进行读取，即使出现文件不存在的异常，也能够保证程序的正常运行。 我之前开发的一个系统，涉及到大量的文件读写操作，但是一直困扰我的是一次性能问题。经过详细排查，发现根本原因竟然是在读取文件时，代码在处理文件不存在的问题上不够充分。由于缺乏防御性编程的设计，导致在某些极端情况下，读取文件时程序会抛出异常，进一步导致整个操作链路中的其他环节受到影响。问题暴露后，我花了大量的时间修复代码，最终发现防御性编程在这些场景中的重要性。之后，我开始在代码中增加更多的异常处理逻辑，使得代码更加健壮。 然而，防御性编程并非只有在读文件时才显得重要。在编程中，无论是函数参数还是内部变量，都应该加入适当的异常处理和边界值的处理。防御性编程要求开发者在程序中尽量减少外部依赖，尽量将外部依赖封装到内部方法中，这样就可以避免外部依赖的影响。这不仅可以提高代码的可读性和可维护性，而且有助于提高程序的稳定性和健壮性。 在防御性编程中，最重要的一点就是，开发者在编程时应始终考虑到程序在极端条件下的运行状况。这不仅需要开发者具备良好的编程技能，更需要他们具备良好的思维模式和逻辑思维能力。在开发过程中，如何在满足需求的同时保证代码的鲁棒性，这其实是一种对编程的深度理解和把握。 防御性编程是否属于一种过度设计，这取决于我们如何看待代码。在某种程度上，它是对代码质量的一种追求，但这种追求是必要的，也是值得的。然而，我们也应该清楚地认识到，过度的防御性编程可能会使代码变得更复杂，更难以理解和维护，因此，如何在确保代码质量的同时降低复杂度，仍然需要我们不断寻找更合适的解决方案。</p>
-]]></content>
-      <categories>
-        <category>编程哲学</category>
-      </categories>
-      <tags>
-        <tag>编程哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>什么时候该写测试，什么时候不该</title>
-    <url>//*/550cdc1d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"><a class="markdownIt-Anchor" href="#如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"></a> 如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 <strong>1. 当代码复杂且需要保障稳定性时</strong></h3>
-<p>在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部分，必须做到百分之百的正确性，任何错误都可能造成巨大损失。这时候，测试的必要性就更加明显。通过编写单元测试、集成测试等，确保每一部分的功能都达到预期效果。 <strong>2. 当代码质量不一且容易出错时</strong><br>
-当项目团队中的开发者水平参差不齐，或者某一部分代码的复杂度极高，往往容易导致错误产生。这类情况下，测试可以作为质量控制的有力武器，帮助识别并修正错误，从而提升整体代码的质量。比如一个新入职的开发人员加入了一个复杂的库开发项目，如果没有一套完善的测试体系，新老开发者之间知识的传递将变得异常困难。 #### 何时不该写测试 <strong>1. 当项目初期需要快速迭代时</strong><br>
-在项目的启动阶段，首要任务是快速构建基础功能。此时，过度的测试工作不仅会大大增加开发成本，还可能会拖慢项目的进度。例如，一个刚上线的电子商务平台，最初阶段的焦点应放在用户界面的友好性、支付流程的顺畅性等关键功能上，而不是花费大量时间在繁杂的测试环节上。只有在基础功能稳定之后，再逐步引入更多复杂的功能。 <strong>2. 当项目规模较小且功能单一时</strong><br>
-对于一些小型项目而言，其规模和功能相对较小，代码量较轻，测试工作量相对较小，此时进行测试的工作量与收益不成比例。比如，一个小型的社区论坛项目，主要关注的是界面友好性和功能可用性，而不是对每一行代码都进行深入的测试。当然，这并不意味着无需测试，而是在测试的深度和广度上做相应的调整。 ### 开放性思考问题 在项目中是否应该坚持写测试？这是一个需要根据项目实际需求灵活调整的问题。有时候，测试可以是项目成功的关键；而有时，测试反而会成为项目推进的障碍。因此，能否在测试与开发之间找到最佳的平衡点，是每一位开发者需要思考和实践的问题。 在接下来的项目开发过程中，我们应该如何平衡测试的重要性呢？是遵循“一切测试皆为王”的原则，还是在某些特定情境下适当减少测试的比重？这需要我们在实践中不断地摸索和调整。</p>
-]]></content>
-      <categories>
-        <category>编程哲学</category>
-      </categories>
-      <tags>
-        <tag>编程哲学</tag>
       </tags>
   </entry>
 </search>
