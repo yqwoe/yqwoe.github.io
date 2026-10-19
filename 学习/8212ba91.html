@@ -53,10 +53,10 @@
 <meta property="article:published_time" content="2024-01-24T10:00:16.000Z">
 <meta property="article:modified_time" content="2026-10-17T14:19:03.720Z">
 <meta property="article:author" content="Yq Woe">
-<meta property="article:tag" content="reveal.js">
 <meta property="article:tag" content="animate">
 <meta property="article:tag" content="css动画">
 <meta property="article:tag" content="css">
+<meta property="article:tag" content="reveal.js">
 <meta name="twitter:card" content="summary">  
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@yqwoe" />
@@ -409,8 +409,9 @@ gitalk.render('gitalk-container')
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = Number(l.getItem('s')) || 1,
-    n = l.getItem('n'),
+    rawS = l.getItem('s'),
+    s = (rawS === '1' || rawS === '2') ? Number(rawS) : 0,
+    sysDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches,
     m = d.getElementById("dark-mode"),
     b = () => {
       f('--bg-color', '#fafafa');
@@ -437,22 +438,19 @@ gitalk.render('gitalk-container')
     o = d.getElementById("sans-font"),
     e = () => {
       f('--body-stack', '"Lora", "Georgia", "Times New Roman", serif');
-      // o.innerHTML = "无衬"
     },
     g = () => {
       f('--body-stack', '"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif');
-      // o.innerHTML = "衬线"
+    },
+    applyTheme = () => {
+      if (s === 1) b();
+      else if (s === 2) c();
+      else (sysDark ? c() : b());
     };
   m.onclick = function(){
-    if (s == 2) {
-      s = 1;
-      l.setItem('s', s);
-      c()
-    } else {
-      s = 2;
-      l.setItem('s', s);
-      b()
-    }
+    s = s === 2 ? 0 : s + 1;
+    l.setItem('s', s);
+    applyTheme();
   };
   o.onclick =function(){
     if (n == 2) {
@@ -465,17 +463,7 @@ gitalk.render('gitalk-container')
       e()
     }
   };
-  if (s || s == '1') {
-      s = 1;
-      l.setItem('s', s);
-    c()
-  }
-
-  if (!s || s == '2') {
-      s = 2;
-      l.setItem('s', s);
-    b()
-  };
+  applyTheme();
   if (!n) {
     n = 2;
     l.setItem('n', 2)
