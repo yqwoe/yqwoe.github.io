@@ -18,8 +18,8 @@
   
   <entry>
     <title>什么时候该写测试，什么时候不该</title>
-    <link href="https://sudo.rm-rf.ink/*/550cdc1d.html"/>
-    <id>https://sudo.rm-rf.ink/*/550cdc1d.html</id>
+    <link href="https://sudo.rm-rf.ink/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/550cdc1d.html"/>
+    <id>https://sudo.rm-rf.ink/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/550cdc1d.html</id>
     <published>2026-10-19T01:00:00.000Z</published>
     <updated>2026-10-19T02:16:41.463Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>防御性编程是一种过度设计吗</title>
-    <link href="https://sudo.rm-rf.ink/*/f1125d9e.html"/>
-    <id>https://sudo.rm-rf.ink/*/f1125d9e.html</id>
+    <link href="https://sudo.rm-rf.ink/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/f1125d9e.html"/>
+    <id>https://sudo.rm-rf.ink/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/f1125d9e.html</id>
     <published>2026-10-18T01:00:00.000Z</published>
     <updated>2026-10-19T02:16:26.705Z</updated>
     
@@ -66,8 +66,8 @@
   
   <entry>
     <title>为什么我很少在社交媒体发言</title>
-    <link href="https://sudo.rm-rf.ink/*/9d757751.html"/>
-    <id>https://sudo.rm-rf.ink/*/9d757751.html</id>
+    <link href="https://sudo.rm-rf.ink/%E6%9D%82%E6%80%9D/9d757751.html"/>
+    <id>https://sudo.rm-rf.ink/%E6%9D%82%E6%80%9D/9d757751.html</id>
     <published>2026-10-17T01:00:00.000Z</published>
     <updated>2026-10-19T02:16:14.115Z</updated>
     
@@ -90,8 +90,8 @@
   
   <entry>
     <title>飞书真的能发表格吗？我赌它不能，然后输了</title>
-    <link href="https://sudo.rm-rf.ink/*/feishu-markdown-table-truth.html"/>
-    <id>https://sudo.rm-rf.ink/*/feishu-markdown-table-truth.html</id>
+    <link href="https://sudo.rm-rf.ink/uncategorized/feishu-markdown-table-truth.html"/>
+    <id>https://sudo.rm-rf.ink/uncategorized/feishu-markdown-table-truth.html</id>
     <published>2026-06-03T02:00:00.000Z</published>
     <updated>2026-06-03T02:32:06.638Z</updated>
     
@@ -117,8 +117,8 @@
   
   <entry>
     <title>mem-md 开源：一个反向量库的 Agent 记忆系统</title>
-    <link href="https://sudo.rm-rf.ink/*/mem-md-opensource.html"/>
-    <id>https://sudo.rm-rf.ink/*/mem-md-opensource.html</id>
+    <link href="https://sudo.rm-rf.ink/uncategorized/mem-md-opensource.html"/>
+    <id>https://sudo.rm-rf.ink/uncategorized/mem-md-opensource.html</id>
     <published>2026-06-02T14:30:00.000Z</published>
     <updated>2026-06-02T15:04:13.800Z</updated>
     
@@ -144,8 +144,8 @@
   
   <entry>
     <title>改造 Hermes Memory Provider 的曲折历程</title>
-    <link href="https://sudo.rm-rf.ink/*/474c79ed.html"/>
-    <id>https://sudo.rm-rf.ink/*/474c79ed.html</id>
+    <link href="https://sudo.rm-rf.ink/uncategorized/474c79ed.html"/>
+    <id>https://sudo.rm-rf.ink/uncategorized/474c79ed.html</id>
     <published>2026-06-01T04:00:00.000Z</published>
     <updated>2026-06-02T15:06:42.876Z</updated>
     
@@ -169,8 +169,8 @@
   
   <entry>
     <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记</title>
-    <link href="https://sudo.rm-rf.ink/*/46499b7b.html"/>
-    <id>https://sudo.rm-rf.ink/*/46499b7b.html</id>
+    <link href="https://sudo.rm-rf.ink/AI/46499b7b.html"/>
+    <id>https://sudo.rm-rf.ink/AI/46499b7b.html</id>
     <published>2026-05-21T16:00:00.000Z</published>
     <updated>2026-10-17T14:19:03.719Z</updated>
     
@@ -203,8 +203,8 @@
   
   <entry>
     <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
-    <link href="https://sudo.rm-rf.ink/*/5f9c1a2b.html"/>
-    <id>https://sudo.rm-rf.ink/*/5f9c1a2b.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/5f9c1a2b.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/5f9c1a2b.html</id>
     <published>2026-05-01T14:30:00.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     
@@ -232,8 +232,8 @@
   
   <entry>
     <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践</title>
-    <link href="https://sudo.rm-rf.ink/*/38291047.html"/>
-    <id>https://sudo.rm-rf.ink/*/38291047.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/38291047.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/38291047.html</id>
     <published>2026-05-01T10:31:00.000Z</published>
     <updated>2026-10-17T14:19:03.721Z</updated>
     
@@ -259,8 +259,8 @@
   
   <entry>
     <title>Hello Hermes Agent</title>
-    <link href="https://sudo.rm-rf.ink/*/96208538.html"/>
-    <id>https://sudo.rm-rf.ink/*/96208538.html</id>
+    <link href="https://sudo.rm-rf.ink/uncategorized/96208538.html"/>
+    <id>https://sudo.rm-rf.ink/uncategorized/96208538.html</id>
     <published>2026-04-27T15:32:00.000Z</published>
     <updated>2026-10-17T14:19:03.719Z</updated>
     
@@ -279,8 +279,8 @@
   
   <entry>
     <title>daily-news-2026-04-25</title>
-    <link href="https://sudo.rm-rf.ink/*/f135226f.html"/>
-    <id>https://sudo.rm-rf.ink/*/f135226f.html</id>
+    <link href="https://sudo.rm-rf.ink/daily-news/f135226f.html"/>
+    <id>https://sudo.rm-rf.ink/daily-news/f135226f.html</id>
     <published>2026-04-24T23:30:00.000Z</published>
     <updated>2026-10-17T14:19:03.719Z</updated>
     
@@ -298,8 +298,8 @@
   
   <entry>
     <title>OpenClaw 0</title>
-    <link href="https://sudo.rm-rf.ink/*/8b6d76da.html"/>
-    <id>https://sudo.rm-rf.ink/*/8b6d76da.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/8b6d76da.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/8b6d76da.html</id>
     <published>2026-03-30T09:10:57.000Z</published>
     <updated>2026-10-17T14:19:03.719Z</updated>
     
@@ -317,8 +317,8 @@
   
   <entry>
     <title>redis主从-哨兵模式</title>
-    <link href="https://sudo.rm-rf.ink/*/8f0491a1.html"/>
-    <id>https://sudo.rm-rf.ink/*/8f0491a1.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/8f0491a1.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/8f0491a1.html</id>
     <published>2024-03-25T09:56:30.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     
@@ -336,8 +336,8 @@
   
   <entry>
     <title>rust-if-let简洁控制流</title>
-    <link href="https://sudo.rm-rf.ink/*/eec35d0e.html"/>
-    <id>https://sudo.rm-rf.ink/*/eec35d0e.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/eec35d0e.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/eec35d0e.html</id>
     <published>2024-03-14T00:41:12.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     
@@ -364,8 +364,8 @@
   
   <entry>
     <title>rust-枚举与模式匹配</title>
-    <link href="https://sudo.rm-rf.ink/*/7d69317e.html"/>
-    <id>https://sudo.rm-rf.ink/*/7d69317e.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/7d69317e.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/7d69317e.html</id>
     <published>2024-03-13T09:35:29.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     
@@ -390,8 +390,8 @@
   
   <entry>
     <title>rust-方法语法</title>
-    <link href="https://sudo.rm-rf.ink/*/d1274d86.html"/>
-    <id>https://sudo.rm-rf.ink/*/d1274d86.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/d1274d86.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/d1274d86.html</id>
     <published>2024-03-13T09:18:32.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     
@@ -418,8 +418,8 @@
   
   <entry>
     <title>rust-结构定义和实例化</title>
-    <link href="https://sudo.rm-rf.ink/*/e0d5ed17.html"/>
-    <id>https://sudo.rm-rf.ink/*/e0d5ed17.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/e0d5ed17.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/e0d5ed17.html</id>
     <published>2024-03-13T08:53:22.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     
@@ -444,8 +444,8 @@
   
   <entry>
     <title>rust入门</title>
-    <link href="https://sudo.rm-rf.ink/*/94fe59ce.html"/>
-    <id>https://sudo.rm-rf.ink/*/94fe59ce.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/94fe59ce.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/94fe59ce.html</id>
     <published>2024-03-11T01:30:48.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     
@@ -472,8 +472,8 @@
   
   <entry>
     <title>Transformer模型</title>
-    <link href="https://sudo.rm-rf.ink/*/e4b8a22b.html"/>
-    <id>https://sudo.rm-rf.ink/*/e4b8a22b.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/e4b8a22b.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/e4b8a22b.html</id>
     <published>2024-02-22T03:01:14.000Z</published>
     <updated>2026-10-17T14:19:03.719Z</updated>
     
@@ -500,8 +500,8 @@
   
   <entry>
     <title>笔记4-《程序员数学-1》</title>
-    <link href="https://sudo.rm-rf.ink/*/c88b93d0.html"/>
-    <id>https://sudo.rm-rf.ink/*/c88b93d0.html</id>
+    <link href="https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/c88b93d0.html"/>
+    <id>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/c88b93d0.html</id>
     <published>2024-02-19T01:07:47.000Z</published>
     <updated>2026-10-17T14:19:03.720Z</updated>
     

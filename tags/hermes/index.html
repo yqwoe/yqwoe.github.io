@@ -103,7 +103,7 @@
                 06-03 上午
               </div>
               <div class="archive-article-title">
-                <a href="/*/feishu-markdown-table-truth.html" target="_self">
+                <a href="/uncategorized/feishu-markdown-table-truth.html" target="_self">
                   飞书真的能发表格吗？我赌它不能，然后输了&nbsp;&nbsp;
                 </a>
               </div>
@@ -115,7 +115,7 @@
                 06-02 晚上
               </div>
               <div class="archive-article-title">
-                <a href="/*/mem-md-opensource.html" target="_self">
+                <a href="/uncategorized/mem-md-opensource.html" target="_self">
                   mem-md 开源：一个反向量库的 Agent 记忆系统&nbsp;&nbsp;
                 </a>
               </div>
@@ -127,7 +127,7 @@
                 06-01 中午
               </div>
               <div class="archive-article-title">
-                <a href="/*/474c79ed.html" target="_self">
+                <a href="/uncategorized/474c79ed.html" target="_self">
                   改造 Hermes Memory Provider 的曲折历程&nbsp;&nbsp;
                 </a>
               </div>
@@ -196,7 +196,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

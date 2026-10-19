@@ -103,7 +103,7 @@
                 01-24 晚上
               </div>
               <div class="archive-article-title">
-                <a href="/*/8212ba91.html" target="_self">
+                <a href="/%E5%AD%A6%E4%B9%A0/8212ba91.html" target="_self">
                   revealjs-animated动画文档&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

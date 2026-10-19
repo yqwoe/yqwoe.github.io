@@ -103,7 +103,7 @@
                 05-22 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/46499b7b.html" target="_self">
+                <a href="/AI/46499b7b.html" target="_self">
                   从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

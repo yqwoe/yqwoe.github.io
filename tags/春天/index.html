@@ -103,7 +103,7 @@
                 03-21 晚上
               </div>
               <div class="archive-article-title">
-                <a href="/*/3042827788.html" target="_self">
+                <a href="/%E7%94%9F%E6%B4%BB/3042827788.html" target="_self">
                   路&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

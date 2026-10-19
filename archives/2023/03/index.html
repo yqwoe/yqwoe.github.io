@@ -110,7 +110,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/2050102104.html"><span>gitlab &amp; OKR 进行项目管理  &nbsp;&nbsp;</span></a>
+      <a href="/%E5%B7%A5%E4%BD%9C/2050102104.html"><span>gitlab &amp; OKR 进行项目管理  &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -190,7 +190,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

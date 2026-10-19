@@ -110,7 +110,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/96208538.html"><span>Hello Hermes Agent &nbsp;&nbsp;</span></a>
+      <a href="/uncategorized/96208538.html"><span>Hello Hermes Agent &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -132,7 +132,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/f135226f.html"><span>daily-news-2026-04-25 &nbsp;&nbsp;🔐</span></a>
+      <a href="/daily-news/f135226f.html"><span>daily-news-2026-04-25 &nbsp;&nbsp;🔐</span></a>
       
     </h3>
   
@@ -212,7 +212,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

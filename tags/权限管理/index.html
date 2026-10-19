@@ -103,7 +103,7 @@
                 12-22 晚上
               </div>
               <div class="archive-article-title">
-                <a href="/*/2967963195.html" target="_self">
+                <a href="/%E5%B7%A5%E4%BD%9C/2967963195.html" target="_self">
                   1. 低代码&nbsp;&nbsp;
                 </a>
               </div>
@@ -115,7 +115,7 @@
                 12-22 中午
               </div>
               <div class="archive-article-title">
-                <a href="/*/725797460.html" target="_self">
+                <a href="/%E5%B7%A5%E4%BD%9C/725797460.html" target="_self">
                   0. 低代码&nbsp;&nbsp;
                 </a>
               </div>
@@ -184,7 +184,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

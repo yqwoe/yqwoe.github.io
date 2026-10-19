@@ -103,7 +103,7 @@
                 01-25 上午
               </div>
               <div class="archive-article-title">
-                <a href="/*/2afb063d.html" target="_self">
+                <a href="/%E7%94%9F%E6%B4%BB/2afb063d.html" target="_self">
                   奇怪的梦&nbsp;&nbsp;🔐
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

@@ -110,7 +110,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/2d764bfc.html"><span>给博客增加评论功能 &nbsp;&nbsp;</span></a>
+      <a href="/Jekyll/2d764bfc.html"><span>给博客增加评论功能 &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -132,7 +132,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/762727420.html"><span>给博客增加评论功能 &nbsp;&nbsp;</span></a>
+      <a href="/%E5%AD%A6%E4%B9%A0/762727420.html"><span>给博客增加评论功能 &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -154,7 +154,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/4278564287.html"><span>第一篇博客 &nbsp;&nbsp;</span></a>
+      <a href="/%E7%94%9F%E6%B4%BB/4278564287.html"><span>第一篇博客 &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -176,7 +176,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/4278564287.html"><span>第一篇博客 &nbsp;&nbsp;</span></a>
+      <a href="/%E7%94%9F%E6%B4%BB/4278564287.html"><span>第一篇博客 &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -256,7 +256,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

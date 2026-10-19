@@ -103,7 +103,7 @@
                 03-14 早上
               </div>
               <div class="archive-article-title">
-                <a href="/*/eec35d0e.html" target="_self">
+                <a href="/%E5%AD%A6%E4%B9%A0/eec35d0e.html" target="_self">
                   rust-if-let简洁控制流&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

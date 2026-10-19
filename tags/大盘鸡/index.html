@@ -103,7 +103,7 @@
                 01-16 上午
               </div>
               <div class="archive-article-title">
-                <a href="/*/c43e7c0d.html" target="_self">
+                <a href="/%E8%8F%9C%E8%B0%B1/c43e7c0d.html" target="_self">
                   大盘鸡🐔&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

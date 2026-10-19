@@ -103,7 +103,7 @@
                 10-06 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/2cd67ed1.html" target="_self">
+                <a href="/%E5%AD%A6%E4%B9%A0/2cd67ed1.html" target="_self">
                   程序员数学1&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

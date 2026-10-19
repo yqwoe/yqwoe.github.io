@@ -110,7 +110,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/2967963195.html"><span>1. 低代码 &nbsp;&nbsp;</span></a>
+      <a href="/%E5%B7%A5%E4%BD%9C/2967963195.html"><span>1. 低代码 &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -132,7 +132,7 @@
       
   
     <h3 class="archive-article-title" itemprop="name">
-      <a href="/*/725797460.html"><span>0. 低代码 &nbsp;&nbsp;</span></a>
+      <a href="/%E5%B7%A5%E4%BD%9C/725797460.html"><span>0. 低代码 &nbsp;&nbsp;</span></a>
       
     </h3>
   
@@ -212,7 +212,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

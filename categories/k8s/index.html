@@ -103,7 +103,7 @@
                 11-13 上午
               </div>
               <div class="archive-article-title">
-                <a href="/*/ddfed903.html" target="_self">
+                <a href="/k8s/ddfed903.html" target="_self">
                   k8s 1.19.2 部署 traefik 2.2&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

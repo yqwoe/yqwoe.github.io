@@ -103,7 +103,7 @@
                 10-31 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/6e8cb24c.html" target="_self">
+                <a href="/Cas/6e8cb24c.html" target="_self">
                   Cas Server 本地部署&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

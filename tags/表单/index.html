@@ -103,7 +103,7 @@
                 01-30 早上
               </div>
               <div class="archive-article-title">
-                <a href="/*/74a10861.html" target="_self">
+                <a href="/%E5%B7%A5%E4%BD%9C/74a10861.html" target="_self">
                   表单中心功能清单&nbsp;&nbsp;🔐
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

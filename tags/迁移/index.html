@@ -103,7 +103,7 @@
                 05-01 晚上
               </div>
               <div class="archive-article-title">
-                <a href="/*/5f9c1a2b.html" target="_self">
+                <a href="/%E5%B7%A5%E4%BD%9C/5f9c1a2b.html" target="_self">
                   从 OpenClaw 迁移到 Hermes：我的实战记录&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

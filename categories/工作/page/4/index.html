@@ -103,7 +103,7 @@
                 06-03 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/1398242790.html" target="_self">
+                <a href="/%E5%B7%A5%E4%BD%9C/1398242790.html" target="_self">
                   一次gogs踩坑之路&nbsp;&nbsp;
                 </a>
               </div>
@@ -115,7 +115,7 @@
                 06-02 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/149409992.html" target="_self">
+                <a href="/%E5%B7%A5%E4%BD%9C/149409992.html" target="_self">
                   一次ios网页样式问题排查心路历程&nbsp;&nbsp;
                 </a>
               </div>
@@ -189,7 +189,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

@@ -103,7 +103,7 @@
                 03-27 下午
               </div>
               <div class="archive-article-title">
-                <a href="/*/340466787.html" target="_self">
+                <a href="/%E7%94%9F%E6%B4%BB/340466787.html" target="_self">
                   我们不像诗歌&nbsp;&nbsp;
                 </a>
               </div>
@@ -172,7 +172,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {

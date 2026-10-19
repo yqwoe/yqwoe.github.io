@@ -103,7 +103,7 @@
                 11-17 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/f2e32020.html" target="_self">
+                <a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8/f2e32020.html" target="_self">
                   集群、负载均衡、分布式&nbsp;&nbsp;
                 </a>
               </div>
@@ -115,7 +115,7 @@
                 06-05 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/b4b628e2.html" target="_self">
+                <a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8/b4b628e2.html" target="_self">
                   阿里云mysql外网访问&nbsp;&nbsp;
                 </a>
               </div>
@@ -127,7 +127,7 @@
                 06-03 凌晨
               </div>
               <div class="archive-article-title">
-                <a href="/*/53577de6.html" target="_self">
+                <a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8/53577de6.html" target="_self">
                   一次gogs采坑之旅&nbsp;&nbsp;
                 </a>
               </div>
@@ -196,7 +196,7 @@
     r = d.documentElement.style,
     f = r.setProperty.bind(r),
     l = localStorage,
-    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    s = Number(l.getItem('s')) || 1,
     n = l.getItem('n'),
     m = d.getElementById("dark-mode"),
     b = () => {
