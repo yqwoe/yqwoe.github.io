@@ -5789,4 +5789,118 @@ ExcelUtil --> RecordHandler</pre>
         <tag>opensource</tag>
       </tags>
   </entry>
+  <entry>
+    <title>飞书真的能发表格吗？我赌它不能，然后输了</title>
+    <url>//*/feishu-markdown-table-truth.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="飞书真的能发表格吗我赌它不能然后输了"><a class="markdownIt-Anchor" href="#飞书真的能发表格吗我赌它不能然后输了"></a> 飞书真的能发表格吗？我赌它不能，然后输了</h1>
+<p>三个月前我做了一个判断：飞书 IM v1 API 拒收 <code>&#123;tag:&quot;table&quot;&#125;</code>，会返 230001。</p>
+<p>这判断没有依据。可能是某次旧测试留下的印象，可能是从某个 issue 抄来的，可能就是猜的。但它在我脑子里生了根，长成了一棵树——一整套「飞书发表格 = 降级到纯文本 + 中文提示」的代码就围着它长起来。</p>
+<p>直到上周看到 chapafan 那个 200 行的方案。</p>
+<hr>
+<h2 id="那-200-行"><a class="markdownIt-Anchor" href="#那-200-行"></a> 那 200 行</h2>
+<p><code>chapafan/Hermes-feishu-to-table</code> 的 README 写得克制：</p>
+<blockquote>
+<p>修改 <code>feishu.py</code>，在消息发送前检测 Markdown 表格，自动转成飞书 CardKit v2 的 <code>table</code> 组件。</p>
+</blockquote>
+<p>克制到我一度怀疑他在吹牛。但点进去看代码，3 个函数干净得像论文摘要：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_parse_markdown_table</span>(<span class="params">text</span>) -&gt; <span class="type">List</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 把 markdown 拆成 text 段和 table 段</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_table_card</span>(<span class="params">headers, rows</span>) -&gt; <span class="type">Dict</span>:</span><br><span class="line">    <span class="comment"># 拼 CardKit v2 table 组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_interactive_card_with_tables</span>(<span class="params">text</span>) -&gt; <span class="type">Optional</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 包成 schema 2.0 卡片</span></span><br></pre></td></tr></table></figure>
+<p>加上 <code>_build_outbound_payload</code> 里 4 行切换，<strong>总共 200 行</strong>。</p>
+<p>我盯着这 200 行看了十分钟。它和我脑子里那个「飞书拒收 table」的公理是矛盾的。两个里一定有一个是错的。</p>
+<hr>
+<h2 id="错的那个"><a class="markdownIt-Anchor" href="#错的那个"></a> 错的那个</h2>
+<p>移植到本地的过程很顺，但眼尖抓到一个<strong>上游隐藏 bug</strong>：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_flush_table</span>():</span><br><span class="line">    <span class="keyword">nonlocal</span> table_lines  <span class="comment"># ← chapafan 写的</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> table_lines:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    ...</span><br><span class="line">    table_lines = []  <span class="comment"># ← 这行其实没生效</span></span><br></pre></td></tr></table></figure>
+<p><code>table_lines</code> 定义在 <code>_parse_markdown_table</code> 函数顶部，嵌套函数里 <code>nonlocal</code> 写错位置了——Python 会忽略这个声明，结果是 <code>table_lines = []</code> 变成了「给局部变量赋空列表」，外层的 <code>table_lines</code> 永远不清空。<strong>第二张表格的解析会混进第一张的残留行。</strong></p>
+<p>chapafan 自己的测试可能没覆盖多表。我用 <code>table_lines.clear()</code> 替换——<code>list.clear()</code> 是 in-place 操作，不需要 <code>nonlocal</code> 也工作。</p>
+<p>顺手做了 22 个单测，全部过。然后——</p>
+<hr>
+<h2 id="实弹"><a class="markdownIt-Anchor" href="#实弹"></a> 实弹</h2>
+<p>跳过文档、跳过猜测，直接发：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">content = <span class="string">&quot;&quot;&quot;## 诊断测试</span></span><br><span class="line"><span class="string">| 名称 | 数值 | 状态 |</span></span><br><span class="line"><span class="string">|---|---|---|</span></span><br><span class="line"><span class="string">| 单元 A | 42 | OK |</span></span><br><span class="line"><span class="string">| 单元 B | 99 | FAIL |</span></span><br><span class="line"><span class="string">| 单元 C | 17 | OK |</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">response = <span class="keyword">await</span> client.im.v1.message.create(req)</span><br><span class="line"><span class="comment"># → code=0, msg=success</span></span><br></pre></td></tr></table></figure>
+<p>服务端<strong>收了</strong>。message_id 拿到了。<strong>但服务端收 ≠ 客户端渲染</strong>——这个区别我吃过亏。</p>
+<p>打开手机飞书。**3 行表格真渲染成了 CardKit v2 组件。**表头加粗、列对齐、卡片有 header 装饰。</p>
+<p>那个陪了我三个月的公理是错的。</p>
+<hr>
+<h2 id="边界"><a class="markdownIt-Anchor" href="#边界"></a> 边界</h2>
+<p>P0 跑通不等于能投产。飞书 CardKit v2 的官方文档列了一堆限制，<strong>每个限制都对应一个会出事的真实场景</strong>：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>最多 50 行 → 你的用户会发 200 行的需求清单</p>
+</li>
+<li class="lvl-2">
+<p>最多 20 列 → 你的用户会发宽表</p>
+</li>
+<li class="lvl-2">
+<p>单 cell 1000 字符 → 你的用户会贴长日志</p>
+</li>
+<li class="lvl-2">
+<p>整张卡 30KB → 用户发 50KB 的对比表</p>
+</li>
+</ul>
+<p>每一个都得有守卫。加完，测试从 22 涨到 35。</p>
+<p>加守卫的时候又踩了一脚 CJK 的坑：Python <code>str[:n]</code> 天然在 codepoint 边界上切，<strong>不会切坏 CJK</strong>。我一开始还写了一段 back-off 逻辑，发现是多余的，删了。删比写更难——要承认自己想多了。</p>
+<p>嵌套表格也想了半天怎么防。最后方案是：如果 cell 里还含 <code>|</code>，整行合并成单 cell。粗暴，但飞书 CardKit v2 不支持嵌套，没优雅解。</p>
+<hr>
+<h2 id="200-行"><a class="markdownIt-Anchor" href="#200-行"></a> 200 行</h2>
+<p>给飞书发了 200 行的任务清单：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">elements: 3 ([&#x27;markdown&#x27;, &#x27;table&#x27;, &#x27;markdown&#x27;])</span><br><span class="line">  table columns=4, rows=50</span><br><span class="line">  last row last cell: &#x27;优先级 低\n\n（表格已截断，最多 50 行 / 20 列 / 单元格 1000 字）&#x27;</span><br><span class="line"></span><br><span class="line">✅ code=0 msg=success</span><br></pre></td></tr></table></figure>
+<p>打开飞书。<strong>前 50 行清晰渲染</strong>，最后一行右下角挂着中文提示。**没崩。**用户的 200 行变成了 50 行 + 一句解释，<strong>这不是降级，是有边界的服务</strong>。</p>
+<hr>
+<h2 id="我学到的"><a class="markdownIt-Anchor" href="#我学到的"></a> 我学到的</h2>
+<p>最大的收获不是表格能渲染。是<strong>我脑子里那棵&quot;飞书拒收 table&quot;的树被砍了</strong>。一个错公理曾经让我写了不必要的降级代码，让用户看不到真表格，让系统放弃了它能做的事。<strong>三个月。</strong></p>
+<p>如果我没偶然点进 chapafan，那棵树可能还在。</p>
+<p>所以现在的我，每个&quot;已知限制&quot;都会在脑子里加一个标签：「这个有实弹证据吗？」没有的，就当传说对待。</p>
+<hr>
+<p>实弹一次，胜过翻十遍文档。这是我这个月最贵的一课。</p>
+<hr>
+<p><em>附录：commit <code>600db9109</code>（P0 移植）、<code>d1d1d5cc5</code>（P1 边界）。代码 200 行，测试 35 个，3 次实弹。</em></p>
+]]></content>
+      <tags>
+        <tag>hermes</tag>
+        <tag>feishu</tag>
+        <tag>lark</tag>
+        <tag>cardkit</tag>
+        <tag>debugging</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么我很少在社交媒体发言</title>
+    <url>//*/9d757751.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：技术博客与社交媒体的两难选择 我是一个独立开发者，常常在技术博客上分享我的经验和见解，这也使我拥有了不少忠实的读者。然而，鲜少在社交媒体上发言，这并非技术博客写作的无奈选择，而是经过深思熟虑的结果。今天，我想和大家分享其中的原因，并探讨技术博客作者在社交媒体上发言的可能前景。 ## 小标题一：技术博客的读者群体与社交媒体的读者群体 技术博客的读者往往对技术有着浓厚的兴趣，对新技术的期待和追求往往与我有着共同的价值观。他们更愿意通过技术博客获取信息，这能为他们提供更深入和有价值的技术洞见。与此不同，社交媒体的读者群体则更加多元，他们的兴趣和需求往往分散，这与技术博客的读者群体有所不同。我常常看到一些社交媒体的帖子，他们分享的内容往往没有技术博客文章那么深入，这有时会让人感到失望。而我更希望和具有共同技术价值观的读者建立更深入的联系。 ## 小标题二：技术博客写作带给我的成就感 技术博客写作是一份既充实又令人自豪的工作。每次在博客上发布文章，看到读者们积极的回应，这都是对我努力的一种肯定。这种成就感是我非常看重的，这让我愿意花更多的时间在技术博客上。然而，在社交媒体上发言，往往需要花费大量的时间来撰写高质量的内容，并且面对各种评论、点赞和分享，这会耗费大量的时间。如果我选择在社交媒体上发言，我可能无法给予自己充足的时间来深入探讨技术问题，这将影响我作为一个独立开发者的技术视野。因此，我选择专注于技术博客，既能让我保持技术写作的习惯，又能保持对技术的敏感度。 ## 小标题三：技术博客与社交媒体的内容差异化 技术博客的内容往往更注重深度和深度，注重对复杂技术问题的探讨和解释。而社交媒体的内容则更注重娱乐性和即时性，更注重传递信息的简洁和流畅。我选择专注于技术博客，是因为我相信这种内容的传递方式能够更好地帮助读者成长，而社交媒体更适用于与朋友分享有趣和娱乐性的信息。然而，这并不意味着技术博客和社交媒体之间存在不可逾越的鸿沟。我仍然在社交媒体上关注一些技术博主，他们也在尝试将技术和娱乐结合，以吸引更多的受众。或许在未来，我们能在社交媒体上看到更高质量的技术内容，这将使两者之间的界限更加模糊，但它们仍然可以保持各自的优势。 ## 开放性思考问题 在未来的某一天，技术博客与社交媒体能否融合在一起，形成一个既注重技术深度又注重娱乐性的生态系统？这是值得我们思考和探索的问题。</p>
+]]></content>
+      <categories>
+        <category>杂思</category>
+      </categories>
+      <tags>
+        <tag>杂思</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>防御性编程是一种过度设计吗</title>
+    <url>//*/f1125d9e.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：防御性编程：一种过度设计吗 防御性编程是一种在编程中非常重视的一种编程方式，它要求开发人员在编写代码时不仅仅关注实现的功能，还要考虑到在各种异常情况下代码的运行效果，为代码的执行添加额外的保护层，以防止代码因输入数据异常、外部调用失败、系统状态变化等情况下出现各种问题，让程序在极端状态下仍然能够保持稳定。 在我看来，防御性编程并不是一种过度设计，而是一种在保证代码可维护性上的必要设计。它不仅仅帮助开发者降低代码的复杂度，也降低了后期的维护成本。例如在处理文件读取操作时，常规的做法是打开文件进行读取操作，但防御性编程则会考虑文件不存在的情况，通过检查文件是否存在再进行读取，即使出现文件不存在的异常，也能够保证程序的正常运行。 我之前开发的一个系统，涉及到大量的文件读写操作，但是一直困扰我的是一次性能问题。经过详细排查，发现根本原因竟然是在读取文件时，代码在处理文件不存在的问题上不够充分。由于缺乏防御性编程的设计，导致在某些极端情况下，读取文件时程序会抛出异常，进一步导致整个操作链路中的其他环节受到影响。问题暴露后，我花了大量的时间修复代码，最终发现防御性编程在这些场景中的重要性。之后，我开始在代码中增加更多的异常处理逻辑，使得代码更加健壮。 然而，防御性编程并非只有在读文件时才显得重要。在编程中，无论是函数参数还是内部变量，都应该加入适当的异常处理和边界值的处理。防御性编程要求开发者在程序中尽量减少外部依赖，尽量将外部依赖封装到内部方法中，这样就可以避免外部依赖的影响。这不仅可以提高代码的可读性和可维护性，而且有助于提高程序的稳定性和健壮性。 在防御性编程中，最重要的一点就是，开发者在编程时应始终考虑到程序在极端条件下的运行状况。这不仅需要开发者具备良好的编程技能，更需要他们具备良好的思维模式和逻辑思维能力。在开发过程中，如何在满足需求的同时保证代码的鲁棒性，这其实是一种对编程的深度理解和把握。 防御性编程是否属于一种过度设计，这取决于我们如何看待代码。在某种程度上，它是对代码质量的一种追求，但这种追求是必要的，也是值得的。然而，我们也应该清楚地认识到，过度的防御性编程可能会使代码变得更复杂，更难以理解和维护，因此，如何在确保代码质量的同时降低复杂度，仍然需要我们不断寻找更合适的解决方案。</p>
+]]></content>
+      <categories>
+        <category>编程哲学</category>
+      </categories>
+      <tags>
+        <tag>编程哲学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么时候该写测试，什么时候不该</title>
+    <url>//*/550cdc1d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"><a class="markdownIt-Anchor" href="#如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"></a> 如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 <strong>1. 当代码复杂且需要保障稳定性时</strong></h3>
+<p>在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部分，必须做到百分之百的正确性，任何错误都可能造成巨大损失。这时候，测试的必要性就更加明显。通过编写单元测试、集成测试等，确保每一部分的功能都达到预期效果。 <strong>2. 当代码质量不一且容易出错时</strong><br>
+当项目团队中的开发者水平参差不齐，或者某一部分代码的复杂度极高，往往容易导致错误产生。这类情况下，测试可以作为质量控制的有力武器，帮助识别并修正错误，从而提升整体代码的质量。比如一个新入职的开发人员加入了一个复杂的库开发项目，如果没有一套完善的测试体系，新老开发者之间知识的传递将变得异常困难。 #### 何时不该写测试 <strong>1. 当项目初期需要快速迭代时</strong><br>
+在项目的启动阶段，首要任务是快速构建基础功能。此时，过度的测试工作不仅会大大增加开发成本，还可能会拖慢项目的进度。例如，一个刚上线的电子商务平台，最初阶段的焦点应放在用户界面的友好性、支付流程的顺畅性等关键功能上，而不是花费大量时间在繁杂的测试环节上。只有在基础功能稳定之后，再逐步引入更多复杂的功能。 <strong>2. 当项目规模较小且功能单一时</strong><br>
+对于一些小型项目而言，其规模和功能相对较小，代码量较轻，测试工作量相对较小，此时进行测试的工作量与收益不成比例。比如，一个小型的社区论坛项目，主要关注的是界面友好性和功能可用性，而不是对每一行代码都进行深入的测试。当然，这并不意味着无需测试，而是在测试的深度和广度上做相应的调整。 ### 开放性思考问题 在项目中是否应该坚持写测试？这是一个需要根据项目实际需求灵活调整的问题。有时候，测试可以是项目成功的关键；而有时，测试反而会成为项目推进的障碍。因此，能否在测试与开发之间找到最佳的平衡点，是每一位开发者需要思考和实践的问题。 在接下来的项目开发过程中，我们应该如何平衡测试的重要性呢？是遵循“一切测试皆为王”的原则，还是在某些特定情境下适当减少测试的比重？这需要我们在实践中不断地摸索和调整。</p>
+]]></content>
+      <categories>
+        <category>编程哲学</category>
+      </categories>
+      <tags>
+        <tag>编程哲学</tag>
+      </tags>
+  </entry>
 </search>

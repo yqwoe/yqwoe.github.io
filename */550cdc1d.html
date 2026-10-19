@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://github.com" />
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+  
+  <title>什么时候该写测试，什么时候不该 | Viva La Vida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  
+
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+    
+
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+    
+
+  
+    <link rel="mask-icon" href="{{ url_for(theme.favicon.safari_pinned_tab) }}" color="{{ theme.android_chrome_color }}">
+    
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/search.css">
+
+  
+<link rel="stylesheet" href="/css/katex.min.css">
+
+  
+<link rel="stylesheet" href="/css/googleapis.css">
+
+  
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+  
+  <meta name="description" content="如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 1. 当代码复杂且需要保障稳定性时 在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么时候该写测试，什么时候不该">
+<meta property="og:url" content="https://sudo.rm-rf.ink/*/550cdc1d.html">
+<meta property="og:site_name" content="Viva La Vida">
+<meta property="og:description" content="如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 1. 当代码复杂且需要保障稳定性时 在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-19T01:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-19T01:45:26.425Z">
+<meta property="article:author" content="Yq Woe">
+<meta property="article:tag" content="编程哲学">
+<meta name="twitter:card" content="summary">  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yqwoe" />
+  <meta name="twitter:creator" content="@yqwoe" />
+  
+  <link rel="canonical" href="https://sudo.rm-rf.ink/*/550cdc1d.html" />
+  
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "什么时候该写测试，什么时候不该",
+    "datePublished": "2026-10-19T01:00:00.000Z",
+    "dateModified": "2026-10-19T01:45:26.425Z",
+    "author": {
+      "@type": "Person",
+      "name": "Yq Woe",
+      "url": "https://sudo.rm-rf.ink"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Viva La Vida",
+      "url": "https://sudo.rm-rf.ink"
+    },
+    "description": "技术｜思考｜生活。一个独立开发者的持续输出频道。",
+    "url": "https://sudo.rm-rf.ink/*/550cdc1d.html"
+  }
+  </script>
+  
+  
+<link rel="stylesheet" href="/css/reveal.css">
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Viva La Vida" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="wrapper">
+        <div id="content">
+          <article id="post-2026-10-19-什么时候该写测试-什么时候不该" class="article article-type-post" itemprop="blogPost" itemscope>
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h3 class="article-title" itemprop="headline name">
+      什么时候该写测试，什么时候不该&nbsp;&nbsp;
+    </h3>
+  
+
+
+        <div class="article-meta">
+          <time class="article-date" datetime="2026-10-19T01:00:00.000Z" itemprop="datePublished">2026.10.19 09:00 上午</time>
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+          <div id="toc" class="toc-article">
+    <div class="toc-title">目录</div>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B5%8B%E8%AF%95%E4%B8%8E%E4%B8%8D%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%97%B4%E6%89%BE%E5%88%B0%E5%B9%B3%E8%A1%A1-%E5%9C%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%96%E7%95%8C%E9%87%8C%E6%B5%8B%E8%AF%95%E6%98%AF%E4%B8%8D%E5%8F%AF%E6%88%96%E7%BC%BA%E7%9A%84%E4%B8%80%E9%83%A8%E5%88%86%E5%AE%83%E5%A6%82%E5%90%8C%E4%B8%80%E5%8F%8C%E9%9A%90%E5%BD%A2%E7%9A%84%E7%BF%85%E8%86%80%E6%94%AF%E6%92%91%E7%9D%80%E4%BB%A3%E7%A0%81%E9%A3%9E%E7%BF%94-%E7%84%B6%E8%80%8C%E8%BF%87%E5%BA%A6%E6%B5%8B%E8%AF%95%E6%9C%89%E6%97%B6%E4%B9%9F%E4%BC%9A%E6%88%90%E4%B8%BA%E4%B8%80%E7%A7%8D%E8%B4%9F%E6%8B%85%E5%B0%B1%E5%83%8F%E8%BF%87%E9%87%8D%E7%9A%84%E8%A1%8C%E6%9D%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%99%90%E5%88%B6%E6%88%91%E4%BB%AC%E7%9A%84%E8%A1%8C%E5%8A%A8-%E5%9B%A0%E6%AD%A4%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B5%8B%E8%AF%95%E4%B8%8E%E4%B8%8D%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%97%B4%E6%89%BE%E5%88%B0%E5%B9%B3%E8%A1%A1%E6%98%AF%E4%B8%80%E4%B8%AA%E5%80%BC%E5%BE%97%E6%8E%A2%E8%AE%A8%E7%9A%84%E8%AF%9D%E9%A2%98-%E4%BD%95%E6%97%B6%E8%AF%A5%E5%86%99%E6%B5%8B%E8%AF%95-1-%E5%BD%93%E4%BB%A3%E7%A0%81%E5%A4%8D%E6%9D%82%E4%B8%94%E9%9C%80%E8%A6%81%E4%BF%9D%E9%9A%9C%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%97%B6"><span class="toc-text"> 如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 1. 当代码复杂且需要保障稳定性时</span></a></li></ol>
+</div>
+
+      
+        <h3 id="如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"><a class="markdownIt-Anchor" href="#如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"></a> 如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 <strong>1. 当代码复杂且需要保障稳定性时</strong></h3>
+<p>在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部分，必须做到百分之百的正确性，任何错误都可能造成巨大损失。这时候，测试的必要性就更加明显。通过编写单元测试、集成测试等，确保每一部分的功能都达到预期效果。 <strong>2. 当代码质量不一且容易出错时</strong><br>
+当项目团队中的开发者水平参差不齐，或者某一部分代码的复杂度极高，往往容易导致错误产生。这类情况下，测试可以作为质量控制的有力武器，帮助识别并修正错误，从而提升整体代码的质量。比如一个新入职的开发人员加入了一个复杂的库开发项目，如果没有一套完善的测试体系，新老开发者之间知识的传递将变得异常困难。 #### 何时不该写测试 <strong>1. 当项目初期需要快速迭代时</strong><br>
+在项目的启动阶段，首要任务是快速构建基础功能。此时，过度的测试工作不仅会大大增加开发成本，还可能会拖慢项目的进度。例如，一个刚上线的电子商务平台，最初阶段的焦点应放在用户界面的友好性、支付流程的顺畅性等关键功能上，而不是花费大量时间在繁杂的测试环节上。只有在基础功能稳定之后，再逐步引入更多复杂的功能。 <strong>2. 当项目规模较小且功能单一时</strong><br>
+对于一些小型项目而言，其规模和功能相对较小，代码量较轻，测试工作量相对较小，此时进行测试的工作量与收益不成比例。比如，一个小型的社区论坛项目，主要关注的是界面友好性和功能可用性，而不是对每一行代码都进行深入的测试。当然，这并不意味着无需测试，而是在测试的深度和广度上做相应的调整。 ### 开放性思考问题 在项目中是否应该坚持写测试？这是一个需要根据项目实际需求灵活调整的问题。有时候，测试可以是项目成功的关键；而有时，测试反而会成为项目推进的障碍。因此，能否在测试与开发之间找到最佳的平衡点，是每一位开发者需要思考和实践的问题。 在接下来的项目开发过程中，我们应该如何平衡测试的重要性呢？是遵循“一切测试皆为王”的原则，还是在某些特定情境下适当减少测试的比重？这需要我们在实践中不断地摸索和调整。</p>
+
+      
+    </div>
+    
+    
+    <div class="article-category">
+      
+        <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/">编程哲学</a>
+
+        <b>&nbsp;:分类 </b>
+      
+      
+        <br/>
+      
+      
+        <a class="article-tag-none-link" href="/tags/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/" rel="tag">编程哲学</a>
+
+        <b>
+          &nbsp;:标签
+        </b>
+      
+    </div>
+    
+    
+  </div>
+</article>
+
+  
+<nav id="article-nav" class="article-nav">
+  
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+  
+  
+    <a href="/*/f1125d9e.html" id="article-nav-older" class="article-nav-link-wrap older">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          防御性编程是一种过度设计吗
+        
+      </div>
+    </a>
+  
+</nav>
+
+
+  
+    
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: 'd99a4bdc344cff33585d',
+  	clientSecret: '4819ca8aa103e688f259b5ed6b3cd3fffdf0f96e',
+  	repo: 'yqwoe.github.io',
+  	owner: 'yqwoe',
+  	admin: ['yqwoe'],
+    perPage: 20,
+  	id: '550cdc1d',
+  	distractionFreeMode: 'true',
+    pagerDirection: 'last'
+})
+gitalk.render('gitalk-container')
+}
+</script>
+
+    
+
+
+
+
+        </div>
+        <header id="header">
+  <nav>
+    <div class="header-nav-links">
+      <a class="nav-link-first" href="/">Viva La Vida</a>
+      <span class="nav-spacer"></span>
+      
+      
+        
+        <a class="nav-link" href="/archives">文章</a>
+      
+        
+          <span class="nav-spacer"> </span>
+        
+        <a class="nav-link" href="/categories">分类</a>
+      
+        
+          <span class="nav-spacer"> </span>
+        
+        <a class="nav-link" href="/about">关于我</a>
+      
+      
+    </div>
+    <div class="poem-wrap">
+      <p id="poem">加载中...</p>
+      <p id="info"/>
+    </div>
+  </nav>
+</header>
+
+    </div>
+    
+
+
+
+
+<div id="settings-container">
+  <div id="dark-mode"></div>
+  <div id="sans-font"></div>
+</div>
+
+
+<span class="post-count">49.9k</span>
+
+<script type="text/javascript">
+
+
+  let d = document,
+    r = d.documentElement.style,
+    f = r.setProperty.bind(r),
+    l = localStorage,
+    s = l.getItem('s') ||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    n = l.getItem('n'),
+    m = d.getElementById("dark-mode"),
+    b = () => {
+      f('--bg-color', '#fafafa');
+      f('--code-bg-color', '#f4f4f4');
+      f('--text-color', '#212121');
+      f('--secondary-color', '#808080');
+      f('--tertiary-color', '#b0b0b0');
+      f('--link-color', '#b5c8cf');
+      f('--link-hover-color', '#618794');
+      f('--link-bg-color', '#dae4e7');
+      f('--selection-color', '#dae4e7');
+    },
+    c = () => {
+      f('--bg-color', '#212121');
+      f('--code-bg-color', '#292929');
+      f('--text-color', '#fff');
+      f('--secondary-color', '#c0c0c0');
+      f('--tertiary-color', '#6e6e6e');
+      f('--link-color', '#4d6b75');
+      f('--link-hover-color', '#96b1bb');
+      f('--link-bg-color', '#5d828e');
+      f('--selection-color', '#acc1c9');
+    },
+    o = d.getElementById("sans-font"),
+    e = () => {
+      f('--body-stack', '"Lora", "Georgia", "Times New Roman", serif');
+      // o.innerHTML = "无衬"
+    },
+    g = () => {
+      f('--body-stack', '"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif');
+      // o.innerHTML = "衬线"
+    };
+  m.onclick = function(){
+    if (s == 2) {
+      s = 1;
+      l.setItem('s', s);
+      c()
+    } else {
+      s = 2;
+      l.setItem('s', s);
+      b()
+    }
+  };
+  o.onclick =function(){
+    if (n == 2) {
+      n = 1;
+      l.setItem('n', n);
+      g()
+    } else {
+      n = 2;
+      l.setItem('n', n);
+      e()
+    }
+  };
+  if (s || s == '1') {
+      s = 1;
+      l.setItem('s', s);
+    c()
+  }
+
+  if (!s || s == '2') {
+      s = 2;
+      l.setItem('s', s);
+    b()
+  };
+  if (!n) {
+    n = 2;
+    l.setItem('n', 2)
+  };
+  if (n == '1') {
+    g();
+  };
+  if (n == '2') {
+    e();
+  };
+</script>
+
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9.4.3/+esm";
+  let theme = localStorage.getItem("s");
+  mermaid.initialize({
+      startOnLoad: true,
+      logLevel: 'debug',
+      theme: theme === '2' ? 'forest' : 'dark',
+    });
+  let mode = document.getElementById("dark-mode");
+   let arrayGraphs =  [];
+  let nodes = document.getElementsByClassName('mermaid')
+  for(let n of nodes){
+    console.log(n.innerHTML)
+    arrayGraphs.push(n.innerHTML);
+  }
+
+  mode.addEventListener("click",async ()=>{
+    theme = localStorage.getItem("s");
+    mermaid.initialize({
+      startOnLoad: true,
+      logLevel: 'debug',
+      theme: theme === '2' ? 'forest' : 'dark',
+    });
+  for(let i = 0;i< nodes.length;i++){
+      let n =  nodes[i]
+      // console.log(n.innerHTML)
+      let id = `mermaid-${i}`
+      n.removeAttribute("data-processed");
+      n.setAttribute("id",`mermaid-${i}`)
+      n.replaceChildren();
+      n.innerHTML = arrayGraphs[i]
+      mermaid.init(undefined,n)
+    }
+  },false);
+
+</script>
+
+
+
+<script src="/js/jquery.min.js" defer ></script>
+<script src="/js/jquery.qrcode.min.js" defer ></script>
+<script src="https://unpkg.com/reveal.js@5.0.4/dist/reveal.js" defer></script>
+<script src="https://unpkg.com/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.js" defer></script>
+
+<script type="module">
+  import qrcodeInit from '/js/qrcode.js'
+  qrcodeInit();
+</script>
+<script type="module">
+/***
+ * 兼容不支持requestAnimationFrame的浏览器
+ ***/
+window.requestAnimationFrame = (function () {
+  return window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||/* Safari 和 Chrome */
+    window.mozRequestAnimationFrame ||/* Firefox */
+    window.oRequestAnimationFrame      ||/* Opera */
+    window.msRequestAnimationFrame     ||/* IE 9 */
+    function (callback) {
+      window.setTimeout(callback, 6000 / 60)
+    }
+})();
+window.cancelAnimationFrame = (function () {
+  return window.cancelAnimationFrame ||
+    window.webkitCancelAnimationFrame ||
+    window.mozCancelAnimationFrame ||
+    window.oCancelAnimationFrame ||
+    window.msCancelAnimationFrame || clearTimeout
+})();
+</script>
+<script type="module">
+  /*诗*/
+if ($("div").hasClass("poem-wrap")) {
+            get_poem('#poem', '#info')
+}
+function get_poem(poem_ele, info_ele) {
+    var poem = document.querySelector(poem_ele);
+    var info = document.querySelector(info_ele);
+    var xhr = new XMLHttpRequest();
+    xhr.open('get', 'https://v2.jinrishici.com/one.json?client=browser-sdk/1.2');
+    xhr.withCredentials = true;
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            poem.innerHTML = data.data.content;
+            info.innerHTML = '[' + data.data.origin.dynasty + '] ' + data.data.origin.author + '《' + data.data.origin.title + '》';
+        }
+    };
+    xhr.send();
+}
+
+function modifySubmitBtn(){
+  var btn = $('.hbe-button');
+  var password = $('#hbePass');
+  if(btn.length > 0){
+    btn.text('重新输入密码')
+  }
+  if(password.length > 0){
+    password.attr('autocomplete','false')
+  }
+}
+modifySubmitBtn();
+
+function layoutTagCloud(){
+  // var list = $('.tagcloud a');
+  // var size = Math.round(Math.random() * 20);
+
+  // for(let i = 0;i< list.length;i++){
+  //       if(i % even == 0 ){
+  //         list[i].classList = `${list[i].classList} deg_90`
+  //       }
+  // }
+}
+
+function loopHover(){
+  var list = $('.tagcloud a');
+  var hover = $('.tagcloud a[class="tag-hover"]')
+  var next = Math.round(Math.random() * (list.length  - 1))
+
+  if(next < 0){
+    next = 0
+  }
+
+  if(next > list.length){
+    next = list.length - 1
+  }
+  if(list.length){
+    if(hover.length){
+      for(let i = 0;i< hover.length;i++){
+        hover[i].classList = ''
+      }
+    }
+    list[next].classList = 'tag-hover'
+  }
+}
+// layoutTagCloud();
+
+
+/**
+ * 设置精度定时器
+ * @param {function} 回调函数
+ * @param {number}   延迟时间
+ * @return {number}  定时器ID
+ */
+ function setIntervalPrecision(callback, delay) {
+  // 生成并记录定时器ID
+  let obj = window.interValPrecisionObj || (window.interValPrecisionObj = { num: 0 })
+  obj.num++
+  obj['n' + obj.num] = true
+  var intervalId = obj.num
+  // 开始时间
+  var startTime = +new Date()
+  // 已执行次数
+  var count = 0
+  // 延迟时间
+  delay = delay || 0
+
+
+  ;(function loop() {
+    // 定时器被清除，则终止
+    if (!obj['n' + intervalId]) return
+
+    // 满足条件执行回调
+    if (+new Date() > startTime + delay * (count + 1)) {
+      count++
+      callback(count)
+    }
+
+    window.requestAnimationFrame(loop)
+  })()
+
+  return intervalId
+}
+
+/**
+ * 清除精度定时器
+ * @param {number} 定时器ID
+ */
+function clearIntervalPrecision(intervalId) {
+  if (window.interValPrecisionObj) {
+    window.cancelAnimationFrame('n' + intervalId)
+    delete window.interValPrecisionObj['n' + intervalId]
+  }
+}
+
+setIntervalPrecision(loopHover, 250)
+
+</script>
+
+  
+  </body>
+
+</html>

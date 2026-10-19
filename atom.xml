@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>rm -rf /*</title>
+  <title>Viva La Vida</title>
   
-  <subtitle>rm -rf /*</subtitle>
-  <link href="https://rm-rf.ink/atom.xml" rel="self"/>
+  <subtitle>生命万岁</subtitle>
+  <link href="https://sudo.rm-rf.ink/atom.xml" rel="self"/>
   
-  <link href="https://rm-rf.ink/"/>
-  <updated>2026-06-02T15:04:13.800Z</updated>
-  <id>https://rm-rf.ink/</id>
+  <link href="https://sudo.rm-rf.ink/"/>
+  <updated>2026-10-19T01:45:26.425Z</updated>
+  <id>https://sudo.rm-rf.ink/</id>
   
   <author>
     <name>Yq Woe</name>
@@ -17,9 +17,108 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>什么时候该写测试，什么时候不该</title>
+    <link href="https://sudo.rm-rf.ink/*/550cdc1d.html"/>
+    <id>https://sudo.rm-rf.ink/*/550cdc1d.html</id>
+    <published>2026-10-19T01:00:00.000Z</published>
+    <updated>2026-10-19T01:45:26.425Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"><a class="markdownIt-Anchor" href="#如何在测试与不测试之间找到平衡-在编程的世界里测试是不可或缺的一部分它如同一双隐形的翅膀支撑着代码飞翔-然而过度测试有时也会成为一种负担就像过重的行李可能会限制我们的行动-因此如何在测试与不测试之间找到平衡是一个值得探讨的话题-何时该写测试-1-当代码复杂且需要保障稳定性时"></a> 如何在测试与不测试之间找到平衡 在编程的世界里，测试是不可或缺的一部分，它如同一双隐形的翅膀，支撑着代码飞翔。然而，过度测试有时也会成为一种负担，就像过重的行李，可能会限制我们的行动。因此，如何在测试与不测试之间找到平衡，是一个值得探讨的话题。 #### 何时该写测试 <strong>1. 当代码复杂且需要保障稳定性时</strong></h3><p>在复杂的算法实现或大型系统的模块开发中，如果出现逻辑错误或实现上的疏忽，就可能导致系统崩溃或数据丢失等严重问题。例如，银行系统的交易处理部分，必须做到百分之百的正确性，任何错误都可能造成巨大损失。这时候，测试的必要性就更加明显。通过编写单元测试、集成测试等，确保每一部分的功能都达到预期效果。 <strong>2. 当代码质量不一且容易出错时</strong><br>当项目团队中的开发者水平参差不齐，或者某一部分代码的复杂度极高，往往容易导致错误产生。这类情况下，测试可以作为质量控制的有力武器，帮助识别并修正错误，从而提升整体代码的质量。比如一个新入职的开发人员加入了一个复杂的库开发项目，如果没有一套完善的测试体系，新老开发者之间知识的传递将变得异常困难。 #### 何时不该写测试 <strong>1. 当项目初期需要快速迭代时</strong><br>在项目的启动阶段，首要任务是快速构建基础功能。此时，过度的测试工作不仅会大大增加开发成本，还可能会拖慢项目的进度。例如，一个刚上线的电子商务平台，最初阶段的焦点应放在用户界面的友好性、支付流程的顺畅性等关键功能上，而不是花费大量时间在繁杂的测试环节上。只有在基础功能稳定之后，再逐步引入更多复杂的功能。 <strong>2. 当项目规模较小且功能单一时</strong><br>对于一些小型项目而言，其规模和功能相对较小，代码量较轻，测试工作量相对较小，此时进行测试的工作量与收益不成比例。比如，一个小型的社区论坛项目，主要关注的是界面友好性和功能可用性，而不是对每一行代码都进行深入的测试。当然，这并不意味着无需测试，而是在测试的深度和广度上做相应的调整。 ### 开放性思考问题 在项目中是否应该坚持写测试？这是一个需要根据项目实际需求灵活调整的问题。有时候，测试可以是项目成功的关键；而有时，测试反而会成为项目推进的障碍。因此，能否在测试与开发之间找到最佳的平衡点，是每一位开发者需要思考和实践的问题。 在接下来的项目开发过程中，我们应该如何平衡测试的重要性呢？是遵循“一切测试皆为王”的原则，还是在某些特定情境下适当减少测试的比重？这需要我们在实践中不断地摸索和调整。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="编程哲学" scheme="https://sudo.rm-rf.ink/categories/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/"/>
+    
+    
+    <category term="编程哲学" scheme="https://sudo.rm-rf.ink/tags/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>防御性编程是一种过度设计吗</title>
+    <link href="https://sudo.rm-rf.ink/*/f1125d9e.html"/>
+    <id>https://sudo.rm-rf.ink/*/f1125d9e.html</id>
+    <published>2026-10-18T01:00:00.000Z</published>
+    <updated>2026-10-19T01:45:26.424Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：防御性编程：一种过度设计吗 防御性编程是一种在编程中非常重视的一种编程方式，它要求开发人员在编写代码时不仅仅关注实现的功能，还要考虑到在各种异常情况下代码的运行效果，为代码的执行添加额外的保护层，以防止代码因输入数据异常、外部调用失败、系统状态变化等情况下出现各种问题，让程序在极端状态下仍然能够保持稳定。 在我看来，防御性编程并不是一种过度设计，而是一种在保证代码可维护性上的必要设计。它不仅仅帮助开发者降低代码的复杂度，也降低了后期的维护成本。例如在处理文件读取操作时，常规的做法是打开文件进行读取操作，但防御性编程则会考虑文件不存在的情况，通过检查文件是否存在再进行读取，即使出现文件不存在的异常，也能够保证程序的正常运行。 我之前开发的一个系统，涉及到大量的文件读写操作，但是一直困扰我的是一次性能问题。经过详细排查，发现根本原因竟然是在读取文件时，代码在处理文件不存在的问题上不够充分。由于缺乏防御性编程的设计，导致在某些极端情况下，读取文件时程序会抛出异常，进一步导致整个操作链路中的其他环节受到影响。问题暴露后，我花了大量的时间修复代码，最终发现防御性编程在这些场景中的重要性。之后，我开始在代码中增加更多的异常处理逻辑，使得代码更加健壮。 然而，防御性编程并非只有在读文件时才显得重要。在编程中，无论是函数参数还是内部变量，都应该加入适当的异常处理和边界值的处理。防御性编程要求开发者在程序中尽量减少外部依赖，尽量将外部依赖封装到内部方法中，这样就可以避免外部依赖的影响。这不仅可以提高代码的可读性和可维护性，而且有助于提高程序的稳定性和健壮性。 在防御性编程中，最重要的一点就是，开发者在编程时应始终考虑到程序在极端条件下的运行状况。这不仅需要开发者具备良好的编程技能，更需要他们具备良好的思维模式和逻辑思维能力。在开发过程中，如何在满足需求的同时保证代码的鲁棒性，这其实是一种对编程的深度理解和把握。 防御性编程是否属于一种过度设计，这取决于我们如何看待代码。在某种程度上，它是对代码质量的一种追求，但这种追求是必要的，也是值得的。然而，我们也应该清楚地认识到，过度的防御性编程可能会使代码变得更复杂，更难以理解和维护，因此，如何在确保代码质量的同时降低复杂度，仍然需要我们不断寻找更合适的解决方案。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="编程哲学" scheme="https://sudo.rm-rf.ink/categories/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/"/>
+    
+    
+    <category term="编程哲学" scheme="https://sudo.rm-rf.ink/tags/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为什么我很少在社交媒体发言</title>
+    <link href="https://sudo.rm-rf.ink/*/9d757751.html"/>
+    <id>https://sudo.rm-rf.ink/*/9d757751.html</id>
+    <published>2026-10-17T01:00:00.000Z</published>
+    <updated>2026-10-19T01:45:26.423Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>标题：技术博客与社交媒体的两难选择 我是一个独立开发者，常常在技术博客上分享我的经验和见解，这也使我拥有了不少忠实的读者。然而，鲜少在社交媒体上发言，这并非技术博客写作的无奈选择，而是经过深思熟虑的结果。今天，我想和大家分享其中的原因，并探讨技术博客作者在社交媒体上发言的可能前景。 ## 小标题一：技术博客的读者群体与社交媒体的读者群体 技术博客的读者往往对技术有着浓厚的兴趣，对新技术的期待和追求往往与我有着共同的价值观。他们更愿意通过技术博客获取信息，这能为他们提供更深入和有价值的技术洞见。与此不同，社交媒体的读者群体则更加多元，他们的兴趣和需求往往分散，这与技术博客的读者群体有所不同。我常常看到一些社交媒体的帖子，他们分享的内容往往没有技术博客文章那么深入，这有时会让人感到失望。而我更希望和具有共同技术价值观的读者建立更深入的联系。 ## 小标题二：技术博客写作带给我的成就感 技术博客写作是一份既充实又令人自豪的工作。每次在博客上发布文章，看到读者们积极的回应，这都是对我努力的一种肯定。这种成就感是我非常看重的，这让我愿意花更多的时间在技术博客上。然而，在社交媒体上发言，往往需要花费大量的时间来撰写高质量的内容，并且面对各种评论、点赞和分享，这会耗费大量的时间。如果我选择在社交媒体上发言，我可能无法给予自己充足的时间来深入探讨技术问题，这将影响我作为一个独立开发者的技术视野。因此，我选择专注于技术博客，既能让我保持技术写作的习惯，又能保持对技术的敏感度。 ## 小标题三：技术博客与社交媒体的内容差异化 技术博客的内容往往更注重深度和深度，注重对复杂技术问题的探讨和解释。而社交媒体的内容则更注重娱乐性和即时性，更注重传递信息的简洁和流畅。我选择专注于技术博客，是因为我相信这种内容的传递方式能够更好地帮助读者成长，而社交媒体更适用于与朋友分享有趣和娱乐性的信息。然而，这并不意味着技术博客和社交媒体之间存在不可逾越的鸿沟。我仍然在社交媒体上关注一些技术博主，他们也在尝试将技术和娱乐结合，以吸引更多的受众。或许在未来，我们能在社交媒体上看到更高质量的技术内容，这将使两者之间的界限更加模糊，但它们仍然可以保持各自的优势。 ## 开放性思考问题 在未来的某一天，技术博客与社交媒体能否融合在一起，形成一个既注重技术深度又注重娱乐性的生态系统？这是值得我们思考和探索的问题。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="杂思" scheme="https://sudo.rm-rf.ink/categories/%E6%9D%82%E6%80%9D/"/>
+    
+    
+    <category term="杂思" scheme="https://sudo.rm-rf.ink/tags/%E6%9D%82%E6%80%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>飞书真的能发表格吗？我赌它不能，然后输了</title>
+    <link href="https://sudo.rm-rf.ink/*/feishu-markdown-table-truth.html"/>
+    <id>https://sudo.rm-rf.ink/*/feishu-markdown-table-truth.html</id>
+    <published>2026-06-03T02:00:00.000Z</published>
+    <updated>2026-06-03T02:32:06.638Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="飞书真的能发表格吗我赌它不能然后输了"><a class="markdownIt-Anchor" href="#飞书真的能发表格吗我赌它不能然后输了"></a> 飞书真的能发表格吗？我赌它不能，然后输了</h1><p>三个月前我做了一个判断：飞书 IM v1 API 拒收 <code>&#123;tag:&quot;table&quot;&#125;</code>，会返 230001。</p><p>这判断没有依据。可能是某次旧测试留下的印象，可能是从某个 issue 抄来的，可能就是猜的。但它在我脑子里生了根，长成了一棵树——一整套「飞书发表格 = 降级到纯文本 + 中文提示」的代码就围着它长起来。</p><p>直到上周看到 chapafan 那个 200 行的方案。</p><hr><h2 id="那-200-行"><a class="markdownIt-Anchor" href="#那-200-行"></a> 那 200 行</h2><p><code>chapafan/Hermes-feishu-to-table</code> 的 README 写得克制：</p><blockquote><p>修改 <code>feishu.py</code>，在消息发送前检测 Markdown 表格，自动转成飞书 CardKit v2 的 <code>table</code> 组件。</p></blockquote><p>克制到我一度怀疑他在吹牛。但点进去看代码，3 个函数干净得像论文摘要：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_parse_markdown_table</span>(<span class="params">text</span>) -&gt; <span class="type">List</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 把 markdown 拆成 text 段和 table 段</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_table_card</span>(<span class="params">headers, rows</span>) -&gt; <span class="type">Dict</span>:</span><br><span class="line">    <span class="comment"># 拼 CardKit v2 table 组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_build_interactive_card_with_tables</span>(<span class="params">text</span>) -&gt; <span class="type">Optional</span>[<span class="type">Dict</span>]:</span><br><span class="line">    <span class="comment"># 包成 schema 2.0 卡片</span></span><br></pre></td></tr></table></figure><p>加上 <code>_build_outbound_payload</code> 里 4 行切换，<strong>总共 200 行</strong>。</p><p>我盯着这 200 行看了十分钟。它和我脑子里那个「飞书拒收 table」的公理是矛盾的。两个里一定有一个是错的。</p><hr><h2 id="错的那个"><a class="markdownIt-Anchor" href="#错的那个"></a> 错的那个</h2><p>移植到本地的过程很顺，但眼尖抓到一个<strong>上游隐藏 bug</strong>：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_flush_table</span>():</span><br><span class="line">    <span class="keyword">nonlocal</span> table_lines  <span class="comment"># ← chapafan 写的</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> table_lines:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    ...</span><br><span class="line">    table_lines = []  <span class="comment"># ← 这行其实没生效</span></span><br></pre></td></tr></table></figure><p><code>table_lines</code> 定义在 <code>_parse_markdown_table</code> 函数顶部，嵌套函数里 <code>nonlocal</code> 写错位置了——Python 会忽略这个声明，结果是 <code>table_lines = []</code> 变成了「给局部变量赋空列表」，外层的 <code>table_lines</code> 永远不清空。<strong>第二张表格的解析会混进第一张的残留行。</strong></p><p>chapafan 自己的测试可能没覆盖多表。我用 <code>table_lines.clear()</code> 替换——<code>list.clear()</code> 是 in-place 操作，不需要 <code>nonlocal</code> 也工作。</p><p>顺手做了 22 个单测，全部过。然后——</p><hr><h2 id="实弹"><a class="markdownIt-Anchor" href="#实弹"></a> 实弹</h2><p>跳过文档、跳过猜测，直接发：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">content = <span class="string">&quot;&quot;&quot;## 诊断测试</span></span><br><span class="line"><span class="string">| 名称 | 数值 | 状态 |</span></span><br><span class="line"><span class="string">|---|---|---|</span></span><br><span class="line"><span class="string">| 单元 A | 42 | OK |</span></span><br><span class="line"><span class="string">| 单元 B | 99 | FAIL |</span></span><br><span class="line"><span class="string">| 单元 C | 17 | OK |</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">response = <span class="keyword">await</span> client.im.v1.message.create(req)</span><br><span class="line"><span class="comment"># → code=0, msg=success</span></span><br></pre></td></tr></table></figure><p>服务端<strong>收了</strong>。message_id 拿到了。<strong>但服务端收 ≠ 客户端渲染</strong>——这个区别我吃过亏。</p><p>打开手机飞书。**3 行表格真渲染成了 CardKit v2 组件。**表头加粗、列对齐、卡片有 header 装饰。</p><p>那个陪了我三个月的公理是错的。</p><hr><h2 id="边界"><a class="markdownIt-Anchor" href="#边界"></a> 边界</h2><p>P0 跑通不等于能投产。飞书 CardKit v2 的官方文档列了一堆限制，<strong>每个限制都对应一个会出事的真实场景</strong>：</p><ul class="lvl-0"><li class="lvl-2"><p>最多 50 行 → 你的用户会发 200 行的需求清单</p></li><li class="lvl-2"><p>最多 20 列 → 你的用户会发宽表</p></li><li class="lvl-2"><p>单 cell 1000 字符 → 你的用户会贴长日志</p></li><li class="lvl-2"><p>整张卡 30KB → 用户发 50KB 的对比表</p></li></ul><p>每一个都得有守卫。加完，测试从 22 涨到 35。</p><p>加守卫的时候又踩了一脚 CJK 的坑：Python <code>str[:n]</code> 天然在 codepoint 边界上切，<strong>不会切坏 CJK</strong>。我一开始还写了一段 back-off 逻辑，发现是多余的，删了。删比写更难——要承认自己想多了。</p><p>嵌套表格也想了半天怎么防。最后方案是：如果 cell 里还含 <code>|</code>，整行合并成单 cell。粗暴，但飞书 CardKit v2 不支持嵌套，没优雅解。</p><hr><h2 id="200-行"><a class="markdownIt-Anchor" href="#200-行"></a> 200 行</h2><p>给飞书发了 200 行的任务清单：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">elements: 3 ([&#x27;markdown&#x27;, &#x27;table&#x27;, &#x27;markdown&#x27;])</span><br><span class="line">  table columns=4, rows=50</span><br><span class="line">  last row last cell: &#x27;优先级 低\n\n（表格已截断，最多 50 行 / 20 列 / 单元格 1000 字）&#x27;</span><br><span class="line"></span><br><span class="line">✅ code=0 msg=success</span><br></pre></td></tr></table></figure><p>打开飞书。<strong>前 50 行清晰渲染</strong>，最后一行右下角挂着中文提示。**没崩。**用户的 200 行变成了 50 行 + 一句解释，<strong>这不是降级，是有边界的服务</strong>。</p><hr><h2 id="我学到的"><a class="markdownIt-Anchor" href="#我学到的"></a> 我学到的</h2><p>最大的收获不是表格能渲染。是<strong>我脑子里那棵&quot;飞书拒收 table&quot;的树被砍了</strong>。一个错公理曾经让我写了不必要的降级代码，让用户看不到真表格，让系统放弃了它能做的事。<strong>三个月。</strong></p><p>如果我没偶然点进 chapafan，那棵树可能还在。</p><p>所以现在的我，每个&quot;已知限制&quot;都会在脑子里加一个标签：「这个有实弹证据吗？」没有的，就当传说对待。</p><hr><p>实弹一次，胜过翻十遍文档。这是我这个月最贵的一课。</p><hr><p><em>附录：commit <code>600db9109</code>（P0 移植）、<code>d1d1d5cc5</code>（P1 边界）。代码 200 行，测试 35 个，3 次实弹。</em></p>]]></content>
+    
+    
+    <summary type="html">一个从错误公理到 CardKit v2 的工程故事</summary>
+    
+    
+    
+    
+    <category term="hermes" scheme="https://sudo.rm-rf.ink/tags/hermes/"/>
+    
+    <category term="feishu" scheme="https://sudo.rm-rf.ink/tags/feishu/"/>
+    
+    <category term="lark" scheme="https://sudo.rm-rf.ink/tags/lark/"/>
+    
+    <category term="cardkit" scheme="https://sudo.rm-rf.ink/tags/cardkit/"/>
+    
+    <category term="debugging" scheme="https://sudo.rm-rf.ink/tags/debugging/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mem-md 开源：一个反向量库的 Agent 记忆系统</title>
-    <link href="https://rm-rf.ink/*/mem-md-opensource.html"/>
-    <id>https://rm-rf.ink/*/mem-md-opensource.html</id>
+    <link href="https://sudo.rm-rf.ink/*/mem-md-opensource.html"/>
+    <id>https://sudo.rm-rf.ink/*/mem-md-opensource.html</id>
     <published>2026-06-02T14:30:00.000Z</published>
     <updated>2026-06-02T15:04:13.800Z</updated>
     
@@ -31,22 +130,22 @@
     
     
     
-    <category term="hermes" scheme="https://rm-rf.ink/tags/hermes/"/>
+    <category term="hermes" scheme="https://sudo.rm-rf.ink/tags/hermes/"/>
     
-    <category term="memory" scheme="https://rm-rf.ink/tags/memory/"/>
+    <category term="memory" scheme="https://sudo.rm-rf.ink/tags/memory/"/>
     
-    <category term="ai" scheme="https://rm-rf.ink/tags/ai/"/>
+    <category term="ai" scheme="https://sudo.rm-rf.ink/tags/ai/"/>
     
-    <category term="architecture" scheme="https://rm-rf.ink/tags/architecture/"/>
+    <category term="architecture" scheme="https://sudo.rm-rf.ink/tags/architecture/"/>
     
-    <category term="opensource" scheme="https://rm-rf.ink/tags/opensource/"/>
+    <category term="opensource" scheme="https://sudo.rm-rf.ink/tags/opensource/"/>
     
   </entry>
   
   <entry>
     <title>改造 Hermes Memory Provider 的曲折历程</title>
-    <link href="https://rm-rf.ink/*/474c79ed.html"/>
-    <id>https://rm-rf.ink/*/474c79ed.html</id>
+    <link href="https://sudo.rm-rf.ink/*/474c79ed.html"/>
+    <id>https://sudo.rm-rf.ink/*/474c79ed.html</id>
     <published>2026-06-01T04:00:00.000Z</published>
     <updated>2026-06-02T15:06:42.876Z</updated>
     
@@ -58,20 +157,20 @@
     
     
     
-    <category term="hermes" scheme="https://rm-rf.ink/tags/hermes/"/>
+    <category term="hermes" scheme="https://sudo.rm-rf.ink/tags/hermes/"/>
     
-    <category term="memory" scheme="https://rm-rf.ink/tags/memory/"/>
+    <category term="memory" scheme="https://sudo.rm-rf.ink/tags/memory/"/>
     
-    <category term="ai" scheme="https://rm-rf.ink/tags/ai/"/>
+    <category term="ai" scheme="https://sudo.rm-rf.ink/tags/ai/"/>
     
-    <category term="architecture" scheme="https://rm-rf.ink/tags/architecture/"/>
+    <category term="architecture" scheme="https://sudo.rm-rf.ink/tags/architecture/"/>
     
   </entry>
   
   <entry>
     <title>从零构建 Hermes Agent 记忆系统——memory-filtration-layer 迭代手记</title>
-    <link href="https://rm-rf.ink/*/46499b7b.html"/>
-    <id>https://rm-rf.ink/*/46499b7b.html</id>
+    <link href="https://sudo.rm-rf.ink/*/46499b7b.html"/>
+    <id>https://sudo.rm-rf.ink/*/46499b7b.html</id>
     <published>2026-05-21T16:00:00.000Z</published>
     <updated>2026-05-22T04:24:17.307Z</updated>
     
@@ -85,27 +184,27 @@
     
     
     
-    <category term="AI" scheme="https://rm-rf.ink/categories/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/categories/AI/"/>
     
     
-    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/tags/AI/"/>
     
-    <category term="Agent" scheme="https://rm-rf.ink/tags/Agent/"/>
+    <category term="Agent" scheme="https://sudo.rm-rf.ink/tags/Agent/"/>
     
-    <category term="Memory" scheme="https://rm-rf.ink/tags/Memory/"/>
+    <category term="Memory" scheme="https://sudo.rm-rf.ink/tags/Memory/"/>
     
-    <category term="Hermes" scheme="https://rm-rf.ink/tags/Hermes/"/>
+    <category term="Hermes" scheme="https://sudo.rm-rf.ink/tags/Hermes/"/>
     
-    <category term="Python" scheme="https://rm-rf.ink/tags/Python/"/>
+    <category term="Python" scheme="https://sudo.rm-rf.ink/tags/Python/"/>
     
-    <category term="MemPalace" scheme="https://rm-rf.ink/tags/MemPalace/"/>
+    <category term="MemPalace" scheme="https://sudo.rm-rf.ink/tags/MemPalace/"/>
     
   </entry>
   
   <entry>
     <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
-    <link href="https://rm-rf.ink/*/5f9c1a2b.html"/>
-    <id>https://rm-rf.ink/*/5f9c1a2b.html</id>
+    <link href="https://sudo.rm-rf.ink/*/5f9c1a2b.html"/>
+    <id>https://sudo.rm-rf.ink/*/5f9c1a2b.html</id>
     <published>2026-05-01T14:30:00.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -116,25 +215,25 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/tags/AI/"/>
     
-    <category term="Hermes Agent" scheme="https://rm-rf.ink/tags/Hermes-Agent/"/>
+    <category term="Hermes Agent" scheme="https://sudo.rm-rf.ink/tags/Hermes-Agent/"/>
     
-    <category term="OpenClaw" scheme="https://rm-rf.ink/tags/OpenClaw/"/>
+    <category term="OpenClaw" scheme="https://sudo.rm-rf.ink/tags/OpenClaw/"/>
     
-    <category term="迁移" scheme="https://rm-rf.ink/tags/%E8%BF%81%E7%A7%BB/"/>
+    <category term="迁移" scheme="https://sudo.rm-rf.ink/tags/%E8%BF%81%E7%A7%BB/"/>
     
-    <category term="记忆系统" scheme="https://rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
+    <category term="记忆系统" scheme="https://sudo.rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>改造 Hermes Agent 记忆系统：基于 MemPalace 的实践</title>
-    <link href="https://rm-rf.ink/*/38291047.html"/>
-    <id>https://rm-rf.ink/*/38291047.html</id>
+    <link href="https://sudo.rm-rf.ink/*/38291047.html"/>
+    <id>https://sudo.rm-rf.ink/*/38291047.html</id>
     <published>2026-05-01T10:31:00.000Z</published>
     <updated>2026-05-22T03:50:45.253Z</updated>
     
@@ -145,23 +244,23 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="AI" scheme="https://rm-rf.ink/tags/AI/"/>
+    <category term="AI" scheme="https://sudo.rm-rf.ink/tags/AI/"/>
     
-    <category term="MemPalace" scheme="https://rm-rf.ink/tags/MemPalace/"/>
+    <category term="MemPalace" scheme="https://sudo.rm-rf.ink/tags/MemPalace/"/>
     
-    <category term="Hermes Agent" scheme="https://rm-rf.ink/tags/Hermes-Agent/"/>
+    <category term="Hermes Agent" scheme="https://sudo.rm-rf.ink/tags/Hermes-Agent/"/>
     
-    <category term="记忆系统" scheme="https://rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
+    <category term="记忆系统" scheme="https://sudo.rm-rf.ink/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>Hello Hermes Agent</title>
-    <link href="https://rm-rf.ink/*/96208538.html"/>
-    <id>https://rm-rf.ink/*/96208538.html</id>
+    <link href="https://sudo.rm-rf.ink/*/96208538.html"/>
+    <id>https://sudo.rm-rf.ink/*/96208538.html</id>
     <published>2026-04-27T15:32:00.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -180,8 +279,8 @@
   
   <entry>
     <title>daily-news-2026-04-25</title>
-    <link href="https://rm-rf.ink/*/f135226f.html"/>
-    <id>https://rm-rf.ink/*/f135226f.html</id>
+    <link href="https://sudo.rm-rf.ink/*/f135226f.html"/>
+    <id>https://sudo.rm-rf.ink/*/f135226f.html</id>
     <published>2026-04-24T23:30:00.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -192,15 +291,15 @@
     
     
     
-    <category term="daily news" scheme="https://rm-rf.ink/categories/daily-news/"/>
+    <category term="daily news" scheme="https://sudo.rm-rf.ink/categories/daily-news/"/>
     
     
   </entry>
   
   <entry>
     <title>OpenClaw 0</title>
-    <link href="https://rm-rf.ink/*/8b6d76da.html"/>
-    <id>https://rm-rf.ink/*/8b6d76da.html</id>
+    <link href="https://sudo.rm-rf.ink/*/8b6d76da.html"/>
+    <id>https://sudo.rm-rf.ink/*/8b6d76da.html</id>
     <published>2026-03-30T09:10:57.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -211,15 +310,15 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>redis主从-哨兵模式</title>
-    <link href="https://rm-rf.ink/*/8f0491a1.html"/>
-    <id>https://rm-rf.ink/*/8f0491a1.html</id>
+    <link href="https://sudo.rm-rf.ink/*/8f0491a1.html"/>
+    <id>https://sudo.rm-rf.ink/*/8f0491a1.html</id>
     <published>2024-03-25T09:56:30.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -230,15 +329,15 @@
     
     
     
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://sudo.rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>rust-if-let简洁控制流</title>
-    <link href="https://rm-rf.ink/*/eec35d0e.html"/>
-    <id>https://rm-rf.ink/*/eec35d0e.html</id>
+    <link href="https://sudo.rm-rf.ink/*/eec35d0e.html"/>
+    <id>https://sudo.rm-rf.ink/*/eec35d0e.html</id>
     <published>2024-03-14T00:41:12.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -252,21 +351,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="if" scheme="https://rm-rf.ink/tags/if/"/>
+    <category term="if" scheme="https://sudo.rm-rf.ink/tags/if/"/>
     
-    <category term="let" scheme="https://rm-rf.ink/tags/let/"/>
+    <category term="let" scheme="https://sudo.rm-rf.ink/tags/let/"/>
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
   </entry>
   
   <entry>
     <title>rust-枚举与模式匹配</title>
-    <link href="https://rm-rf.ink/*/7d69317e.html"/>
-    <id>https://rm-rf.ink/*/7d69317e.html</id>
+    <link href="https://sudo.rm-rf.ink/*/7d69317e.html"/>
+    <id>https://sudo.rm-rf.ink/*/7d69317e.html</id>
     <published>2024-03-13T09:35:29.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -280,19 +379,19 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
-    <category term="enum" scheme="https://rm-rf.ink/tags/enum/"/>
+    <category term="enum" scheme="https://sudo.rm-rf.ink/tags/enum/"/>
     
   </entry>
   
   <entry>
     <title>rust-方法语法</title>
-    <link href="https://rm-rf.ink/*/d1274d86.html"/>
-    <id>https://rm-rf.ink/*/d1274d86.html</id>
+    <link href="https://sudo.rm-rf.ink/*/d1274d86.html"/>
+    <id>https://sudo.rm-rf.ink/*/d1274d86.html</id>
     <published>2024-03-13T09:18:32.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -306,21 +405,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
-    <category term="method" scheme="https://rm-rf.ink/tags/method/"/>
+    <category term="method" scheme="https://sudo.rm-rf.ink/tags/method/"/>
     
-    <category term="syntax" scheme="https://rm-rf.ink/tags/syntax/"/>
+    <category term="syntax" scheme="https://sudo.rm-rf.ink/tags/syntax/"/>
     
   </entry>
   
   <entry>
     <title>rust-结构定义和实例化</title>
-    <link href="https://rm-rf.ink/*/e0d5ed17.html"/>
-    <id>https://rm-rf.ink/*/e0d5ed17.html</id>
+    <link href="https://sudo.rm-rf.ink/*/e0d5ed17.html"/>
+    <id>https://sudo.rm-rf.ink/*/e0d5ed17.html</id>
     <published>2024-03-13T08:53:22.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -334,19 +433,19 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="rust" scheme="https://rm-rf.ink/tags/rust/"/>
+    <category term="rust" scheme="https://sudo.rm-rf.ink/tags/rust/"/>
     
-    <category term="struct" scheme="https://rm-rf.ink/tags/struct/"/>
+    <category term="struct" scheme="https://sudo.rm-rf.ink/tags/struct/"/>
     
   </entry>
   
   <entry>
     <title>rust入门</title>
-    <link href="https://rm-rf.ink/*/94fe59ce.html"/>
-    <id>https://rm-rf.ink/*/94fe59ce.html</id>
+    <link href="https://sudo.rm-rf.ink/*/94fe59ce.html"/>
+    <id>https://sudo.rm-rf.ink/*/94fe59ce.html</id>
     <published>2024-03-11T01:30:48.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -360,21 +459,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="cargo" scheme="https://rm-rf.ink/tags/cargo/"/>
+    <category term="cargo" scheme="https://sudo.rm-rf.ink/tags/cargo/"/>
     
-    <category term="rustc" scheme="https://rm-rf.ink/tags/rustc/"/>
+    <category term="rustc" scheme="https://sudo.rm-rf.ink/tags/rustc/"/>
     
-    <category term="rustup" scheme="https://rm-rf.ink/tags/rustup/"/>
+    <category term="rustup" scheme="https://sudo.rm-rf.ink/tags/rustup/"/>
     
   </entry>
   
   <entry>
     <title>Transformer模型</title>
-    <link href="https://rm-rf.ink/*/e4b8a22b.html"/>
-    <id>https://rm-rf.ink/*/e4b8a22b.html</id>
+    <link href="https://sudo.rm-rf.ink/*/e4b8a22b.html"/>
+    <id>https://sudo.rm-rf.ink/*/e4b8a22b.html</id>
     <published>2024-02-22T03:01:14.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -388,21 +487,21 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="NLP" scheme="https://rm-rf.ink/tags/NLP/"/>
+    <category term="NLP" scheme="https://sudo.rm-rf.ink/tags/NLP/"/>
     
-    <category term="text2sql" scheme="https://rm-rf.ink/tags/text2sql/"/>
+    <category term="text2sql" scheme="https://sudo.rm-rf.ink/tags/text2sql/"/>
     
-    <category term="机器学习" scheme="https://rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://sudo.rm-rf.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>笔记4-《程序员数学-1》</title>
-    <link href="https://rm-rf.ink/*/c88b93d0.html"/>
-    <id>https://rm-rf.ink/*/c88b93d0.html</id>
+    <link href="https://sudo.rm-rf.ink/*/c88b93d0.html"/>
+    <id>https://sudo.rm-rf.ink/*/c88b93d0.html</id>
     <published>2024-02-19T01:07:47.000Z</published>
     <updated>2026-05-22T03:50:45.252Z</updated>
     
@@ -416,92 +515,7 @@
     
     
     
-    <category term="学习" scheme="https://rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>开年大吉，工作顺利！</title>
-    <link href="https://rm-rf.ink/*/73b21f0a.html"/>
-    <id>https://rm-rf.ink/*/73b21f0a.html</id>
-    <published>2024-02-18T07:00:20.000Z</published>
-    <updated>2026-05-22T03:50:45.252Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div style="display:flex;justify-content: center;">    <div>      <img width="400" height="auto" src="../images/image-20240218151047849.png" alt="龙年大吉大利" style="text-align: center;">      <div style="text-align: center;user-select: none;">图片：“龙年大吉大利”</div>    </div>  </div>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>研发年终总结</title>
-    <link href="https://rm-rf.ink/*/72bee84d.html"/>
-    <id>https://rm-rf.ink/*/72bee84d.html</id>
-    <published>2024-02-05T02:52:56.000Z</published>
-    <updated>2026-05-22T03:50:45.253Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="d750b976d0af0dae30016627668be28e6d2795db96258477d297a1da59746216">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80934badbd52b2032fb7d7fa8ea0a30401ead330577c4c8a85a72eb63f81f2d244582b0bf85438efa61c49e9528be85df7860fd17b3214829fa137b0184419f3fed24cb821d072633aec08c83b1784e73254f5ed31d204d1b341591704aec00a4d084e8d5095986f4aacc7046f1624418b2ec37bd0d60f984141aac07614e7fb2771146fa6ae68844ab7397c9522ac715b</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">文章加密了，需要输入密码查看</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>表单中心功能清单</title>
-    <link href="https://rm-rf.ink/*/74a10861.html"/>
-    <id>https://rm-rf.ink/*/74a10861.html</id>
-    <published>2024-01-30T00:58:31.000Z</published>
-    <updated>2026-05-22T03:50:45.253Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="d4fdaf5f778ad2b7f7839b20408f063600471c71adaf758c95e523234574a9d6">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0184c4df4adb62aec6770ccb2861933b80362d81b2e5010a91d2c8f139b9eb004455057809151ad7f7ca7b6b37b48037dfaf87a9f1e3fd2e3e9fbcddefded0a9ffe4050860aaf8120a12909a51025f739ff300c37edce140a5b599c11a069c8d6716e7a198692712ae072cb0833533e07f38919c92312fb2f264239dc7ee606385a6f34772835d1e53de7cab5f35053a3c24486db2f6f061efb91dd54dbb6f7b7acb00bb2002d390eee61b94c5e4bcc9b0317177adb53e6fc797830898cc53c48bbcce3f80100cbcd489454ce64ecdd98984531a7dc6f0ef02d73406eda7728fd6</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">文章加密了，需要输入密码查看</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-    
-    <category term="vue" scheme="https://rm-rf.ink/tags/vue/"/>
-    
-    <category term="表单" scheme="https://rm-rf.ink/tags/%E8%A1%A8%E5%8D%95/"/>
-    
-    <category term="formily" scheme="https://rm-rf.ink/tags/formily/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>成本核算</title>
-    <link href="https://rm-rf.ink/*/fb428c48.html"/>
-    <id>https://rm-rf.ink/*/fb428c48.html</id>
-    <published>2024-01-25T07:09:54.000Z</published>
-    <updated>2026-05-22T03:50:45.252Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="44fc6b09e12b1dca25586a84cbdcad59fe5874ff258d27b23671866eb31f64cc">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d0195048f25efe9b21ce963d68bba31f68109d09d5e9a4798ba30c885f456814a1f79a3813597deaa347db33459cd74ba7a0df0f4961b35961cf13b305d52d09764798e16bc3970b56199d955ddc1cc9c04c353fb965ceadfc5376a7704a76f05c3da2895c2e503e0f9acd812b0bc56d7b3677b1a7366b54e384df56d66b32e47484884bf3ad6f10f3899fa6a1d0ebc8f4a8f15a25926c5f09faafa892771e672dce8e9193fa9821d44cf076aab160fdd0005724034d18e4ec566a57f74d507df6d98454bbb420fcada5e86fac9dbfa97eeb919651443dcdc350dc638e6283d9e889b5ef81fbdf4f010db814ea35ae2d88b145fddbb9a4ec5fb960e01b8dccc33d9d1472271d360d47d559c2cd5ae29072cf1682091e200aaa447262efc45994d84b2c885e9b76e9f6b3ef00b89976974fb39dc4bdf102c62aba6f4d39dd48aa679f191b17b8ff5f2e0abcd9bd1f2337ad24b07c79ad4db23273f4d9b18e4413df745c0f31919fcc98d3b2a2ff051813176fcb8d58ee7f78dc47725baf6037a8c9c9023cd0664a14ad3df32b1860769e27cfc62a526a7429fc8a9bfa8f0c4eaf21b91b43f495b19552fc3cd3ba2059a4b27288ebba98589861a37f28b9e654f66021082d4c872a88d3facc4a920fd93fbe53794151d3810e0f41ae6ef736202eddf98d357b518c8ee5d24291815099bce81bbd1e3d5be21a6190e11110ebcebc495f364fb7ddd71af01062f3f4331541424ae155572f54b5b1a9e2a4451b7e5a67dc4ae23b02e2bcf8c5405caf52af747361a7e201552703e9e68652e283e243ae778b4fb061e2fe1c5a88b32885fa001c124fa4dbdf27e6dc8717891c8924f961a8d014b440cf0fee0804db043bdcf8004e56c8c9676c2bc925216219597ea804477986a7300a40bcc2a29f11ddfc2a7009402895b472b4d9abf359728dfa7fb1c32e3c396848fb0756c2c6d199f32eb1a953f75159e59b96a5d03d0b25032df570ad289c5da97f1e91fcc79f3132a357fbea1c0585c60b8ced01aa77f53cae07e61e0b01aa3b298aedf9c289ec3f1a8894d5947b2dd4a9790bc417c2fc4fcd46bb38325ad6aca04cf8d969c071d6758837d5e3da1e0708a6fa00fb64ce344ccc5631f40bd3713b7836a6855fd204c3448f21c8523ab9eeb094c7d504fa6dff88478d3e276817712a96f91c3269f5aa04cdf1bb4751a51a64f67bd2782535970e6bd38533bd3e89f41bf230062696042f6be90a95431374bac8d16bde9a58befbd3e2c60144bce8a3cc7fee5217def52301b310c0cfefbc8a1af62f6870a955daecf988ae609d847725cc6d0feccaa6e3142d82eef1ee24fdac8d752f719cf9c2023212e6df6c84f637f43757b7987545e8931c3da36550ec78b3f84e699703d6a72bf242b0da37f109dfe4ce60a5ad452dd3af59a631ecaca57f6ba537627d472300fad6925ff147fc94dc0be104fbfd6a49876ccbb3337af154ecc4e1788fea413e4dccb4049d2dc6010d28135ddca3d954c3668b8cf8dbf563fcdb86efda4822909ab8f17419a4ef3060cdcace08ef372da7a9d2314b1df1b56c8941debc6751d36ac4d8e7f6bc38a5ea7efd036094f137ef5041f35e1df174e62a4e9b85168c98c373cd32ecb6a085e39d243cfd3db5adf7bc0cca77d676cd9ea6cf8b1107a809dacfd8f51cd0b650a165c608439c0f1400e991fb804334832ef4b0220273cc27212101228cb0da9474d977766514151b13a02dfcec92437399a2b7e4d0864d8030d776bcb4b81034fb5eb2c04bbc0fa62ea6b79f119f779efdcdc8442c70894338dc66320290eb56ff022ed0c34906f20705ce50d2b79450d001c79757e3c833de3db9226d052a38b781b149feb66773de072bc2fd8c3782f6ceda0ece7cb0681b977ee13faaf85d92444b052f0bc1295a6415aa25580cc540b96c3117c6270e8f7c43e65564284c38a607c616f7994e40283079c04b11aac4ffec23bc26753cb32ec18bdffa12709caafec6291fe7964cb6600f9034705b0cc8170f11c3c7e4e4d0e2eb0b2a04dd514da1b3779951bd6dc5588e768caccc5a81c91cab48d28a89468d3ddad9325afdb5bba58e8670f7244606e0d4a79bfdcc6ff94d06ba7af6cde978c9bd64a5e3e30534794bc63c5c42c055936e84b687dd1a6d82f2e58eb760f9c422ee12be872c6a01b043cb2bda28791eb038b87a01c17015db6a112442934e9b93e8ddd90738b8fe725487e88fb58bffe09dd659cd1a3e11939fa78e18d08fea534f0b2f997530236867e8b78e91aeb30452f29361da203b20e06b247bfc22243c7f8f42b93722578b2f8f10dc9c638e2799024feb319a2010a212d3c891ef1a555820e3d0be66d224112c010488de485babf31216505e4199078aabe5c50273c3aa07fd19c65351009103594858553d400fea8e7f291b49b1714effbfc41940f6a0c72e9b06f0b4ddb8be951974c86bcae83f74a7c59bd924dd00c5494fc5c7cc6a0636d96e32bd220be55371e3a500300d1653a24e7fa9ce55bed09b3464a1e8007b4023a645d69c07784ed307b37e40cd34b34c406d9e2f7ac9054241c4f56af824156bf38b4fe19d6730dab1615532654db2642079c989876c5b4ee7ad737cde310b4f3b286b5485e542a5e51e1d27e4dde347482dd81c2e31cee68101262974f9853e250c1e7d0e997f267af4d20f757ea784bec6f205250934bad7fa43a691a2b128eaa0accc2c7f4dbf9a6e3119670587607ef555a3ffd3ecb5132a2dceb93f7d30d72cb69423ba21d3b665213c9152eabaf9fe0959749d942c6d2312254a197c21fe32a2bfe23889dcfd251b5e91ae2e2a57c3f79a33d8efc35015bad567838f453f1c1e43dd73bf51480d60923cbb7a54dc1b939fea28d05f8de237866ce74ed2c0a19a4643fca17010805b698a21858a1f872d1002ef9a30c73dae2ecf691469cd92931b9fe98</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">文章加密了，需要输入密码查看</summary>
-    
-    
-    
-    <category term="工作" scheme="https://rm-rf.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="学习" scheme="https://sudo.rm-rf.ink/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
