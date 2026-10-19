@@ -7,7 +7,7 @@
 # subtitle: "Viva La Vida"
 # description: "生命万岁"
 # keywords: 生命,生命万岁,Viva,Viva La Vida
-title: Viva La Vida
+title: sudo rm -rf /*
 subtitle: "生命万岁"
 description: "技术｜思考｜生活。一个独立开发者的持续输出频道。"
 keywords: 技术博客,独立开发,编程,效率工具,AI,生命万岁
@@ -137,9 +137,6 @@ theme: ascent
 deploy:
   - type: git
     repo: git@github.com:yqwoe/yqwoe.github.io.git
-    branch: master
-  - type: git
-    repo: git@gitee.com:yqwoe/yqwoe.git
     branch: master
 
 favicon:
