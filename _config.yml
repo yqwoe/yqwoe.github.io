@@ -138,9 +138,6 @@ deploy:
   - type: git
     repo: git@github.com:yqwoe/yqwoe.github.io.git
     branch: master
-  - type: git
-    repo: git@gitee.com:yqwoe/yqwoe.git
-    branch: master
 
 favicon:
   small: /images/favicon.ico
