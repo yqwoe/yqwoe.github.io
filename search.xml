@@ -2061,28 +2061,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>OpenClaw 0</title>
-    <url>//*/8b6d76da.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d3d974b29008aff606283f0e4978d7bf8e58543d1d3a787740a0ae1e7049f1ed">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1b9fde0d6c59e81ace0635b7e811b6eb4</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-wave">
-      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Reveal.js使用</title>
     <url>//*/6befbd07.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="hexo-reveal-embed"><iframe src="/slide/Reveal.js%E5%B9%BB%E7%81%AF%E7%89%87/" allowfullscreen loading="lazy"></iframe></div>
@@ -2174,6 +2152,28 @@
         <tag>text2sql</tag>
         <tag>机器学习</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>OpenClaw 0</title>
+    <url>//*/8b6d76da.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="糟糕！密码错误了." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d3d974b29008aff606283f0e4978d7bf8e58543d1d3a787740a0ae1e7049f1ed">89730641517f40fad9fb11d8e72e80bf06c939f51e30e9318348e356012ae93802623e7e7460999b3f7e8ba755c0d29599ae788f4544e2d8c77419f7d87eed449b7d6813e006fe13f540d0d66182fef8c50ebd9d211e40be206647f7e00fd685b86946fa705ad4651c18ab2a320b4a69699ab0980126725a179cb3c64faa8f2509c4dddd4adebe64d5cd4207643b74cb951ade33149cd6cd51d669bce78e7df026fe1abb945332d7c0a9e2f0c8bc51b46617f418a10ed53af1ad8a5de091ee7b9161a36c5a28454693301b254151eaad572fe3718480827cbcb2b29cbbe2dd52029dfad21eac08db5c648820175597abb4a0c5ff69693595d1d3fe51de4c4f9c4194b77a63e7b407560fa73f56328d3cbee56843f26b4272acb3eeeaa0e46d01c1c94262bdc858905a4d80759515d1db386e90b995b088a668ce7196174ca5a1b9fde0d6c59e81ace0635b7e811b6eb4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码查看内容</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
   </entry>
   <entry>
     <title>daily-news-2026-04-25</title>
@@ -2497,6 +2497,30 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>阿里云mysql外网访问</title>
+    <url>//*/3031836898.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
+<span id="more"></span>
+<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
+<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
+<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
+<p>3.mysql 默认只能自本机访问</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
+<p>4.检查是不是在监听状态</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
+<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>aliyun</tag>
+        <tag>阿里云</tag>
+        <tag>ubuntu 14.04</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mysql count函数正确使用姿势</title>
     <url>//*/9f600c63.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>  <code>count()</code> 是<code>mysql</code>聚合函数，返回指定匹配条件的行数。开发中常用来统计表中数据，全部数据，不为null数据，或者去重数据。</p>
@@ -2553,30 +2577,6 @@ section 运维阶段
         <tag>聚合函数</tag>
         <tag>InnoDB</tag>
         <tag>MyISAM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云mysql外网访问</title>
-    <url>//*/3031836898.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>转载原文评论: <a href="https://segmentfault.com/q/1010000009603559?sort=created">阿里云 ecs 上安装了 mysql 但是外网访问不了</a></p>
-<span id="more"></span>
-<p>1.阿里云 ECS 有安全组防火墙.默认只开了 ICMP,22,3389. 在服务器控制台找到 安全组-配置规则-添加安全组规则</p>
-<p><img src="/images/1950746143-596a46107163e_articlex.png" alt="1950746143-596a46107163e_articlex"></p>
-<p>2.如果是用 root 登录 MySQL,在登陆后 use mysql, user 表 root 对应的 localhost 改为%</p>
-<p>3.mysql 默认只能自本机访问</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">#bind-address = 127.0.0.1</span><br><span class="line"></span><br><span class="line">service mysql restart</span><br></pre></td></tr></table></figure>
-<p>4.检查是不是在监听状态</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -ntpl |grep 3306</span><br></pre></td></tr></table></figure>
-<p>5.防火墙是否对 mysql 端口限制,设置防火墙</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>aliyun</tag>
-        <tag>阿里云</tag>
-        <tag>ubuntu 14.04</tag>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -2853,57 +2853,6 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
-    <title>ruby 爬虫 一</title>
-    <url>//*/1911085415.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
-<span id="more"></span>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Time</span>.now.to_s =&gt; <span class="string">&quot;2018-10-30 20:29:36 +0800&quot;</span></span><br></pre></td></tr></table></figure>
-<p>​ 印象中，大多数人做爬虫第一个想到的肯定是 python，“python 解决方案多，代码简洁，容易上手…”,blah…blah</p>
-<p>​ 事实上我也写 python，但是强制缩进这点让我很伤脑筋，没用 ruby 之前，我觉得 python 可能是我做 java 以来最优雅的语言。直到我用 ruby。</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="number">10</span>.times <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">	puts <span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">=&gt;</span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br></pre></td></tr></table></figure>
-<p>​ 废话不多说。</p>
-<p>​ 为什么选择用 ruby，而不用 python 呢？</p>
-<p>​ 不为别的，就是顺手而已。</p>
-<h1 id="kimurai"><a class="markdownIt-Anchor" href="#kimurai"></a> kimurai</h1>
-<blockquote>
-<p>Kimurai 是一个用 Ruby 实现的现代网络爬虫框架，和 <strong>Headless Chromium</strong> / <strong>Firefox</strong> 、<strong>PhantomJS</strong> 一样开箱即用，并且能够模拟**“用户”**访问抓取 javascript 交互的网站。</p>
-<p>Kimurai 基于 <strong><a href="https://github.com/teamcapybara/capybara">Capybara</a></strong> 和 <strong><a href="https://github.com/sparklemotion/nokogiri">Nokogir</a></strong> gems，所以你不必学习新的东西。</p>
-</blockquote>
-<h2 id="实操"><a class="markdownIt-Anchor" href="#实操"></a> 实操</h2>
-<h4 id="1安装"><a class="markdownIt-Anchor" href="#1安装"></a> 1.安装</h4>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gem install kimurai</span><br></pre></td></tr></table></figure>
-<p>使用<a href="http://npm.taobao.org/mirrors/chromedriver/">chromiumdriver</a> 或<a href="https://github.com/ariya/phantomjs">phantomJS</a>需另外安装。</p>
-<h4 id="2创建项目-demo"><a class="markdownIt-Anchor" href="#2创建项目-demo"></a> 2.创建项目 demo</h4>
-<p>kimurai 提供了像 rails new project 这样的命令式创建项目。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kimurai generate project demo</span><br></pre></td></tr></table></figure>
-<p>等待命令执行完成会生成如下结构</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">|demo</span><br><span class="line">	|config  #用于存放全局配置</span><br><span class="line">		|application.rb #全局配置</span><br><span class="line">		|automaiton.yml #用于配置浏览器和部署</span><br><span class="line">		|schedule.rb #支持定时任务</span><br><span class="line">	|db #数据库文件？</span><br><span class="line">	|helpers #辅助方法</span><br><span class="line">	|lib #插件</span><br><span class="line">	|log #日志</span><br><span class="line">	|pipelines</span><br><span class="line">	|spiders #爬虫存放目录</span><br><span class="line">	|tmp #缓存文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="3创建-spider"><a class="markdownIt-Anchor" href="#3创建-spider"></a> 3.创建 spider</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">kimurai generate spider test_spider</span><br><span class="line"></span><br><span class="line"><span class="comment">#demo/spiders/test_spider.rb</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = []</span><br><span class="line">  <span class="variable">@config</span> = &#123;&#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="4修改-spider"><a class="markdownIt-Anchor" href="#4修改-spider"></a> 4.修改 spider</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = [<span class="string">&quot;https://baike.pcbaby.com.cn&quot;</span>]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">    items = &#123;&#125;</span><br><span class="line">    items[<span class="symbol">:links</span>] = []</span><br><span class="line">    response.xpath(<span class="string">&quot;//div[@class=&#x27;baike-th main&#x27;]&quot;</span>).each <span class="keyword">do</span> |<span class="params">row</span>|</span><br><span class="line">      logger.info row.to_s</span><br><span class="line">      items[<span class="symbol">:links</span>] &lt;&lt; &#123;</span><br><span class="line">          <span class="symbol">title:</span> row.css(<span class="string">&quot;/a&quot;</span>).text.squish,</span><br><span class="line">          <span class="symbol">url:</span> <span class="string">&quot;https:<span class="subst">#&#123;row.css(<span class="string">&quot;/a&quot;</span>).first[<span class="string">&quot;href&quot;</span>]&#125;</span>&quot;</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">    save_to <span class="string">&quot;results.json&quot;</span>, items, <span class="symbol">format:</span> <span class="symbol">:pretty_json</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<h5 id="resultsjson"><a class="markdownIt-Anchor" href="#resultsjson"></a> results.json</h5>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;links&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;备孕百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;孕期百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;分娩百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/fenmian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;月子百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yuezi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;新生儿百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xinshenger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0-1岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yinger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1-3岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/youer.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3-6岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xuelingqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;用品百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yongpin.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;美食百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/meishi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;生活百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/shenghuo.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;position&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
-<h4 id="5application_spiderrb"><a class="markdownIt-Anchor" href="#5application_spiderrb"></a> 5.application_spider.rb</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ApplicationSpider is a default base spider class. You can set here</span></span><br><span class="line"><span class="comment"># default settings for all spiders inherited from ApplicationSpider.</span></span><br><span class="line"><span class="comment"># To generate a new spider, run: `$ kimurai generate spider spider_name`</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;net/http&#x27;</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;kimurai&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ApplicationSpider</span> &lt; <span class="title class_ inherited__">Kimurai::Base</span></span><br><span class="line">  <span class="keyword">include</span> <span class="title class_">ApplicationHelper</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@engine</span> = <span class="symbol">:selenium_chrome</span></span><br><span class="line">  <span class="variable constant_">USER_AGENTS</span> = []</span><br><span class="line"></span><br><span class="line">  <span class="comment"># PROXIES = [&quot;127.0.0.1:1086:socks5&quot;]</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@config</span> = &#123;</span><br><span class="line">    <span class="symbol">user_agent:</span> <span class="string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&quot;</span>,</span><br><span class="line">    <span class="symbol">skip_request_errors:</span> [&#123; <span class="symbol">error:</span> <span class="title class_">RuntimeError</span>, <span class="symbol">message:</span> <span class="string">&quot;404 =&gt; Net::HTTPNotFound&quot;</span> &#125;],</span><br><span class="line">	<span class="symbol">retry_request_errors:</span> [<span class="title class_">Net</span><span class="symbol">:</span><span class="symbol">:ReadTimeout</span>],</span><br><span class="line">    <span class="symbol">restart_if:</span> &#123;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="symbol">before_request:</span> &#123;</span><br><span class="line">        <span class="symbol">delay:</span> <span class="number">4</span>..<span class="number">7</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="6运行"><a class="markdownIt-Anchor" href="#6运行"></a> 6.运行</h4>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">bundle exec kimurai runner -j <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<p>可以依次运行多个爬虫。</p>
-<p>按照以上步骤可以运行示例中的代码。</p>
-<p>更多细节配置可以查看 <a href="https://github.com/vifreefly/kimuraframework#installation">kimurai</a></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>ruby</tag>
-        <tag>爬虫</tag>
-        <tag>python</tag>
-        <tag>java</tag>
-        <tag>kimurai</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>rust-if-let简洁控制流</title>
     <url>//*/eec35d0e.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="if-let-控制流"><a class="markdownIt-Anchor" href="#if-let-控制流"></a> if let 控制流</h1>
@@ -2958,6 +2907,57 @@ section 运维阶段
       <tags>
         <tag>rust</tag>
         <tag>enum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ruby 爬虫 一</title>
+    <url>//*/1911085415.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​ 拖延了半个多月，把之前写的东西整理一下发现，好多内容都在脑子里，没有形成转化后的内容，所以，吃过晚饭就决定写完在睡觉。</p>
+<span id="more"></span>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Time</span>.now.to_s =&gt; <span class="string">&quot;2018-10-30 20:29:36 +0800&quot;</span></span><br></pre></td></tr></table></figure>
+<p>​ 印象中，大多数人做爬虫第一个想到的肯定是 python，“python 解决方案多，代码简洁，容易上手…”,blah…blah</p>
+<p>​ 事实上我也写 python，但是强制缩进这点让我很伤脑筋，没用 ruby 之前，我觉得 python 可能是我做 java 以来最优雅的语言。直到我用 ruby。</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="number">10</span>.times <span class="keyword">do</span> |<span class="params">i</span>|</span><br><span class="line">	puts <span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">=&gt;</span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br><span class="line"><span class="string">&quot;I Love Ruby!!&quot;</span></span><br></pre></td></tr></table></figure>
+<p>​ 废话不多说。</p>
+<p>​ 为什么选择用 ruby，而不用 python 呢？</p>
+<p>​ 不为别的，就是顺手而已。</p>
+<h1 id="kimurai"><a class="markdownIt-Anchor" href="#kimurai"></a> kimurai</h1>
+<blockquote>
+<p>Kimurai 是一个用 Ruby 实现的现代网络爬虫框架，和 <strong>Headless Chromium</strong> / <strong>Firefox</strong> 、<strong>PhantomJS</strong> 一样开箱即用，并且能够模拟**“用户”**访问抓取 javascript 交互的网站。</p>
+<p>Kimurai 基于 <strong><a href="https://github.com/teamcapybara/capybara">Capybara</a></strong> 和 <strong><a href="https://github.com/sparklemotion/nokogiri">Nokogir</a></strong> gems，所以你不必学习新的东西。</p>
+</blockquote>
+<h2 id="实操"><a class="markdownIt-Anchor" href="#实操"></a> 实操</h2>
+<h4 id="1安装"><a class="markdownIt-Anchor" href="#1安装"></a> 1.安装</h4>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gem install kimurai</span><br></pre></td></tr></table></figure>
+<p>使用<a href="http://npm.taobao.org/mirrors/chromedriver/">chromiumdriver</a> 或<a href="https://github.com/ariya/phantomjs">phantomJS</a>需另外安装。</p>
+<h4 id="2创建项目-demo"><a class="markdownIt-Anchor" href="#2创建项目-demo"></a> 2.创建项目 demo</h4>
+<p>kimurai 提供了像 rails new project 这样的命令式创建项目。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kimurai generate project demo</span><br></pre></td></tr></table></figure>
+<p>等待命令执行完成会生成如下结构</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">|demo</span><br><span class="line">	|config  #用于存放全局配置</span><br><span class="line">		|application.rb #全局配置</span><br><span class="line">		|automaiton.yml #用于配置浏览器和部署</span><br><span class="line">		|schedule.rb #支持定时任务</span><br><span class="line">	|db #数据库文件？</span><br><span class="line">	|helpers #辅助方法</span><br><span class="line">	|lib #插件</span><br><span class="line">	|log #日志</span><br><span class="line">	|pipelines</span><br><span class="line">	|spiders #爬虫存放目录</span><br><span class="line">	|tmp #缓存文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="3创建-spider"><a class="markdownIt-Anchor" href="#3创建-spider"></a> 3.创建 spider</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">kimurai generate spider test_spider</span><br><span class="line"></span><br><span class="line"><span class="comment">#demo/spiders/test_spider.rb</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = []</span><br><span class="line">  <span class="variable">@config</span> = &#123;&#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="4修改-spider"><a class="markdownIt-Anchor" href="#4修改-spider"></a> 4.修改 spider</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">TestSpider</span> &lt; <span class="title class_ inherited__">ApplicationSpider</span></span><br><span class="line">  <span class="variable">@name</span> = <span class="string">&quot;test_spider&quot;</span></span><br><span class="line">  <span class="variable">@start_urls</span> = [<span class="string">&quot;https://baike.pcbaby.com.cn&quot;</span>]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">response, <span class="symbol">url:</span>, <span class="symbol">data:</span> &#123;&#125;</span>)</span><br><span class="line">    items = &#123;&#125;</span><br><span class="line">    items[<span class="symbol">:links</span>] = []</span><br><span class="line">    response.xpath(<span class="string">&quot;//div[@class=&#x27;baike-th main&#x27;]&quot;</span>).each <span class="keyword">do</span> |<span class="params">row</span>|</span><br><span class="line">      logger.info row.to_s</span><br><span class="line">      items[<span class="symbol">:links</span>] &lt;&lt; &#123;</span><br><span class="line">          <span class="symbol">title:</span> row.css(<span class="string">&quot;/a&quot;</span>).text.squish,</span><br><span class="line">          <span class="symbol">url:</span> <span class="string">&quot;https:<span class="subst">#&#123;row.css(<span class="string">&quot;/a&quot;</span>).first[<span class="string">&quot;href&quot;</span>]&#125;</span>&quot;</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">    save_to <span class="string">&quot;results.json&quot;</span>, items, <span class="symbol">format:</span> <span class="symbol">:pretty_json</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h5 id="resultsjson"><a class="markdownIt-Anchor" href="#resultsjson"></a> results.json</h5>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;links&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;备孕百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;孕期百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yunqi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;分娩百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/fenmian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;月子百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yuezi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;新生儿百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xinshenger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0-1岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yinger.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1-3岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/youer.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3-6岁百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/xuelingqian.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;用品百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/yongpin.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;美食百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/meishi.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;生活百科&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://baike.pcbaby.com.cn/shenghuo.html&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;position&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h4 id="5application_spiderrb"><a class="markdownIt-Anchor" href="#5application_spiderrb"></a> 5.application_spider.rb</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ApplicationSpider is a default base spider class. You can set here</span></span><br><span class="line"><span class="comment"># default settings for all spiders inherited from ApplicationSpider.</span></span><br><span class="line"><span class="comment"># To generate a new spider, run: `$ kimurai generate spider spider_name`</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;net/http&#x27;</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&#x27;kimurai&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ApplicationSpider</span> &lt; <span class="title class_ inherited__">Kimurai::Base</span></span><br><span class="line">  <span class="keyword">include</span> <span class="title class_">ApplicationHelper</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@engine</span> = <span class="symbol">:selenium_chrome</span></span><br><span class="line">  <span class="variable constant_">USER_AGENTS</span> = []</span><br><span class="line"></span><br><span class="line">  <span class="comment"># PROXIES = [&quot;127.0.0.1:1086:socks5&quot;]</span></span><br><span class="line"></span><br><span class="line">  <span class="variable">@config</span> = &#123;</span><br><span class="line">    <span class="symbol">user_agent:</span> <span class="string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&quot;</span>,</span><br><span class="line">    <span class="symbol">skip_request_errors:</span> [&#123; <span class="symbol">error:</span> <span class="title class_">RuntimeError</span>, <span class="symbol">message:</span> <span class="string">&quot;404 =&gt; Net::HTTPNotFound&quot;</span> &#125;],</span><br><span class="line">	<span class="symbol">retry_request_errors:</span> [<span class="title class_">Net</span><span class="symbol">:</span><span class="symbol">:ReadTimeout</span>],</span><br><span class="line">    <span class="symbol">restart_if:</span> &#123;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="symbol">before_request:</span> &#123;</span><br><span class="line">        <span class="symbol">delay:</span> <span class="number">4</span>..<span class="number">7</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="6运行"><a class="markdownIt-Anchor" href="#6运行"></a> 6.运行</h4>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">bundle exec kimurai runner -j <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>可以依次运行多个爬虫。</p>
+<p>按照以上步骤可以运行示例中的代码。</p>
+<p>更多细节配置可以查看 <a href="https://github.com/vifreefly/kimuraframework#installation">kimurai</a></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>ruby</tag>
+        <tag>爬虫</tag>
+        <tag>python</tag>
+        <tag>java</tag>
+        <tag>kimurai</tag>
       </tags>
   </entry>
   <entry>
@@ -3198,94 +3198,6 @@ section 运维阶段
         <tag>cargo</tag>
         <tag>rustc</tag>
         <tag>rustup</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>k8s 1.19.2 部署 traefik 2.2</title>
-    <url>//*/3724466435.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
-<span id="more"></span>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>Traefik 版本：v2.2</p>
-</li>
-<li class="lvl-2">
-<p>Kubernetes 版本：1.19.2</p>
-</li>
-</ul>
-<p><strong>地址：</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>Traefik 2.2 官方文档：<a href="https://doc.traefik.io/traefik/v2.2/">https://doc.traefik.io/traefik/v2.2/</a></p>
-</li>
-</ul>
-<h2 id="一-traefik-简介"><a class="markdownIt-Anchor" href="#一-traefik-简介"></a> 一、Traefik 简介</h2>
-<p>Traefik 最新推出了 v2.2 版本，这里将 Traefik 升级到最新版本，简单的介绍了下如何在 Kubernetes 环境下安装 Traefik v2.2</p>
-<h2 id="二-kubernetes-部署-traefik"><a class="markdownIt-Anchor" href="#二-kubernetes-部署-traefik"></a> 二、Kubernetes 部署 Traefik</h2>
-<blockquote>
-<p>注意：这里 Traefik 是部署在 Kube-system Namespace 下，使用kustomize部署。</p>
-</blockquote>
- <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-rw-r--r--  1 yqwoe  staff   287 11 23 09:54 cluster-role-binding.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   736 11 23 09:54 cluster-role.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2578 11 23 09:54 config.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  1110 11 23 09:54 daemon-set.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2021 11 23 09:54 ingress-route.yml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   268 11 23 09:54 kustomization.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff    81 11 23 09:54 service-account.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   220 11 23 09:54 service.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   257 11 23 09:54 traefik-dashboard-route.yml</span><br></pre></td></tr></table></figure>
-<p><strong>kustomization.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">kustomize.config.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Kustomization</span></span><br><span class="line"></span><br><span class="line"><span class="attr">resources:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role-binding.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service-account.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">config.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">daemon-set.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">ingress-route.yaml</span></span><br><span class="line"><span class="attr">namespace:</span> <span class="string">kube-system</span></span><br><span class="line"></span><br><span class="line"><span class="attr">commonLabels:</span></span><br><span class="line">  <span class="attr">app:</span> <span class="string">traefik</span></span><br></pre></td></tr></table></figure>
-<h3 id="1-ingress-routeyml"><a class="markdownIt-Anchor" href="#1-ingress-routeyml"></a> 1、ingress-route.yml</h3>
-<p>在 traefik v2.1 版本后，开始使用 CRD（Custom Resource Definition）来完成路由配置等，所以需要提前创建 CRD 资源。</p>
-<p><strong>创建 ingress-route.yml 文件</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutes.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutes</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroute</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">middlewares.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">Middleware</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">middlewares</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">middleware</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutetcps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteTCP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutetcps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroutetcp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressrouteudps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteUDP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressrouteudps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressrouteudp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsoptions.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSOption</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsoptions</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsoption</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsstores.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSStore</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsstore</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefikservices.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TraefikService</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">traefikservices</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">traefikservice</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-创建-rbac-权限"><a class="markdownIt-Anchor" href="#2-创建-rbac-权限"></a> 2、创建 RBAC 权限</h3>
-<p>Kubernetes 在 1.6 版本中引入了基于角色的访问控制（RBAC）策略，方便对 Kubernetes 资源和 API 进行细粒度控制。Traefik 需要一定的权限，所以这里提前创建好 Traefik ServiceAccount 并分配一定的权限。</p>
-<p><strong>创建 service-account.yaml 文件</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
-<p><strong>创建cluster-role.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">rules:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">services</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">endpoints</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">secrets</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses/status</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">update</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik.containo.us</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">middlewares</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutes</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefikservices</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutetcps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressrouteudps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsoptions</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br></pre></td></tr></table></figure>
-<p><strong>创建cluster-role-binding.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRoleBinding</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">roleRef:</span></span><br><span class="line">  <span class="attr">apiGroup:</span> <span class="string">rbac.authorization.k8s.io</span></span><br><span class="line">  <span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">subjects:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
-<h3 id="3-创建-traefik-配置文件"><a class="markdownIt-Anchor" href="#3-创建-traefik-配置文件"></a> 3、创建 Traefik 配置文件</h3>
-<p>由于 Traefik 配置很多，通过 CLI 定义不是很方便，一般时候选择将其配置选项放到配置文件中，然后存入 ConfigMap，将其挂入 traefik 中。</p>
-<p><strong>创建 config.yaml 文件</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ConfigMap</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line"><span class="attr">data:</span></span><br><span class="line">  <span class="attr">traefik.yaml:</span> <span class="string">|-</span></span><br><span class="line"><span class="string">    ping: &quot;&quot;                    ## 启用 Ping</span></span><br><span class="line"><span class="string">    serversTransport:</span></span><br><span class="line"><span class="string">      insecureSkipVerify: true  ## Traefik 忽略验证代理服务的 TLS 证书</span></span><br><span class="line"><span class="string">    api:</span></span><br><span class="line"><span class="string">      insecure: true            ## 允许 HTTP 方式访问 API</span></span><br><span class="line"><span class="string">      dashboard: true           ## 启用 Dashboard</span></span><br><span class="line"><span class="string">      debug: false              ## 启用 Debug 调试模式</span></span><br><span class="line"><span class="string">    metrics:</span></span><br><span class="line"><span class="string">      prometheus: &quot;&quot;            ## 配置 Prometheus 监控指标数据，并使用默认配置</span></span><br><span class="line"><span class="string">    entryPoints:</span></span><br><span class="line"><span class="string">      web:</span></span><br><span class="line"><span class="string">        address: &quot;:80&quot;          ## 配置 80 端口，并设置入口名称为 web</span></span><br><span class="line"><span class="string">      websecure:</span></span><br><span class="line"><span class="string">        address: &quot;:443&quot;         ## 配置 443 端口，并设置入口名称为 websecure</span></span><br><span class="line"><span class="string">    providers:</span></span><br><span class="line"><span class="string">      kubernetesCRD: &quot;&quot;         ## 启用 Kubernetes CRD 方式来配置路由规则</span></span><br><span class="line"><span class="string">      kubernetesIngress: &quot;&quot;     ## 启动 Kubernetes Ingress 方式来配置路由规则</span></span><br><span class="line"><span class="string">    log:</span></span><br><span class="line"><span class="string">      filePath: &quot;&quot;              ## 设置调试日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line"><span class="string">      level: error              ## 设置调试日志级别</span></span><br><span class="line"><span class="string">      format: json              ## 设置调试日志格式</span></span><br><span class="line"><span class="string">    accessLog:</span></span><br><span class="line"><span class="string">      filePath: &quot;&quot;              ## 设置访问日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line"><span class="string">      format: json              ## 设置访问调试日志格式</span></span><br><span class="line"><span class="string">      bufferingSize: 0          ## 设置访问日志缓存行数</span></span><br><span class="line"><span class="string">      filters:</span></span><br><span class="line"><span class="string">        #statusCodes: [&quot;200&quot;]   ## 设置只保留指定状态码范围内的访问日志</span></span><br><span class="line"><span class="string">        retryAttempts: true     ## 设置代理访问重试失败时，保留访问日志</span></span><br><span class="line"><span class="string">        minDuration: 20         ## 设置保留请求时间超过指定持续时间的访问日志</span></span><br><span class="line"><span class="string">      fields:                   ## 设置访问日志中的字段是否保留（keep 保留、drop 不保留）</span></span><br><span class="line"><span class="string">        defaultMode: keep       ## 设置默认保留访问日志字段</span></span><br><span class="line"><span class="string">        names:                  ## 针对访问日志特别字段特别配置保留模式</span></span><br><span class="line"><span class="string">          ClientUsername: drop</span></span><br><span class="line"><span class="string">        headers:                ## 设置 Header 中字段是否保留</span></span><br><span class="line"><span class="string">          defaultMode: keep     ## 设置默认保留 Header 中字段</span></span><br><span class="line"><span class="string">          names:                ## 针对 Header 中特别字段特别配置保留模式</span></span><br><span class="line"><span class="string">            User-Agent: redact</span></span><br><span class="line"><span class="string">            Authorization: drop</span></span><br><span class="line"><span class="string">            Content-Type: keep</span></span><br><span class="line"><span class="string">    certificatesresolvers:</span></span><br><span class="line"><span class="string">      default:</span></span><br><span class="line"><span class="string">        acme:</span></span><br><span class="line"><span class="string">          tlsChallenge: true</span></span><br><span class="line"><span class="string">          email: &quot;yqwoe@live.cn&quot;</span></span><br><span class="line"><span class="string">          storage: &quot;acme.json&quot;</span></span><br><span class="line"><span class="string">          caserver: &quot;https://acme-v02.api.letsencrypt.org/directory&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-节点设置-label-标签"><a class="markdownIt-Anchor" href="#4-节点设置-label-标签"></a> 4、节点设置 Label 标签</h3>
-<p>由于是 Kubernetes DeamonSet 这种方式部署 Traefik，所以需要提前给节点设置 Label，这样当程序部署时 Pod 会自动调度到设置 Label 的节点上。</p>
-<p><strong>节点设置 Label 标签</strong></p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>格式：kubectl label nodes [节点名] [key=value]</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl label nodes minikube IngressProxy=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p><strong>查看节点是否设置 Label 成功</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl get nodes --show-labels</span><br><span class="line"></span><br><span class="line">NAME       STATUS   ROLES    AGE   VERSION   LABELS</span><br><span class="line">minikube   Ready    master   3d    v1.19.2   IngressProxy=<span class="literal">true</span>,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=minikube,kubernetes.io/os=linux,minikube.k8s.io/commit=b09ee50ec047410326a85435f4d99026f9c4f5c4,minikube.k8s.io/name=minikube,minikube.k8s.io/updated_at=2020_11_10T10_20_51_0700,minikube.k8s.io/version=v1.14.0,node-role.kubernetes.io/master=</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如果想删除标签，可以使用 <code>kubectl label nodes minikube IngressProxy-</code> 命令</p>
-</blockquote>
-<h3 id="5-kubernetes-部署-traefik"><a class="markdownIt-Anchor" href="#5-kubernetes-部署-traefik"></a> 5、Kubernetes 部署 Traefik</h3>
-<p>DaemonSet 方式部署，便于在多服务器间扩展，用 hostport 方式占用服务器 80、443 端口，方便流量进入。</p>
-<p><strong>创建 traefik 部署文件 daemon-set.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">DaemonSet</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apps/v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">template:</span></span><br><span class="line">    <span class="attr">spec:</span></span><br><span class="line">      <span class="attr">serviceAccountName:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line">      <span class="attr">terminationGracePeriodSeconds:</span> <span class="number">60</span></span><br><span class="line">      <span class="attr">containers:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">image:</span> <span class="string">traefik:v2.2</span></span><br><span class="line">        <span class="attr">name:</span> <span class="string">traefik-ingress-lb</span></span><br><span class="line">        <span class="attr">ports:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">80</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">80</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">443</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">443</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">8080</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">8080</span></span><br><span class="line">        <span class="attr">securityContext:</span></span><br><span class="line">          <span class="attr">capabilities:</span></span><br><span class="line">            <span class="attr">drop:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">ALL</span></span><br><span class="line">            <span class="attr">add:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">NET_BIND_SERVICE</span></span><br><span class="line">        <span class="attr">args:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">--configfile=/config/traefik.yaml</span></span><br><span class="line">        <span class="attr">volumeMounts:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">mountPath:</span> <span class="string">&quot;/config&quot;</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">&quot;config&quot;</span></span><br><span class="line">      <span class="attr">volumes:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">config</span></span><br><span class="line">          <span class="attr">configMap:</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line">      <span class="attr">tolerations:</span>              <span class="comment">## 设置容忍所有污点，防止节点被设置污点</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">operator:</span> <span class="string">&quot;Exists&quot;</span></span><br><span class="line">      <span class="attr">nodeSelector:</span>             <span class="comment">## 设置node筛选器，在特定label的节点上启动</span></span><br><span class="line">        <span class="attr">IngressProxy:</span> <span class="string">&quot;true&quot;</span></span><br></pre></td></tr></table></figure>
-<p><strong>创建Traefik Service service.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Service</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">ports:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">80</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">443</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line">  <span class="attr">selector:</span></span><br><span class="line">    <span class="attr">app:</span> <span class="string">traefik</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">NodePort</span></span><br></pre></td></tr></table></figure>
-<p>至此，traefik的配置基本完成。</p>
-<p><strong>执行 kustomization.yaml</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kubectl apply -k . -n kube-system</span><br></pre></td></tr></table></figure>
-<h2 id="三-traefik-路由规则配置"><a class="markdownIt-Anchor" href="#三-traefik-路由规则配置"></a> 三、Traefik 路由规则配置</h2>
-<h3 id="1-配置-http-路由规则-traefik-dashboard-为例"><a class="markdownIt-Anchor" href="#1-配置-http-路由规则-traefik-dashboard-为例"></a> 1、配置 HTTP 路由规则 （Traefik Dashboard 为例）</h3>
-<p>Traefik 应用已经部署完成，但是想让外部访问 Kubernetes 内部服务，还需要配置路由规则，这里开启了 Traefik Dashboard 配置，所以首先配置 Traefik Dashboard 看板的路由规则，使外部能够访问 Traefik Dashboard。</p>
-<p><strong>创建 Traefik Dashboard 路由规则文件 traefik-dashboard-route.yaml</strong></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">traefik.containo.us/v1alpha1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-dashboard-route</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">entryPoints:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">web</span></span><br><span class="line">  <span class="attr">routes:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">match:</span> <span class="string">Host(`yqwoe.k8s.com`)</span></span><br><span class="line">      <span class="attr">kind:</span> <span class="string">Rule</span></span><br><span class="line">      <span class="attr">services:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line">          <span class="attr">port:</span> <span class="number">8080</span></span><br></pre></td></tr></table></figure>
-<p><strong>创建 Traefik Dashboard 路由规则对象</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl apply -f traefik-dashboard-route.yaml -n kube-system</span><br></pre></td></tr></table></figure>
-<p><strong>接下来配置 Hosts</strong>，客户端想通过域名访问服务，必须要进行 DNS 解析，由于这里没有 DNS 服务器进行域名解析，所以修改 hosts 文件将 Traefik 指定节点的 IP 和自定义 host 绑定。打开电脑的 Hosts 配置文件，往其加入下面配置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">192.168.10.2  yqwoe.k8s.com</span><br></pre></td></tr></table></figure>
-<p><strong>配置完成后，打开浏览器输入地址：http://<code>yqwoe.k8s.com</code> 打开 Traefik Dashboard。</strong></p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>k8s</tag>
-        <tag>docker</tag>
-        <tag>容器技术</tag>
-        <tag>traefik2</tag>
       </tags>
   </entry>
   <entry>
@@ -3887,6 +3799,94 @@ section 运维阶段
       </tags>
   </entry>
   <entry>
+    <title>k8s 1.19.2 部署 traefik 2.2</title>
+    <url>//*/3724466435.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>系统环境：</strong></p>
+<span id="more"></span>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>Traefik 版本：v2.2</p>
+</li>
+<li class="lvl-2">
+<p>Kubernetes 版本：1.19.2</p>
+</li>
+</ul>
+<p><strong>地址：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>Traefik 2.2 官方文档：<a href="https://doc.traefik.io/traefik/v2.2/">https://doc.traefik.io/traefik/v2.2/</a></p>
+</li>
+</ul>
+<h2 id="一-traefik-简介"><a class="markdownIt-Anchor" href="#一-traefik-简介"></a> 一、Traefik 简介</h2>
+<p>Traefik 最新推出了 v2.2 版本，这里将 Traefik 升级到最新版本，简单的介绍了下如何在 Kubernetes 环境下安装 Traefik v2.2</p>
+<h2 id="二-kubernetes-部署-traefik"><a class="markdownIt-Anchor" href="#二-kubernetes-部署-traefik"></a> 二、Kubernetes 部署 Traefik</h2>
+<blockquote>
+<p>注意：这里 Traefik 是部署在 Kube-system Namespace 下，使用kustomize部署。</p>
+</blockquote>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-rw-r--r--  1 yqwoe  staff   287 11 23 09:54 cluster-role-binding.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   736 11 23 09:54 cluster-role.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2578 11 23 09:54 config.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  1110 11 23 09:54 daemon-set.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff  2021 11 23 09:54 ingress-route.yml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   268 11 23 09:54 kustomization.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff    81 11 23 09:54 service-account.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   220 11 23 09:54 service.yaml</span><br><span class="line">-rw-r--r--  1 yqwoe  staff   257 11 23 09:54 traefik-dashboard-route.yml</span><br></pre></td></tr></table></figure>
+<p><strong>kustomization.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">kustomize.config.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Kustomization</span></span><br><span class="line"></span><br><span class="line"><span class="attr">resources:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">cluster-role-binding.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service-account.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">config.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">daemon-set.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">service.yaml</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">ingress-route.yaml</span></span><br><span class="line"><span class="attr">namespace:</span> <span class="string">kube-system</span></span><br><span class="line"></span><br><span class="line"><span class="attr">commonLabels:</span></span><br><span class="line">  <span class="attr">app:</span> <span class="string">traefik</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-ingress-routeyml"><a class="markdownIt-Anchor" href="#1-ingress-routeyml"></a> 1、ingress-route.yml</h3>
+<p>在 traefik v2.1 版本后，开始使用 CRD（Custom Resource Definition）来完成路由配置等，所以需要提前创建 CRD 资源。</p>
+<p><strong>创建 ingress-route.yml 文件</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutes.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutes</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroute</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">middlewares.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">Middleware</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">middlewares</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">middleware</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressroutetcps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteTCP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressroutetcps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressroutetcp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">ingressrouteudps.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">IngressRouteUDP</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">ingressrouteudps</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">ingressrouteudp</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsoptions.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSOption</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsoptions</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsoption</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">tlsstores.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TLSStore</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">tlsstore</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apiextensions.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">CustomResourceDefinition</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefikservices.traefik.containo.us</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">group:</span> <span class="string">traefik.containo.us</span></span><br><span class="line">  <span class="attr">version:</span> <span class="string">v1alpha1</span></span><br><span class="line">  <span class="attr">names:</span></span><br><span class="line">    <span class="attr">kind:</span> <span class="string">TraefikService</span></span><br><span class="line">    <span class="attr">plural:</span> <span class="string">traefikservices</span></span><br><span class="line">    <span class="attr">singular:</span> <span class="string">traefikservice</span></span><br><span class="line">  <span class="attr">scope:</span> <span class="string">Namespaced</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-创建-rbac-权限"><a class="markdownIt-Anchor" href="#2-创建-rbac-权限"></a> 2、创建 RBAC 权限</h3>
+<p>Kubernetes 在 1.6 版本中引入了基于角色的访问控制（RBAC）策略，方便对 Kubernetes 资源和 API 进行细粒度控制。Traefik 需要一定的权限，所以这里提前创建好 Traefik ServiceAccount 并分配一定的权限。</p>
+<p><strong>创建 service-account.yaml 文件</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
+<p><strong>创建cluster-role.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">rules:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">services</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">endpoints</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">secrets</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extensions</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingresses/status</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">update</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">apiGroups:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik.containo.us</span></span><br><span class="line">    <span class="attr">resources:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">middlewares</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutes</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefikservices</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressroutetcps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ingressrouteudps</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsoptions</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">tlsstores</span></span><br><span class="line">    <span class="attr">verbs:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">get</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">list</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">watch</span></span><br></pre></td></tr></table></figure>
+<p><strong>创建cluster-role-binding.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ClusterRoleBinding</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">rbac.authorization.k8s.io/v1beta1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">roleRef:</span></span><br><span class="line">  <span class="attr">apiGroup:</span> <span class="string">rbac.authorization.k8s.io</span></span><br><span class="line">  <span class="attr">kind:</span> <span class="string">ClusterRole</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line"><span class="attr">subjects:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">kind:</span> <span class="string">ServiceAccount</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-ingress-controller</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-创建-traefik-配置文件"><a class="markdownIt-Anchor" href="#3-创建-traefik-配置文件"></a> 3、创建 Traefik 配置文件</h3>
+<p>由于 Traefik 配置很多，通过 CLI 定义不是很方便，一般时候选择将其配置选项放到配置文件中，然后存入 ConfigMap，将其挂入 traefik 中。</p>
+<p><strong>创建 config.yaml 文件</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">ConfigMap</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line"><span class="attr">data:</span></span><br><span class="line">  <span class="attr">traefik.yaml:</span> <span class="string">|-</span></span><br><span class="line"><span class="string">    ping: &quot;&quot;                    ## 启用 Ping</span></span><br><span class="line"><span class="string">    serversTransport:</span></span><br><span class="line"><span class="string">      insecureSkipVerify: true  ## Traefik 忽略验证代理服务的 TLS 证书</span></span><br><span class="line"><span class="string">    api:</span></span><br><span class="line"><span class="string">      insecure: true            ## 允许 HTTP 方式访问 API</span></span><br><span class="line"><span class="string">      dashboard: true           ## 启用 Dashboard</span></span><br><span class="line"><span class="string">      debug: false              ## 启用 Debug 调试模式</span></span><br><span class="line"><span class="string">    metrics:</span></span><br><span class="line"><span class="string">      prometheus: &quot;&quot;            ## 配置 Prometheus 监控指标数据，并使用默认配置</span></span><br><span class="line"><span class="string">    entryPoints:</span></span><br><span class="line"><span class="string">      web:</span></span><br><span class="line"><span class="string">        address: &quot;:80&quot;          ## 配置 80 端口，并设置入口名称为 web</span></span><br><span class="line"><span class="string">      websecure:</span></span><br><span class="line"><span class="string">        address: &quot;:443&quot;         ## 配置 443 端口，并设置入口名称为 websecure</span></span><br><span class="line"><span class="string">    providers:</span></span><br><span class="line"><span class="string">      kubernetesCRD: &quot;&quot;         ## 启用 Kubernetes CRD 方式来配置路由规则</span></span><br><span class="line"><span class="string">      kubernetesIngress: &quot;&quot;     ## 启动 Kubernetes Ingress 方式来配置路由规则</span></span><br><span class="line"><span class="string">    log:</span></span><br><span class="line"><span class="string">      filePath: &quot;&quot;              ## 设置调试日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line"><span class="string">      level: error              ## 设置调试日志级别</span></span><br><span class="line"><span class="string">      format: json              ## 设置调试日志格式</span></span><br><span class="line"><span class="string">    accessLog:</span></span><br><span class="line"><span class="string">      filePath: &quot;&quot;              ## 设置访问日志文件存储路径，如果为空则输出到控制台</span></span><br><span class="line"><span class="string">      format: json              ## 设置访问调试日志格式</span></span><br><span class="line"><span class="string">      bufferingSize: 0          ## 设置访问日志缓存行数</span></span><br><span class="line"><span class="string">      filters:</span></span><br><span class="line"><span class="string">        #statusCodes: [&quot;200&quot;]   ## 设置只保留指定状态码范围内的访问日志</span></span><br><span class="line"><span class="string">        retryAttempts: true     ## 设置代理访问重试失败时，保留访问日志</span></span><br><span class="line"><span class="string">        minDuration: 20         ## 设置保留请求时间超过指定持续时间的访问日志</span></span><br><span class="line"><span class="string">      fields:                   ## 设置访问日志中的字段是否保留（keep 保留、drop 不保留）</span></span><br><span class="line"><span class="string">        defaultMode: keep       ## 设置默认保留访问日志字段</span></span><br><span class="line"><span class="string">        names:                  ## 针对访问日志特别字段特别配置保留模式</span></span><br><span class="line"><span class="string">          ClientUsername: drop</span></span><br><span class="line"><span class="string">        headers:                ## 设置 Header 中字段是否保留</span></span><br><span class="line"><span class="string">          defaultMode: keep     ## 设置默认保留 Header 中字段</span></span><br><span class="line"><span class="string">          names:                ## 针对 Header 中特别字段特别配置保留模式</span></span><br><span class="line"><span class="string">            User-Agent: redact</span></span><br><span class="line"><span class="string">            Authorization: drop</span></span><br><span class="line"><span class="string">            Content-Type: keep</span></span><br><span class="line"><span class="string">    certificatesresolvers:</span></span><br><span class="line"><span class="string">      default:</span></span><br><span class="line"><span class="string">        acme:</span></span><br><span class="line"><span class="string">          tlsChallenge: true</span></span><br><span class="line"><span class="string">          email: &quot;yqwoe@live.cn&quot;</span></span><br><span class="line"><span class="string">          storage: &quot;acme.json&quot;</span></span><br><span class="line"><span class="string">          caserver: &quot;https://acme-v02.api.letsencrypt.org/directory&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-节点设置-label-标签"><a class="markdownIt-Anchor" href="#4-节点设置-label-标签"></a> 4、节点设置 Label 标签</h3>
+<p>由于是 Kubernetes DeamonSet 这种方式部署 Traefik，所以需要提前给节点设置 Label，这样当程序部署时 Pod 会自动调度到设置 Label 的节点上。</p>
+<p><strong>节点设置 Label 标签</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>格式：kubectl label nodes [节点名] [key=value]</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl label nodes minikube IngressProxy=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p><strong>查看节点是否设置 Label 成功</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl get nodes --show-labels</span><br><span class="line"></span><br><span class="line">NAME       STATUS   ROLES    AGE   VERSION   LABELS</span><br><span class="line">minikube   Ready    master   3d    v1.19.2   IngressProxy=<span class="literal">true</span>,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=minikube,kubernetes.io/os=linux,minikube.k8s.io/commit=b09ee50ec047410326a85435f4d99026f9c4f5c4,minikube.k8s.io/name=minikube,minikube.k8s.io/updated_at=2020_11_10T10_20_51_0700,minikube.k8s.io/version=v1.14.0,node-role.kubernetes.io/master=</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果想删除标签，可以使用 <code>kubectl label nodes minikube IngressProxy-</code> 命令</p>
+</blockquote>
+<h3 id="5-kubernetes-部署-traefik"><a class="markdownIt-Anchor" href="#5-kubernetes-部署-traefik"></a> 5、Kubernetes 部署 Traefik</h3>
+<p>DaemonSet 方式部署，便于在多服务器间扩展，用 hostport 方式占用服务器 80、443 端口，方便流量进入。</p>
+<p><strong>创建 traefik 部署文件 daemon-set.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">kind:</span> <span class="string">DaemonSet</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">apps/v1</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">template:</span></span><br><span class="line">    <span class="attr">spec:</span></span><br><span class="line">      <span class="attr">serviceAccountName:</span> <span class="string">traefik-ingress-controller</span></span><br><span class="line">      <span class="attr">terminationGracePeriodSeconds:</span> <span class="number">60</span></span><br><span class="line">      <span class="attr">containers:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">image:</span> <span class="string">traefik:v2.2</span></span><br><span class="line">        <span class="attr">name:</span> <span class="string">traefik-ingress-lb</span></span><br><span class="line">        <span class="attr">ports:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">80</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">80</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">443</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">443</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">          <span class="attr">containerPort:</span> <span class="number">8080</span></span><br><span class="line">          <span class="attr">hostPort:</span> <span class="number">8080</span></span><br><span class="line">        <span class="attr">securityContext:</span></span><br><span class="line">          <span class="attr">capabilities:</span></span><br><span class="line">            <span class="attr">drop:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">ALL</span></span><br><span class="line">            <span class="attr">add:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">NET_BIND_SERVICE</span></span><br><span class="line">        <span class="attr">args:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">--configfile=/config/traefik.yaml</span></span><br><span class="line">        <span class="attr">volumeMounts:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">mountPath:</span> <span class="string">&quot;/config&quot;</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">&quot;config&quot;</span></span><br><span class="line">      <span class="attr">volumes:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">config</span></span><br><span class="line">          <span class="attr">configMap:</span></span><br><span class="line">            <span class="attr">name:</span> <span class="string">traefik-config</span></span><br><span class="line">      <span class="attr">tolerations:</span>              <span class="comment">## 设置容忍所有污点，防止节点被设置污点</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">operator:</span> <span class="string">&quot;Exists&quot;</span></span><br><span class="line">      <span class="attr">nodeSelector:</span>             <span class="comment">## 设置node筛选器，在特定label的节点上启动</span></span><br><span class="line">        <span class="attr">IngressProxy:</span> <span class="string">&quot;true&quot;</span></span><br></pre></td></tr></table></figure>
+<p><strong>创建Traefik Service service.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Service</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">ports:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">web</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">80</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">websecure</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">443</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line">      <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line">  <span class="attr">selector:</span></span><br><span class="line">    <span class="attr">app:</span> <span class="string">traefik</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">NodePort</span></span><br></pre></td></tr></table></figure>
+<p>至此，traefik的配置基本完成。</p>
+<p><strong>执行 kustomization.yaml</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kubectl apply -k . -n kube-system</span><br></pre></td></tr></table></figure>
+<h2 id="三-traefik-路由规则配置"><a class="markdownIt-Anchor" href="#三-traefik-路由规则配置"></a> 三、Traefik 路由规则配置</h2>
+<h3 id="1-配置-http-路由规则-traefik-dashboard-为例"><a class="markdownIt-Anchor" href="#1-配置-http-路由规则-traefik-dashboard-为例"></a> 1、配置 HTTP 路由规则 （Traefik Dashboard 为例）</h3>
+<p>Traefik 应用已经部署完成，但是想让外部访问 Kubernetes 内部服务，还需要配置路由规则，这里开启了 Traefik Dashboard 配置，所以首先配置 Traefik Dashboard 看板的路由规则，使外部能够访问 Traefik Dashboard。</p>
+<p><strong>创建 Traefik Dashboard 路由规则文件 traefik-dashboard-route.yaml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">traefik.containo.us/v1alpha1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">IngressRoute</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">traefik-dashboard-route</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">entryPoints:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">web</span></span><br><span class="line">  <span class="attr">routes:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">match:</span> <span class="string">Host(`yqwoe.k8s.com`)</span></span><br><span class="line">      <span class="attr">kind:</span> <span class="string">Rule</span></span><br><span class="line">      <span class="attr">services:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">traefik</span></span><br><span class="line">          <span class="attr">port:</span> <span class="number">8080</span></span><br></pre></td></tr></table></figure>
+<p><strong>创建 Traefik Dashboard 路由规则对象</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ kubectl apply -f traefik-dashboard-route.yaml -n kube-system</span><br></pre></td></tr></table></figure>
+<p><strong>接下来配置 Hosts</strong>，客户端想通过域名访问服务，必须要进行 DNS 解析，由于这里没有 DNS 服务器进行域名解析，所以修改 hosts 文件将 Traefik 指定节点的 IP 和自定义 host 绑定。打开电脑的 Hosts 配置文件，往其加入下面配置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">192.168.10.2  yqwoe.k8s.com</span><br></pre></td></tr></table></figure>
+<p><strong>配置完成后，打开浏览器输入地址：http://<code>yqwoe.k8s.com</code> 打开 Traefik Dashboard。</strong></p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+        <tag>docker</tag>
+        <tag>容器技术</tag>
+        <tag>traefik2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>笔记3-《程序员数学-1》</title>
     <url>//*/375539532.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="第三章-余数"><a class="markdownIt-Anchor" href="#第三章-余数"></a> 第三章 余数</h1>
@@ -3937,6 +3937,115 @@ section 运维阶段
       <categories>
         <category>学习</category>
       </categories>
+  </entry>
+  <entry>
+    <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
+    <url>//*/5f9c1a2b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="为什么要换"><a class="markdownIt-Anchor" href="#为什么要换"></a> 为什么要换</h2>
+<p>用 OpenClaw 一段时间后，有几个问题实在忍不了。</p>
+<p>任务一多，换个 session 上下文就没了。调试时想找之前的思路，找不到；换个方式问同样的问题，AI 给的答案和上次完全不一样。记忆管理基本靠手功——key 命名看心情，同一条信息被存三五份是常事。</p>
+<p>换 Hermes 的原因就一个：<strong>它真的能记住上下文，跨 session 不会断。</strong></p>
+<h2 id="迁移了什么"><a class="markdownIt-Anchor" href="#迁移了什么"></a> 迁移了什么</h2>
+<h3 id="记忆文件"><a class="markdownIt-Anchor" href="#记忆文件"></a> 记忆文件</h3>
+<p>OpenClaw workspace 里有几个核心文件：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><code>SOUL.md</code> — 人设/性格设定</p>
+</li>
+<li class="lvl-2">
+<p><code>AGENTS.md</code> — 工作指令集</p>
+</li>
+<li class="lvl-2">
+<p><code>MEMORY.md</code> — 长期记忆</p>
+</li>
+<li class="lvl-2">
+<p><code>USER.md</code> — 用户信息</p>
+</li>
+</ul>
+<p>迁移之后分散到了不同位置：<code>SOUL.md</code> 进了 <code>~/.hermes/SOUL.md</code>，<code>AGENTS.md</code> 要手动指定目标路径，<code>MEMORY.md</code> 和 <code>USER.md</code> 解析后写入了 <code>~/.hermes/memories/</code>。</p>
+<p><code>hermes claw migrate</code> 可以自动迁移，但默认是 <code>--dry-run</code> 只预览不执行，别漏了这个参数。</p>
+<h3 id="skill"><a class="markdownIt-Anchor" href="#skill"></a> Skill</h3>
+<p>OpenClaw 的 skill 和 Hermes 不完全兼容。迁移之后要重装，部分自定义 skill 要么重新写，要么直接放弃。</p>
+<h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3>
+<p>OpenClaw 的 <code>openclaw.json</code> 里存储了 API keys 和各种配置项。迁移时这些配置默认会保留，但建议迁移完之后仔细核对一遍，特别是 API 相关的配置。</p>
+<h2 id="hermes-的记忆系统是什么样的"><a class="markdownIt-Anchor" href="#hermes-的记忆系统是什么样的"></a> Hermes 的记忆系统是什么样的</h2>
+<p>Hermes 内置记忆分三层：</p>
+<p><strong>短期记忆</strong> 通过 system prompt 注入，受 token 限制，大概 2200 字符。<strong>用户 Profile</strong> 存在 <code>~/.hermes/memories/USER.md</code>，以 <code>§</code> 分隔条目。<strong>长期记忆</strong>是内置记忆的主力，key-value 读写，支持跨 session 持久化。</p>
+<p>比 OpenClaw 强不少，但还有问题：读取依赖精确 key，自然语言描述一变就匹配不上。所以我又接了 MemPalace 做语义记忆层，专门解决这个问题。</p>
+<h2 id="迁移后遇到的问题"><a class="markdownIt-Anchor" href="#迁移后遇到的问题"></a> 迁移后遇到的问题</h2>
+<p><strong>记忆丢失</strong>是第一个坎。新系统对之前的项目上下文一无所知，要手动把 <a href="http://MEMORY.md">MEMORY.md</a> 迁移过来，重新建立记忆规范。这个工作量不小，之前积累的那些碎片知识大部分要重新喂一遍。</p>
+<p><strong>Skill 兼容性</strong>是第二个。有些在 OpenClaw 上跑得好好的自定义 skill，Hermes 上面直接废掉了。不是语法问题，是整个运行环境不一样。</p>
+<p><strong>配置不一致</strong>是第三个。迁移工具保留了大部分配置，但路径相关的设置还是要自己过一遍。</p>
+<h2 id="两个平台的记忆系统对比"><a class="markdownIt-Anchor" href="#两个平台的记忆系统对比"></a> 两个平台的记忆系统对比</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>OpenClaw</th>
+<th>Hermes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>记忆持久化</td>
+<td>文件为主，session 之间不共享</td>
+<td>key-value，支持跨 session</td>
+</tr>
+<tr>
+<td>语义搜索</td>
+<td>无</td>
+<td>无（需借助外部插件）</td>
+</tr>
+<tr>
+<td>记忆容量</td>
+<td>受文件大小限制</td>
+<td>受 token 限制，约 2200 字符</td>
+</tr>
+<tr>
+<td>迁移工具</td>
+<td><code>hermes claw migrate</code></td>
+<td>内置，支持预览</td>
+</tr>
+<tr>
+<td>Skill 生态</td>
+<td>独立体系</td>
+<td>Hermes 专属</td>
+</tr>
+</tbody>
+</table>
+<h2 id="迁移流程图"><a class="markdownIt-Anchor" href="#迁移流程图"></a> 迁移流程图</h2>
+<pre class="mermaid">graph LR
+    A[OpenClaw workspace] --> B{hermes claw migrate --dry-run}
+    B -->|预览| C[确认文件清单]
+    C --> D[执行迁移]
+    D --> E[SOUL.md<br>~/.hermes/SOUL.md]
+    D --> F[AGENTS.md<br>指定目标路径]
+    D --> G[MEMORY.md + USER.md<br>~/.hermes/memories/]
+    D --> H[openclaw.json<br>API keys 保留]
+    E --> I[核对配置]
+    F --> I
+    G --> I
+    H --> I
+    I --> J[接 MemPalace<br>语义记忆层]
+    J --> K[完成]</pre>
+<h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2>
+<p><strong>坑一：<a href="http://AGENTS.md">AGENTS.md</a> 没指定路径就被跳过了。</strong> 第一次跑迁移命令，没加 <code>--workspace-target</code>，<a href="http://AGENTS.md">AGENTS.md</a> 直接被跳过。直到发现 Agent 行为和之前不一样，才发现指令集根本没迁移过来。</p>
+<p><strong>坑二：Skill 迁移完之后路径全变了。</strong> OpenClaw 的 skill 放在 <code>~/.openclaw/skills/</code>，Hermes 在 <code>~/.hermes/skills/</code>。脚本不负责迁移 skill，重新安装花了不少时间。</p>
+<p><strong>坑三：Session 切换后记忆恢复慢。</strong> Hermes 虽然支持跨 session 记忆，但刚迁移完 Agent 对老项目完全没上下文。需要主动把之前 <a href="http://MEMORY.md">MEMORY.md</a> 的内容通过 MemPalace 重建一遍，不是自动的。</p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>从 OpenClaw 到 Hermes，最大的收获是记忆持久化和 session 管理。对需要长期跟踪任务、跨会话保持上下文的人来说，这步迁移值。但 Hermes 内置记忆仍有语义匹配的短板，建议配合 MemPalace 使用。</p>
+<p>迁移本身不算复杂，<code>hermes claw migrate</code> 能处理大部分文件迁移工作，主要工作量在 skill 重装和配置核对。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Hermes Agent</tag>
+        <tag>OpenClaw</tag>
+        <tag>迁移</tag>
+        <tag>记忆系统</tag>
+      </tags>
   </entry>
   <entry>
     <title>一年要赚多少钱才能支撑一个三口之家？</title>
@@ -4046,115 +4155,6 @@ section 运维阶段
         <tag>保险</tag>
         <tag>收入</tag>
         <tag>支出</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从 OpenClaw 迁移到 Hermes：我的实战记录</title>
-    <url>//*/5f9c1a2b.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="为什么要换"><a class="markdownIt-Anchor" href="#为什么要换"></a> 为什么要换</h2>
-<p>用 OpenClaw 一段时间后，有几个问题实在忍不了。</p>
-<p>任务一多，换个 session 上下文就没了。调试时想找之前的思路，找不到；换个方式问同样的问题，AI 给的答案和上次完全不一样。记忆管理基本靠手功——key 命名看心情，同一条信息被存三五份是常事。</p>
-<p>换 Hermes 的原因就一个：<strong>它真的能记住上下文，跨 session 不会断。</strong></p>
-<h2 id="迁移了什么"><a class="markdownIt-Anchor" href="#迁移了什么"></a> 迁移了什么</h2>
-<h3 id="记忆文件"><a class="markdownIt-Anchor" href="#记忆文件"></a> 记忆文件</h3>
-<p>OpenClaw workspace 里有几个核心文件：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p><code>SOUL.md</code> — 人设/性格设定</p>
-</li>
-<li class="lvl-2">
-<p><code>AGENTS.md</code> — 工作指令集</p>
-</li>
-<li class="lvl-2">
-<p><code>MEMORY.md</code> — 长期记忆</p>
-</li>
-<li class="lvl-2">
-<p><code>USER.md</code> — 用户信息</p>
-</li>
-</ul>
-<p>迁移之后分散到了不同位置：<code>SOUL.md</code> 进了 <code>~/.hermes/SOUL.md</code>，<code>AGENTS.md</code> 要手动指定目标路径，<code>MEMORY.md</code> 和 <code>USER.md</code> 解析后写入了 <code>~/.hermes/memories/</code>。</p>
-<p><code>hermes claw migrate</code> 可以自动迁移，但默认是 <code>--dry-run</code> 只预览不执行，别漏了这个参数。</p>
-<h3 id="skill"><a class="markdownIt-Anchor" href="#skill"></a> Skill</h3>
-<p>OpenClaw 的 skill 和 Hermes 不完全兼容。迁移之后要重装，部分自定义 skill 要么重新写，要么直接放弃。</p>
-<h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3>
-<p>OpenClaw 的 <code>openclaw.json</code> 里存储了 API keys 和各种配置项。迁移时这些配置默认会保留，但建议迁移完之后仔细核对一遍，特别是 API 相关的配置。</p>
-<h2 id="hermes-的记忆系统是什么样的"><a class="markdownIt-Anchor" href="#hermes-的记忆系统是什么样的"></a> Hermes 的记忆系统是什么样的</h2>
-<p>Hermes 内置记忆分三层：</p>
-<p><strong>短期记忆</strong> 通过 system prompt 注入，受 token 限制，大概 2200 字符。<strong>用户 Profile</strong> 存在 <code>~/.hermes/memories/USER.md</code>，以 <code>§</code> 分隔条目。<strong>长期记忆</strong>是内置记忆的主力，key-value 读写，支持跨 session 持久化。</p>
-<p>比 OpenClaw 强不少，但还有问题：读取依赖精确 key，自然语言描述一变就匹配不上。所以我又接了 MemPalace 做语义记忆层，专门解决这个问题。</p>
-<h2 id="迁移后遇到的问题"><a class="markdownIt-Anchor" href="#迁移后遇到的问题"></a> 迁移后遇到的问题</h2>
-<p><strong>记忆丢失</strong>是第一个坎。新系统对之前的项目上下文一无所知，要手动把 <a href="http://MEMORY.md">MEMORY.md</a> 迁移过来，重新建立记忆规范。这个工作量不小，之前积累的那些碎片知识大部分要重新喂一遍。</p>
-<p><strong>Skill 兼容性</strong>是第二个。有些在 OpenClaw 上跑得好好的自定义 skill，Hermes 上面直接废掉了。不是语法问题，是整个运行环境不一样。</p>
-<p><strong>配置不一致</strong>是第三个。迁移工具保留了大部分配置，但路径相关的设置还是要自己过一遍。</p>
-<h2 id="两个平台的记忆系统对比"><a class="markdownIt-Anchor" href="#两个平台的记忆系统对比"></a> 两个平台的记忆系统对比</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>OpenClaw</th>
-<th>Hermes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>记忆持久化</td>
-<td>文件为主，session 之间不共享</td>
-<td>key-value，支持跨 session</td>
-</tr>
-<tr>
-<td>语义搜索</td>
-<td>无</td>
-<td>无（需借助外部插件）</td>
-</tr>
-<tr>
-<td>记忆容量</td>
-<td>受文件大小限制</td>
-<td>受 token 限制，约 2200 字符</td>
-</tr>
-<tr>
-<td>迁移工具</td>
-<td><code>hermes claw migrate</code></td>
-<td>内置，支持预览</td>
-</tr>
-<tr>
-<td>Skill 生态</td>
-<td>独立体系</td>
-<td>Hermes 专属</td>
-</tr>
-</tbody>
-</table>
-<h2 id="迁移流程图"><a class="markdownIt-Anchor" href="#迁移流程图"></a> 迁移流程图</h2>
-<pre class="mermaid">graph LR
-    A[OpenClaw workspace] --> B{hermes claw migrate --dry-run}
-    B -->|预览| C[确认文件清单]
-    C --> D[执行迁移]
-    D --> E[SOUL.md<br>~/.hermes/SOUL.md]
-    D --> F[AGENTS.md<br>指定目标路径]
-    D --> G[MEMORY.md + USER.md<br>~/.hermes/memories/]
-    D --> H[openclaw.json<br>API keys 保留]
-    E --> I[核对配置]
-    F --> I
-    G --> I
-    H --> I
-    I --> J[接 MemPalace<br>语义记忆层]
-    J --> K[完成]</pre>
-<h2 id="踩过的坑"><a class="markdownIt-Anchor" href="#踩过的坑"></a> 踩过的坑</h2>
-<p><strong>坑一：<a href="http://AGENTS.md">AGENTS.md</a> 没指定路径就被跳过了。</strong> 第一次跑迁移命令，没加 <code>--workspace-target</code>，<a href="http://AGENTS.md">AGENTS.md</a> 直接被跳过。直到发现 Agent 行为和之前不一样，才发现指令集根本没迁移过来。</p>
-<p><strong>坑二：Skill 迁移完之后路径全变了。</strong> OpenClaw 的 skill 放在 <code>~/.openclaw/skills/</code>，Hermes 在 <code>~/.hermes/skills/</code>。脚本不负责迁移 skill，重新安装花了不少时间。</p>
-<p><strong>坑三：Session 切换后记忆恢复慢。</strong> Hermes 虽然支持跨 session 记忆，但刚迁移完 Agent 对老项目完全没上下文。需要主动把之前 <a href="http://MEMORY.md">MEMORY.md</a> 的内容通过 MemPalace 重建一遍，不是自动的。</p>
-<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
-<p>从 OpenClaw 到 Hermes，最大的收获是记忆持久化和 session 管理。对需要长期跟踪任务、跨会话保持上下文的人来说，这步迁移值。但 Hermes 内置记忆仍有语义匹配的短板，建议配合 MemPalace 使用。</p>
-<p>迁移本身不算复杂，<code>hermes claw migrate</code> 能处理大部分文件迁移工作，主要工作量在 skill 重装和配置核对。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>Hermes Agent</tag>
-        <tag>OpenClaw</tag>
-        <tag>迁移</tag>
-        <tag>记忆系统</tag>
       </tags>
   </entry>
   <entry>
@@ -5355,12 +5355,12 @@ section 运维阶段
     <title>路</title>
     <url>//*/3042827788.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
-        <div id="aplayer-ZiQOKvFi" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-gRJGvCMF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-ZiQOKvFi"),
+            element: document.getElementById("aplayer-gRJGvCMF"),
             narrow: false,
             autoplay: true,
             showlrc: false,
