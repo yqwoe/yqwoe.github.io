@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sudo.rm-rf.ink/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87/a879cb62.html</loc>
+    
+    <lastmod>2026-10-20T01:10:43.584Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/550cdc1d.html</loc>
     
     <lastmod>2026-10-19T02:16:41.463Z</lastmod>
@@ -88,11 +97,11 @@
     <lastmod>2026-10-17T14:19:03.910Z</lastmod>
     
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js/index.html</loc>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js/demo.html</loc>
     
     <lastmod>2026-10-17T14:19:03.910Z</lastmod>
     
@@ -101,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js/demo.html</loc>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js/index.html</loc>
     
     <lastmod>2026-10-17T14:19:03.910Z</lastmod>
     
@@ -155,6 +164,15 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.909Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/loadcontent/README.html</loc>
     
     <lastmod>2026-10-17T14:19:03.909Z</lastmod>
@@ -183,15 +201,6 @@
   
   <url>
     <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/seminar/README.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.909Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js-plugins/fullscreen/README.html</loc>
     
     <lastmod>2026-10-17T14:19:03.909Z</lastmod>
     
@@ -272,15 +281,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/package.json</loc>
-    
-    <lastmod>2026-10-17T14:19:03.886Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/index.html</loc>
     
     <lastmod>2026-10-17T14:19:03.886Z</lastmod>
@@ -290,7 +290,16 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/categories/index.html</loc>
+    <loc>https://sudo.rm-rf.ink/js/reveal.js-mermaid-plugin/package.json</loc>
+    
+    <lastmod>2026-10-17T14:19:03.886Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/baidu_verify_codeva-O2ay1lLTce.html</loc>
     
     <lastmod>2026-10-17T14:19:03.740Z</lastmod>
     
@@ -299,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/baidu_verify_codeva-O2ay1lLTce.html</loc>
+    <loc>https://sudo.rm-rf.ink/categories/index.html</loc>
     
     <lastmod>2026-10-17T14:19:03.740Z</lastmod>
     
@@ -380,6 +389,15 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/72bee84d.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/uncategorized/ae0adc94.html</loc>
     
     <lastmod>2026-10-17T14:19:03.721Z</lastmod>
@@ -398,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/72bee84d.html</loc>
+    <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/1061411954.html</loc>
     
     <lastmod>2026-10-17T14:19:03.721Z</lastmod>
     
@@ -408,15 +426,6 @@
   
   <url>
     <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/74a10861.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/1061411954.html</loc>
     
     <lastmod>2026-10-17T14:19:03.721Z</lastmod>
     
@@ -443,6 +452,15 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/7178be5f.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/4074971168.html</loc>
     
     <lastmod>2026-10-17T14:19:03.721Z</lastmod>
@@ -461,15 +479,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E8%8F%9C%E8%B0%B1/9ddcf808.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.721Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/%E7%94%9F%E6%B4%BB/2375039249.html</loc>
     
     <lastmod>2026-10-17T14:19:03.721Z</lastmod>
@@ -479,7 +488,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/7178be5f.html</loc>
+    <loc>https://sudo.rm-rf.ink/%E8%8F%9C%E8%B0%B1/9ddcf808.html</loc>
     
     <lastmod>2026-10-17T14:19:03.721Z</lastmod>
     
@@ -614,15 +623,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/752254673.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/94fe59ce.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -632,7 +632,25 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/3724466435.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/2855774435.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/752254673.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
@@ -686,7 +704,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/3423146f.html</loc>
+    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/5f9c1a2b.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
@@ -704,7 +722,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/5f9c1a2b.html</loc>
+    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/3423146f.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
@@ -731,15 +749,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/2576489939.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.720Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/%E7%94%9F%E6%B4%BB/2afb063d.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
@@ -749,7 +758,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E7%94%9F%E6%B4%BB/340466787.html</loc>
+    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/2576489939.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
@@ -776,7 +785,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/3724466435.html</loc>
+    <loc>https://sudo.rm-rf.ink/%E7%94%9F%E6%B4%BB/340466787.html</loc>
     
     <lastmod>2026-10-17T14:19:03.720Z</lastmod>
     
@@ -803,7 +812,25 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/nginx/41a22a4b.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/%E6%9C%8D%E5%8A%A1%E5%99%A8/b4b628e2.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/%E7%94%9F%E6%B4%BB/a5f172c4.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
     
@@ -839,15 +866,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/%E7%94%9F%E6%B4%BB/a5f172c4.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/mybatis/b6474c33.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
@@ -857,7 +875,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/nginx/59cc1bd2.html</loc>
+    <loc>https://sudo.rm-rf.ink/Cas/6e8cb24c.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
     
@@ -866,7 +884,7 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/Cas/6e8cb24c.html</loc>
+    <loc>https://sudo.rm-rf.ink/nginx/59cc1bd2.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
     
@@ -920,15 +938,6 @@
   </url>
   
   <url>
-    <loc>https://sudo.rm-rf.ink/nginx/41a22a4b.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sudo.rm-rf.ink/%E7%94%9F%E6%B4%BB/1873749776.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
@@ -956,6 +965,24 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/8b6d76da.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/6befbd07.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/1854714444.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
@@ -974,6 +1001,15 @@
   </url>
   
   <url>
+    <loc>https://sudo.rm-rf.ink/daily-news/f135226f.html</loc>
+    
+    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/1398242790.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
@@ -984,33 +1020,6 @@
   
   <url>
     <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/2050102104.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/%E5%B7%A5%E4%BD%9C/8b6d76da.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/daily-news/f135226f.html</loc>
-    
-    <lastmod>2026-10-17T14:19:03.719Z</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sudo.rm-rf.ink/%E5%AD%A6%E4%B9%A0/6befbd07.html</loc>
     
     <lastmod>2026-10-17T14:19:03.719Z</lastmod>
     
